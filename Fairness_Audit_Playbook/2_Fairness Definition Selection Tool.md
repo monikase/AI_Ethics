@@ -6,8 +6,8 @@
 
 Its core purpose is to prevent two common failure modes in fairness work:
 
-1. Metric shopping – choosing a fairness metric because it is easy to implement rather than ethically or legally appropriate.  
-2. False completeness – attempting to satisfy multiple incompatible fairness definitions simultaneously, despite known impossibility results.  
+**1. Metric shopping** – choosing a fairness metric because it is easy to implement rather than ethically or legally appropriate.  
+**2. False completeness** – attempting to satisfy multiple incompatible fairness definitions simultaneously, despite known impossibility results.  
 
 This tool ensures fairness evaluations:
 
