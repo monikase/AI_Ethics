@@ -116,6 +116,109 @@ This questionnaire should be completed collaboratively by engineers, product own
 - Are intersectional groups sufficiently represented in data?
 - How confident are we in performance estimates for these groups?
 
+### 5.2 Historical Context Risk Classification Matrix
 
+Each identified historical pattern is evaluated using the following dimensions:
+
+**Matrix Dimensions**
+Severity (1–3)
+
+- 3 (High): Impacts fundamental rights, access to credit, liberty, or life outcomes
+- 2 (Medium): Produces significant opportunity or resource disparities
+- 1 (Low): Produces differential experience with limited material harm
+
+Likelihood (1–3)
+
+- 3 (High): Frequently appears in similar systems
+- 2 (Medium): Occasionally appears
+- 1 (Low): Rarely appears
+
+Relevance (1–3)
+
+- 3 (High): Directly applies to system’s core function
+- 2 (Medium): Applies to specific components
+- 1 (Low): Indirect or contextual relevance
+
+**Priority Score = Severity × Likelihood × Relevance**
+
+**Priority Interpretation**
+
+- 7–9 – Critical: Requires immediate mitigation before deployment.
+- 5–6 – High: Requires mitigation before or shortly after launch.
+- 3–4 – Medium: Requires monitoring and periodic review.
+- 1–2 – Low: Documented for awareness; no immediate action required.
+
+
+Example Historical Pattern Risk Classification Table
+
+| Historical Pattern                               | Severity (1–3) | Likelihood (1–3) | Relevance (1–3) | Priority Score | Priority Level |
+|------------------------------------------------|---------------|------------------|------------------|----------------|----------------|
+| Redlining in financial services                | 3             | 3                | 3                | 9              | Critical       |
+| Proxy discrimination via ZIP code              | 3             | 3                | 3                | 9              | Critical       |
+| Income bias against non-traditional workers    | 2             | 3                | 3                | 6              | High           |
+| Gender bias in income measurement               | 2             | 2                | 2                | 4              | Medium         |
+| Age-based exclusion in lending products        | 2             | 2                | 1                | 4              | Medium         |
+| Linguistic bias against non-native speakers    | 2             | 2                | 1                | 4              | Medium         |
+| Religious bias in financial risk profiling     | 2             | 1                | 1                | 2              | Low            |
+
+### 5.3 Usage Guide
+
+**Step 1: Domain Research (1–2 hours)**
+
+- Review historical discrimination literature relevant to the domain.
+- Focus on mechanisms, not just outcomes.
+
+**Step 2: Questionnaire Completion (1–2 hours)**
+
+- Complete collaboratively.
+- Explicitly document uncertainty and information gaps.
+
+**Step 3: Risk Classification (30–60 minutes)**
+
+- Score each historical pattern.
+- Identify Critical (7–9) and High (5–6) risks.
+
+**Step 4: Integration into Development**
+
+- Feed high-priority risks into:
+  - Feature selection constraints
+  - Fairness metric choice
+  - Evaluation design
+  - Monitoring plans  
+
+HCAT outputs become inputs to later fairness audits, not a standalone artifact.  
+
+
+## 6. Case Study: Internal Loan Application System
+
+**Context**
+
+The system predicts eligibility and repayment risk for installment-based purchases.
+
+**Key Findings Using HCAT**
+
+**Identified Historical Patterns**
+
+- Redlining and geographic exclusion in credit markets
+- Income-based bias against non-traditional workers
+- Credit invisibility for young and marginalized users
+
+**High-Risk Mechanisms**
+
+- ZIP code as racial and class proxy
+- Historical repayment data shaped by unequal access to credit
+- Feedback loops excluding denied users from future training data
+
+**Priority Risks**
+
+- Proxy discrimination via location (Critical)
+- Outcome definition tied to historical access (High)
+- Intersectional exclusion of low-income women and minorities (High)
+
+**Resulting Actions**
+
+- Redefined target variable to reduce access bias
+- Replaced location features with direct affordability indicators
+- Required intersectional evaluation before launch
 
 
