@@ -17,7 +17,7 @@ I propose developing a structured tool that:
 - Translates social and historical insights into concrete technical risks
 - Fits within standard engineering workflows.  
 
-Recognizing that this challenge applies broadly across teams and domains, you formalize this approach as the Historical Context Assessment Tool (HCAT).
+Recognizing that this challenge applies broadly across teams and domains, I formalized this approach as the Historical Context Assessment Tool (HCAT).
 
 ## 3. Objectives
 
