@@ -39,7 +39,7 @@ The Historical Context Assessment Tool includes four components:
 
 ### 5.1 Structured Historical Context Assessment Questionnaire
 
-This questionnaire should be completed collaboratively by engineers, product owners, and (where possible) domain experts. Answers should be documented, not assumed.
+This questionnaire should be completed collaboratively by engineers, product owners, and (where possible) domain experts. Answers must be documented.
 
 #### Section 1: Domain and Application Context
 
