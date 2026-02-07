@@ -1,12 +1,12 @@
-## Historical Context Assessment Tool
+# Historical Context Assessment Tool
 
-### 1. Introduction
+## 1. Introduction
 
 The Historical Context Assessment Tool helps **identify historically rooted fairness risks early—before they are embedded in system design, data pipelines, or optimization goals**. By focusing on root causes such as historical power structures, institutional practices, and representational choices, it shifts fairness assessment from a post-hoc check to a foundational design practice.
 
 As the first component of the Fairness Audit Playbook, the tool is used prior to finalizing data collection and model training, and its outputs guide later decisions on fairness definitions, metrics, data audits, and mitigation strategies.
 
-### 2. Assignment Context
+## 2. Assignment Context
 
 I work as a staff engineer at a technology company deploying AI systems across multiple products. An engineering team is scoping an AI-powered internal loan application system that enables users to purchase products and pay in installments.
 
