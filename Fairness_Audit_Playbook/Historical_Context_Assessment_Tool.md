@@ -12,7 +12,7 @@ I work as a staff engineer at a technology company deploying AI systems across m
 
 The team recognizes that lending-related systems are historically sensitive and has requested support in identifying fairness risks early in development. Initial discussions reveal that a purely technical audit would be insufficient without understanding the historical context of financial discrimination.
 
-You propose developing a structured tool that:
+I propose developing a structured tool that:
 - Guides teams through historically informed analysis
 - Translates social and historical insights into concrete technical risks
 - Fits within standard engineering workflows.  
