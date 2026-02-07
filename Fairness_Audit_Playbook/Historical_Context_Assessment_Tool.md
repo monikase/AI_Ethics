@@ -97,7 +97,7 @@ This questionnaire should be completed collaboratively by engineers, product own
 **3.2 Automation and Scale Effects**
 
 - How might automation amplify historical bias compared to human decision-making?
-- Does this system reduce discretion—or conceal it behind technical abstraction?
+- Does this system reduce discretion or conceal it behind technical abstraction?
 
 **3.3 Feedback Loop Risks**
 
