@@ -6,7 +6,7 @@ The Historical Context Assessment Tool is a reusable framework that helps **iden
 
 As the first component of the Fairness Audit Playbook, the tool is used prior to finalizing data collection and model training, and its outputs guide later decisions on fairness definitions, metrics, data audits, and mitigation strategies.
 
-### 2. Context
+### 2. Assignment Context
 
 You are a staff engineer at a technology company deploying AI systems across multiple products. An engineering team is scoping an AI-powered internal loan application system that enables users to purchase products and pay in installments.
 
