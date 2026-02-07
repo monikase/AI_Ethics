@@ -30,9 +30,9 @@ Recognizing that this challenge applies broadly across teams and domains, I form
 
 The Historical Context Assessment Tool includes four components:
 
-**1. Structured Questionnaire** - Identifies historically relevant discrimination patterns and their mechanisms.  
-**2. Risk Classification Matrix** - Prioritizes risks based on severity, likelihood, and relevance.  
-**3. User Documentation** - Guides teams on when and how to apply the tool.  
-**4. Applied Case Study** - Demonstrates use of the tool for an internal loan application system.  
+1. Structured Questionnaire - Identifies historically relevant discrimination patterns and their mechanisms.  
+2. Risk Classification Matrix - Prioritizes risks based on severity, likelihood, and relevance.  
+3. User Documentation - Guides teams on when and how to apply the tool.  
+4. Applied Case Study - Demonstrates use of the tool for an internal loan application system.  
 
 
