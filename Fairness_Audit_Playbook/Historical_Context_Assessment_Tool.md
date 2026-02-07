@@ -120,20 +120,20 @@ This questionnaire should be completed collaboratively by engineers, product own
 
 Each identified historical pattern is evaluated using the following dimensions:
 
-**Matrix Dimensions**
-Severity (1–3)
+**Matrix Dimensions**  
+**Severity (1–3)**
 
 - 3 (High): Impacts fundamental rights, access to credit, liberty, or life outcomes
 - 2 (Medium): Produces significant opportunity or resource disparities
 - 1 (Low): Produces differential experience with limited material harm
 
-Likelihood (1–3)
+**Likelihood (1–3)**
 
 - 3 (High): Frequently appears in similar systems
 - 2 (Medium): Occasionally appears
 - 1 (Low): Rarely appears
 
-Relevance (1–3)
+**Relevance (1–3)**
 
 - 3 (High): Directly applies to system’s core function
 - 2 (Medium): Applies to specific components
