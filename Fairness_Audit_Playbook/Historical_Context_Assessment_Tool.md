@@ -8,7 +8,7 @@ As the first component of the Fairness Audit Playbook, the tool is used prior to
 
 ## 2. Assignment Context
 
-I work as a staff engineer at a technology company deploying AI systems across multiple products. An engineering team is scoping an AI-powered internal loan application system that enables users to purchase products and pay in installments.
+An engineering team is scoping an AI-powered internal loan application system that enables users to purchase products and pay in installments.
 
 The team recognizes that lending-related systems are historically sensitive and has requested support in identifying fairness risks early in development. Initial discussions reveal that a purely technical audit would be insufficient without understanding the historical context of financial discrimination.
 
