@@ -158,8 +158,6 @@ Example Historical Pattern Risk Classification Table
 | Income bias against non-traditional workers    | 2             | 3                | 3                | 6              | High           |
 | Gender bias in income measurement               | 2             | 2                | 2                | 4              | Medium         |
 | Age-based exclusion in lending products        | 2             | 2                | 1                | 4              | Medium         |
-| Linguistic bias against non-native speakers    | 2             | 2                | 1                | 4              | Medium         |
-| Religious bias in financial risk profiling     | 2             | 1                | 1                | 2              | Low            |
 
 ### 5.3 Usage Guide
 
