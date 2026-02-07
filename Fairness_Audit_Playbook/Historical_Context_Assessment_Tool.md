@@ -186,7 +186,7 @@ Example Historical Pattern Risk Classification Table
   - Evaluation design
   - Monitoring plans  
 
-HCAT outputs become inputs to later fairness audits, not a standalone artifact.  
+HCAT outputs become inputs to later fairness audits.  
 
 
 ## 6. Case Study: Internal Loan Application System
