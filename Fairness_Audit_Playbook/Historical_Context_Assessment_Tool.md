@@ -1,11 +1,8 @@
 ### 1. Introduction
 
-The Historical Context Assessment Tool is a practical, reusable framework designed to help engineering teams identify historically grounded fairness risks early, before they are encoded into system architecture, 
-data pipelines, or optimization objectives. Rather than treating bias as a post-hoc model performance issue, this tool ensures fairness assessments address root causes—historical power structures, 
-institutional practices, and representational choices that shape AI systems from inception.  
+The Historical Context Assessment Tool is a reusable framework that helps engineering teams identify historically rooted fairness risks early—before they are embedded in system design, data pipelines, or optimization goals. By focusing on root causes such as historical power structures, institutional practices, and representational choices, it shifts fairness assessment from a post-hoc check to a foundational design practice.
 
-The Historical Context Assessment Tool is the first component of the Sprint 1 Fairness Audit Playbook, and it is intended to be used before data collection is finalized and models are trained. 
-Its outputs directly inform downstream decisions in fairness definition, metric selection, data audits, and mitigation strategies.  
+As the first component of the Fairness Audit Playbook, the tool is used prior to finalizing data collection and model training, and its outputs guide later decisions on fairness definitions, metrics, data audits, and mitigation strategies.
 
 ### 2. Context
 
@@ -14,8 +11,33 @@ You are a staff engineer at a technology company deploying AI systems across mul
 The team recognizes that lending-related systems are historically sensitive and has requested support in identifying fairness risks early in development. Initial discussions reveal that a purely technical audit would be insufficient without understanding the historical context of financial discrimination.
 
 You propose developing a structured tool that:
-- Guides teams through historically informed analysis,
-- Translates social and historical insights into concrete technical risks, and
+- Guides teams through historically informed analysis
+- Translates social and historical insights into concrete technical risks
 - Fits within standard engineering workflows.  
 
 Recognizing that this challenge applies broadly across teams and domains, you formalize this approach as the Historical Context Assessment Tool (HCAT).
+
+## 3. Objectives
+
+- Translating historical discrimination research into actionable engineering methodology
+- Mapping historical patterns to specific AI system risks
+- Communicating societal and historical issues to technical audiences
+- Balancing analytical rigor with practical usability in business environments
+
+## 4. Requirements Overview
+
+The Historical Context Assessment Tool includes four components:
+
+1. Structured Questionnaire  
+Identifies historically relevant discrimination patterns and their mechanisms.
+
+2. Risk Classification Matrix  
+Prioritizes risks based on severity, likelihood, and relevance.
+
+3. User Documentation  
+Guides teams on when and how to apply the tool.
+
+4. Applied Case Study  
+Demonstrates use of the tool for an internal loan application system.
+
+
