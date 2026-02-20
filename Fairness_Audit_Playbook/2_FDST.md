@@ -181,8 +181,8 @@ A loan decision would remain the same if the applicant’s race were hypothetica
 ### Step 2: Error Impact Assessment
 
 **Question**: Which error type causes greater harm?
-- **If false negatives(FN) are more harmful** → Prioritize Equal Opportunity.
-- **If false positives(FP) are more harmful** → Prioritize Predictive Equality.
+- **If false negatives (FN) are more harmful** → Prioritize Equal Opportunity.
+- **If false positives (FP) are more harmful** → Prioritize Predictive Equality.
 - **If both are critical** → Prioritize Equalized Odds.
 
 ### Step 3: Score Exposure and Calibration
