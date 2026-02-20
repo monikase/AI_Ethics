@@ -2,17 +2,17 @@
 
 ### Internal Loan Application System
 
-## A.1 Context
+## 1. Context
 
 An engineering team scoped an AI system to predict eligibility and repayment risk for installment purchases. Lending systems are historically sensitive, making early fairness analysis essential.
 
-## A.2 System Overview
+## 2. System Overview
 
 **Domain:** Consumer lending  
 **System Function:** Predict loan eligibility and repayment risk for installment purchases  
 **Primary Output:** Approval decision and repayment risk score  
 
-## A.3 Completed Historical Context Assessment Questionnaire
+## 3. Completed Historical Context Assessment Questionnaire
 ### Section 1: Domain and Application Context
 
 #### 1.1 Application Domain Identification
@@ -120,7 +120,7 @@ Intersectional groups may have limited representation in training data, reducing
 
 
 
-## A.3 Applied Risk Classification Matrix
+## 3. Applied Risk Classification Matrix
 
 
 | Historical Pattern                              | Severity | Likelihood | Relevance | Priority Score | Priority Level |
@@ -132,7 +132,7 @@ Intersectional groups may have limited representation in training data, reducing
 | Intersectional underrepresentation              | 2        | 2          | 2          | 8              | Medium         |
 
 
-## A.4 Resulting Design Decisions
+## 4. Resulting Design Decisions
 
 Based on the matrix scoring, the team implemented the following changes before model training:
 - Removed ZIP code from feature set
