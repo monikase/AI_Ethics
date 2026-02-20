@@ -123,8 +123,7 @@ All responses must be documented.
 ### 4.2 Historical Context Risk Classification Matrix
 
 Each identified historical pattern is evaluated using three dimensions:
-
-**Matrix Dimensions:**  
+ 
 - **Severity (1–3)**
   - 3 (High): Impacts fundamental rights or major life outcomes
   - 2 (Medium): Produces significant opportunity or resource disparities
