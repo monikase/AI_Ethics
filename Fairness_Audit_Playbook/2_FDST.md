@@ -222,31 +222,6 @@ A loan decision would remain the same if the applicant’s race were hypothetica
 ```mermaid
 flowchart TD
     A[Start: Define Application Context] --> B{Historical Exclusion Identified?}
-    B -->|Yes| C[Include Demographic Parity]
-    B -->|No| D[Proceed to Error Impact Analysis]
-
-    C --> D
-    D --> E{Which Error Is More Harmful?}
-
-    E -->|False Negatives| F[Select Equal Opportunity]
-    E -->|False Positives| G[Select Predictive Equality]
-    E -->|Both| H[Select Equalized Odds]
-
-    F --> I{Are Risk Scores Exposed?}
-    G --> I
-    H --> I
-
-    I -->|Yes| J[Add Calibration / Predictive Parity]
-    I -->|No| K[Proceed Without Calibration Constraint]
-
-    J --> L[Document Trade-offs]
-    K --> L
-
-```
-
-```mermaid
-flowchart TD
-    A[Start: Define Application Context] --> B{Historical Exclusion Identified?}
 
     B -->|Yes| C[Include Demographic Parity]
     B -->|No| D[Proceed to Error Impact Analysis]
