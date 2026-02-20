@@ -297,6 +297,95 @@ flowchart TD
 
 ---
 
+### A. Application Context
+- System name:
+- Decision domain:
+- Stakeholders identified:
+- Protected attributes evaluated:
+
+---
+
+### B. Historical Context Summary
+- Key historical patterns identified:
+- Structural risks relevant to this system:
+- Was systemic exclusion identified? ☐ Yes ☐ No
+- If yes, was Demographic Parity included? ☐ Yes ☐ No
+
+---
+
+### C. Selected Fairness Definitions
+
+**Primary Fairness Definition:**
+- Name:
+- Mathematical formulation:
+- Why selected in this context:
+
+**Secondary Fairness Definitions (if applicable):**
+- ☐ Calibration / Predictive Parity
+- ☐ Individual Fairness
+- ☐ Counterfactual Fairness
+- ☐ Additional (specify):
+
+Rationale for inclusion of secondary definitions:
+
+---
+
+### D. Error Harm Analysis
+- Which error type is most harmful? ☐ FN ☐ FP ☐ Both
+- Explanation of harm asymmetry:
+- How this influenced fairness definition selection:
+
+---
+
+### E. Trade-Off Documentation
+
+**Known Mathematical Tensions Identified:**
+- (e.g., Equal Opportunity vs Calibration)
+
+**Definitions Not Selected and Why:**
+- Definition:
+- Reason for deprioritization:
+
+**Expected Performance Impact:**
+- Accuracy impact:
+- Operational impact:
+- Stakeholder impact:
+
+---
+
+### F. Legal and Regulatory Alignment
+- Relevant laws or regulations:
+- Does selected definition align with legal standards? ☐ Yes ☐ No
+- Compliance considerations:
+
+---
+
+### G. Individual-Level and Causal Review
+- Was individual-level consistency a concern? ☐ Yes ☐ No
+- Was structural or causal bias identified? ☐ Yes ☐ No
+- If yes, how addressed:
+
+---
+
+### H. Intersectional Evaluation
+- Were intersectional disparities assessed? ☐ Yes ☐ No
+- Key findings:
+- Mitigation steps (if needed):
+
+---
+
+### I. Monitoring Plan
+- Metrics to be tracked:
+- Frequency of review:
+- Responsible team:
+- Conditions that trigger re-evaluation:
+
+
+
+
+
+---
+
 ### 4.4 Usage Guide
 
 **Step 1**  
