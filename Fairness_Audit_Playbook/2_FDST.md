@@ -30,6 +30,8 @@ A documentation framework for recording selection rationale and acknowledging in
 4. **Applied Example**  
 Demonstrates how the tool can be implemented in a real system. (Internal loan application system).
 
+---
+
 ## 4. Fairness Definition Selection Tool
 
 ### 4.1 Fairness Definition Catalog
@@ -53,6 +55,32 @@ Egalitarian fairness, equal outcomes.
 - May conflict with accuracy
 - Ignores qualification differences
 - Often incompatible with calibration
+
+
+**Definition:** Equal probability of a positive outcome across protected groups.  
+**Formula:** P(Ŷ = 1 | A = a) = P(Ŷ = 1 | A = b)  
+**Philosophical Basis:** Egalitarian, outcome equality  
+
+**Use When:**
+- Addressing historical exclusion  
+- Representation is a priority  
+- Base rates reflect structural disadvantage  
+
+**Limitations:**
+- May reduce accuracy  
+- Ignores qualification differences  
+- Conflicts with calibration when base rates differ  
+
+
+
+| Category | Description |
+|-----------|-------------|
+| Definition | Equal probability of positive outcome across groups |
+| Formula | P(Ŷ = 1 | A = a) = P(Ŷ = 1 | A = b) |
+| Philosophical Basis | Egalitarian, equal outcomes |
+| Use When | Historical exclusion, representation focus |
+| Limitations | Accuracy trade-offs; ignores qualification differences; conflicts with calibration |
+
 
 ---
 
