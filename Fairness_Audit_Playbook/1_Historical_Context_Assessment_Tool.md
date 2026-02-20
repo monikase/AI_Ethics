@@ -22,11 +22,9 @@ The Historical Context Assessment Tool consists of four components:
 3. **Usage Guide** - Explains when and how to apply the tool within development workflows.  
 4. **Applied Example** - Demonstrates how the tool can be implemented in a real system. (Internal loan application system).
 
---
-
 ## 4. Historical Context Assessment Tool
 
-### 5.1 Structured Historical Context Assessment Questionnaire
+### 4.1 Structured Historical Context Assessment Questionnaire
 
 This questionnaire should be completed collaboratively by engineers, product owners, and, where possible, domain experts. All responses must be documented.
 
@@ -148,26 +146,11 @@ Methodology Example Matrix
 | Language-based exclusion in user interface     | 2        | 2          | 1          | 4              | Medium         |
 
 
---
-
-Example Historical Pattern Risk Classification Table
-
-| Historical Pattern                               | Severity (1–3) | Likelihood (1–3) | Relevance (1–3) | Priority Score | Priority Level |
-|------------------------------------------------|---------------|------------------|------------------|----------------|----------------|
-| Redlining in financial services                | 3             | 3                | 3                | 9              | Critical       |
-| Proxy discrimination via ZIP code              | 3             | 3                | 3                | 9              | Critical       |
-| Income bias against non-traditional workers    | 2             | 3                | 3                | 6              | High           |
-| Gender bias in income measurement               | 2             | 2                | 2                | 4              | Medium         |
-| Age-based exclusion in lending products        | 2             | 2                | 1                | 4              | Medium         |
-| Linguistic bias against non-native speakers    | 2             | 2                | 1                | 4              | Medium         |
-| Religious bias in financial risk profiling     | 2             | 1                | 1                | 2              | Low            |
-
-
 ### 5.3 Usage Guide
 
 **Step 1: Domain Research (1–2 hours)**
 
-- Review historical discrimination literature relevant to the domain.
+- Review historical discrimination research relevant to the domain.
 - Focus on mechanisms, not just outcomes.
 
 **Step 2: Questionnaire Completion (1–2 hours)**
@@ -182,58 +165,154 @@ Example Historical Pattern Risk Classification Table
 
 **Step 4: Integration into Development**
 
-- Feed high-priority risks into:
+- Translate high-priority risks into:
   - Feature selection constraints
-  - Fairness metric choice
+  - Fairness metric selection
   - Evaluation design
   - Monitoring plans  
 
-HCAT outputs become inputs to later fairness audits.  
+Historical Context Assessment Tool outputs become inputs to later fairness audits.  
 
 
-## 2. Assignment Context
+# Appendix A: Applied Example
+### Internal Loan Application System
 
-An engineering team is scoping an AI-powered internal loan application system that enables users to purchase products and pay in installments.
+## A.1 Context
 
-The team recognizes that lending-related systems are historically sensitive and has requested support in identifying fairness risks early in development. Initial discussions reveal that a purely technical audit would be insufficient without understanding the historical context of financial discrimination.
+An engineering team scoped an AI system to predict eligibility and repayment risk for installment purchases. Lending systems are historically sensitive, making early fairness analysis essential.
 
-I propose developing a structured tool that:
-- Guides teams through historically informed analysis
-- Translates social and historical insights into concrete technical risks
-- Fits within standard engineering workflows.  
+## A.2 System Overview
 
-Recognizing that this challenge applies broadly across teams and domains, I formalized this approach as the Historical Context Assessment Tool (HCAT).
+**Domain:** Consumer lending
+**System Function:** Predict loan eligibility and repayment risk for installment purchases
+**Primary Output:** Approval decision and repayment risk score
 
-## 6. Case Study: Internal Loan Application System
+## A.3 Completed Historical Context Assessment Questionnaire
+### Section 1: Domain and Application Context
 
-**Context**
+#### 1.1 Application Domain Identification
+- The system operates in consumer lending and credit allocation.
+- It produces eligibility decisions and repayment risk scores.
+- Correct predictions benefit both the company and applicants.
+- Errors may deny access to credit or expose vulnerable users to financial harm.
 
-The system predicts eligibility and repayment risk for installment-based purchases.
+---
 
-**Key Findings Using HCAT**
+#### 1.2 Historical Discrimination in the Domain
+Documented patterns include:  
+- Redlining and geographic exclusion from credit markets
+- Exclusionary lending criteria tied to race and class
+- Disparate impact through income and employment stability requirements
+- Credit invisibility affecting young and marginalized groups  
 
-**Identified Historical Patterns**
+Historically disadvantaged groups include racial minorities, low-income individuals, migrants, and women.
 
-- Redlining and geographic exclusion in credit markets
-- Income-based bias against non-traditional workers
-- Credit invisibility for young and marginalized users
+---
 
-**High-Risk Mechanisms**
+#### 1.3 Institutional and Regulatory History
+- Discriminatory lending practices were historically legal.
+- Credit scoring systems evolved within unequal access structures.
+- Wealth accumulation disparities continue to shape credit outcomes.  
 
-- ZIP code as racial and class proxy
-- Historical repayment data shaped by unequal access to credit
-- Feedback loops excluding denied users from future training data
+Historical effects may persist through legacy data and institutional definitions of risk.
 
-**Priority Risks**
 
-- Proxy discrimination via location (Critical)
-- Outcome definition tied to historical access (High)
-- Intersectional exclusion of low-income women and minorities (High)
+### Section 2: Data and Representation Analysis
 
-**Resulting Actions**
+#### 2.1 Historical Data Sources
+- Repayment history from prior loans
+- Credit bureau data
+- Internal transaction data
 
+These datasets reflect unequal historical access to credit. Populations historically denied credit may be underrepresented.
+
+---
+
+#### 2.2 Category Formation
+Key categories such as “creditworthiness” and “risk” have historically relied on:
+- Stable employment
+- Formal income documentation
+- Existing credit history
+
+These definitions may disadvantage gig workers, informal workers, migrants, and younger applicants.
+
+---
+
+#### 2.3 Measurement and Proxies
+Potential proxy features include:
+- ZIP code as a proxy for race and socioeconomic status
+- Device type as a proxy for income
+- Employment type as a proxy for gender or immigration status
+
+The meaning of income stability may differ across demographic groups.
+
+---
+
+#### 2.4 Missing Data and Structural Gaps
+- Credit-invisible applicants have limited historical records.
+- Young applicants lack repayment history.
+- Informal workers may lack formal documentation.
+
+Missingness is likely structured rather than random. 
+
+### Section 3: Technology Transition and Amplification
+
+#### 3.1 Prior Systems
+Previous underwriting involved rule-based systems and human review. Human discretion sometimes mitigated rigid criteria but also introduced inconsistency.
+
+---
+
+#### 3.2 Automation and Scale Effects
+
+Automation may:
+- Standardize exclusion
+- Scale historical bias
+- Conceal value judgments behind technical abstraction
+
+---
+
+#### 3.3 Feedback Loop Risks
+
+- Denied applicants generate no positive repayment data.
+- Risk predictions influence future training data.
+- Disparities may compound over time.
+
+### Section 4: Intersectionality and Differential Impact
+
+#### 4.1 Intersectional Risk Identification
+Compounded marginalization may affect:
+- Low-income women
+- Migrant workers
+- Young minority applicants
+
+Single-attribute fairness analysis may miss these risks.
+
+---
+
+#### 4.2 Representation at Intersections
+
+Intersectional groups may have limited representation in training data, reducing confidence in performance estimates.
+
+
+
+## A.3 Applied Risk Classification Matrix
+
+
+| Historical Pattern                              | Severity | Likelihood | Relevance | Priority Score | Priority Level |
+|-------------------------------------------------|----------|------------|------------|----------------|----------------|
+| Redlining legacy effects                        | 3        | 3          | 3          | 27             | Critical       |
+| Proxy discrimination via ZIP code               | 3        | 3          | 3          | 27             | Critical       |
+| Historical repayment data shaped by access bias | 3        | 2          | 3          | 18             | High           |
+| Credit invisibility for marginalized users      | 2        | 3          | 3          | 18             | High           |
+| Intersectional underrepresentation              | 2        | 2          | 2          | 8              | Medium         |
+
+
+## A.4 Resulting Design Decisions
+
+Based on the matrix scoring, the team implemented the following changes before model training:
+- Removed ZIP code from feature set
+- Conducted structured proxy audit
 - Redefined target variable to reduce access bias
-- Replaced location features with direct affordability indicators
-- Required intersectional evaluation before launch
-
+- Required intersectional performance reporting
+- Implemented monitoring for feedback loop dynamics
 
