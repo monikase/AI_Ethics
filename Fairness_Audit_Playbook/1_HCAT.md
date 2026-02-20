@@ -149,15 +149,15 @@ Each identified historical pattern is evaluated using three dimensions:
 
 ---
 
-### \* *Methodology Example Matrix*
+### \* *Example Matrix Application*
 
 | Historical Pattern                             | Severity (1–3) | Likelihood (1–3) | Relevance (1–3) | Priority Score | Priority Level |
 |------------------------------------------------|----------|------------|------------|----------------|----------------|
 | Geographic exclusion in service allocation     | 3        | 3          | 3          | 9              | Critical       |
 | Proxy discrimination via location data         | 3        | 3          | 3          | 9              | Critical       |
-| Bias against non-traditional employment types  | 2        | 2          | 2          | 8              | High           |
-| Underrepresentation in training data           | 2        | 2          | 3          | 12             | Critical       |
-| Language-based exclusion in user interface     | 2        | 2          | 1          | 4              | Medium         |
+| Bias against non-traditional employment types  | 2        | 2          | 2          | 6              | High           |
+| Underrepresentation in training data           | 2        | 2          | 3          | 7              | Critical       |
+| Language-based exclusion in user interface     | 2        | 2          | 1          | 5              | High           |
 
 ---
 
