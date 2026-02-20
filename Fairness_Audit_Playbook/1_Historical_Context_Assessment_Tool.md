@@ -124,12 +124,12 @@ All responses must be documented.
 
 Each identified historical pattern is evaluated using three dimensions:
 
-**Matrix Dimensions**  
-**Severity (1–3)**
+**Matrix Dimensions:**  
+- **Severity (1–3)**
 
-- 3 (High): Impacts fundamental rights or major life outcomes
-- 2 (Medium): Produces significant opportunity or resource disparities
-- 1 (Low): Produces limited material harm
+ - 3 (High): Impacts fundamental rights or major life outcomes
+ - 2 (Medium): Produces significant opportunity or resource disparities
+ - 1 (Low): Produces limited material harm
 
 **Likelihood (1–3)**
 
