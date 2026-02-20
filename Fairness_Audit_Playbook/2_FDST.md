@@ -62,8 +62,8 @@ Demonstrates how the tool can be implemented in a real system. (Internal loan ap
 **Use When**  
 - False negatives are most harmful
 - Historical bias denied qualified individuals access
-- Ground truth labels are reasonably reliable
-  *(The outcome data used to define who is “qualified” or who had a “successful” outcome is accurate and not heavily shaped by historical bias, measurement error, or structural inequalities.)*
+- Ground truth labels are reasonably reliable  
+  *(The data used to define who is truly qualified or successful is accurate and not strongly influenced by past bias or unfair conditions.)*
 
 **Limitations**  
 - Does not constrain false positive disparities
