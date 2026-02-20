@@ -190,5 +190,5 @@ Historical Context Assessment Tool **outputs become inputs to later fairness aud
 
 ---
 
-# Appendix A: Applied Example
+# [Appendix A: Applied Example](https://github.com/monikase/AI_Ethics/blob/main/Fairness_Audit_Playbook/1_HCAT_Example.md)
 
