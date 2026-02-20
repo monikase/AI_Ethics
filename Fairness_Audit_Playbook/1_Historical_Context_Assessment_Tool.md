@@ -44,9 +44,9 @@ All responses must be documented.
 
 - What documented discrimination patterns exist in this domain
 - Explicit patterns such as exclusionary criteria  
-  *Explicit discrimination refers to direct and intentional exclusion of certain groups. These practices clearly state or enforce different treatment based on characteristics such as race, gender, religion, or nationality*
+  *(Explicit discrimination refers to direct and intentional exclusion of certain groups. These practices clearly state or enforce different treatment based on characteristics such as race, gender, religion, or nationality)*
 - Implicit patterns such as disparate impact through neutral policies  
-  *Implicit discrimination refers to policies or practices that appear neutral but disproportionately disadvantage certain groups in practice. The unequal outcome may result from historical inequalities rather than explicit intent*
+  *(Implicit discrimination refers to policies or practices that appear neutral but disproportionately disadvantage certain groups in practice. The unequal outcome may result from historical inequalities rather than explicit intent)*
 - Which groups were historically advantaged or disadvantaged
 
 **1.3 Institutional and Regulatory History**
@@ -74,7 +74,7 @@ All responses must be documented.
 
 - How were key variables historically measured
 - Do any features function as proxies for protected attributes  
-  *Whether seemingly neutral variables may still encode sensitive or historically disadvantaged group information*
+  *(Whether seemingly neutral variables may still encode sensitive or historically disadvantaged group information)*
 - Does the meaning of these variables differ across demographic groups
 
 **2.4 Missing Data and Structural Gaps**
