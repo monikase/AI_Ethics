@@ -89,36 +89,39 @@ Demonstrates how the tool can be implemented in a real system. (Internal loan ap
 
 ---
 
-### Predictive Parity
+### Predictive Parity (Calibration Within Groups)
 
-**Definition**  
-Predicted positives have equal outcome reliability across groups.
+**Definition:** Predicted positives have equal outcome reliability across groups.  
+**Formula:** P(Y = 1 | Ŷ = 1, A = a) = P(Y = 1 | Ŷ = 1, A = b)  
+**Philosophical Basis:** Consistent meaning of risk scores  
 
-**Mathematical Form**  
-P(Y = 1 | Ŷ = 1, A = a) = P(Y = 1 | Ŷ = 1, A = b)
-
-**When Appropriate**  
+**Use When**  
 - Risk scores drive downstream decisions
-- Calibration consistency is required
+- Financial, insurance, or scoring systems require calibration
+- Interpretability of scores is important
 
 **Limitations**  
 
 - Incompatible with equal error rates when base rates differ
+- May preserve structural disparities in outcomes
 
 ---
 
 ### Individual Fairness
 
-**Definition**
-Similar individuals receive similar predictions.
+**Definition:** Similar individuals receive similar predictions.  
+**Core Idea:** Differences in outcomes must be justified by relevant differences in features.  
+**Philosophical Basis:** Procedural fairness, treatment consistency  
 
-**When Appropriate**
-- Case-by-case evaluation emphasis
+**Use When**
+- Case-by-case evaluation is central
 - Strong procedural fairness expectations
+- Group-level parity may be inappropriate
 
 **Limitations**
 - Requires defining similarity metric
-- May preserve structural group disparities
+- May preserve group disparities
+- Hard to operationalize in complex domains
 
 ---
 
