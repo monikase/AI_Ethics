@@ -36,7 +36,9 @@ Demonstrates how the tool can be implemented in a real system. (Internal loan ap
 
 ### 4.1 Fairness Definition Catalog
 
+---
 #### Group Fairness Definitions
+---
 
 ### Demographic Parity
 
@@ -110,6 +112,7 @@ Demonstrates how the tool can be implemented in a real system. (Internal loan ap
 
 ---
 #### Individual and Causal Fairness Definitions
+---
 
 ### Individual Fairness
 
