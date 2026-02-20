@@ -40,7 +40,7 @@ Demonstrates how the tool can be implemented in a real system. (Internal loan ap
 #### Group Fairness Definitions
 ---
 
-### Demographic Parity
+### 1. Demographic Parity
 
 **Definition:** Equal probability of a positive outcome across protected groups.  
 **Formula:** P(Ŷ = 1 | A = a) = P(Ŷ = 1 | A = b)  
@@ -58,7 +58,7 @@ Demonstrates how the tool can be implemented in a real system. (Internal loan ap
 
 ---
 
-### Equal Opportunity
+### 2. Equal Opportunity
 
 **Definition:** Qualified individuals have equal probability of receiving a positive outcome across groups.  
 **Formula:** P(Ŷ = 1 | Y = 1, A = a) = P(Ŷ = 1 | Y = 1, A = b)  
@@ -77,7 +77,7 @@ Demonstrates how the tool can be implemented in a real system. (Internal loan ap
 
 ---
 
-### Equalized Odds
+### 3. Equalized Odds
 
 **Definition:** Both true positive and false positive rates are equal across protected groups.  
 **Formula:** P(Ŷ = 1 | Y = y, A = a) = P(Ŷ = 1 | Y = y, A = b) for y ∈ {0,1}  
@@ -94,7 +94,7 @@ Demonstrates how the tool can be implemented in a real system. (Internal loan ap
 
 ---
 
-### Predictive Parity (Calibration Within Groups)
+### 4. Predictive Parity (Calibration Within Groups)
 
 **Definition:** Predicted positives have equal outcome reliability across groups.  
 **Formula:** P(Y = 1 | Ŷ = 1, A = a) = P(Y = 1 | Ŷ = 1, A = b)  
@@ -114,7 +114,7 @@ Demonstrates how the tool can be implemented in a real system. (Internal loan ap
 #### Individual and Causal Fairness Definitions
 ---
 
-### Individual Fairness
+### 5. Individual Fairness
 
 **Definition:** Similar individuals receive similar predictions.  
 **Core Idea:** Differences in outcomes must be justified by relevant differences in features.  
@@ -132,7 +132,7 @@ Demonstrates how the tool can be implemented in a real system. (Internal loan ap
 
 ---
 
-### Counterfactual Fairness
+### 6. Counterfactual Fairness
 
 **Definition:** A prediction is fair if it would remain the same for an individual in a hypothetical world where their protected attribute were different, while all other relevant factors remain unchanged.  
 **Core Idea:** The outcome should not change solely because a protected attribute changes in a counterfactual scenario.  
