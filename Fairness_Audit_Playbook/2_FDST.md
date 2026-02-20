@@ -172,7 +172,7 @@ A loan decision would remain the same if the applicant’s race were hypothetica
 
 ### 4.2 Definition Selection Decision Tree
 
-#### Step 1: Historical Context Alignment
+### Step 1: Historical Context Alignment
 
 **Question**: Did the Historical Context Assessment reveal systemic exclusion or underrepresentation?
 - **If Yes** → Include demographic parity as a required fairness definition. Then proceed to Step 2.
