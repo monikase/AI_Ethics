@@ -139,7 +139,7 @@ Each identified historical pattern is evaluated using three dimensions:
   - 2 (Medium): Applies to specific components
   - 1 (Low): Indirect or contextual relevance
 
-**Priority Score = Severity × Likelihood × Relevance**
+**Priority Score = Severity + Likelihood + Relevance**
 
 **Priority Interpretation**
 
@@ -148,7 +148,9 @@ Each identified historical pattern is evaluated using three dimensions:
 - 3–4 – Medium: Requires monitoring and periodic review
 - 1–2 – Low: Documented for awareness. No immediate action required.
 
-Methodology Example Matrix
+---
+
+**Methodology Example Matrix**
 
 | Historical Pattern                             | Severity (1–3) | Likelihood (1–3) | Relevance (1–3) | Priority Score | Priority Level |
 |------------------------------------------------|----------|------------|------------|----------------|----------------|
@@ -158,6 +160,7 @@ Methodology Example Matrix
 | Underrepresentation in training data           | 2        | 2          | 3          | 12             | Critical       |
 | Language-based exclusion in user interface     | 2        | 2          | 1          | 4              | Medium         |
 
+---
 
 ### 6. Usage Guide
 
