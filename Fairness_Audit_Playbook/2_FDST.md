@@ -267,33 +267,6 @@ flowchart TD
     V --> X[Document Trade-offs and Final Selection]
     W --> X
 ```
----
-
-### 4.3 Trade-Off Analysis Template
-
-**Selected Primary Fairness Definition**  
-[Definition Name]
-
-**Mathematical Formulation**
-
-**Rationale for Selection**
-- Historical context alignment
-- Error impact analysis
-- Stakeholder priorities
-- Legal considerations
-
-**Fairness Properties Not Satisfied**
-- List definitions deprioritized
-- Explain trade-offs
-
-**Performance Implications**
-- Expected accuracy impact
-- Operational cost impact
-
-**Monitoring Plan**
-- Primary fairness metric
-- Secondary monitoring metrics
-- Intersectional tracking
 
 ---
 
@@ -366,13 +339,53 @@ Rationale for inclusion of secondary definitions:
 - Responsible team:
 - Conditions that trigger re-evaluation:
 
+---
 
+## 4.4 Usage Guide
 
+The Fairness Definition Selection Tool should be applied after completing the Historical Context Assessment and before model optimization.
 
+### Step 1: Complete Historical Context Assessment
+Identify structural inequalities, historical exclusion patterns, and relevant protected attributes.
+
+### Step 2: Analyze Error Harm
+Determine whether false positives, false negatives, or both create greater harm.  
+Use this analysis to select the primary group fairness definition.
+
+### Step 3: Evaluate Score Exposure
+If probabilistic scores are exposed to users or downstream systems, include calibration or predictive parity considerations.
+
+### Step 4: Assess Individual-Level Fairness Needs
+Determine whether treating similar individuals similarly is central in this domain.  
+If yes, include Individual Fairness alongside group-level metrics.
+
+### Step 5: Conduct Structural and Causal Bias Review
+Assess whether protected attributes influence other features through historical or structural pathways.  
+If yes, include Counterfactual Fairness analysis or causal modeling.
+
+### Step 6: Verify Legal Requirements
+Ensure selected fairness definitions align with relevant regulatory frameworks and protected attribute obligations.
+
+### Step 7: Perform Intersectional Evaluation
+Assess fairness across intersections of protected attributes, not only single categories.
+
+### Step 8: Document Trade-Offs
+Explicitly document:
+- Mathematical incompatibilities
+- Rationale for prioritization
+- Definitions not selected
+- Anticipated impacts on stakeholders
+
+Fairness definition selection is not purely technical.  
+It reflects normative judgments, domain risks, and legal obligations.  
+All decisions must be explicitly justified and documented.
 
 ---
 
+
 ### 4.4 Usage Guide
+
+The Fairness Definition Selection Tool should be applied after completing the Historical Context Assessment and before model optimization.
 
 **Step 1**  
 - Review outputs from Historical Context Assessment Tool.
