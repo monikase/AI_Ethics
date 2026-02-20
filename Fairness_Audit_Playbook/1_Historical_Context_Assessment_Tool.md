@@ -52,6 +52,8 @@ All responses must be documented.
 - How have laws, policies, or industry standards shaped outcomes in this domain
 - Which practices were legal but discriminatory, and how might their effects persist
 
+---
+
 ### Section 2: Data and Representation Analysis
 
 **2.1 Historical Data Sources**
@@ -79,6 +81,8 @@ All responses must be documented.
 - Are data gaps random or shaped by institutional barriers
 - How might missingness encode historical bias
 
+---
+
 ### Section 3: Technology Transition and Amplification
 
 **3.1 Prior Technological Systems**
@@ -95,6 +99,8 @@ All responses must be documented.
 
 - Will system outputs influence future data collection
 - Could disparities compound over time through self-reinforcing cycles
+
+---
 
 ### Section 4: Intersectionality and Differential Impact
 
