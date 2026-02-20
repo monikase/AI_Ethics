@@ -160,6 +160,25 @@ flowchart TD
 ```
 
 
+```markdown
+Start: Define Application Context
+
+1. Historical Exclusion Identified?
+   - Yes → Include Demographic Parity
+   - No → Proceed to Error Impact Analysis
+
+2. Which Error Is More Harmful?
+   - False Negatives → Select Equal Opportunity
+   - False Positives → Select Predictive Equality
+   - Both → Select Equalized Odds
+
+3. Are Risk Scores Exposed?
+   - Yes → Add Calibration / Predictive Parity
+   - No → No calibration constraint required
+
+4. Document Trade-offs
+```
+
 ### Step 1: Historical Context Alignment
 
 - **Question**  
