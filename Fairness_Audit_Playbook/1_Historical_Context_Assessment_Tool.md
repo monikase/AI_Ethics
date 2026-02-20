@@ -161,7 +161,7 @@ Each identified historical pattern is evaluated using three dimensions:
 
 ---
 
-### 6. Usage Guide
+### 4.3 Usage Guide
 
 **Step 1: Domain Research (1–2 hours)**
 
