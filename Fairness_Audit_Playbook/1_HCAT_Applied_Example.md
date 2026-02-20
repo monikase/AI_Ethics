@@ -22,8 +22,6 @@ Lending systems are historically sensitive, making early fairness analysis essen
 - Correct predictions benefit both the company and applicants.
 - Errors may deny access to credit or expose vulnerable users to financial harm.
 
----
-
 #### 1.2 Historical Discrimination in the Domain
 Documented patterns include:  
 - Redlining and geographic exclusion from credit markets
@@ -33,8 +31,6 @@ Documented patterns include:
 
 Historically disadvantaged groups include racial minorities, low-income individuals, migrants, and women.
 
----
-
 #### 1.3 Institutional and Regulatory History
 - Discriminatory lending practices were historically legal.
 - Credit scoring systems evolved within unequal access structures.
@@ -42,6 +38,7 @@ Historically disadvantaged groups include racial minorities, low-income individu
 
 Historical effects may persist through legacy data and institutional definitions of risk.
 
+---
 
 ### Section 2: Data and Representation Analysis
 
@@ -52,8 +49,6 @@ Historical effects may persist through legacy data and institutional definitions
 
 These datasets reflect unequal historical access to credit. Populations historically denied credit may be underrepresented.
 
----
-
 #### 2.2 Category Formation
 Key categories such as “creditworthiness” and “risk” have historically relied on:
 - Stable employment
@@ -61,8 +56,6 @@ Key categories such as “creditworthiness” and “risk” have historically r
 - Existing credit history
 
 These definitions may disadvantage gig workers, informal workers, migrants, and younger applicants.
-
----
 
 #### 2.3 Measurement and Proxies
 Potential proxy features include:
@@ -72,8 +65,6 @@ Potential proxy features include:
 
 The meaning of income stability may differ across demographic groups.
 
----
-
 #### 2.4 Missing Data and Structural Gaps
 - Credit-invisible applicants have limited historical records.
 - Young applicants lack repayment history.
@@ -81,12 +72,12 @@ The meaning of income stability may differ across demographic groups.
 
 Missingness is likely structured rather than random. 
 
+---
+
 ### Section 3: Technology Transition and Amplification
 
 #### 3.1 Prior Systems
 Previous underwriting involved rule-based systems and human review. Human discretion sometimes mitigated rigid criteria but also introduced inconsistency.
-
----
 
 #### 3.2 Automation and Scale Effects
 
@@ -95,13 +86,13 @@ Automation may:
 - Scale historical bias
 - Conceal value judgments behind technical abstraction
 
----
-
 #### 3.3 Feedback Loop Risks
 
 - Denied applicants generate no positive repayment data.
 - Risk predictions influence future training data.
 - Disparities may compound over time.
+
+---
 
 ### Section 4: Intersectionality and Differential Impact
 
@@ -113,13 +104,11 @@ Compounded marginalization may affect:
 
 Single-attribute fairness analysis may miss these risks.
 
----
-
 #### 4.2 Representation at Intersections
 
 Intersectional groups may have limited representation in training data, reducing confidence in performance estimates.
 
-
+---
 
 ## 3. Applied Risk Classification Matrix
 
@@ -132,6 +121,7 @@ Intersectional groups may have limited representation in training data, reducing
 | Credit invisibility for marginalized users      | 2        | 3          | 3          | 18             | High           |
 | Intersectional underrepresentation              | 2        | 2          | 2          | 8              | Medium         |
 
+---
 
 ## 4. Resulting Design Decisions
 
