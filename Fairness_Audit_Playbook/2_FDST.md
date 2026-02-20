@@ -195,7 +195,7 @@ flowchart TD
 
 ### 4.3 Trade-Off Analysis Template
 
-**Selected Primary Fairness Definition**
+**Selected Primary Fairness Definition**  
 [Definition Name]
 
 **Mathematical Formulation**
