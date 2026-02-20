@@ -114,7 +114,9 @@ All responses must be documented.
 - Are intersectional groups sufficiently represented in data
 - How confident are we in performance estimates for these groups
 
-### 5.2 Historical Context Risk Classification Matrix
+---
+
+### 4.2 Historical Context Risk Classification Matrix
 
 Each identified historical pattern is evaluated using three dimensions:
 
