@@ -139,14 +139,13 @@ Each identified historical pattern is evaluated using three dimensions:
   - 2 (Medium): Partial applicability to certain system components.
   - 1 (Low): Limited applicability but potential for manifestation.
 
-**Priority Score = Severity + Likelihood + Relevance**
+- **Priority Score = Severity + Likelihood + Relevance**
 
-**Priority Interpretation**
-
-- 7–9 – Critical: Requires immediate mitigation before deployment
-- 5–6 – High: Requires mitigation before or shortly after launch
-- 3–4 – Medium: Requires monitoring and periodic review
-- 1–2 – Low: Documented for awareness. No immediate action required.
+- **Priority Interpretation:**
+  - 7–9 – Critical: Requires immediate mitigation before deployment
+  - 5–6 – High: Requires mitigation before or shortly after launch
+  - 3–4 – Medium: Requires monitoring and periodic review
+  - 1–2 – Low: Documented for awareness. No immediate action required.
 
 ---
 
