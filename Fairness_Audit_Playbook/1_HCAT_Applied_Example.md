@@ -1,4 +1,4 @@
-# Historical Context Assesment Tool: Applied Example
+# Historical Context Assessment Tool: Applied Example
 
 ### Internal Loan Application System
 
