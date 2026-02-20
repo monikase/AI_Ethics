@@ -141,7 +141,7 @@ Each identified historical pattern is evaluated using three dimensions:
 
 - **Priority Score = Severity + Likelihood + Relevance**
 
-- **Priority Interpretation:**
+- **Priority Level:**
   - 7–9 – Critical: Requires immediate mitigation before deployment
   - 5–6 – High: Requires mitigation before or shortly after launch
   - 3–4 – Medium: Requires monitoring and periodic review
