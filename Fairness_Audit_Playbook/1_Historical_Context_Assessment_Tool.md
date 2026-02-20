@@ -109,7 +109,7 @@ All responses must be documented.
 
 **4.1 Intersectional Risk Identification**
 
-- Which groups experience compounded marginalization
+- Which groups experience compounded marginalization  
   *(Which groups face overlapping forms of disadvantage, such as discrimination based on more than one characteristic at the same time, for example gender and race or age and disability, which together may create greater barriers than any single factor alone)*
 - Would single-attribute analysis miss these risks
 
