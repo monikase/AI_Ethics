@@ -95,7 +95,8 @@ All responses must be documented.
 **3.2 Automation and Scale Effects**
 
 - How might automation amplify historical bias
-- Does this system reduce discretion or conceal value judgments behind technical abstraction
+- Does this system reduce discretion or conceal value judgments behind technical abstraction  
+  *(Whether the system makes decisions appear purely technical and objective, even though they are based on human choices about what to measure, how to define success, and what counts as risk, and whether automation removes flexibility to consider individual circumstances)*
 
 **3.3 Feedback Loop Risks**
 
