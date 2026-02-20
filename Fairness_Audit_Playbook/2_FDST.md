@@ -310,6 +310,10 @@ Rationale for inclusion of secondary definitions:
 **Known Mathematical Tensions Identified:**
 - (e.g., Equal Opportunity vs Calibration)
 
+**Impossibility Constraints Identified:**
+- ☐ Yes ☐ No
+- If yes, describe:
+
 **Definitions Not Selected and Why:**
 - Definition:
 - Reason for deprioritization:
@@ -344,8 +348,12 @@ Rationale for inclusion of secondary definitions:
 
 ### 4.4 Usage Guide
 
-- The Fairness Definition Selection Tool should be applied after completing the Historical Context Assessment and before model optimization.  
-- The tool does not assume that a single fairness definition is sufficient. Multiple complementary definitions may be selected depending on domain risk.
+The Fairness Definition Selection Tool is applied **after completing the Historical Context Assessment and before model optimization**.
+
+It does not assume that a single fairness definition is sufficient.  
+Multiple complementary definitions may be selected depending on domain risk and governance requirements.
+
+---
 
 #### Step 1: Complete Historical Context Assessment
 - Identify structural inequalities, historical exclusion patterns, and relevant protected attributes.
