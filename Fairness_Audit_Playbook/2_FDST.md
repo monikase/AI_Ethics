@@ -165,7 +165,7 @@ Similar individuals receive similar predictions.
 
 ---
 
-### Definition Selection Decision Tree Diagram 
+### 4.2.1 Definition Selection Decision Tree Diagram 
 
 ```mermaid
 flowchart TD
