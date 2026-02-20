@@ -343,8 +343,8 @@ Rationale for inclusion of secondary definitions:
 
 ### 4.4 Usage Guide
 
-The Fairness Definition Selection Tool should be applied after completing the Historical Context Assessment and before model optimization.  
-The tool does not assume that a single fairness definition is sufficient; multiple complementary definitions may be selected depending on domain risk.
+- The Fairness Definition Selection Tool should be applied after completing the Historical Context Assessment and before model optimization.  
+- The tool does not assume that a single fairness definition is sufficient. Multiple complementary definitions may be selected depending on domain risk.
 
 #### Step 1: Complete Historical Context Assessment
 - Identify structural inequalities, historical exclusion patterns, and relevant protected attributes.
