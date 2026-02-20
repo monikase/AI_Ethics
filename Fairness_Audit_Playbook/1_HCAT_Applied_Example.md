@@ -4,7 +4,8 @@
 
 ## 1. Context
 
-An engineering team scoped an AI system to predict eligibility and repayment risk for installment purchases. Lending systems are historically sensitive, making early fairness analysis essential.
+An engineering team scoped an AI system to predict eligibility and repayment risk for installment purchases.  
+Lending systems are historically sensitive, making early fairness analysis essential.
 
 ## 2. System Overview
 
