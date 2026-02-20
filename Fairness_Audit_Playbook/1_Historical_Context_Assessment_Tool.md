@@ -126,22 +126,19 @@ Each identified historical pattern is evaluated using three dimensions:
 
 **Matrix Dimensions:**  
 - **Severity (1–3)**
+  - 3 (High): Impacts fundamental rights or major life outcomes
+  - 2 (Medium): Produces significant opportunity or resource disparities
+  - 1 (Low): Produces limited material harm
 
- - 3 (High): Impacts fundamental rights or major life outcomes
- - 2 (Medium): Produces significant opportunity or resource disparities
- - 1 (Low): Produces limited material harm
+- **Likelihood (1–3)**
+  - 3 (High): Frequently appears in similar systems
+  - 2 (Medium): Occasionally appears
+  - 1 (Low): Rarely appears
 
-**Likelihood (1–3)**
-
-- 3 (High): Frequently appears in similar systems
-- 2 (Medium): Occasionally appears
-- 1 (Low): Rarely appears
-
-**Relevance (1–3)**
-
-- 3 (High): Directly applies to system’s core function
-- 2 (Medium): Applies to specific components
-- 1 (Low): Indirect or contextual relevance
+- **Relevance (1–3)**
+  - 3 (High): Directly applies to system’s core function
+  - 2 (Medium): Applies to specific components
+  - 1 (Low): Indirect or contextual relevance
 
 **Priority Score = Severity × Likelihood × Relevance**
 
