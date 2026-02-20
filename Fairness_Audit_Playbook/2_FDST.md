@@ -37,26 +37,6 @@ Demonstrates how the tool can be implemented in a real system. (Internal loan ap
 ### 4.1 Fairness Definition Catalog
 ### Demographic Parity
 
-**Definition**  
-The probability of receiving a positive outcome is equal across protected groups.
-
-**Mathematical Form**  
-P(Ŷ = 1 | A = a) = P(Ŷ = 1 | A = b)
-
-**Philosophical Alignment**  
-Egalitarian fairness, equal outcomes.
-
-**When Appropriate**  
-- Historical exclusion from access
-- Representation is a primary concern
-- Base rates reflect structural disadvantage
-
-**Limitations**  
-- May conflict with accuracy
-- Ignores qualification differences
-- Often incompatible with calibration
-
-
 **Definition:** Equal probability of a positive outcome across protected groups.  
 **Formula:** P(Ŷ = 1 | A = a) = P(Ŷ = 1 | A = b)  
 **Philosophical Basis:** Egalitarian, outcome equality  
@@ -71,31 +51,15 @@ Egalitarian fairness, equal outcomes.
 - Ignores qualification differences  
 - Conflicts with calibration when base rates differ  
 
-
-
-| Category | Description |
-|-----------|-------------|
-| Definition | Equal probability of positive outcome across groups |
-| Formula | P(Ŷ = 1 | A = a) = P(Ŷ = 1 | A = b) |
-| Philosophical Basis | Egalitarian, equal outcomes |
-| Use When | Historical exclusion, representation focus |
-| Limitations | Accuracy trade-offs; ignores qualification differences; conflicts with calibration |
-
-
 ---
 
 ### Equal Opportunity
 
-**Definition**  
-Qualified individuals have equal probability of receiving a positive outcome across groups.
+**Definition:** Qualified individuals have equal probability of receiving a positive outcome across groups.
+**Formula:** P(Ŷ = 1 | Y = 1, A = a) = P(Ŷ = 1 | Y = 1, A = b)
+**Philosophical Basis:** Meritocratic fairness, equal treatment of the qualified.
 
-**Mathematical Form**  
-P(Ŷ = 1 | Y = 1, A = a) = P(Ŷ = 1 | Y = 1, A = b)
-
-**Philosophical Alignment**  
-Meritocratic fairness, equal treatment of the qualified.
-
-**When Appropriate**  
+**Use When**  
 - False negatives are most harmful
 - Qualification labels are considered reliable
 - Historical exclusion involved denial of qualified individuals
