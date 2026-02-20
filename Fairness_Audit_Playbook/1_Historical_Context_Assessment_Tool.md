@@ -199,9 +199,9 @@ An engineering team scoped an AI system to predict eligibility and repayment ris
 
 ## A.2 System Overview
 
-**Domain:** Consumer lending
-**System Function:** Predict loan eligibility and repayment risk for installment purchases
-**Primary Output:** Approval decision and repayment risk score
+**Domain:** Consumer lending  
+**System Function:** Predict loan eligibility and repayment risk for installment purchases  
+**Primary Output:** Approval decision and repayment risk score  
 
 ## A.3 Completed Historical Context Assessment Questionnaire
 ### Section 1: Domain and Application Context
