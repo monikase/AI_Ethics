@@ -1,4 +1,4 @@
-# Appendix A: Applied Example
+# Historical Context Assesment Tool: Applied Example
 
 ### Internal Loan Application System
 
