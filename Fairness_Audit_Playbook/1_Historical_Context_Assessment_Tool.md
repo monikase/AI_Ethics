@@ -30,7 +30,7 @@ The Historical Context Assessment Tool consists of four components:
 This questionnaire should be completed collaboratively by engineers, product owners, and, where possible, domain experts.   
 All responses must be documented.
 
-#### Section 1: Domain and Application Context
+### Section 1: Domain and Application Context
 
 **1.1 Application Domain Identification**
 
@@ -52,7 +52,7 @@ All responses must be documented.
 - How have laws, policies, or industry standards shaped outcomes in this domain
 - Which practices were legal but discriminatory, and how might their effects persist
 
-#### Section 2: Data and Representation Analysis
+### Section 2: Data and Representation Analysis
 
 **2.1 Historical Data Sources**
 
