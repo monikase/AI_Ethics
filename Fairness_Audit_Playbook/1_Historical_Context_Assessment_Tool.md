@@ -150,7 +150,7 @@ Each identified historical pattern is evaluated using three dimensions:
 
 ---
 
-### *Methodology Example Matrix*
+### \* *Methodology Example Matrix*
 
 | Historical Pattern                             | Severity (1–3) | Likelihood (1–3) | Relevance (1–3) | Priority Score | Priority Level |
 |------------------------------------------------|----------|------------|------------|----------------|----------------|
