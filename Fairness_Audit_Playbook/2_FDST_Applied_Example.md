@@ -1,5 +1,4 @@
-# Appendix 2_FDST_Applied_Example  
-## Fairness Definition Selection Tool: Applied Example  
+# Fairness Definition Selection Tool: Applied Example  
 ### Internal Loan Application System
 
 ---
