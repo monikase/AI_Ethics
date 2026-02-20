@@ -410,6 +410,6 @@ All fairness decisions must be **explicitly justified, documented, and reviewabl
 
 ---
 
-### 2_FDST_Applied_Example
+### Appendix 2_FDST_Applied_Example: Internal Loan Application System
 
 
