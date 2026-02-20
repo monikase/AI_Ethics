@@ -190,5 +190,5 @@ Historical Context Assessment Tool **outputs become inputs to later fairness aud
 
 ---
 
-### [Appendix 1_HCAT_Example. Applied Example: Internal Loan Application System](https://github.com/monikase/AI_Ethics/blob/main/Fairness_Audit_Playbook/1_HCAT_Example.md)
+### [Appendix 1_HCAT_Applied_Example: Internal Loan Application System](https://github.com/monikase/AI_Ethics/blob/main/Fairness_Audit_Playbook/1_HCAT_Example.md)
 
