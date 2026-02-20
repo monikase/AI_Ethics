@@ -41,8 +41,10 @@ All responses must be documented.
 **1.2 Historical Discrimination in the Domain**
 
 - What documented discrimination patterns exist in this domain
-- Explicit patterns such as exclusionary criteria
+- Explicit patterns such as exclusionary criteria  
+  Explicit discrimination refers to direct and intentional exclusion of certain groups. These practices clearly state or enforce different treatment based on characteristics such as race, gender, religion, or nationality.
 - Implicit patterns such as disparate impact through neutral policies
+  Implicit discrimination refers to policies or practices that appear neutral but disproportionately disadvantage certain groups in practice. The unequal outcome may result from historical inequalities rather than explicit intent.
 - Which groups were historically advantaged or disadvantaged
 
 **1.3 Institutional and Regulatory History**
