@@ -297,23 +297,21 @@ flowchart TD
 
 ---
 
-### A. Application Context
+### 4.3 Trade-Off Analysis Template
+
+### 1. Application Context
 - System name:
 - Decision domain:
 - Stakeholders identified:
 - Protected attributes evaluated:
 
----
-
-### B. Historical Context Summary
+### 2. Historical Context Summary
 - Key historical patterns identified:
 - Structural risks relevant to this system:
 - Was systemic exclusion identified? ☐ Yes ☐ No
 - If yes, was Demographic Parity included? ☐ Yes ☐ No
 
----
-
-### C. Selected Fairness Definitions
+### 3. Selected Fairness Definitions
 
 **Primary Fairness Definition:**
 - Name:
@@ -328,16 +326,12 @@ flowchart TD
 
 Rationale for inclusion of secondary definitions:
 
----
-
-### D. Error Harm Analysis
+### 3. Error Harm Analysis
 - Which error type is most harmful? ☐ FN ☐ FP ☐ Both
 - Explanation of harm asymmetry:
 - How this influenced fairness definition selection:
 
----
-
-### E. Trade-Off Documentation
+### 4. Trade-Off Documentation
 
 **Known Mathematical Tensions Identified:**
 - (e.g., Equal Opportunity vs Calibration)
@@ -351,30 +345,22 @@ Rationale for inclusion of secondary definitions:
 - Operational impact:
 - Stakeholder impact:
 
----
-
-### F. Legal and Regulatory Alignment
+### 5. Legal and Regulatory Alignment
 - Relevant laws or regulations:
 - Does selected definition align with legal standards? ☐ Yes ☐ No
 - Compliance considerations:
 
----
-
-### G. Individual-Level and Causal Review
+### 6. Individual-Level and Causal Review
 - Was individual-level consistency a concern? ☐ Yes ☐ No
 - Was structural or causal bias identified? ☐ Yes ☐ No
 - If yes, how addressed:
 
----
-
-### H. Intersectional Evaluation
+### 7. Intersectional Evaluation
 - Were intersectional disparities assessed? ☐ Yes ☐ No
 - Key findings:
 - Mitigation steps (if needed):
 
----
-
-### I. Monitoring Plan
+### 8. Monitoring Plan
 - Metrics to be tracked:
 - Frequency of review:
 - Responsible team:
