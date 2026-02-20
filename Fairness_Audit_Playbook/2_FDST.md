@@ -39,7 +39,7 @@ Demonstrates how the tool can be implemented in a real system. (Internal loan ap
 
 **Definition:** Equal probability of a positive outcome across protected groups.  
 **Formula:** P(Ŷ = 1 | A = a) = P(Ŷ = 1 | A = b)  
-**Philosophical Basis:** Egalitarian, outcome equality  
+**Philosophical Basis:** Egalitarian, outcome equality.  
 
 **Use When:**
 - Addressing historical exclusion  
@@ -68,27 +68,24 @@ Demonstrates how the tool can be implemented in a real system. (Internal loan ap
 **Limitations**  
 - Does not constrain false positive disparities
 - Depends on trustworthy ground truth
+- May conflict with predictive parity
 
 ---
 
 ### Equalized Odds
 
-**Definition**  
-Both true positive and false positive rates are equal across groups.
+**Definition:** Both true positive and false positive rates are equal across protected groups.  
+**Formula:** P(Ŷ = 1 | Y = y, A = a) = P(Ŷ = 1 | Y = y, A = b) for y ∈ {0,1}  
+**Philosophical Basis:** Balanced error distribution across groups.   
 
-**Mathematical Form**  
-P(Ŷ = 1 | Y = y, A = a) = P(Ŷ = 1 | Y = y, A = b)
-
-**Philosophical Alignment**  
-Balanced error distribution.
-
-**When Appropriate**  
+**Use When**  
 - Both error types create significant harm
-- High-stakes domains
+- High-stakes decisions require balanced protection
 
 **Limitations**  
 - Strong trade-offs with accuracy
 - Harder to implement
+- Often incompatible with calibration when base rates differ  
 
 ---
 
