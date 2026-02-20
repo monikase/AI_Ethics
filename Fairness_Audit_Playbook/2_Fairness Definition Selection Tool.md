@@ -18,14 +18,14 @@ As the second component of the Fairness Audit Playbook, the tool is applied afte
 
 ## 3. Tool Overview
 The Fairness Definition Selection Tool consists of four components:
-**1. Fairness Definition Catalog**  
+1. **Fairness Definition Catalog**  
 A concise reference of key fairness definitions, their mathematical formulations, philosophical foundations, and appropriate use cases.
 
-**2. Definition Selection Decision Tree**  
+2. **Definition Selection Decision Tree**  
 A structured process for mapping application context to fairness definitions.
 
-**3. Trade-Off Analysis Template**  
+3. **Trade-Off Analysis Template**  
 A documentation framework for recording selection rationale and acknowledging incompatibilities.
 
-**4. Applied Example**  
+4. **Applied Example**  
 A worked example demonstrating tool usage for an internal loan application system.
