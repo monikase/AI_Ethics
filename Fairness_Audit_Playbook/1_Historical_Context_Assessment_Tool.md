@@ -69,7 +69,7 @@ All responses must be documented.
 **2.3 Measurement and Proxies**
 
 - How were key variables historically measured
-- Do any features function as proxies for protected attributes
+- Do any features function as proxies for protected attributes  
   (Whether seemingly neutral variables may still encode sensitive or historically disadvantaged group information)
 - Does the meaning of these variables differ across demographic groups
 
