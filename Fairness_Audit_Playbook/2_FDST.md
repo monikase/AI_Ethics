@@ -341,7 +341,7 @@ Rationale for inclusion of secondary definitions:
 
 ---
 
-## 4.4 Usage Guide
+### 4.4 Usage Guide
 
 The Fairness Definition Selection Tool should be applied after completing the Historical Context Assessment and before model optimization.
 
