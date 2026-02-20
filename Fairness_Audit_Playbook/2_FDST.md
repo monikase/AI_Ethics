@@ -156,12 +156,12 @@ Similar individuals receive similar predictions.
 ### Step 4: Legal Requirements
 
 - **Question**: Are there domain-specific legal requirements?
-    - **If yes** → Ensure selected definitions satisfy relevant regulatory standards.
+    - **If Yes** → Ensure selected definitions satisfy relevant regulatory standards.
 
 ### Step 5: Intersectional Considerations
 
 - **Question**: Are disparities likely at demographic intersections?
-    - **If yes** → Require intersectional fairness evaluation regardless of primary definition selected.
+    - **If Yes** → Require intersectional fairness evaluation regardless of primary definition selected.
 
 ---
 
