@@ -134,61 +134,16 @@ Similar individuals receive similar predictions.
 
 ### 4.2 Definition Selection Decision Tree
 
-```mermaid
-flowchart TD
-    A[Start: Define Application Context] --> B{Historical Exclusion Identified?}
-    B -->|Yes| C[Include Demographic Parity]
-    B -->|No| D[Proceed to Error Impact Analysis]
-
-    C --> D
-    D --> E{Which Error Is More Harmful?}
-
-    E -->|False Negatives| F[Select Equal Opportunity]
-    E -->|False Positives| G[Select Predictive Equality]
-    E -->|Both| H[Select Equalized Odds]
-
-    F --> I{Are Risk Scores Exposed?}
-    G --> I
-    H --> I
-
-    I -->|Yes| J[Add Calibration / Predictive Parity]
-    I -->|No| K[Proceed Without Calibration Constraint]
-
-    J --> L[Document Trade-offs]
-    K --> L
-
-```
-
-
-```markdown
-Start: Define Application Context
-
-1. Historical Exclusion Identified?
-   - Yes → Include Demographic Parity
-   - No → Proceed to Error Impact Analysis
-
-2. Which Error Is More Harmful?
-   - False Negatives → Select Equal Opportunity
-   - False Positives → Select Predictive Equality
-   - Both → Select Equalized Odds
-
-3. Are Risk Scores Exposed?
-   - Yes → Add Calibration / Predictive Parity
-   - No → No calibration constraint required
-
-4. Document Trade-offs
-```
-
 ### Step 1: Historical Context Alignment
 
-- **Question**  
-    - Did the Historical Context Assessment reveal systemic exclusion or underrepresentation?
+**Question**  
+- Did the Historical Context Assessment reveal systemic exclusion or underrepresentation?
 
-- **If yes**  
-    - Include Demographic Parity as either a primary or secondary fairness definition.
+**If yes**  
+- Include Demographic Parity as either a primary or secondary fairness definition.
 
-- **If no**  
-    - Proceed to Step 2.  
+**If no**  
+- Proceed to Step 2.  
 
 ---
 
@@ -239,4 +194,29 @@ Are disparities likely at demographic intersections?
 **If yes**  
 Require intersectional fairness evaluation regardless of primary definition selected.
 
+
+```mermaid
+flowchart TD
+    A[Start: Define Application Context] --> B{Historical Exclusion Identified?}
+    B -->|Yes| C[Include Demographic Parity]
+    B -->|No| D[Proceed to Error Impact Analysis]
+
+    C --> D
+    D --> E{Which Error Is More Harmful?}
+
+    E -->|False Negatives| F[Select Equal Opportunity]
+    E -->|False Positives| G[Select Predictive Equality]
+    E -->|Both| H[Select Equalized Odds]
+
+    F --> I{Are Risk Scores Exposed?}
+    G --> I
+    H --> I
+
+    I -->|Yes| J[Add Calibration / Predictive Parity]
+    I -->|No| K[Proceed Without Calibration Constraint]
+
+    J --> L[Document Trade-offs]
+    K --> L
+
+```
 ---
