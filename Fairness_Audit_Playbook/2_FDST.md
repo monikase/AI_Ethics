@@ -47,9 +47,9 @@ Demonstrates how the tool can be implemented in a real system. (Internal loan ap
 - Base rates reflect structural disadvantage  
 
 **Limitations:**
-- May reduce accuracy  
+- May reduce overall accuracy  
 - Ignores qualification differences  
-- Conflicts with calibration when base rates differ  
+- Often incompatible with calibration when base rates differ  
 
 ---
 
@@ -61,8 +61,9 @@ Demonstrates how the tool can be implemented in a real system. (Internal loan ap
 
 **Use When**  
 - False negatives are most harmful
-- Qualification labels are considered reliable
-- Historical exclusion involved denial of qualified individuals
+- Historical bias denied qualified individuals access
+- Ground truth labels are reasonably reliable
+  *(The outcome data used to define who is “qualified” or who had a “successful” outcome is accurate and not heavily shaped by historical bias, measurement error, or structural inequalities.)*
 
 **Limitations**  
 - Does not constrain false positive disparities
