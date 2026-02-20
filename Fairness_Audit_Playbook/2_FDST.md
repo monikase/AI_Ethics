@@ -56,4 +56,79 @@ Egalitarian fairness, equal outcomes.
 
 ---
 
+### Equal Opportunity
+
+**Definition**  
+Qualified individuals have equal probability of receiving a positive outcome across groups.
+
+**Mathematical Form**  
+P(Ŷ = 1 | Y = 1, A = a) = P(Ŷ = 1 | Y = 1, A = b)
+
+**Philosophical Alignment**  
+Meritocratic fairness, equal treatment of the qualified.
+
+**When Appropriate**  
+- False negatives are most harmful
+- Qualification labels are considered reliable
+- Historical exclusion involved denial of qualified individuals
+
+**Limitations**  
+- Does not constrain false positive disparities
+- Depends on trustworthy ground truth
+
+---
+
+### Equalized Odds
+
+**Definition**  
+Both true positive and false positive rates are equal across groups.
+
+**Mathematical Form**  
+P(Ŷ = 1 | Y = y, A = a) = P(Ŷ = 1 | Y = y, A = b)
+
+**Philosophical Alignment**  
+Balanced error distribution.
+
+**When Appropriate**  
+- Both error types create significant harm
+- High-stakes domains
+
+**Limitations**  
+- Strong trade-offs with accuracy
+- Harder to implement
+
+---
+
+### Predictive Parity
+
+**Definition**  
+Predicted positives have equal outcome reliability across groups.
+
+**Mathematical Form**  
+P(Y = 1 | Ŷ = 1, A = a) = P(Y = 1 | Ŷ = 1, A = b)
+
+**When Appropriate**  
+- Risk scores drive downstream decisions
+- Calibration consistency is required
+
+**Limitations**  
+
+- Incompatible with equal error rates when base rates differ
+
+---
+
+### Individual Fairness
+
+**Definition**
+Similar individuals receive similar predictions.
+
+**When Appropriate**
+- Case-by-case evaluation emphasis
+- Strong procedural fairness expectations
+
+**Limitations**
+- Requires defining similarity metric
+- May preserve structural group disparities
+
+---
 
