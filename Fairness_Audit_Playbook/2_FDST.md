@@ -2,12 +2,12 @@
 
 ## 1. Introduction
 
-The Fairness Definition Selection Tool helps systematically **select appropriate fairness definitions for their AI systems** based on application context, historical patterns, stakeholder priorities, legal requirements, and technical constraints.
+The Fairness Definition Selection Tool helps teams **select appropriate fairness definitions for AI systems** based on application context, stakeholder priorities, legal requirements, and technical constraints.
 
-Because different fairness definitions reflect different philosophical principles and are often mathematically incompatible, selecting a definition is not a purely technical decision.  
-This tool ensures that fairness metric selection is explicit, justified, and documented rather than assumed or inherited from default practices.
+Because fairness definitions reflect different values and are often mathematically incompatible, choosing one is not purely a technical decision.  
+The tool ensures that fairness metric selection is explicit, justified, and documented.
 
-As the second component of the Fairness Audit Playbook, the tool is applied after the Historical Context Assessment and before model optimization.
+As the second component of the Fairness Audit Playbook, it is **applied after the Historical Context Assessment and before model optimization**.
 
 ## 2. Objectives
 - Translate abstract fairness definitions into practical selection criteria
