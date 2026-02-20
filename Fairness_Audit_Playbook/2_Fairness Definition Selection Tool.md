@@ -2,18 +2,30 @@
 
 ## 1. Introduction
 
-**The Fairness Definition Selection Tool** (FDST) is a structured methodology that helps engineering teams **select, justify, and document appropriate fairness definitions** for AI systems.
+The Fairness Definition Selection Tool helps systematically **select appropriate fairness definitions for their AI systems** based on application context, historical patterns, stakeholder priorities, legal requirements, and technical constraints.
 
-Its core purpose is to prevent two common failure modes in fairness work:
+Because different fairness definitions reflect different philosophical principles and are often mathematically incompatible, selecting a definition is not a purely technical decision.  
+This tool ensures that fairness metric selection is explicit, justified, and documented rather than assumed or inherited from default practices.
 
-**1. Metric shopping** – choosing a fairness metric because it is easy to implement rather than ethically or legally appropriate.  
-**2. False completeness** – attempting to satisfy multiple incompatible fairness definitions simultaneously, despite known impossibility results.  
+As the second component of the Fairness Audit Playbook, the tool is applied after the Historical Context Assessment and before model optimization.
 
-This tool ensures fairness evaluations:
+## 2. Objectives
+- Translate abstract fairness definitions into practical selection criteria
+- Map application characteristics to appropriate fairness definitions
+- Make fairness trade-offs explicit and documented
+- Align fairness metric selection with legal and ethical constraints
+- Provide a structured method for navigating incompatibilities
 
-- Align with historical discrimination patterns
-- Respect legal and regulatory requirements
-- Reflect stakeholder values and harm asymmetries
-- Explicitly acknowledge trade-offs and limitations.
+## 3. Tool Overview
+The Fairness Definition Selection Tool consists of four components:
+1. Fairness Definition Catalog  
+A concise reference of key fairness definitions, their mathematical formulations, philosophical foundations, and appropriate use cases.
 
-It is intended to be used before mitigation or optimization, shaping what “fairness” means for this system, in this context.
+2. Definition Selection Decision Tree  
+A structured process for mapping application context to fairness definitions.
+
+3. Trade-Off Analysis Template  
+A documentation framework for recording selection rationale and acknowledging incompatibilities.
+
+4. Applied Example  
+A worked example demonstrating tool usage for an internal loan application system.
