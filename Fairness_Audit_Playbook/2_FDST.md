@@ -35,6 +35,9 @@ Demonstrates how the tool can be implemented in a real system. (Internal loan ap
 ## 4. Fairness Definition Selection Tool
 
 ### 4.1 Fairness Definition Catalog
+
+#### Group Fairness Definitions
+
 ### Demographic Parity
 
 **Definition:** Equal probability of a positive outcome across protected groups.  
@@ -106,6 +109,7 @@ Demonstrates how the tool can be implemented in a real system. (Internal loan ap
 - May preserve structural disparities in outcomes
 
 ---
+#### Individual and Causal Fairness Definitions
 
 ### Individual Fairness
 
