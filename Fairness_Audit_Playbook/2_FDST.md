@@ -191,15 +191,29 @@ A loan decision would remain the same if the applicant’s race were hypothetica
 - **If Yes** → Include Predictive Parity or Calibration.
 - **If No** → Proceed without calibration constraint.
 
-### Step 4: Legal Requirements
+### Step 4: Individual-Level Consistency
+
+**Question**: Is treating similar individuals similarly a primary fairness concern in this domain?
+- **If Yes** → Include Individual Fairness alongside selected group definitions.
+- **If No** → Proceed without individual-level constraint.
+
+### Step 5: Causal and Structural Bias Analysis
+
+**Question**: Do protected attributes influence other features through structural or historical pathways?
+- **If Yes** → Include Counterfactual Fairness analysis or causal modeling review.
+- **If No** → Proceed with selected definitions.
+
+### Step 6: Legal Requirements
 
 **Question**: Are there domain-specific legal requirements?
-- **If Yes** → Ensure selected definitions satisfy relevant regulatory standards.
+- **If Yes** → Ensure selected definitions satisfy relevant regulatory standardsand protected attribute obligations.
+- **If No** → Proceed.
 
-### Step 5: Intersectional Considerations
+### Step 7: Intersectional Considerations
 
 **Question**: Are disparities likely at demographic intersections?
 - **If Yes** → Require intersectional fairness evaluation regardless of primary definition selected.
+- **If No** → Standard protected attribute evaluation is sufficient.
 
 ---
 
@@ -228,6 +242,55 @@ flowchart TD
     J --> L[Document Trade-offs]
     K --> L
 
+```
+
+```mermaid
+flowchart TD
+    A[Start: Define Application Context] --> B{Historical Exclusion Identified?}
+
+    B -->|Yes| C[Include Demographic Parity]
+    B -->|No| D[Proceed to Error Impact Analysis]
+    C --> D
+
+    D --> E{Which Error Is More Harmful?}
+
+    E -->|False Negatives| F[Select Equal Opportunity]
+    E -->|False Positives| G[Select Predictive Equality]
+    E -->|Both| H[Select Equalized Odds]
+
+    F --> I{Are Risk Scores Exposed?}
+    G --> I
+    H --> I
+
+    I -->|Yes| J[Add Calibration / Predictive Parity]
+    I -->|No| K[Proceed Without Calibration Constraint]
+
+    J --> L{Is Individual-Level Consistency a Priority?}
+    K --> L
+
+    L -->|Yes| M[Add Individual Fairness]
+    L -->|No| N[Proceed Without Individual Constraint]
+
+    M --> O{Structural or Causal Bias Present?}
+    N --> O
+
+    O -->|Yes| P[Add Counterfactual Fairness Analysis]
+    O -->|No| Q[Proceed]
+
+    P --> R{Legal Requirements Apply?}
+    Q --> R
+
+    R -->|Yes| S[Ensure Regulatory Compliance Alignment]
+    R -->|No| T[Proceed]
+
+    S --> U{Intersectional Disparities Likely?}
+    T --> U
+
+    U -->|Yes| V[Require Intersectional Fairness Evaluation]
+    U -->|No| W[Standard Protected Attribute Evaluation]
+
+    V --> X[Document Trade-offs and Final Selection]
+    W --> X
 ```
 ---
 
