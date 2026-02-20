@@ -55,9 +55,9 @@ Demonstrates how the tool can be implemented in a real system. (Internal loan ap
 
 ### Equal Opportunity
 
-**Definition:** Qualified individuals have equal probability of receiving a positive outcome across groups.
-**Formula:** P(Ŷ = 1 | Y = 1, A = a) = P(Ŷ = 1 | Y = 1, A = b)
-**Philosophical Basis:** Meritocratic fairness, equal treatment of the qualified.
+**Definition:** Qualified individuals have equal probability of receiving a positive outcome across groups.  
+**Formula:** P(Ŷ = 1 | Y = 1, A = a) = P(Ŷ = 1 | Y = 1, A = b)  
+**Philosophical Basis:** Meritocratic fairness, equal treatment of the qualified.  
 
 **Use When**  
 - False negatives are most harmful
