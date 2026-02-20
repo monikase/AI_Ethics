@@ -192,3 +192,32 @@ flowchart TD
 
 ```
 ---
+
+### 4.3 Trade-Off Analysis Template
+
+**Selected Primary Fairness Definition**
+[Definition Name]
+
+**Mathematical Formulation**
+
+**Rationale for Selection**
+- Historical context alignment
+- Error impact analysis
+- Stakeholder priorities
+- Legal considerations
+
+**Fairness Properties Not Satisfied**
+- List definitions deprioritized
+- Explain trade-offs
+
+**Performance Implications**
+- Expected accuracy impact
+- Operational cost impact
+
+**Monitoring Plan**
+- Primary fairness metric
+- Secondary monitoring metrics
+- Intersectional tracking
+
+---
+
