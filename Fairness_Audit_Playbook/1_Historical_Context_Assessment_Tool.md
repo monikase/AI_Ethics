@@ -2,130 +2,119 @@
 
 ## 1. Introduction
 
-The Historical Context Assessment Tool helps **identify historically rooted fairness risks before they are embedded in system design, data pipelines, or optimization goals**. By focusing on root causes such as historical power structures, institutional practices, and representational choices, it shifts fairness assessment from a post-hoc check to a foundational design practice.
+The Historical Context Assessment Tool helps teams identify fairness risks early, before they become embedded in system design, data, or optimization choices. It focuses on understanding historical patterns and structural inequalities that could shape the system.
 
-As the first component of the Fairness Audit Playbook, the tool is used prior to finalizing data collection and model training, and its outputs guide later decisions on fairness definitions, metrics, data audits, and mitigation strategies.
+As the first step in the Fairness Audit Playbook, the tool is applied before data collection and model training. Its findings guide later decisions about fairness metrics, evaluation, and mitigation strategies.
 
-## 2. Assignment Context
+## 2. Objectives
 
-An engineering team is scoping an AI-powered internal loan application system that enables users to purchase products and pay in installments.
+- Translate historical discrimination research into actionable engineering methodology
+- Map historical patterns to specific AI system risks
+- Communicate societal and historical issues to technical audiences
+- Balance analytical rigor with practical usability in business environments
 
-The team recognizes that lending-related systems are historically sensitive and has requested support in identifying fairness risks early in development. Initial discussions reveal that a purely technical audit would be insufficient without understanding the historical context of financial discrimination.
+## 3. Tool Overview
 
-I propose developing a structured tool that:
-- Guides teams through historically informed analysis
-- Translates social and historical insights into concrete technical risks
-- Fits within standard engineering workflows.  
-
-Recognizing that this challenge applies broadly across teams and domains, I formalized this approach as the Historical Context Assessment Tool (HCAT).
-
-## 3. Objectives
-
-- Translating historical discrimination research into actionable engineering methodology
-- Mapping historical patterns to specific AI system risks
-- Communicating societal and historical issues to technical audiences
-- Balancing analytical rigor with practical usability in business environments
-
-## 4. Requirements Overview
-
-The Historical Context Assessment Tool includes four components:
+The Historical Context Assessment Tool consists of four components:
 
 1. **Structured Questionnaire** - Identifies historically relevant discrimination patterns and their mechanisms.  
 2. **Risk Classification Matrix** - Prioritizes risks based on severity, likelihood, and relevance.  
-3. **User Documentation** - Guides teams on when and how to apply the tool.  
-4. **Applied Case Study** - Demonstrates use of the tool for an internal loan application system.
+3. **Usage Guide** - Explains when and how to apply the tool within development workflows.  
+4. **Applied Example** - Demonstrates how the tool can be implemented in a real system. (Internal loan application system).
 
-## 5. Historical Context Assessment Tool
+--
+
+## 4. Historical Context Assessment Tool
 
 ### 5.1 Structured Historical Context Assessment Questionnaire
 
-This questionnaire should be completed collaboratively by engineers, product owners, and (where possible) domain experts. Answers must be documented.
+This questionnaire should be completed collaboratively by engineers, product owners, and, where possible, domain experts. All responses must be documented.
 
 #### Section 1: Domain and Application Context
 
 **1.1 Application Domain Identification**
 
-- What domain does this system operate in (e.g., lending, hiring, healthcare)?
-- What specific decision or recommendation will the system produce?
-- Who benefits from correct predictions, and who is harmed by errors?
+- What domain does this system operate in (e.g., lending, hiring, healthcare)
+- What specific decision or recommendation will the system produce
+- Who benefits from correct predictions, and who is harmed by errors
 
 **1.2 Historical Discrimination in the Domain**
 
-- What documented discrimination patterns exist in this domain?
-- Explicit (e.g., redlining, exclusionary lending criteria)
-- Implicit (e.g., disparate impact through “neutral” policies)
-- Which groups were historically advantaged or disadvantaged?
+- What documented discrimination patterns exist in this domain
+- Explicit patterns such as exclusionary criteria
+- Implicit patterns such as disparate impact through neutral policies
+- Which groups were historically advantaged or disadvantaged
 
 **1.3 Institutional and Regulatory History**
 
-- How have laws, policies, or industry standards shaped outcomes in this domain?
-- Which practices were legal but discriminatory, and how might their effects persist?
+- How have laws, policies, or industry standards shaped outcomes in this domain
+- Which practices were legal but discriminatory, and how might their effects persist
 
 #### Section 2: Data and Representation Analysis
 
 **2.1 Historical Data Sources**
 
-- What historical data will inform this system (e.g., repayment data, defaults, transaction history)?
-- Who generated this data, and under what institutional conditions?
-- Which populations may be underrepresented or over-surveilled?
+- What historical data will inform this system
+- Who generated this data, and under what institutional conditions
+- Which populations may be underrepresented or over-surveilled
 
 **2.2 Category Formation**
 
-- How have key categories (e.g., creditworthiness, risk, default) been historically defined?
-- Have these definitions changed, and if so, why?
-- Do current categories reflect historical power structures?
+- How have key categories been historically defined
+- Have these definitions changed, and if so, why
+- Do current categories reflect historical power structures
 
 **2.3 Measurement and Proxies**
 
-- How were key variables historically measured?
-- Do any features function as proxies for protected attributes (e.g., ZIP code, device type)?
-- Does the meaning of these variables differ across demographic groups?
+- How were key variables historically measured
+- Do any features function as proxies for protected attributes
+- Does the meaning of these variables differ across demographic groups
 
-**2.4 Missing Data and Strategic Ignorance**
+**2.4 Missing Data and Structural Gaps**
 
-- Which groups have systematically less data?
-- Are data gaps random, or shaped by access barriers and institutional neglect?
-- How might missingness itself encode historical bias?
+- Which groups have systematically less data
+- Are data gaps random or shaped by institutional barriers
+- How might missingness encode historical bias
 
 #### Section 3: Technology Transition and Amplification
 
 **3.1 Prior Technological Systems**
 
-- What non-AI systems previously served this function?
-- How did those systems reinforce or mitigate inequities?
+- What non-AI systems previously served this function
+- How did those systems reinforce or mitigate inequities
 
 **3.2 Automation and Scale Effects**
 
-- How might automation amplify historical bias compared to human decision-making?
-- Does this system reduce discretion or conceal it behind technical abstraction?
+- How might automation amplify historical bias
+- Does this system reduce discretion or conceal value judgments behind technical abstraction
 
 **3.3 Feedback Loop Risks**
 
-- Will system outputs influence future data collection?
-- Could disparities compound over time through self-reinforcing cycles?
+- Will system outputs influence future data collection
+- Could disparities compound over time through self-reinforcing cycles
 
 #### Section 4: Intersectionality and Differential Impact
 
 **4.1 Intersectional Risk Identification**
 
-- Which groups experience compounded marginalization in this domain?
-- Would single-attribute analysis miss these risks?
+- Which groups experience compounded marginalization
+- Would single-attribute analysis miss these risks
 
 **4.2 Representation at Intersections**
 
-- Are intersectional groups sufficiently represented in data?
-- How confident are we in performance estimates for these groups?
+- Are intersectional groups sufficiently represented in data
+- How confident are we in performance estimates for these groups
 
 ### 5.2 Historical Context Risk Classification Matrix
 
-Each identified historical pattern is evaluated using the following dimensions:
+Each identified historical pattern is evaluated using three dimensions:
 
 **Matrix Dimensions**  
 **Severity (1–3)**
 
-- 3 (High): Impacts fundamental rights, access to credit, liberty, or life outcomes
+- 3 (High): Impacts fundamental rights or major life outcomes
 - 2 (Medium): Produces significant opportunity or resource disparities
-- 1 (Low): Produces differential experience with limited material harm
+- 1 (Low): Produces limited material harm
 
 **Likelihood (1–3)**
 
@@ -143,11 +132,23 @@ Each identified historical pattern is evaluated using the following dimensions:
 
 **Priority Interpretation**
 
-- 7–9 – Critical: Requires immediate mitigation before deployment.
-- 5–6 – High: Requires mitigation before or shortly after launch.
-- 3–4 – Medium: Requires monitoring and periodic review.
-- 1–2 – Low: Documented for awareness; no immediate action required.
+- 7–9 – Critical: Requires immediate mitigation before deployment
+- 5–6 – High: Requires mitigation before or shortly after launch
+- 3–4 – Medium: Requires monitoring and periodic review
+- 1–2 – Low: Documented for awareness. No immediate action required.
 
+Methodology Example Matrix
+
+| Historical Pattern                             | Severity (1–3) | Likelihood (1–3) | Relevance (1–3) | Priority Score | Priority Level |
+|------------------------------------------------|----------|------------|------------|----------------|----------------|
+| Geographic exclusion in service allocation     | 3        | 3          | 3          | 9              | Critical       |
+| Proxy discrimination via location data         | 3        | 3          | 3          | 9              | Critical       |
+| Bias against non-traditional employment types  | 2        | 2          | 2          | 8              | High           |
+| Underrepresentation in training data           | 2        | 2          | 3          | 12             | Critical       |
+| Language-based exclusion in user interface     | 2        | 2          | 1          | 4              | Medium         |
+
+
+--
 
 Example Historical Pattern Risk Classification Table
 
@@ -160,6 +161,7 @@ Example Historical Pattern Risk Classification Table
 | Age-based exclusion in lending products        | 2             | 2                | 1                | 4              | Medium         |
 | Linguistic bias against non-native speakers    | 2             | 2                | 1                | 4              | Medium         |
 | Religious bias in financial risk profiling     | 2             | 1                | 1                | 2              | Low            |
+
 
 ### 5.3 Usage Guide
 
@@ -188,6 +190,19 @@ Example Historical Pattern Risk Classification Table
 
 HCAT outputs become inputs to later fairness audits.  
 
+
+## 2. Assignment Context
+
+An engineering team is scoping an AI-powered internal loan application system that enables users to purchase products and pay in installments.
+
+The team recognizes that lending-related systems are historically sensitive and has requested support in identifying fairness risks early in development. Initial discussions reveal that a purely technical audit would be insufficient without understanding the historical context of financial discrimination.
+
+I propose developing a structured tool that:
+- Guides teams through historically informed analysis
+- Translates social and historical insights into concrete technical risks
+- Fits within standard engineering workflows.  
+
+Recognizing that this challenge applies broadly across teams and domains, I formalized this approach as the Historical Context Assessment Tool (HCAT).
 
 ## 6. Case Study: Internal Loan Application System
 
