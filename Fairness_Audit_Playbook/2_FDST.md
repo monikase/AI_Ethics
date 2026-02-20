@@ -136,8 +136,7 @@ Similar individuals receive similar predictions.
 
 ### Step 1: Historical Context Alignment
 
-**Question**  
-- Did the Historical Context Assessment reveal systemic exclusion or underrepresentation?
+- **Question**: Did the Historical Context Assessment reveal systemic exclusion or underrepresentation?
   - **Yes** → Include Demographic Parity as either a primary or secondary fairness definition.
   - **No** → Proceed to Step 2.   
 
