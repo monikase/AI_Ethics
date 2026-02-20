@@ -110,7 +110,7 @@ Intersectional groups may have limited representation in training data, reducing
 
 ---
 
-## 3. Applied Risk Classification Matrix
+## 4. Applied Risk Classification Matrix
 
 
 | Historical Pattern                              | Severity | Likelihood | Relevance | Priority Score | Priority Level |
@@ -123,7 +123,7 @@ Intersectional groups may have limited representation in training data, reducing
 
 ---
 
-## 4. Resulting Design Decisions
+## 5. Resulting Design Decisions
 
 Based on the matrix scoring, the team implemented the following changes before model training:
 - Removed ZIP code from feature set
