@@ -355,38 +355,58 @@ Multiple complementary definitions may be selected depending on domain risk and 
 
 ---
 
-#### Step 1: Complete Historical Context Assessment
-- Identify structural inequalities, historical exclusion patterns, and relevant protected attributes.
+### Step 1 — Historical Context
+Identify:
+- Structural inequalities  
+- Historical exclusion patterns  
+- Relevant protected attributes  
 
-#### Step 2: Analyze Error Harm
-- Determine whether false positives, false negatives, or both create greater harm.  
-- Use this analysis to select the primary group fairness definition.
+### Step 2 — Error Harm Analysis
+Determine:
+- Are false positives more harmful?
+- Are false negatives more harmful?
+- Are both critical?
 
-#### Step 3: Evaluate Score Exposure
-- If probabilistic scores are exposed to users or downstream systems, include calibration or predictive parity considerations.
+Use this assessment to select the **primary group fairness definition**.
 
-#### Step 4: Verify Legal Requirements
-- Ensure selected fairness definitions align with relevant regulatory frameworks and protected attribute obligations.
+### Step 3 — Score Exposure Review
+If probabilistic risk scores are:
+- Exposed to users  
+- Used by downstream systems  
 
-#### Step 5: Assess Individual-Level Fairness Needs
-- Determine whether treating similar individuals similarly is central in this domain.  
-- If yes, include Individual Fairness alongside group-level metrics.
+→ Include **Calibration / Predictive Parity** considerations.
 
-#### Step 6: Conduct Structural and Causal Bias Review
-- Assess whether protected attributes influence other features through historical or structural pathways.  
-- If yes, include Counterfactual Fairness analysis or causal modeling.
+### Step 4 — Legal Compliance Check
+Verify that selected fairness definitions:
+- Align with relevant regulatory frameworks  
+- Cover required protected attributes  
+- Satisfy domain-specific obligations  
 
-#### Step 7: Perform Intersectional Evaluation
-- Assess fairness across intersections of protected attributes, not only single categories.
+### Step 5 — Individual-Level Consistency
+Assess whether:
+- Treating similar individuals similarly is a central fairness concern.
 
-#### Step 8: Document Trade-Offs
-- Explicitly document:
-  - Mathematical incompatibilities
-  - Rationale for prioritization
-  - Definitions not selected
-  - Anticipated impacts on stakeholders
+If yes → Include **Individual Fairness** alongside group-level definitions.
+
+### Step 6 — Structural and Causal Bias Review
+Evaluate whether:
+- Protected attributes influence other features through structural or historical pathways.
+
+If yes → Include **Counterfactual Fairness analysis** or causal modeling review.  
+
+### Step 7 — Intersectional Evaluation
+Assess fairness across:
+- Intersections of protected attributes  
+- Not only single demographic categories 
+
+### Step 8 — Trade-Off Documentation
+Explicitly document:
+- Mathematical incompatibilities  
+- Rationale for prioritization  
+- Definitions not selected  
+- Anticipated impacts on stakeholders  
  
-All decisions must be explicitly justified and documented.
+All fairness decisions must be **explicitly justified, documented, and reviewable**.
 
 ---
 
