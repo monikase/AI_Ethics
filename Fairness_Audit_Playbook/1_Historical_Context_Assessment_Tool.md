@@ -186,8 +186,9 @@ Each identified historical pattern is evaluated using three dimensions:
   - Evaluation design
   - Monitoring plans  
 
-Historical Context Assessment Tool outputs become inputs to later fairness audits.  
+Historical Context Assessment Tool **outputs become inputs to later fairness audits**.  
 
+---
 
 # Appendix A: Applied Example
 ### Internal Loan Application System
