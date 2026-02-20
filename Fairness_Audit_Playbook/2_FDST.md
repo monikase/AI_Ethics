@@ -130,7 +130,7 @@ Demonstrates how the tool can be implemented in a real system. (Internal loan ap
 ### Step 1: Historical Context Alignment
 
 **Question**: Did the Historical Context Assessment reveal systemic exclusion or underrepresentation?
-- **If Yes** → Include Demographic Parity as either a primary or secondary fairness definition.
+- **If Yes** → Include Demographic Parity as either a primary or secondary fairness definition. Then proceed to Step 2.
 - **If No** → Proceed to Step 2.   
 
 ### Step 2: Error Impact Assessment
