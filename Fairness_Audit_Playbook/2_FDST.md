@@ -221,3 +221,18 @@ flowchart TD
 
 ---
 
+### 4.4 Usage Guide
+
+Step 1
+Review outputs from Historical Context Assessment Tool.
+
+Step 2
+Complete decision tree collaboratively with engineering, product, and compliance stakeholders.
+
+Step 3
+Document trade-offs using template.
+
+Step 4
+Integrate selected fairness definitions into model training and evaluation.
+
+Outputs from FDST guide fairness metric implementation and mitigation strategies.
