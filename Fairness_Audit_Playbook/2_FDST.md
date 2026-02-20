@@ -138,12 +138,8 @@ Similar individuals receive similar predictions.
 
 **Question**  
 - Did the Historical Context Assessment reveal systemic exclusion or underrepresentation?
-
-**If yes**  
-- Include Demographic Parity as either a primary or secondary fairness definition.
-
-**If no**  
-- Proceed to Step 2.
+  - **Yes** → Include Demographic Parity as either a primary or secondary fairness definition.
+  - **No** → Proceed to Step 2.   
 
 ```
 **Question**  
