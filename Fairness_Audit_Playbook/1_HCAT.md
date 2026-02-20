@@ -147,9 +147,7 @@ Each identified historical pattern is evaluated using three dimensions:
   - 3–4 – Medium: Requires monitoring and periodic review
   - 1–2 – Low: Documented for awareness. No immediate action required.
 
----
-
-### \* *Example Matrix Application*
+### 4.2.1 Example Matrix Application
 
 | Historical Pattern                             | Severity (1–3) | Likelihood (1–3) | Relevance (1–3) | Priority Score | Priority Level |
 |------------------------------------------------|----------|------------|------------|----------------|----------------|
