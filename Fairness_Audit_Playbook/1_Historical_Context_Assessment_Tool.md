@@ -79,7 +79,7 @@ All responses must be documented.
 - Are data gaps random or shaped by institutional barriers
 - How might missingness encode historical bias
 
-#### Section 3: Technology Transition and Amplification
+### Section 3: Technology Transition and Amplification
 
 **3.1 Prior Technological Systems**
 
@@ -96,7 +96,7 @@ All responses must be documented.
 - Will system outputs influence future data collection
 - Could disparities compound over time through self-reinforcing cycles
 
-#### Section 4: Intersectionality and Differential Impact
+### Section 4: Intersectionality and Differential Impact
 
 **4.1 Intersectional Risk Identification**
 
@@ -151,7 +151,7 @@ Methodology Example Matrix
 | Language-based exclusion in user interface     | 2        | 2          | 1          | 4              | Medium         |
 
 
-### 5.3 Usage Guide
+### 6. Usage Guide
 
 **Step 1: Domain Research (1–2 hours)**
 
