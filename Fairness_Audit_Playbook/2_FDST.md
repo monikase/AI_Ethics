@@ -125,19 +125,38 @@ Demonstrates how the tool can be implemented in a real system. (Internal loan ap
 
 ---
 
+### Counterfactual Fairness
+
+**Definition:** A prediction is fair if it would remain the same for an individual in a hypothetical world where their protected attribute were different, while all other relevant factors remain unchanged.  
+**Core Idea:** The outcome should not change solely because a protected attribute changes in a counterfactual scenario.  
+**Philosophical Basis:** Causal fairness, protection against discrimination through indirect pathways  
+
+**Use When**
+- Protected attributes influence other features through historical or structural bias
+- Understanding causal relationships is important
+- Group-level metrics are insufficient to capture fairness concerns
+- Decisions have high individual-level impact
+
+**Limitations**
+- Requires building a causal model
+- Complex to implement and validate
+- Depends on assumptions about which causal pathways are legitimate
+
+---
+
 ### 4.2 Definition Selection Decision Tree
 
 ### Step 1: Historical Context Alignment
 
 **Question**: Did the Historical Context Assessment reveal systemic exclusion or underrepresentation?
-- **If Yes** → Include Demographic Parity as either a primary or secondary fairness definition. Then proceed to Step 2.
+- **If Yes** → Include demographic parity as a required fairness definition. Then proceed to Step 2.
 - **If No** → Proceed to Step 2.   
 
 ### Step 2: Error Impact Assessment
 
 **Question**: Which error type causes greater harm?
-- **If false negatives are more harmful** → Prioritize Equal Opportunity.
-- **If false positives are more harmful** → Prioritize Predictive Equality.
+- **If false negatives(FN) are more harmful** → Prioritize Equal Opportunity.
+- **If false positives(FP) are more harmful** → Prioritize Predictive Equality.
 - **If both are critical** → Prioritize Equalized Odds.
 
 ### Step 3: Score Exposure and Calibration
