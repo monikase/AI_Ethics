@@ -136,62 +136,62 @@ Similar individuals receive similar predictions.
 
 ### Step 1: Historical Context Alignment
 
-Question  
+**Question**  
 Did the Historical Context Assessment reveal systemic exclusion or underrepresentation?
 
-If yes  
+**If yes**  
 Include Demographic Parity as either a primary or secondary fairness definition.
 
-If no  
+**If no**  
 Proceed to Step 2.  
 
 ---
 
 ### Step 2: Error Impact Assessment
 
-Question  
+**Question**  
 Which error type causes greater harm?
 
-If false negatives are more harmful  
+**If false negatives are more harmful**  
 Prioritize Equal Opportunity.
 
-If false positives are more harmful  
+**If false positives are more harmful**  
 Prioritize Predictive Equality.
 
-If both are critical  
+**If both are critical**  
 Prioritize Equalized Odds.
 
 ---
 
 ### Step 3: Score Exposure and Calibration
 
-Question  
+**Question**  
 Are probabilistic scores exposed to users or downstream systems?
 
-If yes  
+**If yes**  
 Include Predictive Parity or Calibration.
 
-If no  
+**If no**  
 Proceed without calibration constraint.
 
 ---
 
 ### Step 4: Legal Requirements
 
-Question  
+**Question**  
 Are there domain-specific legal requirements?
 
-If yes  
+**If yes**  
 Ensure selected definitions satisfy relevant regulatory standards.
 
 ---
 
 ### Step 5: Intersectional Considerations
 
-Question  
+**Question**  
 Are disparities likely at demographic intersections?
 
-If yes  
+**If yes**  
 Require intersectional fairness evaluation regardless of primary definition selected.
 
 ---
