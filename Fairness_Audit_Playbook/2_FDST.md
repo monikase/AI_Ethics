@@ -137,57 +137,39 @@ Similar individuals receive similar predictions.
 ### Step 1: Historical Context Alignment
 
 - **Question**: Did the Historical Context Assessment reveal systemic exclusion or underrepresentation?
-  - **Yes** → Include Demographic Parity as either a primary or secondary fairness definition.
-  - **No** → Proceed to Step 2.   
+  - **If Yes** → Include Demographic Parity as either a primary or secondary fairness definition.
+  - **If No** → Proceed to Step 2.   
 
 ---
 
 ### Step 2: Error Impact Assessment
 
-**Question**  
-Which error type causes greater harm?
-
-**If false negatives are more harmful**  
-Prioritize Equal Opportunity.
-
-**If false positives are more harmful**  
-Prioritize Predictive Equality.
-
-**If both are critical**  
-Prioritize Equalized Odds.
+- **Question**: Which error type causes greater harm?
+    - **If false negatives are more harmful** → Prioritize Equal Opportunity.
+    - **If false positives are more harmful** → Prioritize Predictive Equality.
+    - **If both are critical** → Prioritize Equalized Odds.
 
 ---
 
 ### Step 3: Score Exposure and Calibration
 
-**Question**  
-Are probabilistic scores exposed to users or downstream systems?
-
-**If yes**  
-Include Predictive Parity or Calibration.
-
-**If no**  
-Proceed without calibration constraint.
+- **Question**: Are probabilistic scores exposed to users or downstream systems?
+    - **If Yes** → Include Predictive Parity or Calibration.
+    - **If No** → Proceed without calibration constraint.
 
 ---
 
 ### Step 4: Legal Requirements
 
-**Question**  
-Are there domain-specific legal requirements?
-
-**If yes**  
-Ensure selected definitions satisfy relevant regulatory standards.
+- **Question**: Are there domain-specific legal requirements?
+    - **If yes** → Ensure selected definitions satisfy relevant regulatory standards.
 
 ---
 
 ### Step 5: Intersectional Considerations
 
-**Question**  
-Are disparities likely at demographic intersections?
-
-**If yes**  
-Require intersectional fairness evaluation regardless of primary definition selected.
+- **Question**: Are disparities likely at demographic intersections?
+    - **If yes** → Require intersectional fairness evaluation regardless of primary definition selected.
 
 
 ```mermaid
