@@ -2,7 +2,7 @@
 
 ## 1. Introduction
 
-The Historical Context Assessment Tool helps teams identify fairness risks early, before they become embedded in system design, data, or optimization choices. It focuses on understanding historical patterns and structural inequalities that could shape the system.
+The Historical Context Assessment Tool helps teams **identify fairness risks early, before they become embedded in system design**, data, or optimization choices. It focuses on understanding historical patterns and structural inequalities that could shape the system.
 
 As the first step in the Fairness Audit Playbook, the tool is applied before data collection and model training. Its findings guide later decisions about fairness metrics, evaluation, and mitigation strategies.
 
