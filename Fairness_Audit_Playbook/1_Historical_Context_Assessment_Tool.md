@@ -52,7 +52,7 @@ All responses must be documented.
 - How have laws, policies, or industry standards shaped outcomes in this domain
 - Which practices were legal but discriminatory, and how might their effects persist
 
----
+----
 
 ### Section 2: Data and Representation Analysis
 
