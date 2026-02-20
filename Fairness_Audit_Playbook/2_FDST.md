@@ -56,6 +56,10 @@ Demonstrates how the tool can be implemented in a real system. (Internal loan ap
 - Ignores qualification differences  
 - Often incompatible with calibration when base rates differ  
 
+**Example:**  
+A loan system approves applicants from different demographic groups at equal rates to counteract historical under-lending, regardless of differing historical default rates.
+
+
 ---
 
 ### 2. Equal Opportunity
@@ -64,16 +68,19 @@ Demonstrates how the tool can be implemented in a real system. (Internal loan ap
 **Formula:** P(Ŷ = 1 | Y = 1, A = a) = P(Ŷ = 1 | Y = 1, A = b)  
 **Philosophical Basis:** Meritocratic fairness, equal treatment of the qualified.  
 
-**Use When**  
+**Use When:**  
 - False negatives are most harmful
 - Historical bias denied qualified individuals access
 - Ground truth labels are reasonably reliable  
   *(The data used to define who is truly qualified or successful is accurate and not strongly influenced by past bias or unfair conditions.)*
 
-**Limitations**  
+**Limitations:**  
 - Does not constrain false positive disparities
 - Depends on trustworthy ground truth
 - May conflict with predictive parity
+
+**Example:**  
+A lending system ensures that applicants who would repay their loans have equal approval rates across demographic groups.
 
 ---
 
@@ -83,14 +90,17 @@ Demonstrates how the tool can be implemented in a real system. (Internal loan ap
 **Formula:** P(Ŷ = 1 | Y = y, A = a) = P(Ŷ = 1 | Y = y, A = b) for y ∈ {0,1}  
 **Philosophical Basis:** Balanced error distribution across groups.   
 
-**Use When**  
+**Use When:**  
 - Both error types create significant harm
 - High-stakes decisions require balanced protection
 
-**Limitations**  
+**Limitations:**  
 - Strong trade-offs with accuracy
 - Harder to implement
-- Often incompatible with calibration when base rates differ  
+- Often incompatible with calibration when base rates differ
+
+**Example:**  
+A loan model ensures that both wrongly rejecting qualified applicants and wrongly approving risky applicants happen at similar rates across demographic groups.
 
 ---
 
@@ -100,15 +110,18 @@ Demonstrates how the tool can be implemented in a real system. (Internal loan ap
 **Formula:** P(Y = 1 | Ŷ = 1, A = a) = P(Y = 1 | Ŷ = 1, A = b)  
 **Philosophical Basis:** Consistent meaning of risk scores  
 
-**Use When**  
+**Use When:**  
 - Risk scores drive downstream decisions
 - Financial, insurance, or scoring systems require calibration
 - Interpretability of scores is important
 
-**Limitations**  
+**Limitations:**  
 
 - Incompatible with equal error rates when base rates differ
 - May preserve structural disparities in outcomes
+
+**Example:** 
+If a loan system predicts “low default risk,” that prediction should correspond to the same actual repayment rate across demographic groups.
 
 ---
 #### Individual and Causal Fairness Definitions
@@ -120,15 +133,18 @@ Demonstrates how the tool can be implemented in a real system. (Internal loan ap
 **Core Idea:** Differences in outcomes must be justified by relevant differences in features.  
 **Philosophical Basis:** Procedural fairness, treatment consistency  
 
-**Use When**
+**Use When:**
 - Case-by-case evaluation is central
 - Strong procedural fairness expectations
 - Group-level parity may be inappropriate
 
-**Limitations**
+**Limitations:**
 - Requires defining similarity metric
 - May preserve group disparities
 - Hard to operationalize in complex domains
+
+**Example:**  
+Two loan applicants with nearly identical financial profiles should receive similar approval decisions, regardless of demographic background.
 
 ---
 
@@ -138,16 +154,19 @@ Demonstrates how the tool can be implemented in a real system. (Internal loan ap
 **Core Idea:** The outcome should not change solely because a protected attribute changes in a counterfactual scenario.  
 **Philosophical Basis:** Causal fairness, protection against discrimination through indirect pathways  
 
-**Use When**
+**Use When:**
 - Protected attributes influence other features through historical or structural bias
 - Understanding causal relationships is important
 - Group-level metrics are insufficient to capture fairness concerns
 - Decisions have high individual-level impact
 
-**Limitations**
+**Limitations:**
 - Requires building a causal model
 - Complex to implement and validate
 - Depends on assumptions about which causal pathways are legitimate
+
+**Example:**  
+A loan decision would remain the same if the applicant’s race were hypothetically different, assuming income, employment, and other legitimate factors remained unchanged.
 
 ---
 
