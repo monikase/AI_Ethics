@@ -124,20 +124,20 @@ All responses must be documented.
 
 Each identified historical pattern is evaluated using three dimensions:
  
-- **Severity (1–3)**
-  - 3 (High): Impacts fundamental rights or major life outcomes
-  - 2 (Medium): Produces significant opportunity or resource disparities
-  - 1 (Low): Produces limited material harm
+- **Severity: Impact of this bias if perpetuated (1–3)**
+  - 3 (High): Directly impacts fundamental rights or life outcomes.
+  - 2 (Medium): Creates significant disparities in opportunities or resources.
+  - 1 (Low): Creates differential experiences but with limited material impact.
 
-- **Likelihood (1–3)**
-  - 3 (High): Frequently appears in similar systems
-  - 2 (Medium): Occasionally appears
-  - 1 (Low): Rarely appears
+- **Likelihood: Probability of this pattern manifesting in AI systems (1–3)**
+  - 3 (High): Frequently appears in similar systems.
+  - 2 (Medium): Occasionally appears.
+  - 1 (Low): Rarely appears.
 
-- **Relevance (1–3)**
-  - 3 (High): Directly applies to system’s core function
-  - 2 (Medium): Applies to specific components
-  - 1 (Low): Indirect or contextual relevance
+- **Relevance: Applicability to the specific AI system being developed (1–3)**
+  - 3 (High): Direct applicability to system's domain/purpose.
+  - 2 (Medium): Partial applicability to certain system components.
+  - 1 (Low): Limited applicability but potential for manifestation.
 
 **Priority Score = Severity + Likelihood + Relevance**
 
@@ -150,7 +150,7 @@ Each identified historical pattern is evaluated using three dimensions:
 
 ---
 
-**Methodology Example Matrix**
+### *Methodology Example Matrix*
 
 | Historical Pattern                             | Severity (1–3) | Likelihood (1–3) | Relevance (1–3) | Priority Score | Priority Level |
 |------------------------------------------------|----------|------------|------------|----------------|----------------|
