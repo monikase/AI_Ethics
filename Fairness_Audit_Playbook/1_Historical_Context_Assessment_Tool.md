@@ -70,6 +70,7 @@ All responses must be documented.
 
 - How were key variables historically measured
 - Do any features function as proxies for protected attributes
+  (Whether seemingly neutral variables may still encode sensitive or historically disadvantaged group information)
 - Does the meaning of these variables differ across demographic groups
 
 **2.4 Missing Data and Structural Gaps**
