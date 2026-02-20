@@ -55,7 +55,7 @@ Key categories such as “creditworthiness” and “risk” have historically r
 - Formal income documentation
 - Existing credit history
 
-These definitions may disadvantage gig workers, informal workers, migrants, and younger applicants.
+These definitions may disadvantage self-employed individuals, freelance or platform-based workers, informal workers, migrants, and younger applicants.
 
 #### 2.3 Measurement and Proxies
 Potential proxy features include:
