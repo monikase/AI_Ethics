@@ -115,11 +115,11 @@ Intersectional groups may have limited representation in training data, reducing
 
 | Historical Pattern                              | Severity | Likelihood | Relevance | Priority Score | Priority Level |
 |-------------------------------------------------|----------|------------|------------|----------------|----------------|
-| Redlining legacy effects                        | 3        | 3          | 3          | 27             | Critical       |
-| Proxy discrimination via ZIP code               | 3        | 3          | 3          | 27             | Critical       |
-| Historical repayment data shaped by access bias | 3        | 2          | 3          | 18             | High           |
-| Credit invisibility for marginalized users      | 2        | 3          | 3          | 18             | High           |
-| Intersectional underrepresentation              | 2        | 2          | 2          | 8              | Medium         |
+| Redlining legacy effects                        | 3        | 3          | 3          | 9             | Critical       |
+| Proxy discrimination via ZIP code               | 3        | 3          | 3          | 9             | Critical       |
+| Historical repayment data shaped by access bias | 3        | 2          | 3          | 8             | High           |
+| Credit invisibility for marginalized users      | 2        | 3          | 3          | 8             | High           |
+| Intersectional underrepresentation              | 2        | 2          | 2          | 6              | Medium         |
 
 ---
 
