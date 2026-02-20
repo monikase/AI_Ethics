@@ -2,7 +2,7 @@
 
 ## 1. Introduction
 
-The Fairness Definition Selection Tool helps teams **select appropriate fairness definitions for AI systems** based on application context, stakeholder priorities, legal requirements, and technical constraints.
+The Fairness Definition Selection Tool helps teams **select appropriate fairness definitions for AI systems** based on application context, historical patterns, stakeholder priorities, legal requirements, and technical constraints.
 
 Because fairness definitions reflect different values and are often mathematically incompatible, choosing one is not purely a technical decision.  
 The tool ensures that fairness metric selection is explicit, justified, and documented.
@@ -191,23 +191,23 @@ A loan decision would remain the same if the applicant’s race were hypothetica
 - **If Yes** → Include Predictive Parity or Calibration.
 - **If No** → Proceed without calibration constraint.
 
-### Step 4: Individual-Level Consistency
+### Step 4: Legal Requirements
+
+**Question**: Are there domain-specific legal requirements?
+- **If Yes** → Ensure selected definitions satisfy relevant regulatory standards and protected attribute obligations.
+- **If No** → Proceed.
+
+### Step 5: Individual-Level Consistency
 
 **Question**: Is treating similar individuals similarly a primary fairness concern in this domain?
 - **If Yes** → Include Individual Fairness alongside selected group definitions.
 - **If No** → Proceed without individual-level constraint.
 
-### Step 5: Causal and Structural Bias Analysis
+### Step 6: Causal and Structural Bias Analysis
 
 **Question**: Do protected attributes influence other features through structural or historical pathways?
 - **If Yes** → Include Counterfactual Fairness analysis or causal modeling review.
 - **If No** → Proceed with selected definitions.
-
-### Step 6: Legal Requirements
-
-**Question**: Are there domain-specific legal requirements?
-- **If Yes** → Ensure selected definitions satisfy relevant regulatory standardsand protected attribute obligations.
-- **If No** → Proceed.
 
 ### Step 7: Intersectional Considerations
 
@@ -240,22 +240,22 @@ flowchart TD
     I -->|Yes| J[Add Calibration / Predictive Parity]
     I -->|No| K[Proceed Without Calibration Constraint]
 
-    J --> L{Is Individual-Level Consistency a Priority?}
+    J --> L{Domain-Specific Legal Requirements?}
     K --> L
 
-    L -->|Yes| M[Add Individual Fairness]
-    L -->|No| N[Proceed Without Individual Constraint]
+    L -->|Yes| M[Ensure Regulatory Alignment]
+    L -->|No| N[Proceed]
 
-    M --> O{Structural or Causal Bias Present?}
+    M --> O{Is Individual-Level Consistency a Priority?}
     N --> O
 
-    O -->|Yes| P[Add Counterfactual Fairness Analysis]
-    O -->|No| Q[Proceed]
+    O -->|Yes| P[Add Individual Fairness]
+    O -->|No| Q[Proceed Without Individual Constraint]
 
-    P --> R{Legal Requirements Apply?}
+    P --> R{Structural or Causal Bias Present?}
     Q --> R
 
-    R -->|Yes| S[Ensure Regulatory Compliance Alignment]
+    R -->|Yes| S[Add Counterfactual Fairness Analysis]
     R -->|No| T[Proceed]
 
     S --> U{Intersectional Disparities Likely?}
@@ -264,7 +264,7 @@ flowchart TD
     U -->|Yes| V[Require Intersectional Fairness Evaluation]
     U -->|No| W[Standard Protected Attribute Evaluation]
 
-    V --> X[Document Trade-offs and Final Selection]
+    V --> X[Document Trade-offs and Final Definition Selection]
     W --> X
 ```
 
@@ -299,12 +299,12 @@ flowchart TD
 
 Rationale for inclusion of secondary definitions:
 
-### 3. Error Harm Analysis
+### 4. Error Harm Analysis
 - Which error type is most harmful? ☐ FN ☐ FP ☐ Both
 - Explanation of harm asymmetry:
 - How this influenced fairness definition selection:
 
-### 4. Trade-Off Documentation
+### 5. Trade-Off Documentation
 
 **Known Mathematical Tensions Identified:**
 - (e.g., Equal Opportunity vs Calibration)
@@ -318,22 +318,22 @@ Rationale for inclusion of secondary definitions:
 - Operational impact:
 - Stakeholder impact:
 
-### 5. Legal and Regulatory Alignment
+### 6. Legal and Regulatory Alignment
 - Relevant laws or regulations:
 - Does selected definition align with legal standards? ☐ Yes ☐ No
 - Compliance considerations:
 
-### 6. Individual-Level and Causal Review
+### 7. Individual-Level and Causal Review
 - Was individual-level consistency a concern? ☐ Yes ☐ No
 - Was structural or causal bias identified? ☐ Yes ☐ No
 - If yes, how addressed:
 
-### 7. Intersectional Evaluation
+### 8. Intersectional Evaluation
 - Were intersectional disparities assessed? ☐ Yes ☐ No
 - Key findings:
 - Mitigation steps (if needed):
 
-### 8. Monitoring Plan
+### 9. Monitoring Plan
 - Metrics to be tracked:
 - Frequency of review:
 - Responsible team:
@@ -343,7 +343,8 @@ Rationale for inclusion of secondary definitions:
 
 ### 4.4 Usage Guide
 
-The Fairness Definition Selection Tool should be applied after completing the Historical Context Assessment and before model optimization.
+The Fairness Definition Selection Tool should be applied after completing the Historical Context Assessment and before model optimization.  
+The tool does not assume that a single fairness definition is sufficient; multiple complementary definitions may be selected depending on domain risk.
 
 #### Step 1: Complete Historical Context Assessment
 - Identify structural inequalities, historical exclusion patterns, and relevant protected attributes.
