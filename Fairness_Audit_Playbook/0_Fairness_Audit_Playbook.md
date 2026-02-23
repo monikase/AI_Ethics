@@ -1,5 +1,5 @@
 # Fairness Audit Playbook
-Organizational Framework for Systematic AI Fairness Evaluation
+### Organizational Framework for Systematic AI Fairness Evaluation
 
 ## Executive Summary
 
