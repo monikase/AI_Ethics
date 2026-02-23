@@ -1,70 +1,70 @@
 # Fairness Audit Playbook
 ### Organizational Framework for Systematic AI Fairness Evaluation
 
-The Fairness Audit Playbook is a structured, end-to-end framework for systematically evaluating and managing fairness risks in AI systems. It integrates:
+## 1. Introduction
 
-- Historical analysis (HCAT)
-- Fairness definition selection (FDST)
-- Bias source identification (BSIT)
-- Statistically validated metrics (FMT)
+AI systems increasingly influence decisions across domains such as finance, hiring, healthcare, and risk assessment. However, fairness evaluation often occurs inconsistently across teams. Definitions remain implicit, bias sources are not systematically mapped, intersectional risks are overlooked, and statistical validation is uneven.
 
-into a unified workflow that engineering teams can apply consistently across projects.
+As a result, fairness assessments become reactive rather than structured, creating:
 
-In many organizations, fairness assessments are inconsistent. Definitions remain implicit, methods vary across teams, and mitigation is often reactive rather than systematic. This creates:
-
-- Regulatory exposure
+-Regulatory and compliance exposure
 - Reputational risk
 - Technical debt
-- Inconsistent fairness standards
+- Inconsistent engineering practices
+- Weak accountability for fairness outcomes
 
-The Playbook addresses these challenges by enabling engineering teams to:
+The **Fairness Audit Playbook** addresses this challenge by providing a standardized, end-to-end framework for evaluating and managing fairness risks in AI systems.
 
-- Identify structural and historical risk factors
-- Select fairness definitions explicitly
-- Map bias sources
-- Quantitatively measure and validate disparities
-- Document mitigation decisions
-- Establish continuous monitoring
+It integrates four structured components:
 
-It is adaptable across domains, model types (classification, regression, ranking), and risk levels. Most teams can apply it independently, with fairness specialists supporting high-risk or complex systems.
+1. Historical Context Assessment
+2. Fairness Definition Selection
+3. Bias Source Identification
+4. Fairness Metrics Implementation & Validation
 
----
+Together, these components create a cohesive workflow that ensures fairness is:
 
-# 1. Problem Statement
+- Conceptually grounded
+- Quantitatively validated
+- Intersectionally evaluated
+- Explicitly documented
+- Continuously monitored
 
-Our AI systems operate in domains such as finance, hiring, healthcare, and risk assessment.
-
-Across these systems:
-
-- Historical inequities may be embedded in data
-- Fairness definitions are often implicit
-- Bias sources are not systematically mapped
-- Metrics are inconsistently applied
-- Intersectional risks are under-evaluated
-- Statistical uncertainty is rarely documented
-
-Without a unified framework, fairness becomes reactive rather than systematic.
-
-The Fairness Audit Playbook solves this by integrating four structured components into a cohesive workflow.
+The Playbook is adaptable across domains, model types (classification, regression, ranking), and risk levels. Most teams can apply it independently, with fairness specialists supporting high-risk or complex systems.
 
 ---
 
-# 2. Playbook Overview
+## 2. Playbook Overview
 
 The Playbook consists of four integrated components:
 
-1. Historical Context Assessment  
-2. Fairness Definition Selection  
-3. Bias Source Identification  
-4. Fairness Metrics Implementation & Validation  
+1. Historical Context Assessment Tool (HCAT) 
+2. Fairness Definition Selection Tool (FDST)
+3. Bias Source Identification Tool (BSIT)
+4. Fairness Metrics Implementation & Validation Tool (FMT)  
 
-Each component produces outputs that feed directly into the next.
+Each component produces outputs that feed directly into the next, forming a structured evaluation pipeline.
 
 ---
 
-# 3. Workflow Integration
+## 3. Integrated Workflow Diagram
+### Component Flow
 
-## Component 1 → Component 2
+```mermaid
+flowchart TD
+
+    A[Historical Context Assessment] 
+        --> B[Fairness Definition Selection]
+        --> C[Bias Source Identification]
+        --> D[Fairness Metrics Implementation & Validation]
+        --> E[Mitigation & Monitoring]
+
+    E -->|Continuous Monitoring & Feedback| A
+```
+
+### Information Flow Between Components
+
+### 1. Historical Context → Fairness Definitions
 
 Historical Context Assessment identifies:
 
@@ -79,7 +79,7 @@ This informs which fairness definitions are appropriate.
 
 ---
 
-## Component 2 → Component 3
+## 2. Fairness Definitions → Bias Source Identification
 
 Fairness Definition Selection determines:
 
@@ -93,61 +93,25 @@ This defines what risks to trace in bias source mapping.
 
 ---
 
-## Component 3 → Component 4
+## 3. Bias Sources → Fairness Metrics
 
 Bias Source Identification identifies:
 
-- Data-level bias
-- Algorithm-level bias
-- Feedback loops
-- Deployment risks
+- Which metrics must be implemented
+- Which subgroups require intersectional analysis
+- Which features require causal testing
+- Where statistical validation must focus
 
 This determines what metrics must be implemented and monitored.
 
 → See: `3_BSIT.md`
+→ See: `4_FMT.md`
 
 ---
 
-## Component 4: Quantitative Evaluation
+# 4. Implementation Guide
 
-Fairness Metrics Tool translates fairness definitions into:
-
-- Concrete metrics
-- Statistical validation
-- Intersectional evaluation
-- Robustness testing
-- Governance documentation
-
-→ See: `04_FMT.md` 
-
----
-
-# 4. Integrated Workflow Diagram
-
-```mermaid
-flowchart TD
-
-    A[Historical Context Assessment] 
-        --> B[Fairness Definition Selection]
-        --> C[Bias Source Identification]
-        --> D[Fairness Metrics Implementation & Validation]
-        --> E[Mitigation & Monitoring]
-
-    E -->|Continuous Monitoring & Feedback| A
-```
-
-This linear flow ensures:
-
-- Definitions are not chosen arbitrarily
-- Metrics reflect documented risks
-- Bias mitigation targets root causes
-- Statistical validation supports intervention decisions
-
----
-
-# 5. Implementation Guide
-
-## 5.1 When to Use the Playbook
+## 4.1 When to Use the Playbook
 
 Mandatory for:
 
