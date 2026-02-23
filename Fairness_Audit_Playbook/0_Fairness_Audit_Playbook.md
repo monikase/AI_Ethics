@@ -258,10 +258,10 @@ Future improvements:
 
 See full case study through steps:
 
-`1_HCAT_Applied_Example.md`
-`2_FDST_Applied_Example.md`
-`3_BSIT_Applied_Example.md`
-`4_FMT_Applied_Example.md`
+`1_HCAT_Applied_Example.md`  
+`2_FDST_Applied_Example.md`  
+`3_BSIT_Applied_Example.md`  
+`4_FMT_Applied_Example.md`  
 
 Demonstrates:
 
