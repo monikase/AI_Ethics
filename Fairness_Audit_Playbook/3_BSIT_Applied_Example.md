@@ -1,5 +1,5 @@
-# Appendix 3_BSIT_Applied_Example
-## Bias Source Identification – Loan Application System
+# Bias Source Identification: Applied Example
+### Internal Loan Application System
 
 ---
 
