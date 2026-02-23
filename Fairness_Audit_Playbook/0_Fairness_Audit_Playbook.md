@@ -1,38 +1,32 @@
 # Fairness Audit Playbook
 ### Organizational Framework for Systematic AI Fairness Evaluation
 
-## Executive Summary
+The Fairness Audit Playbook is a structured, end-to-end framework for systematically evaluating and managing fairness risks in AI systems. It integrates:
 
-Our organization currently evaluates AI fairness inconsistently across teams. 
-Fairness assessments are ad hoc, metrics vary, and there is no centralized standard.
+- Historical analysis (HCAT)
+- Fairness definition selection (FDST)
+- Bias source identification (BSIT)
+- Statistically validated metrics (FMT)
 
-This creates:
+into a unified workflow that engineering teams can apply consistently across projects.
+
+In many organizations, fairness assessments are inconsistent. Definitions remain implicit, methods vary across teams, and mitigation is often reactive rather than systematic. This creates:
 
 - Regulatory exposure
 - Reputational risk
 - Technical debt
-- Inefficient duplication of fairness work
-- Inconsistent decision-making across AI systems
+- Inconsistent fairness standards
 
-To address this, we introduce the **Fairness Audit Playbook** — 
-a standardized, reusable, and technically rigorous framework that enables engineering teams to:
+The Playbook addresses these challenges by enabling engineering teams to:
 
-- Systematically evaluate AI systems for bias
+- Identify structural and historical risk factors
 - Select fairness definitions explicitly
-- Identify root bias sources
-- Quantitatively measure disparities
-- Validate findings statistically
+- Map bias sources
+- Quantitatively measure and validate disparities
 - Document mitigation decisions
-- Create ongoing accountability
+- Establish continuous monitoring
 
-The Playbook is designed for:
-- Internal AI systems
-- Third-party AI integrations
-- New and legacy systems
-- Classification, regression, and ranking models
-
-Most teams can apply the Playbook independently.
-Fairness specialists are required only for high-risk or complex systems.
+It is adaptable across domains, model types (classification, regression, ranking), and risk levels. Most teams can apply it independently, with fairness specialists supporting high-risk or complex systems.
 
 ---
 
