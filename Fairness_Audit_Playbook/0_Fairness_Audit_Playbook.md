@@ -129,15 +129,17 @@ Fairness Metrics Tool translates fairness definitions into:
 
 # 4. Integrated Workflow Diagram
 
-Historical Context
-↓
-Fairness Definitions
-↓
-Bias Source Identification
-↓
-Fairness Metrics Implementation
-↓
-Mitigation & Monitoring
+```mermaid
+flowchart TD
+
+    A[Historical Context Assessment] 
+        --> B[Fairness Definition Selection]
+        --> C[Bias Source Identification]
+        --> D[Fairness Metrics Implementation & Validation]
+        --> E[Mitigation & Monitoring]
+
+    E -->|Continuous Monitoring & Feedback| A
+```
 
 This linear flow ensures:
 
