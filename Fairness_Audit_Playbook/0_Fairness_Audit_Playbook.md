@@ -109,17 +109,16 @@ This determines what metrics must be implemented and monitored.
 
 ---
 
-# 4. Implementation Guide
+## 4. Implementation Guide
 
-## 4.1 When to Use the Playbook
+### 4.1 When to Use the Playbook
 
 Mandatory for:
 
 - High-risk AI systems (finance, hiring, healthcare)
-- Systems affecting protected groups
-- Models with regulatory exposure
-- Major model updates
-- New product launches
+- Systems influencing access to opportunities or resources
+- Systems operating in regulated domains
+- Major model updates or retraining
 
 Optional but recommended for:
 - Internal optimization systems
@@ -127,7 +126,7 @@ Optional but recommended for:
 
 ---
 
-## 5.2 Required Roles
+### 4.2 Required Roles
 
 Minimum team composition:
 
@@ -138,11 +137,11 @@ Minimum team composition:
 
 High-risk systems additionally require:
 - Fairness specialist
-- Legal/compliance review
+- Legal/compliance representative
 
 ---
 
-## 5.3 Estimated Time Requirements
+### 4.3 Estimated Time Requirements
 
 Low-risk system: 1–2 weeks  
 Moderate-risk system: 2–4 weeks  
@@ -155,7 +154,7 @@ Time depends primarily on:
 
 ---
 
-## 5.4 Integration with Existing ML Workflow
+### 4.4 Integration with Existing ML Workflow
 
 The Playbook integrates at:
 
