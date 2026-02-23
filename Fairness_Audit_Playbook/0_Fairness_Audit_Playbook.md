@@ -167,7 +167,7 @@ It does not replace model evaluation — it extends it.
 
 ---
 
-# 6. Validation Framework
+## 5. Validation Framework
 
 To verify effectiveness of the Playbook:
 
@@ -190,7 +190,7 @@ Audit effectiveness is evaluated by:
 
 ---
 
-# 7. Intersectional Commitment
+## 6. Intersectional Commitment
 
 Intersectional fairness is mandatory at every stage:
 
@@ -204,7 +204,7 @@ Aggregate fairness is insufficient.
 
 ---
 
-# 8. Adaptability Guidelines
+## 7. Adaptability Guidelines
 
 The Playbook supports:
 
@@ -223,7 +223,7 @@ Problem type variations:
 
 ---
 
-# 9. Organizational Benefits
+## 8. Organizational Benefits
 
 The Playbook:
 
@@ -236,7 +236,7 @@ The Playbook:
 
 ---
 
-# 10. Limitations & Future Improvements
+## 9. Limitations & Future Improvements
 
 Current limitations:
 
@@ -254,7 +254,7 @@ Future improvements:
 
 ---
 
-# 11. Case Study
+## 10. Case Study
 
 See full case study:
 
@@ -270,18 +270,14 @@ Demonstrates:
 
 ---
 
-# 12. Conclusion
+## 11. Conclusion
 
-The Fairness Audit Playbook transforms fairness from:
-
-Ad hoc and reactive  
-to  
-Systematic, measurable, and accountable.
+The Fairness Audit Playbook transforms fairness from ad hoc and reactive to systematic, measurable, and accountable.  
 
 It balances:
 
-Scientific rigor  
-Practical usability  
-Organizational scalability  
+- Scientific rigor  
+- Practical usability  
+- Organizational scalability  
 
 This framework ensures fairness evaluation becomes a standard engineering practice rather than an afterthought.
