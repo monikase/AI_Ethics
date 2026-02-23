@@ -7,7 +7,7 @@ AI systems increasingly influence decisions across domains such as finance, hiri
 
 As a result, fairness assessments become reactive rather than structured, creating:
 
--Regulatory and compliance exposure
+- Regulatory and compliance exposure
 - Reputational risk
 - Technical debt
 - Inconsistent engineering practices
