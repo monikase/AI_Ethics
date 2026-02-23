@@ -95,7 +95,7 @@ This defines what risks to trace in bias source mapping.
 
 ## 3. Bias Sources → Fairness Metrics
 
-Bias Source Identification identifies:
+Identified bias sources determine:
 
 - Which metrics must be implemented
 - Which subgroups require intersectional analysis
