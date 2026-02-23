@@ -104,7 +104,7 @@ Identified bias sources determine:
 
 This determines what metrics must be implemented and monitored.
 
-→ See: `3_BSIT.md`
+→ See: `3_BSIT.md`  
 → See: `4_FMT.md`
 
 ---
