@@ -18,8 +18,6 @@ Rather than offering one universal fix, the playbook guides you through a struct
 - The bias sources you identified
 - Your technical and operational limitations
 
-Think of it as your **fairness treatment plan** - a customized approach to addressing the exact disparities you’ve diagnosed.
-
 ---
 
 ## 2. Playbook Overview
