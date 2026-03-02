@@ -14,9 +14,9 @@ It helps you:
 
 Rather than offering one universal fix, the playbook guides you through a structured selection process based on:  
 
-- Your defined fairness criteria
-- The bias sources you identified
-- Your technical and operational limitations
+- Defined fairness criteria
+- The identifies bias sources
+- Technical and operational limitations
 
 ---
 
