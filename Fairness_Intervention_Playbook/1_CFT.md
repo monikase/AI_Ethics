@@ -215,9 +215,7 @@ Dashed arrow (-.-→) — Correlation / proxy relationship
 
 ## 2️⃣ Counterfactual Analysis Framework
 
-#### Goal  
-
-Test whether predictions would change if only the protected attribute changed.  
+→ Test whether predictions would change if only the protected attribute changed.  
 
 ---
 
