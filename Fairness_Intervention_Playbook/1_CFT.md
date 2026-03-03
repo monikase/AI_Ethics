@@ -99,22 +99,26 @@ _[(e.g., occupational segregation, residential segregation)]_
 
 ### E. Outcome Variable Identification
 Define the system’s decision or prediction.  
-1. **Decisions or predictions made by the system:**
-[List outcomes]
-_[(e.g., loan approval decision, risk score)]_
-3. **Evaluation metrics used:**
-[List metrics]
+1. **Decisions or predictions made by the system:**  
+[List outcomes]  
+_[(e.g., loan approval decision, risk score)]_  
+3. **Evaluation metrics used:**  
+[List metrics]  
 _[(e.g., approval rate, default rate, accuracy)]_    
 
 ---
 
-### F. Legitimate Predictor Identification
-Variables that should influence the outcome because they are directly related to the task.
+### F. Legitimate Predictor Identification  
+Variables that should influence the outcome because they are directly related to the task.  
 
-1. **Variables that should influence outcomes:** [List variables _(e.g., debt-to-income ratio, savings history, payment history)_]
-2. **Justification for legitimacy:** [Brief justification per variable _(e.g., directly measures repayment ability)_]
+1. **Variables that should influence outcomes:**  
+[List variables]  
+_[(e.g., debt-to-income ratio, savings history, payment history)]_  
+3. **Justification for legitimacy:**  
+[Brief justification per variable]  
+_[(e.g., directly measures repayment ability)]_  
 
-Document justification for each variable.
+Document justification for each variable.  
 
 ---
 
