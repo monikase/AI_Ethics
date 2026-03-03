@@ -186,22 +186,22 @@ _[Gender: Male]_
 [List causally independent variables]  
   
 > Characteristics that should not change just because gender changes (they are not caused by gender in our model):  
-- _[Credit score: 720]_   
-- _[Savings: €12,000]_  
-- _[Debt-to-income ratio: 28%]_  
-
-These stay fixed. 
+> - _[Credit score: 720]_   
+> - _[Savings: €12,000]_  
+> - _[Debt-to-income ratio: 28%]_  
+>
+> These stay fixed. 
 
 
 - **Variables that should change:**  
 [List descendants of protected attributes]  
 
 > These are variables that could be influenced by gender in the real world (based on our causal model):  
-- _[Employment history interpretation]_
-- _[Income assessment weight]_
-- _[Income stability scoring]_  
-
-_Because our causal model shows gender can influence how employment gaps or income stability are evaluated._  
+> - _[Employment history interpretation]_
+> - _[Income assessment weight]_
+> - _[Income stability scoring]_  
+>
+>_Because our causal model shows gender can influence how employment gaps or income stability are evaluated._  
 
 
 ---
