@@ -157,6 +157,38 @@ After identifying variables, construct a **Directed Acyclic Graph (DAG)** to vis
 
 These paths should later be evaluated through counterfactual analysis to determine whether they represent legitimate influence or discrimination.
 
+```mermaid
+flowchart LR
+
+%% Nodes
+Gender[Gender]
+Socioeconomic[Socioeconomic Background]
+Income[Income]
+Employment[Employment History]
+DefaultRisk[Default Risk]
+Loan[Loan Approval]
+
+%% Edges
+Gender --> Income
+Gender --> Employment
+Socioeconomic --> Income
+Income --> DefaultRisk
+Employment --> DefaultRisk
+DefaultRisk --> Loan
+
+%% Styling classes
+classDef protected fill:#ffe6f0,stroke:#cc0066,stroke-width:2px;
+classDef mediator fill:#e6f2ff,stroke:#0066cc,stroke-width:2px;
+classDef confounder fill:#f2f2f2,stroke:#666666,stroke-width:2px;
+classDef outcome fill:#e6ffe6,stroke:#009933,stroke-width:3px;
+
+%% Assign classes
+class Gender protected;
+class Income,Employment mediator;
+class Socioeconomic confounder;
+class Loan outcome;
+```
+
 
 ```mermaid
 graph LR
