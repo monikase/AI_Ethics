@@ -58,7 +58,19 @@ For each mediator, consider:
 
 ---
 
-### C. Proxy Variable Identification
+### C. Confounding Variable Identification
+Confounders are variables that influence both protected attributes and outcomes, potentially creating misleading associations.
+1. **Variables that may affect both protected attributes and outcomes:** [List variables _(e.g., socioeconomic background, neighborhood economic conditions)_]
+2. **Evidence for confounding role:** [List evidences _(e.g., research linking socioeconomic status to both education and loan approval)_]
+
+For each potential confounder, consider:
+- Does this variable create a spurious relationship?
+- Is it measured in the data?
+- Could omitting it bias fairness conclusions?
+
+---
+
+### D. Proxy Variable Identification
 Proxy variables are correlated with protected attributes and may indirectly encode them.  
 1. **Variables correlated with protected attributes:**  [List variables _(e.g., part-time employment status, zip code)_]
 2. **Evidence for correlation:**  [Brief justification per variable _(e.g., statistical correlation, labor market patterns)_]
@@ -66,23 +78,18 @@ Proxy variables are correlated with protected attributes and may indirectly enco
 
 ---
 
-### D. Outcome Variable Identification
+### E. Outcome Variable Identification
 Define the system’s decision or prediction.  
 1. **Decisions or predictions made by the system:** [List outcomes (e.g., loan approval decision, risk score)]
 2. **Evaluation metrics used:** [List metrics _(e.g., approval rate, default rate, accuracy)_]
 
 ---
 
-### E. Legitimate Predictor Identification
+### F. Legitimate Predictor Identification
 Variables that should influence the outcome because they are directly related to the task.
 
 1. **Variables that should influence outcomes:** [List variables _(e.g., debt-to-income ratio, savings history, payment history)_]
 2. **Justification for legitimacy:** [Brief justification per variable _(e.g., directly measures repayment ability)_]
-
-Example:
-- Debt-to-income ratio
-- Payment history
-- Verified savings
 
 Document justification for each variable.
 
