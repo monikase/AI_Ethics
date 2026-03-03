@@ -263,7 +263,7 @@ Start by mapping all paths from the protected attribute (e.g., gender) to the ou
 This step requires **normative judgment** - not just technical analysis.  
 
 You must decide:  
-- Does this pathway reflect legitimate repayment risk?
+- Does this pathway reflect legitimate risk?
 - Or does it reflect structural or historical bias?
 
 > | Path                                                  | Possible Classification       | Why?                                                                 |
