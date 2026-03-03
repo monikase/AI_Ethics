@@ -193,7 +193,16 @@ Characteristics that should not change just because gender changes (they are not
 These stay fixed. 
 
 
-- **Variables that should change:** [List descendants of protected attributes] 
+- **Variables that should change:**  
+[List descendants of protected attributes]  
+
+These are variables that could be influenced by gender in the real world (based on our causal model):  
+- _[Employment history interpretation]_
+- _[Income assessment weight]_
+- _[Income stability scoring]_  
+
+_Because our causal model shows gender can influence how employment gaps or income stability are evaluated._  
+
 
 ---
 
