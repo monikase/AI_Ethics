@@ -40,8 +40,8 @@ Map how protected attributes influence predictions.
 ---
 
 ### A. Protected Attributes Identification
-- List legally protected attributes (e.g., gender, race, age).
-- Include intersectional groups where relevant (e.g., gender × age).
+1. Primary protected attributes: [List legally protected attributes (e.g., gender, race, age)]
+2. Intersectional categories: [Include intersectional groups where relevant (e.g., gender × age)]
 
 Example:
 - Gender
