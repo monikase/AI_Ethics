@@ -160,6 +160,50 @@ These paths should later be evaluated through counterfactual analysis to determi
 ```mermaid
 flowchart LR
 
+%% ===== Nodes (keep original structure) =====
+Socioeconomic[Socioeconomic Background]
+Gender[Gender]
+Income[Income]
+Employment[Employment History]
+PartTime[Part-Time Status]
+DefaultRisk[Default Risk]
+Loan[Loan Approval]
+
+%% ===== Causal Relationships (solid arrows) =====
+Socioeconomic --> Income
+Gender --> Income
+Gender --> Employment
+Income --> DefaultRisk
+Employment --> DefaultRisk
+DefaultRisk --> Loan
+
+%% ===== Correlation / Proxy Relationships (dashed arrows) =====
+Gender -.-> PartTime
+
+%% Optional: bidirectional correlation (no direct causation)
+Socioeconomic -.-> Gender
+Gender -.-> Socioeconomic
+
+%% ===== Styling Classes =====
+classDef protected fill:#ffe6f0,stroke:#cc0066,stroke-width:2px;
+classDef mediator fill:#e6f2ff,stroke:#0066cc,stroke-width:2px;
+classDef proxy fill:#fff5e6,stroke:#ff9900,stroke-dasharray:5 5;
+classDef confounder fill:#f2f2f2,stroke:#666666,stroke-width:2px;
+classDef outcome fill:#e6ffe6,stroke:#009933,stroke-width:3px;
+
+%% ===== Assign Classes =====
+class Gender protected;
+class Income,Employment mediator;
+class PartTime proxy;
+class Socioeconomic confounder;
+class Loan outcome;
+```
+
+
+
+```mermaid
+flowchart LR
+
 %% Nodes
 Gender[Gender]
 Socioeconomic[Socioeconomic Background]
