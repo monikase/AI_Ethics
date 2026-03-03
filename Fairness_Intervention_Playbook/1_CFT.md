@@ -63,23 +63,21 @@ Proxy variables are correlated with protected attributes and may indirectly enco
 1. **Variables correlated with protected attributes:**  [List variables _(e.g., part-time employment status, zip code)_]
 2. **Evidence for correlation:**  [Brief justification per variable _(e.g., statistical correlation, labor market patterns)_]
 3. **Common causes explaining correlation:**  [Explanation per variable _(e.g., occupational segregation, residential segregation)_]
-   
----
-
-### D. Proxy Variables
-Variables correlated with protected attributes but not causally necessary for prediction.
-
-Example:
-- Zip code
-- Part-time employment status
-
-Ask:
-> Is this variable functioning as a proxy for a protected attribute?
 
 ---
 
-### E. Legitimate Predictors
-Variables that genuinely reflect task-relevant ability or risk.
+### D. Outcome Variable Identification
+Define the system’s decision or prediction.  
+1. **Decisions or predictions made by the system:** [List outcomes (e.g., loan approval decision, risk score)]
+2. **Evaluation metrics used:** [List metrics _(e.g., approval rate, default rate, accuracy)_]
+
+---
+
+### E. Legitimate Predictor Identification
+Variables that should influence the outcome because they are directly related to the task.
+
+1. **Variables that should influence outcomes:** [List variables _(e.g., debt-to-income ratio, savings history, payment history)_]
+2. **Justification for legitimacy:** [Brief justification per variable _(e.g., directly measures repayment ability)_]
 
 Example:
 - Debt-to-income ratio
