@@ -142,11 +142,10 @@ graph LR
     Socioeconomic_Background --> Income
 ```
 
-This renders as an actual visual graph.
-
 Legend:
 - `-->` = causal relationship  
-- `-.->` = correlation / proxy relationship  
+- `-.->` = correlation / proxy relationship
+
 ---
 
 # 4. Step 2 — Counterfactual Analysis Framework
