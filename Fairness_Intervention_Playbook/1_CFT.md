@@ -148,7 +148,9 @@ Legend:
 
 ---
 
-# 4. Step 2 — Counterfactual Analysis Framework
+### 4. Counterfactual Analysis Framework
+
+---
 
 ## Goal
 Test whether predictions would change if only the protected attribute changed.
