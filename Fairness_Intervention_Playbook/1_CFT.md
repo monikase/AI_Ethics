@@ -36,7 +36,7 @@ Map how protected attributes influence predictions.
 
 ---
 
-### 3.1 Variable Identification Template
+### I Variable Identification Template
 
 ---
 
@@ -96,7 +96,7 @@ Document justification for each variable.
 
 ---
 
-### 3.2 Causal Graph Construction
+### II Causal Graph Construction
 
 ---
 
