@@ -313,8 +313,8 @@ Path-specific analysis helps us understand **where it comes from**.
 
 ---
 
-### 1. Identify specific causal pathways from protected attributes to outcomes.  
-Start by mapping all paths from the protected attribute (e.g., gender) to the outcome (loan approval).  
+### 1. **Identify specific causal pathways** from protected attributes to outcomes  
+Start by mapping all paths from the protected attribute _(e.g., gender)_ to the outcome _(e.g.,loan approval)_.  
 
 > _Example paths in the loan system:_  
 > **1. Gender → Employment History → Default Risk → Approval**  
@@ -326,7 +326,7 @@ Start by mapping all paths from the protected attribute (e.g., gender) to the ou
 
 ---
 
-### 2. Classify paths as legitimate or problematic based on domain knowledge.
+### 2. **Classify paths** as legitimate or problematic based on domain knowledge.
 This step requires **normative judgment** - not just technical analysis.  
 
 You must decide:  
@@ -383,7 +383,10 @@ Instead of forcing demographic parity, you:
 The Intervention Point Identification Method helps teams decide where to make changes in the ML pipeline based on the results of the causal analysis. It connects different types of bias to the right kind of intervention.
 
 ---
-### 4.3.1 Causal Pattern Decision Tree
+
+### Causal Pattern Decision Tree
+
+---
 
 #### Intervention Selection Decision Tree
 
