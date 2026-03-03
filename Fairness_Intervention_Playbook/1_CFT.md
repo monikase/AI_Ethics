@@ -130,12 +130,12 @@ After identifying variables, construct a **Directed Acyclic Graph (DAG)** to vis
 
 - **Use directed arrows to represent causal relationships.**  
   _Example:_  
-  Gender → Employment History → Default Risk → Loan Approval  
+  **Gender → Employment History → Default Risk → Loan Approval**  
   (Gender may influence employment history, which affects default risk.)
 
 - **Use bidirectional dashed arrows to represent correlations without direct causation.**  
   _Example:_  
-  Gender ↔ Part-Time Status  
+ **Gender ↔ Part-Time Status**  
   (Part-time work may correlate with gender, but gender does not directly “cause” part-time status in a strict biological sense — both may reflect broader social patterns.)
 
 - **Distinguish node types visually (when drawing the graph):**
