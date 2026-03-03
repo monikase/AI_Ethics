@@ -21,10 +21,10 @@ Instead of applying simple statistical adjustments, this toolkit focuses on unde
 
 The toolkit consists of four components:
 
-1. Causal Modeling Template   
-2. Counterfactual Analysis Framework   
-3. Intervention Point Identification Method   
-4. Limited Information Adaptation Guidelines    
+1. **Causal Modeling Template**   
+2. **Counterfactual Analysis Framework**   
+3. **Intervention Point Identification Method**   
+4. **Limited Information Adaptation Guidelines**    
 
 Each step builds on the previous one.
 
