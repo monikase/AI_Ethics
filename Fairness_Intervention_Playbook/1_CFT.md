@@ -99,7 +99,7 @@ Document justification for each variable.
 
 ---
 
-After identifying variables, construct a Directed Acyclic Graph (DAG) to visually represent how variables influence one another.  
+After identifying variables, construct a **Directed Acyclic Graph (DAG)** to visually represent how variables influence one another.  
 
 - **Use directed arrows to represent causal relationships.**  
   Example:  
