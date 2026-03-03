@@ -457,12 +457,12 @@ Perform sensitivity analysis to identify robust intervention decisions.
 - How strong must hidden confounding be to eliminate the observed effect?
 - Use E-values or bounding methods.
 
-#### 3 Intersectional Modeling
+#### 3. Intersectional Modeling
 Prioritize resolving uncertainties that would change intervention recommendations.  
 - Use hierarchical models when subgroup data is sparse.
 - Quantify uncertainty explicitly.
 
-#### 4 Transparent Documentation
+#### 4. Transparent Documentation
 Document assumptions explicitly to enable future refinement.  
 Always document:  
 - Assumptions
