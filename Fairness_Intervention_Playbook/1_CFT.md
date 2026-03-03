@@ -33,7 +33,7 @@ Each step builds on the previous one.
 #### Goal
 Map how protected attributes influence predictions.
 
-## 3.1.1 Variable Identification Template
+### 3.1.1 Variable Identification Template
 
 ### A. Protected Attributes Identification
 - List legally protected attributes (e.g., gender, race, age).
