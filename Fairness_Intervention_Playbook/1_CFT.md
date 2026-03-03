@@ -10,7 +10,7 @@ Disparities can happen for many reasons. A model might directly use a protected 
 The **Causal Fairness Toolkit provides a practical step-by-step method to help teams understand where unfairness comes from and how to address it properly**. It helps teams:   
 
 - Map how protected attributes may influence predictions
-- Ask clear “what if” questions about fairness
+- Check whether a decision would change **if only a protected attribute were different, while everything else stayed the same**.
 - Separate legitimate prediction factors from discriminatory ones
 - Choose the right place in the system to intervene
 - Make thoughtful decisions even when information is incomplete
