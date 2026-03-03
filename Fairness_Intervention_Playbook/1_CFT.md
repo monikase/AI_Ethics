@@ -29,7 +29,7 @@ The toolkit consists of four components:
 Each step builds on the previous one.
 
 
-## 3. Causal Modeling Template  
+## 1️⃣ Causal Modeling Template  
 **Map how protected attributes influence predictions.**
 
 ---
@@ -147,7 +147,7 @@ Legend:
 
 ---
 
-## 4. Counterfactual Analysis Framework
+## 2️⃣ Counterfactual Analysis Framework
 
 #### Goal  
 
