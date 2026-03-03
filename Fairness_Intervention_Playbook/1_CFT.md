@@ -219,7 +219,7 @@ Dashed arrow (-.-→) — Correlation / proxy relationship
 
 ---
 
-### 4.1 Counterfactual Query Structure  
+### Counterfactual Query Formulation  
 
 ---
 
