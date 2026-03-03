@@ -28,16 +28,14 @@ The toolkit consists of four components:
 
 Each step builds on the previous one.
 
-## 3. Causal Fairness Toolkit
+## 3. Causal Modeling Template
 
-## Step 1. Causal Modeling Template
-
-### Goal
+#### Goal
 Map how protected attributes influence predictions.
 
-## 3.1 Variable Identification Template
+## 3.1.1 Variable Identification Template
 
-### A. Protected Attributes
+### A. Protected Attributes Identification
 - List legally protected attributes (e.g., gender, race, age).
 - Include intersectional groups where relevant (e.g., gender × age).
 
