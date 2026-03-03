@@ -157,6 +157,8 @@ After identifying variables, construct a **Directed Acyclic Graph (DAG)** to vis
 
 These paths should later be evaluated through counterfactual analysis to determine whether they represent legitimate influence or discrimination.
 
+#### DAG Example (using mermaid)  
+
 ```mermaid
 flowchart LR
 
