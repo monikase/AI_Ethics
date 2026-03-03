@@ -40,8 +40,12 @@ Each step builds on the previous one.
 ---
 
 ### A. Protected Attributes Identification
-1. **Primary protected attributes:** [List legally protected attributes _(e.g., gender, race, age)_]
-2. **Intersectional categories:** [Include intersectional groups where relevant _(e.g., gender × age)_]
+1. **Primary protected attributes:**  
+[List legally protected characteristics relevant to this application]
+_[(e.g., gender, race, age)]_    
+2. **Intersectional categories:**  
+[List relevant combinations of protected attributes]  
+ _[(e.g., gender × age)]_     
 
 Document why each attribute is relevant in this context.  
 
