@@ -316,7 +316,8 @@ Path-specific analysis helps us understand **where it comes from**.
 ### 1. **Identify specific causal pathways** from protected attributes to outcomes  
 Start by mapping all paths from the protected attribute _(e.g., gender)_ to the outcome _(e.g.,loan approval)_.  
 
-> _Example paths in the loan system:_  
+> _Example paths in the loan system:_
+>   
 > **1. Gender → Employment History → Default Risk → Approval**  
 > **2. Gender → Income Level → Debt-to-Income Ratio → Default Risk → Approval**  
 > **3. Gender → Part-Time Status → Income Stability → Default Risk → Approval**  
@@ -353,10 +354,11 @@ It cannot be decided by code alone.
 Measure how much each path contributes to the overall disparity.
 
 > _Example findings:_
-> - Employment history pathway → 40% of disparity
-> - Income pathway → 25%
-> - Part-time proxy pathway → 20%
-> - Direct discrimination → 15%
+>   
+> - _Employment history pathway → 40% of disparity_
+> - _Income pathway → 25%_
+> - _Part-time proxy pathway → 20%_
+> - _Direct discrimination → 15%_
 
 This tells you which mechanisms matter most.  
 Without this step, you might overcorrect small effects and ignore major ones.  
