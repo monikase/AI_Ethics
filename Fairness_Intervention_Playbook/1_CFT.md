@@ -48,7 +48,8 @@ Document why each attribute is relevant in this context.
 ***
 
 ### B. Mediator Variable Identification
-Mediators are variables that are influenced by protected attributes and also influence the outcome. These variables may transmit structural inequalities.  
+Mediators are variables that are influenced by protected attributes and also influence the outcome.  
+These variables may transmit structural inequalities.  
 1. **Variables directly influenced by protected attributes:**  [List variables _(e.g., employment history, income level)_]
 2. **Evidence for causal relationship:**  [Provide brief justification for each variable - domain expertise, research findings, or data patterns _(e.g., research on wage gaps, observed career breaks)_]
 
