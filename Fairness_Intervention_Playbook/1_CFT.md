@@ -179,18 +179,17 @@ Create the **“what if” version of the same person**.
 
 - **Modified protected attribute:**
 [Counterfactual value]  
-[Gender: Male]  
-> We now ask:
-If this exact same applicant were male instead of female, what would happen?
+[Gender: Male]    
+> Ask: If this exact same applicant were male instead of female, what would happen?
 
-- **Variables that should remain constant:**
-[List causally independent variables]  
-These are characteristics that should not change just because gender changes (they are not caused by gender in our model):
-- _[Credit score: 720] _ 
-- _[Savings: €12,000]_
-- _[Debt-to-income ratio: 28%]_
+- **Variables that should remain constant:**   
+[List causally independent variables]   
+These are characteristics that should not change just because gender changes (they are not caused by gender in our model):  
+- _[Credit score: 720]_   
+- _[Savings: €12,000]_  
+- _[Debt-to-income ratio: 28%]_  
 
-These stay fixed.
+These stay fixed. 
 
 
 - **Variables that should change:** [List descendants of protected attributes] 
