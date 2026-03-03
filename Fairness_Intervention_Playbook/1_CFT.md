@@ -246,7 +246,9 @@ Compare the outcomes.
 
 ### **4.2 Path-Specific Analysis:**  
 Counterfactual fairness tells us whether discrimination exists.  
-Path-specific analysis helps us understand **where it comes from**.  
+Path-specific analysis helps us understand **where it comes from**. 
+
+---
 
 #### 1. Identify specific causal pathways from protected attributes to outcomes.  
 Start by mapping all paths from the protected attribute (e.g., gender) to the outcome (loan approval).  
