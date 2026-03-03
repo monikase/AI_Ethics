@@ -152,7 +152,7 @@ Legend:
 
 ---
 
-## Goal
+#### Goal
 Test whether predictions would change if only the protected attribute changed.
 
 ---
