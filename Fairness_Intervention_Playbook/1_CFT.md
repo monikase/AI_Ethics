@@ -1,18 +1,21 @@
 # Causal Fairness Toolkit
-## A Practical Methodology for Identifying and Fixing Algorithmic Bias
+A Practical Methodology for Identifying and Fixing Algorithmic Bias
 
----
+## 1. Introduction
 
-# 1. Introduction
+Machine learning systems sometimes produce different outcomes for different groups of people. But seeing a difference does not automatically tell us whether the system is unfair — or what is causing the difference.  
 
-The Causal Fairness Toolkit helps engineering teams move from:
-- ❌ Detecting statistical disparities  
-to  
-- ✅ Understanding *why* disparities happen and how to fix them.
+Disparities can happen for many reasons. A model might directly use a protected attribute (like gender), rely on variables that indirectly reflect it (such as job type or part-time status), reflect patterns from historical inequality, or use legitimate risk factors. Without understanding the real cause, fairness fixes may only treat the symptoms instead of solving the problem.  
 
-Instead of treating symptoms (e.g., enforcing demographic parity), this toolkit identifies **causal mechanisms of unfairness** and maps them to targeted interventions.
+The **Causal Fairness Toolkit provides a practical step-by-step method to help teams understand where unfairness comes from and how to address it properly**. It helps teams:   
 
-This toolkit is designed for practical use in business environments.
+- Map how protected attributes may influence predictions
+- Ask clear “what if” questions about fairness
+- Separate legitimate prediction factors from discriminatory ones
+- Choose the right place in the system to intervene
+- Make thoughtful decisions even when information is incomplete
+
+Instead of applying simple statistical adjustments, this toolkit focuses on understanding the reasons behind disparities so that interventions are more precise, transparent, and effective.  
 
 ---
 
