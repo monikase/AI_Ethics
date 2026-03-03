@@ -381,7 +381,7 @@ Instead of forcing demographic parity, you:
 
 ---
 
-## 3️⃣ **Intervention Point Identification Method**
+## 3️⃣ Intervention Point Identification Method
 The Intervention Point Identification Method helps teams decide where to make changes in the ML pipeline based on the results of the causal analysis. It connects different types of bias to the right kind of intervention.
 
 ---
@@ -443,7 +443,7 @@ N -->|No| R[No fairness intervention required]
 
 ---
 
-### 4️⃣ Limited Information Adaptation
+## 4️⃣ Limited Information Adaptation
 
 Real-world data is incomplete.  
 
