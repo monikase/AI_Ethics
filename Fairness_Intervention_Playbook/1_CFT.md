@@ -238,6 +238,10 @@ Compare the outcomes.
 > |--------------------------|---------------|----------|
 > | Female (real case)       | 18%           | Denied   |
 > | Male (counterfactual)    | 13%           | Approved |
+>
+> This means:
+> - The decision changes only because gender changed.
+> - Therefore, the model is counterfactually unfair for this individual.
 
 ---  
 
