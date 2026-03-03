@@ -3,7 +3,7 @@ A Practical Methodology for Identifying and Fixing Algorithmic Bias
 
 ## 1. Introduction
 
-Machine learning systems sometimes produce different outcomes for different groups of people. But seeing a difference does not automatically tell us whether the system is unfair — or what is causing the difference.  
+Machine learning systems sometimes produce different outcomes for different groups of people. But seeing a difference does not automatically tell us whether the system is unfair - or what is causing the difference.  
 
 Disparities can happen for many reasons. A model might directly use a protected attribute (like gender), rely on variables that indirectly reflect it (such as job type or part-time status), reflect patterns from historical inequality, or use legitimate risk factors. Without understanding the real cause, fairness fixes may only treat the symptoms instead of solving the problem.  
 
