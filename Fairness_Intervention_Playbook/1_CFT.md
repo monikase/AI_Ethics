@@ -48,9 +48,9 @@ Document why each attribute is relevant in this context.
 ---
 
 ### B. Mediator Variable Identification
-Mediators are variables that are influenced by protected attributes and also influence the outcome. These variables may transmit structural inequalities.
+Mediators are variables that are influenced by protected attributes and also influence the outcome. These variables may transmit structural inequalities.  
 1. Variables directly influenced by protected attributes: [List variables (e.g., employment history, income level]
-2. Evidence for causal relationship: [Provide brief justification for each variable — domain expertise, research findings, or data patterns (e.g., research on wage gaps, observed career breaks)]
+2. Evidence for causal relationship: [Provide brief justification for each variable - domain expertise, research findings, or data patterns (e.g., research on wage gaps, observed career breaks)]
 
 For each mediator, consider:  
 - Does this variable reflect historical or structural inequality?
@@ -58,18 +58,12 @@ For each mediator, consider:
 
 ---
 
-
-
-### C. Mediators
-Variables influenced by protected attributes that also influence outcomes.
-
-Example:
-- Gender → Employment history
-- Gender → Income level
-
-Ask:
-> Does this variable partly reflect structural inequality?
-
+### C. Proxy Variable Identification
+Proxy variables are correlated with protected attributes and may indirectly encode them.  
+1. Variables correlated with protected attributes: [List variables (e.g., part-time employment status, zip code)]
+2. Evidence for correlation: [Brief justification per variable (e.g., statistical correlation, labor market patterns)]
+3. Common causes explaining correlation: [Explanation per variable (e.g., occupational segregation, residential segregation)]
+   
 ---
 
 ### D. Proxy Variables
