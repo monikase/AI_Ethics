@@ -34,7 +34,7 @@ Each step builds on the previous one.
 
 ---
 
-### Variable Identification Template
+### Variable Identification Guide
 
 ---
 
