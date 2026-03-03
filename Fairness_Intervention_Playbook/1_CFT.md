@@ -160,7 +160,7 @@ Test whether predictions would change if only the protected attribute changed.
 
 ---
 
-#### 1. **Base case description**   
+### 1. **Base case description**   
 Describe the **real individual and the model’s actual decision**.  
 - **Individual characteristics:**  
 [Relevant non-protected attributes]   
@@ -174,7 +174,7 @@ _[Loan Denied – predicted default risk: 18%]_
 
 ---
 
-#### 2. **Counterfactual scenario:**  
+### 2. **Counterfactual scenario:**  
 Create the **“what if” version of the same person**.
 
 - **Modified protected attribute:**  
@@ -205,7 +205,7 @@ _[Gender: Male]_
 
 ---
 
-#### 3. **Fairness evaluation:**
+### 3. **Fairness evaluation:**
 Compare the outcomes.  
 
 - **Expected outcome under counterfactual (if the model were fair):**  
@@ -244,20 +244,20 @@ Compare the outcomes.
 
 ---
 
-#### **4.2 Path-Specific Analysis:**  
+### **4.2 Path-Specific Analysis:**  
 Counterfactual fairness tells us whether discrimination exists.  
 Path-specific analysis helps us understand **where it comes from**.  
 
 #### 1. Identify specific causal pathways from protected attributes to outcomes.  
 Start by mapping all paths from the protected attribute (e.g., gender) to the outcome (loan approval).  
 
-> _Example paths in the loan system:_
-> **1. Gender → Employment History → Default Risk → Approval**
-> **2. Gender → Income Level → Debt-to-Income Ratio → Default Risk → Approval**
-> **3. Gender → Part-Time Status → Income Stability → Default Risk → Approval**
-> **4. Gender → Approval (direct path)**
->
-> Each of these is a separate mechanism through which disparity may occur.
+> _Example paths in the loan system:_  
+> **1. Gender → Employment History → Default Risk → Approval**  
+> **2. Gender → Income Level → Debt-to-Income Ratio → Default Risk → Approval**  
+> **3. Gender → Part-Time Status → Income Stability → Default Risk → Approval**  
+> **4. Gender → Approval (direct path)**  
+>  
+> Each of these is a separate mechanism through which disparity may occur.  
 
 #### 2. Classify paths as legitimate or problematic based on domain knowledge.
 This step requires **normative judgment** - not just technical analysis.  
