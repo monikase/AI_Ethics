@@ -471,7 +471,7 @@ Always document:
 
 ---
 
-## 7. Practical Workflow Summary
+## 4. Practical Workflow Summary
 
 1. Identify variables
 2. Build causal graph
@@ -483,7 +483,7 @@ Always document:
 
 ---
 
-## 8. Core Principle
+## 5. Core Principle
 
 Fairness interventions should:
 
