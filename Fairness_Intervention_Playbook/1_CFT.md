@@ -320,6 +320,7 @@ Instead of forcing demographic parity, you:
 The Intervention Point Identification Method helps teams decide where to make changes in the ML pipeline based on the results of the causal analysis. It connects different types of bias to the right kind of intervention.
 
 ---
+### 4.3.1 Causal Pattern Decision Tree
 
 #### Intervention Selection Decision Tree
 
@@ -374,25 +375,28 @@ N -->|No| R[No fairness intervention required]
 
 ---
 
-# 6. Step 4 — Limited Information Adaptation
+### 4.3.2 Limited Information Adaptation
 
-Real-world data is incomplete.
+Real-world data is incomplete.  
 
-Apply:
+Apply:  
 
-## 6.1 Multiple Plausible Models
-Test fairness under different causal assumptions.
+#### 1. Test Multiple Plausible Models
+Test fairness under different causal assumptions when causal structure is uncertain.
 
-## 6.2 Sensitivity Analysis
+#### 2. Sensitivity Analysis
+Perform sensitivity analysis to identify robust intervention decisions.  
 - How strong must hidden confounding be to eliminate the observed effect?
 - Use E-values or bounding methods.
 
-## 6.3 Intersectional Modeling
+#### 3 Intersectional Modeling
+Prioritize resolving uncertainties that would change intervention recommendations.  
 - Use hierarchical models when subgroup data is sparse.
 - Quantify uncertainty explicitly.
 
-## 6.4 Transparent Documentation
-Always document:
+#### 4 Transparent Documentation
+Document assumptions explicitly to enable future refinement.  
+Always document:  
 - Assumptions
 - Uncertainties
 - Rationale for intervention choices
