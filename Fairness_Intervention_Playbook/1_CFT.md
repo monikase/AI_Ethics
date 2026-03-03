@@ -19,7 +19,7 @@ Instead of applying simple statistical adjustments, this toolkit focuses on unde
 
 ---
 
-# 2. Overview of the Toolkit
+## 2. Toolkit Overview 
 
 The toolkit consists of four components:
 
