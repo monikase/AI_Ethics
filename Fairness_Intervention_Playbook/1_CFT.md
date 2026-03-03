@@ -88,10 +88,10 @@ Proxy variables are correlated with protected attributes and may indirectly enco
 1. **Variables correlated with protected attributes:**  
 [List variables]  
 _[(e.g., part-time employment status, zip code)]_  
-3. **Evidence for correlation:**
-[Brief justification per variable]
-_[(e.g., statistical correlation, labor market patterns)]_  
-5. **Common causes explaining correlation:**  
+3. **Evidence for correlation:**  
+[Brief justification per variable]  
+_[(e.g., statistical correlation, labor market patterns)]_   
+5. **Common causes explaining correlation:**   
 [Explanation per variable]  
 _[(e.g., occupational segregation, residential segregation)]_  
 
