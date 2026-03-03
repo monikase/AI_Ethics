@@ -28,6 +28,7 @@ The toolkit consists of four components:
 
 Each step builds on the previous one.
 
+***
 
 ## 1️⃣ Causal Modeling Template  
 **→ Map how protected attributes influence predictions.**
