@@ -233,7 +233,7 @@ Compare the outcomes.
   - Did prediction change?  
   - If yes → potential counterfactual unfairness
 
-> _Example:_ There is a clear difference:
+> _Example:_ 
 > | Scenario                 | Predicted Risk | Decision |
 > |--------------------------|---------------|----------|
 > | Female (real case)       | 18%           | Denied   |
