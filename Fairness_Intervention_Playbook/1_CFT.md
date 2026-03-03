@@ -44,7 +44,7 @@ Each step builds on the previous one.
 
 Document why each attribute is relevant in this context.  
 
----
+***
 
 ### B. Mediator Variable Identification
 Mediators are variables that are influenced by protected attributes and also influence the outcome. These variables may transmit structural inequalities.  
@@ -55,7 +55,7 @@ For each mediator, consider:
 - Does this variable reflect historical or structural inequality?
 - Should its influence on the outcome be preserved or adjusted?
 
----
+***
 
 ### C. Confounding Variable Identification
 Confounders are variables that influence both protected attributes and outcomes, potentially creating misleading associations.
