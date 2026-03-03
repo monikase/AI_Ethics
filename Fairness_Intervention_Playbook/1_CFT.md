@@ -179,8 +179,8 @@ Create the **“what if” version of the same person**.
 
 - **Modified protected attribute:**  
 [Counterfactual value]  
-[Gender: Male]    
-> Ask: If this exact same applicant were male instead of female, what would happen?
+_[Gender: Male]_       
+> Ask: If this exact same applicant were male instead of female, what would happen?  
 
 - **Variables that should remain constant:**   
 [List causally independent variables]   
