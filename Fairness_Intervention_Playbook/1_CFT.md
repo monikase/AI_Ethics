@@ -31,7 +31,7 @@ Each step builds on the previous one.
 ---
 
 ## 3. Causal Modeling Template  
-Map how protected attributes influence predictions.
+**Map how protected attributes influence predictions.**
 
 ---
 
