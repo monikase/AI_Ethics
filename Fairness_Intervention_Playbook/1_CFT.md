@@ -261,6 +261,8 @@ Start by mapping all paths from the protected attribute (e.g., gender) to the ou
 >  
 > Each of these is a separate mechanism through which disparity may occur.  
 
+---
+
 #### 2. Classify paths as legitimate or problematic based on domain knowledge.
 This step requires **normative judgment** - not just technical analysis.  
 
@@ -282,6 +284,8 @@ This step must involve:
 
 It cannot be decided by code alone.  
 
+---
+
 #### 3. Quantify the contribution of each path to observed disparities.  
 Measure how much each path contributes to the overall disparity.
 
@@ -294,7 +298,21 @@ Measure how much each path contributes to the overall disparity.
 This tells you which mechanisms matter most.  
 Without this step, you might overcorrect small effects and ignore major ones.  
 
+---
+
 #### 4. Focus interventions on problematic paths while preserving legitimate paths.
+The goal is **surgical intervention**, not destroying model performance.  
+
+Instead of forcing demographic parity, you:  
+- Remove or adjust problematic paths
+- Preserve legitimate predictive information
+
+> _Example Interventions_  
+> | Problematic Path        | Intervention                                      |
+> |-------------------------|---------------------------------------------------|
+> | Employment gap penalty  | Replace with "total relevant experience"          |
+> | Raw income weight       | Normalize income relative to loan size            |
+> | Part-time status proxy  | Replace with direct income stability metric       |
 
 ---
 
