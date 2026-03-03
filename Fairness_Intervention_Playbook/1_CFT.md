@@ -28,14 +28,14 @@ The toolkit consists of four components:
 
 Each step builds on the previous one.
 
-## 3.1 Causal Modeling Template
+## 3 Causal Modeling Template
 
 #### Goal
 Map how protected attributes influence predictions.
 
 ---
 
-### 3.1.1 Variable Identification Template
+### 3.1 Variable Identification Template
 
 ---
 
@@ -95,7 +95,7 @@ Document justification for each variable.
 
 ---
 
-### 3.1.2 Causal Graph Construction
+### 3.2 Causal Graph Construction
 
 ---
 
