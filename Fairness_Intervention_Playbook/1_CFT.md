@@ -328,29 +328,25 @@ Use this decision structure:
 ```mermaid
 flowchart TD
 
-A[Start] --> B{Direct discrimination? <br> (Protected Attribute → Outcome)}
-
+A[Start] --> B{Direct discrimination?}
 B -->|Yes| C{Protected attribute explicitly used?}
 C -->|Yes| D[Remove attribute or apply in-processing constraints]
 C -->|No| E[Investigate implicit discrimination in model architecture]
 
-B -->|No| F{Proxy discrimination? <br> (Through correlated variables)}
-
+B -->|No| F{Proxy discrimination present?}
 F -->|Yes| G{Proxy variables identifiable?}
 G -->|Yes| H[Apply pre-processing transformation]
 G -->|No| I[Use in-processing regularization]
 
-F -->|No| J{Mediator discrimination? <br> (Through influenced variables)}
-
+F -->|No| J{Mediator discrimination present?}
 J -->|Yes| K{Are mediators legitimate predictors?}
 K -->|Yes| L[Use multi-objective optimization]
 K -->|No| M[Adjust or remove mediator influence]
 
-J -->|No| N{Outcome discrimination? <br> (Output disparities)}
-
+J -->|No| N{Outcome discrimination present?}
 N -->|Yes| O{Disparities consistent across subgroups?}
-O -->|Yes| P[Apply post-processing (e.g., threshold adjustment)]
-O -->|No| Q[Apply targeted causal intervention]
+O -->|Yes| P[Apply post-processing such as threshold adjustment]
+O -->|No| Q[Apply targeted intervention based on causal structure]
 
 N -->|No| R[No fairness intervention required]
 ```
