@@ -198,45 +198,16 @@ class PartTime proxy;
 class Socioeconomic confounder;
 class Loan outcome;
 ```
-```mermaid
-flowchart TB
-
-%% Legend Title
-L[Legend]
-
-%% Node Examples
-PA[Protected Attribute]
-MED[Mediator]
-PROX[Proxy Variable]
-CONF[Confounder]
-OUT[Outcome]
-
-%% Arrow Examples
-CausalA[Causal Relationship]
-CorrA[Correlation / Proxy Relationship]
-
-%% Styling
-classDef protected fill:#ffe6f0,stroke:#cc0066,stroke-width:2px;
-classDef mediator fill:#e6f2ff,stroke:#0066cc,stroke-width:2px;
-classDef proxy fill:#fff5e6,stroke:#ff9900,stroke-dasharray:5 5;
-classDef confounder fill:#f2f2f2,stroke:#666666,stroke-width:2px;
-classDef outcome fill:#e6ffe6,stroke:#009933,stroke-width:3px;
-
-class PA protected;
-class MED mediator;
-class PROX proxy;
-class CONF confounder;
-class OUT outcome;
-
-%% Arrow demo
-CausalA --> OUT
-CorrA -.-> OUT
-```
-
 
 Legend:
-- `-->` = causal relationship  
-- `-.->` = correlation / proxy relationship
+- Pink nodes — Protected attributes  
+- Blue nodes — Mediators  
+- Orange dashed border — Proxy variables  
+- Grey nodes — Confounders  
+- Green nodes — Outcomes  
+
+Solid arrow (→) — Causal relationship  
+Dashed arrow (-.-→) — Correlation / proxy relationship  
 
 ---
 
