@@ -443,7 +443,7 @@ N -->|No| R[No fairness intervention required]
 
 ---
 
-### 4.3.2 Limited Information Adaptation
+### 4️⃣ Limited Information Adaptation
 
 Real-world data is incomplete.  
 
@@ -471,7 +471,7 @@ Always document:
 
 ---
 
-# 7. Practical Workflow Summary
+## 7. Practical Workflow Summary
 
 1. Identify variables
 2. Build causal graph
@@ -483,7 +483,7 @@ Always document:
 
 ---
 
-# 8. Core Principle
+## 8. Core Principle
 
 Fairness interventions should:
 
