@@ -139,11 +139,11 @@ After identifying variables, construct a **Directed Acyclic Graph (DAG)** to vis
 > _(Part-time work may correlate with gender, but gender does not directly “cause” part-time status in a strict biological sense — both may reflect broader social patterns.)_  
 
 - **Distinguish node types visually (when drawing the graph):**
-  - Protected attributes: [e.g., Gender]
-  - Mediators: [e.g., Income Level, Employment History]
-  - Proxy variables: [e.g., Industry Sector]
-  - Confounders: [e.g., Socioeconomic Background]
-  - Outcomes: [e.g., Loan Approval Decision]
+  - **Protected attributes:** _[e.g., Gender]_
+  - **Mediators:** _[e.g., Income Level, Employment History]_
+  - **Proxy variables:** _[e.g., Industry Sector]_
+  - **Confounders:** _[e.g., Socioeconomic Background]_
+  - **Outcomes:** _[e.g., Loan Approval Decision]_
 
 - **Document causal assumptions with justification for each arrow.**  
 > _Example justification:_   
