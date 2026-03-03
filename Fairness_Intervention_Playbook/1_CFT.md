@@ -41,7 +41,7 @@ Each step builds on the previous one.
 
 ### A. Protected Attributes Identification
 1. **Primary protected attributes:**  
-[List legally protected characteristics relevant to this application]
+[List legally protected characteristics relevant to this application]  
 _[(e.g., gender, race, age)]_    
 2. **Intersectional categories:**  
 [List relevant combinations of protected attributes]  
@@ -54,8 +54,12 @@ Document why each attribute is relevant in this context.
 ### B. Mediator Variable Identification
 Mediators are variables that are influenced by protected attributes and also influence the outcome.  
 These variables may transmit structural inequalities.  
-1. **Variables directly influenced by protected attributes:**  [List variables _(e.g., employment history, income level)_]
-2. **Evidence for causal relationship:**  [Provide brief justification for each variable - domain expertise, research findings, or data patterns _(e.g., research on wage gaps, observed career breaks)_]
+1. **Variables directly influenced by protected attributes:**  
+[List variables]  
+_[(e.g., employment history, income level)]_  
+3. **Evidence for causal relationship:**
+[Provide brief justification for each variable - domain expertise, research findings, or data patterns]
+_[(e.g., research on wage gaps, observed career breaks)]_]    
 
 For each mediator, consider:  
 - Does this variable reflect historical or structural inequality?
@@ -64,9 +68,13 @@ For each mediator, consider:
 ***
 
 ### C. Confounding Variable Identification
-Confounders are variables that influence both protected attributes and outcomes, potentially creating misleading associations.
-1. **Variables that may affect both protected attributes and outcomes:** [List variables _(e.g., socioeconomic background, neighborhood economic conditions)_]
-2. **Evidence for confounding role:** [List evidences _(e.g., research linking socioeconomic status to both education and loan approval)_]
+Confounders are variables that influence both protected attributes and outcomes, potentially creating misleading associations.  
+1. **Variables that may affect both protected attributes and outcomes:**  
+[List variables]  
+_[(e.g., socioeconomic background, neighborhood economic conditions)]_  
+3. **Evidence for confounding role:**  
+[List evidences]  
+_[(e.g., research linking socioeconomic status to both education and loan approval)]_  
 
 For each potential confounder, consider:
 - Does this variable create a spurious relationship?
@@ -77,16 +85,26 @@ For each potential confounder, consider:
 
 ### D. Proxy Variable Identification
 Proxy variables are correlated with protected attributes and may indirectly encode them.  
-1. **Variables correlated with protected attributes:**  [List variables _(e.g., part-time employment status, zip code)_]
-2. **Evidence for correlation:**  [Brief justification per variable _(e.g., statistical correlation, labor market patterns)_]
-3. **Common causes explaining correlation:**  [Explanation per variable _(e.g., occupational segregation, residential segregation)_]
+1. **Variables correlated with protected attributes:**  
+[List variables]  
+_[(e.g., part-time employment status, zip code)]_  
+3. **Evidence for correlation:**
+[Brief justification per variable]
+_[(e.g., statistical correlation, labor market patterns)]_  
+5. **Common causes explaining correlation:**  
+[Explanation per variable]  
+_[(e.g., occupational segregation, residential segregation)]_  
 
 ---
 
 ### E. Outcome Variable Identification
 Define the system’s decision or prediction.  
-1. **Decisions or predictions made by the system:** [List outcomes (e.g., loan approval decision, risk score)]
-2. **Evaluation metrics used:** [List metrics _(e.g., approval rate, default rate, accuracy)_]
+1. **Decisions or predictions made by the system:**
+[List outcomes]
+_[(e.g., loan approval decision, risk score)]_
+3. **Evaluation metrics used:**
+[List metrics]
+_[(e.g., approval rate, default rate, accuracy)]_    
 
 ---
 
