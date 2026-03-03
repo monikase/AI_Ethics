@@ -230,8 +230,8 @@ Compare the outcomes.
 - **Discrepancy analysis:**  
 [Compare expected vs. actual]   
 
-- Did prediction change?  
-- If yes → potential counterfactual unfairness
+  - Did prediction change?  
+  - If yes → potential counterfactual unfairness
 
 > _Example:_ There is a clear difference:
 > | Scenario                 | Predicted Risk | Decision |
