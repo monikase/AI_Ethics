@@ -174,10 +174,16 @@ _[Loan Denied – predicted default risk: 18%]_
 
 ---
 
-2. **Counterfactual scenario:**
-   - **Modified protected attribute:** [Counterfactual value]
-   - **Variables that should remain constant:** [List causally independent variables]
-   - **Variables that should change:** [List descendants of protected attributes] 
+#### 2. **Counterfactual scenario:**  
+Create the **“what if” version of the same person**.
+
+- **Modified protected attribute:**
+[Counterfactual value]
+[Gender: Male]
+> We now ask:
+If this exact same applicant were male instead of female, what would happen?
+- **Variables that should remain constant:** [List causally independent variables]
+- **Variables that should change:** [List descendants of protected attributes] 
 
 ---
 
