@@ -203,7 +203,6 @@ _[Gender: Male]_
 >
 >_Because our causal model shows gender can influence how employment gaps or income stability are evaluated._  
 
-
 ---
 
 #### 3. **Fairness evaluation:**
@@ -243,31 +242,48 @@ Compare the outcomes.
 > - The decision changes only because gender changed.
 > - Therefore, the model is counterfactually unfair for this individual.
 
----  
-
-## Example
-
-Question:
-> Would this applicant be approved if they were male instead of female, keeping debt-to-income ratio and savings constant?
-
-If approval changes → causal discrimination likely exists.
-
 ---
 
-## 4.2 Path-Specific Analysis
+#### **4.2 Path-Specific Analysis:**  
+Counterfactual fairness tells us whether discrimination exists.  
+Path-specific analysis helps us understand **where it comes from**.  
 
-Break total effect into pathways:
+#### 1. Identify specific causal pathways from protected attributes to outcomes.  
+Start by mapping all paths from the protected attribute (e.g., gender) to the outcome (loan approval).  
 
-Example:
-- Gender → Income → Approval
-- Gender → Employment history → Approval
+> _Example paths in the loan system:_
+> **1. Gender → Employment History → Default Risk → Approval**
+> **2. Gender → Income Level → Debt-to-Income Ratio → Default Risk → Approval**
+> **3. Gender → Part-Time Status → Income Stability → Default Risk → Approval**
+> **4. Gender → Approval (direct path)**
+>
+> Each of these is a separate mechanism through which disparity may occur.
 
-Classify each pathway:
-- Legitimate
-- Unfair
-- Contested
+#### 2. Classify paths as legitimate or problematic based on domain knowledge.
+This step requires **normative judgment** - not just technical analysis.  
 
-Quantify contribution of each path when possible.
+You must decide:  
+- Does this pathway reflect legitimate repayment risk?
+- Or does it reflect structural or historical bias?
+
+> | Path                                                  | Possible Classification       | Why?                                                                 |
+> |-------------------------------------------------------|------------------------------|----------------------------------------------------------------------|
+> | Gender → Employment History → Default Risk            | ⚠ Potentially Problematic    | Career breaks may reflect caregiving responsibilities, not actual repayment ability |
+> | Gender → Income → Debt Ratio → Default Risk           | ⚠ Partially Problematic      | Income differences may reflect systemic wage gaps                   |
+> | Gender → Part-Time Status → Default Risk              | ❌ Problematic               | Part-time status may act as a gender proxy                          |
+> | Gender → Approval (direct)                            | ❌ Clearly Unfair            | No legitimate reason for direct gender influence                    |
+ 
+This step must involve:  
+- Legal review
+- Domain experts
+- Business stakeholders
+
+It cannot be decided by code alone.  
+
+#### 3. Quantify the contribution of each path to observed disparities.
+
+
+#### 4. Focus interventions on problematic paths while preserving legitimate paths.
 
 ---
 
