@@ -162,15 +162,15 @@ Test whether predictions would change if only the protected attribute changed.
 
 #### 1. **Base case description**   
 Describe the **real individual and the model’s actual decision**.  
-- **Individual characteristics:**
+- **Individual characteristics:**  
 [Relevant non-protected attributes]   
 _Example: [Credit score: 720, Income: €45,000, Debt-to-income ratio: 28%, Savings: €12,000, 2-year employment gap]_
-- **Protected attribute value:**
-[Current value]
-_[Gender: Female]_
-- **System prediction:**
-[Current prediction/decision]
-_[Loan Denied – predicted default risk: 18%]_
+- **Protected attribute value:**  
+[Current value]   
+_[Gender: Female]_   
+- **System prediction:**  
+[Current prediction/decision]  
+_[Loan Denied – predicted default risk: 18%]_  
 
 ---
 
