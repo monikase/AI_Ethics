@@ -17,8 +17,6 @@ The **Causal Fairness Toolkit provides a practical step-by-step method to help t
 
 Instead of applying simple statistical adjustments, this toolkit focuses on understanding the reasons behind disparities so that interventions are more precise, transparent, and effective.  
 
----
-
 ## 2. Toolkit Overview 
 
 The toolkit consists of four components:
@@ -32,12 +30,12 @@ Each step builds on the previous one.
 
 ---
 
-# 3. Step 1 — Causal Modeling Template
+## 3. Causal Fairness Toolkit
 
-## Goal
+## Step 1. Causal Modeling Template
+
+### Goal
 Map how protected attributes influence predictions.
-
----
 
 ## 3.1 Variable Identification Template
 
