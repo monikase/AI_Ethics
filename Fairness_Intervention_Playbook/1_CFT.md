@@ -199,12 +199,12 @@ class Socioeconomic confounder;
 class Loan outcome;
 ```
 
-Legend:
-- Pink nodes — Protected attributes  
-- Blue nodes — Mediators  
-- Orange dashed border — Proxy variables  
-- Grey nodes — Confounders  
-- Green nodes — Outcomes  
+**Legend:**  
+- Pink → Protected attributes  
+- Blue → Mediators  
+- Orange dashed border → Proxy variables  
+- Grey → Confounders  
+- Green → Outcomes  
 
 Solid arrow (→) — Causal relationship  
 Dashed arrow (-.-→) — Correlation / proxy relationship  
