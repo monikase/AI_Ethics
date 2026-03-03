@@ -36,7 +36,7 @@ Map how protected attributes influence predictions.
 
 ---
 
-### I Variable Identification Template
+### Variable Identification Template
 
 ---
 
