@@ -325,23 +325,23 @@ The Intervention Point Identification Method helps teams decide where to make ch
 
 1. If direct discrimination is present (direct path from protected attribute to outcome):  
    a. Is the protected attribute explicitly used as a feature?
-      - Yes: Apply in-processing constraints or remove the attribute
-      - No: Investigate implicit direct discrimination through model architecture
+      - Yes → Apply in-processing constraints or remove the attribute
+      - No → Investigate implicit direct discrimination through model architecture
 
 2. If proxy discrimination is present (path through correlated but not causally related variables):  
    a. Can the proxy variables be identified?  
-      - Yes: Consider pre-processing approaches to transform these variables
-      - No: Apply in-processing regularization to minimize proxy use
+      - Yes → Consider pre-processing approaches to transform these variables
+      - No → Apply in-processing regularization to minimize proxy use
 
 3. If mediator discrimination is present (path through variables causally influenced by protected attributes):  
    a. Are the mediator variables legitimate predictors for the task?  
-      - Yes: Consider using multi-objective optimization to balance fairness with prediction
-      - No: Apply pre-processing to remove the influence of protected attributes on these variables
+      - Yes → Consider using multi-objective optimization to balance fairness with prediction
+      - No → Apply pre-processing to remove the influence of protected attributes on these variables
 
 4. If outcome discrimination is present (disparities in model outputs):  
    a. Are the disparities consistent across subgroups?  
-      - Yes: Consider post-processing approaches like threshold optimization
-      - No: Apply more targeted interventions based on causal structure
+      - Yes → Consider post-processing approaches like threshold optimization
+      - No → Apply more targeted interventions based on causal structure
 
 
 ---
