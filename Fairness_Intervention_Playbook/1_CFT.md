@@ -156,28 +156,28 @@ Test whether predictions would change if only the protected attribute changed.
 
 ---
 
-## 4.1 Counterfactual Query Template  
+### 4.1 Counterfactual Query Structure  
 
 ---
 
 1. **Base case description:**
-   - Individual characteristics: [Relevant non-protected attributes]
-   - Protected attribute value: [Current value]
-   - System prediction: [Current prediction/decision]
+   - **Individual characteristics:** [Relevant non-protected attributes]
+   - **Protected attribute value:** [Current value]
+   - **System prediction:** [Current prediction/decision]
 
 ---
 
 2. **Counterfactual scenario:**
-   - Modified protected attribute: [Counterfactual value]
-   - Variables that should remain constant: [List causally independent variables]
-   - Variables that should change: [List descendants of protected attributes] 
+   - **Modified protected attribute:** [Counterfactual value]
+   - **Variables that should remain constant:** [List causally independent variables]
+   - **Variables that should change:** [List descendants of protected attributes] 
 
 ---
 
 3. **Fairness evaluation:**
-   - Expected outcome under counterfactual: [Prediction if fair]
-   - Actual model behavior: [What model actually does]
-   - Discrepancy analysis: [Compare expected vs. actual]
+   - **Expected outcome under counterfactual:** [Prediction if fair]
+   - **Actual model behavior:** [What model actually does]
+   - **Discrepancy analysis:** [Compare expected vs. actual]
 
 - Did prediction change?  
 - If yes → potential counterfactual unfairness
