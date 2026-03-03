@@ -316,45 +316,44 @@ Instead of forcing demographic parity, you:
 
 ---
 
-# 5. Step 3 — Intervention Point Identification
+## **4.3 Intervention Point Identification Method**
+The Intervention Point Identification Method helps teams decide where to make changes in the ML pipeline based on the results of the causal analysis. It connects different types of bias to the right kind of intervention.
+
+---
 
 Use this decision structure:
 
 ---
 
-## A. Direct Discrimination
-Protected attribute directly affects outcome.
+```mermaid
+flowchart TD
 
-Action:
-- Remove attribute
-- Add fairness constraints during training
+A[Start] --> B{Direct discrimination? <br> (Protected Attribute → Outcome)}
 
----
+B -->|Yes| C{Protected attribute explicitly used?}
+C -->|Yes| D[Remove attribute or apply in-processing constraints]
+C -->|No| E[Investigate implicit discrimination in model architecture]
 
-## B. Proxy Discrimination
-Protected attribute influences outcome via correlated but irrelevant variable.
+B -->|No| F{Proxy discrimination? <br> (Through correlated variables)}
 
-Action:
-- Transform or remove proxy variable (pre-processing)
-- Apply adversarial debiasing (in-processing)
+F -->|Yes| G{Proxy variables identifiable?}
+G -->|Yes| H[Apply pre-processing transformation]
+G -->|No| I[Use in-processing regularization]
 
----
+F -->|No| J{Mediator discrimination? <br> (Through influenced variables)}
 
-## C. Mediator Discrimination
-Protected attribute affects intermediate variables.
+J -->|Yes| K{Are mediators legitimate predictors?}
+K -->|Yes| L[Use multi-objective optimization]
+K -->|No| M[Adjust or remove mediator influence]
 
-If mediator is:
-- Legitimate → consider path-specific fairness
-- Not legitimate → adjust or remove influence
+J -->|No| N{Outcome discrimination? <br> (Output disparities)}
 
----
+N -->|Yes| O{Disparities consistent across subgroups?}
+O -->|Yes| P[Apply post-processing (e.g., threshold adjustment)]
+O -->|No| Q[Apply targeted causal intervention]
 
-## D. Output Disparity Only
-No clear causal path but group disparity exists.
-
-Action:
-- Post-processing (threshold optimization)
-- Calibration adjustments
+N -->|No| R[No fairness intervention required]
+```
 
 ---
 
