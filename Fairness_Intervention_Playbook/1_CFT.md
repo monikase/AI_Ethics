@@ -28,8 +28,6 @@ The toolkit consists of four components:
 
 Each step builds on the previous one.
 
----
-
 ## 3. Causal Fairness Toolkit
 
 ## Step 1. Causal Modeling Template
