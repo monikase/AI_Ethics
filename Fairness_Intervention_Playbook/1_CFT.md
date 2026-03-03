@@ -130,6 +130,23 @@ After identifying variables, construct a **Directed Acyclic Graph (DAG)** to vis
 
 These paths should later be evaluated through counterfactual analysis to determine whether they represent legitimate influence or discrimination.
 
+
+```mermaid
+graph LR
+    Gender --> Employment_History
+    Gender --> Income
+    Employment_History --> Default_Risk
+    Income --> Default_Risk
+    Default_Risk --> Loan_Approval
+    Gender -.-> Part_Time_Status
+    Socioeconomic_Background --> Income
+```
+
+This renders as an actual visual graph.
+
+Legend:
+- `-->` = causal relationship  
+- `-.->` = correlation / proxy relationship  
 ---
 
 # 4. Step 2 — Counterfactual Analysis Framework
