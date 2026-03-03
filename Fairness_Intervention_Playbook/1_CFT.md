@@ -282,8 +282,17 @@ This step must involve:
 
 It cannot be decided by code alone.  
 
-#### 3. Quantify the contribution of each path to observed disparities.
+#### 3. Quantify the contribution of each path to observed disparities.  
+Measure how much each path contributes to the overall disparity.
 
+> _Example findings:_
+> - Employment history pathway → 40% of disparity
+> - Income pathway → 25%
+> - Part-time proxy pathway → 20%
+> - Direct discrimination → 15%
+
+This tells you which mechanisms matter most.  
+Without this step, you might overcorrect small effects and ignore major ones.  
 
 #### 4. Focus interventions on problematic paths while preserving legitimate paths.
 
