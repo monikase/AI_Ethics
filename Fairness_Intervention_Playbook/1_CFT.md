@@ -122,7 +122,7 @@ Document justification for each variable.
 
 ---
 
-### II Causal Graph Construction
+### Causal Graph Construction
 
 ---
 
