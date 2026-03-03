@@ -43,22 +43,22 @@ Map how protected attributes influence predictions.
 1. Primary protected attributes: [List legally protected attributes (e.g., gender, race, age)]
 2. Intersectional categories: [Include intersectional groups where relevant (e.g., gender × age)]
 
-Example:
-- Gender
-- Age
-- Gender × Age
+Document why each attribute is relevant in this context.  
 
 ---
 
-### B. Outcome Variables
-- What decision does the system make?
-- What prediction drives that decision?
+### B. Mediator Variable Identification
+Mediators are variables that are influenced by protected attributes and also influence the outcome. These variables may transmit structural inequalities.
+1. Variables directly influenced by protected attributes: [List variables (e.g., employment history, income level]
+2. Evidence for causal relationship: [Provide brief justification for each variable — domain expertise, research findings, or data patterns (e.g., research on wage gaps, observed career breaks)]
 
-Example:
-- Default risk score
-- Loan approval decision
+For each mediator, consider:  
+- Does this variable reflect historical or structural inequality?
+- Should its influence on the outcome be preserved or adjusted?
 
 ---
+
+
 
 ### C. Mediators
 Variables influenced by protected attributes that also influence outcomes.
