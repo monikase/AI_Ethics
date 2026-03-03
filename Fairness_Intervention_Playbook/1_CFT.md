@@ -128,15 +128,15 @@ Document justification for each variable.
 
 After identifying variables, construct a **Directed Acyclic Graph (DAG)** to visually represent how variables influence one another.  
 
-- **Use directed arrows to represent causal relationships.**  
-  _Example:_  
-  **Gender → Employment History → Default Risk → Loan Approval**  
-  (Gender may influence employment history, which affects default risk.)
+- **Use directed arrows to represent causal relationships.**    
+> _Example:_   
+> **Gender → Employment History → Default Risk → Loan Approval**   
+> _(Gender may influence employment history, which affects default risk.)_  
 
-- **Use bidirectional dashed arrows to represent correlations without direct causation.**  
-  _Example:_  
- **Gender ↔ Part-Time Status**  
-  (Part-time work may correlate with gender, but gender does not directly “cause” part-time status in a strict biological sense — both may reflect broader social patterns.)
+- **Use bidirectional dashed arrows to represent correlations without direct causation.**   
+> _Example:_  
+> **Gender ↔ Part-Time Status**  
+> _(Part-time work may correlate with gender, but gender does not directly “cause” part-time status in a strict biological sense — both may reflect broader social patterns.)_  
 
 - **Distinguish node types visually (when drawing the graph):**
   - Protected attributes: [e.g., Gender]
@@ -146,14 +146,14 @@ After identifying variables, construct a **Directed Acyclic Graph (DAG)** to vis
   - Outcomes: [e.g., Loan Approval Decision]
 
 - **Document causal assumptions with justification for each arrow.**  
-  _Example justification:_   
-  - "Gender → Income" based on documented wage gap research.  
-  - "Income → Default Risk" based on financial risk modeling evidence.
+> _Example justification:_   
+> - "Gender → Income" based on documented wage gap research.  
+> - "Income → Default Risk" based on financial risk modeling evidence.  
 
 - **Identify critical paths that may transmit discrimination.**  
-  _Example critical paths:_  
-  - Gender → Income → Debt-to-Income Ratio → Approval  
-  - Gender → Employment Gap → Risk Score → Approval  
+> _Example critical paths:_  
+> - Gender → Income → Debt-to-Income Ratio → Approval  
+> - Gender → Employment Gap → Risk Score → Approval  
 
 These paths should later be evaluated through counterfactual analysis to determine whether they represent legitimate influence or discrimination.
 
