@@ -56,10 +56,10 @@ Mediators are variables that are influenced by protected attributes and also inf
 These variables may transmit structural inequalities.  
 1. **Variables directly influenced by protected attributes:**  
 [List variables]  
-_[(e.g., employment history, income level)]_  
-3. **Evidence for causal relationship:**
-[Provide brief justification for each variable - domain expertise, research findings, or data patterns]
-_[(e.g., research on wage gaps, observed career breaks)]_]    
+_[(e.g., employment history, income level)]_   
+3. **Evidence for causal relationship:**    
+[Provide brief justification for each variable - domain expertise, research findings, or data patterns]    
+_[(e.g., research on wage gaps, observed career breaks)]_        
 
 For each mediator, consider:  
 - Does this variable reflect historical or structural inequality?
