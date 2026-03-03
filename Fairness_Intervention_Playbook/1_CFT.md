@@ -271,7 +271,7 @@ _[Gender: Male]_
 ### 3. **Fairness evaluation:**
 Compare the outcomes.  
 
-- **Expected outcome under counterfactual (if the model were fair):**  
+- **Expected outcome under counterfactual:**  
 [Prediction if fair]
 
 > _Example:_ If the model does not unfairly use gender, then:  
