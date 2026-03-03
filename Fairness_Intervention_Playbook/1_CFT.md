@@ -183,8 +183,9 @@ _[Gender: Male]_
 > Ask: If this exact same applicant were male instead of female, what would happen?  
 
 - **Variables that should remain constant:**   
-[List causally independent variables]   
-These are characteristics that should not change just because gender changes (they are not caused by gender in our model):  
+[List causally independent variables]  
+  
+Characteristics that should not change just because gender changes (they are not caused by gender in our model):  
 - _[Credit score: 720]_   
 - _[Savings: €12,000]_  
 - _[Debt-to-income ratio: 28%]_  
