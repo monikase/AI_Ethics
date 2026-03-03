@@ -148,32 +148,41 @@ Legend:
 
 ---
 
-### 4. Counterfactual Analysis Framework
+## 4. Counterfactual Analysis Framework
+
+#### Goal  
+
+Test whether predictions would change if only the protected attribute changed.  
 
 ---
 
-#### Goal
-Test whether predictions would change if only the protected attribute changed.
+## 4.1 Counterfactual Query Template  
 
 ---
 
-## 4.1 Counterfactual Query Template
+1. **Base case description:**
+   - Individual characteristics: [Relevant non-protected attributes]
+   - Protected attribute value: [Current value]
+   - System prediction: [Current prediction/decision]
 
-### Base Case
-- Individual attributes (non-protected)
-- Protected attribute value
-- Model prediction
+---
 
-### Counterfactual Scenario
-- Change protected attribute
-- Keep causally independent variables constant
-- Allow descendants to change (if appropriate)
+2. **Counterfactual scenario:**
+   - Modified protected attribute: [Counterfactual value]
+   - Variables that should remain constant: [List causally independent variables]
+   - Variables that should change: [List descendants of protected attributes] 
 
-### Evaluation
-- Did prediction change?
+---
+
+3. **Fairness evaluation:**
+   - Expected outcome under counterfactual: [Prediction if fair]
+   - Actual model behavior: [What model actually does]
+   - Discrepancy analysis: [Compare expected vs. actual]
+
+- Did prediction change?  
 - If yes → potential counterfactual unfairness
 
----
+---  
 
 ## Example
 
