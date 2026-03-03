@@ -307,7 +307,7 @@ Compare the outcomes.
 
 ---
 
-### **4.2 Path-Specific Analysis:**  
+### **Path-Specific Effect Analysis:**  
 Counterfactual fairness tells us whether discrimination exists.  
 Path-specific analysis helps us understand **where it comes from**. 
 
