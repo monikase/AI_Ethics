@@ -19,7 +19,7 @@ Rather than relying only on statistical adjustments, the toolkit focuses on unde
 
 ### Why Causal Fairness Instead of Only Statistical Fairness?
 
-Traditional fairness metrics (for example, equal approval rates across groups) measure differences in outcomes but do not explain their causes.
+Traditional fairness metrics _(for example, equal approval rates across groups)_ measure differences in outcomes but do not explain their causes.
 
 Two systems can produce the same statistical disparity:
 - one due to legitimate differences in risk
@@ -388,7 +388,7 @@ Therefore:
 ---
 
 ### 1. **Identify specific causal pathways** from protected attributes to outcomes  
-Start by mapping all paths from the protected attribute _(e.g., gender)_ to the outcome _(e.g.,loan approval)_.  
+Start by mapping all paths from the protected attribute _(e.g., gender)_ to the outcome _(e.g., loan approval)_.  
 
 > _Example paths in the loan system:_
 >   
