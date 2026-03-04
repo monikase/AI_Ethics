@@ -214,7 +214,7 @@ These paths should later be evaluated through counterfactual analysis to determi
 
 ---
 
-### DAG Example 
+### Example Causal Graph 
 
 ```mermaid
 flowchart LR
@@ -366,8 +366,7 @@ Compare the outcomes.
 
 ---
 
-### ! Important Limitation:  
-### Counterfactuals Are Estimated
+### ! Important Limitation: Counterfactuals Are Estimated
 Counterfactual fairness cannot be directly observed from real-world data.  
 
 > We never see the same person both:  
@@ -533,25 +532,34 @@ The Intervention Point Identification Method helps teams decide where to make ch
 
 #### Intervention Selection Decision Tree
 
+0. **Check for dataset bias before model analysis**  
+   a. Is the observed disparity caused by **dataset bias** (e.g., sampling bias, historical bias, or measurement bias)?  
+      - Yes → Apply **data-level interventions** such as dataset rebalancing, improved data collection, or label correction  
+      - No → Continue with causal pathway analysis  
+
 1. If **direct discrimination is present** (direct path from protected attribute to outcome):  
-   a. Is the protected attribute explicitly used as a feature?
-      - Yes → Apply in-processing constraints or remove the attribute
-      - No → Investigate implicit direct discrimination through model architecture
+   a. Is the protected attribute explicitly used as a feature?  
+      - Yes → Apply **in-processing constraints** or remove the attribute  
+      - No → Investigate **implicit direct discrimination** through model architecture or feature interactions  
 
 2. If **proxy discrimination is present** (path through correlated but not causally related variables):  
    a. Can the proxy variables be identified?  
-      - Yes → Consider pre-processing approaches to transform these variables
-      - No → Apply in-processing regularization to minimize proxy use
+      - Yes → Consider **pre-processing approaches** to transform or replace these variables  
+      - No → Apply **in-processing regularization** to minimize proxy use  
 
 3. If **mediator discrimination is present** (path through variables causally influenced by protected attributes):  
-   a. Are the mediator variables legitimate predictors for the task?  
-      - Yes → Consider using multi-objective optimization to balance fairness with prediction
-      - No → Apply pre-processing to remove the influence of protected attributes on these variables
+   a. Are the mediator variables legitimate predictors for the task?    
+      - Yes → Consider **multi-objective optimization** to balance fairness with predictive accuracy  
+      - No → Apply **pre-processing methods** to remove or adjust the influence of protected attributes on these variables  
 
 4. If **outcome discrimination is present** (disparities in model outputs):  
-   a. Are the disparities consistent across subgroups?  
-      - Yes → Consider post-processing approaches like threshold optimization
-      - No → Apply more targeted interventions based on causal structure
+   a. Are the disparities consistent across subgroups?    
+      - Yes → Consider **post-processing approaches** such as threshold optimization  
+      - No → Apply **targeted interventions** based on the identified causal pathways  
+
+5. **If no problematic causal pathways are identified**  
+   - Document the causal analysis and justification  
+   - Continue **fairness monitoring during deployment**  
 
 ---
 
@@ -673,7 +681,7 @@ If deploying across domains:
 - Re-run counterfactual evaluation.
 - Monitor fairness continuously post-deployment.
 
-Fairness is not a one-time certification. It requires ongoing validation.
+Fairness is not a one-time certification; it requires continuous monitoring and validation.
 
 ---
 
@@ -720,7 +728,7 @@ Before deploying a model, teams should verify that the following steps have been
 
 ---
 
-## 8. Core Principle
+## 8. Core Principles
 
 Fairness interventions should:
 
