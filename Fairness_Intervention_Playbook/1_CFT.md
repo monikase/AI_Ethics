@@ -47,7 +47,7 @@ Each step builds on the previous one.
 
 ---
 
-### Variable Identification Guide
+### 1.1 Variable Identification Guide
 
 ---
 
@@ -134,7 +134,7 @@ Document justification for each variable.
 
 ---
 
-### Causal Graph Construction
+### 1.2 Causal Graph Construction
 
 ---
 
@@ -231,7 +231,7 @@ Dashed arrow (-.-→) — Correlation / proxy relationship
 
 ---
 
-### Counterfactual Query Formulation  
+### 2.1 Counterfactual Query Formulation  
 
 ---
 
@@ -332,10 +332,9 @@ Therefore:
 - Sensitivity analysis must be performed.
 - Results should be presented with uncertainty.
 
-
 ---
 
-### **Path-Specific Effect Analysis**  
+### 2.2 Path-Specific Effect Analysis    
 Counterfactual fairness tells us whether discrimination exists.  
 Path-specific analysis helps us understand **where it comes from**. 
 
@@ -438,25 +437,25 @@ Never report counterfactual fairness as absolute certainty.
 
 ---
 
-## Intersectional Counterfactual Analysis
+## 2.3 Intersectional Counterfactual Analysis
 
 ---
 
 Discrimination may occur at intersections of protected attributes rather than along a single attribute.  
 
-> For example, an algorithm may treat:  
-> - women fairly overall  
-> - older applicants fairly overall  
+> _For example, an algorithm may treat:_   
+> - _women fairly overall_    
+> - _older applicants fairly overall_    
 >  
->  but still disadvantage **older women specifically**.    
+>  _but still disadvantage **older women specifically**._      
 
 To detect this, extend counterfactual queries to change **multiple protected attributes simultaneously**.
 
-> Example counterfactual question:  
->   
-> Would this applicant’s decision change if they were:  
-> - **Male instead of female**, AND  
-> - **Younger instead of older**?  
+> _Example counterfactual question:_    
+>     
+> _Would this applicant’s decision change if they were:_  
+> - _**Male instead of female**, AND_  
+> - _**Younger instead of older**?_    
 
 Key measures include:
 
