@@ -17,6 +17,18 @@ The **Causal Fairness Toolkit provides a practical step-by-step method to help t
 
 Instead of applying simple statistical adjustments, this toolkit focuses on understanding the reasons behind disparities so that interventions are more precise, transparent, and effective.  
 
+### Why Causal Fairness Instead of Only Statistical Fairness?
+
+Traditional fairness metrics (such as equal approval rates across groups) measure outcome differences, but they do not explain why those differences exist.  
+
+Two systems can show the same statistical disparity:
+- One due to legitimate risk differences
+- One due to discriminatory mechanisms
+
+Statistical fairness cannot distinguish between these cases.  
+
+The Causal Fairness Toolkit focuses on identifying how protected attributes influence outcomes and whether those pathways are fair or unfair. This ensures interventions address root causes rather than masking disparities.  
+
 ## 2. Toolkit Overview 
 
 The toolkit consists of four components:
