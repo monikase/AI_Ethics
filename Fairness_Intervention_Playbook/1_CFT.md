@@ -56,7 +56,7 @@ The toolkit consists of the following components:
 
 ### 5. [Domain Adaptation & Deployment](#5-domain-adaptation-and-deployment-check)
 
-### 6. [Implementation Checklist](#6-implementation-checklist)
+### 6. [Implementation Checklist](#checklist)
 
 ### 7. [Practical Workflow Summary](#summary)
 
@@ -686,6 +686,7 @@ Fairness is not a one-time certification; it requires continuous monitoring and 
 ---
 
 ## 6. Implementation Checklist
+<a id="checklist"></a>
 
 Before deploying a model, teams should verify that the following steps have been completed:
 
