@@ -444,7 +444,7 @@ Never report counterfactual fairness as absolute certainty.
 
 ---
 
-## 2.3 Intersectional Counterfactual Analysis
+### 2.3 Intersectional Counterfactual Analysis
 
 ---
 
