@@ -219,14 +219,14 @@ class Loan outcome;
 ```
 
 **Legend:**  
-- Pink → Protected attributes  
-- Blue → Mediators  
-- Orange dashed border → Proxy variables  
-- Grey → Confounders  
-- Green → Outcomes  
-
-Solid arrow (→) — Causal relationship  
-Dashed arrow (-.-→) — Correlation / proxy relationship  
+> - Pink → Protected attributes  
+> - Blue → Mediators  
+> - Orange dashed border → Proxy variables  
+> - Grey → Confounders  
+> - Green → Outcomes  
+>  
+> Solid arrow (→) : Causal relationship  
+> Dashed arrow (-.-→) : Correlation / proxy relationship  
 
 ---
 
