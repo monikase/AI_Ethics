@@ -409,6 +409,36 @@ Instead of forcing demographic parity, you:
 
 ---
 
+## Counterfactual Evaluation Metrics  
+To move beyond individual examples, fairness should be measured systematically.  
+
+### 1. Counterfactual Effect Size  
+Average difference between factual and counterfactual predictions across individuals.  
+
+> _Example:_  
+> _Average risk score decreases by 4% when gender changes → indicates systematic influence._
+
+### 2. Counterfactual Violation Rate  
+Proportion of individuals whose decision changes under counterfactual modification.  
+
+> _Example:_
+> _18% of applicants would receive a different approval decision if gender were changed._
+
+### 3. Path-Specific Effect Magnitude  
+Percentage of total disparity attributable to specific causal pathways.  
+
+> _Example:_
+> _Employment pathway → 40%_
+> _Income pathway → 25%_
+
+### 4. Uncertainty Quantification
+Use confidence intervals or bounding approaches to express uncertainty in effect estimates.  
+
+Never report counterfactual fairness as absolute certainty.  
+
+---
+
+
 ## 3️⃣ Intervention Point Identification Method
 The Intervention Point Identification Method helps teams decide where to make changes in the ML pipeline based on the results of the causal analysis. It connects different types of bias to the right kind of intervention.
 
@@ -473,29 +503,57 @@ N -->|No| R[No fairness intervention required]
 
 ## 4️⃣ Limited Information Adaptation
 
-Real-world data is incomplete.  
+In real-world applications, we rarely know the full causal structure behind the data, and it is usually impossible or unethical to run experiments that change protected attributes such as gender or race.
 
-Apply:  
+To address these challenges, the toolkit recommends the following approaches:  
 
-#### 1. Test Multiple Plausible Models
+#### 1. Method Selection for Observational Causal Inference  
+When experimental manipulation is impossible, causal effects must be estimated from observational data.  
+
+Choose methods based on available data and assumptions:  
+
+| Scenario | Recommended Method | Key Assumption |
+|--------|--------|--------|
+| Rich covariate data | Matching / Propensity Score | All confounders measured |
+| External variable affects protected attribute only | Instrumental Variables | Valid instrument exists |
+| Clear policy threshold | Regression Discontinuity | Individuals near threshold comparable |
+| Policy change over time | Difference-in-Differences | Parallel trends assumption |
+
+Whenever possible, apply multiple methods and compare results to check robustness.
+
+---
+
+#### 2. Test Multiple Plausible Models
 Test fairness under different causal assumptions when causal structure is uncertain.
 
-#### 2. Sensitivity Analysis
-Perform sensitivity analysis to identify robust intervention decisions.  
+---
+
+#### 3. Sensitivity Analysis
+Perform sensitivity analysis to identify robust intervention decisions.
+
 - How strong must hidden confounding be to eliminate the observed effect?
 - Use E-values or bounding methods.
 
-#### 3. Intersectional Modeling
-Prioritize resolving uncertainties that would change intervention recommendations.  
+---
+
+#### 4. Intersectional Modeling
+Prioritize resolving uncertainties that would change intervention recommendations.
+
 - Use hierarchical models when subgroup data is sparse.
 - Quantify uncertainty explicitly.
 
-#### 4. Transparent Documentation
-Document assumptions explicitly to enable future refinement.  
-Always document:  
+---
+
+#### 5. Transparent Documentation
+Document assumptions explicitly to enable future refinement.
+
+Always document:
 - Assumptions
 - Uncertainties
 - Rationale for intervention choices
+
+
+
 
 ---
 
