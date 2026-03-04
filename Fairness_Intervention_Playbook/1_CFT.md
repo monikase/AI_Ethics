@@ -29,34 +29,40 @@ Statistical fairness cannot distinguish between these cases.
 
 The Causal Fairness Toolkit focuses on identifying how protected attributes influence outcomes and whether those pathways are fair or unfair. This ensures interventions address root causes rather than masking disparities.  
 
-## 2. Toolkit Overview 
+## 2. Toolkit Overview
 
-The toolkit consists of these components:
+The toolkit consists of the following components:
 
-1️⃣ **Causal Modeling Template**  
-    1.1 Variable Identification  
-    1.2 Causal Graph Construction  
+### 1. Causal Modeling Template
+- **1.1 Variable Identification**
+- **1.2 Causal Graph Construction**
 
-2️⃣ **Counterfactual Analysis Framework**  
-    2.1 Counterfactual Query Formulation  
-    2.2 Path-Specific Effect Analysis  
-    2.3 Counterfactual Evaluation Metrics  
-    2.4 Intersectional Counterfactual Analysis  
+### 2. Counterfactual Analysis Framework
+- **2.1 Counterfactual Query Formulation**
+- **2.2 Path-Specific Effect Analysis**
+- **2.3 Counterfactual Evaluation Metrics**
+- **2.4 Intersectional Counterfactual Analysis**
 
-3️⃣ **Intervention Point Identification Method**  
-    Decision Tree  
-    Governance Framework  
+### 3. Intervention Point Identification Method
+- **Decision Tree**
+- **Governance Framework**
 
-4️⃣ **Limited Information Adaptation**  
-    Observational Methods  
-    Multiple Models  
-    Sensitivity Analysis  
-    Intersectional Modeling  
-    Documentation  
+### 4. Limited Information Adaptation
+- **Observational Methods**
+- **Multiple Models**
+- **Sensitivity Analysis**
+- **Intersectional Modeling**
+- **Documentation**
 
-5. Domain Adaptation & Deployment Check   
-6. Practical Workflow Summary   
-7. Core Principles   
+### 5. Domain Adaptation & Deployment
+
+### 6. Implementation Checklist
+
+### 7. Practical Workflow Summary
+
+### 8. Core Principles
+
+---
 
 ## 3. Scope and Applicability
 
