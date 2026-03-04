@@ -33,21 +33,21 @@ The Causal Fairness Toolkit focuses on identifying how protected attributes infl
 
 The toolkit consists of the following components:
 
-### 1. Causal Modeling Template
+### 1️⃣ Causal Modeling Template
 - **1.1 Variable Identification**
 - **1.2 Causal Graph Construction**
 
-### 2. Counterfactual Analysis Framework
+### 2️⃣ Counterfactual Analysis Framework
 - **2.1 Counterfactual Query Formulation**
 - **2.2 Path-Specific Effect Analysis**
 - **2.3 Counterfactual Evaluation Metrics**
 - **2.4 Intersectional Counterfactual Analysis**
 
-### 3. Intervention Point Identification Method
+### 3️⃣ Intervention Point Identification Method
 - **Decision Tree**
 - **Governance Framework**
 
-### 4. Limited Information Adaptation
+### 4️⃣ Limited Information Adaptation
 - **Observational Methods**
 - **Multiple Models**
 - **Sensitivity Analysis**
