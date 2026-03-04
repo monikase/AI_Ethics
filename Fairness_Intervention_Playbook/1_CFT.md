@@ -286,19 +286,20 @@ Compare the outcomes.
 - **Expected outcome under counterfactual:**  
 [Prediction if fair]
 
-> _Example:_ If the model does not unfairly use gender, then:  
->
-> The prediction should remain Loan Denied (18%)  
-> or  
-> The risk score should stay essentially the same.  
+> _Example:_
+>   
+> _If the model does not unfairly use gender, then:_  
+> _The prediction should remain Loan Denied (18%)_   
+> _or_  
+> _The risk score should stay essentially the same._    
 
 
 - **Actual model behavior:**  
 [What model actually does]
 
-> When we simulate the counterfactual:
-> - Predicted default risk becomes 13%
-> - Loan decision becomes Approved
+> _When we simulate the counterfactual:_   
+> - _Predicted default risk becomes 13%_     
+> - _Loan decision becomes Approved_   
 
 
 - **Discrepancy analysis:**  
@@ -307,15 +308,16 @@ Compare the outcomes.
   - Did prediction change?  
   - If yes → potential counterfactual unfairness
 
-> _Example:_ 
+> _Example:_  
+>   
 > | Scenario                 | Predicted Risk | Decision |
 > |--------------------------|---------------|----------|
 > | Female (real case)       | 18%           | Denied   |
 > | Male (counterfactual)    | 13%           | Approved |
 >
-> This means:
-> - The decision changes only because gender changed.
-> - Therefore, the model is counterfactually unfair for this individual.
+> _This means:_
+> - _The decision changes only because gender changed._  
+> - _Therefore, the model is counterfactually unfair for this individual._  
 
 ---
 
