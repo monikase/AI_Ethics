@@ -33,21 +33,21 @@ The Causal Fairness Toolkit addresses this limitation by analyzing **how protect
 
 The toolkit consists of the following components:
 
-### 1️⃣ [Causal Modeling Template](#11-variable-identification-guide)
+### 1️⃣ [Causal Modeling Template](#modeling)
 - 1.1 Variable Identification
 - 1.2 Causal Graph Construction
 
-### 2️⃣ [Counterfactual Analysis Framework](#21-counterfactual-query-formulation)
+### 2️⃣ [Counterfactual Analysis Framework](#counterfactual)
 - 2.1 Counterfactual Query Formulation
 - 2.2 Path-Specific Effect Analysis
 - 2.3 Counterfactual Evaluation Metrics
 - 2.4 Intersectional Counterfactual Analysis
 
-### 3️⃣ [Intervention Point Identification Method](#31-causal-pattern-decision-tree)
+### 3️⃣ [Intervention Point Identification Method](#intervention-point)
 - 3.1 Decision Tree
 - 3.2 Governance Framework
 
-### 4️⃣ [Limited Information Adaptation](#41-method-selection-for-observational-causal-inference)
+### 4️⃣ [Limited Information Adaptation](#limited-info)
 - 4.1 Observational Methods
 - 4.2 Multiple Models
 - 4.3 Sensitivity Analysis
@@ -83,6 +83,8 @@ Instead, it provides a structured analytical framework to support responsible de
 --- 
 
 ## 1️⃣ Causal Modeling Template  
+<a id="modeling"></a>
+
 → Map how protected attributes influence predictions.
 
 ---
@@ -271,7 +273,7 @@ class Loan outcome;
 ---
 
 ## 2️⃣ Counterfactual Analysis Framework
-
+<a id="counterfactual"></a>
 → Test whether predictions would change if only the protected attribute changed.  
 
 ---
@@ -522,6 +524,7 @@ When subgroup data is limited:
 
 
 ## 3️⃣ Intervention Point Identification Method
+<a id="intervention-point"></a>
 The Intervention Point Identification Method helps teams decide where to make changes in the ML pipeline based on the results of the causal analysis. It connects different types of bias to the right kind of intervention.
 
 ---
@@ -613,6 +616,7 @@ Fairness governance is as important as technical implementation.
 ---
 
 ## 4️⃣ Limited Information Adaptation
+<a id="limited-info"></a>
 
 In real-world applications, we rarely know the full causal structure behind the data, and it is usually impossible or unethical to run experiments that change protected attributes such as gender or race.
 
