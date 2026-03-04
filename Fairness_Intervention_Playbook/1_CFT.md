@@ -47,7 +47,7 @@ The toolkit consists of the following components:
 - 3.1 Decision Tree
 - 3.2 Governance Framework
 
-### 4️⃣ [Limited Information Adaptation](#41-observational-methods)
+### 4️⃣ [Limited Information Adaptation](#41-method-selection-for-observational-causal-inference)
 - 4.1 Observational Methods
 - 4.2 Multiple Models
 - 4.3 Sensitivity Analysis
