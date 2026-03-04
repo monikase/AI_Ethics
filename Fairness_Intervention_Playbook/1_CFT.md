@@ -42,6 +42,8 @@ Each step builds on the previous one.
 
 ## 3. Causal Fairness Toolkit  
 
+<br>
+
 ## 1️⃣ Causal Modeling Template  
 → Map how protected attributes influence predictions.
 
