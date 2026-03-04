@@ -615,12 +615,13 @@ Always document:
 - Uncertainties
 - Rationale for intervention choices
 
+<br>
+
 ---
 
 _End of Toolkit_   
 
 ---
-<br>
 
 ## 4. Domain Adaptation & Deployment Check
 
