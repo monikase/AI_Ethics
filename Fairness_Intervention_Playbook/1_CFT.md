@@ -147,10 +147,9 @@ After identifying variables, construct a **Directed Acyclic Graph (DAG)** to vis
 > _(Gender may influence employment history, which affects default risk.)_  
 
 - **Use bidirectional dashed arrows to represent correlations without direct causation.**   
-> _Example:_  
->   
+   
 > **Gender ↔ Part-Time Status**  
-> _(Part-time work may correlate with gender, but gender does not directly “cause” part-time status in a strict biological sense — both may reflect broader social patterns.)_  
+> _(Part-time work may correlate with gender, but gender does not directly “cause” part-time status in a strict biological sense - both may reflect broader social patterns.)_  
 
 - **Distinguish node types visually:**
   - **Protected attributes:** _[e.g., Gender]_
