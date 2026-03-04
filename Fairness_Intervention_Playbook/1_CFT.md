@@ -610,6 +610,8 @@ In real-world applications, we rarely know the full causal structure behind the 
 
 To address these challenges, the toolkit recommends the following approaches:  
 
+---
+
 ### 4.1 Method Selection for Observational Causal Inference  
 When experimental manipulation is impossible, causal effects must be estimated from observational data.  
 
