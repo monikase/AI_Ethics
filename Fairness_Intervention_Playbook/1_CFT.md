@@ -38,21 +38,21 @@ The toolkit consists of the following components:
 - **1.2 Causal Graph Construction**
 
 ### 2️⃣ Counterfactual Analysis Framework
-- **2.1 Counterfactual Query Formulation**
-- **2.2 Path-Specific Effect Analysis**
-- **2.3 Counterfactual Evaluation Metrics**
-- **2.4 Intersectional Counterfactual Analysis**
+- 2.1 Counterfactual Query Formulation
+- 2.2 Path-Specific Effect Analysis
+- 2.3 Counterfactual Evaluation Metrics
+- 2.4 Intersectional Counterfactual Analysis
 
 ### 3️⃣ Intervention Point Identification Method
-- **3.1 Decision Tree**
-- **3.2 Governance Framework**
+- 3.1 Decision Tree
+- 3.2 Governance Framework
 
 ### 4️⃣ Limited Information Adaptation
-- **4.1 Observational Methods**
-- **4.2 Multiple Models**
-- **4.3 Sensitivity Analysis**
-- **4.4 Intersectional Modeling**
-- **4.5 Documentation**
+- 4.1 Observational Methods
+- 4.2 Multiple Models
+- 4.3 Sensitivity Analysis
+- 4.4 Intersectional Modeling
+- 4.5 Documentation
 
 ### 5. Domain Adaptation & Deployment
 
