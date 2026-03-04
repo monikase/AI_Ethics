@@ -31,7 +31,7 @@ The Causal Fairness Toolkit focuses on identifying how protected attributes infl
 
 ## 2. Toolkit Overview 
 
-The toolkit consists of four components:
+The toolkit consists of these components:
 
 1️⃣ **Causal Modeling Template**  
     1.1 Variable Identification  
@@ -54,11 +54,25 @@ The toolkit consists of four components:
     Intersectional Modeling  
     Documentation  
 
-5️⃣ Domain Adaptation & Deployment Check   
+5. Domain Adaptation & Deployment Check   
+6. Practical Workflow Summary   
+7. Core Principles   
 
-6️⃣ Practical Workflow Summary   
+## 3. Scope and Applicability
 
-7️⃣ Core Principles   
+The Causal Fairness Toolkit is designed to support fairness analysis in machine learning systems that make decisions about individuals or groups.  
+
+It is particularly useful when:  
+- Decisions have significant real-world consequences _(e.g., lending, hiring, healthcare, criminal justice)_  
+- Disparities between demographic groups have been observed  
+- Teams need to distinguish between legitimate predictive factors and discriminatory mechanisms  
+
+However, the toolkit does not replace:  
+- Legal compliance reviews
+- Ethical decision-making processes
+- Domain expertise  
+
+Instead, it provides a structured analytical framework to support responsible decision-making and transparency in AI systems.  
 
 --- 
 <br>
@@ -656,7 +670,38 @@ Fairness is not a one-time certification. It requires ongoing validation.
 
 ---
 
-## 5. Practical Workflow Summary
+## 5. Implementation Checklist
+
+Before deploying a model, teams should verify that the following steps have been completed:
+
+**Causal Modeling**
+- [ ] Protected attributes identified
+- [ ] Potential mediators, proxies, and confounders mapped
+- [ ] Causal DAG constructed and documented
+
+**Counterfactual Analysis**
+- [ ] Counterfactual queries defined
+- [ ] Path-specific discrimination mechanisms analyzed
+- [ ] Counterfactual fairness metrics calculated
+
+**Intervention Design**
+- [ ] Discriminatory pathways identified
+- [ ] Appropriate intervention points selected
+- [ ] Stakeholders consulted for pathway classification
+
+**Robustness and Uncertainty**
+- [ ] Sensitivity analysis performed
+- [ ] Multiple causal assumptions tested
+- [ ] Intersectional fairness evaluated
+
+**Deployment Readiness**
+- [ ] Domain adaptation risks assessed
+- [ ] Monitoring plan established for fairness metrics
+- [ ] Documentation of assumptions and limitations completed
+
+---
+
+## 6. Practical Workflow Summary
 
 1. Identify variables
 2. Build causal graph
@@ -668,7 +713,7 @@ Fairness is not a one-time certification. It requires ongoing validation.
 
 ---
 
-## 6. Core Principle
+## 7. Core Principle
 
 Fairness interventions should:
 
