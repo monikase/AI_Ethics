@@ -43,7 +43,7 @@ The toolkit consists of the following components:
 - 2.3 Counterfactual Evaluation Metrics
 - 2.4 Intersectional Counterfactual Analysis
 
-### 3️⃣ [Intervention Point Identification Method](#31-decision-tree)
+### 3️⃣ [Intervention Point Identification Method](#31-causal-pattern-decision-tree)
 - 3.1 Decision Tree
 - 3.2 Governance Framework
 
