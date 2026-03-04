@@ -570,7 +570,7 @@ In real-world applications, we rarely know the full causal structure behind the 
 
 To address these challenges, the toolkit recommends the following approaches:  
 
-#### 1. Method Selection for Observational Causal Inference  
+### 1. Method Selection for Observational Causal Inference  
 When experimental manipulation is impossible, causal effects must be estimated from observational data.  
 
 Choose methods based on available data and assumptions:  
@@ -586,12 +586,12 @@ Whenever possible, apply multiple methods and compare results to check robustnes
 
 ---
 
-#### 2. Test Multiple Plausible Models
+### 2. Test Multiple Plausible Models
 Test fairness under different causal assumptions when causal structure is uncertain.
 
 ---
 
-#### 3. Sensitivity Analysis
+### 3. Sensitivity Analysis
 Perform sensitivity analysis to identify robust intervention decisions.
 
 - How strong must hidden confounding be to eliminate the observed effect?
@@ -599,7 +599,7 @@ Perform sensitivity analysis to identify robust intervention decisions.
 
 ---
 
-#### 4. Intersectional Modeling
+### 4. Intersectional Modeling
 Prioritize resolving uncertainties that would change intervention recommendations.
 
 - Use hierarchical models when subgroup data is sparse.
@@ -607,7 +607,7 @@ Prioritize resolving uncertainties that would change intervention recommendation
 
 ---
 
-#### 5. Transparent Documentation
+### 5. Transparent Documentation
 Document assumptions explicitly to enable future refinement.
 
 Always document:
