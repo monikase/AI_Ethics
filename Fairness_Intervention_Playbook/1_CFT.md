@@ -317,6 +317,20 @@ Compare the outcomes.
 > - The decision changes only because gender changed.
 > - Therefore, the model is counterfactually unfair for this individual.
 
+### Important Limitation: Counterfactuals Are Estimated
+Counterfactual fairness cannot be directly observed from real-world data.  
+We never see the same person both:  
+- As they are
+- As they would have been with a different protected attribute.  
+
+All counterfactual conclusions depend on the causal assumptions encoded in the model.  
+
+Therefore:  
+- Causal assumptions must be documented.
+- Sensitivity analysis must be performed.
+- Results should be presented with uncertainty.
+
+
 ---
 
 ### **Path-Specific Effect Analysis**  
