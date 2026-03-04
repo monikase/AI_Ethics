@@ -436,7 +436,7 @@ Instead of forcing demographic parity, you:
 
 ---
 
-## 2.3 Counterfactual Evaluation Metrics  
+### 2.3 Counterfactual Evaluation Metrics  
 
 --- 
 To move beyond individual examples, fairness should be measured systematically.  
