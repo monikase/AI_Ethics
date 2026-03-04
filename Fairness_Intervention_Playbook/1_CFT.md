@@ -60,7 +60,7 @@ The toolkit consists of the following components:
 
 ### 7. [Practical Workflow Summary](#1-identify-variables)
 
-### 8. [Core Principles](#8-core-principles)
+### 8. [Core Principles](#core-prin)
 
 ---
 
@@ -729,6 +729,7 @@ Before deploying a model, teams should verify that the following steps have been
 ---
 
 ## 8. Core Principles
+<a id="core-prin"></a>
 
 Fairness interventions should:
 
