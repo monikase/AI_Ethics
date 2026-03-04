@@ -527,7 +527,7 @@ The Intervention Point Identification Method helps teams decide where to make ch
 
 ---
 
-### Causal Pattern Decision Tree
+### 3.1 Causal Pattern Decision Tree
 
 ---
 
@@ -583,7 +583,7 @@ N -->|No| R[No fairness intervention required]
 
 ---
 
-### Governance & Stakeholder Review Framework
+### 3.2 Governance & Stakeholder Review Framework
 
 ---
 
