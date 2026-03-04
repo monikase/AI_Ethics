@@ -150,7 +150,7 @@ After identifying variables, construct a **Directed Acyclic Graph (DAG)** to vis
 > **Gender ↔ Part-Time Status**  
 > _(Part-time work may correlate with gender, but gender does not directly “cause” part-time status in a strict biological sense — both may reflect broader social patterns.)_  
 
-- **Distinguish node types visually (when drawing the graph):**
+- **Distinguish node types visually:**
   - **Protected attributes:** _[e.g., Gender]_
   - **Mediators:** _[e.g., Income Level, Employment History]_
   - **Proxy variables:** _[e.g., Industry Sector]_
