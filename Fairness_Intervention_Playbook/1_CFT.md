@@ -54,7 +54,7 @@ The toolkit consists of the following components:
 - 4.4 Intersectional Modeling
 - 4.5 Documentation
 
-### 5. [Domain Adaptation & Deployment](#5-domain-adaptation-&-deployment)
+### 5. [Domain Adaptation & Deployment](#5-domain-adaptation-and-deployment-check)
 
 ### 6. [Implementation Checklist](#6-implementation-checklist)
 
@@ -667,7 +667,7 @@ Always document:
 
 ---
 
-## 5. Domain Adaptation & Deployment Check
+## 5. Domain Adaptation and Deployment Check
 
 Causal fairness guarantees may not transfer automatically across contexts.  
 
