@@ -44,15 +44,15 @@ The toolkit consists of the following components:
 - **2.4 Intersectional Counterfactual Analysis**
 
 ### 3️⃣ Intervention Point Identification Method
-- **Decision Tree**
-- **Governance Framework**
+- **3.1 Decision Tree**
+- **3.2 Governance Framework**
 
 ### 4️⃣ Limited Information Adaptation
-- **Observational Methods**
-- **Multiple Models**
-- **Sensitivity Analysis**
-- **Intersectional Modeling**
-- **Documentation**
+- **4.1 Observational Methods**
+- **4.2 Multiple Models**
+- **4.3 Sensitivity Analysis**
+- **4.4 Intersectional Modeling**
+- **4.5 Documentation**
 
 ### 5. Domain Adaptation & Deployment
 
@@ -610,7 +610,7 @@ In real-world applications, we rarely know the full causal structure behind the 
 
 To address these challenges, the toolkit recommends the following approaches:  
 
-### 1. Method Selection for Observational Causal Inference  
+### 4.1 Method Selection for Observational Causal Inference  
 When experimental manipulation is impossible, causal effects must be estimated from observational data.  
 
 Choose methods based on available data and assumptions:  
@@ -626,12 +626,12 @@ Whenever possible, apply multiple methods and compare results to check robustnes
 
 ---
 
-### 2. Test Multiple Plausible Models
+### 4.2 Test Multiple Plausible Models
 Test fairness under different causal assumptions when causal structure is uncertain.
 
 ---
 
-### 3. Sensitivity Analysis
+### 4.3 Sensitivity Analysis
 Perform sensitivity analysis to identify robust intervention decisions.
 
 - How strong must hidden confounding be to eliminate the observed effect?
@@ -639,7 +639,7 @@ Perform sensitivity analysis to identify robust intervention decisions.
 
 ---
 
-### 4. Intersectional Modeling
+### 4.4 Intersectional Modeling
 Prioritize resolving uncertainties that would change intervention recommendations.
 
 - Use hierarchical models when subgroup data is sparse.
@@ -647,7 +647,7 @@ Prioritize resolving uncertainties that would change intervention recommendation
 
 ---
 
-### 5. Transparent Documentation
+### 4.5 Transparent Documentation
 Document assumptions explicitly to enable future refinement.
 
 Always document:
@@ -657,7 +657,7 @@ Always document:
 
 ---
 
-## 4. Domain Adaptation & Deployment Check
+## 5. Domain Adaptation & Deployment Check
 
 Causal fairness guarantees may not transfer automatically across contexts.  
 
@@ -675,7 +675,7 @@ Fairness is not a one-time certification. It requires ongoing validation.
 
 ---
 
-## 5. Implementation Checklist
+## 6. Implementation Checklist
 
 Before deploying a model, teams should verify that the following steps have been completed:
 
@@ -706,7 +706,7 @@ Before deploying a model, teams should verify that the following steps have been
 
 ---
 
-## 6. Practical Workflow Summary
+## 7. Practical Workflow Summary
 
 1. Identify variables
 2. Build causal graph
@@ -718,7 +718,7 @@ Before deploying a model, teams should verify that the following steps have been
 
 ---
 
-## 7. Core Principle
+## 8. Core Principle
 
 Fairness interventions should:
 
