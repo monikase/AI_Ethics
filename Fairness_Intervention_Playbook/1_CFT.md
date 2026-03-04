@@ -511,7 +511,6 @@ The Intervention Point Identification Method helps teams decide where to make ch
       - Yes → Consider post-processing approaches like threshold optimization
       - No → Apply more targeted interventions based on causal structure
 
-
 ---
 
 ```mermaid
@@ -539,6 +538,27 @@ O -->|No| Q[Apply targeted intervention based on causal structure]
 
 N -->|No| R[No fairness intervention required]
 ```
+
+---
+
+### Governance & Stakeholder Review Framework
+
+---
+
+Classification of causal pathways as “fair” or “unfair” is a normative decision.  
+
+Establish a structured review process:  
+- Legal review (regulatory compliance)
+- Domain expert validation
+- Business stakeholder alignment
+- Documentation of disagreements
+
+Maintain:  
+- Written justification for pathway classification
+- Record of trade-offs between fairness and performance
+- Version-controlled fairness decisions  
+
+Fairness governance is as important as technical implementation.  
 
 ---
 
@@ -629,10 +649,13 @@ Fairness is not a one-time certification. It requires ongoing validation.
 
 Fairness interventions should:
 
-- Address root causes
-- Preserve legitimate prediction
-- Be transparent about uncertainty
-- Be guided by causal reasoning, not correlation alone
+- Address root causal mechanisms
+- Preserve legitimate predictive information
+- Explicitly document causal assumptions
+- Quantify uncertainty
+- Consider intersectional effects
+- Remain robust across deployment contexts
+- Involve stakeholder governance
 
 
 
