@@ -343,7 +343,7 @@ Therefore:
 
 ---
 
-### 2.2 Path-Specific Effect Analysis    . 
+### 2.2 Path-Specific Effect Analysis    
 
 ---
 
