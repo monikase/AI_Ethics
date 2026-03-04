@@ -409,10 +409,10 @@ You must decide:
 
 > | Path                                                  | Possible Classification       | Why?                                                                 |
 > |-------------------------------------------------------|------------------------------|----------------------------------------------------------------------|
-> | Gender → Employment History → Default Risk            | ⚠ Potentially Problematic    | Career breaks may reflect caregiving responsibilities, not actual repayment ability |
-> | Gender → Income → Debt Ratio → Default Risk           | ⚠ Partially Problematic      | Income differences may reflect systemic wage gaps                   |
-> | Gender → Part-Time Status → Default Risk              | ❌ Problematic               | Part-time status may act as a gender proxy                          |
-> | Gender → Approval (direct)                            | ❌ Clearly Unfair            | No legitimate reason for direct gender influence                    |
+> | Gender → Employment History → Default Risk            | Potentially Problematic    | Career breaks may reflect caregiving responsibilities, not actual repayment ability |
+> | Gender → Income → Debt Ratio → Default Risk           | Partially Problematic      | Income differences may reflect systemic wage gaps                   |
+> | Gender → Part-Time Status → Default Risk              | **Problematic**               | Part-time status may act as a gender proxy                          |
+> | Gender → Approval (direct)                            | **Clearly Unfair**            | No legitimate reason for direct gender influence                    |
  
 This step must involve:  
 - Legal review
