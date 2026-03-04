@@ -1,5 +1,5 @@
 # Causal Fairness Toolkit
-A Practical Methodology for Identifying and Fixing Algorithmic Bias
+A Practical Framework for Identifying and Fixing Algorithmic Bias
 
 ## 1. Introduction
 
@@ -40,8 +40,7 @@ The toolkit consists of four components:
 
 Each step builds on the previous one.
 
-## 3. Causal Fairness Toolkit  
-
+--- 
 <br>
 
 ## 1️⃣ Causal Modeling Template  
@@ -71,7 +70,7 @@ These variables may transmit structural inequalities.
 1. **Variables directly influenced by protected attributes:**  
 [List variables]  
 _[(e.g., employment history, income level)]_   
-3. **Evidence for causal relationship:**    
+2. **Evidence for causal relationship:**    
 [Provide brief justification for each variable - domain expertise, research findings, or data patterns]    
 _[(e.g., research on wage gaps, observed career breaks)]_        
 
@@ -86,7 +85,7 @@ Confounders are variables that influence both protected attributes and outcomes,
 1. **Variables that may affect both protected attributes and outcomes:**  
 [List variables]  
 _[(e.g., socioeconomic background, neighborhood economic conditions)]_  
-3. **Evidence for confounding role:**  
+2. **Evidence for confounding role:**  
 [List evidences]  
 _[(e.g., research linking socioeconomic status to both education and loan approval)]_  
 
@@ -102,10 +101,10 @@ Proxy variables are correlated with protected attributes and may indirectly enco
 1. **Variables correlated with protected attributes:**  
 [List variables]  
 _[(e.g., part-time employment status, zip code)]_  
-3. **Evidence for correlation:**  
+2. **Evidence for correlation:**  
 [Brief justification per variable]  
 _[(e.g., statistical correlation, labor market patterns)]_   
-5. **Common causes explaining correlation:**   
+3. **Common causes explaining correlation:**   
 [Explanation per variable]  
 _[(e.g., occupational segregation, residential segregation)]_  
 
@@ -116,7 +115,7 @@ Define the system’s decision or prediction.
 1. **Decisions or predictions made by the system:**  
 [List outcomes]  
 _[(e.g., loan approval decision, risk score)]_  
-3. **Evaluation metrics used:**  
+2. **Evaluation metrics used:**  
 [List metrics]  
 _[(e.g., approval rate, default rate, accuracy)]_    
 
@@ -128,7 +127,7 @@ Variables that should influence the outcome because they are directly related to
 1. **Variables that should influence outcomes:**  
 [List variables]  
 _[(e.g., debt-to-income ratio, savings history, payment history)]_  
-3. **Justification for legitimacy:**  
+2. **Justification for legitimacy:**  
 [Brief justification per variable]  
 _[(e.g., directly measures repayment ability)]_  
 
@@ -616,12 +615,6 @@ Always document:
 - Rationale for intervention choices
 
 <br>
-
----
-
-_End of Toolkit_   
-
----
 
 ## 4. Domain Adaptation & Deployment Check
 
