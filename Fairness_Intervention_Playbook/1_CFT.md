@@ -441,26 +441,26 @@ Instead of forcing demographic parity, you:
 --- 
 To move beyond individual examples, fairness should be measured systematically.  
 
-### 1. Counterfactual Effect Size  
+#### 1. Counterfactual Effect Size  
 Average difference between factual and counterfactual predictions across individuals.  
 
 > _Example:_  
 > _Average risk score decreases by 4% when gender changes → indicates systematic influence._
 
-### 2. Counterfactual Violation Rate  
+#### 2. Counterfactual Violation Rate  
 Proportion of individuals whose decision changes under counterfactual modification.  
 
 > _Example:_  
 > _18% of applicants would receive a different approval decision if gender were changed._
 
-### 3. Path-Specific Effect Magnitude  
+#### 3. Path-Specific Effect Magnitude  
 Percentage of total disparity attributable to specific causal pathways.  
 
 > _Example:_  
 > _Employment pathway → 40%_  
 > _Income pathway → 25%_  
 
-### 4. Uncertainty Quantification
+#### 4. Uncertainty Quantification
 Use confidence intervals or bounding approaches to express uncertainty in effect estimates.  
 
 Never report counterfactual fairness as absolute certainty.  
