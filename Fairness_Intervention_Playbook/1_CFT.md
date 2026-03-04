@@ -317,6 +317,8 @@ Compare the outcomes.
 > - The decision changes only because gender changed.
 > - Therefore, the model is counterfactually unfair for this individual.
 
+---
+
 ### Important Limitation: Counterfactuals Are Estimated
 Counterfactual fairness cannot be directly observed from real-world data.  
 We never see the same person both:  
