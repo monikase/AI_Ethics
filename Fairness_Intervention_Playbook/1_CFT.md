@@ -33,7 +33,7 @@ The Causal Fairness Toolkit addresses this limitation by analyzing **how protect
 
 The toolkit consists of the following components:
 
-### 1️⃣ Causal Modeling Template
+### 1️⃣ [Causal Modeling Template](#11-variable-identification-guide)
 - 1.1 Variable Identification
 - 1.2 Causal Graph Construction
 
