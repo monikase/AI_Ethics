@@ -594,50 +594,50 @@ flowchart TD
 
 Start([Start: Fairness Evaluation])
 
-%% Dataset Bias Check
-Start --> D1{Dataset bias causing disparity?}
+%% Dataset Bias
+Start --> D1{Dataset bias causing disparity}
 
-D1 -- Yes --> DataIntervention[Apply data-level interventions<br/>• Rebalance dataset<br/>• Improve data collection<br/>• Correct labels]
+D1 -- Yes --> DataIntervention[Apply data level interventions: rebalance data, improve collection, correct labels]
 
-D1 -- No --> D2{Direct discrimination present?}
+D1 -- No --> D2{Direct discrimination present}
 
-%% Direct Discrimination
-D2 -- Yes --> D3{Protected attribute used as feature?}
+%% Direct discrimination
+D2 -- Yes --> D3{Protected attribute used as feature}
 
-D3 -- Yes --> InProcess1[Apply in-processing constraints<br/>or remove the attribute]
+D3 -- Yes --> InProcess1[Apply in processing constraints or remove attribute]
 
-D3 -- No --> Investigate1[Investigate implicit discrimination<br/>through model architecture or feature interactions]
+D3 -- No --> Investigate1[Investigate implicit discrimination through model architecture or feature interactions]
 
-D2 -- No --> D4{Proxy discrimination present?}
+D2 -- No --> D4{Proxy discrimination present}
 
-%% Proxy Discrimination
-D4 -- Yes --> D5{Proxy variables identifiable?}
+%% Proxy discrimination
+D4 -- Yes --> D5{Proxy variables identifiable}
 
-D5 -- Yes --> PreprocessProxy[Transform or replace proxy variables<br/>(pre-processing)]
+D5 -- Yes --> PreprocessProxy[Transform or replace proxy variables using preprocessing]
 
-D5 -- No --> Regularization[Apply in-processing regularization<br/>to reduce proxy use]
+D5 -- No --> Regularization[Apply in processing regularization to reduce proxy use]
 
-D4 -- No --> D6{Mediator discrimination present?}
+D4 -- No --> D6{Mediator discrimination present}
 
-%% Mediator Discrimination
-D6 -- Yes --> D7{Are mediators legitimate predictors?}
+%% Mediator discrimination
+D6 -- Yes --> D7{Are mediators legitimate predictors}
 
-D7 -- Yes --> MultiObjective[Use multi-objective optimization<br/>to balance fairness and accuracy]
+D7 -- Yes --> MultiObjective[Use multi objective optimization to balance fairness and accuracy]
 
-D7 -- No --> RemoveMediator[Adjust or remove influence of<br/>protected attributes on mediators]
+D7 -- No --> RemoveMediator[Adjust or remove influence of protected attributes on mediators]
 
-D6 -- No --> D8{Outcome discrimination present?}
+D6 -- No --> D8{Outcome discrimination present}
 
-%% Outcome Discrimination
-D8 -- Yes --> D9{Disparities consistent across subgroups?}
+%% Outcome discrimination
+D8 -- Yes --> D9{Disparities consistent across subgroups}
 
-D9 -- Yes --> PostProcess[Apply post-processing<br/>threshold optimization]
+D9 -- Yes --> PostProcess[Apply post processing threshold optimization]
 
-D9 -- No --> Targeted[Apply targeted interventions<br/>based on causal pathways]
+D9 -- No --> Targeted[Apply targeted interventions based on causal pathways]
 
-D8 -- No --> Monitor[Document causal analysis<br/>and continue fairness monitoring]
+D8 -- No --> Monitor[Document causal analysis and continue fairness monitoring]
 
-%% End
+%% End connections
 DataIntervention --> Monitor
 InProcess1 --> Monitor
 Investigate1 --> Monitor
