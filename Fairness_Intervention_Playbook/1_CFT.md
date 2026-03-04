@@ -54,7 +54,7 @@ The toolkit consists of the following components:
 - 4.4 Intersectional Modeling
 - 4.5 Documentation
 
-### 5. [Domain Adaptation & Deployment](#5-domain-adaptation-and-deployment-check)
+### 5. [Domain Adaptation & Deployment](#deployment)
 
 ### 6. [Implementation Checklist](#checklist)
 
@@ -82,9 +82,8 @@ Instead, it provides a structured analytical framework to support responsible de
 
 --- 
 
-## 1️⃣ Causal Modeling Template  
 <a id="modeling"></a>
-
+## 1️⃣ Causal Modeling Template  
 → Map how protected attributes influence predictions.
 
 ---
@@ -271,10 +270,9 @@ class Loan outcome;
 > Dashed arrow (-.-→) : Correlation / proxy relationship  
 
 ---
-
-## 2️⃣ Counterfactual Analysis Framework
 <a id="counterfactual"></a>
-→ Test whether predictions would change if only the protected attribute changed.  
+## 2️⃣ Counterfactual Analysis Framework  
+→ Test whether predictions would change if only the protected attribute changed.    
 
 ---
 
@@ -522,9 +520,8 @@ When subgroup data is limited:
 
 ---
 
-
-## 3️⃣ Intervention Point Identification Method
 <a id="intervention-point"></a>
+## 3️⃣ Intervention Point Identification Method  
 The Intervention Point Identification Method helps teams decide where to make changes in the ML pipeline based on the results of the causal analysis. It connects different types of bias to the right kind of intervention.
 
 ---
@@ -615,9 +612,8 @@ Fairness governance is as important as technical implementation.
 
 ---
 
-## 4️⃣ Limited Information Adaptation
 <a id="limited-info"></a>
-
+## 4️⃣ Limited Information Adaptation  
 In real-world applications, we rarely know the full causal structure behind the data, and it is usually impossible or unethical to run experiments that change protected attributes such as gender or race.
 
 To address these challenges, the toolkit recommends the following approaches:  
@@ -670,8 +666,8 @@ Always document:
 - Rationale for intervention choices
 
 ---
-
-## 5. Domain Adaptation and Deployment Check
+<a id="deployment"></a>
+## 5. Domain Adaptation & Deployment Check
 
 Causal fairness guarantees may not transfer automatically across contexts.  
 
@@ -689,8 +685,8 @@ Fairness is not a one-time certification; it requires continuous monitoring and 
 
 ---
 
-## 6. Implementation Checklist
 <a id="checklist"></a>
+## 6. Implementation Checklist
 
 Before deploying a model, teams should verify that the following steps have been completed:
 
@@ -721,8 +717,8 @@ Before deploying a model, teams should verify that the following steps have been
 
 ---
 
-## 7. Practical Workflow Summary
 <a id="summary"></a>
+## 7. Practical Workflow Summary
 
 1. Identify variables
 2. Build causal graph
@@ -734,8 +730,8 @@ Before deploying a model, teams should verify that the following steps have been
 
 ---
 
-## 8. Core Principles
 <a id="core-prin"></a>
+## 8. Core Principles
 
 Fairness interventions should:
 
