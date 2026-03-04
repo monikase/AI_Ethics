@@ -75,7 +75,6 @@ However, the toolkit does not replace:
 Instead, it provides a structured analytical framework to support responsible decision-making and transparency in AI systems.  
 
 --- 
-<br>
 
 ## 1️⃣ Causal Modeling Template  
 → Map how protected attributes influence predictions.
@@ -650,7 +649,7 @@ Always document:
 - Uncertainties
 - Rationale for intervention choices
 
-<br>
+---
 
 ## 4. Domain Adaptation & Deployment Check
 
