@@ -743,7 +743,9 @@ Fairness interventions should:
 - Remain robust across deployment contexts
 - Involve stakeholder governance
 
+---
 
+For sources that informed this toolkit, see the [1_CFT_References](references.md)
 
 
 
