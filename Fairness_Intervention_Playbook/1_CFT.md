@@ -58,7 +58,7 @@ The toolkit consists of the following components:
 
 ### 6. [Implementation Checklist](#6-implementation-checklist)
 
-### 7. [Practical Workflow Summary](#7-practical-workflow-summary)
+### 7. [Practical Workflow Summary](#1-identify-variables)
 
 ### 8. [Core Principles](#8-core-principles)
 
