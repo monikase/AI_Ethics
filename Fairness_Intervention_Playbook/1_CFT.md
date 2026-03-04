@@ -3,31 +3,31 @@ A Practical Framework for Identifying and Fixing Algorithmic Bias
 
 ## 1. Introduction
 
-Machine learning systems sometimes produce different outcomes for different groups of people. But seeing a difference does not automatically tell us whether the system is unfair - or what is causing the difference.  
+Machine learning systems can sometimes produce different outcomes for different groups of people. However, observing a difference does not automatically mean that a system is unfair, nor does it explain why the difference occurs.
 
-Disparities can happen for many reasons. A model might directly use a protected attribute _(like gender)_, rely on variables that indirectly reflect it _(such as job type or part-time status)_, reflect patterns from historical inequality, or use legitimate risk factors. Without understanding the real cause, fairness fixes may only treat the symptoms instead of solving the problem.  
+Disparities may arise for several reasons. A model might directly use a protected attribute (such as gender), rely on variables that indirectly reflect it (such as job type or part-time status), reflect historical inequalities in the data, or use legitimate risk factors related to the prediction task. Without understanding these mechanisms, fairness interventions may only address the symptoms instead of the root cause.
 
-The **Causal Fairness Toolkit provides a practical step-by-step method to help teams understand where unfairness comes from and how to address it properly**. It helps teams:   
+The **Causal Fairness Toolkit** provides a practical, step-by-step approach to help teams identify and address the sources of unfairness in machine learning systems. It helps teams:
 
-- Map how protected attributes may influence predictions
-- Check whether a decision would change **if only a protected attribute were different, while everything else stayed the same**.
-- Separate legitimate prediction factors from discriminatory ones
-- Choose the right place in the system to intervene
-- Make thoughtful decisions even when information is incomplete
+- Map how protected attributes may influence predictions  
+- Test whether a decision would change **if only a protected attribute were different**  
+- Distinguish legitimate predictive factors from discriminatory ones  
+- Identify appropriate intervention points in the system  
+- Make informed decisions even when causal information is incomplete  
 
-Instead of applying simple statistical adjustments, this toolkit focuses on understanding the reasons behind disparities so that interventions are more precise, transparent, and effective.  
+Rather than relying only on statistical adjustments, the toolkit focuses on understanding **why disparities occur**, enabling more precise, transparent, and effective fairness interventions.
 
 ### Why Causal Fairness Instead of Only Statistical Fairness?
 
-Traditional fairness metrics (such as equal approval rates across groups) measure outcome differences, but they do not explain why those differences exist.  
+Traditional fairness metrics (for example, equal approval rates across groups) measure differences in outcomes but do not explain their causes.
 
-Two systems can show the same statistical disparity:
-- One due to legitimate risk differences
-- One due to discriminatory mechanisms
+Two systems can produce the same statistical disparity:
+- one due to legitimate differences in risk
+- one due to discriminatory mechanisms
 
-Statistical fairness cannot distinguish between these cases.  
+Statistical metrics alone cannot distinguish between these situations.  
 
-The Causal Fairness Toolkit focuses on identifying how protected attributes influence outcomes and whether those pathways are fair or unfair. This ensures interventions address root causes rather than masking disparities.  
+The Causal Fairness Toolkit addresses this limitation by analyzing **how protected attributes influence outcomes through specific causal pathways**, helping teams identify whether those pathways are fair or unfair and ensuring interventions target the true source of bias.
 
 ## 2. Toolkit Overview
 
