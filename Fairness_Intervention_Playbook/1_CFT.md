@@ -5,7 +5,7 @@ A Practical Framework for Identifying and Fixing Algorithmic Bias
 
 Machine learning systems can sometimes produce different outcomes for different groups of people. However, observing a difference does not automatically mean that a system is unfair, nor does it explain why the difference occurs.
 
-Disparities may arise for several reasons. A model might directly use a protected attribute (such as gender), rely on variables that indirectly reflect it (such as job type or part-time status), reflect historical inequalities in the data, or use legitimate risk factors related to the prediction task. Without understanding these mechanisms, fairness interventions may only address the symptoms instead of the root cause.
+Disparities may arise for several reasons. A model might directly use a protected attribute _(such as gender)_, rely on variables that indirectly reflect it _(such as job type or part-time status)_, reflect historical inequalities in the data, or use legitimate risk factors related to the prediction task. Without understanding these mechanisms, fairness interventions may only address the symptoms instead of the root cause.
 
 The **Causal Fairness Toolkit** provides a practical, step-by-step approach to help teams identify and address the sources of unfairness in machine learning systems. It helps teams:
 
