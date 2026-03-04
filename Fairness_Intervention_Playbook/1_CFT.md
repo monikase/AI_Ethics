@@ -58,7 +58,7 @@ The toolkit consists of the following components:
 
 ### 6. [Implementation Checklist](#6-implementation-checklist)
 
-### 7. [Practical Workflow Summary](#1-identify-variables)
+### 7. [Practical Workflow Summary](#summary)
 
 ### 8. [Core Principles](#core-prin)
 
@@ -717,6 +717,7 @@ Before deploying a model, teams should verify that the following steps have been
 ---
 
 ## 7. Practical Workflow Summary
+<a id="summary"></a>
 
 1. Identify variables
 2. Build causal graph
