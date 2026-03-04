@@ -326,7 +326,8 @@ Compare the outcomes.
 
 ---
 
-### ! Important Limitation: Counterfactuals Are Estimated
+### ! Important Limitation:  
+### Counterfactuals Are Estimated
 Counterfactual fairness cannot be directly observed from real-world data.  
 We never see the same person both:  
 - As they are
