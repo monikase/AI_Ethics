@@ -617,6 +617,8 @@ Always document:
 
 ---
 
+<br>
+
 ## 4. Domain Adaptation & Deployment Check
 
 Causal fairness guarantees may not transfer automatically across contexts.  
@@ -635,7 +637,7 @@ Fairness is not a one-time certification. It requires ongoing validation.
 
 ---
 
-## 4. Practical Workflow Summary
+## 5. Practical Workflow Summary
 
 1. Identify variables
 2. Build causal graph
@@ -647,7 +649,7 @@ Fairness is not a one-time certification. It requires ongoing validation.
 
 ---
 
-## 5. Core Principle
+## 6. Core Principle
 
 Fairness interventions should:
 
