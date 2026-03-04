@@ -421,20 +421,55 @@ Average difference between factual and counterfactual predictions across individ
 ### 2. Counterfactual Violation Rate  
 Proportion of individuals whose decision changes under counterfactual modification.  
 
-> _Example:_
+> _Example:_  
 > _18% of applicants would receive a different approval decision if gender were changed._
 
 ### 3. Path-Specific Effect Magnitude  
 Percentage of total disparity attributable to specific causal pathways.  
 
-> _Example:_
-> _Employment pathway → 40%_
-> _Income pathway → 25%_
+> _Example:_  
+> _Employment pathway → 40%_  
+> _Income pathway → 25%_  
 
 ### 4. Uncertainty Quantification
 Use confidence intervals or bounding approaches to express uncertainty in effect estimates.  
 
 Never report counterfactual fairness as absolute certainty.  
+
+---
+
+## Intersectional Counterfactual Analysis
+
+---
+
+Discrimination may occur at intersections of protected attributes rather than along a single attribute.  
+
+> For example, an algorithm may treat:  
+> - women fairly overall  
+> - older applicants fairly overall  
+>  
+>  but still disadvantage **older women specifically**.    
+
+To detect this, extend counterfactual queries to change **multiple protected attributes simultaneously**.
+
+> Example counterfactual question:  
+>   
+> Would this applicant’s decision change if they were:  
+> - **Male instead of female**, AND  
+> - **Younger instead of older**?  
+
+Key measures include:
+
+- **Intersectional counterfactual violation rates**  
+  Percentage of cases where predictions change for specific attribute combinations.
+
+- **Path-specific effects for subgroup combinations**  
+  Identifying whether certain causal pathways disproportionately affect intersectional groups.
+
+When subgroup data is limited:  
+
+- Use **hierarchical modeling** to borrow statistical strength from related groups.
+- **Report higher uncertainty** in estimates for small intersectional populations.
 
 ---
 
@@ -552,8 +587,23 @@ Always document:
 - Uncertainties
 - Rationale for intervention choices
 
+---
 
+## 4. Domain Adaptation & Deployment Check
 
+Causal fairness guarantees may not transfer automatically across contexts.  
+
+Before deployment:  
+- Does the causal structure hold in the new environment?
+- Are socioeconomic relationships different?
+- Do protected attribute effects vary across regions or time?
+
+If deploying across domains:  
+- Re-validate key causal assumptions.
+- Re-run counterfactual evaluation.
+- Monitor fairness continuously post-deployment.
+
+Fairness is not a one-time certification. It requires ongoing validation.
 
 ---
 
