@@ -315,7 +315,6 @@ Questions to investigate:
 #### 2. Compare label distributions across demographic groups and intersections
 
 Check whether outcomes differ significantly across protected attributes or intersectional groups.  
-This helps detect whether certain groups historically received different outcomes.
 
 > _Example_
 >
@@ -341,20 +340,21 @@ Intersectional comparisons may reveal additional patterns:
 ---
 
 #### 3. Validate labels against external benchmarks when possible
+Compare labels with independent sources of information that better reflect the true outcome of interest.  
 
-Compare labels with independent sources of truth or expert evaluations.
+Possible validation approaches include:  
+- Comparing labels with **objective outcome data** when available  
+- Reviewing a subset of labeled cases with **domain experts or independent evaluators**  
+- Comparing outcomes with **external datasets or industry benchmarks**  
+- Checking consistency of labels across **different time periods or decision-makers**
 
-This helps determine whether historical decisions reflect actual outcomes or institutional bias.
-
-Possible validation approaches include:
-
-- Comparing loan approvals with **actual repayment outcomes**
-- Reviewing a sample of cases with **domain experts**
-- Comparing decisions with **industry benchmarks or regulatory data**
-
-> **Example**
+> _Example_
 >
-> If rejected applicants have repayment rates similar to approved applicants, this suggests that the historical approval labels may not accurately represent true credit risk.
+> Suppose a dataset contains a label representing a past decision _(e.g., approval, hiring decision, diagnosis, or risk classification)_.
+>
+> If individuals who received negative decisions show **similar objective outcomes** to those who received positive decisions, this may indicate that historical labels reflect decision bias rather than true differences.
+>
+> For example, rejected applicants may later demonstrate similar performance or outcomes as accepted applicants, suggesting the original decision labels may not fully reflect true capability or risk.
 
 ---
 
