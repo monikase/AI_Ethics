@@ -337,8 +337,6 @@ Intersectional comparisons may reveal additional patterns:
 >
 > _This suggests that disparities may exist **not only by gender but also by intersectional subgroups**._
 
----
-
 #### 3. Validate labels against external benchmarks when possible
 Compare labels with independent sources of information that better reflect the true outcome of interest.  
 
