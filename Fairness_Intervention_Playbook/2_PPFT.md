@@ -30,7 +30,7 @@ Rather than applying fairness interventions blindly, the toolkit focuses on **ma
 
 ## 2. Relationship to the Causal Fairness Toolkit
 
-The **Pre-Processing Fairness Toolkit** is designed to work in conjunction with the **Causal Fairness Toolkit** developed in Sprint 1.
+The **Pre-Processing Fairness Toolkit** is designed to work in conjunction with the **[Causal Fairness Toolkit]()**.
 
 While the Causal Fairness Toolkit focuses on identifying **why disparities occur** by analyzing causal pathways between protected attributes and outcomes, the Pre-Processing Toolkit focuses on **how to intervene at the data level to mitigate those disparities**.
 
