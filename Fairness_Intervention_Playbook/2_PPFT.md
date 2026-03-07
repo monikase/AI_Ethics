@@ -297,17 +297,82 @@ Common visualization approaches include:
 
 ### 1.3 Label Quality Assessment
 
-Training labels may reflect **historical discrimination or annotation bias**.
+#### 1. Analyze historical sources of labels
 
-Audit procedures should evaluate:
+Understand how the labels were generated and whether they may reflect biased human decisions or institutional practices.
 
-- disparities in label distribution across demographic groups
-- annotation processes and subjective evaluation criteria
-- external validation against trusted benchmarks
+Questions to investigate:
 
-Example:
+- Who created the labels?
+- What rules or criteria were used?
+- Were these decisions historically subject to discrimination?
 
-Historical hiring decisions may reflect biased evaluation practices rather than actual job performance.
+> _Example_
+>
+> _In a loan dataset, the label *“loan approved”* may reflect historical approval decisions made by bank officers._  
+> _If those decisions were influenced by gender bias, the labels themselves may encode discrimination._
+
+#### 2. Compare label distributions across demographic groups and intersections
+
+Check whether outcomes differ significantly across protected attributes or intersectional groups.  
+This helps detect whether certain groups historically received different outcomes.
+
+> _Example_
+>
+> | Group | Approval Rate |
+> |------|---------------|
+> | Men | 76% |
+> | Women | 58% |
+>
+> _If applicants have similar financial characteristics but approval rates differ significantly, this may indicate **label bias**._
+
+Intersectional comparisons may reveal additional patterns:
+
+> _Example_
+>
+> | Group | Approval Rate |
+> |------|---------------|
+> | Men | 76% |
+> | Women | 58% |
+> | Women over 45 | 51% |
+>
+> _This suggests that disparities may exist **not only by gender but also by intersectional subgroups**._
+
+---
+
+#### 3. Validate labels against external benchmarks when possible
+
+Compare labels with independent sources of truth or expert evaluations.
+
+This helps determine whether historical decisions reflect actual outcomes or institutional bias.
+
+Possible validation approaches include:
+
+- Comparing loan approvals with **actual repayment outcomes**
+- Reviewing a sample of cases with **domain experts**
+- Comparing decisions with **industry benchmarks or regulatory data**
+
+> **Example**
+>
+> If rejected applicants have repayment rates similar to approved applicants, this suggests that the historical approval labels may not accurately represent true credit risk.
+
+---
+
+#### 4. Document known label limitations
+
+All identified label quality issues should be explicitly documented to inform later fairness interventions.
+
+Documentation should include:
+
+- Known sources of historical bias
+- Data collection limitations
+- Measurement errors
+- Differences between labels and true outcomes
+
+> **Example documentation note**
+>
+> *Loan approval labels reflect historical decisions made by credit officers between 2008–2018. During this period, internal audits identified potential gender disparities in approval decisions. As a result, label bias may be present in the dataset.*
+
 
 ---
 
