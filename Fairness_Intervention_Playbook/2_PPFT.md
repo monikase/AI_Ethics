@@ -44,20 +44,20 @@ Together, the two toolkits form a complementary workflow:
 | Model Training | ML Pipeline | Train models using fairness-aware datasets |
 | Monitoring | Both Toolkits | Evaluate fairness and performance over time |
 
-### Example Integration
+> ### Example Integration  
+>  
+> For example, causal analysis may reveal the pathway:   
+> Gender → Employment History → Default Risk → Loan Approval    
+>  
+> This suggests that **employment history acts as a mediator influenced by gender**, potentially penalizing applicants with career breaks.  
+>  
+> The Pre-Processing Toolkit then translates this insight into a **specific intervention**, such as:  
+>  
+>  - transforming employment history into a **relevant experience metric**  
+>  - reweighting samples with employment gaps  
+>  - generating counterfactual examples that remove gender-based employment penalties  
 
-For example, causal analysis may reveal the pathway:  
-Gender → Employment History → Default Risk → Loan Approval  
-
-This suggests that **employment history acts as a mediator influenced by gender**, potentially penalizing applicants with career breaks.
-
-The Pre-Processing Toolkit then translates this insight into a **specific intervention**, such as:
-
-- transforming employment history into a **relevant experience metric**
-- reweighting samples with employment gaps
-- generating counterfactual examples that remove gender-based employment penalties
-
-By linking causal diagnosis with targeted data-level interventions, the combined toolkit enables teams to address fairness issues **at their root cause rather than through purely statistical adjustments**.
+By linking causal diagnosis with targeted data-level interventions, the combined toolkit enables teams to address fairness issues **at their root cause rather than through purely statistical adjustments**.  
 
 ---
 
