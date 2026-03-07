@@ -282,7 +282,7 @@ This helps distinguish **legitimate relationships from proxy discrimination**.
 > Suppose ZIP code is correlated with race.  
 > After controlling for **income level**, the correlation remains strong.
 >
-> This suggests ZIP code may still act as a proxy for race beyond legitimate economic differences.
+> _This suggests ZIP code may still act as a proxy for race beyond legitimate economic differences._
 
 #### 4. Correlation network visualization
 
@@ -293,7 +293,9 @@ Common visualization approaches include:
 - **Correlation heatmaps** showing strength of relationships between variables  
 - **Network graphs** highlighting features strongly associated with protected attributes  
 
-> _Example:_  
+> _Example:_
+> 
+> <img width="694" height="776" alt="image" src="https://github.com/user-attachments/assets/3a496089-2c66-42c3-b6da-8ac27ac00282" />  
 >
 > A correlation heatmap reveals strong associations between:
 >
