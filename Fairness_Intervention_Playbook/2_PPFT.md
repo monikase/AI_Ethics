@@ -70,8 +70,7 @@ The toolkit consists of the following components:
 - 1.2 Representation Analysis  
 - 1.3 Correlation and Proxy Detection  
 - 1.4 Label Quality Assessment  
-- 1.5 Fairness Baseline Calculation  
-- 1.6 Intersectional Bias Analysis  
+- 1.5 Fairness Baseline Calculation   
 
 ### 2️⃣ [Technique Catalog](#catalog)
 - 2.1 Reweighting Techniques  
@@ -295,7 +294,7 @@ Common visualization approaches include:
 
 ---
 
-### 1.3 Label Quality Assessment
+### 1.4 Label Quality Assessment
 
 #### 1. Analyze historical sources of labels
 
@@ -363,7 +362,7 @@ Documentation should include:
 
 ---
 
-### 1.4 Fairness Baseline Calculation
+### 1.5 Fairness Baseline Calculation
 
 #### 1. Select relevant fairness metrics
 
@@ -462,30 +461,115 @@ Common visualization approaches include:
 
 ### 2.1 Reweighting Techniques
 
-Reweighting methods modify the **influence of training samples during model learning**.
+Reweighting techniques adjust the **influence of training instances** during model training without modifying feature values or dataset composition.  
+Instead of changing the data itself, these methods assign **weights to training examples**, ensuring that underrepresented groups or outcomes have appropriate influence on the learning process.
 
-#### Instance Weighting
+Reweighting approaches are particularly useful when fairness issues arise from **representation disparities or biased outcome distributions** in the training data.
 
-Assigns higher importance to underrepresented or disadvantaged samples.
+---
 
-Example weight calculation:  
-weight = 1 / frequency(group)  
+#### 1. Instance Weighting
 
+**Description**  
+Instance weighting assigns different importance weights to training examples based on their demographic group representation.
 
-Use cases:
+Underrepresented groups receive **higher weights**, ensuring that the model pays sufficient attention to their patterns during training.
 
-- representation disparities
-- outcome imbalances
+**Use cases**
 
-Strengths:
+- Correcting demographic representation imbalances
+- Improving representation of minority groups in training data
+- Situations where models support sample weighting
 
-- retains all original data
-- flexible adjustment strength
+**Strengths**
 
-Limitations:
+- Keeps all original data points
+- Provides flexible adjustment of intervention strength
+- Easy to integrate with many machine learning frameworks
 
-- requires model support for instance weights
-- extreme weights may increase variance
+**Limitations**
+
+- Not all algorithms support instance weights
+- Large weights may increase variance and risk of overfitting
+
+> **Example**
+>
+> A dataset contains:
+>
+> | Group | Dataset Share |
+> |------|---------------|
+> | Men | 80% |
+> | Women | 20% |
+>
+> Instance weighting assigns higher weights to examples from women so their influence during model training reflects their expected population share.
+
+---
+
+#### 2. Outcome-Aware Reweighting
+
+**Description**  
+Outcome-aware reweighting assigns weights based on **protected attribute–outcome combinations**.  
+This approach increases the influence of examples that contradict historical bias patterns.
+
+**Use cases**
+
+- Addressing historical label bias
+- Improving fairness in decision outcomes
+- Situations where some groups systematically receive fewer positive outcomes
+
+**Strengths**
+
+- Targets biased outcome distributions directly
+- Encourages models to learn fairer decision boundaries
+- Works well when label bias is suspected
+
+**Limitations**
+
+- Requires careful design of weighting formulas
+- Extreme weights may destabilize training
+
+> **Example**
+>
+> Suppose historical loan approvals show:
+>
+> | Group | Approval Rate |
+> |------|---------------|
+> | Men | 76% |
+> | Women | 58% |
+>
+> Outcome-aware reweighting increases weights for **approved female applicants** and **rejected male applicants**, helping the model learn less biased patterns.
+
+---
+
+#### 3. Conditional Reweighting
+
+**Description**  
+Conditional reweighting adjusts weights to equalize outcomes **within comparable groups of feature values**.
+
+This approach ensures that individuals with similar characteristics receive similar influence during model training regardless of their protected attributes.
+
+**Use cases**
+
+- Situations where fairness should hold **conditional on legitimate predictors**
+- Applications requiring fairness within comparable risk groups
+- Models where simple demographic balancing is insufficient
+
+**Strengths**
+
+- Preserves legitimate predictive relationships
+- Provides more nuanced fairness adjustments
+- Reduces risk of oversimplified demographic balancing
+
+**Limitations**
+
+- Requires defining appropriate conditioning variables
+- More complex to implement than basic weighting
+
+> **Example**
+>
+> In a credit scoring dataset, applicants with similar financial profiles may receive different historical decisions depending on gender.
+>
+> Conditional reweighting adjusts instance weights so that **applicants with similar credit profiles influence the model equally**, regardless of demographic group.
 
 ---
 
