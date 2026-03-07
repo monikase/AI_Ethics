@@ -295,7 +295,7 @@ Common visualization approaches include:
 
 > _Example:_
 > 
-> <img width="694" height="776" alt="image" src="https://github.com/user-attachments/assets/3a496089-2c66-42c3-b6da-8ac27ac00282" />  
+> <img width="347" height="388" alt="image" src="https://github.com/user-attachments/assets/3a496089-2c66-42c3-b6da-8ac27ac00282" />  
 >
 > A correlation heatmap reveals strong associations between:
 >
