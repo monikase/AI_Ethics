@@ -66,7 +66,7 @@ By linking causal diagnosis with targeted data-level interventions, the combined
 The toolkit consists of the following components:
 
 ### 1️⃣ [Comprehensive Data Auditing Framework](#auditing)
-- 1.1 Representation Analysis  
+- 1.1 Multidimensional Representation Analysis  
 - 1.2 Correlation and Proxy Detection  
 - 1.3 Label Quality Assessment  
 - 1.4 Fairness Baseline Calculation  
@@ -115,13 +115,13 @@ Data auditing serves as the diagnostic step that determines which interventions 
 
 ---
 
-### 1.1 Representation Analysis
+### 1.1 Multidimensional Representation Analysis
 
-Representation analysis examines whether demographic groups are adequately represented in the dataset.
+Multidimensional representation analysis examines whether demographic groups are adequately represented in the dataset.
 
 Steps include:
 
-**Compare dataset demographics with reference populations**
+### A. Compare dataset demographics with reference populations
 
 Possible references include:
 
