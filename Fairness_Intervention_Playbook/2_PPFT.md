@@ -365,22 +365,92 @@ Documentation should include:
 
 ### 1.4 Fairness Baseline Calculation
 
-Before applying interventions, baseline fairness metrics should be calculated.
+#### 1. Select relevant fairness metrics
 
-Common metrics include:
+Different applications require different fairness definitions.  
+Multiple metrics should be evaluated to capture different aspects of fairness.  
 
-- demographic parity
-- equal opportunity
-- equalized odds
+Common fairness metrics include:
 
-Example baseline metrics:
+- **Demographic parity** – whether positive outcomes occur at similar rates across groups
+- **Equal opportunity** – whether true positive rates are similar across groups
+- **Equalized odds** – whether both true positive and false positive rates are similar
+- **Predictive parity** – whether predictions are equally reliable across groups
 
-| Metric | Value |
-|------|------|
-| Demographic parity difference | 0.18 |
-| Equal opportunity gap | 0.15 |
+> _Example_
+>
+> A model recommends candidates for interview.  
+> The demographic parity metric compares the **percentage of candidates recommended for interview** across groups.
+>
+> | Group | Interview Recommendation Rate |
+> |------|-------------------------------|
+> | Men | 64% |
+> | Women | 49% |
 
-These values serve as **reference points for evaluating fairness improvements**.
+---
+
+#### 2. Calculate metrics across demographic groups and intersections
+
+Fairness metrics should be calculated not only for single protected attributes but also for **intersectional groups**.
+
+This helps detect disparities that may only appear when multiple attributes are combined.
+
+> _Example_
+>
+> | Group | Positive Outcome Rate |
+> |------|-----------------------|
+> | Men | 64% |
+> | Women | 49% |
+> | Women over 45 | 42% |
+>
+> Although women overall have lower rates, the disparity is **even larger for older women**, highlighting an intersectional fairness issue.
+
+---
+
+#### 3. Apply statistical significance testing
+
+Observed disparities may occur due to random variation in the data.  
+Statistical tests help determine whether differences between groups are **statistically meaningful**.
+
+Common approaches include:
+
+- hypothesis testing for group differences
+- confidence interval comparisons
+- bootstrap estimation of fairness metrics
+
+> _Example_
+>
+> Suppose the recommendation rate difference between men (64%) and women (49%) is tested.
+>
+> A statistical test shows:
+>
+> - Difference: **15 percentage points**
+> - p-value: **0.004**
+>
+> Since the difference is statistically significant, it likely reflects a systematic disparity rather than random noise.
+
+---
+
+#### 4. Visualize fairness gaps
+
+Visualization helps communicate disparities clearly and identify patterns that may not be obvious in tables.
+
+Common visualization approaches include:
+
+- **bar charts** comparing outcome rates across groups
+- **group fairness dashboards** showing multiple fairness metrics
+- **heatmaps** highlighting disparities across intersectional groups
+- **time series charts** tracking fairness metrics over time
+
+> **Example**
+>
+> A fairness dashboard may display:
+>
+> - approval or recommendation rates by demographic group
+> - differences in error rates across groups
+> - fairness metric trends across model versions
+>
+> These visualizations help identify where fairness interventions may be needed.
 
 ---
 
