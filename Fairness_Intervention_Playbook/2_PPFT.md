@@ -293,9 +293,43 @@ Common visualization approaches include:
 - **Correlation heatmaps** showing strength of relationships between variables  
 - **Network graphs** highlighting features strongly associated with protected attributes  
 
+```mermaid
+flowchart LR
+
+%% Protected attributes
+Gender[Gender]
+Race[Race]
+
+%% Proxy variables
+PartTime[Part-Time Status]
+Zip[ZIP Code]
+
+%% Other features
+Industry[Industry Sector]
+School[School Prestige]
+SES[Socioeconomic Status]
+
+%% Correlation relationships
+Gender -. strong correlation .-> PartTime
+Gender -. moderate correlation .-> Industry
+
+Race -. strong correlation .-> Zip
+
+Zip -. correlation .-> SES
+SES -. correlation .-> School
+PartTime -. correlation .-> SES
+
+%% Styling
+classDef protected fill:#f7d6e0,stroke:#b04a6a,stroke-width:2px;
+classDef proxy fill:#fde2c6,stroke:#d97a1a,stroke-width:2px;
+classDef feature fill:#e6f0ff,stroke:#4a6fa5,stroke-width:2px;
+
+class Gender,Race protected;
+class PartTime,Zip proxy;
+class Industry,School,SES feature;
+```
+
 > _Example:_
-> 
-> <img width="312" height="349" alt="image" src="https://github.com/user-attachments/assets/3a496089-2c66-42c3-b6da-8ac27ac00282" />  
 >
 > _A correlation heatmap reveals strong associations between:_
 >
@@ -304,6 +338,8 @@ Common visualization approaches include:
 > - _socioeconomic status and school prestige_
 >
 > _These relationships suggest potential pathways through which protected attributes may influence model predictions._
+
+
 
 ---
 
