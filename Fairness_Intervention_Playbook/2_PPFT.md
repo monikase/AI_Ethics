@@ -66,11 +66,12 @@ By linking causal diagnosis with targeted data-level interventions, the combined
 The toolkit consists of the following components:
 
 ### 1️⃣ [Comprehensive Data Auditing Framework](#auditing)
-- 1.1 Representation Analysis  
-- 1.2 Correlation and Proxy Detection  
-- 1.3 Label Quality Assessment  
-- 1.4 Fairness Baseline Calculation  
-- 1.5 Intersectional Bias Analysis  
+- 1.1 Initial Data Profiling and Documentation
+- 1.2 Representation Analysis  
+- 1.3 Correlation and Proxy Detection  
+- 1.4 Label Quality Assessment  
+- 1.5 Fairness Baseline Calculation  
+- 1.6 Intersectional Bias Analysis  
 
 ### 2️⃣ [Technique Catalog](#catalog)
 - 2.1 Reweighting Techniques  
@@ -116,7 +117,7 @@ The toolkit consists of the following components:
 
 Document how the dataset was created and what limitations it may contain.  
 
-### 1. Document data sources and collection methods
+#### 1. Document data sources and collection methods
 
 Identify how the data was gathered and whether sampling methods may introduce bias.
 
@@ -125,24 +126,20 @@ Identify how the data was gathered and whether sampling methods may introduce bi
 > - Were certain populations more likely to be included in the dataset?
 > - Were there barriers preventing some groups from being represented?  
 
-### 2. Establish reference populations
+#### 2. Establish reference populations
 
 Define the population that the dataset is intended to represent.
 
-Possible references include:
+> Possible references include:  
+> - National census data
+> - Domain-specific benchmarks
+> - Historical population distributions
 
-- national census data
-- domain-specific benchmarks
-- historical population distributions
-
-These reference populations provide a baseline for evaluating representation disparities.
-
-**Identify protected attributes and potential proxy variables**
+#### 3. Identify protected attributes and potential proxy variables
 
 List protected attributes relevant to the application context.
 
-Examples may include:
-
+Examples may include:  
 - gender
 - race or ethnicity
 - age
