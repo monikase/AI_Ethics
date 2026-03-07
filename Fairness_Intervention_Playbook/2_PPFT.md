@@ -155,35 +155,41 @@ Document key properties of the dataset, including:
 
 ---
 
-### 1.2 Representation Analysis
+### 1.2 Multidimensional Representation Analysis
 
-Multidimensional representation analysis examines whether demographic groups are adequately represented in the dataset.
+Examines whether demographic groups are adequately represented in the dataset.
 
 #### 1. Compare dataset demographics with reference populations 
-This means checking if your dataset reflects the real-world population.  
+Check whether the dataset reflects the population relevant to the application.  
 
-Compare the distribution of groups in dataset with a trusted reference, such as:
-- Census data
-- Official statistics
-- Domain benchmarks _(e.g., hospital patient statistics)_.
+The reference population should match the **decision context**, not necessarily the general population.  
 
-> _Example:_  
->   
-> | Category | Real Population | Dataset |
-> |----------|-----------------|---------|
-> | Women    | 50%             | 20%     |
-> | Men      | 50%             | 80%     |
+Possible reference sources include:  
+- Census statistics
+- Industry benchmarks
+- Application-specific populations _(e.g., loan applicants)_
+
+> _Example (Loan Applications):_
 >
-> _This dataset does not represent the real population well._  
+> | Group | Applicant Population | Training Dataset |
+> |------|----------------------|------------------|
+> | Women | 46% | 28% |
+> | Men | 54% | 72% |
+>
+> _Women appear substantially underrepresented in the training data compared to the applicant population. This may cause the model to learn patterns that favor male applicants._
 
 **2. Identify representation gaps**  
 
+Compare dataset demographics to reference populations to identify representation gaps across both individual attributes and their intersections.
+
 > _Example:_
->  
+>
 > | Group | Dataset Share | Expected Share |
 > |------|---------------|---------------|
 > | Women | 48% | 50% |
 > | Women of color | 9% | 14% |
+>
+> _Although overall representation of women appears close to expected levels, intersectional analysis reveals that **women of color are significantly underrepresented**._
 
 **3. Analyze representation across outcomes**
 
