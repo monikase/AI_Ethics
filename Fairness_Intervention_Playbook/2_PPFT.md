@@ -143,9 +143,7 @@ List protected attributes relevant to the application context.
 > - gender
 > - race or ethnicity
 > - age
-> - disability status
-
-Domain knowledge should also be used to identify potential proxy variables that may indirectly encode protected attributes.  
+> - disability status 
 
 #### 4. Create a data dictionary
 
