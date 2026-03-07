@@ -240,23 +240,80 @@ Common visualization techniques include:
 
 ### 1.3 Correlation and Proxy Detection
 
-Protected attributes may influence predictions indirectly through correlated variables.
+#### 1. Calculate correlation coefficients between protected attributes and other features in the dataset
 
-Audit techniques include:
+This helps identify variables that may encode protected attributes indirectly.
 
-- correlation matrices
-- mutual information analysis
-- conditional independence testing
+> _Example:_  
+>  
+> | Feature | Correlation with Gender |
+> |--------|------------------------|
+> | Part-time employment | 0.47 |
+> | Industry sector | 0.31 |
+> | Years of continuous employment | -0.28 |
+>
+> _These correlations suggest that part-time status and employment history may act as proxies for gender._
 
-Example proxy variables:
+Correlation analysis works well for **linear relationships**, but may miss more complex patterns.
 
-| Feature | Possible Proxy For |
-|--------|--------------------|
-| ZIP code | race |
-| part-time status | gender |
-| school prestige | socioeconomic status |
+#### 2. Mutual information analysis
 
-These proxies may enable **indirect discrimination even when protected attributes are removed from the model**.
+Mutual information measures how much information one variable provides about another, capturing **both linear and non-linear relationships**.
+
+> _Example:_  
+>
+> A mutual information score shows that:
+>
+> | Feature | Mutual Information with Gender |
+> |--------|-------------------------------|
+> | Language style in resumes | 0.42 |
+> | Job industry | 0.25 |
+>
+> _This indicates that language patterns in resumes may indirectly encode gender information._
+
+#### 3. Conditional independence testing
+
+Conditional independence tests examine whether a relationship between two variables persists **after controlling for other relevant variables**.
+
+This helps distinguish **legitimate relationships from proxy discrimination**.
+
+> _Example:_  
+>
+> Suppose ZIP code is correlated with race.  
+> After controlling for **income level**, the correlation remains strong.
+>
+> This suggests ZIP code may still act as a proxy for race beyond legitimate economic differences.
+
+#### 4. Correlation network visualization
+
+Visualization can reveal complex relationships between protected attributes and multiple features simultaneously.
+
+Common visualization approaches include:
+
+- **Correlation heatmaps** showing strength of relationships between variables  
+- **Network graphs** highlighting features strongly associated with protected attributes  
+
+> _Example:_  
+>
+> A correlation heatmap reveals strong associations between:
+>
+> - gender and part-time status  
+> - race and ZIP code  
+> - socioeconomic status and school prestige
+>
+> These relationships suggest potential pathways through which protected attributes may influence model predictions.
+
+---
+
+#### Example proxy variables
+
+| Feature | Possible Proxy For | Explanation |
+|--------|--------------------|-------------|
+| ZIP code | race | Residential segregation may create strong geographic correlations with race |
+| Part-time status | gender | Caregiving responsibilities often correlate with gender |
+| School prestige | socioeconomic status | Access to elite education often reflects economic background |
+
+These proxy variables may allow models to **reconstruct protected attributes indirectly**, enabling discriminatory outcomes even when those attributes are not explicitly included in the model.
 
 ---
 
