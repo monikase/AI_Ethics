@@ -119,15 +119,13 @@ Data auditing serves as the diagnostic step that determines which interventions 
 
 Multidimensional representation analysis examines whether demographic groups are adequately represented in the dataset.
 
-Steps include:
+**1. Comparison of dataset demographics to reference populations**  
+This means checking if your dataset reflects the real-world population.  
 
-**1. Compare dataset demographics with reference populations**
-
-Possible references include:
-
-- census data
-- industry benchmarks
-- application-specific populations
+Compare the distribution of groups in dataset with a trusted reference, such as:
+- Census data
+- Official statistics
+- Domain benchmarks _(e.g., hospital patient statistics)_.
 
 **2. Identify representation gaps**
 
