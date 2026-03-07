@@ -178,8 +178,7 @@ Possible reference sources include:
 >
 > _Women appear substantially underrepresented in the training data compared to the applicant population. This may cause the model to learn patterns that favor male applicants._
 
-**2. Identify representation gaps**  
-
+#### 2. Identify representation gaps  
 Compare dataset demographics to reference populations to identify representation gaps across both individual attributes and their intersections.
 
 > _Example:_
@@ -191,7 +190,8 @@ Compare dataset demographics to reference populations to identify representation
 >
 > _Although overall representation of women appears close to expected levels, intersectional analysis reveals that **women of color are significantly underrepresented**._
 
-**3. Analyze representation across outcomes**
+#### 3. Analyze representation across outcomes
+Examine whether different groups appear equally across outcome labels.
 
 > _Example:_
 >  
@@ -199,10 +199,42 @@ Compare dataset demographics to reference populations to identify representation
 > |------|--------------------|
 > | Male applicants | 76% |
 > | Female applicants | 58% |
+>
+> _This disparity may indicate potential bias in historical decision outcomes._
 
-**4. Temporal analysis**
+#### 4. Temporal analysis
 
-Representation patterns should also be analyzed across time to detect shifts or structural trends.
+Check whether demographic representation changes over time.
+
+> _Example:_
+>
+> | Year | Women in Dataset |
+> |------|------------------|
+> | 2018 | 30% |
+> | 2021 | 40% |
+> | 2024 | 52% |
+>
+> _Sudden changes may indicate shifts in data collection practices or market participation._
+
+#### 5. Visualize demographic distributions  
+
+Common visualization techniques include:
+
+- **Bar charts**  
+  Used to compare representation across demographic groups.
+  _(e.g., gender distribution of loan applicants.)_
+- **Stacked bar charts**  
+  Used to compare outcome distributions across groups.
+  _(e.g., loan approval vs rejection rates by gender)_
+- **Mosaic plots**    
+  Used to visualize intersectional representation across multiple attributes.
+   _(e.g., gender × race representation among applicants)_
+- **Heatmaps**  
+  Used to visualize representation across multiple group combinations.
+   _(e.g., representation across gender × age groups)_
+- **Time series plots**  
+  Used to detect representation shifts across time periods.
+  _(e.g., percentage of female applicants across years)_
 
 ---
 
