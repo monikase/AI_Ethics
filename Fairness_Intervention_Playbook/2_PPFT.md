@@ -454,20 +454,6 @@ Common visualization approaches include:
 
 ---
 
-### 1.5 Intersectional Bias Analysis
-
-Bias may affect combinations of protected attributes rather than individual attributes.
-
-Example intersections include:
-
-- gender × race
-- gender × age
-- race × socioeconomic status
-
-Intersectional analysis ensures fairness interventions do not improve aggregate metrics while leaving specific subgroups disadvantaged.
-
----
-
 <a id="catalog"></a>
 ## 2️⃣ Technique Catalog
 → Document available data-level fairness interventions.
