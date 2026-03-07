@@ -295,15 +295,15 @@ Common visualization approaches include:
 
 > _Example:_
 > 
-> <img width="347" height="388" alt="image" src="https://github.com/user-attachments/assets/3a496089-2c66-42c3-b6da-8ac27ac00282" />  
+> <img width="312" height="349" alt="image" src="https://github.com/user-attachments/assets/3a496089-2c66-42c3-b6da-8ac27ac00282" />  
 >
-> A correlation heatmap reveals strong associations between:
+> _A correlation heatmap reveals strong associations between:_
 >
-> - gender and part-time status  
-> - race and ZIP code  
-> - socioeconomic status and school prestige
+> - _gender and part-time status_  
+> - _race and ZIP code_  
+> - _socioeconomic status and school prestige_
 >
-> These relationships suggest potential pathways through which protected attributes may influence model predictions.
+> _These relationships suggest potential pathways through which protected attributes may influence model predictions._
 
 ---
 
