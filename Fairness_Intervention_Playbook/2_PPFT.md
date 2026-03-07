@@ -121,7 +121,7 @@ Multidimensional representation analysis examines whether demographic groups are
 
 Steps include:
 
-### A. Compare dataset demographics with reference populations
+**1. Compare dataset demographics with reference populations**
 
 Possible references include:
 
@@ -129,25 +129,25 @@ Possible references include:
 - industry benchmarks
 - application-specific populations
 
-**Identify representation gaps**
+**2. Identify representation gaps**
 
-Example:
+> _Example:_
+>  
+> | Group | Dataset Share | Expected Share |
+> |------|---------------|---------------|
+> | Women | 48% | 50% |
+> | Women of color | 9% | 14% |
 
-| Group | Dataset Share | Expected Share |
-|------|---------------|---------------|
-| Women | 48% | 50% |
-| Women of color | 9% | 14% |
+**3. Analyze representation across outcomes**
 
-**Analyze representation across outcomes**
+> _Example:_
+>  
+> | Group | Loan Approval Rate |
+> |------|--------------------|
+> | Male applicants | 76% |
+> | Female applicants | 58% |
 
-Example:
-
-| Group | Loan Approval Rate |
-|------|--------------------|
-| Male applicants | 76% |
-| Female applicants | 58% |
-
-**Temporal analysis**
+**4. Temporal analysis**
 
 Representation patterns should also be analyzed across time to detect shifts or structural trends.
 
