@@ -114,21 +114,18 @@ The toolkit consists of the following components:
 
 ### 1.1 Initial Data Profiling and Documentation
 
-Before conducting fairness analysis, teams should document how the dataset was created and what limitations it may contain.  
-Understanding the origin and structure of the data helps identify potential sources of bias that may influence downstream modeling.
+Document how the dataset was created and what limitations it may contain.  
 
-Key steps include:
-
-**Document data sources and collection methods**
+### 1. Document data sources and collection methods
 
 Identify how the data was gathered and whether sampling methods may introduce bias.
 
-Example considerations:
+> Example considerations:  
+>   
+> - Were certain populations more likely to be included in the dataset?
+> - Were there barriers preventing some groups from being represented?  
 
-- Were certain populations more likely to be included in the dataset?
-- Were there barriers preventing some groups from being represented?
-
-**Establish reference populations**
+### 2. Establish reference populations
 
 Define the population that the dataset is intended to represent.
 
