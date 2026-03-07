@@ -112,7 +112,61 @@ The toolkit consists of the following components:
 
 ---
 
-### 1.1 Representation Analysis
+### 1.1 Initial Data Profiling and Documentation
+
+Before conducting fairness analysis, teams should document how the dataset was created and what limitations it may contain.  
+Understanding the origin and structure of the data helps identify potential sources of bias that may influence downstream modeling.
+
+Key steps include:
+
+**Document data sources and collection methods**
+
+Identify how the data was gathered and whether sampling methods may introduce bias.
+
+Example considerations:
+
+- Were certain populations more likely to be included in the dataset?
+- Were there barriers preventing some groups from being represented?
+
+**Establish reference populations**
+
+Define the population that the dataset is intended to represent.
+
+Possible references include:
+
+- national census data
+- domain-specific benchmarks
+- historical population distributions
+
+These reference populations provide a baseline for evaluating representation disparities.
+
+**Identify protected attributes and potential proxy variables**
+
+List protected attributes relevant to the application context.
+
+Examples may include:
+
+- gender
+- race or ethnicity
+- age
+- disability status
+
+Domain knowledge should also be used to identify potential proxy variables that may indirectly encode protected attributes.
+
+**Create a data dictionary**
+
+Document key properties of the dataset, including:
+
+- feature definitions
+- data sources
+- measurement units
+- known limitations or missing values
+
+A comprehensive data dictionary improves transparency and helps ensure that fairness analyses are based on correct interpretations of the data.
+
+---
+
+### 1.2 Representation Analysis
 
 Multidimensional representation analysis examines whether demographic groups are adequately represented in the dataset.
 
@@ -157,7 +211,7 @@ Representation patterns should also be analyzed across time to detect shifts or 
 
 ---
 
-### 1.2 Correlation and Proxy Detection
+### 1.3 Correlation and Proxy Detection
 
 Protected attributes may influence predictions indirectly through correlated variables.
 
