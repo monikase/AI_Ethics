@@ -221,19 +221,19 @@ Check whether demographic representation changes over time.
 Common visualization techniques include:
 
 - **Bar charts**  
-  Used to compare representation across demographic groups.
-  _(e.g., gender distribution of loan applicants.)_
+  Used to compare representation across demographic groups.  
+  _(e.g., gender distribution of loan applicants)_
 - **Stacked bar charts**  
   Used to compare outcome distributions across groups.
   _(e.g., loan approval vs rejection rates by gender)_
 - **Mosaic plots**    
-  Used to visualize intersectional representation across multiple attributes.
+  Used to visualize intersectional representation across multiple attributes.  
    _(e.g., gender × race representation among applicants)_
 - **Heatmaps**  
-  Used to visualize representation across multiple group combinations.
+  Used to visualize representation across multiple group combinations.  
    _(e.g., representation across gender × age groups)_
 - **Time series plots**  
-  Used to detect representation shifts across time periods.
+  Used to detect representation shifts across time periods.  
   _(e.g., percentage of female applicants across years)_
 
 ---
