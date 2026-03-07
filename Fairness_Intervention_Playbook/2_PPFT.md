@@ -350,13 +350,7 @@ Possible validation approaches include:
 
 > _Example_
 >
-> Suppose a dataset contains a label representing a past decision _(e.g., approval, hiring decision, diagnosis, or risk classification)_.
->
-> If individuals who received negative decisions show **similar objective outcomes** to those who received positive decisions, this may indicate that historical labels reflect decision bias rather than true differences.
->
-> For example, rejected applicants may later demonstrate similar performance or outcomes as accepted applicants, suggesting the original decision labels may not fully reflect true capability or risk.
-
----
+> Rejected loan applicants may later demonstrate similar performance or outcomes as accepted applicants, suggesting the original decision labels may not fully reflect true capability or risk.
 
 #### 4. Document known label limitations
 
@@ -368,11 +362,6 @@ Documentation should include:
 - Data collection limitations
 - Measurement errors
 - Differences between labels and true outcomes
-
-> **Example documentation note**
->
-> *Loan approval labels reflect historical decisions made by credit officers between 2008–2018. During this period, internal audits identified potential gender disparities in approval decisions. As a result, label bias may be present in the dataset.*
-
 
 ---
 
