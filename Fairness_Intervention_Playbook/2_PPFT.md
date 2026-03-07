@@ -139,24 +139,21 @@ Define the population that the dataset is intended to represent.
 
 List protected attributes relevant to the application context.
 
-Examples may include:  
-- gender
-- race or ethnicity
-- age
-- disability status
+> Examples may include:  
+> - gender
+> - race or ethnicity
+> - age
+> - disability status
 
-Domain knowledge should also be used to identify potential proxy variables that may indirectly encode protected attributes.
+Domain knowledge should also be used to identify potential proxy variables that may indirectly encode protected attributes.  
 
-**Create a data dictionary**
+#### 4. Create a data dictionary
 
-Document key properties of the dataset, including:
-
-- feature definitions
-- data sources
-- measurement units
-- known limitations or missing values
-
-A comprehensive data dictionary improves transparency and helps ensure that fairness analyses are based on correct interpretations of the data.
+Document key properties of the dataset, including:  
+- Feature definitions
+- Data sources
+- Measurement units
+- Known limitations or missing values
 
 ---
 
