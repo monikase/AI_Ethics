@@ -108,10 +108,7 @@ The toolkit consists of the following components:
 
 <a id="auditing"></a>
 ## 1️⃣ Comprehensive Data Auditing Framework
-→ Diagnose bias patterns before selecting fairness interventions.
-
-Before applying fairness interventions, teams must first identify **how bias manifests in the dataset**.  
-Data auditing serves as the diagnostic step that determines which interventions are appropriate.    
+→ Diagnose bias patterns before selecting fairness interventions.  
 
 ---
 
