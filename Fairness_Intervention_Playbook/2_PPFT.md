@@ -366,7 +366,6 @@ Documentation should include:
 
 #### 1. Select relevant fairness metrics
 
-Different applications require different fairness definitions.  
 Multiple metrics should be evaluated to capture different aspects of fairness.  
 
 Common fairness metrics include:
@@ -386,8 +385,6 @@ Common fairness metrics include:
 > | Men | 64% |
 > | Women | 49% |
 
----
-
 #### 2. Calculate metrics across demographic groups and intersections
 
 Fairness metrics should be calculated not only for single protected attributes but also for **intersectional groups**.
@@ -404,8 +401,6 @@ This helps detect disparities that may only appear when multiple attributes are 
 >
 > Although women overall have lower rates, the disparity is **even larger for older women**, highlighting an intersectional fairness issue.
 
----
-
 #### 3. Apply statistical significance testing
 
 Observed disparities may occur due to random variation in the data.  
@@ -413,9 +408,9 @@ Statistical tests help determine whether differences between groups are **statis
 
 Common approaches include:
 
-- hypothesis testing for group differences
-- confidence interval comparisons
-- bootstrap estimation of fairness metrics
+- Hypothesis testing for group differences
+- Confidence interval comparisons
+- Bootstrap estimation of fairness metrics
 
 > _Example_
 >
@@ -436,20 +431,10 @@ Visualization helps communicate disparities clearly and identify patterns that m
 
 Common visualization approaches include:
 
-- **bar charts** comparing outcome rates across groups
-- **group fairness dashboards** showing multiple fairness metrics
-- **heatmaps** highlighting disparities across intersectional groups
-- **time series charts** tracking fairness metrics over time
-
-> **Example**
->
-> A fairness dashboard may display:
->
-> - approval or recommendation rates by demographic group
-> - differences in error rates across groups
-> - fairness metric trends across model versions
->
-> These visualizations help identify where fairness interventions may be needed.
+- **Bar charts** comparing outcome rates across groups
+- **Group fairness dashboards** showing multiple fairness metrics
+- **Heatmaps** highlighting disparities across intersectional groups
+- **Time series charts** tracking fairness metrics over time
 
 ---
 
@@ -462,75 +447,56 @@ Common visualization approaches include:
 ### 2.1 Reweighting Techniques
 
 Reweighting techniques adjust the **influence of training instances** during model training without modifying feature values or dataset composition.  
-Instead of changing the data itself, these methods assign **weights to training examples**, ensuring that underrepresented groups or outcomes have appropriate influence on the learning process.
-
-Reweighting approaches are particularly useful when fairness issues arise from **representation disparities or biased outcome distributions** in the training data.
+Instead of changing the data itself, these methods assign **weights to training examples**, ensuring that underrepresented groups or outcomes have appropriate influence on the learning process.  
+Reweighting approaches are particularly useful when fairness issues arise from **representation disparities or biased outcome distributions** in the training data.  
 
 ---
 
 #### 1. Instance Weighting
 
-**Description**  
-Instance weighting assigns different importance weights to training examples based on their demographic group representation.
+**Description:**  
+Instance weighting assigns different importance weights to training examples based on their demographic group representation.  
+Underrepresented groups receive **higher weights**, ensuring that the model pays sufficient attention to their patterns during training.  
 
-Underrepresented groups receive **higher weights**, ensuring that the model pays sufficient attention to their patterns during training.
-
-**Use cases**
-
+**Use cases:**  
 - Correcting demographic representation imbalances
 - Improving representation of minority groups in training data
-- Situations where models support sample weighting
+- Situations where models support sample weighting  
 
-**Strengths**
-
+**Strengths:**  
 - Keeps all original data points
 - Provides flexible adjustment of intervention strength
-- Easy to integrate with many machine learning frameworks
+- Easy to integrate with many machine learning frameworks  
 
-**Limitations**
-
+**Limitations:**  
 - Not all algorithms support instance weights
-- Large weights may increase variance and risk of overfitting
-
-> **Example**
->
-> A dataset contains:
->
-> | Group | Dataset Share |
-> |------|---------------|
-> | Men | 80% |
-> | Women | 20% |
->
-> Instance weighting assigns higher weights to examples from women so their influence during model training reflects their expected population share.
+- Large weights may increase variance and risk of overfitting  
 
 ---
 
 #### 2. Outcome-Aware Reweighting
 
-**Description**  
-Outcome-aware reweighting assigns weights based on **protected attribute–outcome combinations**.  
-This approach increases the influence of examples that contradict historical bias patterns.
+**Description:**    
+Outcome-aware reweighting assigns weights based on **protected attribute–outcome combinations**.   
+This approach increases the influence of examples that contradict historical bias patterns.  
 
-**Use cases**
-
+**Use cases:**  
 - Addressing historical label bias
 - Improving fairness in decision outcomes
 - Situations where some groups systematically receive fewer positive outcomes
 
-**Strengths**
-
+**Strengths:**  
 - Targets biased outcome distributions directly
 - Encourages models to learn fairer decision boundaries
 - Works well when label bias is suspected
 
-**Limitations**
-
+**Limitations:**  
 - Requires careful design of weighting formulas
 - Extreme weights may destabilize training
 
-> **Example**
+> _Example_
 >
-> Suppose historical loan approvals show:
+> _Suppose historical loan approvals show:_
 >
 > | Group | Approval Rate |
 > |------|---------------|
@@ -543,29 +509,25 @@ This approach increases the influence of examples that contradict historical bia
 
 #### 3. Conditional Reweighting
 
-**Description**  
-Conditional reweighting adjusts weights to equalize outcomes **within comparable groups of feature values**.
+**Description:**   
+Conditional reweighting adjusts weights to equalize outcomes **within comparable groups of feature values**.  
+This approach ensures that individuals with similar characteristics receive similar influence during model training regardless of their protected attributes.  
 
-This approach ensures that individuals with similar characteristics receive similar influence during model training regardless of their protected attributes.
-
-**Use cases**
-
+**Use cases:**  
 - Situations where fairness should hold **conditional on legitimate predictors**
 - Applications requiring fairness within comparable risk groups
 - Models where simple demographic balancing is insufficient
 
-**Strengths**
-
+**Strengths:**  
 - Preserves legitimate predictive relationships
 - Provides more nuanced fairness adjustments
 - Reduces risk of oversimplified demographic balancing
 
-**Limitations**
-
+**Limitations:**  
 - Requires defining appropriate conditioning variables
 - More complex to implement than basic weighting
 
-> **Example**
+> _Example_
 >
 > In a credit scoring dataset, applicants with similar financial profiles may receive different historical decisions depending on gender.
 >
@@ -575,33 +537,100 @@ This approach ensures that individuals with similar characteristics receive simi
 
 ### 2.2 Sampling Methods
 
-Sampling methods modify the **dataset composition**.
+Sampling techniques modify the **composition of the training dataset** by adjusting how frequently different instances appear during model training.  
+Instead of changing weights assigned to data points, these methods **duplicate or remove instances** to create a more balanced dataset.
 
-#### Oversampling
+Sampling approaches are particularly useful when fairness issues arise from **severe representation disparities**, when models **do not support instance weights**, or when teams prefer fairness interventions implemented directly in the data preparation pipeline.
 
-Increase representation of minority groups by duplicating or generating new samples.
+#### 1. Oversampling
 
-Strengths:
+**Description:**  
+Oversampling increases the number of examples from **underrepresented groups** by duplicating existing instances or generating synthetic ones.  
+This ensures that minority groups appear more frequently during model training.
 
-- improves representation balance
+**Use cases:**  
+- Addressing demographic underrepresentation
+- Improving model learning for minority groups
+- Situations where minority classes contain too few samples
 
-Limitations:
+**Strengths:**  
+- Improves representation of minority groups
+- Easy to implement
+- Compatible with most machine learning models
 
-- may cause overfitting
+**Limitations:**  
+- May increase risk of overfitting when examples are duplicated
+- Does not address deeper structural biases in features
 
----
+> _Example_
+>
+> _Suppose a training dataset contains:_
+>
+> | Group | Dataset Share |
+> |------|---------------|
+> | Men | 80% |
+> | Women | 20% |
+>
+> Oversampling duplicates examples from women until both groups have similar representation in the training dataset.
 
-#### Undersampling
+#### 2. Undersampling
 
-Reduce samples from majority groups.
+**Description:**  
+Undersampling reduces the number of examples from **overrepresented groups** in order to balance the dataset.
 
-Strengths:
+This approach removes some majority group instances so that minority groups have greater relative influence during training.
 
-- simple implementation
+**Use cases:**  
+- Datasets with extreme representation imbalances
+- Situations where majority group data is very large
+- Models sensitive to class imbalance
 
-Limitations:
+**Strengths:**  
+- Simple and computationally efficient
+- Reduces dataset size and training time
+- Helps balance group influence during training
 
-- loss of potentially valuable information
+**Limitations:**  
+- Discards potentially useful data
+- May reduce model performance if too many examples are removed
+
+> _Example_
+>
+> _Suppose a hiring dataset contains:_
+>
+> | Group | Dataset Share |
+> |------|---------------|
+> | Men | 85% |
+> | Women | 15% |
+>
+> Undersampling removes a portion of male applicant records so that the dataset contains a more balanced gender distribution.
+
+#### 3. Synthetic Minority Sampling (SMOTE)
+
+**Description:**  
+Synthetic Minority Over-sampling Technique (SMOTE) generates **new synthetic examples** for underrepresented groups by interpolating between existing samples.
+
+Rather than duplicating instances, SMOTE creates **new plausible data points** to improve minority group representation.
+
+**Use cases:**  
+- Situations where minority groups have extremely limited data
+- Datasets where simple duplication may cause overfitting
+- Applications requiring richer representation of minority patterns
+
+**Strengths:**  
+- Reduces overfitting compared to simple duplication
+- Creates more diverse examples for minority groups
+- Improves model generalization for underrepresented populations
+
+**Limitations:**  
+- Synthetic samples may not perfectly reflect real-world distributions
+- Requires careful validation to avoid unrealistic feature combinations
+
+> _Example_
+>
+> In a medical diagnosis dataset, only a small number of patients from a particular demographic group may be present.
+>
+> SMOTE generates synthetic patient records based on existing examples, helping the model learn patterns relevant to that group without duplicating the same cases.
 
 ---
 
