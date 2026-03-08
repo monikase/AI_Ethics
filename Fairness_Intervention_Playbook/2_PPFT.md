@@ -605,6 +605,8 @@ This approach **removes some majority group instances** so that minority groups 
 >
 > Undersampling removes a portion of male applicant records so that the dataset contains a more balanced gender distribution.
 
+---
+
 ### C. Synthetic Minority Sampling (SMOTE)
 
  **Description:**  
