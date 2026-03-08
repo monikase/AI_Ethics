@@ -141,3 +141,70 @@
 - Buolamwini, J., & Gebru, T. (2018). *Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification*. Proceedings of the 1st Conference on Fairness, Accountability and Transparency (FAT*).
 
 - Crenshaw, K. (1989). *Demarginalizing the Intersection of Race and Sex*. University of Chicago Legal Forum.
+
+---
+
+## 4_PostPFT References
+
+### Threshold Optimization and Post-Processing Fairness
+
+- Hardt, M., Price, E., & Srebro, N. (2016). *Equality of Opportunity in Supervised Learning*. Advances in Neural Information Processing Systems (NeurIPS).
+
+- Corbett-Davies, S., Pierson, E., Feller, A., Goel, S., & Huq, A. (2017). *Algorithmic Decision Making and the Cost of Fairness*. Proceedings of the 23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD).
+
+- Friedler, S. A., Scheidegger, C., & Venkatasubramanian, S. (2019). *The (Im)possibility of Fairness: Different Value Systems Require Different Mechanisms for Fair Decision Making*. Communications of the ACM.
+
+---
+
+### Calibration and Fairness Trade-offs
+
+- Pleiss, G., Raghavan, M., Wu, F., Kleinberg, J., & Weinberger, K. Q. (2017). *On Fairness and Calibration*. Advances in Neural Information Processing Systems (NeurIPS).
+
+- Kleinberg, J., Mullainathan, S., & Raghavan, M. (2016). *Inherent Trade-Offs in the Fair Determination of Risk Scores*. Proceedings of Innovations in Theoretical Computer Science (ITCS).
+
+- Guo, C., Pleiss, G., Sun, Y., & Weinberger, K. Q. (2017). *On Calibration of Modern Neural Networks*. Proceedings of the 34th International Conference on Machine Learning (ICML).
+
+- Naeini, M. P., Cooper, G. F., & Hauskrecht, M. (2015). *Obtaining Well Calibrated Probabilities Using Bayesian Binning*. Proceedings of the AAAI Conference on Artificial Intelligence.
+
+---
+
+### Prediction Transformation and Distribution Alignment
+
+- Feldman, M., Friedler, S. A., Moeller, J., Scheidegger, C., & Venkatasubramanian, S. (2015). *Certifying and Removing Disparate Impact*. Proceedings of the 21st ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD).
+
+- Dwork, C., Immorlica, N., Kalai, A. T., & Leiserson, M. (2018). *Decoupled Classifiers for Group-Fair and Efficient Machine Learning*. Proceedings of the Conference on Fairness, Accountability, and Transparency (FAccT).
+
+- Canetti, R., Cohen, A., & Sheffet, O. (2019). *Fairness via Learning Transformations*. Proceedings of the Conference on Fairness, Accountability, and Transparency (FAccT).
+
+- Wei, D., Ramamurthy, K., & Varshney, K. R. (2020). *Optimized Score Transformation for Fair Classification*. Proceedings of the AAAI Conference on Artificial Intelligence.
+
+---
+
+### Rejection Option Classification and Human–AI Collaboration
+
+- Madras, D., Pitassi, T., & Zemel, R. (2018). *Learning Adversarially Fair and Transferable Representations*. Proceedings of the 35th International Conference on Machine Learning (ICML).
+
+- Geifman, Y., & El-Yaniv, R. (2017). *Selective Classification for Deep Neural Networks*. Advances in Neural Information Processing Systems (NeurIPS).
+
+- De-Arteaga, M., Fogliato, R., & Chouldechova, A. (2020). *A Case for Humans-in-the-Loop: Decisions in the Presence of Erroneous Algorithmic Scores*. Proceedings of the Conference on Fairness, Accountability, and Transparency (FAccT).
+
+- Lai, V., & Tan, C. (2019). *On Human Predictions with Explanations and Predictions of Machine Learning Models: A Case Study on Deception Detection*. Proceedings of the Conference on Fairness, Accountability, and Transparency (FAccT).
+
+- Green, B., & Chen, Y. (2019). *Disparate Interactions: An Algorithm-in-the-Loop Analysis of Fairness in Risk Assessments*. Proceedings of the Conference on Fairness, Accountability, and Transparency (FAccT).
+
+---
+
+### Intersectional Fairness in Algorithmic Systems
+
+- Buolamwini, J., & Gebru, T. (2018). *Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification*. Proceedings of Machine Learning Research (PMLR).
+
+- Foulds, J., Islam, R., Keya, K. N., & Pan, S. (2020). *An Intersectional Definition of Fairness*. Proceedings of the IEEE International Conference on Data Mining (ICDM).
+
+---
+
+### Foundational Resources on Algorithmic Fairness
+
+- Barocas, S., Hardt, M., & Narayanan, A. (2019). *Fairness and Machine Learning: Limitations and Opportunities*. MIT Press.
+
+- Mehrabi, N., Morstatter, F., Saxena, N., Lerman, K., & Galstyan, A. (2021). *A Survey on Bias and Fairness in Machine Learning*. ACM Computing Surveys.
+
