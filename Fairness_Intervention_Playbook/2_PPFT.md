@@ -859,7 +859,7 @@ Common patterns include:
 |---|---|---|
 | **Representation disparities** | Unequal group representation | [Step 2](#repdisparities) |
 | **Proxy discrimination** | Correlations between features and protected attributes | [Step 3](#prodiscrimination) |
-| **Label bias** | Historical discrimination in outcome labels | Step 4 |
+| **Label bias** | Historical discrimination in outcome labels | [Step 4](#labelbias) |
 | **Intersectional representation gaps** | Very small subgroup sample sizes |  |
 | **Multiple bias mechanisms** | Several bias sources interact | Requieres combination of strategies |
 
@@ -871,11 +871,12 @@ Common patterns include:
 If bias arises from **unequal representation of groups**, the next step is to determine how the dataset can be adjusted.
 
 - Does the model support instance weights?  
-    - Yes → Reweighting techniques  
-    - No → Evaluate the dataset composition  
+    - **Yes → Reweighting techniques**
+         
+    - **No → Evaluate the dataset composition**  
         - Does the dataset contain enough samples from underrepresented groups to rebalance the data?  
-            - Yes → Resampling techniques (over/under-sampling)  
-            - No → Fairness-aware data generation  
+            - **Yes → Resampling techniques** (over/under-sampling)  
+            - **No → Fairness-aware data generation**   
 
 Synthetic data generation may also be necessary when intersectional groups are missing or extremely rare, making traditional sampling ineffective.
 
@@ -895,8 +896,17 @@ If bias arises because features act as proxies for sensitive attributes, the goa
 These methods transform feature representations so that **sensitive attributes cannot be easily inferred from the data.**
 
 ---
+<a id="labelbias"></a>
+### Step 4: Label Bias
 
+If the bias originates from systematically biased labels, the problem lies in the target variable rather than the feature distribution.
 
+- Is the bias caused by historical discrimination or biased decision processes?
+    - Yes → Label correction techniques (transformation-based approaches)  
+      Methods such as label adjustment or massaging modify the dataset so that historically disadvantaged groups are not systematically penalized.
+    - No → Reconsider data collection or labeling processes
+
+In some cases, algorithmic preprocessing cannot fully address label bias, and improvements must be made at the data collection or annotation stage.
 
 ---
 
