@@ -423,8 +423,6 @@ Common approaches include:
 >
 > Since the difference is statistically significant, it likely reflects a systematic disparity rather than random noise.
 
----
-
 #### 4. Visualize fairness gaps
 
 Visualization helps communicate disparities clearly and identify patterns that may not be obvious in tables.
@@ -640,30 +638,103 @@ These methods modify **feature distributions** to reduce correlations with prote
 
 ---
 
-#### Disparate Impact Removal
+#### 1. Disparate Impact Removal
 
-Transforms features so distributions become independent of protected attributes while preserving rank ordering.
 
-Use cases:
+Distribution transformation techniques modify the **feature space of the dataset** in order to reduce correlations between protected attributes and other variables.  
+Unlike reweighting or sampling methods, which adjust the influence or frequency of existing instances, transformation approaches **change feature values or representations** to prevent models from learning discriminatory patterns.
 
-- proxy discrimination
-- continuous features correlated with protected attributes
+These techniques are particularly useful when fairness issues arise from **proxy discrimination**, where certain features indirectly encode protected attributes.
 
 ---
 
-#### Fair Representation Learning
+#### 1. Disparate Impact Removal
 
-Creates new feature representations that mask protected attributes while preserving predictive information.
+**Description:**  
+Disparate impact removal transforms feature distributions so that they become **independent of protected attributes** while preserving their relative ordering within groups.
 
-Strengths:
+This method adjusts feature values across demographic groups so that the same feature has similar distributions regardless of protected attribute values.
 
-- handles non-linear relationships
-- addresses complex bias patterns
+**Use cases:**  
+- Situations where specific features act as proxies for protected attributes
+- Continuous variables with different distributions across groups
+- Applications where preserving feature ordering is important
 
-Limitations:
+**Strengths:**  
+- Reduces proxy discrimination without removing useful features
+- Preserves rank ordering within groups
+- Adjustable transformation intensity
 
-- reduced interpretability
-- higher computational complexity
+**Limitations:**  
+- May reduce predictive power if important correlations are removed
+- Requires careful parameter tuning
+- More complex to implement for high-dimensional datasets
+
+> _Example_
+>
+> In a loan dataset, **distance from financial centers** may correlate strongly with race due to residential segregation.
+>
+> Disparate impact removal transforms this feature so that its distribution becomes similar across racial groups while preserving relative differences within each group.
+
+---
+
+#### 2. Optimal Transport Transformation
+
+**Description:**  
+Optimal transport methods transform feature distributions by finding the **minimal adjustment needed to align distributions across groups** while preserving as much information as possible.
+
+This approach formulates distribution transformation as an optimization problem that minimizes the “transport cost” between original and transformed distributions.
+
+**Use cases:**  
+- Complex datasets with multiple correlated features
+- Situations where minimal information loss is critical
+- Applications requiring mathematically principled transformations
+
+**Strengths:**  
+- Preserves predictive information more effectively than simple transformations
+- Handles multidimensional feature relationships
+- Provides mathematically grounded fairness adjustments
+
+**Limitations:**  
+- Computationally intensive for large datasets
+- More complex to implement than simpler transformation methods
+- Requires specialized optimization techniques
+
+> _Example_
+>
+> In a hiring dataset, features such as **education background and work experience** may jointly correlate with gender.
+>
+> Optimal transport adjusts these feature distributions across genders while preserving their relationships with job performance indicators.
+
+---
+
+#### 3. Fair Representation Learning
+
+**Description:**  
+Fair representation learning transforms the original dataset into a **new feature space** where protected attributes cannot be easily inferred, while preserving information relevant for prediction.
+
+This approach learns representations that balance **fairness objectives and predictive performance**.
+
+**Use cases:**  
+- High-dimensional datasets
+- Complex feature interactions
+- Applications involving text, images, or large feature sets
+
+**Strengths:**  
+- Handles complex non-linear relationships
+- Provides strong fairness guarantees in the representation space
+- Can address multiple bias mechanisms simultaneously
+
+**Limitations:**  
+- Reduced interpretability compared to original features
+- Requires careful tuning of fairness–utility trade-offs
+- Computationally more demanding
+
+> _Example_
+>
+> In a job recommendation system, text features extracted from candidate profiles may encode gendered language patterns.
+>
+> Fair representation learning creates a transformed feature space where the model cannot reliably infer gender while still preserving information relevant to job matching.
 
 ---
 
