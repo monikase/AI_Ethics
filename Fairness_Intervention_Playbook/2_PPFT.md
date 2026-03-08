@@ -5,12 +5,12 @@ A Practical Framework for Selecting Data-Level Fairness Interventions
 
 Machine learning systems can inherit bias from the data used to train them. Even when protected attributes such as gender or race are not explicitly included in a model, historical inequalities, representation imbalances, and proxy variables may still produce discriminatory outcomes.
 
-Bias in training data can arise through several mechanisms:
+Bias in training data can arise through several structural mechanisms, including:
 
 - **Representation disparities** where certain demographic groups are underrepresented
 - **Proxy discrimination** where seemingly neutral variables indirectly encode protected attributes
 - **Label bias** where historical decisions reflect discriminatory practices
-- **Structural correlations** between protected attributes and predictive features
+- **Feature–attribute correlations** where predictive variables systematically differ across groups  
 
 If these issues are not addressed before training, machine learning models may reproduce and amplify existing inequalities.
 
