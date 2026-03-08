@@ -857,7 +857,7 @@ The identified pattern determines which intervention path should be followed in 
 Common patterns include:
 
 | Bias Pattern | Description | Step to take |
-|:---|:---|:---:|
+|---|---|:---:|
 | **Representation disparities** | Unequal group representation | [Step 2](#repdisparities) |
 | **Proxy discrimination** | Correlations between features and protected attributes | [Step 3](#prodiscrimination) |
 | **Label bias** | Historical discrimination in outcome labels | [Step 4](#labelbias) |
