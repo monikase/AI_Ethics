@@ -824,21 +824,7 @@ This helps models learn that predictions should remain stable when protected att
 
 ---
 
-### 3.1 Bias Pattern Identification
-
-Use the results of the data auditing process to determine which bias pattern is present.
-
-Common patterns include:
-
-| Bias Pattern | Description |
-|---|---|
-| **Representation disparity** | Unequal group representation |
-| **Proxy discrimination** | Correlations between features and protected attributes |
-| **Label bias** | Historical discrimination in outcome labels |
-| **Intersectional representation gaps** | Very small subgroup sample sizes |
-| **Multiple bias mechanisms** | Several bias sources interact |
-
----
+### Overview
 
 ```mermaid
 flowchart TD
@@ -861,25 +847,55 @@ J -->|Yes| K[Fairness-Aware Data Generation]
 J -->|No| L[Monitor fairness and re-evaluate]
 ```
 
+---
 
-### 3.2 Technique Selection Decision Tree
-Start  
-│  
-├ Representation disparity?  
-│ ├ Model supports weights → Reweighting  
-│ ├ Sufficient minority samples → Resampling  
-│ └ Severe imbalance → Synthetic data generation  
-│  
-├ Proxy discrimination?  
-│ ├ Proxy features identifiable → Distribution transformation  
-│ └ Complex correlations → Fair representation learning  
-│  
-├ Label bias?  
-│ ├ Historical discrimination → Outcome-aware reweighting  
-│ └ Measurement error → Data relabeling  
-│  
-└ Multiple bias types?  
-→ Combined intervention strategy  
+### Step 1: Bias Pattern Identification
+
+Use the results of the data auditing process to determine which bias pattern is present.
+
+Common patterns include:
+
+| Bias Pattern | Description | Step to take |
+|---|---|
+| **Representation disparities** | Unequal group representation | [Step 2](#repdisparities) |
+| **Proxy discrimination** | Correlations between features and protected attributes | [Step 3](#prodiscrimination) |
+| **Label bias** | Historical discrimination in outcome labels | Step 4 |
+| **Intersectional representation gaps** | Very small subgroup sample sizes |  |
+| **Multiple bias mechanisms** | Several bias sources interact | Requieres combination of strategies |
+
+---
+
+<a id="repdisparities"></a>
+### Step 2: Representation Disparities
+
+If bias arises from **unequal representation of groups**, the next step is to determine how the dataset can be adjusted.
+
+- Does the model support instance weights?  
+    - Yes → Reweighting techniques  
+    - No → Evaluate the dataset composition  
+        - Does the dataset contain enough samples from underrepresented groups to rebalance the data?  
+            - Yes → Resampling techniques (over/under-sampling)  
+            - No → Fairness-aware data generation  
+
+Synthetic data generation may also be necessary when intersectional groups are missing or extremely rare, making traditional sampling ineffective.
+
+---
+
+<a id="prodiscrimination"></a>
+### Step 3: Proxy Discrimination
+
+If bias arises because features act as proxies for sensitive attributes, the goal is to reduce the dependency between sensitive attributes and other variables.
+
+- Can the proxy features be clearly identified?
+    - Yes → Evaluate interpretability requirements
+        - Interpretability is crucial → Disparate Impact Removal
+        - Interpretability is less critical → Fair Representations
+    - No → Use representation learning approaches such as Fair Representations or adversarial debiasing
+
+These methods transform feature representations so that **sensitive attributes cannot be easily inferred from the data.**
+
+---
+
 
 
 ---
