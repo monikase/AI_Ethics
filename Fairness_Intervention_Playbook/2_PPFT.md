@@ -1232,4 +1232,8 @@ Effective pre-processing fairness interventions should:
 - Consider **intersectional fairness**
 - Document assumptions and trade-offs
 - Integrate smoothly with ML pipelines
-- Support continuous monitoring  
+- Support continuous monitoring
+
+---
+
+For sources that informed this toolkit, see the [0_References](https://github.com/monikase/AI_Ethics/blob/main/Fairness_Intervention_Playbook/0_References.md)
