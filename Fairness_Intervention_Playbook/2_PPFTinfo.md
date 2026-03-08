@@ -467,6 +467,27 @@ To apply these concepts in your practical work:
 
 
 
+### 3.2 Technique Selection Decision Tree
+Start  
+│  
+├ Representation disparity?  
+│ ├ Model supports weights → Reweighting  
+│ ├ Sufficient minority samples → Resampling  
+│ └ Severe imbalance → Synthetic data generation  
+│  
+├ Proxy discrimination?  
+│ ├ Proxy features identifiable → Distribution transformation  
+│ └ Complex correlations → Fair representation learning  
+│  
+├ Label bias?  
+│ ├ Historical discrimination → Outcome-aware reweighting  
+│ └ Measurement error → Data relabeling  
+│  
+└ Multiple bias types?  
+→ Combined intervention strategy  
+
+
+
 
 
 
