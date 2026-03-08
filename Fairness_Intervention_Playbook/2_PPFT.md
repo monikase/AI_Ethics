@@ -851,7 +851,8 @@ J -->|No| L[Monitor fairness and re-evaluate]
 
 ### Step 1: Bias Pattern Identification
 
-Use the results of the data auditing process to determine which bias pattern is present.
+Use the results of the **data auditing process** to determine which bias pattern is present.  
+The identified pattern determines which intervention path should be followed in the selection framework.  
 
 Common patterns include:
 
@@ -860,20 +861,19 @@ Common patterns include:
 | **Representation disparities** | Unequal group representation | [Step 2](#repdisparities) |
 | **Proxy discrimination** | Correlations between features and protected attributes | [Step 3](#prodiscrimination) |
 | **Label bias** | Historical discrimination in outcome labels | [Step 4](#labelbias) |
-| **Intersectional representation gaps** | Very small subgroup sample sizes |  |
-| **Multiple bias mechanisms** | Several bias sources interact | Requieres combination of strategies |
+| **Intersectional representation gaps** | Very small subgroup sample sizes | Consider **fairness-aware data generation** |
+| **Multiple bias mechanisms** | Several bias sources interact | Combine multiple intervention strategies |
 
 ---
 
 <a id="repdisparities"></a>
 ### Step 2: Representation Disparities
 
-If bias arises from **unequal representation of groups**, the next step is to determine how the dataset can be adjusted.
-
+If bias arises from **unequal representation of groups**, the next step is to determine how the dataset can be adjusted.  
 - Does the model support instance weights?  
-    - **Yes → Reweighting techniques**
+    • **Yes → Reweighting techniques**
          
-    - **No → Evaluate the dataset composition**  
+    • **No → Evaluate the dataset composition**  
         - Does the dataset contain enough samples from underrepresented groups to rebalance the data?  
             - **Yes → Resampling techniques** (over/under-sampling)  
             - **No → Fairness-aware data generation**   
