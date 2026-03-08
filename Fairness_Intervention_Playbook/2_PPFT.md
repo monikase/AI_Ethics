@@ -451,7 +451,8 @@ Common visualization approaches include:
 ---
 
 ### A. Instance Weighting
- 
+
+ **Description:**  
 Instance weighting assigns different importance weights to training examples based on their demographic group representation.  
 Underrepresented groups receive **higher weights**, ensuring that the model pays sufficient attention to their patterns during training.  
 
@@ -472,7 +473,8 @@ Underrepresented groups receive **higher weights**, ensuring that the model pays
 ---
 
 ### B. Outcome-Aware Reweighting
-  
+
+ **Description:**  
 Outcome-aware reweighting assigns weights based on **protected attribute–outcome combinations**.   
 This approach increases the influence of examples that contradict historical bias patterns.  
 
@@ -504,7 +506,8 @@ This approach increases the influence of examples that contradict historical bia
 ---
 
 ### C. Conditional Reweighting
-  
+
+**Description:**  
 Conditional reweighting adjusts weights to equalize outcomes **within comparable groups of feature values**.  
 This approach ensures that individuals with similar characteristics receive similar influence during model training regardless of their protected attributes.  
 
@@ -540,6 +543,7 @@ This approach ensures that individuals with similar characteristics receive simi
 
 ### A. Oversampling
 
+**Description:**  
 Oversampling increases the number of examples from **underrepresented groups** by **duplicating existing instances or generating synthetic ones**.  
 This ensures that minority groups appear more frequently during model training.
 
@@ -571,7 +575,8 @@ This ensures that minority groups appear more frequently during model training.
 ---
 
 ### B. Undersampling
-  
+
+ **Description:**  
 Undersampling reduces the number of examples from **overrepresented groups** in order to balance the dataset.   
 This approach **removes some majority group instances** so that minority groups have greater relative influence during training.  
 
@@ -601,7 +606,8 @@ This approach **removes some majority group instances** so that minority groups 
 > Undersampling removes a portion of male applicant records so that the dataset contains a more balanced gender distribution.
 
 ### C. Synthetic Minority Sampling (SMOTE)
- 
+
+ **Description:**  
 Synthetic Minority Over-sampling Technique (SMOTE) generates **new synthetic examples** for underrepresented groups by interpolating between existing samples.   
 Rather than duplicating instances, SMOTE creates **new plausible data points** to improve minority group representation.  
 
@@ -636,7 +642,8 @@ Rather than duplicating instances, SMOTE creates **new plausible data points** t
 ---
 
 ### A. Disparate Impact Removal
-  
+
+**Description:**  
 Disparate impact removal transforms feature distributions so that they become **independent of protected attributes** while preserving their relative ordering within groups.  
 This method adjusts feature values across demographic groups so that the same feature has similar distributions regardless of protected attribute values.  
 
@@ -664,7 +671,8 @@ This method adjusts feature values across demographic groups so that the same fe
 ---
 
 ### B. Optimal Transport Transformation
-  
+
+**Description:**  
 Optimal transport methods transform feature distributions by finding the **minimal adjustment needed to align distributions across groups** while preserving as much information as possible.  
 This approach formulates distribution transformation as an optimization problem that minimizes the “transport cost” between original and transformed distributions.  
 
@@ -693,6 +701,7 @@ This approach formulates distribution transformation as an optimization problem 
 
 ### C. Fair Representation Learning
 
+**Description:**  
 Fair representation learning transforms the original dataset into a **new feature space** where protected attributes cannot be easily inferred, while preserving information relevant for prediction.  
 This approach learns representations that balance **fairness objectives and predictive performance**.  
 
@@ -728,7 +737,8 @@ This approach learns representations that balance **fairness objectives and pred
 ---
 
 ### A. Synthetic Data Augmentation
-  
+
+**Description:**  
 Synthetic data augmentation generates additional examples for **underrepresented groups** to improve dataset balance.  
 These new samples are created using statistical methods or interpolation techniques based on existing data.  
 
@@ -754,7 +764,8 @@ These new samples are created using statistical methods or interpolation techniq
 ---
 
 ### B. Conditional Data Generation
- 
+
+**Description:**  
 Conditional generation methods create synthetic data **conditioned on protected attributes or demographic groups**.  
 This allows developers to explicitly control the demographic composition of the generated dataset.
 
@@ -780,6 +791,7 @@ This allows developers to explicitly control the demographic composition of the 
 
 ### C. Counterfactual Data Augmentation
 
+**Description:**  
 Counterfactual augmentation generates alternative versions of existing data points by **modifying protected attributes while keeping other relevant features constant**.  
 This helps models learn that predictions should remain stable when protected attributes change.
 
