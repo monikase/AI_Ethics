@@ -955,58 +955,158 @@ The following guidelines provide recommended procedures for tuning the main inte
 
 ### 4.1 Reweighting Configuration
 
-Steps:
+**1. Select weighting scheme based on fairness goal:**  
 
-1. Define fairness objective
-2. Select weighting formula
-3. Set maximum weight thresholds
-4. Monitor model stability
+Select the fairness goal guiding the weighting strategy.  
 
-Best practice:
+| Fairness Goal | Recommended Weighting Scheme |
+|---|---|
+| Demographic parity | Inverse frequency weighting |
+| Equal opportunity | Conditional inverse frequency weighting |
+| Balanced representation | Group-level weighting |
 
-Start with moderate weights and adjust gradually.
+**2. Set intervention strength**
+
+Large weights can destabilize model training.  
+Start with moderate adjustments and increase gradually if fairness improvements are insufficient.  
+
+Recommended approach:
+
+- Start with **square-root inverse frequency weighting**
+- Gradually increase weight differences if fairness gaps remain
+- Apply **maximum weight caps** to prevent extreme influence
+
+**3. Validate results**
+
+Evaluate the impact of weighting on validation data.  
+
+Check for:  
+
+- improvement in fairness metrics across groups
+- stable training behavior
+- no overfitting of minority groups
+- acceptable predictive performance
 
 ---
 
 ### 4.2 Transformation Configuration
 
-Steps:
+**1. Select features to transform**
 
-1. Identify correlated features
-2. Evaluate legitimate predictive value
-3. Apply transformations selectively
+Identify features that show strong relationships with protected attributes.
 
-Avoid transforming features that directly measure task-relevant risk.
+Focus on variables with:
+
+- high correlation with protected attributes
+- strong mutual information scores
+- significant model feature importance
+
+Avoid transforming features that represent **legitimate task-relevant information**.
+
+
+**2. Set transformation intensity**
+
+Most transformation techniques allow controlling the degree of fairness adjustment.
+
+Example for Disparate Impact Removal:
+
+- **Repair level = 0** → no transformation  
+- **Repair level = 1** → full removal of group differences  
+
+Recommended approach:
+
+- Begin with **partial repair (≈0.5)**
+- Adjust based on fairness–utility trade-offs
+- Preserve rank ordering within groups when necessary
+
+
+**3. Validate results**
+
+Evaluate whether the transformation achieved the intended effect.
+
+Check for:
+
+- reduced correlation with protected attributes
+- preservation of predictive performance
+- improved fairness metrics on validation data
 
 ---
 
 ### 4.3 Synthetic Data Generation Configuration
 
-Generation pipeline:
+**1. Define fairness constraints**
 
-1. Define fairness constraints
-2. Train generative model
-3. Validate synthetic data
-4. Integrate with original dataset
+Determine the demographic composition the dataset should achieve.
+
+Possible goals include:
+
+- balanced representation across groups
+- improved representation of intersectional subgroups
+- controlled demographic proportions
+
+**2. Generate synthetic samples**
+
+Train the generative model using the original dataset.
+
+Important considerations:
+
+- preserve realistic feature relationships
+- avoid implausible feature combinations
+- maintain consistency with domain knowledge
+
+**3. Validate generated data**
+
+Before integrating synthetic data into the dataset, verify that it is realistic and useful.
+
+Check for:
+
+- plausible feature distributions
+- consistency with original data patterns
+- improvement in representation across demographic groups
 
 Typical dataset composition:
-70% original data  
-30% synthetic data  
 
+- **70–90% original data**
+- **10–30% synthetic data** 
 
 ---
 
 ### 4.4 Fairness–Utility Trade-off Management
 
-Fairness interventions may affect predictive performance.
+**1. Evaluate fairness and performance together**
 
-Trade-offs include:
+Measure both fairness metrics and predictive performance during validation.
 
-| Objective | Possible Impact |
-|---|---|
-| Fairness improvement | Reduced bias |
-| Predictive accuracy | Slight decrease |
-| Computational cost | Increased preprocessing time |
+Common metrics include:
+
+- demographic parity
+- equal opportunity
+- accuracy
+- AUC or F1 score
+
+---
+
+**2. Adjust intervention strength gradually**
+
+Increase fairness intervention intensity step by step.
+
+Monitor changes in:
+
+- fairness metrics
+- predictive performance
+- model stability
+
+---
+
+**3. Document trade-offs**
+
+Record configuration decisions and their observed effects.
+
+Documentation should include:
+
+- chosen intervention parameters
+- fairness improvements achieved
+- performance changes observed
 
 ---
 
