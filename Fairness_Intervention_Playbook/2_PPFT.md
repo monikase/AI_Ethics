@@ -955,6 +955,8 @@ The following guidelines provide recommended procedures for tuning the main inte
 
 ### 4.1 Reweighting Configuration
 
+---
+
 **1. Select weighting scheme based on fairness goal:**  
 
 Select the fairness goal guiding the weighting strategy.  
@@ -990,6 +992,8 @@ Check for:
 ---
 
 ### 4.2 Transformation Configuration
+
+---
 
 **1. Select features to transform**
 
@@ -1034,6 +1038,8 @@ Check for:
 
 ### 4.3 Synthetic Data Generation Configuration
 
+---
+
 **1. Define fairness constraints**
 
 Determine the demographic composition the dataset should achieve.
@@ -1072,6 +1078,8 @@ Typical dataset composition:
 ---
 
 ### 4.4 Fairness–Utility Trade-off Management
+
+---
 
 **1. Evaluate fairness and performance together**
 
