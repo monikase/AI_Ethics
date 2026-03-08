@@ -1079,8 +1079,6 @@ Typical dataset composition:
 
 ### 4.4 Fairness–Utility Trade-off Management
 
----
-
 **1. Evaluate fairness and performance together**
 
 Measure both fairness metrics and predictive performance during validation.
@@ -1092,8 +1090,6 @@ Common metrics include:
 - accuracy
 - AUC or F1 score
 
----
-
 **2. Adjust intervention strength gradually**
 
 Increase fairness intervention intensity step by step.
@@ -1104,7 +1100,6 @@ Monitor changes in:
 - predictive performance
 - model stability
 
----
 
 **3. Document trade-offs**
 
