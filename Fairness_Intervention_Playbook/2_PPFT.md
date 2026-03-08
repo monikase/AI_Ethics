@@ -839,6 +839,28 @@ Common patterns include:
 
 ---
 
+```mermaid
+flowchart TD
+
+A[Start: Bias Identified] --> B{Representation disparity?}
+
+B -->|Yes| C{Model supports instance weights?}
+C -->|Yes| D[Reweighting Techniques]
+C -->|No| E[Sampling Techniques]
+
+B -->|No| F{Proxy discrimination?}
+F -->|Yes| G[Distribution Transformation]
+
+F -->|No| H{Label bias?}
+H -->|Yes| I[Outcome-Aware Reweighting]
+
+H -->|No| J{Severe representation gaps?}
+J -->|Yes| K[Fairness-Aware Data Generation]
+
+J -->|No| L[Monitor fairness and re-evaluate]
+```
+
+
 ### 3.2 Technique Selection Decision Tree
 Start  
 │  
