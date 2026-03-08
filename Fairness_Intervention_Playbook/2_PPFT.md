@@ -740,23 +740,86 @@ This approach learns representations that balance **fairness objectives and pred
 
 ### 2.4 Fairness-Aware Data Generation
 
-Generative models create synthetic data to address representation gaps.
+Fairness-aware data generation techniques create **new synthetic training examples** in order to mitigate bias patterns present in the original dataset.  
+Unlike reweighting or transformation approaches, which modify the influence or values of existing data, generative methods **produce entirely new samples** designed to improve representation and reduce discriminatory patterns.
 
-Examples:
+These techniques are particularly useful when fairness issues arise from **severe representation gaps, complex correlations, or privacy constraints** that limit the use of real data.
 
-- SMOTE
-- GAN-based approaches
-- Variational autoencoders
+---
 
-Strengths:
+#### 1. Synthetic Data Augmentation
 
-- generates new samples for underrepresented groups
-- improves intersectional representation
+**Description:**  
+Synthetic data augmentation generates additional examples for **underrepresented groups** to improve dataset balance.  
+These new samples are created using statistical methods or interpolation techniques based on existing data.
 
-Limitations:
+**Use cases:**  
+- Severe underrepresentation of certain demographic groups  
+- Datasets with very small minority group samples  
+- Situations where collecting additional real-world data is difficult
 
-- requires strong validation
-- risk of unrealistic data artifacts
+**Strengths:**  
+- Improves representation of minority groups  
+- Helps models learn patterns for previously underrepresented populations  
+- Can significantly reduce representation disparities
+
+**Limitations:**  
+- Synthetic samples may not perfectly reflect real-world distributions  
+- Poorly generated data may introduce unrealistic patterns
+
+> _Example_
+>
+> In a healthcare dataset, only a small number of patients from a particular demographic group may be represented.  
+> Synthetic augmentation generates additional patient records with similar characteristics, helping the model learn patterns relevant to that group.
+
+#### 2. Conditional Data Generation
+
+**Description:**  
+Conditional generation methods create synthetic data **conditioned on protected attributes or demographic groups**.  
+This allows developers to explicitly control the demographic composition of the generated dataset.
+
+**Use cases:**  
+- Ensuring balanced representation across demographic groups  
+- Creating datasets with specified demographic proportions  
+- Situations requiring controlled fairness constraints
+
+**Strengths:**  
+- Provides precise control over demographic distributions  
+- Can enforce group fairness constraints directly in the dataset  
+- Helps balance representation across multiple attributes
+
+**Limitations:**  
+- Requires careful specification of generation conditions  
+- Generated samples must be validated to ensure realism
+
+> _Example_
+>
+> In a hiring dataset, conditional generation can create additional candidates across gender and racial groups while maintaining similar qualification distributio
+
+#### 3. Counterfactual Data Augmentation
+
+**Description:**  
+Counterfactual augmentation generates alternative versions of existing data points by **modifying protected attributes while keeping other relevant features constant**.  
+This helps models learn that predictions should remain stable when protected attributes change.
+
+**Use cases:**  
+- Addressing discrimination caused by protected attributes  
+- Situations where causal relationships between variables are known  
+- Applications requiring counterfactual fairness analysis
+
+**Strengths:**  
+- Directly targets causal pathways of discrimination  
+- Encourages models to ignore protected attributes in decision making  
+- Helps enforce counterfactual fairness
+
+**Limitations:**  
+- Requires strong assumptions about causal relationships  
+- Generating realistic counterfactual examples can be challenging
+
+> _Example_
+>
+> In a resume screening dataset, counterfactual augmentation may create multiple versions of the same candidate profile where only the gendered name is changed.  
+> This encourages the model to make consistent predictions regardless of gender.
 
 ---
 
