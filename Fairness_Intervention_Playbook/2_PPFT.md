@@ -826,16 +826,17 @@ This helps models learn that predictions should remain stable when protected att
 
 ### 3.1 Bias Pattern Identification
 
-Bias patterns detected during auditing determine the appropriate intervention strategy.
+Use the results of the data auditing process to determine which bias pattern is present.
 
 Common patterns include:
 
 | Bias Pattern | Description |
 |---|---|
-| Representation disparity | Unequal group representation |
-| Proxy discrimination | Correlations between features and protected attributes |
-| Label bias | Historical discrimination in outcome labels |
-| Multiple mechanisms | Several bias sources interact |
+| **Representation disparity** | Unequal group representation |
+| **Proxy discrimination** | Correlations between features and protected attributes |
+| **Label bias** | Historical discrimination in outcome labels |
+| **Intersectional representation gaps** | Very small subgroup sample sizes |
+| **Multiple bias mechanisms** | Several bias sources interact |
 
 ---
 
