@@ -1,7 +1,7 @@
 # Pre-Processing Fairness Toolkit
 A Practical Framework for Selecting Data-Level Fairness Interventions
 
-## 1. Introduction
+## Introduction
 
 Machine learning systems can inherit bias from the data used to train them. Even when protected attributes such as gender or race are not explicitly included in a model, historical inequalities, representation imbalances, and proxy variables may still produce discriminatory outcomes.
 
@@ -28,7 +28,7 @@ Rather than applying fairness interventions blindly, the toolkit focuses on **ma
 
 ---
 
-## 2. Relationship to the Causal Fairness Toolkit
+## Relationship to the Causal Fairness Toolkit
 
 The **Pre-Processing Fairness Toolkit** is designed to work in conjunction with the **[Causal Fairness Toolkit](https://github.com/monikase/AI_Ethics/blob/main/Fairness_Intervention_Playbook/1_CFT.md)**.
 
@@ -61,7 +61,7 @@ By linking causal diagnosis with targeted data-level interventions, the combined
 
 ---
 
-## 3. Toolkit Overview
+## Toolkit Overview
 
 The toolkit consists of the following components:
 
@@ -1134,8 +1134,6 @@ Metrics should be evaluated across:
 - demographic groups
 - intersectional subgroups
 
----
-
 ### 5.2 Information Preservation
 
 Measure predictive performance:
@@ -1146,8 +1144,6 @@ Measure predictive performance:
 
 Ensure fairness improvements do not excessively reduce model performance.
 
----
-
 ### 5.3 Computational Efficiency
 
 Assess:
@@ -1155,8 +1151,6 @@ Assess:
 - preprocessing runtime
 - memory usage
 - training time
-
----
 
 ### 5.4 Robustness and Stability
 
