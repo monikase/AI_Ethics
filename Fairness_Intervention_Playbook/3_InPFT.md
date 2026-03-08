@@ -4,7 +4,7 @@ A Practical Framework for Integrating Fairness Directly into Model Training
 
 ---
 
-## 1. Introduction
+## Introduction
 
 Machine learning models can produce biased outcomes even when training data has been carefully prepared.  
 Pre-processing techniques help mitigate bias in datasets, but they cannot fully prevent models from learning discriminatory patterns during training.
@@ -32,7 +32,7 @@ Rather than applying fairness techniques blindly, the toolkit focuses on **match
 
 ---
 
-## 2. Relationship to Other Fairness Toolkits
+## Relationship to Other Fairness Toolkits
 
 The **In-Processing Fairness Toolkit** complements the earlier components of the Fairness Intervention Playbook.
 
@@ -49,7 +49,7 @@ Together, these approaches allow teams to address fairness issues at multiple st
 
 ---
 
-## 3. Toolkit Overview
+## Toolkit Overview
 
 The In-Processing Fairness Toolkit consists of the following components:
 
@@ -76,7 +76,7 @@ Guidelines for applying the toolkit within machine learning workflows.
 
 ---
 
-# 1️⃣ Model Architecture Analysis Template
+## 1️⃣ Model Architecture Analysis Template
 → Evaluate model compatibility with in-processing fairness techniques.
 
 Before selecting an intervention, teams must analyze the **model architecture and training constraints**.
@@ -85,7 +85,7 @@ Different fairness techniques integrate more naturally with certain model famili
 
 ---
 
-## 1.1 Model Type Classification
+### 1.1 Model Type Classification
 
 Identify the model architecture currently used.
 
@@ -113,7 +113,7 @@ Document the model type and training framework used.
 
 ---
 
-## 1.2 Model Characteristics
+### 1.2 Model Characteristics
 
 Record important training properties.
 
@@ -129,7 +129,7 @@ These properties affect how fairness objectives can be integrated into training.
 
 ---
 
-## 1.3 Technical Constraints
+### 1.3 Technical Constraints
 
 Identify constraints that may affect fairness implementation.
 
@@ -144,7 +144,7 @@ Some fairness approaches introduce additional computational complexity or reduce
 
 ---
 
-## 1.4 Compatibility Matrix
+### 1.4 Compatibility Matrix
 
 Different fairness techniques integrate differently across model families.
 
@@ -157,7 +157,7 @@ Different fairness techniques integrate differently across model families.
 
 ---
 
-## 1.5 Implementation Considerations
+### 1.5 Implementation Considerations
 
 For each model type, document:
 
@@ -170,7 +170,7 @@ This analysis ensures that fairness interventions **fit within the existing tech
 
 ---
 
-# 2️⃣ Technique Selection Framework
+## 2️⃣ Technique Selection Framework
 → Match fairness goals and model architectures to in-processing interventions.
 
 Selecting an appropriate fairness technique depends on:
@@ -202,7 +202,7 @@ D -->|Equal Opportunity| I[Regularized Tree Induction]
 E -->|Demographic Parity| J[Adversarial Debiasing]
 E -->|Equal Opportunity| K[Multi-Objective Optimization]
 ```
-## Step 1: Identify Fairness Objective
+### Step 1: Identify Fairness Objective
 
 Common fairness definitions include:
 
@@ -215,13 +215,13 @@ Common fairness definitions include:
 
 ---
 
-## Step 2: Evaluate Model Compatibility
+### Step 2: Evaluate Model Compatibility
 
 Select techniques that integrate effectively with the existing model architecture.
 
 ---
 
-## Step 3: Consider Technical Constraints
+### Step 3: Consider Technical Constraints
 
 Important constraints include:
 
@@ -231,7 +231,7 @@ Important constraints include:
 
 ---
 
-## Step 4: Select Primary and Secondary Techniques
+### Step 4: Select Primary and Secondary Techniques
 
 In complex applications, multiple techniques may be combined.
 
@@ -245,51 +245,41 @@ Example combination:
 
 ---
 
-# 3️⃣ Implementation Pattern Catalog
+## 3️⃣ Implementation Pattern Catalog
 → Reusable patterns for embedding fairness in model training.
 
 ---
 
-## 3.1 Constraint Optimization
+### 3.1 Constraint Optimization
 
-### Description
+#### Description
 
 Constraint-based approaches incorporate fairness definitions as **explicit constraints within the optimization process**.
 
 The model minimizes prediction error while ensuring fairness conditions are satisfied.
 
----
-
-### Objective Structure  
+#### Objective Structure  
 Minimize: prediction_loss(θ)  
 
 Subject to:  
 fairness_constraint(θ) ≤ ε  
 
----
-
-### Implementation Components
+#### Implementation Components
 
 - constrained optimization objective  
 - slack variables or tolerance thresholds  
 - fairness metric monitoring  
 
----
-
-### Use Cases
+#### Use Cases
 
 - linear models  
 - convex optimization problems  
 - regulated applications requiring strong fairness guarantees  
 
----
-
 ### Advantages
 
 - provides formal fairness guarantees  
 - transparent mathematical formulation  
-
----
 
 ### Limitations
 
@@ -298,9 +288,9 @@ fairness_constraint(θ) ≤ ε
 
 ---
 
-## 3.2 Adversarial Debiasing
+### 3.2 Adversarial Debiasing
 
-### Description
+#### Description
 
 Adversarial approaches train two models simultaneously:
 
@@ -309,9 +299,7 @@ Adversarial approaches train two models simultaneously:
 
 The predictor learns representations that **prevent the adversary from succeeding**, removing protected information from the model.
 
----
-
-### Architecture
+#### Architecture
 
 Components include:
 
@@ -319,111 +307,92 @@ Components include:
 - adversary network  
 - gradient reversal layer  
 
----
-
-### Objective  
+#### Objective  
 
 Loss = prediction_loss - λ * adversary_loss  
 
----
 
-### Advantages
+#### Advantages
 
 - effective for deep learning models  
 - addresses hidden representation bias  
 
----
-
-### Limitations
+#### Limitations
 
 - training instability possible  
 - computationally intensive  
 
 ---
 
-## 3.3 Fairness Regularization
+### 3.3 Fairness Regularization
 
-### Description
+#### Description
 
 Regularization methods incorporate fairness penalties into the loss function.
 
 Instead of enforcing strict fairness constraints, these techniques **penalize unfair outcomes** during training.
 
----
-
-### Objective  
+#### Objective  
 
 Loss = prediction_loss + λ * fairness_penalty  
 
----
 
-### Examples of Fairness Penalties
+#### Examples of Fairness Penalties
 
 - demographic parity penalty  
 - equal opportunity penalty  
 - subgroup disparity penalty  
 
----
 
-### Advantages
+#### Advantages
 
 - flexible fairness-performance trade-off  
 - integrates easily into many models  
 
----
-
-### Limitations
+#### Limitations
 
 - fairness guarantees weaker than constraint methods  
 - requires careful parameter tuning  
 
 ---
 
-## 3.4 Multi-Objective Optimization
+### 3.4 Multi-Objective Optimization
 
-### Description
+#### Description
 
 Multi-objective approaches treat fairness and predictive performance as **separate optimization objectives**.
 
 Rather than optimizing a single objective, models explore the trade-off space between competing goals.
 
----
-
-### Objective Form 
+#### Objective Form 
 
 Loss = w1 * performance_loss  
 + w2 * fairness_loss
 
----
-
-### Implementation Methods
+#### Implementation Methods
 
 - scalarization  
 - ε-constraint optimization  
 - Pareto frontier exploration  
 
----
-
-### Advantages
+#### Advantages
 
 - transparent trade-off exploration  
 - supports multiple fairness criteria  
 
----
-
-### Limitations
+#### Limitations
 
 - requires training multiple models  
 - higher computational cost  
 
 ---
 
-# 4️⃣ Integration Verification Framework
+## 4️⃣ Integration Verification Framework
 → Validate fairness improvements after implementation.
 
 ---
 
-## 4.1 Baseline Establishment
+### 4.1 Baseline Establishment
 
 Before implementing fairness interventions:
 
@@ -440,7 +409,7 @@ Example metrics:
 
 ---
 
-## 4.2 Intervention Evaluation
+### 4.2 Intervention Evaluation
 
 After implementing fairness techniques:
 
@@ -450,7 +419,7 @@ After implementing fairness techniques:
 
 ---
 
-## 4.3 Robustness Testing
+### 4.3 Robustness Testing
 
 Ensure fairness improvements generalize.
 
@@ -462,7 +431,7 @@ Recommended tests include:
 
 ---
 
-## 4.4 Success Criteria
+### 4.4 Success Criteria
 
 Typical success thresholds include:
 
@@ -474,7 +443,7 @@ Typical success thresholds include:
 
 ---
 
-# 5️⃣ User Documentation
+## 5️⃣ User Documentation
 → Guidelines for applying the toolkit.
 
 Users should follow the toolkit through the following steps:
@@ -490,7 +459,7 @@ All decisions should be documented to ensure transparency.
 
 ---
 
-# 6️⃣ Implementation Checklist
+## 6️⃣ Implementation Checklist
 
 Before deploying fairness-aware models:
 
@@ -517,7 +486,7 @@ Before deploying fairness-aware models:
 
 ---
 
-# 7️⃣ Practical Workflow Summary
+## 7️⃣ Practical Workflow Summary
 
 1. Conduct model architecture analysis  
 2. Identify fairness objectives  
@@ -529,7 +498,7 @@ Before deploying fairness-aware models:
 
 ---
 
-# 8️⃣ Core Principles
+## 8️⃣ Core Principles
 
 Effective in-processing fairness interventions should:
 
