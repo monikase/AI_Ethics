@@ -1,7 +1,7 @@
 # Causal Fairness Toolkit
 A Practical Framework for Identifying and Fixing Algorithmic Bias
 
-## 1. Introduction
+## Introduction
 
 Machine learning systems can sometimes produce different outcomes for different groups of people. However, observing a difference does not automatically mean that a system is unfair, nor does it explain why the difference occurs.
 
@@ -29,7 +29,7 @@ Statistical metrics alone cannot distinguish between these situations.
 
 The Causal Fairness Toolkit addresses this limitation by analyzing **how protected attributes influence outcomes through specific causal pathways**, helping teams identify whether those pathways are fair or unfair and ensuring interventions target the true source of bias.
 
-## 2. Toolkit Overview
+## Toolkit Overview
 
 The toolkit consists of the following components:
 
@@ -64,7 +64,7 @@ The toolkit consists of the following components:
 
 ---
 
-## 3. Scope and Applicability
+## Scope and Applicability
 
 The Causal Fairness Toolkit is designed to support fairness analysis in machine learning systems that make decisions about individuals or groups.  
 
