@@ -1079,6 +1079,8 @@ Typical dataset composition:
 
 ### 4.4 Fairness–Utility Trade-off Management
 
+---
+
 **1. Evaluate fairness and performance together**
 
 Measure both fairness metrics and predictive performance during validation.
