@@ -44,7 +44,7 @@
 
 ---
 
-## 2_PFT References
+## 2_PPFT References
 
 ### Algorithmic Fairness Foundations
 
