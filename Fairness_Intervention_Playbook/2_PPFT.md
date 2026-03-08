@@ -861,8 +861,9 @@ Common patterns include:
 | **Representation disparities** | Unequal group representation | [Step 2](#repdisparities) |
 | **Proxy discrimination** | Correlations between features and protected attributes | [Step 3](#prodiscrimination) |
 | **Label bias** | Historical discrimination in outcome labels | [Step 4](#labelbias) |
-| **Intersectional representation gaps** | Very small subgroup sample sizes | Consider **fairness-aware data generation** |
-| **Multiple bias mechanisms** | Several bias sources interact | Combine multiple intervention strategies |
+| **Multiple bias mechanisms** | Several bias sources interact | [Step 5](#combined) |
+| **Intersectional representation gaps** | Very small subgroup sample sizes | [Step 6](#intersectional) |
+
 
 ---
 
@@ -871,9 +872,9 @@ Common patterns include:
 
 If bias arises from **unequal representation of groups**, the next step is to determine how the dataset can be adjusted.  
 - Does the model support instance weights?  
-    • **Yes → Reweighting techniques**
+    - **Yes → Reweighting techniques**
          
-    • **No → Evaluate the dataset composition**  
+    - **No → Evaluate the dataset composition**  
         - Does the dataset contain enough samples from underrepresented groups to rebalance the data?  
             - **Yes → Resampling techniques** (over/under-sampling)  
             - **No → Fairness-aware data generation**   
@@ -888,31 +889,35 @@ Synthetic data generation may also be necessary when intersectional groups are m
 If bias arises because features act as proxies for sensitive attributes, the goal is to reduce the dependency between sensitive attributes and other variables.
 
 - Can the proxy features be clearly identified?
-    - Yes → Evaluate interpretability requirements
+    - **Yes → Evaluate interpretability requirements**
         - Interpretability is crucial → Disparate Impact Removal
         - Interpretability is less critical → Fair Representations
-    - No → Use representation learning approaches such as Fair Representations or adversarial debiasing
+  
+    - **No → Fair Representations or adversarial approaches**  
 
 These methods transform feature representations so that **sensitive attributes cannot be easily inferred from the data.**
 
 ---
+
 <a id="labelbias"></a>
 ### Step 4: Label Bias
 
 If the bias originates from systematically biased labels, the problem lies in the target variable rather than the feature distribution.
 
 - Is the bias caused by historical discrimination or biased decision processes?
-    - Yes → Label correction techniques (transformation-based approaches)  
+    - **Yes → Label correction techniques (transformation-based approaches)**  
       Methods such as label adjustment or massaging modify the dataset so that historically disadvantaged groups are not systematically penalized.
-    - No → Reconsider data collection or labeling processes
+        
+    - **No → Reconsider data collection or labeling processes**
 
-In some cases, algorithmic preprocessing cannot fully address label bias, and improvements must be made at the data collection or annotation stage.
+In some cases, algorithmic preprocessing cannot fully address label bias, and improvements must be made at the **data collection or annotation stage**.
 
 ---
 
-### 3.3 Combined Intervention Strategies
+<a id="combined"></a>
+### Step 5: Combined Intervention Strategies
 
-Many datasets contain multiple bias mechanisms.
+Many datasets contain multiple bias mechanisms, meaning that a single intervention may not be sufficient.
 
 Example combined strategy:
 
@@ -924,13 +929,16 @@ Example combined strategy:
 
 ---
 
-### 3.4 Intersectional Intervention Considerations
+<a id="intersectional"></a>
+### Step 6: Intersectional Intervention Considerations
 
-Small intersectional groups may require specialized approaches:
+Small **intersectional subgroups** may require specialized approaches because traditional balancing methods often fail when sample sizes are extremely small.  
 
-- targeted oversampling
-- synthetic data generation
-- hierarchical modeling
+Possible strategies include:  
+
+- **Targeted oversampling** of minority subgroup combinations
+- **fairness-aware synthetic data generation**
+- **hierarchical or structured modeling approaches**
 
 ---
 
