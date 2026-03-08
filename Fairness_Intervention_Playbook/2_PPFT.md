@@ -444,9 +444,9 @@ Common visualization approaches include:
 
 ### 2.1 Reweighting Techniques
 
-Reweighting techniques adjust the **influence of training instances** during model training without changing the data itself.  
-They assign **weights to examples** so underrepresented groups or outcomes have proper influence on the learning process.  
-These methods help address fairness issues caused by **representation imbalance or biased outcomes** in the dataset.  
+- Reweighting techniques adjust the **influence of training instances** during model training without changing the data itself.  
+- They assign **weights to examples** so underrepresented groups or outcomes have proper influence on the learning process.  
+- These methods help address fairness issues caused by **representation imbalance or biased outcomes** in the dataset.  
 
 ---
 
@@ -535,10 +535,9 @@ This approach ensures that individuals with similar characteristics receive simi
 
 ### 2.2 Sampling Methods
 
-Sampling techniques **modify the training dataset composition** by changing how often instances appear during training.
-Instead of assigning weights, they **duplicate or remove examples** to create a more balanced dataset.
-
-These methods are useful when there are **large representation imbalances**, when models **do not support instance weights**, or when fairness adjustments are applied directly during data preparation.
+- Sampling techniques **modify the training dataset composition** by changing how often instances appear during training.
+- Instead of assigning weights, they **duplicate or remove examples** to create a more balanced dataset.
+- These methods are useful when there are **large representation imbalances**, when models **do not support instance weights**, or when fairness adjustments are applied directly during data preparation.
 
 ---
 
@@ -636,9 +635,9 @@ Rather than duplicating instances, SMOTE creates **new plausible data points** t
 
 ### 2.3 Distribution Transformation Methods
 
-Distribution transformation techniques modify the **feature space of the dataset** in order to reduce correlations between protected attributes and other variables.    
-Unlike reweighting or sampling, these methods **change feature values or representations** to prevent models from learning discriminatory patterns.  
-They are especially useful when fairness issues come from **proxy discrimination**, where some features indirectly reveal protected attributes.  
+- Distribution transformation techniques modify the **feature space of the dataset** in order to reduce correlations between protected attributes and other variables.    
+- These methods **change feature values or representations** to prevent models from learning discriminatory patterns.  
+- They are especially useful when fairness issues come from **proxy discrimination**, where some features indirectly reveal protected attributes.  
 
 ---
 
@@ -731,9 +730,9 @@ This approach learns representations that balance **fairness objectives and pred
 
 ### 2.4 Fairness-Aware Data Generation
 
-Fairness-aware data generation techniques create **new synthetic training examples** to reduce bias in the original dataset.   
-Unlike reweighting or transformation methods, they **generate new samples** to improve representation and reduce discriminatory patterns.  
-These techniques are useful when there are **large representation gaps, complex correlations, or privacy limits** on using real data.
+- Fairness-aware data generation techniques create **new synthetic training examples** to reduce bias in the original dataset.   
+- They **generate new samples** to improve representation and reduce discriminatory patterns.  
+- These techniques are useful when there are **large representation gaps, complex correlations, or privacy limits** on using real data.
 
 ---
 
