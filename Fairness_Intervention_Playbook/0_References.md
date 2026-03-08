@@ -83,3 +83,61 @@
 - Bellamy, R. K. E., et al. (2019). *AI Fairness 360: An Extensible Toolkit for Detecting and Mitigating Algorithmic Bias*. IBM Journal of Research and Development.
 - Bird, S., Dudík, M., Edgar, R., Horn, B., Lutz, R., Milan, V., Sameki, M., Wallach, H., & Walker, K. (2020). *Fairlearn: A Toolkit for Assessing and Improving Fairness in AI*. Microsoft Research.
 - Saleiro, P., Kuester, B., Hinkson, L., London, J., Stevens, A., Anisfeld, A., Rodolfa, K., & Ghani, R. (2018). *Aequitas: A Bias and Fairness Audit Toolkit*. Proceedings of the Conference on Fairness, Accountability, and Transparency.
+
+---
+
+## InPFT References
+
+### Fairness Constraints and Optimization
+
+- Zafar, M. B., Valera, I., Gomez Rodriguez, M., & Gummadi, K. P. (2017). *Fairness Constraints: Mechanisms for Fair Classification*. Proceedings of the 20th International Conference on Artificial Intelligence and Statistics (AISTATS).
+
+- Agarwal, A., Beygelzimer, A., Dudík, M., Langford, J., & Wallach, H. (2018). *A Reductions Approach to Fair Classification*. Proceedings of the 35th International Conference on Machine Learning (ICML).
+
+- Cotter, A., Jiang, H., Sridharan, K., Srebro, N., Gupta, M., Wang, S., & Narayanamurthy, S. (2019). *Optimization with Non-Differentiable Constraints with Applications to Fairness, Recall, Churn, and Other Goals*. Journal of Machine Learning Research.
+
+---
+
+### Adversarial Debiasing
+
+- Zhang, B. H., Lemoine, B., & Mitchell, M. (2018). *Mitigating Unwanted Biases with Adversarial Learning*. Proceedings of the AAAI/ACM Conference on AI, Ethics, and Society.
+
+- Edwards, H., & Storkey, A. (2016). *Censoring Representations with an Adversary*. International Conference on Learning Representations (ICLR).
+
+- Madras, D., Creager, E., Pitassi, T., & Zemel, R. (2018). *Learning Adversarially Fair and Transferable Representations*. Proceedings of the 35th International Conference on Machine Learning (ICML).
+
+- Louppe, G., Kagan, M., & Cranmer, K. (2017). *Learning to Pivot with Adversarial Networks*. Advances in Neural Information Processing Systems (NeurIPS).
+
+---
+
+### Fairness Regularization
+
+- Kamishima, T., Akaho, S., Asoh, H., & Sakuma, J. (2012). *Fairness-Aware Classifier with Prejudice Remover Regularizer*. Machine Learning and Knowledge Discovery in Databases (ECML PKDD).
+
+- Bechavod, Y., & Ligett, K. (2017). *Penalizing Unfairness in Binary Classification*. Proceedings of the 34th International Conference on Machine Learning (ICML).
+
+- Zafar, M. B., Valera, I., Gomez Rodriguez, M., & Gummadi, K. P. (2017). *Fairness Beyond Disparate Treatment and Disparate Impact: Learning Classification without Disparate Mistreatment*. Proceedings of the 26th International World Wide Web Conference (WWW).
+
+---
+
+### Multi-Objective Fairness Optimization
+
+- Corbett-Davies, S., Pierson, E., Feller, A., Goel, S., & Huq, A. (2017). *Algorithmic Decision Making and the Cost of Fairness*. Proceedings of the 23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining.
+
+- Agarwal, A., Dudík, M., & Wu, Z. S. (2019). *Fair Regression: Quantitative Definitions and Reduction-Based Algorithms*. Proceedings of the 36th International Conference on Machine Learning (ICML).
+
+- Martinez, N., Bertran, M., & Sapiro, G. (2020). *Minimax Pareto Fairness: A Multi-Objective Perspective*. Proceedings of the 37th International Conference on Machine Learning (ICML).
+
+- Menon, A. K., & Williamson, R. C. (2018). *The Cost of Fairness in Binary Classification*. Proceedings of the 1st Conference on Fairness, Accountability and Transparency (FAT*).
+
+---
+
+### Intersectional Fairness
+
+- Kearns, M., Neel, S., Roth, A., & Wu, Z. S. (2018). *Preventing Fairness Gerrymandering: Auditing and Learning for Subgroup Fairness*. Proceedings of the 35th International Conference on Machine Learning (ICML).
+
+- Foulds, J., Islam, R., Keya, K. N., & Pan, S. (2020). *An Intersectional Definition of Fairness*. IEEE International Conference on Data Mining (ICDM).
+
+- Buolamwini, J., & Gebru, T. (2018). *Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification*. Proceedings of the 1st Conference on Fairness, Accountability and Transparency (FAT*).
+
+- Crenshaw, K. (1989). *Demarginalizing the Intersection of Race and Sex*. University of Chicago Legal Forum.
