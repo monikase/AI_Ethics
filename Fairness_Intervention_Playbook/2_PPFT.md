@@ -940,7 +940,16 @@ Possible strategies include:
 
 <a id="configuration"></a>
 ## 4️⃣ Configuration Guidelines
-→ Configure fairness interventions for specific datasets.
+→ Configure fairness interventions for specific datasets.  
+
+After selecting an appropriate intervention using the Intervention Selection Framework, the next step is to **configure the technique for the specific dataset and fairness objective**.  
+
+Configuration involves selecting parameters that determine:  
+- the **strength of the fairness intervention**
+- the **features or groups affected**
+- the **balance between fairness improvement and predictive performance**  
+
+The following guidelines provide recommended procedures for tuning the main intervention categories.
 
 ---
 
