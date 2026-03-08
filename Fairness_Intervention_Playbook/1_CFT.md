@@ -745,7 +745,7 @@ Fairness interventions should:
 
 ---
 
-For sources that informed this toolkit, see the [1_CFT_References](https://github.com/monikase/AI_Ethics/blob/main/Fairness_Intervention_Playbook/1_CFT_References.md)
+For sources that informed this toolkit, see the [0_References](https://github.com/monikase/AI_Ethics/blob/main/Fairness_Intervention_Playbook/0_References.md)
 
 
 
