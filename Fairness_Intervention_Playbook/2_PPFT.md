@@ -438,15 +438,15 @@ Common visualization approaches include:
 
 <a id="catalog"></a>
 ## 2️⃣ Technique Catalog
-→ Document available data-level fairness interventions.
+→ Available data-level fairness interventions.
 
 ---
 
 ### 2.1 Reweighting Techniques
 
-Reweighting techniques adjust the **influence of training instances** during model training without modifying feature values or dataset composition.  
-Instead of changing the data itself, these methods assign **weights to training examples**, ensuring that underrepresented groups or outcomes have appropriate influence on the learning process.  
-Reweighting approaches are particularly useful when fairness issues arise from **representation disparities or biased outcome distributions** in the training data.  
+Reweighting techniques adjust the **influence of training instances** during model training without changing the data itself.  
+They assign **weights to examples** so underrepresented groups or outcomes have proper influence on the learning process.  
+These methods help address fairness issues caused by **representation imbalance or biased outcomes** in the dataset.  
 
 ---
 
@@ -535,15 +535,17 @@ This approach ensures that individuals with similar characteristics receive simi
 
 ### 2.2 Sampling Methods
 
-Sampling techniques modify the **composition of the training dataset** by adjusting how frequently different instances appear during model training.  
-Instead of changing weights assigned to data points, these methods **duplicate or remove instances** to create a more balanced dataset.
+Sampling techniques **modify the training dataset composition** by changing how often instances appear during training.
+Instead of assigning weights, they **duplicate or remove examples** to create a more balanced dataset.
 
-Sampling approaches are particularly useful when fairness issues arise from **severe representation disparities**, when models **do not support instance weights**, or when teams prefer fairness interventions implemented directly in the data preparation pipeline.
+These methods are useful when there are **large representation imbalances**, when models **do not support instance weights**, or when fairness adjustments are applied directly during data preparation.
+
+---
 
 #### 1. Oversampling
 
 **Description:**  
-Oversampling increases the number of examples from **underrepresented groups** by duplicating existing instances or generating synthetic ones.  
+Oversampling increases the number of examples from **underrepresented groups** by **duplicating existing instances or generating synthetic ones**.  
 This ensures that minority groups appear more frequently during model training.
 
 **Use cases:**  
@@ -571,12 +573,13 @@ This ensures that minority groups appear more frequently during model training.
 >
 > Oversampling duplicates examples from women until both groups have similar representation in the training dataset.
 
+---
+
 #### 2. Undersampling
 
 **Description:**  
-Undersampling reduces the number of examples from **overrepresented groups** in order to balance the dataset.
-
-This approach removes some majority group instances so that minority groups have greater relative influence during training.
+Undersampling reduces the number of examples from **overrepresented groups** in order to balance the dataset.   
+This approach **removes some majority group instances** so that minority groups have greater relative influence during training.  
 
 **Use cases:**  
 - Datasets with extreme representation imbalances
@@ -606,9 +609,8 @@ This approach removes some majority group instances so that minority groups have
 #### 3. Synthetic Minority Sampling (SMOTE)
 
 **Description:**  
-Synthetic Minority Over-sampling Technique (SMOTE) generates **new synthetic examples** for underrepresented groups by interpolating between existing samples.
-
-Rather than duplicating instances, SMOTE creates **new plausible data points** to improve minority group representation.
+Synthetic Minority Over-sampling Technique (SMOTE) generates **new synthetic examples** for underrepresented groups by interpolating between existing samples.   
+Rather than duplicating instances, SMOTE creates **new plausible data points** to improve minority group representation.  
 
 **Use cases:**  
 - Situations where minority groups have extremely limited data
@@ -634,26 +636,17 @@ Rather than duplicating instances, SMOTE creates **new plausible data points** t
 
 ### 2.3 Distribution Transformation Methods
 
-These methods modify **feature distributions** to reduce correlations with protected attributes.
-
----
-
-#### 1. Disparate Impact Removal
-
-
-Distribution transformation techniques modify the **feature space of the dataset** in order to reduce correlations between protected attributes and other variables.  
-Unlike reweighting or sampling methods, which adjust the influence or frequency of existing instances, transformation approaches **change feature values or representations** to prevent models from learning discriminatory patterns.
-
-These techniques are particularly useful when fairness issues arise from **proxy discrimination**, where certain features indirectly encode protected attributes.
+Distribution transformation techniques modify the **feature space of the dataset** in order to reduce correlations between protected attributes and other variables.    
+Unlike reweighting or sampling, these methods **change feature values or representations** to prevent models from learning discriminatory patterns.  
+They are especially useful when fairness issues come from **proxy discrimination**, where some features indirectly reveal protected attributes.  
 
 ---
 
 #### 1. Disparate Impact Removal
 
 **Description:**  
-Disparate impact removal transforms feature distributions so that they become **independent of protected attributes** while preserving their relative ordering within groups.
-
-This method adjusts feature values across demographic groups so that the same feature has similar distributions regardless of protected attribute values.
+Disparate impact removal transforms feature distributions so that they become **independent of protected attributes** while preserving their relative ordering within groups.  
+This method adjusts feature values across demographic groups so that the same feature has similar distributions regardless of protected attribute values.  
 
 **Use cases:**  
 - Situations where specific features act as proxies for protected attributes
@@ -681,9 +674,8 @@ This method adjusts feature values across demographic groups so that the same fe
 #### 2. Optimal Transport Transformation
 
 **Description:**  
-Optimal transport methods transform feature distributions by finding the **minimal adjustment needed to align distributions across groups** while preserving as much information as possible.
-
-This approach formulates distribution transformation as an optimization problem that minimizes the “transport cost” between original and transformed distributions.
+Optimal transport methods transform feature distributions by finding the **minimal adjustment needed to align distributions across groups** while preserving as much information as possible.  
+This approach formulates distribution transformation as an optimization problem that minimizes the “transport cost” between original and transformed distributions.  
 
 **Use cases:**  
 - Complex datasets with multiple correlated features
@@ -711,9 +703,8 @@ This approach formulates distribution transformation as an optimization problem 
 #### 3. Fair Representation Learning
 
 **Description:**  
-Fair representation learning transforms the original dataset into a **new feature space** where protected attributes cannot be easily inferred, while preserving information relevant for prediction.
-
-This approach learns representations that balance **fairness objectives and predictive performance**.
+Fair representation learning transforms the original dataset into a **new feature space** where protected attributes cannot be easily inferred, while preserving information relevant for prediction.  
+This approach learns representations that balance **fairness objectives and predictive performance**.  
 
 **Use cases:**  
 - High-dimensional datasets
@@ -740,10 +731,9 @@ This approach learns representations that balance **fairness objectives and pred
 
 ### 2.4 Fairness-Aware Data Generation
 
-Fairness-aware data generation techniques create **new synthetic training examples** in order to mitigate bias patterns present in the original dataset.  
-Unlike reweighting or transformation approaches, which modify the influence or values of existing data, generative methods **produce entirely new samples** designed to improve representation and reduce discriminatory patterns.
-
-These techniques are particularly useful when fairness issues arise from **severe representation gaps, complex correlations, or privacy constraints** that limit the use of real data.
+Fairness-aware data generation techniques create **new synthetic training examples** to reduce bias in the original dataset.   
+Unlike reweighting or transformation methods, they **generate new samples** to improve representation and reduce discriminatory patterns.  
+These techniques are useful when there are **large representation gaps, complex correlations, or privacy limits** on using real data.
 
 ---
 
@@ -751,7 +741,7 @@ These techniques are particularly useful when fairness issues arise from **sever
 
 **Description:**  
 Synthetic data augmentation generates additional examples for **underrepresented groups** to improve dataset balance.  
-These new samples are created using statistical methods or interpolation techniques based on existing data.
+These new samples are created using statistical methods or interpolation techniques based on existing data.  
 
 **Use cases:**  
 - Severe underrepresentation of certain demographic groups  
@@ -771,6 +761,8 @@ These new samples are created using statistical methods or interpolation techniq
 >
 > In a healthcare dataset, only a small number of patients from a particular demographic group may be represented.  
 > Synthetic augmentation generates additional patient records with similar characteristics, helping the model learn patterns relevant to that group.
+
+---
 
 #### 2. Conditional Data Generation
 
@@ -795,6 +787,8 @@ This allows developers to explicitly control the demographic composition of the 
 > _Example_
 >
 > In a hiring dataset, conditional generation can create additional candidates across gender and racial groups while maintaining similar qualification distributio
+
+---
 
 #### 3. Counterfactual Data Augmentation
 
