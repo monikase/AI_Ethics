@@ -78,11 +78,7 @@ The toolkit consists of the following components:
 - 2.3 Distribution Transformation Methods  
 - 2.4 Fairness-Aware Data Generation  
 
-### 3️⃣ [Intervention Selection Framework](#selection)
-- 3.1 Bias Pattern Identification  
-- 3.2 Technique Selection Decision Tree  
-- 3.3 Combined Intervention Strategies  
-- 3.4 Intersectional Intervention Considerations  
+### 3️⃣ [Intervention Selection Framework](#selection)  
 
 ### 4️⃣ [Configuration Guidelines](#configuration)
 - 4.1 Reweighting Configuration  
