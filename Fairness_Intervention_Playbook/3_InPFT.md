@@ -52,25 +52,13 @@ Together, these approaches allow teams to address fairness issues at multiple st
 The In-Processing Fairness Toolkit consists of the following components:
 
 ### 1️⃣ Model Architecture Analysis Template
-Evaluate which fairness techniques are compatible with the model architecture.
-
 ### 2️⃣ Technique Selection Framework
-Guide users from fairness goals to appropriate in-processing interventions.
-
 ### 3️⃣ Implementation Pattern Catalog
-Reusable patterns for integrating fairness techniques into training pipelines.
-
 ### 4️⃣ Integration Verification Framework
-Validate fairness improvements while monitoring performance impacts.
-
 ### 5️⃣ User Documentation
-Guidelines for applying the toolkit within machine learning workflows.
-
-### 6️⃣ Implementation Checklist
-
-### 7️⃣ Practical Workflow Summary
-
-### 8️⃣ Core Principles
+### 6. Implementation Checklist
+### 7. Practical Workflow Summary
+### 8. Core Principles
 
 ---
 
