@@ -2,8 +2,6 @@
 
 A Practical Framework for Integrating Fairness Directly into Model Training
 
----
-
 ## Introduction
 
 Machine learning models can produce biased outcomes even when training data has been carefully prepared.  
