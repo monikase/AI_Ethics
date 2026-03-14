@@ -835,10 +835,11 @@ Before deploying fairness-aware models:
 1. Conduct model architecture analysis  
 2. Identify fairness objectives  
 3. Select compatible fairness technique  
-4. Integrate fairness into training pipeline  
-5. Evaluate fairness and performance  
-6. Deploy fairness-aware model  
-7. Monitor fairness over time  
+4. Establish baseline performance and fairness metrics  
+5. Integrate fairness into the training pipeline  
+6. Evaluate fairness and performance trade-offs  
+7. Deploy fairness-aware model  
+8. Monitor fairness outcomes over time   
 
 ---
 
@@ -847,13 +848,14 @@ Before deploying fairness-aware models:
 
 Effective in-processing fairness interventions should:
 
-- address **bias within model training**  
-- balance fairness with predictive performance  
-- maintain model stability and reliability  
-- consider intersectional fairness impacts  
-- remain transparent and auditable  
-- integrate smoothly with existing ML pipelines  
-- support continuous monitoring and improvement
+- Address bias within model training  
+- Balance fairness with predictive performance  
+- Maintain model stability and reliability  
+- Consider intersectional fairness impacts  
+- Remain transparent and auditable  
+- Integrate smoothly with existing ML pipelines  
+- Align fairness interventions with technical and deployment constraints  
+- Support continuous monitoring and improvement
 
 ---
 
