@@ -335,17 +335,17 @@ The model minimizes prediction error while ensuring fairness conditions are sati
 Minimize:
 
 $$
-\text{prediction\_loss}(\theta)
+L(\theta)
 $$
 
 
 Subject to:  
 
 $$
-\text{fairness\_constraint}(\theta) \le \varepsilon
-$$  
+C(\theta) \le \varepsilon
+$$
 
-Where **$\varepsilon$** represents the acceptable tolerance for fairness violations.  
+Where **$\varepsilon$** represents the acceptable tolerance for fairness violations.
 
 #### Implementation Components
 
