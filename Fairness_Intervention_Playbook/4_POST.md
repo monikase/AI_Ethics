@@ -109,39 +109,39 @@ The Post-Processing Fairness Toolkit contains the following components:
 
 ---
 
-Threshold optimization can target different fairness definitions depending on the fairness objective of the system.
-
-Different definitions require **different threshold adjustments across demographic groups**.  
+Threshold optimization can enforce different fairness definitions by selecting group-specific decision thresholds. 
 
 ---
 
 ### Demographic Parity
 
-Ensures equal positive prediction rates across groups.
+Find thresholds equalizing selection rates across groups.  
 
-$P(\hat{Y} = 1 \mid A = a) = P(\hat{Y} = 1 \mid A = b)$
+$P(\hat{Y}=1 \mid A=a) = P(\hat{Y}=1 \mid A=b)$ for all groups $a,b$  
 
-This definition requires that **different demographic groups receive positive predictions at the same overall rate**.
+This definition ensures that **different demographic groups receive positive predictions at the same overall rate**.   
 
 ---
 
 ### Equal Opportunity
 
-Ensures equal true positive rates across demographic groups.
+Find thresholds equalizing true positive rates.  
 
-$P(\hat{Y} = 1 \mid Y = 1, A = a) = P(\hat{Y} = 1 \mid Y = 1, A = b)$
+$P(\hat{Y}=1 \mid Y=1, A=a) = P(\hat{Y}=1 \mid Y=1, A=b)$ for all groups $a,b$  
 
-This criterion focuses on ensuring that **qualified individuals receive positive predictions at equal rates across groups**.
+This definition ensures that **qualified individuals receive positive predictions at equal rates across demographic groups**.  
 
 ---
 
 ### Equalized Odds
 
-Ensures equal true positive and false positive rates across groups.
+Find thresholds equalizing both true positive and false positive rates.    
 
-$P(\hat{Y} = 1 \mid Y = y, A = a) = P(\hat{Y} = 1 \mid Y = y, A = b)$
+$P(\hat{Y}=1 \mid Y=y, A=a) = P(\hat{Y}=1 \mid Y=y, A=b)$    
 
-for $y \in \{0,1\}$.
+for all $y \in \{0,1\}$ and groups $a,b$  
+
+This definition ensures that **both types of prediction errors are balanced across demographic groups**.  
 
 ---
 
