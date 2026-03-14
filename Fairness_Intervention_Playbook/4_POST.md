@@ -211,7 +211,7 @@ Miscalibration across demographic groups leads to inconsistent risk interpretati
 
 ---
 
-### Platt Scaling
+#### Platt Scaling
 
 Transforms prediction scores using logistic regression.  
 
@@ -221,7 +221,7 @@ Parameters **A** and **B** are estimated using validation data.
 
 ---
 
-### Isotonic Regression
+#### Isotonic Regression
 
 A **non-parametric calibration method** that learns a monotonic mapping from prediction scores to calibrated probabilities.
 
@@ -229,7 +229,7 @@ This approach preserves ranking order and is useful when calibration errors are 
 
 ---
 
-### Temperature Scaling
+#### Temperature Scaling
 
 Applies a scaling parameter to neural network logits.  
 
