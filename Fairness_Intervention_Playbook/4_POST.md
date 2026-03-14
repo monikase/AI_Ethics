@@ -106,10 +106,8 @@ The Post-Processing Fairness Toolkit contains the following components:
 ---
 
 ### 1.1 Fairness Definitions for Threshold Optimization
-
----
-
-Threshold optimization can enforce different fairness definitions by selecting group-specific decision thresholds. 
+  
+Threshold optimization can enforce different fairness definitions by selecting group-specific decision thresholds.  
 
 ---
 
