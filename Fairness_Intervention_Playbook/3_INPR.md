@@ -442,11 +442,11 @@ Minimize: $\min_{\theta_p} L_{pred}(\theta_p) - \lambda L_{adv}(\theta_p,\theta_
 
 Where:  
 
-- $L_{pred}$ — prediction loss of the main model  
-- $L_{adv}$ — adversary loss predicting protected attributes  
-- $\theta_p$ — parameters of the predictor model  
-- $\theta_a$ — parameters of the adversary network  
-- $\lambda$ — adversary weight controlling the fairness–performance trade-off  
+- $L_{pred}$ - prediction loss of the main model  
+- $L_{adv}$ - adversary loss predicting protected attributes  
+- $\theta_p$ - parameters of the predictor model  
+- $\theta_a$ - parameters of the adversary network  
+- $\lambda$ - adversary weight controlling the fairness–performance trade-off  
 
 **Interpretation**  
 
@@ -530,10 +530,10 @@ Minimize: $\min_{\theta} \; L(\theta) + \lambda \, R_{fair}(\theta)$
 
 Where:  
 
-- $L(\theta)$ — prediction loss of the model  
-- $R_{fair}(\theta)$ — fairness penalty measuring disparity between protected groups  
-- $\theta$ — model parameters  
-- $\lambda$ — regularization weight controlling the fairness–performance trade-off  
+- $L(\theta)$ - prediction loss of the model  
+- $R_{fair}(\theta)$ - fairness penalty measuring disparity between protected groups  
+- $\theta$ - model parameters  
+- $\lambda$ - regularization weight controlling the fairness–performance trade-off  
 
 **Interpretation**  
 
@@ -571,9 +571,9 @@ The model is trained to **optimize predictive performance while discouraging unf
 
 #### Examples of Fairness Penalties
 
-- **Demographic parity penalty** — penalizes differences in positive prediction rates across groups  
-- **Equal opportunity penalty** — penalizes disparities in true positive rates  
-- **Subgroup disparity penalty** — penalizes prediction differences across demographic subgroups  
+- **Demographic parity penalty** - penalizes differences in positive prediction rates across groups  
+- **Equal opportunity penalty** - penalizes disparities in true positive rates  
+- **Subgroup disparity penalty** - penalizes prediction differences across demographic subgroups  
 
 ---
 
@@ -603,9 +603,6 @@ The model is trained to **optimize predictive performance while discouraging unf
 
 #### Intersectionality Consideration
 
-Standard fairness penalties often focus on disparities between groups defined by a **single protected attribute**.  
-However, discrimination may also occur at **intersections of multiple identities** (for example, gender and ethnicity).
-
 Models may appear fair across broad demographic groups while still discriminating against **specific intersectional subgroups**, a phenomenon sometimes referred to as *fairness gerrymandering*.
 
 To address intersectional bias, regularization approaches can be extended by:
@@ -622,30 +619,97 @@ These extensions help ensure that fairness regularization protects **all demogra
 
 #### Description
 
-Multi-objective approaches treat fairness and predictive performance as **separate optimization objectives**.
+Multi-objective approaches treat fairness and predictive performance as **separate optimization objectives**.  
 
-Rather than optimizing a single objective, models explore the trade-off space between competing goals.
+Instead of optimizing a single loss function, the model explores the **trade-off space between competing goals**, such as predictive accuracy and fairness.  
+This approach allows practitioners to analyze multiple possible solutions and select the most appropriate balance between performance and fairness.  
 
-#### Objective Form 
+---
 
-Loss = w1 * performance_loss  
-+ w2 * fairness_loss
+#### Objective Structure
+
+Minimize: $\min_{\theta} \; w_1 L_{perf}(\theta) + w_2 L_{fair}(\theta)$
+
+Where:
+
+- $L_{perf}(\theta)$ - prediction performance loss  
+- $L_{fair}(\theta)$ - fairness loss measuring disparity across groups  
+- $\theta$ - model parameters  
+- $w_1, w_2$ - weights controlling the relative importance of performance and fairness objectives  
+
+**Interpretation**
+
+The model simultaneously optimizes predictive performance and fairness by adjusting the relative importance of each objective.
+
+---
+
+#### Components
+
+- Base prediction model  
+- Fairness objective measuring group disparities  
+- Optimization procedure capable of handling multiple objectives  
+- Evaluation framework for comparing trade-off solutions  
+
+---
+
+#### Parameters
+
+- **Objective weights ($w_1, w_2$)** controlling the fairness–performance trade-off  
+- **Fairness objective definition** (e.g., demographic parity or equal opportunity)  
+- **Search strategy** for exploring the trade-off space  
+
+---
 
 #### Implementation Methods
 
-- scalarization  
-- ε-constraint optimization  
-- Pareto frontier exploration  
+- **Scalarization** - combining objectives using weighted sums  
+- **ε-constraint optimization** - optimizing performance while enforcing fairness bounds  
+- **Pareto frontier exploration** - identifying solutions where improving one objective worsens another  
+
+---
+
+#### Implementation Considerations
+
+- Generating the Pareto frontier typically requires **training multiple models**  
+- Computational cost increases with the number of objectives  
+- Visualization tools are useful for analyzing fairness–performance trade-offs  
+- Model selection often requires **stakeholder input to choose acceptable trade-offs**
+
+---
+
+#### Use Cases
+
+- Neural networks and complex models with flexible optimization  
+- Applications requiring **explicit fairness–performance trade-off analysis**  
+- Decision systems where stakeholders must evaluate multiple candidate solutions  
+
+---
 
 #### Advantages
 
-- transparent trade-off exploration  
-- supports multiple fairness criteria  
+- Transparent exploration of fairness–performance trade-offs  
+- Supports multiple fairness criteria simultaneously  
+- Enables stakeholders to select solutions aligned with policy or regulatory goals  
+
+---
 
 #### Limitations
 
-- requires training multiple models  
-- higher computational cost  
+- Requires training multiple models to explore trade-offs  
+- Computationally expensive for large models or datasets  
+- Decision-making may become complex when many objectives are considered  
+
+---
+
+#### Intersectionality Consideration
+
+To address intersectionality, multi-objective optimization can be extended by:
+
+- Defining **fairness objectives for intersectional subgroup performance**
+- Evaluating fairness across **all relevant demographic combinations**
+- Exploring trade-offs across multiple fairness metrics simultaneously
+
+These extensions ensure that fairness optimization protects **all demographic groups**, including intersectional populations that might otherwise be overlooked. 
 
 ---
 
