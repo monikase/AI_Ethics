@@ -119,6 +119,21 @@ Example attributes include:
 
 These properties affect how fairness objectives can be integrated into training.
 
+> _Example_
+>
+> **Training approach**  
+> - Batch training using historical loan application data  
+>   
+> **Loss function**  
+> - Logistic loss (binary cross-entropy)  
+> **Regularization methods currently used**  
+> - Tree depth limitation  
+> - Learning rate shrinkage  
+> - Minimum samples per leaf  
+> **Hyperparameter tuning approach**  
+> - Grid search with cross-validation  
+> - Evaluation based on **AUC and accuracy**  
+
 ---
 
 ### 1.3 Technical Constraints
