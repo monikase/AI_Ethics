@@ -79,21 +79,23 @@ The Post-Processing Fairness Toolkit contains the following components:
 - Selective classification strategies  
 - Human–AI collaboration models  
 
-### 5️⃣ [Integration Workflow Design](#integration)  
+### 5️⃣ [Transformation Selection Guide](#guide)
+
+### 6. [Integration Workflow Design](#integration)  
 - Production pipeline integration  
 - Real-time prediction adjustments  
 - monitoring and maintenance strategies  
 
-### 6️⃣ [Evaluation Framework](#evaluation)  
+### 7. [Evaluation Framework](#evaluation)  
 - Fairness metric evaluation  
 - fairness–utility trade-off analysis  
 - stability monitoring  
 
-### 7. [Implementation Checklist](#checklist)  
+### 8. [Implementation Checklist](#checklist)  
 
-### 8. [Practical Workflow Summary](#summary)  
+### 9. [Practical Workflow Summary](#summary)  
 
-### 9. [Core Principles](#principles)  
+### 10. [Core Principles](#principles)  
 
 ---
 
@@ -151,9 +153,9 @@ This definition ensures that **both types of prediction errors are balanced acro
       - Identify valid thresholds
       - Select threshold maximizing utility
 
-4. Validate the selected thresholds on held-out test data.  
+3. Validate the selected thresholds on held-out test data.  
 
-5. Document selected thresholds and resulting fairness–performance trade-offs.   
+4. Document selected thresholds and resulting fairness–performance trade-offs.   
 
 
 ---
@@ -338,7 +340,7 @@ By preserving ordering within groups, these transformations maintain the **infor
 ## 4️⃣ Rejection Option Classification Framework
 → Defer uncertain predictions to human review.
 
-Some predictions occur in **high-uncertainty regions** where automated decisions risk unfair outcomes.
+Some predictions occur in **high-uncertainty regions where automated decisions are more likely to produce errors or unfair outcomes**.
 
 ---
 
@@ -393,10 +395,11 @@ Proper workflow design ensures that **human review improves fairness rather than
 
 ---
 
+<a id="guide"></a>
 ## 5️⃣ Transformation Selection Guide
 → Select the most appropriate post-processing fairness technique.
 
-Different fairness objectives and system constraints require different post-processing interventions.
+Selecting the correct intervention depends on fairness objectives, system constraints, and available model outputs.  
 
 The following decision tree helps determine which technique is most appropriate.
 
@@ -462,10 +465,12 @@ The following decision tree helps determine which technique is most appropriate.
 ---
 
 <a id="integration"></a>
-## 5️⃣ Integration Workflow Design
+## 6. Integration Workflow Design
 → Deploy fairness interventions within production systems.
 
-Post-processing fairness techniques operate between **model prediction and final decision**.
+Post-processing fairness techniques operate between **model prediction and final decision**.  
+
+These steps may be combined depending on the fairness intervention strategy.  
 
 Typical pipeline:  
 
@@ -481,43 +486,27 @@ Rejection Option Check
 ↓  
 Final Decision  
 
----
-
-### Example Production Pipeline  
-
-Raw Model Output  
-↓  
-Calibration Adjustment  
-↓  
-Score Transformation  
-↓  
-Fairness-Aware Threshold  
-↓  
-Human Review if Required  
-↓  
-Final Decision  
-
 
 ---
 
 <a id="evaluation"></a>
-## 6️⃣ Evaluation Framework
+## 7. Evaluation Framework
 → Measure fairness intervention effectiveness.
 
 ---
 
-### 6.1 Fairness Metrics
+### 7.1 Fairness Metrics
 
 Evaluate fairness across groups using:
 
-- demographic parity
-- equal opportunity
-- equalized odds
-- calibration error
+- Demographic parity
+- Equal opportunity
+- Equalized odds
+- Calibration error
 
 ---
 
-### 6.2 Utility Preservation
+### 7.2 Utility Preservation
 
 Measure predictive performance:
 
@@ -529,22 +518,22 @@ Fairness improvements should not excessively degrade predictive performance.
 
 ---
 
-### 6.3 Fairness–Utility Trade-off Analysis
+### 7.3 Fairness–Utility Trade-off Analysis
 
 Generate Pareto curves comparing fairness and performance.
 
-Example:
-
-| Intervention | Fairness Gap | AUC |
-|--------------|-------------|-----|
-| Baseline | 6% | 0.82 |
-| Threshold optimization | 3% | 0.81 |
-| Calibration | 2% | 0.81 |
-| Transformation | 1% | 0.80 |
+> _Example_
+> 
+> | Intervention | Fairness Gap | AUC |
+> |--------------|-------------|-----|
+> | Baseline | 6% | 0.82 |
+> | Threshold optimization | 3% | 0.81 |
+> | Calibration | 2% | 0.81 |
+> | Transformation | 1% | 0.80 |
 
 ---
 
-### 6.4 Stability Monitoring
+### 7.4 Stability Monitoring
 
 Evaluate robustness under:
 
@@ -555,7 +544,7 @@ Evaluate robustness under:
 ---
 
 <a id="checklist"></a>
-## 7. Implementation Checklist
+## 8. Implementation Checklist
 
 Before deploying post-processing fairness interventions:
 
@@ -586,7 +575,7 @@ Before deploying post-processing fairness interventions:
 ---
 
 <a id="summary"></a>
-## 8. Practical Workflow Summary
+## 9. Practical Workflow Summary
 
 1. Identify prediction disparities across demographic groups  
 2. Select fairness objective  
@@ -599,7 +588,7 @@ Before deploying post-processing fairness interventions:
 ---
 
 <a id="principles"></a>
-## 9. Core Principles
+## 10. Core Principles
 
 Effective post-processing fairness interventions should:
 
