@@ -399,16 +399,13 @@ This formulation trains the model to **achieve the best predictive performance w
 
 #### Intersectionality Consideration  
 
-Fairness constraints are often defined for individual protected attributes such as gender or race.  
-However, discrimination may also occur at **intersections of multiple identities** (for example, women from a specific racial group).  
+To address intersectional bias, constraint-based approaches can be extended by:   
 
-To address intersectional bias, constraint-based approaches can be extended by:  
+- Defining **separate fairness constraints for important intersectional subgroups**   
+- Incorporating **multiple protected attributes simultaneously** in the constraint formulation   
+- Using hierarchical or aggregated constraint structures that monitor fairness at different levels of demographic granularity   
 
-- defining **separate fairness constraints for important intersectional subgroups**  
-- incorporating **multiple protected attributes simultaneously** in the constraint formulation  
-- using hierarchical or aggregated constraint structures that monitor fairness at different levels of demographic granularity  
-
-These extensions help ensure that fairness guarantees apply not only to individual protected groups but also to **intersectional subgroups that may otherwise remain undetected**.  
+These extensions help ensure that fairness guarantees apply not only to individual protected groups but also to **intersectional subgroups that may otherwise remain undetected**.   
 
 ---
 
@@ -506,18 +503,15 @@ The model is trained to **optimize prediction accuracy while simultaneously maki
 
 ---
 
-#### Intersectionality Consideration
+#### Intersectionality Consideration  
 
-Standard adversarial approaches often train an adversary to predict a single protected attribute.  
-However, discrimination may occur at **intersections of multiple identities** (for example, gender and race).
+To address intersectional bias, adversarial architectures can be extended by:  
 
-To address intersectional bias, adversarial architectures can be extended by:
+- Predicting **combinations of protected attributes**    
+- Using **multi-task adversaries** that predict multiple protected attributes simultaneously   
+- Applying hierarchical adversarial structures that monitor both individual attributes and their intersections   
 
-- predicting **combinations of protected attributes**  
-- using **multi-task adversaries** that predict multiple protected attributes simultaneously  
-- applying hierarchical adversarial structures that monitor both individual attributes and their intersections  
-
-These extensions help ensure that fairness protections apply to **all demographic subgroups**, including intersectional groups that may otherwise remain undetected.
+These extensions help ensure that fairness protections apply to **all demographic subgroups**, including intersectional groups that may otherwise remain undetected.   
 
 ---
 
@@ -525,31 +519,102 @@ These extensions help ensure that fairness protections apply to **all demographi
 
 #### Description
 
-Regularization methods incorporate fairness penalties into the loss function.
+Fairness regularization incorporates fairness penalties directly into the model's loss function.  
+Instead of enforcing strict fairness constraints, these techniques **penalize unfair outcomes during training**, allowing the model to balance predictive accuracy and fairness through a tunable penalty term.  
 
-Instead of enforcing strict fairness constraints, these techniques **penalize unfair outcomes** during training.
+---
 
-#### Objective  
+#### Objective Structure
 
-Loss = prediction_loss + λ * fairness_penalty  
+Minimize: $\min_{\theta} \; L(\theta) + \lambda \, R_{fair}(\theta)$  
 
+Where:  
+
+- $L(\theta)$ — prediction loss of the model  
+- $R_{fair}(\theta)$ — fairness penalty measuring disparity between protected groups  
+- $\theta$ — model parameters  
+- $\lambda$ — regularization weight controlling the fairness–performance trade-off  
+
+**Interpretation**  
+
+The model is trained to **optimize predictive performance while discouraging unfair outcomes** through an additional fairness penalty term that reduces disparities between demographic groups.  
+
+---
+
+#### Components
+
+- Base prediction model  
+- Fairness penalty term added to the loss function  
+- Fairness metric monitoring during training  
+
+---
+
+#### Parameters
+
+- **Regularization weight ($\lambda$)** controlling the fairness–performance trade-off  
+- **Fairness penalty definition** (e.g., demographic parity or equal opportunity)  
+- **Training schedule adjustments** if the fairness penalty is gradually introduced  
+
+---
+
+#### Implementation Considerations
+
+- Fairness penalties should be differentiable to integrate with gradient-based optimization  
+- Penalty strength may require careful tuning to avoid large performance degradation  
+- Integration differs by model type:
+  - **Linear models** — fairness penalties added directly to the objective function  
+  - **Tree-based models** — splitting criteria modified to incorporate fairness penalties  
+  - **Neural networks** — fairness penalties implemented through custom loss functions  
+- Regularization strength is typically tuned using **grid search or cross-validation** to explore fairness–performance trade-offs  
+
+---
 
 #### Examples of Fairness Penalties
 
-- demographic parity penalty  
-- equal opportunity penalty  
-- subgroup disparity penalty  
+- **Demographic parity penalty** — penalizes differences in positive prediction rates across groups  
+- **Equal opportunity penalty** — penalizes disparities in true positive rates  
+- **Subgroup disparity penalty** — penalizes prediction differences across demographic subgroups  
 
+---
+
+#### Use Cases
+
+- Linear models and logistic regression  
+- Neural networks with gradient-based optimization  
+- Applications requiring **flexible fairness-performance trade-offs**
+
+---
 
 #### Advantages
 
-- flexible fairness-performance trade-off  
-- integrates easily into many models  
+- Flexible balance between fairness and accuracy  
+- Easy to integrate into existing training pipelines  
+- Compatible with many model architectures  
+
+---
 
 #### Limitations
 
-- fairness guarantees weaker than constraint methods  
-- requires careful parameter tuning  
+- Fairness guarantees weaker than strict constraint methods  
+- Requires careful tuning of the regularization parameter  
+- Fairness improvements may depend strongly on the chosen penalty formulation  
+
+---
+
+#### Intersectionality Consideration
+
+Standard fairness penalties often focus on disparities between groups defined by a **single protected attribute**.  
+However, discrimination may also occur at **intersections of multiple identities** (for example, gender and ethnicity).
+
+Models may appear fair across broad demographic groups while still discriminating against **specific intersectional subgroups**, a phenomenon sometimes referred to as *fairness gerrymandering*.
+
+To address intersectional bias, regularization approaches can be extended by:
+
+- Defining **fairness penalties for intersectional subgroup disparities**  
+- Combining penalties across **multiple protected attributes simultaneously**  
+- Monitoring fairness metrics across **overlapping demographic groups**
+
+These extensions help ensure that fairness regularization protects **all demographic subgroups**, including intersectional populations that might otherwise remain overlooked.
 
 ---
 
