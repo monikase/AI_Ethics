@@ -128,12 +128,26 @@ Ensures equal positive prediction rates across groups.
 
 $P(\hat{Y} = 1 \mid A = a) = P(\hat{Y} = 1 \mid A = b)$
 
-> Example:  
+This means the **probability of receiving a positive prediction should be the same for all demographic groups**, regardless of the true outcome.
+
+> _Example (before threshold adjustment):_ 
 >  
 > | Group | Approval Rate |
 > |------|---------------|
 > | Men | 67% |
-> | Women | 63% |  
+> | Women | 63% |
+>
+> The model approves a larger proportion of men than women.
+> To achieve demographic parity, decision thresholds can be adjusted so approval rates become equal.
+>
+> _Example (after threshold adjustment):_
+>
+> | Group | Approval Rate |
+> |------|---------------|
+> | Men | 65% |
+> | Women | 65% |
+>
+> The thresholds are modified so both groups receive **the same approval probability**.  
 
 Threshold adjustments can increase or decrease approval rates so both groups receive equal selection probability.
 
