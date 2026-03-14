@@ -327,9 +327,7 @@ Recommended approaches include:
 
 #### Description
 Constraint-based approaches incorporate fairness definitions as **explicit constraints within the optimization process**.  
-The model minimizes prediction error while ensuring fairness conditions are satisfied.  
-
----
+The model minimizes prediction error while ensuring fairness conditions are satisfied.   
 
 #### Objective Structure
 
@@ -347,9 +345,7 @@ Where:
 
 Interpretation  
 
-This formulation trains the model to **achieve the best predictive performance while ensuring that fairness constraints remain within acceptable limits for all protected groups or subgroups.**  
-
----
+This formulation trains the model to **achieve the best predictive performance while ensuring that fairness constraints remain within acceptable limits for all protected groups or subgroups.**    
 
 #### Components
 
