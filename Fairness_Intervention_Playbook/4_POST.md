@@ -103,21 +103,24 @@ The Post-Processing Fairness Toolkit contains the following components:
 ## 1️⃣ Threshold Optimization Framework
 → Adjust decision thresholds to satisfy fairness criteria.
 
-Machine learning classifiers typically convert probability predictions into binary decisions using a **fixed threshold**.
+---
 
-Example:  
-Approve loan if predicted default risk < 0.15  
-
-
-However, when prediction score distributions differ across groups, a single threshold can produce **unequal error rates**.
-
-Threshold optimization corrects these disparities by adjusting **group-specific decision boundaries**.
+### 1.1 Fairness Definitions for Threshold Optimization
 
 ---
 
-## 1.1 Fairness Definitions and Threshold Formulations
+Threshold optimization can target different fairness definitions depending on the fairness objective of the system.
 
-Threshold optimization can target different fairness definitions.
+Different definitions require **different threshold adjustments across demographic groups**.
+
+| Fairness Definition | Goal | What Threshold Adjustment Does |
+|---|---|---|
+| Demographic Parity | Equal selection rates across groups | Adjust thresholds so approval rates match |
+| Equal Opportunity | Equal true positive rates | Adjust thresholds so qualified individuals receive equal approval rates |
+| Equalized Odds | Equal true and false positive rates | Adjust thresholds to balance both types of classification errors |
+| Predictive Parity (optional) | Equal precision across groups | Adjust thresholds so predicted positives have equal correctness |
+
+---
 
 ### Demographic Parity
 
