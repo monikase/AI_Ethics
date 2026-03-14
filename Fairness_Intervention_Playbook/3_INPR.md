@@ -55,7 +55,7 @@ The In-Processing Fairness Toolkit consists of the following components:
 - 1.3 Technical Constraints
 - 1.4 Compatibility Matrix
 - 1.5 Implementation Considerations
-### 2️⃣ Technique Selection Framework
+### 2️⃣ [Technique Selection Framework](#technique)
 ### 3️⃣ Implementation Pattern Catalog
 ### 4️⃣ Integration Verification Framework
 ### 5️⃣ User Documentation
@@ -200,6 +200,7 @@ This analysis ensures that fairness interventions **fit within the existing tech
 
 ---
 
+<a id="technique"></a>
 ## 2️⃣ Technique Selection Framework
 → Match fairness goals and model architectures to in-processing interventions.
 
