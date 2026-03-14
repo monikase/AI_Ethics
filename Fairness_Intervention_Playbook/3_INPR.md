@@ -236,12 +236,12 @@ E -->|Equal Opportunity| K[Multi-Objective Optimization]
 
 Common fairness definitions include:
 
-| Model Type | Typical Algorithms | Stap to take |
+| Model Type | Typical Algorithms | Step to take |
 |---|---|---|
 | **Linear models** | Logistic regression, Linear SVM | [Step 2](#linear) |
-| **Tree-based models** | Decision trees, Random forests, Gradient boosting | [Step 3](#linear) |
-| **Neural networks** | Feedforward networks, CNN, RNN | [Step 4](#linear) | 
-| **Other architectures** | Probabilistic models, ensemble systems | [Step 5](#linear) |
+| **Tree-based models** | Decision trees, Random forests, Gradient boosting | [Step 3](#tree) |
+| **Neural networks** | Feedforward networks, CNN, RNN | [Step 4](#neural) | 
+| **Other architectures** | Probabilistic models, ensemble systems | [Step 5](#other) |
 
 ---
 
@@ -259,29 +259,48 @@ Linear models support fairness constraints directly in the optimization objectiv
 
 ---
 
-### Step 3: Consider Technical Constraints
+<a id="tree"></a>
+### Step 3: Tree-Based Models
 
-Important constraints include:
+Tree-based models require fairness mechanisms integrated into splitting criteria or training weights.   
+- What fairness objective is required?  
 
-- training stability  
-- computational cost  
-- regulatory explainability requirements  
-
----
-
-### Step 4: Select Primary and Secondary Techniques
-
-In complex applications, multiple techniques may be combined.
-
-Example combination:
-
-| Goal | Technique |
+| Fairness Goal | Recommended Technique |
 |---|---|
-| Remove representation bias | Pre-processing |
-| Prevent discriminatory boundaries | Constraint optimization |
-| Improve representation learning | Adversarial debiasing |
+| **Demographic parity** | Fair splitting criteria |   
+| **Equal opportunity** | Fair splitting with weighted samples |   
+| **Individual fairness** | Regularized tree induction |  
 
 ---
+
+<a id="neural"></a>
+### Step 4: Neural Networks
+
+Neural networks allow fairness interventions through architectural changes and multi-task training.    
+- What fairness objective is required?  
+
+| Fairness Goal | Recommended Technique |
+|---|---|
+| **Demographic parity** | Adversarial debiasing |   
+| **Equal opportunity** | Multi-task learning with fairness head |   
+| **Individual fairness** | Gradient penalties or contrastive learning |  
+
+---
+
+<a id="other"></a>
+### Step 5: Other Model Architectures
+
+Some systems use hybrid or specialized models where direct integration may be difficult.  
+Recommended approaches include:  
+
+| Situation | Recommended Strategy |
+|---|---|
+| Limited ability to modify training algorithm | Use pre-processing fairness methods |   
+| Model architecture is fixed | Apply post-processing fairness adjustments |   
+| Complex ensemble models | Combine fairness regularization with monitoring |  
+
+---
+
 
 ## 3️⃣ Implementation Pattern Catalog
 → Reusable patterns for embedding fairness in model training.
