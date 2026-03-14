@@ -799,28 +799,33 @@ All decisions should be documented to ensure transparency.
 <a id="checklist"></a>
 ## 6. Implementation Checklist
 
-Before deploying fairness-aware models:
+Before deploying fairness-aware models:  
 
 ### Architecture Analysis
 
 - [ ] model type identified  
-- [ ] compatibility matrix evaluated  
+- [ ] model characteristics documented  
+- [ ] technical constraints evaluated  
+- [ ] compatibility matrix reviewed  
 
 ### Technique Selection
 
 - [ ] fairness objective defined  
-- [ ] appropriate technique selected  
+- [ ] appropriate in-processing technique selected  
 
 ### Implementation
 
 - [ ] fairness objectives integrated into training  
+- [ ] model retrained with fairness intervention  
 - [ ] hyperparameters tuned  
 
 ### Evaluation
 
-- [ ] fairness metrics measured  
-- [ ] performance metrics evaluated  
-- [ ] robustness tested  
+- [ ] baseline performance and fairness metrics documented  
+- [ ] fairness metrics measured after intervention  
+- [ ] performance impact evaluated  
+- [ ] robustness tests completed  
+- [ ] success criteria satisfied
 
 ---
 
