@@ -24,10 +24,10 @@ Rather than offering one universal fix, the playbook guides you through a struct
 
 The Playbook consists of four integrated components:
 
-1. Causal Fairness Toolkit ([CAUS.md]())
-2. Pre-Processing Fairness Toolkit ([PREP.md]())
-3. In-Processing Fairness Toolkit ([INPR.md]())
-4. Post-Processing Fairness Toolkit ([POST.md]())
+1. Causal Fairness Toolkit ([CAUS]())
+2. Pre-Processing Fairness Toolkit ([PREP]())
+3. In-Processing Fairness Toolkit ([INPR]())
+4. Post-Processing Fairness Toolkit ([POST]())
 
 Each toolkit addresses fairness at a different stage of the machine learning pipeline.
 
