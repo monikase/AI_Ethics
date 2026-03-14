@@ -73,7 +73,7 @@ The **Causal Fairness Toolkit** identifies:
 
 These insights determine **where bias originates** and guide appropriate data-level interventions.
 
-→ See: `1_CFT.md`
+→ See: `1_CAUS.md`
 
 ---
 
@@ -88,7 +88,7 @@ The **Pre-Processing Toolkit** mitigates dataset bias by:
 
 The resulting dataset provides a **fairer foundation for model training**.
 
-→ See: `2_PFT.md`
+→ See: `2_PREP.md`
 
 ---
 
@@ -103,7 +103,7 @@ The **In-Processing Toolkit** integrates fairness directly into the training pro
 
 These methods reduce bias within the **model’s learned decision boundaries**.
 
-→ See: `3_IPT.md`
+→ See: `3_INPR.md`
 
 ---
 
@@ -124,7 +124,7 @@ Techniques include:
 
 These methods improve fairness **without changing the underlying model**.
 
-→ See: `4_PPT.md`
+→ See: `4_POST.md`
 
 ---
 
