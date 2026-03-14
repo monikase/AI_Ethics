@@ -152,8 +152,8 @@ This definition ensures that **both types of prediction errors are balanced acro
 2. For each group:  
    a. Compute ROC curve points across possible threshold values.  
    b. For each fairness definition:
-      i. Identify thresholds satisfying fairness constraints.
-      ii. Select the threshold that maximizes utility.  
+      - Identify thresholds satisfying fairness constraints.
+      - Select the threshold that maximizes utility.  
 
 4. Validate the selected thresholds on held-out test data.  
 
