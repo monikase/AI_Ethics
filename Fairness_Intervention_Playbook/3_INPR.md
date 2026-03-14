@@ -215,7 +215,7 @@ Selecting an appropriate fairness technique depends on:
 ## Decision Flow
 
 ```mermaid
-flowchart TD
+flowchart LR
 
 A[Start: Fairness Gap Detected] --> B{Model Architecture}
 
@@ -223,14 +223,23 @@ B -->|Linear Model| C{Fairness Goal}
 B -->|Tree-Based Model| D{Fairness Goal}
 B -->|Neural Network| E{Fairness Goal}
 
+%% Linear models
 C -->|Demographic Parity| F[Constraint Optimization]
-C -->|Equal Opportunity| G[Regularization]
+C -->|Equal Opportunity| G[Fairness Regularization]
+C -->|Equalized Odds| H[TPR/FPR Constraint Optimization]
+C -->|Individual Fairness| I[Similarity-based Regularization]
 
-D -->|Demographic Parity| H[Fair Splitting Criteria]
-D -->|Equal Opportunity| I[Regularized Tree Induction]
+%% Tree models
+D -->|Demographic Parity| J[Fair Splitting Criteria]
+D -->|Equal Opportunity| K[Weighted Splitting]
+D -->|Equalized Odds| L[Balanced Splitting]
+D -->|Individual Fairness| M[Regularized Tree Induction]
 
-E -->|Demographic Parity| J[Adversarial Debiasing]
-E -->|Equal Opportunity| K[Multi-Objective Optimization]
+%% Neural networks
+E -->|Demographic Parity| N[Adversarial Debiasing]
+E -->|Equal Opportunity| O[Multi-Objective Optimization]
+E -->|Equalized Odds| P[Multi-task Fairness Loss]
+E -->|Individual Fairness| Q[Gradient Penalties / Contrastive Learning]
 ```
 ### Step 1: Model Architecture Identification
 
