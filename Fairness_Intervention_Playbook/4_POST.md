@@ -354,20 +354,27 @@ Rejection option classification introduces a third decision path:
 
 Low-confidence predictions are deferred to human reviewers.
 
-Example:  
+These thresholds define the **confidence regions where automation is considered reliable**.
+
+Example:
 
 if confidence > 0.85 → automated decision  
 if 0.45 < confidence < 0.85 → human review  
 
+The key insight is that **fairness errors often concentrate near decision boundaries**, where model predictions are least certain.
+
+By deferring these cases to human review, systems can reduce unfair outcomes while keeping most decisions automated.
 
 ---
 
 ### 4.2 Selective Classification Strategy
 
-Selective classification optimizes the trade-off between:
+Selective classification manages the trade-off between:
 
-- automation coverage
-- fairness improvement
+- automation coverage  
+- fairness improvement  
+
+Reducing automation coverage allows the system to **focus human attention on the most difficult or risky cases**.
 
 Example:
 
@@ -377,19 +384,22 @@ Example:
 | 90% | 3% |
 | 80% | 1.5% |
 
-Reducing automation coverage often improves fairness.
+In many applications, **moderate rejection rates can significantly improve fairness while maintaining operational efficiency.**
 
 ---
 
 ### 4.3 Human–AI Collaboration Design
 
-Effective rejection systems require structured human review.
+Effective rejection systems require structured collaboration between algorithms and human reviewers.
 
 Best practices include:
 
-- presenting decision context without bias-triggering cues
-- requiring reviewers to document decision reasoning
-- monitoring human decisions for fairness consistency
+- presenting decision context without bias-triggering cues  
+- providing explanations for why a case was deferred  
+- requiring reviewers to document decision reasoning  
+- monitoring human decisions for fairness consistency  
+
+Proper workflow design ensures that **human review improves fairness rather than introducing new biases.**
 
 ---
 
