@@ -56,7 +56,11 @@ The In-Processing Fairness Toolkit consists of the following components:
 - 1.4 Compatibility Matrix
 - 1.5 Implementation Considerations
 ### 2️⃣ [Technique Selection Framework](#technique)
-### 3️⃣ [Implementation Pattern Catalog](#implementation)
+### 3️⃣ [Implementation Pattern Catalog](#implementation)  
+- 3.1 Constraint Optimization
+- 3.2 Adversarial Debiasing
+- 3.3 Fairness Regularization
+- 3.4 Multi-Objective Optimization  
 ### 4️⃣ Integration Verification Framework
 ### 5️⃣ User Documentation
 ### 6. Implementation Checklist
