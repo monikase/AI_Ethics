@@ -385,37 +385,93 @@ This formulation trains the model to **achieve the best predictive performance w
 
 ### 3.2 Adversarial Debiasing
 
+---
+
 #### Description
 
-Adversarial approaches train two models simultaneously:
+Adversarial debiasing trains two models simultaneously:
 
-- a **predictor** that performs the main task  
-- an **adversary** that tries to infer protected attributes  
+- a **predictor** that performs the primary prediction task  
+- an **adversary** that attempts to infer protected attributes from the model’s internal representations  
 
-The predictor learns representations that **prevent the adversary from succeeding**, removing protected information from the model.
+During training, the predictor learns representations that **maximize prediction accuracy while preventing the adversary from accurately identifying protected attributes**.  
+This encourages the model to remove sensitive information from learned representations.
 
 #### Architecture
 
-Components include:
+The architecture typically includes the following components:
 
-- predictor network  
-- adversary network  
-- gradient reversal layer  
+- predictor network (main prediction model)  
+- adversary network attempting to predict protected attributes  
+- gradient reversal layer that reverses gradients from the adversary during backpropagation  
 
-#### Objective  
+---
 
-Loss = prediction_loss - λ * adversary_loss  
+#### Objective Structure
 
+Minimize:
+
+$\min_{\theta_p} L_{pred}(\theta_p) - \lambda L_{adv}(\theta_p,\theta_a)$
+
+Where:
+
+- $L_{pred}$ — prediction loss of the main model  
+- $L_{adv}$ — adversary loss predicting protected attributes  
+- $\theta_p$ — parameters of the predictor model  
+- $\theta_a$ — parameters of the adversary network  
+- $\lambda$ — adversary weight controlling the fairness–performance trade-off  
+
+**Interpretation**
+
+The model is trained to **optimize prediction accuracy while simultaneously making it difficult for the adversary to recover protected attributes from learned representations.**
+
+---
+
+#### Components
+
+- main model architecture (predictor)  
+- adversary network architecture  
+- gradient reversal layer for adversarial training  
+- combined loss function integrating prediction and adversary objectives  
+
+---
+
+#### Parameters
+
+- **adversary weight ($\lambda$)** controlling the fairness–performance trade-off  
+- **adversary architecture complexity** (depth or size of adversary network)  
+- **gradient scaling factor** controlling adversarial influence during training  
+
+---
+
+#### Implementation Considerations
+
+- requires careful balancing of predictor and adversary training  
+- improper hyperparameters may lead to **training instability**  
+- works best with **large datasets and neural network architectures**
+
+---
+
+#### Use Cases
+
+- neural networks and deep learning models  
+- representation learning tasks  
+- applications where bias emerges from **latent feature representations**
+
+---
 
 #### Advantages
 
-- effective for deep learning models  
-- addresses hidden representation bias  
+- effective at removing bias from learned representations  
+- flexible and compatible with many neural network architectures  
+
+---
 
 #### Limitations
 
-- training instability possible  
 - computationally intensive  
+- sensitive to hyperparameter selection  
+- training process may become unstable
 
 ---
 
