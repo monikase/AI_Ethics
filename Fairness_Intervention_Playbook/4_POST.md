@@ -340,49 +340,37 @@ By preserving ordering within groups, these transformations maintain the **infor
 
 Some predictions occur in **high-uncertainty regions** where automated decisions risk unfair outcomes.
 
-Rejection option classification introduces a third decision path:
-
-| Decision | Description |
-|--------|-------------|
-| Automated approval | High-confidence positive prediction |
-| Automated rejection | High-confidence negative prediction |
-| Human review | Low-confidence prediction |
-
 ---
 
 ### 4.1 Confidence-Based Rejection Thresholds
+
+---
 
 Low-confidence predictions are deferred to human reviewers.
 
 These thresholds define the **confidence regions where automation is considered reliable**.
 
-Example:
+> _Example:_
+> 
+> if confidence > 0.85 → automated decision  
+> if 0.45 < confidence < 0.85 → human review  
 
-if confidence > 0.85 → automated decision  
-if 0.45 < confidence < 0.85 → human review  
+**Fairness errors often concentrate near decision boundaries**, where model predictions are least certain.  
 
-The key insight is that **fairness errors often concentrate near decision boundaries**, where model predictions are least certain.
-
-By deferring these cases to human review, systems can reduce unfair outcomes while keeping most decisions automated.
+By deferring these cases to human review, systems can reduce unfair outcomes while keeping most decisions automated.  
 
 ---
 
 ### 4.2 Selective Classification Strategy
 
-Selective classification manages the trade-off between:
+---
 
-- automation coverage  
-- fairness improvement  
+Selective classification manages the trade-off between:  
 
-Reducing automation coverage allows the system to **focus human attention on the most difficult or risky cases**.
+- Automation coverage  
+- Fairness improvement  
 
-Example:
-
-| Automation Coverage | Fairness Gap |
-|---------------------|--------------|
-| 100% | 6% |
-| 90% | 3% |
-| 80% | 1.5% |
+Reducing automation coverage allows the system to **focus human attention on the most difficult or risky cases**.  
 
 In many applications, **moderate rejection rates can significantly improve fairness while maintaining operational efficiency.**
 
@@ -390,16 +378,18 @@ In many applications, **moderate rejection rates can significantly improve fairn
 
 ### 4.3 Human–AI Collaboration Design
 
-Effective rejection systems require structured collaboration between algorithms and human reviewers.
+---
 
-Best practices include:
+Effective rejection systems require structured collaboration between algorithms and human reviewers.  
 
-- presenting decision context without bias-triggering cues  
-- providing explanations for why a case was deferred  
-- requiring reviewers to document decision reasoning  
-- monitoring human decisions for fairness consistency  
+Best practices include:  
 
-Proper workflow design ensures that **human review improves fairness rather than introducing new biases.**
+- Presenting decision context without bias-triggering cues  
+- Providing explanations for why a case was deferred  
+- Requiring reviewers to document decision reasoning  
+- Monitoring human decisions for fairness consistency  
+
+Proper workflow design ensures that **human review improves fairness rather than introducing new biases.**  
 
 ---
 
