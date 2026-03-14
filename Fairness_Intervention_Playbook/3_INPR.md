@@ -324,16 +324,28 @@ Recommended approaches include:
 ### 3.1 Constraint Optimization
 
 #### Description
-
 Constraint-based approaches incorporate fairness definitions as **explicit constraints within the optimization process**.
 
-The model minimizes prediction error while ensuring fairness conditions are satisfied.
+The model minimizes prediction error while ensuring fairness conditions are satisfied.  
 
-#### Objective Structure  
-Minimize: prediction_loss(θ)  
+---
+
+#### Objective Structure
+
+Minimize:
+
+$$
+\text{prediction\_loss}(\theta)
+$$
+
 
 Subject to:  
-fairness_constraint(θ) ≤ ε  
+
+$$
+\text{fairness\_constraint}(\theta) \le \varepsilon
+$$  
+
+Where **$\varepsilon$** represents the acceptable tolerance for fairness violations.  
 
 #### Implementation Components
 
