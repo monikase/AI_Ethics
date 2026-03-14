@@ -84,7 +84,7 @@ Possible categories include:
 - **Linear models** (Logistic regression, Linear SVM)
 - **Tree-based models** (Decision trees, Random forests, Gradient boosting)  
 - **Neural networks** (Feedforward, Convolutional, Recurrent networks) 
-- **Other architectures** (Probabilistic models, Ensemble methods) specify: ________  
+- **Other architectures** (Probabilistic models, Ensemble methods) Specify: __________  
 
 Document the model type and training framework used.
 
