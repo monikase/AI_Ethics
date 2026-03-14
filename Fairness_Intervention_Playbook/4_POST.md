@@ -126,9 +126,7 @@ Different definitions require **different threshold adjustments across demograph
 
 Ensures equal positive prediction rates across groups.
 
-\[
-P(\hat{Y}=1 \mid A=a) = P(\hat{Y}=1 \mid A=b)
-\]
+$P(\hat{Y} = 1 \mid A = a) = P(\hat{Y} = 1 \mid A = b)$
 
 > Example:  
 >  
