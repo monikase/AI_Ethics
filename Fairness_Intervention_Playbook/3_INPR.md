@@ -43,8 +43,6 @@ The **In-Processing Fairness Toolkit** complements the earlier components of the
 
 Pre-processing methods improve the **data used to train models**, while in-processing techniques modify **how models learn from that data**.
 
-Together, these approaches allow teams to address fairness issues at multiple stages of the machine learning lifecycle.
-
 ---
 
 ## Toolkit Overview
