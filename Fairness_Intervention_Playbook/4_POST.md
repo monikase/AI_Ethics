@@ -251,8 +251,8 @@ Where **T** is the learned temperature parameter.
 
 4. Verify calibration improvement using:
    - Expected Calibration Error (ECE)
-   - reliability diagrams
-   - subgroup calibration comparisons
+   - Reliability diagrams
+   - Subgroup calibration comparisons
 
 5. Document calibration improvements and potential impacts on other fairness metrics.
 
@@ -267,62 +267,70 @@ Prediction transformations adjust model outputs while preserving useful predicti
 
 They are especially useful when:
 
-- threshold adjustments are insufficient
-- complex fairness patterns exist
-- ranking information must be preserved
+- Threshold adjustments are insufficient
+- Complex fairness patterns exist
+- Ranking information must be preserved
 
 ---
 
 ### 3.1 Learned Transformation Functions
 
-Learned transformations discover mappings from original predictions to fair outputs.
+---
 
-Optimization objective:    
+Learned transformations discover mappings from original predictions to fair outputs using validation data.  
 
-Minimize prediction distortion  
+Optimization objective:  
+
+Minimize prediction distortion    
 Subject to fairness constraints  
 
+These mappings can be learned using optimization methods that balance:  
 
-These mappings are trained using validation data.
+- Fairness improvement
+- Prediction accuracy
+- Preservation of ranking relationships
+
+Learned transformations are useful when **simple threshold adjustments cannot achieve the desired fairness goals**.  
 
 ---
 
 ### 3.2 Distribution Alignment Techniques
 
-Align prediction score distributions across demographic groups.
+---
 
-Common approaches include:
+Distribution alignment methods transform prediction score distributions so they become comparable across demographic groups.  
 
-- quantile mapping
-- optimal transport
-- distribution matching
+These approaches focus on **matching score distributions across groups**, rather than directly modifying decision thresholds.  
 
-Example:
+Common approaches include:  
 
-| Group | Mean Score |
-|------|-------------|
-| Men | 0.41 |
-| Women | 0.36 |
-
-Transformation aligns distributions so scores become comparable.
+- Quantile mapping
+- Optimal transport
+- Distribution matching  
 
 ---
 
 ### 3.3 Fair Score Transformations
 
-Fair score transformations modify prediction scores while preserving ordering within groups.
+---
 
-Examples:
+Fair score transformations modify prediction scores while preserving ordering within groups.  
 
-- monotonic transformations
-- score normalization
-- constrained re-ranking
+Maintaining ranking relationships is important for applications where **relative ordering matters more than absolute scores**.  
 
-This is useful in ranking systems such as:
+Common approaches include:  
 
-- credit scoring
-- recommendation systems
-- risk prioritization models
+- Monotonic transformations  
+- Score normalization  
+- Constrained re-ranking  
+
+These techniques are commonly applied in ranking systems such as:  
+
+- Credit scoring  
+- Recommendation systems  
+- Risk prioritization models  
+
+By preserving ordering within groups, these transformations maintain the **informational value of prediction scores** while improving fairness metrics.  
 
 ---
 
