@@ -393,6 +393,74 @@ Proper workflow design ensures that **human review improves fairness rather than
 
 ---
 
+## 5️⃣ Transformation Selection Guide
+→ Choose the appropriate post-processing technique based on fairness goals and system constraints.
+
+Different fairness objectives and deployment conditions require different post-processing interventions.
+
+This guide helps select the most appropriate technique.
+
+---
+
+### 5.1 Fairness Objective Selection
+
+Different fairness definitions align with different techniques.
+
+| Fairness Goal | Recommended Techniques |
+|---|---|
+| Demographic parity | Threshold optimization, score transformation |
+| Equal opportunity | Threshold optimization |
+| Equalized odds | Threshold optimization, calibration |
+| Calibration fairness | Probability calibration |
+| Individual fairness | Score normalization, monotonic score transformation |
+
+Individual fairness aims to ensure that **similar individuals receive similar predictions**.  
+In post-processing settings, this is typically approximated by **adjusting prediction scores while preserving ranking consistency**.
+
+---
+
+### 5.2 Deployment Constraints
+
+Operational constraints may influence which technique is feasible.
+
+| Constraint | Recommended Approach |
+|---|---|
+| Protected attributes unavailable at inference | Score transformation |
+| Limited engineering resources | Threshold optimization |
+| Strict regulatory requirements | Calibration or transparent threshold rules |
+| High-throughput real-time systems | Lightweight transformations or thresholds |
+
+Some techniques require **group-specific adjustments**, while others operate without protected attributes.
+
+---
+
+### 5.3 Model Output Type
+
+The type of model output determines which interventions can be applied.
+
+| Model Output | Recommended Techniques |
+|---|---|
+| Probability estimates | Calibration, threshold optimization |
+| Continuous prediction scores | Score transformation |
+| Binary decisions only | Rejection classification |
+
+Understanding model outputs helps determine **which fairness adjustments are technically feasible**.
+
+---
+
+### 5.4 Technique Overview
+
+| Technique | Purpose |
+|---|---|
+| Threshold Optimization | Adjust decision boundaries across groups |
+| Calibration | Ensure probabilities have consistent meaning across groups |
+| Prediction Transformation | Modify score distributions to satisfy fairness constraints |
+| Rejection Option Classification | Defer uncertain predictions to human review |
+
+These techniques can also be **combined within production pipelines** to address multiple fairness goals simultaneously.
+
+---
+
 <a id="integration"></a>
 ## 5️⃣ Integration Workflow Design
 → Deploy fairness interventions within production systems.
