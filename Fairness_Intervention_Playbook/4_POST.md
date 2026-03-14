@@ -57,19 +57,6 @@ Post-processing interventions are especially useful when:
 
 ---
 
-### Example Integration
-
-A bank's loan approval system may undergo several fairness interventions across the ML lifecycle:
-
-1. **Causal analysis** reveals that employment history mediates gender disparities in loan approval.
-2. **Pre-processing techniques** adjust employment history features to reduce proxy discrimination.
-3. **In-processing methods** introduce fairness constraints during model training.
-4. **Post-processing techniques** adjust prediction thresholds to equalize approval rates.
-
-Together, these toolkits create a **layered fairness strategy**, ensuring fairness can be addressed even when earlier interventions are insufficient.
-
----
-
 ## Toolkit Overview
 
 The Post-Processing Fairness Toolkit contains the following components:
