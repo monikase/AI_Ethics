@@ -36,10 +36,10 @@ The **In-Processing Fairness Toolkit** complements the earlier components of the
 
 | Stage | Toolkit | Purpose |
 |------|--------|--------|
-| Bias Diagnosis | Causal Fairness Toolkit | Identify causal pathways producing disparities |
-| Data Intervention | Pre-Processing Fairness Toolkit | Mitigate bias through dataset modification |
-| Model Intervention | **In-Processing Fairness Toolkit** | Embed fairness directly in model training |
-| Monitoring | All Toolkits | Evaluate fairness and model performance over time |
+| Bias Diagnosis | Causal Fairness Toolkit | Identify causal mechanisms behind disparities |
+| Data Intervention | Pre-Processing Fairness Toolkit | Mitigate bias in training datasets |
+| Model Intervention | **In-Processing Fairness Toolkit** | Integrate fairness constraints during training |
+| Prediction Intervention | Post-Processing Fairness Toolkit | Adjust model outputs after training |  
 
 Pre-processing methods improve the **data used to train models**, while in-processing techniques modify **how models learn from that data**.
 
