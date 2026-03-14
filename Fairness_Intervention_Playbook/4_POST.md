@@ -625,5 +625,5 @@ Effective post-processing fairness interventions should:
 
 ---
 
-For sources that informed this toolkit, see the [0_References](https://github.com/monikase/AI_Ethics/blob/main/Fairness_Intervention_Playbook/0_References.md)
+For sources that informed this toolkit, see the [6_References](https://github.com/TuringCollegeSubmissions/mosedui-AIET.2.5.1/blob/main/6_References.md)
 
