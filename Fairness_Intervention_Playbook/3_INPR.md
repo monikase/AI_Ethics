@@ -332,24 +332,19 @@ The model minimizes prediction error while ensuring fairness conditions are sati
 
 #### Objective Structure
 
-Minimize:
+#### Objective Structure
 
-$$
-L(\theta)
-$$
+Minimize: $L(\theta)$  
 
-$$
-\text{prediction loss}(\theta)
-$$
+Subject to: $C(\theta) \le \varepsilon$  
 
+Where:  
 
-Subject to:  
+- $L(\theta)$ — prediction loss function minimized during training   
+- $C(\theta)$ — fairness constraint measuring deviation from the desired fairness condition  
+- $\theta$ — model parameters  
+- $\varepsilon$ — acceptable tolerance for fairness violations
 
-$$
-C(\theta) \le \varepsilon
-$$
-
-Where **$\varepsilon$** represents the acceptable tolerance for fairness violations.
 
 #### Implementation Components
 
