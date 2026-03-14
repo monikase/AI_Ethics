@@ -62,9 +62,9 @@ Post-processing interventions are especially useful when:
 The Post-Processing Fairness Toolkit contains the following components:
 
 ### 1️⃣ Threshold Optimization Framework  
-- Group-specific decision thresholds  
-- Mathematical formulations of fairness definitions  
-- Threshold search algorithms  
+1.1 Fairness Definitions for Threshold Optimization
+1.2 Threshold Search Algorithm 
+1.3 Practical Threshold Selection Guidelines
 
 ### 2️⃣ Calibration Implementation Template  
 - Probability calibration across demographic groups  
