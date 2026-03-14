@@ -65,31 +65,26 @@ The Post-Processing Fairness Toolkit contains the following components:
 - 1.3 Practical Threshold Selection Guidelines  
 
 ### 2️⃣ [Calibration Implementation Template](#calibration)  
-- Probability calibration across demographic groups  
-- Calibration error measurement  
-- Calibration model implementation  
+- 2.1 Calibration Disparity Assessment  
+- 2.2 Calibration Techniques  
+- 2.3 Calibration Implementation Workflow  
 
 ### 3️⃣ [Prediction Transformation System](#transformation)  
-- Learned transformation functions  
-- Distribution alignment techniques  
-- Fair score transformation methods  
+3.1 Learned Transformation Functions
+3.2 Distribution Alignment Techniques
+3.3 Fair Score Transformations
+3.4 Decision Flipping  
 
 ### 4️⃣ [Rejection Option Classification Framework](#rejection)  
-- Confidence-based deferral mechanisms  
-- Selective classification strategies  
-- Human–AI collaboration models  
+- 4.1 Confidence-Based Rejection Thresholds  
+- 4.2 Selective Classification Strategy  
+- 4.3 Human–AI Collaboration Design  
 
 ### 5️⃣ [Transformation Selection Guide](#guide)
 
-### 6. [Integration Workflow Design](#integration)  
-- Production pipeline integration  
-- Real-time prediction adjustments  
-- monitoring and maintenance strategies  
+### 6. [Integration Workflow Design](#integration)   
 
 ### 7. [Evaluation Framework](#evaluation)  
-- Fairness metric evaluation  
-- fairness–utility trade-off analysis  
-- stability monitoring  
 
 ### 8. [Implementation Checklist](#checklist)  
 
