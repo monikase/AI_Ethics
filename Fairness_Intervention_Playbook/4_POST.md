@@ -1,7 +1,5 @@
 # Post-Processing Fairness Toolkit
-A Practical Framework for Improving Fairness in Model Predictions Without Retraining
-
----
+A Practical Framework for Improving Fairness in Model Predictions Without Retraining  
 
 ## Introduction
 
