@@ -50,6 +50,11 @@ Pre-processing methods improve the **data used to train models**, while in-proce
 The In-Processing Fairness Toolkit consists of the following components:
 
 ### 1️⃣ [Model Architecture Analysis Template](#classification)
+- 1.1 Model Type Classification
+- 1.2 Model Characteristics
+- 1.3 Technical Constraints
+- 1.4 Compatibility Matrix
+- 1.5 Implementation Considerations
 ### 2️⃣ Technique Selection Framework
 ### 3️⃣ Implementation Pattern Catalog
 ### 4️⃣ Integration Verification Framework
