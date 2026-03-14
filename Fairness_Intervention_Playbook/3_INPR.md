@@ -61,11 +61,11 @@ The In-Processing Fairness Toolkit consists of the following components:
 - 3.2 Adversarial Debiasing
 - 3.3 Fairness Regularization
 - 3.4 Multi-Objective Optimization  
-### 4️⃣ Integration Verification Framework
-### 5️⃣ User Documentation
-### 6. Implementation Checklist
-### 7. Practical Workflow Summary
-### 8. Core Principles
+### 4️⃣ [Integration Verification Framework](#integration)
+### 5. [User Documentation](#documentation)
+### 6. [Implementation Checklist](#checklist)
+### 7. [Practical Workflow Summary](#summary)
+### 8. [Core Principles](#core)
 
 ---
 
@@ -717,6 +717,7 @@ These extensions ensure that fairness optimization protects **all demographic gr
 
 ---
 
+<a id="integration"></a>
 ## 4️⃣ Integration Verification Framework
 → Validate fairness improvements after implementation.
 
@@ -778,6 +779,7 @@ Typical success thresholds include:
 
 ---
 
+<a id="documentation"></a>
 ## 5. User Documentation
 → Guidelines for applying the toolkit.
 
@@ -794,6 +796,7 @@ All decisions should be documented to ensure transparency.
 
 ---
 
+<a id="checklist"></a>
 ## 6. Implementation Checklist
 
 Before deploying fairness-aware models:
@@ -821,6 +824,7 @@ Before deploying fairness-aware models:
 
 ---
 
+<a id="summary"></a>
 ## 7. Practical Workflow Summary
 
 1. Conduct model architecture analysis  
@@ -833,6 +837,7 @@ Before deploying fairness-aware models:
 
 ---
 
+<a id="core"></a>
 ## 8. Core Principles
 
 Effective in-processing fairness interventions should:
