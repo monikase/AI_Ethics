@@ -149,15 +149,17 @@ This definition ensures that **both types of prediction errors are balanced acro
 
 1. Split validation dataset by protected attribute groups
 
-2. For each group:
-a. Compute ROC curve across threshold values
+2. For each group:  
+    a. Compute ROC curve across threshold values  
 
-3. For each fairness objective:
-a. Identify candidate thresholds satisfying fairness constraints
+3. For each fairness objective:  
+    a. Identify candidate thresholds satisfying fairness constraints  
+    b. From valid thresholds, select the threshold that maximizes utility  
+      (e.g., accuracy, profit, or AUC)  
 
-4. Select thresholds maximizing utility
+4. Evaluate selected thresholds on a held-out test dataset.  
 
-5. Validate thresholds on held-out test data
+5. Document selected thresholds and resulting fairness–performance trade-offs.  
 
 
 ---
