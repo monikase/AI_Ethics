@@ -59,41 +59,41 @@ Post-processing interventions are especially useful when:
 
 The Post-Processing Fairness Toolkit contains the following components:
 
-### 1️⃣ Threshold Optimization Framework    
+### 1️⃣ [Threshold Optimization Framework](#threshold)    
 - 1.1 Fairness Definitions for Threshold Optimization  
 - 1.2 Threshold Search Algorithm   
 - 1.3 Practical Threshold Selection Guidelines  
 
-### 2️⃣ Calibration Implementation Template  
+### 2️⃣ [Calibration Implementation Template](#calibration)  
 - Probability calibration across demographic groups  
 - Calibration error measurement  
 - Calibration model implementation  
 
-### 3️⃣ Prediction Transformation System  
+### 3️⃣ [Prediction Transformation System](#transformation)  
 - Learned transformation functions  
 - Distribution alignment techniques  
 - Fair score transformation methods  
 
-### 4️⃣ Rejection Option Classification Framework  
+### 4️⃣ [Rejection Option Classification Framework](#rejection)  
 - Confidence-based deferral mechanisms  
 - Selective classification strategies  
 - Human–AI collaboration models  
 
-### 5️⃣ Integration Workflow Design  
+### 5️⃣ [Integration Workflow Design](#integration)  
 - Production pipeline integration  
 - Real-time prediction adjustments  
 - monitoring and maintenance strategies  
 
-### 6️⃣ Evaluation Framework  
+### 6️⃣ [Evaluation Framework](#evaluation)  
 - Fairness metric evaluation  
 - fairness–utility trade-off analysis  
 - stability monitoring  
 
-### 7. Implementation Checklist  
+### 7. [Implementation Checklist](#checklist)  
 
-### 8. Practical Workflow Summary  
+### 8. [Practical Workflow Summary](#summary)  
 
-### 9. Core Principles  
+### 9. [Core Principles](#principles)  
 
 ---
 
