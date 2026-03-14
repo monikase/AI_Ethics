@@ -232,22 +232,30 @@ D -->|Equal Opportunity| I[Regularized Tree Induction]
 E -->|Demographic Parity| J[Adversarial Debiasing]
 E -->|Equal Opportunity| K[Multi-Objective Optimization]
 ```
-### Step 1: Identify Fairness Objective
+### Step 1: Model Architecture Identification
 
 Common fairness definitions include:
 
-| Fairness Definition | Description |
-|---|---|
-| Demographic parity | Equal outcome rates across groups |
-| Equal opportunity | Equal true positive rates |
-| Equalized odds | Equal true and false positive rates |
-| Individual fairness | Similar individuals receive similar outcomes |
+| Model Type | Typical Algorithms | Stap to take |
+|---|---|---|
+| **Linear models** | Logistic regression, Linear SVM | [Step 2](#linear) |
+| **Tree-based models** | Decision trees, Random forests, Gradient boosting | [Step 3](#linear) |
+| **Neural networks** | Feedforward networks, CNN, RNN | [Step 4](#linear) | 
+| **Other architectures** | Probabilistic models, ensemble systems | [Step 5](#linear) |
 
 ---
 
-### Step 2: Evaluate Model Compatibility
+<a id="linear"></a>
+### Step 2: Linear Models
 
-Select techniques that integrate effectively with the existing model architecture.
+Linear models support fairness constraints directly in the optimization objective.  
+- What fairness objective is required?
+
+| Fairness Goal | Recommended Technique |
+|---|---|
+| **Demographic parity** | Constraint optimization |   
+| **Equal opportunity** | Fairness regularization |   
+| **Individual fairness** | Similarity-based regularization |  
 
 ---
 
