@@ -154,6 +154,23 @@ Important factors include:
 
 Some fairness approaches introduce additional computational complexity or reduce interpretability.
 
+> _Example_
+>
+> **Available computational resources**  
+> - Standard CPU environment  
+> - No GPU dependency  
+>
+> **Maximum acceptable training time increase**  
+> - Up to 40% longer training time if fairness constraints are added  
+>
+> **Explainability requirements**  
+> - High explainability required for regulatory compliance  
+> - Tree-based models preferred due to interpretability  
+>
+> **Deployment environment limitations**  
+> - Model deployed in bank decision API  
+> - Prediction latency must remain under 200 ms
+
 ---
 
 ### 1.4 Compatibility Matrix
