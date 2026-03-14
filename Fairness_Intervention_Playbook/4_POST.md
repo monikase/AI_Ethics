@@ -3,7 +3,7 @@ A Practical Framework for Improving Fairness in Model Predictions Without Retrai
 
 ---
 
-## 1. Introduction
+## Introduction
 
 Machine learning models deployed in real-world systems may continue to produce unfair outcomes even after careful dataset preparation and fairness-aware model training.
 
@@ -35,7 +35,7 @@ Rather than retraining models or modifying training data, the toolkit focuses on
 
 ---
 
-## 2. Relationship to Other Fairness Toolkits
+## Relationship to Other Fairness Toolkits
 
 The **Post-Processing Fairness Toolkit** complements earlier fairness interventions within the **Fairness Intervention Playbook**.
 
@@ -70,7 +70,7 @@ Together, these toolkits create a **layered fairness strategy**, ensuring fairne
 
 ---
 
-## 3. Toolkit Overview
+## Toolkit Overview
 
 The Post-Processing Fairness Toolkit contains the following components:
 
@@ -104,16 +104,16 @@ The Post-Processing Fairness Toolkit contains the following components:
 - fairness–utility trade-off analysis  
 - stability monitoring  
 
-### 7️⃣ Implementation Checklist  
+### 7. Implementation Checklist  
 
-### 8️⃣ Practical Workflow Summary  
+### 8. Practical Workflow Summary  
 
-### 9️⃣ Core Principles  
+### 9. Core Principles  
 
 ---
 
 <a id="threshold"></a>
-# 1️⃣ Threshold Optimization Framework
+## 1️⃣ Threshold Optimization Framework
 → Adjust decision thresholds to satisfy fairness criteria.
 
 Machine learning classifiers typically convert probability predictions into binary decisions using a **fixed threshold**.
@@ -213,7 +213,7 @@ Use rejection classification when:
 ---
 
 <a id="calibration"></a>
-# 2️⃣ Calibration Implementation Template
+## 2️⃣ Calibration Implementation Template
 → Ensure probability predictions have consistent meaning across groups.
 
 Calibration ensures predicted probabilities correspond to **actual observed outcomes**.
@@ -291,7 +291,7 @@ Where **T** is a learned temperature parameter.
 ---
 
 <a id="transformation"></a>
-# 3️⃣ Prediction Transformation System
+## 3️⃣ Prediction Transformation System
 → Modify prediction scores to satisfy fairness constraints.
 
 Prediction transformations adjust model outputs while preserving useful predictive information.
@@ -304,7 +304,7 @@ They are especially useful when:
 
 ---
 
-## 3.1 Learned Transformation Functions
+### 3.1 Learned Transformation Functions
 
 Learned transformations discover mappings from original predictions to fair outputs.
 
@@ -318,7 +318,7 @@ These mappings are trained using validation data.
 
 ---
 
-## 3.2 Distribution Alignment Techniques
+### 3.2 Distribution Alignment Techniques
 
 Align prediction score distributions across demographic groups.
 
@@ -339,7 +339,7 @@ Transformation aligns distributions so scores become comparable.
 
 ---
 
-## 3.3 Fair Score Transformations
+### 3.3 Fair Score Transformations
 
 Fair score transformations modify prediction scores while preserving ordering within groups.
 
@@ -358,7 +358,7 @@ This is useful in ranking systems such as:
 ---
 
 <a id="rejection"></a>
-# 4️⃣ Rejection Option Classification Framework
+## 4️⃣ Rejection Option Classification Framework
 → Defer uncertain predictions to human review.
 
 Some predictions occur in **high-uncertainty regions** where automated decisions risk unfair outcomes.
@@ -373,7 +373,7 @@ Rejection option classification introduces a third decision path:
 
 ---
 
-## 4.1 Confidence-Based Rejection Thresholds
+### 4.1 Confidence-Based Rejection Thresholds
 
 Low-confidence predictions are deferred to human reviewers.
 
@@ -385,7 +385,7 @@ if 0.45 < confidence < 0.85 → human review
 
 ---
 
-## 4.2 Selective Classification Strategy
+### 4.2 Selective Classification Strategy
 
 Selective classification optimizes the trade-off between:
 
@@ -404,7 +404,7 @@ Reducing automation coverage often improves fairness.
 
 ---
 
-## 4.3 Human–AI Collaboration Design
+### 4.3 Human–AI Collaboration Design
 
 Effective rejection systems require structured human review.
 
@@ -417,7 +417,7 @@ Best practices include:
 ---
 
 <a id="integration"></a>
-# 5️⃣ Integration Workflow Design
+## 5️⃣ Integration Workflow Design
 → Deploy fairness interventions within production systems.
 
 Post-processing fairness techniques operate between **model prediction and final decision**.
@@ -456,7 +456,7 @@ Final Decision
 ---
 
 <a id="evaluation"></a>
-# 6️⃣ Evaluation Framework
+## 6️⃣ Evaluation Framework
 → Measure fairness intervention effectiveness.
 
 ---
@@ -510,7 +510,7 @@ Evaluate robustness under:
 ---
 
 <a id="checklist"></a>
-# 7️⃣ Implementation Checklist
+## 7. Implementation Checklist
 
 Before deploying post-processing fairness interventions:
 
@@ -541,7 +541,7 @@ Before deploying post-processing fairness interventions:
 ---
 
 <a id="summary"></a>
-# 8️⃣ Practical Workflow Summary
+## 8. Practical Workflow Summary
 
 1. Identify prediction disparities across demographic groups  
 2. Select fairness objective  
@@ -554,7 +554,7 @@ Before deploying post-processing fairness interventions:
 ---
 
 <a id="principles"></a>
-# 9️⃣ Core Principles
+## 9. Core Principles
 
 Effective post-processing fairness interventions should:
 
