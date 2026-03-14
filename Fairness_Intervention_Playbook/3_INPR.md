@@ -234,7 +234,7 @@ E -->|Equal Opportunity| K[Multi-Objective Optimization]
 ```
 ### Step 1: Model Architecture Identification
 
-Common fairness definitions include:
+Different fairness techniques integrate differently depending on model architecture.  
 
 | Model Type | Typical Algorithms | Step to take |
 |---|---|---|
@@ -249,7 +249,6 @@ Common fairness definitions include:
 ### Step 2: Linear Models
 
 Linear models support fairness constraints directly in the optimization objective.  
-- What fairness objective is required?
 
 | Fairness Goal | Recommended Technique |
 |---|---|
@@ -264,7 +263,6 @@ Linear models support fairness constraints directly in the optimization objectiv
 ### Step 3: Tree-Based Models
 
 Tree-based models require fairness mechanisms integrated into splitting criteria or training weights.   
-- What fairness objective is required?  
 
 | Fairness Goal | Recommended Technique |
 |---|---|
@@ -279,7 +277,6 @@ Tree-based models require fairness mechanisms integrated into splitting criteria
 ### Step 4: Neural Networks
 
 Neural networks allow fairness interventions through architectural changes and multi-task training.    
-- What fairness objective is required?  
 
 | Fairness Goal | Recommended Technique |
 |---|---|
