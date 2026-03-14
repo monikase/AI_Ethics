@@ -38,11 +38,10 @@ Together, the two toolkits form a complementary workflow:
 
 | Stage | Toolkit | Purpose |
 |------|--------|--------|
-| Bias Diagnosis | Causal Fairness Toolkit | Identify causal pathways that create disparities |
-| Bias Pattern Identification | Data Auditing | Detect representation gaps, proxy variables, and label bias |
-| Intervention Selection | Pre-Processing Fairness Toolkit | Select appropriate data-level interventions |
-| Model Training | ML Pipeline | Train models using fairness-aware datasets |
-| Monitoring | Both Toolkits | Evaluate fairness and performance over time |
+| Bias Diagnosis | Causal Fairness Toolkit | Identify causal mechanisms behind disparities |
+| Data Intervention | **Pre-Processing Fairness Toolkit** | Mitigate bias in training datasets |
+| Model Intervention | In-Processing Fairness Toolkit | Integrate fairness constraints during training |
+| Prediction Intervention | Post-Processing Fairness Toolkit | Adjust model outputs after training |
 
 > ### Example Integration  
 >  
