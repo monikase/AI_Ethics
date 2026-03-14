@@ -166,18 +166,18 @@ This definition ensures that **both types of prediction errors are balanced acro
 
 ---
 
-Use group-specific thresholds when:
+Use **group-specific thresholds** when:
 
-- protected attributes are legally available at inference time
-- fairness definitions require group-aware decisions
+- Protected attributes are legally available at inference time
+- Fairness definitions require group-aware decisions
 
-Use score transformations when:
+Use **score transformations** when:
 
-- protected attributes cannot be used during decision making
+- Protected attributes cannot be used during decision making
 
-Use rejection classification when:
+Use **rejection classification** when:
 
-- uncertainty near the threshold creates fairness risks
+- Uncertainty near the threshold creates fairness risks
 
 ---
 
