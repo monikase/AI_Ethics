@@ -81,25 +81,24 @@ Identify the model architecture currently used.
 
 Possible categories include:
 
-- **Linear models**  
-  - Logistic regression  
-  - Linear SVM  
-
-- **Tree-based models**  
-  - Decision trees  
-  - Random forests  
-  - Gradient boosting  
-
-- **Neural networks**  
-  - Feedforward networks  
-  - Convolutional networks  
-  - Recurrent networks  
-
-- **Other architectures**  
-  - Probabilistic models  
-  - Ensemble methods  
+- **Linear models** (Logistic regression, Linear SVM)
+- **Tree-based models** (Decision trees, Random forests, Gradient boosting)  
+- **Neural networks** (Feedforward, Convolutional, Recurrent networks) 
+- **Other architectures** (Probabilistic models, Ensemble methods) specify: ________  
 
 Document the model type and training framework used.
+
+> _Example_
+>
+> The current loan approval system uses a tree-based model, specifically Gradient Boosting for binary classification.
+> Category:
+> **Tree-based models**
+> Model used:
+> **Gradient Boosting Classifier**
+> Reason for selection:
+> - Handles **tabular financial data well**
+> - Captures **non-linear relationships** between applicant attributes and approval probability
+> - Performs better than linear models in internal validation tests
 
 ---
 
