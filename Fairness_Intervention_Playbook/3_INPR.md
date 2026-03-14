@@ -397,6 +397,21 @@ This formulation trains the model to **achieve the best predictive performance w
 
 ---
 
+#### Intersectionality Consideration  
+
+Fairness constraints are often defined for individual protected attributes such as gender or race.  
+However, discrimination may also occur at **intersections of multiple identities** (for example, women from a specific racial group).  
+
+To address intersectional bias, constraint-based approaches can be extended by:  
+
+- defining **separate fairness constraints for important intersectional subgroups**  
+- incorporating **multiple protected attributes simultaneously** in the constraint formulation  
+- using hierarchical or aggregated constraint structures that monitor fairness at different levels of demographic granularity  
+
+These extensions help ensure that fairness guarantees apply not only to individual protected groups but also to **intersectional subgroups that may otherwise remain undetected**.  
+
+---
+
 ### 3.2 Adversarial Debiasing
 
 ---
@@ -408,28 +423,27 @@ Adversarial debiasing trains two models simultaneously:
 - a **predictor** that performs the primary prediction task  
 - an **adversary** that attempts to infer protected attributes from the model’s internal representations  
 
-During training, the predictor learns representations that **maximize prediction accuracy while preventing the adversary from accurately identifying protected attributes**.  
+During training, the predictor learns representations that **maximize prediction accuracy while preventing the adversary from successfully predicting protected attributes**.    
 This encourages the model to remove sensitive information from learned representations.
 
 ---
 
 #### Architecture
 
-The architecture typically includes the following components:
+The architecture typically includes the following components:  
 
-- predictor network (main prediction model)  
-- adversary network attempting to predict protected attributes  
-- gradient reversal layer that reverses gradients from the adversary during backpropagation  
+- Predictor network (main prediction model)  
+- Adversary network attempting to predict protected attributes  
+- Gradient reversal layer that reverses gradients from the adversary during backpropagation  
+- Connection point between predictor and adversary (model output or internal representation layer)
 
 ---
 
 #### Objective Structure
 
-Minimize:
+Minimize: $\min_{\theta_p} L_{pred}(\theta_p) - \lambda L_{adv}(\theta_p,\theta_a)$  
 
-$\min_{\theta_p} L_{pred}(\theta_p) - \lambda L_{adv}(\theta_p,\theta_a)$
-
-Where:
+Where:  
 
 - $L_{pred}$ — prediction loss of the main model  
 - $L_{adv}$ — adversary loss predicting protected attributes  
@@ -437,9 +451,9 @@ Where:
 - $\theta_a$ — parameters of the adversary network  
 - $\lambda$ — adversary weight controlling the fairness–performance trade-off  
 
-**Interpretation**
+**Interpretation**  
 
-The model is trained to **optimize prediction accuracy while simultaneously making it difficult for the adversary to recover protected attributes from learned representations.**
+The model is trained to **optimize prediction accuracy while simultaneously making it difficult for the adversary to recover protected attributes from the model’s representations**.  
 
 ---
 
@@ -454,40 +468,56 @@ The model is trained to **optimize prediction accuracy while simultaneously maki
 
 #### Parameters
 
-- **adversary weight ($\lambda$)** controlling the fairness–performance trade-off  
-- **adversary architecture complexity** (depth or size of adversary network)  
-- **gradient scaling factor** controlling adversarial influence during training  
+- **Adversary weight ($\lambda$)** controlling the fairness–performance trade-off  
+- **Adversary architecture complexity** (depth or size of adversary network)  
+- **Gradient scaling factor** controlling adversarial influence during training  
 
 ---
 
 #### Implementation Considerations
 
-- requires careful balancing of predictor and adversary training  
-- improper hyperparameters may lead to **training instability**  
-- works best with **large datasets and neural network architectures**
+- Requires careful balancing of predictor and adversary training  
+- Improper hyperparameters may lead to **training instability**  
+- Adversarial weight ($\lambda$) is often **increased gradually during training** to stabilize learning  
+- Works best with **large datasets and neural network architectures**
 
 ---
 
 #### Use Cases
 
-- neural networks and deep learning models  
-- representation learning tasks  
-- applications where bias emerges from **latent feature representations**
+- Neural networks and deep learning models  
+- Representation learning tasks  
+- Applications where bias emerges from **latent feature representations**
 
 ---
 
 #### Advantages
 
-- effective at removing bias from learned representations  
-- flexible and compatible with many neural network architectures  
+- Effective at removing bias from learned representations  
+- Flexible and compatible with many neural network architectures  
 
 ---
 
 #### Limitations
 
-- computationally intensive  
-- sensitive to hyperparameter selection  
-- training process may become unstable
+- Computationally intensive  
+- Sensitive to hyperparameter selection  
+- Training process may become unstable  
+
+---
+
+#### Intersectionality Consideration
+
+Standard adversarial approaches often train an adversary to predict a single protected attribute.  
+However, discrimination may occur at **intersections of multiple identities** (for example, gender and race).
+
+To address intersectional bias, adversarial architectures can be extended by:
+
+- predicting **combinations of protected attributes**  
+- using **multi-task adversaries** that predict multiple protected attributes simultaneously  
+- applying hierarchical adversarial structures that monitor both individual attributes and their intersections  
+
+These extensions help ensure that fairness protections apply to **all demographic subgroups**, including intersectional groups that may otherwise remain undetected.
 
 ---
 
