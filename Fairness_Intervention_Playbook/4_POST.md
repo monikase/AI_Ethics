@@ -191,7 +191,9 @@ Miscalibration across demographic groups leads to inconsistent risk interpretati
 
 ---
 
-## 2.1 Calibration Disparity Assessment
+### 2.1 Calibration Disparity Assessment
+
+---
 
 1. Split validation data by demographic groups
 
@@ -206,6 +208,8 @@ Miscalibration across demographic groups leads to inconsistent risk interpretati
 ---
 
 ## 2.2 Calibration Techniques
+
+---
 
 ### Platt Scaling
 
@@ -236,6 +240,8 @@ Where **T** is the learned temperature parameter.
 ---
 
 ## 2.3 Calibration Implementation Workflow
+
+---
 
 1. Split validation data into **training**, **calibration**, and **test** sets.
 
