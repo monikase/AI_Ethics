@@ -111,7 +111,7 @@ Threshold optimization can enforce different fairness definitions by selecting g
 
 ---
 
-### Demographic Parity
+#### Demographic Parity
 
 Find thresholds equalizing selection rates across groups.  
 
@@ -121,7 +121,7 @@ This definition ensures that **different demographic groups receive positive pre
 
 ---
 
-### Equal Opportunity
+#### Equal Opportunity
 
 Find thresholds equalizing true positive rates.  
 
@@ -131,7 +131,7 @@ This definition ensures that **qualified individuals receive positive prediction
 
 ---
 
-### Equalized Odds
+#### Equalized Odds
 
 Find thresholds equalizing both true positive and false positive rates.    
 
