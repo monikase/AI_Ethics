@@ -336,6 +336,35 @@ By preserving ordering within groups, these transformations maintain the **infor
 
 ---
 
+### 3.4 Decision Flipping
+
+---
+
+Decision flipping is a simple post-processing technique that modifies a small number of model predictions to reduce disparities across demographic groups.  
+
+Instead of adjusting prediction scores or thresholds, this method **changes specific classification outcomes** in order to satisfy fairness constraints.  
+
+Typical use cases include situations where:  
+
+- Group disparities are small
+- Fairness improvements can be achieved by adjusting a limited number of decisions
+
+> _Example_
+> 
+> If a classifier produces lower positive prediction rates for a protected group, a small number of negative predictions for that group may be **flipped to positive outcomes**.
+
+Advantages:  
+
+- Simple to implement  
+- Does not require retraining the model  
+
+Limitations:  
+
+- May introduce instability if applied excessively  
+- Can reduce transparency if decision changes are not documented
+
+---
+
 <a id="rejection"></a>
 ## 4️⃣ Rejection Option Classification Framework
 → Defer uncertain predictions to human review.
