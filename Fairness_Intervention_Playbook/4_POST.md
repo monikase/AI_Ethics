@@ -500,13 +500,13 @@ Typical pipeline:
 
 Model Prediction  
 ↓  
-Calibration Layer  
+**Calibration Layer**  
 ↓  
-Score Transformation  
+**Score Transformation**  
 ↓  
-Threshold Decision  
+**Threshold Decision**  
 ↓  
-Rejection Option Check  
+**Rejection Option Check**  
 ↓  
 Final Decision  
 
@@ -534,7 +534,7 @@ Evaluate fairness across groups using:
 
 Measure predictive performance:
 
-- accuracy
+- Accuracy
 - AUC
 - F1 score
 
@@ -561,9 +561,9 @@ Generate Pareto curves comparing fairness and performance.
 
 Evaluate robustness under:
 
-- new data distributions
-- parameter changes
-- temporal shifts
+- New data distributions
+- Parameter changes
+- Temporal shifts
 
 ---
 
