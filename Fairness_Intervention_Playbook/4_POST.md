@@ -195,21 +195,13 @@ Miscalibration across demographic groups leads to inconsistent risk interpretati
 
 1. Split validation data by demographic groups
 
-2. For each group:
-a. Plot reliability diagram
-b. Compute Expected Calibration Error (ECE)
-c. Compute Maximum Calibration Error (MCE)
+2. For each group:  
+   1. Create a reliability diagram comparing predicted probabilities to observed outcomes.  
+   2. Compute **Expected Calibration Error (ECE)**.  
+   3. Compute **Maximum Calibration Error (MCE)**.  
+   4. Identify probability regions with significant miscalibration.  
 
-3. Compare calibration errors across groups
-
-Example:
-
-| Group | Expected Calibration Error |
-|------|-----------------------------|
-| Men | 0.03 |
-| Women | 0.08 |
-
-Higher ECE indicates greater miscalibration.
+3. Compare calibration errors across groups  
 
 ---
 
@@ -219,18 +211,19 @@ Higher ECE indicates greater miscalibration.
 
 Transforms prediction scores using logistic regression.  
 
-P(Y=1|s) = 1 / (1 + exp(-(As + B)))  
+$$
+P(Y=1|s) = \frac{1}{1 + \exp(-(As + B))}
+$$
 
-
-Parameters A and B are fitted on validation data.
+Parameters **A** and **B** are estimated using validation data.  
 
 ---
 
 ### Isotonic Regression
 
-A non-parametric calibration technique that preserves ranking order.
+A **non-parametric calibration method** that learns a monotonic mapping from prediction scores to calibrated probabilities.
 
-Useful when calibration errors are **non-linear**.
+This approach preserves ranking order and is useful when calibration errors are **non-linear**.
 
 ---
 
@@ -238,19 +231,29 @@ Useful when calibration errors are **non-linear**.
 
 Applies a scaling parameter to neural network logits.  
 
-P(Y=1|s) = 1 / (1 + exp(-s/T))  
+$$
+P(Y=1|s) = \frac{1}{1 + \exp(-s/T)}
+$$
 
-
-Where **T** is a learned temperature parameter.
+Where **T** is the learned temperature parameter.  
 
 ---
 
 ## 2.3 Calibration Implementation Workflow
 
-1. Divide validation data into calibration set and test set
-2. Fit calibration models separately for each group
-3. Apply calibration transformation to model outputs
-4. Verify calibration improvement using reliability diagrams
+1. Split validation data into **training**, **calibration**, and **test** sets.
+
+2. Fit calibration models separately for each demographic group.
+
+3. Apply group-specific calibration transformations to model outputs.
+
+4. Verify calibration improvement using:
+
+   - Expected Calibration Error (ECE)
+   - reliability diagrams
+   - subgroup calibration comparisons
+
+5. Document calibration improvements and potential impacts on other fairness metrics.
 
 
 ---
