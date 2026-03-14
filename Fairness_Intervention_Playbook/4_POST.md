@@ -207,7 +207,7 @@ Miscalibration across demographic groups leads to inconsistent risk interpretati
 
 ---
 
-## 2.2 Calibration Techniques
+### 2.2 Calibration Techniques
 
 ---
 
@@ -239,7 +239,7 @@ Where **T** is the learned temperature parameter.
 
 ---
 
-## 2.3 Calibration Implementation Workflow
+### 2.3 Calibration Implementation Workflow
 
 ---
 
