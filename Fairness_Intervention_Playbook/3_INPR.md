@@ -351,27 +351,39 @@ This formulation trains the model to **achieve the best predictive performance w
 
 ---
 
-#### Implementation Components
+#### Components
 
-- constrained optimization objective  
-- slack variables or tolerance thresholds  
-- fairness metric monitoring  
+- Modified objective function with fairness constraints  
+- Slack variables or tolerance thresholds  
+- Fairness metric monitoring during training  
+
+#### Parameters
+
+- Constraint weight ($\lambda$) controlling the fairness–performance trade-off  
+- Tolerance threshold ($\varepsilon$) for allowable constraint violations  
+- Convergence criteria adjustments for constrained optimization  
+
+#### Implementation Considerations
+
+- May require specialized optimization solvers  
+- Training time may increase by **30–50%**  
+- Works best with **convex loss functions**
 
 #### Use Cases
 
-- linear models  
-- convex optimization problems  
-- regulated applications requiring strong fairness guarantees  
+- Linear models  
+- Convex optimization problems  
+- Regulated applications requiring strong fairness guarantees  
 
-### Advantages
+#### Advantages
 
-- provides formal fairness guarantees  
-- transparent mathematical formulation  
+- Provides formal fairness guarantees  
+- Transparent mathematical formulation  
 
-### Limitations
+#### Limitations
 
-- can increase optimization complexity  
-- strict constraints may reduce performance  
+- Increases optimization complexity  
+- Strict constraints may reduce predictive performance
 
 ---
 
