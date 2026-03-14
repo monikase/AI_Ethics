@@ -92,13 +92,13 @@ Document the model type and training framework used.
 >
 > The current loan approval system uses a tree-based model, specifically Gradient Boosting for binary classification.
 > Category:
-> **Tree-based models**
-> Model used:
-> **Gradient Boosting Classifier**
-> Reason for selection:
-> - Handles **tabular financial data well**
-> - Captures **non-linear relationships** between applicant attributes and approval probability
-> - Performs better than linear models in internal validation tests
+> **Tree-based models**  
+> Model used:  
+> **Gradient Boosting Classifier**  
+> Reason for selection:  
+> - Handles **tabular financial data well**  
+> - Captures **non-linear relationships** between applicant attributes and approval probability  
+> - Performs better than linear models in internal validation tests  
 
 ---
 
