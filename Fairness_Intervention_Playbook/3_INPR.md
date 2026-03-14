@@ -332,18 +332,21 @@ The model minimizes prediction error while ensuring fairness conditions are sati
 
 #### Objective Structure
 
-#### Objective Structure
+Minimize: $\min_{\theta} L(\theta)$  
 
-Minimize: $L(\theta)$  
-
-Subject to: $C(\theta) \le \varepsilon$  
+Subject to: $C_i(\theta) \le \varepsilon_i \quad \forall i \in \{1,2,\ldots,k\}$  
 
 Where:  
 
-- $L(\theta)$ — prediction loss function minimized during training   
-- $C(\theta)$ — fairness constraint measuring deviation from the desired fairness condition  
+- $L(\theta)$ — prediction loss function minimized during training  
+- $C_i(\theta)$ — fairness constraint for subgroup $i$  
 - $\theta$ — model parameters  
-- $\varepsilon$ — acceptable tolerance for fairness violations
+- $\varepsilon_i$ — tolerance level allowed for fairness violations  
+- $k$ — number of fairness constraints or protected subgroups  
+
+**Interpretation**
+
+This formulation trains the model to **achieve the best predictive performance while ensuring that fairness constraints remain within acceptable limits for all protected groups or subgroups.**  
 
 
 #### Implementation Components
