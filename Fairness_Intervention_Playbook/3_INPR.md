@@ -354,8 +354,8 @@ This formulation trains the model to **achieve the best predictive performance w
 #### Components
 
 - Modified objective function with fairness constraints  
-- Slack variables or tolerance thresholds  
-- Fairness metric monitoring during training  
+- Relaxation parameters or slack variables for constraint satisfaction  
+- Fairness metric monitoring and optimization adjustments during training  
 
 #### Parameters
 
