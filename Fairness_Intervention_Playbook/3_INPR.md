@@ -517,6 +517,8 @@ These extensions help ensure that fairness protections apply to **all demographi
 
 ### 3.3 Fairness Regularization
 
+---
+
 #### Description
 
 Fairness regularization incorporates fairness penalties directly into the model's loss function.  
@@ -616,6 +618,8 @@ These extensions help ensure that fairness regularization protects **all demogra
 ---
 
 ### 3.4 Multi-Objective Optimization
+
+---
 
 #### Description
 
