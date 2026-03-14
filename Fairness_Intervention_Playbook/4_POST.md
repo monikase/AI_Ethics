@@ -128,61 +128,33 @@ Ensures equal positive prediction rates across groups.
 
 $P(\hat{Y} = 1 \mid A = a) = P(\hat{Y} = 1 \mid A = b)$
 
-This means the **probability of receiving a positive prediction should be the same for all demographic groups**, regardless of the true outcome.
-
-> _Example (before threshold adjustment):_ 
->  
-> | Group | Approval Rate |
-> |------|---------------|
-> | Men | 67% |
-> | Women | 63% |
->
-> The model approves a larger proportion of men than women.
-> To achieve demographic parity, decision thresholds can be adjusted so approval rates become equal.
->
-> _Example (after threshold adjustment):_
->
-> | Group | Approval Rate |
-> |------|---------------|
-> | Men | 65% |
-> | Women | 65% |
->
-> The thresholds are modified so both groups receive **the same approval probability**.  
-
-Threshold adjustments can increase or decrease approval rates so both groups receive equal selection probability.
+This definition requires that **different demographic groups receive positive predictions at the same overall rate**.
 
 ---
 
 ### Equal Opportunity
 
-Ensures equal true positive rates across groups.  
+Ensures equal true positive rates across demographic groups.
 
-P(Ŷ = 1 | Y = 1, A = a) = P(Ŷ = 1 | Y = 1, A = b)  
+$P(\hat{Y} = 1 \mid Y = 1, A = a) = P(\hat{Y} = 1 \mid Y = 1, A = b)$
 
-This focuses on **qualified individuals receiving equal opportunity**.
-
-Example:
-
-| Group | True Positive Rate |
-|------|-------------------|
-| Men | 82% |
-| Women | 74% |
-
-Thresholds can be adjusted so both groups reach similar TPR values.
+This criterion focuses on ensuring that **qualified individuals receive positive predictions at equal rates across groups**.
 
 ---
 
 ### Equalized Odds
 
-Ensures equal true positive and false positive rates across groups.  
+Ensures equal true positive and false positive rates across groups.
 
-P(Ŷ = 1 | Y = y, A = a) = P(Ŷ = 1 | Y = y, A = b)  
+$P(\hat{Y} = 1 \mid Y = y, A = a) = P(\hat{Y} = 1 \mid Y = y, A = b)$
 
-This approach balances both types of prediction errors.
+for $y \in \{0,1\}$.
 
 ---
 
-## 1.2 Threshold Search Algorithm 
+### 1.2 Threshold Search Algorithm 
+
+---
 
 1. Split validation dataset by protected attribute groups
 
@@ -199,7 +171,9 @@ a. Identify candidate thresholds satisfying fairness constraints
 
 ---
 
-## 1.3 Practical Threshold Selection Guidelines
+### 1.3 Practical Threshold Selection Guidelines
+
+---
 
 Use group-specific thresholds when:
 
