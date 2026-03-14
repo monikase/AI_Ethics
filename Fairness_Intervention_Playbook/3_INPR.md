@@ -323,9 +323,10 @@ Recommended approaches include:
 
 ### 3.1 Constraint Optimization
 
-#### Description
-Constraint-based approaches incorporate fairness definitions as **explicit constraints within the optimization process**.
+---
 
+#### Description
+Constraint-based approaches incorporate fairness definitions as **explicit constraints within the optimization process**.  
 The model minimizes prediction error while ensuring fairness conditions are satisfied.  
 
 ---
@@ -338,16 +339,17 @@ Subject to: $C_i(\theta) \le \varepsilon_i \quad \forall i \in \{1,2,\ldots,k\}$
 
 Where:  
 
-- $L(\theta)$ — prediction loss function minimized during training  
-- $C_i(\theta)$ — fairness constraint for subgroup $i$  
-- $\theta$ — model parameters  
-- $\varepsilon_i$ — tolerance level allowed for fairness violations  
-- $k$ — number of fairness constraints or protected subgroups  
+- $L(\theta)$ - prediction loss function minimized during training  
+- $C_i(\theta)$ - fairness constraint for subgroup $i$  
+- $\theta$ - model parameters  
+- $\varepsilon_i$ - tolerance level allowed for fairness violations  
+- $k$ - number of fairness constraints or protected subgroups  
 
-**Interpretation**
+Interpretation  
 
 This formulation trains the model to **achieve the best predictive performance while ensuring that fairness constraints remain within acceptable limits for all protected groups or subgroups.**  
 
+---
 
 #### Implementation Components
 
