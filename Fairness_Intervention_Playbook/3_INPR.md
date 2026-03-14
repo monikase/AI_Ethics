@@ -191,10 +191,10 @@ Different fairness techniques integrate differently across model families.
 
 For each model type, document:
 
-- Implementation complexity
-- Expected performance impact
-- Explainability implications
-- Compatibility with existing training pipelines
+- Technical limitations affecting fairness implementation  
+- Modification approaches with least disruption  
+- Performance impact expectations  
+- Explainability implications  
 
 This analysis ensures that fairness interventions **fit within the existing technical ecosystem**.
 
