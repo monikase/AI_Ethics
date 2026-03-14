@@ -211,9 +211,7 @@ Miscalibration across demographic groups leads to inconsistent risk interpretati
 
 Transforms prediction scores using logistic regression.  
 
-$$
-P(Y=1|s) = \frac{1}{1 + \exp(-(As + B))}
-$$
+$P(Y=1 \mid s) = \frac{1}{1 + \exp(-(As + B))}$  
 
 Parameters **A** and **B** are estimated using validation data.  
 
@@ -231,9 +229,7 @@ This approach preserves ranking order and is useful when calibration errors are 
 
 Applies a scaling parameter to neural network logits.  
 
-$$
-P(Y=1|s) = \frac{1}{1 + \exp(-s/T)}
-$$
+$P(Y=1 \mid s) = \frac{1}{1 + \exp(-s/T)}$  
 
 Where **T** is the learned temperature parameter.  
 
@@ -248,7 +244,6 @@ Where **T** is the learned temperature parameter.
 3. Apply group-specific calibration transformations to model outputs.
 
 4. Verify calibration improvement using:
-
    - Expected Calibration Error (ECE)
    - reliability diagrams
    - subgroup calibration comparisons
