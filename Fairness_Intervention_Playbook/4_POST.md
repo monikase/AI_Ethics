@@ -124,18 +124,20 @@ Different definitions require **different threshold adjustments across demograph
 
 ### Demographic Parity
 
-Ensures equal positive prediction rates across groups.  
+Ensures equal positive prediction rates across groups.
 
-P(Ŷ = 1 | A = a) = P(Ŷ = 1 | A = b)  
+\[
+P(\hat{Y}=1 \mid A=a) = P(\hat{Y}=1 \mid A=b)
+\]
 
-Example:
+> Example:  
+>  
+> | Group | Approval Rate |
+> |------|---------------|
+> | Men | 67% |
+> | Women | 63% |  
 
-| Group | Approval Rate |
-|------|---------------|
-| Men | 67% |
-| Women | 63% |
-
-A threshold adjustment may increase approval rates for women until both groups receive equal approval probability.
+Threshold adjustments can increase or decrease approval rates so both groups receive equal selection probability.
 
 ---
 
