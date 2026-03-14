@@ -253,8 +253,9 @@ Linear models support fairness constraints directly in the optimization objectiv
 
 | Fairness Goal | Recommended Technique |
 |---|---|
-| **Demographic parity** | Constraint optimization |   
-| **Equal opportunity** | Fairness regularization |   
+| **Demographic parity** | Constraint optimization with optimization-based preprocessing |   
+| **Equal opportunity** | Constraint optimization with adjusted thresholds |  
+| **Equalized odds** | Constraint optimization with TPR/FPR constraints |  
 | **Individual fairness** | Similarity-based regularization |  
 
 ---
@@ -268,7 +269,8 @@ Tree-based models require fairness mechanisms integrated into splitting criteria
 | Fairness Goal | Recommended Technique |
 |---|---|
 | **Demographic parity** | Fair splitting criteria |   
-| **Equal opportunity** | Fair splitting with weighted samples |   
+| **Equal opportunity** | Fair splitting with weighted samples |  
+| **Equalized odds** | Balanced splitting criteria |  
 | **Individual fairness** | Regularized tree induction |  
 
 ---
@@ -282,7 +284,8 @@ Neural networks allow fairness interventions through architectural changes and m
 | Fairness Goal | Recommended Technique |
 |---|---|
 | **Demographic parity** | Adversarial debiasing |   
-| **Equal opportunity** | Multi-task learning with fairness head |   
+| **Equal opportunity** | Multi-objective optimization |   
+| **Equalized odds** | Multi-task fairness loss |  
 | **Individual fairness** | Gradient penalties or contrastive learning |  
 
 ---
