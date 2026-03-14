@@ -338,6 +338,10 @@ $$
 L(\theta)
 $$
 
+$$
+\text{prediction loss}(\theta)
+$$
+
 
 Subject to:  
 
