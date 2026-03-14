@@ -56,7 +56,7 @@ The In-Processing Fairness Toolkit consists of the following components:
 - 1.4 Compatibility Matrix
 - 1.5 Implementation Considerations
 ### 2️⃣ [Technique Selection Framework](#technique)
-### 3️⃣ Implementation Pattern Catalog
+### 3️⃣ [Implementation Pattern Catalog](#implementation)
 ### 4️⃣ Integration Verification Framework
 ### 5️⃣ User Documentation
 ### 6. Implementation Checklist
@@ -311,7 +311,7 @@ Recommended approaches include:
 
 ---
 
-
+<a id="implementation"></a>
 ## 3️⃣ Implementation Pattern Catalog
 → Reusable patterns for embedding fairness in model training.
 
