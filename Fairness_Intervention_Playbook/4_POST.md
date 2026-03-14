@@ -118,7 +118,6 @@ Different definitions require **different threshold adjustments across demograph
 | Demographic Parity | Equal selection rates across groups | Adjust thresholds so approval rates match |
 | Equal Opportunity | Equal true positive rates | Adjust thresholds so qualified individuals receive equal approval rates |
 | Equalized Odds | Equal true and false positive rates | Adjust thresholds to balance both types of classification errors |
-| Predictive Parity (optional) | Equal precision across groups | Adjust thresholds so predicted positives have equal correctness |
 
 ---
 
