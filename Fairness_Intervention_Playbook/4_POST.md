@@ -149,11 +149,11 @@ This definition ensures that **both types of prediction errors are balanced acro
 
 1. Split the validation dataset by protected attribute groups.  
 
-2. For each group:  
-- Compute ROC curve points across possible threshold values.  
-- For each fairness definition:
-    - Identify thresholds satisfying fairness constraints.
-    - Select the threshold that maximizes utility.  
+2. For each group:
+   a. Compute ROC curve points
+   b. For each fairness definition:
+      1. Identify valid thresholds
+      2. Select threshold maximizing utility
 
 4. Validate the selected thresholds on held-out test data.  
 
