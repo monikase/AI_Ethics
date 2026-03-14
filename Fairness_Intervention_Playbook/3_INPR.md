@@ -77,22 +77,22 @@ Identify the model architecture currently used.
 Possible categories include:
 
 - **Linear models**  
-  - logistic regression  
-  - linear SVM  
+  - Logistic regression  
+  - Linear SVM  
 
 - **Tree-based models**  
-  - decision trees  
-  - random forests  
-  - gradient boosting  
+  - Decision trees  
+  - Random forests  
+  - Gradient boosting  
 
 - **Neural networks**  
-  - feedforward networks  
-  - convolutional networks  
-  - recurrent networks  
+  - Feedforward networks  
+  - Convolutional networks  
+  - Recurrent networks  
 
 - **Other architectures**  
-  - probabilistic models  
-  - ensemble methods  
+  - Probabilistic models  
+  - Ensemble methods  
 
 Document the model type and training framework used.
 
@@ -104,11 +104,11 @@ Record important training properties.
 
 Example attributes include:
 
-- training approach (batch / online)
-- loss function
-- regularization methods
-- hyperparameter tuning strategy
-- optimization algorithm
+- Training approach (batch / online)
+- Loss function
+- Regularization methods
+- Hyperparameter tuning strategy
+- Optimization algorithm
 
 These properties affect how fairness objectives can be integrated into training.
 
@@ -120,10 +120,10 @@ Identify constraints that may affect fairness implementation.
 
 Important factors include:
 
-- computational resources available
-- acceptable increase in training time
-- model explainability requirements
-- deployment environment limitations
+- Computational resources available
+- Acceptable increase in training time
+- Model explainability requirements
+- Deployment environment limitations
 
 Some fairness approaches introduce additional computational complexity or reduce interpretability.
 
@@ -146,10 +146,10 @@ Different fairness techniques integrate differently across model families.
 
 For each model type, document:
 
-- implementation complexity
-- expected performance impact
-- explainability implications
-- compatibility with existing training pipelines
+- Implementation complexity
+- Expected performance impact
+- Explainability implications
+- Compatibility with existing training pipelines
 
 This analysis ensures that fairness interventions **fit within the existing technical ecosystem**.
 
