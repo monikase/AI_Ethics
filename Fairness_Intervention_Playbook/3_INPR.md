@@ -726,16 +726,18 @@ These extensions ensure that fairness optimization protects **all demographic gr
 
 Before implementing fairness interventions:
 
-1. Train the baseline model  
+1. Train the baseline model without fairness intervention  
 2. Measure performance metrics  
 3. Measure fairness metrics  
 
-Example metrics:
+Example metrics include:
 
 - AUC  
 - accuracy  
 - demographic parity difference  
 - equal opportunity difference  
+
+Document these metrics to create a **baseline reference for later comparison**.
 
 ---
 
@@ -744,20 +746,23 @@ Example metrics:
 After implementing fairness techniques:
 
 - retrain the model with fairness intervention  
-- compare fairness and performance metrics  
-- analyze subgroup behavior  
+- compare fairness and performance metrics against the baseline  
+- analyze subgroup behavior across protected attributes  
+
+This step verifies whether fairness improvements are achieved **without unacceptable performance degradation**.
 
 ---
 
 ### 4.3 Robustness Testing
 
-Ensure fairness improvements generalize.
+Ensure fairness improvements generalize across different conditions.
 
 Recommended tests include:
 
 - validation across demographic subgroups  
 - sensitivity to hyperparameter changes  
 - evaluation across different training splits  
+- behavior under potential **distribution shifts**
 
 ---
 
@@ -773,7 +778,7 @@ Typical success thresholds include:
 
 ---
 
-## 5️⃣ User Documentation
+## 5. User Documentation
 → Guidelines for applying the toolkit.
 
 Users should follow the toolkit through the following steps:
@@ -789,7 +794,7 @@ All decisions should be documented to ensure transparency.
 
 ---
 
-## 6️⃣ Implementation Checklist
+## 6. Implementation Checklist
 
 Before deploying fairness-aware models:
 
@@ -816,7 +821,7 @@ Before deploying fairness-aware models:
 
 ---
 
-## 7️⃣ Practical Workflow Summary
+## 7. Practical Workflow Summary
 
 1. Conduct model architecture analysis  
 2. Identify fairness objectives  
@@ -828,7 +833,7 @@ Before deploying fairness-aware models:
 
 ---
 
-## 8️⃣ Core Principles
+## 8. Core Principles
 
 Effective in-processing fairness interventions should:
 
