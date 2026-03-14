@@ -60,6 +60,7 @@ The In-Processing Fairness Toolkit consists of the following components:
 
 ---
 
+<a id="classification"></a>
 ## 1️⃣ Model Architecture Analysis Template
 → Evaluate model compatibility with in-processing fairness techniques.
 
@@ -69,7 +70,6 @@ Different fairness techniques integrate more naturally with certain model famili
 
 ---
 
-<a id="classification"></a>
 ### 1.1 Model Type Classification
 
 Identify the model architecture currently used.
