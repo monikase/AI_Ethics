@@ -1,4 +1,4 @@
-## 1_CFT References
+## 1_CAUS References
 
 ### Causal Inference Foundations
 
@@ -44,7 +44,7 @@
 
 ---
 
-## 2_PPFT References
+## 2_PREP References
 
 ### Algorithmic Fairness Foundations
 
@@ -86,7 +86,7 @@
 
 ---
 
-## 3_IPFT References
+## 3_INPR References
 
 ### Fairness Constraints and Optimization
 
@@ -144,7 +144,7 @@
 
 ---
 
-## 4_PostPFT References
+## 4_POST References
 
 ### Threshold Optimization and Post-Processing Fairness
 
