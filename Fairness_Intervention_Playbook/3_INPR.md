@@ -138,7 +138,8 @@ Different fairness techniques integrate differently across model families.
 | Constraint Optimization | High | Low | Medium |
 | Adversarial Debiasing | Low | Low | High |
 | Fairness Regularization | High | Medium | High |
-| Multi-Objective Optimization | Medium | Medium | High |
+| Fair Representations | Medium | Low | High |
+| Specialized Algorithms | Medium | High | Low |
 
 ---
 
