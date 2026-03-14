@@ -126,13 +126,18 @@ These properties affect how fairness objectives can be integrated into training.
 >   
 > **Loss function**  
 > - Logistic loss (binary cross-entropy)  
+>   
 > **Regularization methods currently used**  
 > - Tree depth limitation  
 > - Learning rate shrinkage  
 > - Minimum samples per leaf  
+>   
 > **Hyperparameter tuning approach**  
 > - Grid search with cross-validation  
-> - Evaluation based on **AUC and accuracy**  
+> - Evaluation based on **AUC and accuracy**
+>
+> **Optimization algorithm**
+> - Gradient Boosting optimization, where trees are added sequentially to minimize the loss function.  
 
 ---
 
