@@ -329,6 +329,8 @@ Recommended approaches include:
 Constraint-based approaches incorporate fairness definitions as **explicit constraints within the optimization process**.  
 The model minimizes prediction error while ensuring fairness conditions are satisfied.   
 
+---
+
 #### Objective Structure
 
 Minimize: $\min_{\theta} L(\theta)$  
@@ -343,9 +345,11 @@ Where:
 - $\varepsilon_i$ - tolerance level allowed for fairness violations  
 - $k$ - number of fairness constraints or protected subgroups  
 
-Interpretation  
+**Interpretation**    
 
 This formulation trains the model to **achieve the best predictive performance while ensuring that fairness constraints remain within acceptable limits for all protected groups or subgroups.**    
+
+---
 
 #### Components
 
@@ -353,11 +357,15 @@ This formulation trains the model to **achieve the best predictive performance w
 - Relaxation parameters or slack variables for constraint satisfaction  
 - Fairness metric monitoring and optimization adjustments during training  
 
+---
+
 #### Parameters
 
 - Constraint weight ($\lambda$) controlling the fairness–performance trade-off  
 - Tolerance threshold ($\varepsilon$) for allowable constraint violations  
 - Convergence criteria adjustments for constrained optimization  
+
+---
 
 #### Implementation Considerations
 
@@ -365,16 +373,22 @@ This formulation trains the model to **achieve the best predictive performance w
 - Training time may increase by **30–50%**  
 - Works best with **convex loss functions**
 
+---
+
 #### Use Cases
 
 - Linear models  
 - Convex optimization problems  
 - Regulated applications requiring strong fairness guarantees  
 
+---
+
 #### Advantages
 
 - Provides formal fairness guarantees  
 - Transparent mathematical formulation  
+
+---
 
 #### Limitations
 
@@ -396,6 +410,8 @@ Adversarial debiasing trains two models simultaneously:
 
 During training, the predictor learns representations that **maximize prediction accuracy while preventing the adversary from accurately identifying protected attributes**.  
 This encourages the model to remove sensitive information from learned representations.
+
+---
 
 #### Architecture
 
