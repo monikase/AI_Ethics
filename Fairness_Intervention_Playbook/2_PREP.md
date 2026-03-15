@@ -30,7 +30,7 @@ Rather than applying fairness interventions blindly, the toolkit focuses on **ma
 
 ## Relationship to the Causal Fairness Toolkit
 
-The **Pre-Processing Fairness Toolkit** is designed to work in conjunction with the **[Causal Fairness Toolkit](https://github.com/monikase/AI_Ethics/blob/main/Fairness_Intervention_Playbook/1_CFT.md)**.
+The **Pre-Processing Fairness Toolkit** is designed to work in conjunction with the **[Causal Fairness Toolkit](https://github.com/monikase/AI_Ethics/blob/main/Fairness_Intervention_Playbook/1_CAUS.md)**.
 
 While the Causal Fairness Toolkit focuses on identifying **why disparities occur** by analyzing causal pathways between protected attributes and outcomes, the Pre-Processing Toolkit focuses on **how to intervene at the data level to mitigate those disparities**.
 
