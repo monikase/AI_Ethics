@@ -186,8 +186,8 @@ Enhance backlog with fairness visibility:
   - affected populations  
  
 🔗 **Playbook Connection**  
-- Audit findings become backlog items  
-- Intervention strategies become implementation tasks  
+- Fairness Audit findings become backlog items  
+- Fairness Intervention strategies become implementation tasks  
 
 ---
 
@@ -197,9 +197,7 @@ Enhance backlog with fairness visibility:
 
 ---
 
-A feature is complete only if **all fairness conditions are met**.
-
----
+A feature is complete only if **all fairness conditions are met**.  
 
 ### Data
 
@@ -207,7 +205,6 @@ A feature is complete only if **all fairness conditions are met**.
 - Missing data patterns analyzed per group  
 - Bias sources documented  
 
----
 
 ### Model
 
@@ -220,7 +217,6 @@ A feature is complete only if **all fairness conditions are met**.
   - limitations  
   - assumptions  
 
----
 
 ### Interface
 
@@ -228,7 +224,6 @@ A feature is complete only if **all fairness conditions are met**.
 - No usability gaps across groups  
 - Explanations understandable across demographics
 
----
 
 🔗 **Playbook Connection**  
 - Fairness Audit → ensures identified biases are tested before completion  
