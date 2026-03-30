@@ -109,7 +109,11 @@ It consists of the following components:
 ### 1.1 Fairness-Enhanced User Stories (SAFE Framework)
 
 Traditional user stories omit fairness considerations.  
-The SAFE framework extends them to include explicit equity requirements.
+The SAFE framework extends them to include explicit equity requirements.  
+
+🔗 **Playbook Connection**    
+- **Fairness Audit** → identifies which groups are impacted and where bias occurs  
+- **Fairness Intervention** → defines what fairness means and how it should be achieved  
 
 #### Template
 As a [user],  
@@ -120,25 +124,37 @@ while ensuring [fairness goal] across [protected + intersectional groups].
 
 #### SAFE Breakdown
 
-- **S - Specific Protected Attributes**  
-  Identify relevant groups (e.g., gender, age, ethnicity)
+- **S - Specific Protected Attributes**    
+  Identify relevant groups (e.g., gender, age, ethnicity)  
+  → 🔗 *Derived from Fairness Audit findings (who is affected by bias)*   
 
 - **A - Actionable Fairness Definition**  
-  Define fairness concept (e.g., equal opportunity)
+  Define fairness concept (e.g., equal opportunity)  
+  → 🔗 *Informed by Fairness Intervention strategy (what fairness goal to apply)*  
 
 - **F - Feature Integration Point**  
-  Where fairness applies in the feature
+  Where fairness applies in the feature  
+  → 🔗 *Connects intervention techniques to specific product functionality*  
 
 - **E - Expected Outcome Measures**  
-  How fairness will be validated
-
+  How fairness will be validated  
+  → 🔗 *Aligns with both:*  
+  *Audit → baseline metrics*  
+  *Intervention → expected improvement targets*    
 
 #### Example
 
 > As a recruiter,  
 > I want candidates ranked by relevance,  
 > so that I can shortlist efficiently,  
-> while ensuring equivalent ranking accuracy across gender, age, and their intersections.
+> while ensuring equivalent ranking accuracy across gender, age, and their intersections.   
+
+**Key Insight**    
+The SAFE framework transforms:
+- audit insights → into requirements  
+- intervention strategies → into measurable outcomes  
+
+This ensures fairness is **designed into features from the start**, rather than evaluated only after development.  
 
 ---
 
