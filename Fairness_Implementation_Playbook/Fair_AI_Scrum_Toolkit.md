@@ -18,7 +18,7 @@ Because of these gaps, bias can quietly enter every stage of the ML lifecycle:
 
 The outcome is not intentional harm but systems that still reinforce existing inequalities, even when built by well-meaning teams. 
 
---- 
+
 
 ## Business Value of Integrating Fairness into Scrum 
 
