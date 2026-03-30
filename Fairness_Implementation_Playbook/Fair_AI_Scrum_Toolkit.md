@@ -155,9 +155,7 @@ Acceptance criteria define **how fairness is validated**.
 - **F - Fairness Metrics Thresholds**  
 - **A - Auditing Requirements**  
 - **I - Intersectional Analysis**  
-- **R - Reporting Guidelines**
-
----
+- **R - Reporting Guidelines**  
 
 #### Example
 
