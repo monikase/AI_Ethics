@@ -143,10 +143,10 @@ Acceptance criteria define **how fairness is validated**.
 
 #### FAIR Breakdown
 
-- **F — Fairness Metrics Thresholds**  
-- **A — Auditing Requirements**  
-- **I — Intersectional Analysis**  
-- **R — Reporting Guidelines**
+- **F - Fairness Metrics Thresholds**  
+- **A - Auditing Requirements**  
+- **I - Intersectional Analysis**  
+- **R - Reporting Guidelines**
 
 ---
 
