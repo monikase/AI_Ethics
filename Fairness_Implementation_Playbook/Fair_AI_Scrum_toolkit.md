@@ -18,7 +18,7 @@ Because of these gaps, bias can quietly enter every stage of the ML lifecycle:
 
 The outcome is not intentional harm but systems that still reinforce existing inequalities, even when built by well-meaning teams. 
 
--- 
+--- 
 
 ## Business Value of Integrating Fairness into Scrum 
 
@@ -29,7 +29,7 @@ From a business perspective, embedding fairness into agile development is not ju
 - **Regulatory Readiness** With increasing AI regulations (e.g., EU AI Act), integrating fairness into workflows ensures compliance is built-in rather than retrofitted.
 - **Team Efficiency & Alignment** Embedding fairness into Scrum reduces ambiguity. Teams know when and how to address bias, avoiding last-minute rework and ethical uncertainty.
 
--- 
+--- 
 ## What This Toolkit Will Do 
 
 - Practical fairness checkpoints integrated into Scrum ceremonies
@@ -47,7 +47,7 @@ Ultimately, this toolkit transforms fairness from an abstract principle into a *
 - Ceremony modifications will include review points for architecture-specific fairness considerations from **Advanced Architecture Cookbook**.
 - Document templates will reference regulatory requirements addressed in **Regulatory Compliance Guide**. and do all the document more wider applicable, case study will be later added in separate file.  
 
---
+---
 
 ## Toolkit Overview
 
