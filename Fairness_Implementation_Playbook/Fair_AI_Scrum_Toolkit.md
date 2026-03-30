@@ -98,11 +98,7 @@ It consists of the following components:
 
 <a id="artifacts"></a>
 ## 1️⃣ Scrum Artifact Enhancements  
-→ Embed fairness directly into requirements and backlog items.  
-
-🔗 **Playbook Connection**   
-- Fairness Audit → identifies bias risks to include in user stories   
-- Fairness Intervention → defines mitigation goals embedded in stories  
+→ Embed fairness directly into requirements and backlog items.    
   
 ---
 
@@ -144,10 +140,10 @@ while ensuring [fairness goal] across [protected + intersectional groups].
 
 #### Example
 
-> As a recruiter,  
-> I want candidates ranked by relevance,  
-> so that I can shortlist efficiently,  
-> while ensuring equivalent ranking accuracy across gender, age, and their intersections.   
+> As a **recruiter**,  
+> I want **candidates ranked by relevance**,  
+> so that I can **shortlist efficiently**,  
+> while **ensuring equivalent ranking accuracy across gender, age, and their intersections**.   
 
 **Key Insight**    
 The SAFE framework transforms:
