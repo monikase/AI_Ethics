@@ -91,6 +91,11 @@ It consists of the following components:
 
 ---
 
+> **Note:** The examples provided throughout this toolkit are illustrative and simplified for clarity.  
+> They are designed to demonstrate how fairness concepts can be operationalized within Scrum workflows, rather than representing fully implemented production systems.
+
+---
+
 <a id="artifacts"></a>
 ## 1️⃣ Scrum Artifact Enhancements  
 → Embed fairness directly into requirements and backlog items.  
