@@ -308,16 +308,12 @@ Prioritize based on:
 - Identify affected groups  
 - Allocate fairness tasks  
 
----
-
 ### 4.2 Daily Execution Practices
 
 Add to stand-up:
 
 - “Any fairness risks or blockers?”  
 - “Are fairness tasks progressing?”  
-
----
 
 ### 4.3 Sprint Review Enhancements
 
@@ -333,8 +329,6 @@ Include:
 - Fairness Audit → provides baseline comparison  
 - Fairness Intervention → demonstrates impact of mitigation  
 
----
-
 ### 4.4 Retrospective Techniques
 
 Add prompts:
@@ -342,8 +336,6 @@ Add prompts:
 - Where did bias emerge?  
 - What did we miss?  
 - Which fairness tests were most useful?  
-
----
 
 ### 4.5 Mid-Sprint Fairness Checkpoints
 
@@ -369,26 +361,21 @@ Purpose:
 
 ---
 
-### Product Owner
+#### Product Owner
 - Embed fairness in requirements  
 - Prioritize fairness work  
 
----
-
-### Scrum Master
+#### Scrum Master
 - Ensure fairness ceremonies happen  
 - Track fairness blockers  
 
----
 
-### Developers / Data Scientists
+#### Developers / Data Scientists
 - Implement fairness techniques  
 - Conduct testing  
 - Document results  
 
----
-
-### Shared Responsibility
+#### Shared Responsibility
 
 Fairness is a **team responsibility**, not a specialist task.  
 
@@ -405,31 +392,27 @@ Fairness is a **team responsibility**, not a specialist task.
 
 ---
 
-### Core Principle
+#### Core Principle
 
 Fairness must be evaluated across **intersections of attributes**, not independently.
 
----
 
-### Implementation
+#### Implementation
 
 - User stories include intersectional groups  
 - Acceptance criteria require intersectional validation  
 - Testing includes subgroup combinations  
 
----
+#### Example
 
-### Example
+> Instead of:
+> - “fair across gender and age”
 
-Instead of:
-- “fair across gender and age”
+> Use:
+> - “fair across all intersections of gender and age”
 
-Use:
-- “fair across all intersections of gender and age”
 
----
-
-### Practical Constraints
+#### Practical Constraints
 
 Due to data limitations:
 
@@ -449,23 +432,19 @@ Due to data limitations:
 
 ---
 
-### Process Metrics
+#### Process Metrics
 
 - % of stories with fairness requirements  
 - fairness task completion rate  
 - fairness discussions frequency  
 
----
-
-### Outcome Metrics
+#### Outcome Metrics
 
 - disparity reduction  
 - bias incidents in production  
 - time to resolve fairness issues  
 
----
-
-### Target Benchmarks (High-Risk Systems)
+#### Target Benchmarks (High-Risk Systems)
 
 - 100% fairness coverage in user stories  
 - ≥95% fairness task completion  
@@ -482,31 +461,23 @@ Due to data limitations:
 
 ---
 
-### Step 1: Assess Current State
+#### Step 1: Assess Current State
 - Identify gaps in artifacts, roles, ceremonies  
 
----
-
-### Step 2: Introduce Core Changes
+#### Step 2: Introduce Core Changes
 - Enhance user stories  
 - Update Definition of Done  
 - Add fairness tasks  
 
----
-
-### Step 3: Pilot
+#### Step 3: Pilot
 - Apply to high-risk feature  
 - Run 1–2 sprints  
 
----
-
-### Step 4: Scale
+#### Step 4: Scale
 - Expand across teams  
 - Introduce intersectional analysis  
 
----
-
-### Step 5: Continuous Improvement
+#### Step 5: Continuous Improvement
 - Use retrospectives  
 - track metrics  
 - refine practices  
