@@ -290,6 +290,10 @@ Prioritize based on:
 - Fairness Audit → highlights high-risk areas  
 - Fairness Intervention → prioritizes high-impact mitigation  
 
+**Resources & Tools**
+
+- [Google Responsible AI Practices](https://ai.google/responsibilities/responsible-ai-practices/)
+
 ---
 
 <a id="ceremonies"></a>
@@ -424,6 +428,10 @@ Due to data limitations:
 - Fairness Audit → must detect intersectional disparities  
 - Fairness Intervention → must target intersectional bias, not only single attributes  
 
+**Further Reading**
+- [Crenshaw, K. (1989)](https://chicagounbound.uchicago.edu/uclf/vol1989/iss1/8/) Demarginalizing the Intersection of Race and Sex  
+- [Buolamwini & Gebru (2018)](https://proceedings.mlr.press/v81/buolamwini18a.html) – Gender Shades Study  
+  
 ---
 
 <a id="evaluation"></a>
@@ -454,6 +462,10 @@ Due to data limitations:
 - Fairness Audit → defines baseline fairness metrics  
 - Fairness Intervention → expected to improve these metrics
 
+**Resources & Tools**
+- [Holistic AI](https://www.holisticai.com/) – Fairness evaluation and governance platform  
+- [OECD AI Metrics Framework](https://oecd.ai/en/catalogue/metrics)  
+  
 ---
 
 <a id="workflow"></a>
