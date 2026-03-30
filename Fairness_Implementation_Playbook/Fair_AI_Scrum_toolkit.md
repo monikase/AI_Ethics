@@ -44,7 +44,7 @@ From a business perspective, embedding fairness into agile development is not ju
 
 Ultimately, this toolkit transforms fairness from an abstract principle into a **repeatable, actionable practice embedded in daily work**. 
 
--- 
+--- 
 
 ## The Fair AI Scrum Toolkit will connect with other components of the Fairness Implementation Playbook in several ways: 
 
