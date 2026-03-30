@@ -1,6 +1,0 @@
-# Fair AI Scrum Toolkit
-
-
-
-
-
