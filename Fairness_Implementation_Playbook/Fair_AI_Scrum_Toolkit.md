@@ -255,8 +255,6 @@ Reserve **15–30% of sprint capacity** for fairness tasks.
 🔗 **Playbook Connection**  
 - Fairness Intervention → helps estimate effort required for mitigation  
 
----
-
 ### 3.2 Fairness Task Taxonomy
 
 Define clear task types:
@@ -278,8 +276,6 @@ Define clear task types:
 🔗 **Playbook Connection**  
 - Audit → feeds analysis tasks  
 - Intervention → feeds implementation tasks  
-
----
 
 ### 3.3 Fairness Backlog Prioritization
 
