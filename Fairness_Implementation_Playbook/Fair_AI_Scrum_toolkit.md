@@ -23,11 +23,16 @@ The outcome is not intentional harm but systems that still reinforce existing in
 ## Business Value of Integrating Fairness into Scrum 
 
 From a business perspective, embedding fairness into agile development is not just an ethical choice, it is a strategic advantage. 
-- **Risk Reduction** Early bias detection helps prevent costly failures, regulatory issues, and reputational damage. Fixing fairness late in development (or after launch) is significantly more expensive.
-- **Stronger Product Quality** Fair systems perform better across diverse user groups, leading to more robust and reliable products.
-- **Market Expansion & User Trust** Products that work equitably for different demographics reach wider audiences and build long-term customer trust.
-- **Regulatory Readiness** With increasing AI regulations (e.g., EU AI Act), integrating fairness into workflows ensures compliance is built-in rather than retrofitted.
-- **Team Efficiency & Alignment** Embedding fairness into Scrum reduces ambiguity. Teams know when and how to address bias, avoiding last-minute rework and ethical uncertainty.
+- **Risk Reduction**  
+  Early bias detection helps prevent costly failures, regulatory issues, and reputational damage. Fixing fairness late in development (or after launch) is significantly more expensive.
+- **Stronger Product Quality**  
+  Fair systems perform better across diverse user groups, leading to more robust and reliable products.
+- **Market Expansion & User Trust**  
+  Products that work equitably for different demographics reach wider audiences and build long-term customer trust.
+- **Regulatory Readiness**  
+  With increasing AI regulations (e.g., EU AI Act), integrating fairness into workflows ensures compliance is built-in rather than retrofitted.
+- **Team Efficiency & Alignment**  
+  Embedding fairness into Scrum reduces ambiguity. Teams know when and how to address bias, avoiding last-minute rework and ethical uncertainty.
 
 --- 
 ## What This Toolkit Will Do 
