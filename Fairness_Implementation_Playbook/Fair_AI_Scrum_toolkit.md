@@ -93,8 +93,12 @@ It consists of the following components:
 
 <a id="artifacts"></a>
 ## 1️⃣ Scrum Artifact Enhancements  
-→ Embed fairness directly into requirements and backlog items.
+→ Embed fairness directly into requirements and backlog items.  
 
+🔗 **Playbook Connection**   
+- Fairness Audit → identifies bias risks to include in user stories   
+- Fairness Intervention → defines mitigation goals embedded in stories  
+  
 ---
 
 ### 1.1 Fairness-Enhanced User Stories (SAFE Framework)
@@ -152,10 +156,16 @@ Acceptance criteria define **how fairness is validated**.
 
 #### Example
 
-- Demographic parity difference ≤ 0.05  
-- True positive rate difference ≤ 0.03 across groups  
-- Intersectional subgroup evaluation completed  
-- Results documented in model card  
+> - Demographic parity difference ≤ 0.05  
+> - True positive rate difference ≤ 0.03 across groups  
+> - Intersectional subgroup evaluation completed  
+> - Results documented in model card  
+
+---
+
+🔗 **Playbook Connection**   
+- Fairness Audit → provides baseline metrics to validate against  
+- Fairness Intervention → defines expected fairness improvements  
 
 ---
 
@@ -175,6 +185,10 @@ Enhance backlog with fairness visibility:
   - assumptions  
   - risks  
   - affected populations  
+ 
+🔗 **Playbook Connection**  
+- Audit findings become backlog items  
+- Intervention strategies become implementation tasks  
 
 ---
 
@@ -213,13 +227,23 @@ A feature is complete only if **all fairness conditions are met**.
 
 - Tested with diverse users  
 - No usability gaps across groups  
-- Explanations understandable across demographics  
+- Explanations understandable across demographics
+
+---
+
+🔗 **Playbook Connection**  
+- Fairness Audit → ensures identified biases are tested before completion  
+- Fairness Intervention → ensures mitigation strategies are validated before deployment 
 
 ---
 
 <a id="planning"></a>
 ## 3️⃣ Sprint Planning & Execution Framework  
 → Allocate and deliver fairness work systematically.
+
+🔗 **Playbook Connection**  
+- Fairness Audit → informs which features are high-risk  
+- Fairness Intervention → determines scope and effort of fairness tasks  
 
 ---
 
@@ -229,6 +253,9 @@ Reserve **15–30% of sprint capacity** for fairness tasks.
 
 - Treat as **non-negotiable**
 - Similar to technical debt or testing capacity
+
+🔗 **Playbook Connection**  
+- Fairness Intervention → helps estimate effort required for mitigation  
 
 ---
 
@@ -249,6 +276,11 @@ Define clear task types:
 - Acceptance criteria testing  
 - Documentation  
 
+
+🔗 **Playbook Connection**  
+- Audit → feeds analysis tasks  
+- Intervention → feeds implementation tasks  
+
 ---
 
 ### 3.3 Fairness Backlog Prioritization
@@ -258,13 +290,21 @@ Prioritize based on:
 - **Fairness Impact**  
 - **Bias Risk**  
 - **Harm Severity**  
-- **Regulatory Exposure**
+- **Regulatory Exposure**  
+
+🔗 **Playbook Connection**  
+- Audit → highlights high-risk areas  
+- Intervention → prioritizes high-impact mitigation  
 
 ---
 
 <a id="ceremonies"></a>
 ## 4️⃣ Ceremonies & Checkpoints  
 → Maintain fairness focus throughout development.
+
+🔗 **Playbook Connection**  
+- Audit → informs fairness discussions and metrics tracking  
+- Intervention → reviewed and refined during ceremonies  
 
 ---
 
@@ -294,6 +334,11 @@ Include:
 - Intersectional performance  
 - Remaining fairness risks  
 
+
+🔗 **Playbook Connection**  
+- Audit → provides baseline comparison  
+- Intervention → demonstrates impact of mitigation  
+
 ---
 
 ### 4.4 Retrospective Techniques
@@ -317,6 +362,10 @@ Introduce checkpoints at:
 Purpose:
 - detect bias early  
 - reduce rework  
+
+🔗 **Playbook Connection**  
+- Audit → ongoing validation of emerging bias  
+- Intervention → early testing of mitigation effectiveness  
 
 ---
 
@@ -347,7 +396,12 @@ Purpose:
 
 ### Shared Responsibility
 
-Fairness is a **team responsibility**, not a specialist task.
+Fairness is a **team responsibility**, not a specialist task.  
+
+
+🔗 **Playbook Connection**  
+- Audit → often led by data scientists / analysts  
+- Intervention → implemented collaboratively across roles    
 
 ---
 
@@ -387,7 +441,11 @@ Due to data limitations:
 
 - Prioritize high-risk intersections  
 - Use hierarchical modeling  
-- Report uncertainty  
+- Report uncertainty   
+
+🔗 **Playbook Connection**  
+- Audit → must detect intersectional disparities  
+- Intervention → must target intersectional bias, not only single attributes  
 
 ---
 
@@ -418,6 +476,10 @@ Due to data limitations:
 - 100% fairness coverage in user stories  
 - ≥95% fairness task completion  
 - 0 high-severity bias post-deployment  
+
+🔗 **Playbook Connection**  
+- Audit → defines baseline fairness metrics  
+- Intervention → expected to improve these metrics
 
 ---
 
@@ -455,6 +517,10 @@ Due to data limitations:
 - track metrics  
 - refine practices  
 
+🔗 **Playbook Connection**  
+- Step 1 (Assess) → aligns with Fairness Audit  
+- Step 2–4 → align with Fairness Intervention execution  
+
 ---
 
 <a id="principles"></a>
@@ -471,6 +537,12 @@ Fair AI development should:
 - Balance fairness with business objectives  
 - Maintain transparency and documentation  
 - Continuously improve through iteration  
+
+🔗 **Playbook Connection**  
+This toolkit operationalizes:
+- Audit → understanding bias  
+- Intervention → fixing bias  
+- Scrum → sustaining fairness in practice 
 
 ---
 
