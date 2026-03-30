@@ -117,7 +117,6 @@ I want [functionality],
 so that [benefit],  
 while ensuring [fairness goal] across [protected + intersectional groups].
 
----
 
 #### SAFE Breakdown
 
@@ -133,7 +132,6 @@ while ensuring [fairness goal] across [protected + intersectional groups].
 - **E - Expected Outcome Measures**  
   How fairness will be validated
 
----
 
 #### Example
 
