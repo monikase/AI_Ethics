@@ -164,8 +164,6 @@ Acceptance criteria define **how fairness is validated**.
 > - Intersectional subgroup evaluation completed  
 > - Results documented in model card  
 
----
-
 🔗 **Playbook Connection**   
 - Fairness Audit → provides baseline metrics to validate against  
 - Fairness Intervention → defines expected fairness improvements  
