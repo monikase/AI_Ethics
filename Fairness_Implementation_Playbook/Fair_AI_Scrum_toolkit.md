@@ -48,9 +48,9 @@ Ultimately, this toolkit transforms fairness from an abstract principle into a *
 
 ## The Fair AI Scrum Toolkit will connect with other components of the Fairness Implementation Playbook in several ways: 
 
-- It will provide the team-level foundation for organizational fairness governance outlined in **Organizational Integration Toolkit**.
-- Ceremony modifications will include review points for architecture-specific fairness considerations from **Advanced Architecture Cookbook**.
-- Document templates will reference regulatory requirements addressed in **Regulatory Compliance Guide**. and do all the document more wider applicable, case study will be later added in separate file.  
+- It will provide the team-level foundation for organizational fairness governance outlined in **Organizational Integration Toolkit**.  
+- Ceremony modifications will include review points for architecture-specific fairness considerations from **Advanced Architecture Cookbook**.  
+- Document templates will reference regulatory requirements addressed in **Regulatory Compliance Guide**.   
 
 ---
 
