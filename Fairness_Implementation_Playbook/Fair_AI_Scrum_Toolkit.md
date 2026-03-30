@@ -199,14 +199,14 @@ Enhance backlog with fairness visibility:
 
 A feature is complete only if **all fairness conditions are met**.  
 
-### Data
+#### Data
 
 - Representation across groups validated  
 - Missing data patterns analyzed per group  
 - Bias sources documented  
 
 
-### Model
+#### Model
 
 - Fairness metrics meet thresholds  
 - Performance evaluated across subgroups and intersections  
@@ -218,7 +218,7 @@ A feature is complete only if **all fairness conditions are met**.
   - assumptions  
 
 
-### Interface
+#### Interface
 
 - Tested with diverse users  
 - No usability gaps across groups  
