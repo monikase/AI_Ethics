@@ -274,8 +274,8 @@ Define clear task types:
 
 
 🔗 **Playbook Connection**  
-- Audit → feeds analysis tasks  
-- Intervention → feeds implementation tasks  
+- Fairness Audit → feeds analysis tasks  
+- Fairness Intervention → feeds implementation tasks  
 
 ### 3.3 Fairness Backlog Prioritization
 
@@ -287,8 +287,8 @@ Prioritize based on:
 - **Regulatory Exposure**  
 
 🔗 **Playbook Connection**  
-- Audit → highlights high-risk areas  
-- Intervention → prioritizes high-impact mitigation  
+- Fairness Audit → highlights high-risk areas  
+- Fairness Intervention → prioritizes high-impact mitigation  
 
 ---
 
@@ -297,8 +297,8 @@ Prioritize based on:
 → Maintain fairness focus throughout development.
 
 🔗 **Playbook Connection**  
-- Audit → informs fairness discussions and metrics tracking  
-- Intervention → reviewed and refined during ceremonies  
+- Fairness Audit → informs fairness discussions and metrics tracking  
+- Fairness Intervention → reviewed and refined during ceremonies  
 
 ---
 
@@ -330,8 +330,8 @@ Include:
 
 
 🔗 **Playbook Connection**  
-- Audit → provides baseline comparison  
-- Intervention → demonstrates impact of mitigation  
+- Fairness Audit → provides baseline comparison  
+- Fairness Intervention → demonstrates impact of mitigation  
 
 ---
 
@@ -358,8 +358,8 @@ Purpose:
 - reduce rework  
 
 🔗 **Playbook Connection**  
-- Audit → ongoing validation of emerging bias  
-- Intervention → early testing of mitigation effectiveness  
+- Fairness Audit → ongoing validation of emerging bias  
+- Fairness Intervention → early testing of mitigation effectiveness  
 
 ---
 
@@ -394,8 +394,8 @@ Fairness is a **team responsibility**, not a specialist task.
 
 
 🔗 **Playbook Connection**  
-- Audit → often led by data scientists / analysts  
-- Intervention → implemented collaboratively across roles    
+- Fairness Audit → often led by data scientists / analysts  
+- Fairness Intervention → implemented collaboratively across roles    
 
 ---
 
@@ -438,8 +438,8 @@ Due to data limitations:
 - Report uncertainty   
 
 🔗 **Playbook Connection**  
-- Audit → must detect intersectional disparities  
-- Intervention → must target intersectional bias, not only single attributes  
+- Fairness Audit → must detect intersectional disparities  
+- Fairness Intervention → must target intersectional bias, not only single attributes  
 
 ---
 
@@ -472,8 +472,8 @@ Due to data limitations:
 - 0 high-severity bias post-deployment  
 
 🔗 **Playbook Connection**  
-- Audit → defines baseline fairness metrics  
-- Intervention → expected to improve these metrics
+- Fairness Audit → defines baseline fairness metrics  
+- Fairness Intervention → expected to improve these metrics
 
 ---
 
