@@ -112,16 +112,16 @@ while ensuring [fairness goal] across [protected + intersectional groups].
 
 #### SAFE Breakdown
 
-- **S — Specific Protected Attributes**  
+- **S - Specific Protected Attributes**  
   Identify relevant groups (e.g., gender, age, ethnicity)
 
-- **A — Actionable Fairness Definition**  
+- **A - Actionable Fairness Definition**  
   Define fairness concept (e.g., equal opportunity)
 
-- **F — Feature Integration Point**  
+- **F - Feature Integration Point**  
   Where fairness applies in the feature
 
-- **E — Expected Outcome Measures**  
+- **E - Expected Outcome Measures**  
   How fairness will be validated
 
 ---
