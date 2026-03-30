@@ -2,12 +2,14 @@
 
 In modern AI development, fairness rarely fails because teams don’t care-it fails because teams don’t have practical ways to operationalize it within their everyday workflows. 
 Agile frameworks like Scrum are designed for speed, iteration, and delivery, but they were never built with fairness in mind. As a result, fairness is often treated as a side 
-activity-something to “check later” instead of a core part of how products are built. This creates a critical gap. Today, Scrum artifacts such as user stories focus on functional 
-requirements but overlook how different user groups might be affected. Sprint planning prioritizes feature delivery, while bias testing is rarely scoped or estimated. 
-Daily stand-ups track progress, not risk of harm. Retrospectives optimize velocity, not equity. Even the Definition of Done emphasizes performance and code quality, leaving fairness 
-validation out entirely. 
+activity-something to “check later” instead of a core part of how products are built.  
 
-Because of these gaps, bias can quietly enter every stage of the ML lifecycle: 
+This creates a critical gap.  
+
+Today, Scrum artifacts such as user stories focus on functional requirements but overlook how different user groups might be affected. Sprint planning prioritizes feature delivery, while bias testing is rarely scoped or estimated. 
+Daily stand-ups track progress, not risk of harm. Retrospectives optimize velocity, not equity. Even the Definition of Done emphasizes performance and code quality, leaving fairness validation out entirely.   
+
+Because of these gaps, bias can quietly enter every stage of the ML lifecycle:   
 
 - **Data preparation** proceeds without assessing representation or imbalance
 - **Model training** lacks fairness constraints or evaluation across subgroups
