@@ -311,6 +311,38 @@ This includes:
 - Fairness Audit → highlights high-risk areas  
 - Fairness Intervention → prioritizes high-impact mitigation  
 
+### 3.4 Sprint Planning Meeting Adaptations
+
+Fairness-enhanced sprint planning meetings include structured fairness discussion points, capacity reserves, and role-specific responsibilities.  
+Key adaptations include:  
+
+1. **Fairness Risk Assessment**  
+   Structured evaluation of each planned feature's bias potential  
+2. **Capacity Earmarking**  
+   Explicit allocation of sprint capacity to fairness tasks  
+3. **Fairness Task Identification**  
+   Systematic process for identifying necessary fairness tasks  
+4. **Role Assignment**  
+   Clear fairness responsibilities for each team member  
+5. **Fairness Checkpoint Definition**  
+   Explicit points during the sprint for fairness validation   
+
+### 3.5 Daily Execution and Monitoring
+
+Fairness-enhanced daily practices incorporate structured fairness tracking, checkpoints, and metrics throughout the sprint.   
+Key components include:  
+
+1. **Fairness Standup Prompts**  
+   Explicit questions about fairness progress and blockers  
+2. **Fairness Progress Visualization**  
+   Visible tracking of fairness metrics alongside functional progress   
+3. **Fairness Blocker Escalation**    
+   Clear protocol for raising and addressing fairness blockers  
+4. **Mid-Sprint Fairness Checkpoints**  
+   Scheduled review points for fairness validation  
+
+
+
 **Resources & Tools**
 
 - [Google Responsible AI Practices](https://ai.google/responsibilities/responsible-ai-practices/)
