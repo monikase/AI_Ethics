@@ -249,7 +249,10 @@ A feature is complete only if **all fairness conditions are met**.
 
 <a id="planning"></a>
 ## 3️⃣ Sprint Planning & Execution Framework  
-→ Allocate and deliver fairness work systematically.
+→ Allocate and deliver fairness work systematically.  
+
+
+Having an explicit fairness task taxonomy helps teams recognize the full scope of fairness work required.
 
 🔗 **Playbook Connection**  
 - Fairness Audit → informs which features are high-risk  
@@ -284,9 +287,7 @@ Define clear task types:
 #### Validation
 - Acceptance criteria testing
 - Fairness regression testing    
-- Documentation  
-
-Having an explicit fairness task taxonomy helps teams recognize the full scope of fairness work required.  
+- Documentation    
 
 🔗 **Playbook Connection**  
 - Fairness Audit → feeds analysis tasks  
