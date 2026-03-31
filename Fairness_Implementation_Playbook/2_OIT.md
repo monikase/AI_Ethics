@@ -217,6 +217,18 @@ Fairness must be:
 - **executed (Responsible)**  
 - **informed by multiple perspectives (Consulted)**  
 
+#### Intersectionality Consideration
+
+Traditional organizational structures often assign fairness responsibility based on single dimensions of diversity—one team handles gender issues, another addresses racial bias. This approach misses critical intersectional dynamics where multiple forms of discrimination combine, creating unique challenges that siloed teams miss.  
+
+To implement intersectional principles in organizational roles:  
+
+- Include people with intersectional lived experiences in fairness leadership positions
+- Create diverse governance bodies where multiple identities and perspectives exist within the same forum
+- Define explicit responsibility for intersectional analysis in RACI matrices
+- Establish regular cross-team collaboration to address intersectional issues
+- Ensure training develops understanding of intersectional dynamics
+
 ---
 
 ## 3️⃣ Documentation & Communication Framework  
