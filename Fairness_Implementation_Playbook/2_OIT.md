@@ -15,8 +15,6 @@ The result is not just biased systems but **incoherent fairness practices across
 
 The Organizational Integration Toolkit addresses this gap by transforming fairness into a **coordinated, governed, and measurable organizational capability**.
 
----
-
 ## Business Value of Organizational Fairness Integration
 
 Embedding fairness at the organizational level is not only ethical, it is a strategic necessity.
@@ -32,8 +30,6 @@ Embedding fairness at the organizational level is not only ethical, it is a stra
 - **Scalable Fairness Capability**  
   Enables fairness to scale across teams, products, and markets.
 
----
-
 ## What This Toolkit Will Do
 
 - Establish **clear fairness ownership and governance structures**
@@ -47,7 +43,6 @@ Ultimately, this toolkit transforms fairness from:
 → isolated team practices  
 → into **organization-wide, coordinated systems of accountability**
 
----
 
 ## Connection to Other Playbook Components
 
@@ -191,6 +186,15 @@ but escalated when **impact or risk increases**
 → Clarify who owns fairness decisions  
 
 ---
+
+Traditional decision processes create unclear ownership of fairness, leading to stalled debates, delayed decisions, and weak accountability.  
+
+The **RACI** framework creates clarity for fairness decisions by defining four roles:  
+
+- **Responsible (R)**: Who performs the fairness work
+- **Accountable (A)**: Who must answer for decisions and outcomes (one person)
+- **Consulted (C)**: Whose input must be included before decisions
+- **Informed (I)**: Who needs to know about decisions after they're made
 
 | Task | Exec Sponsor | Steering Committee | Guild | Product Owner | Data Science | Engineering |
 |------|-------------|-------------------|-------|--------------|-------------|-------------|
