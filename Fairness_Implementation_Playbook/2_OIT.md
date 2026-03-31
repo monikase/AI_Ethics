@@ -64,7 +64,7 @@ The Organizational Integration Toolkit provides a structured, organization-wide 
 
 It consists of:
 
-### 1️⃣ Governance Framework  
+### 1️⃣ Governance Framework(#governance)  
 ### 2️⃣ Responsibility Matrix  
 ### 3️⃣ Documentation & Communication Framework  
 ### 4️⃣ Decision Processes & Escalation  
@@ -75,6 +75,7 @@ It consists of:
 
 ---
 
+<a id="governance"></a>
 ## 1️⃣ Governance Framework  
 → Establish clear ownership and alignment across organizational levels  
 
