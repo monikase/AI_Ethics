@@ -278,12 +278,15 @@ Define clear task types:
 
 #### Implementation
 - Mitigation techniques  
-- Feature adjustments  
+- Feature adjustments
+- Fairness constraint application  
 
 #### Validation
-- Acceptance criteria testing  
+- Acceptance criteria testing
+- Fairness regression testing    
 - Documentation  
 
+Having an explicit fairness task taxonomy helps teams recognize the full scope of fairness work required.  
 
 🔗 **Playbook Connection**  
 - Fairness Audit → feeds analysis tasks  
