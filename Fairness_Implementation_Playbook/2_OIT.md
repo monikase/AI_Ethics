@@ -1,6 +1,6 @@
 # Organizational Integration Toolkit
 
-In AI development, fairness does not fail due to lack of intent—it fails due to lack of coordination.
+In AI development, fairness does not fail due to lack of intent, it fails due to lack of coordination.
 
 While team-level practices (e.g., Scrum) enable fairness locally, organizations often struggle to scale fairness consistently across multiple teams, products, and decision-makers. Without shared governance, teams adopt conflicting fairness definitions, duplicate work, and escalate unresolved trade-offs—creating fragmentation instead of alignment.
 
@@ -11,7 +11,7 @@ This creates a second critical gap.
 - Metrics vary across systems → no organization-wide visibility  
 - Documentation is incomplete → no accountability trail  
 
-The result is not just biased systems—but **incoherent fairness practices across the organization**.
+The result is not just biased systems but **incoherent fairness practices across the organization**.
 
 The Organizational Integration Toolkit addresses this gap by transforming fairness into a **coordinated, governed, and measurable organizational capability**.
 
@@ -19,7 +19,7 @@ The Organizational Integration Toolkit addresses this gap by transforming fairne
 
 ## Business Value of Organizational Fairness Integration
 
-Embedding fairness at the organizational level is not only ethical—it is a strategic necessity.
+Embedding fairness at the organizational level is not only ethical, it is a strategic necessity.
 
 - **Consistency & Trust**  
   Unified fairness standards ensure consistent user experience across products and teams.
@@ -54,7 +54,7 @@ Ultimately, this toolkit transforms fairness from:
 - **Fairness Audit** → defines risks, affected groups, and baseline metrics  
 - **Fairness Intervention** → defines mitigation strategies and fairness goals  
 - **Fair AI Scrum Toolkit** → operationalizes fairness at team level  
-- **This Toolkit** → aligns, governs, and scales fairness across teams  
+- **Organizational Integration Toolkit** → aligns, governs, and scales fairness across teams  
 
 ---
 
