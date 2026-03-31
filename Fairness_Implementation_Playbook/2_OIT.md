@@ -170,8 +170,8 @@ Escalate when:
 
 #### Key Principle
 
-> Decisions should be made at the **lowest appropriate level**,  
-> but escalated when **impact or risk increases**  
+Decisions should be made at the **lowest appropriate level**,  
+but escalated when **impact or risk increases**  
 
 
 🔗 **Playbook Connection**  
