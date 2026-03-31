@@ -298,13 +298,13 @@ Define clear task types:
 Fairness-aware backlog prioritization extends standard frameworks by adding fairness dimensions to prioritization decisions.   
 This includes:
 
-1. **Fairness Impact**:
+1. **Fairness Impact**  
    How significantly a feature could affect different demographic groups. 
-2. **Bias Risk**:  
+2. **Bias Risk**  
    The likelihood of undetected bias entering the system.  
-3. **Harm Severity**:  
+3. **Harm Severity**  
    The potential consequences of biased outcomes.  
-5. **Regulatory Exposure**:    
+4. **Regulatory Exposure**    
    Legal or compliance risks from bias issues.    
 
 🔗 **Playbook Connection**  
