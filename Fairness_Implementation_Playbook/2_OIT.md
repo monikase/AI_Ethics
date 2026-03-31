@@ -206,8 +206,6 @@ The **RACI** framework creates clarity for fairness decisions by defining four r
 | Monitoring & reporting | I | C | R | C | A | R |
 | Incident response | C | A | R | R | C | C |
 
-A = Accountable | R = Responsible | C = Consulted | I = Informed  
-
 ---
 
 ### Key Insight
