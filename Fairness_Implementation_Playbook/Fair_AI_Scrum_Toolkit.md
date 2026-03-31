@@ -85,9 +85,9 @@ It consists of the following components:
 
 ### 7️⃣ [Evaluation Metrics](#evaluation)
 
-### 8. [Implementation Workflow](#workflow)
+### 8️⃣ [Implementation Workflow](#workflow)
 
-### 9. [Core Principles](#principles)
+### 9️⃣ [Core Principles](#principles)
 
 ---
 
@@ -514,8 +514,6 @@ Due to data limitations:
 
 <a id="principles"></a>
 ## 9️⃣ Core Principles  
-
----
 
 Fair AI development should:
 
