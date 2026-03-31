@@ -81,15 +81,103 @@ It consists of:
 
 ---
 
-### Governance Structure
+### 1.1 Fairness Leadership Roles
 
-| Tier | Forum | Cadence | Responsibilities | Escalation Scope |
-|------|------|--------|------------------|------------------|
-| **Strategic** | Fairness Steering Committee | Quarterly | Define fairness vision, risk appetite, policy, metrics | High-risk / cross-product |
-| **Tactical** | Fairness Guild | Monthly | Align teams, resolve conflicts, maintain standards | Cross-team conflicts |
-| **Operational** | Team Fairness Circles | Sprint-level | Execute fairness work, monitor systems | Feature-level issues |
+Traditional organizations lack explicit fairness ownership.  
+When fairness is “everyone’s responsibility,” it becomes **no one’s accountability**.  
+
+To address this, organizations must define leadership roles with **clear authority, placement, and responsibilities**.
+
+**Core Roles**  
+
+- **Chief AI Ethics Officer** → _Strategic level (Fairness Steering Committee)_  
+  Owns organization-wide fairness strategy, risk appetite, and accountability  
+- **Fairness Program Manager** → _Tactical level (Fairness Guild)_  
+  Coordinates fairness implementation across teams, ensuring alignment and execution  
+- **Fairness Domain Specialists** → _Operational + Tactical levels_  
+  Provide domain-specific expertise (e.g., hiring, finance, healthcare)  
+- **Technical Fairness Leads** → _Cross-functional (advisory across all tiers)_  
+  Oversee fairness implementation within engineering and data teams  
+
+
+### 1.2 Governance Structure
+
+| Tier | Forum | Cadence | Responsibilities | Decision Authority | Escalation Scope |
+|------|------|--------|------------------|--------------------|------------------|
+| **Strategic** | Fairness Steering Committee | Quarterly | Define fairness vision, risk appetite, policy, metrics | Final authority on fairness definitions and trade-offs | High-risk / cross-product |
+| **Tactical** | Fairness Guild | Monthly | Align teams, resolve conflicts, maintain standards | Approves metrics, thresholds, and cross-team decisions | Cross-team conflicts |
+| **Operational** | Team Fairness Circles | Sprint-level | Execute fairness work, monitor systems | Implements decisions within defined guardrails | Feature-level issues |
+
+
+### 1.3 Cross-Functional Fairness Responsibilities  
+
+Fairness cannot be owned by leadership roles alone.
+Bias enters systems through multiple pathways: data, product decisions, UX design, and communication.
+
+To prevent blind spots, fairness responsibilities must be embedded across all functions.
+
+#### Responsibility Matrix
+
+| Function | Fairness Responsibilities |
+|----------|--------------------------|
+| **Data Science** | Implement fairness metrics; conduct bias audits; design mitigation approaches |
+| **Product Management** | Define fairness requirements; prioritize fairness work; ensure inclusive user testing |
+| **Engineering** | Build fairness test suites; implement fair feature engineering; enable monitoring |
+| **Legal & Compliance** | Interpret regulations; assess fairness risks; validate compliance |
+| **Marketing & Communication** | Ensure accurate fairness claims; avoid misleading messaging |
+| **User Research** | Include diverse participants; identify bias patterns; validate real-world impact |
+| **Executive Leadership** | Set fairness vision; allocate resources; enforce accountability |
+
+#### Why this matters  
+
+- Prevents fairness from becoming **“just a data science problem”**  
+- Ensures fairness is addressed across the **entire ML lifecycle**  
+- Enables **intersectional thinking** across teams  
+
+🔗 **Playbook Connection**  
+- Fairness Audit → identifies function-specific risks  
+- Fairness Intervention → assigns mitigation actions to responsible teams  
+
+### 1.4 Decision & Escalation Logic  
+→ Ensure consistent and timely fairness decisions  
+
+Even with clear roles and responsibilities, fairness work can stall without defined decision paths.  
+
+This framework establishes **how decisions move across governance levels**.  
+
+#### Decision Tiers
+
+- **Strategic Decisions**  
+  _(e.g., fairness definitions, policy changes)_  
+  → Owned by *Fairness Steering Committee*  
+
+- **Tactical Decisions**  
+  _(e.g., metric selection, thresholds, trade-offs)_  
+  → Owned by *Fairness Guild*  
+
+- **Operational Decisions**  
+  _(e.g., implementation details, experiments)_  
+  → Owned by *Team Fairness Circles*  
+
+#### Escalation Triggers
+
+Escalate when:
+
+- Fairness trade-offs impact multiple teams  
+- Metrics exceed defined risk thresholds  
+- Regulatory or reputational risks emerge  
+- Teams cannot resolve conflicts independently  
 
 ---
+
+#### Key Principle
+
+> Decisions should be made at the **lowest appropriate level**,  
+> but escalated when **impact or risk increases**  
+
+🔗 **Playbook Connection**  
+- Fairness Audit → defines escalation thresholds  
+- Fairness Intervention → informs decision options and trade-offs  
 
 ### Key Responsibilities
 
@@ -97,10 +185,6 @@ It consists of:
 - Approve thresholds and acceptable trade-offs  
 - Ensure consistency across teams  
 - Oversee fairness risks and escalations  
-
-🔗 **Playbook Connection**  
-- Audit → informs risk areas and priorities  
-- Intervention → informs mitigation strategies applied at scale  
 
 ---
 
