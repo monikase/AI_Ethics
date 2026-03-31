@@ -206,12 +206,14 @@ The **RACI** framework creates clarity for fairness decisions by defining four r
 | Monitoring & reporting | I | C | R | C | A | R |
 | Incident response | C | A | R | R | C | C |
 
----
+The matrix shapes decisions across every ML stage:  
 
-### Key Insight
+- During data collection, it clarifies who approves dataset bias assessments. 
+- During model development, it defines who sets fairness thresholds. 
+- During deployment, it establishes who can halt releases based on fairness concerns.
 
-Fairness must be:
-- **owned (Accountable)**  
+Fairness must be:  
+- **owned (Accountable)**    
 - **executed (Responsible)**  
 - **informed by multiple perspectives (Consulted)**  
 
