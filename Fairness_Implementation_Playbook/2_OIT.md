@@ -2,7 +2,7 @@
 
 In AI development, fairness does not fail due to lack of intent, it fails due to lack of coordination.
 
-While team-level practices (e.g., Scrum) enable fairness locally, organizations often struggle to scale fairness consistently across multiple teams, products, and decision-makers. Without shared governance, teams adopt conflicting fairness definitions, duplicate work, and escalate unresolved trade-offs—creating fragmentation instead of alignment.
+While team-level practices (e.g., Scrum) enable fairness locally, organizations often struggle to scale fairness consistently across multiple teams, products, and decision-makers. Without shared governance, teams adopt conflicting fairness definitions, duplicate work, and escalate unresolved trade-offs creating fragmentation instead of alignment.
 
 This creates a second critical gap.
 
