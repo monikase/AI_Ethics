@@ -219,7 +219,7 @@ Fairness must be:
 
 #### Intersectionality Consideration
 
-Traditional organizational structures often assign fairness responsibility based on single dimensions of diversity—one team handles gender issues, another addresses racial bias. This approach misses critical intersectional dynamics where multiple forms of discrimination combine, creating unique challenges that siloed teams miss.  
+Traditional structures assign fairness by single dimensions (e.g., gender or race), overlooking intersectional issues where biases combine and create unique challenges.  
 
 To implement intersectional principles in organizational roles:  
 
