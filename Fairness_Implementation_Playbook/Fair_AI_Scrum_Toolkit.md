@@ -1,6 +1,6 @@
 # Fair AI Scrum Toolkit 
 
-In modern AI development, fairness rarely fails because teams don’t care-it fails because teams don’t have practical ways to operationalize it within their everyday workflows. 
+In modern AI development, fairness rarely fails because teams don’t care, it fails because teams don’t have practical ways to operationalize it within their everyday workflows. 
 Agile frameworks like Scrum are designed for speed, iteration, and delivery, but they were never built with fairness in mind. As a result, fairness is often treated as a side 
 activity-something to “check later” instead of a core part of how products are built.  
 
