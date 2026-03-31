@@ -168,18 +168,17 @@ Escalate when:
 - Regulatory or reputational risks emerge  
 - Teams cannot resolve conflicts independently  
 
----
-
 #### Key Principle
 
 > Decisions should be made at the **lowest appropriate level**,  
 > but escalated when **impact or risk increases**  
 
+
 🔗 **Playbook Connection**  
 - Fairness Audit → defines escalation thresholds  
 - Fairness Intervention → informs decision options and trade-offs  
 
-### Key Responsibilities
+#### Key Responsibilities
 
 - Define organization-wide fairness definitions and metrics  
 - Approve thresholds and acceptable trade-offs  
