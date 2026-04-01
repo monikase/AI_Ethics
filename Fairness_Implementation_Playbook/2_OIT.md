@@ -51,8 +51,6 @@ Ultimately, this toolkit transforms fairness from:
 - **Fair AI Scrum Toolkit** → operationalizes fairness at team level  
 - **Organizational Integration Toolkit** → aligns, governs, and scales fairness across teams  
 
----
-
 ## Toolkit Overview
 
 The Organizational Integration Toolkit provides a structured, organization-wide approach to fairness governance.
@@ -60,7 +58,7 @@ The Organizational Integration Toolkit provides a structured, organization-wide 
 It consists of:
 
 ### 1️⃣ [Governance Framework](#governance)  
-### 2️⃣ Responsibility Matrix  
+### 2️⃣ [Responsibility Matrix](#responsibility) 
 ### 3️⃣ Documentation & Communication Framework  
 ### 4️⃣ Decision Processes & Escalation  
 ### 5️⃣ Metric Dashboards & Monitoring  
@@ -71,7 +69,7 @@ It consists of:
 ---
 
 <a id="governance"></a>
-## 1️⃣ Governance Framework  
+### 1️⃣ Governance Framework  
 → Establish clear ownership and alignment across organizational levels  
 
 ---
@@ -182,7 +180,8 @@ but escalated when **impact or risk increases**
 
 ---
 
-## 2️⃣ Responsibility Matrix (RACI)  
+<a id="responsibility"></a>
+### 2️⃣ Responsibility Matrix (RACI)  
 → Clarify who owns fairness decisions  
 
 ---
