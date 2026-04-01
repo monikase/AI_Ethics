@@ -260,20 +260,31 @@ Document every critical fairness decision.
 
 ### 3.2 Fairness Requirements Documentation
 
-- fairness definitions (e.g., equal opportunity)  
-- protected + intersectional groups  
-- metric thresholds  
-- testing criteria  
-- regulatory constraints  
+Fairness requirements documentation creates explicit, measurable fairness objectives in a specofic context.  
+Key components include:  
+
+1. **Fairness Definitions**: Specific mathematical definitions selected for this context (e.g., equal opportunity)  
+2. **Protected Attributes**: Explicit identification of relevant demographic dimensions + intersectional groups  
+3. **Fairness Metrics**: Concrete measurements for evaluating fairness 
+4. **Threshold Values**: Specific targets for each metric  
+5. **Testing Criteria**: How fairness properties will be validated
+6. **Trade-off Priorities**: How conflicts between fairness and other objectives should be resolved
+7. **Regulatory Requirements**: Specific compliance obligations relevant to this application
 
 ---
 
 ### 3.3 Model Cards & Transparency
 
-- disaggregated performance  
-- intended use  
-- limitations  
-- fairness metrics  
+Model cards and fairness templates create standardized formats for documenting fairness properties.  
+Key components include:  
+
+1. **Fairness Considerations Section**: Dedicated space for fairness documentation within standard templates
+2. **Performance Disaggregation**: Metrics broken down by demographic groups
+3. **Intended Uses**: Clear statements of appropriate applications
+4. **Misuse Risks**: Explicit documentation of potential harmful applications
+5. **Limitation Statements**: Transparent acknowledgment of known fairness limitations
+6. **Testing Details**: Documentation of fairness evaluation procedures
+7. **Ethical Considerations**: Discussion of broader impacts and value trade-offs
 
 ---
 
