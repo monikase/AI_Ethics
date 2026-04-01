@@ -59,12 +59,12 @@ It consists of:
 
 ### 1️⃣ [Governance Framework](#governance)  
 ### 2️⃣ [Responsibility Matrix](#responsibility) 
-### 3️⃣ Documentation & Communication Framework  
-### 4️⃣ Decision Processes & Escalation  
-### 5️⃣ Metric Dashboards & Monitoring  
-### 6️⃣ Intersectionality Integration Layer  
-### 7️⃣ Implementation Workflow  
-### 8️⃣ Core Principles  
+### 3️⃣ [Documentation & Communication Framework](#documentation)  
+### 4️⃣ [Decision Processes & Escalation](#decision)  
+### 5️⃣ [Metric Dashboards & Monitoring](#dashboards)  
+### 6️⃣ [Intersectionality Integration Layer](#intersectionality)  
+### 7️⃣ [Implementation Workflow](#implementation)  
+### 8️⃣ [Core Principles](#principles)  
 
 ---
 
@@ -230,7 +230,8 @@ To implement intersectional principles in organizational roles:
 
 ---
 
-## 3️⃣ Documentation & Communication Framework  
+<a id="documentation"></a>
+### 3️⃣ Documentation & Communication Framework  
 → Create accountability and knowledge continuity  
 
 ---
@@ -297,7 +298,8 @@ Key components include:
 
 ---
 
-## 4️⃣ Decision Processes & Escalation  
+<a id="decision"></a>
+### 4️⃣ Decision Processes & Escalation  
 → Ensure fairness decisions are consistent and timely  
 
 ---
@@ -338,7 +340,8 @@ Key components include:
 
 ---
 
-## 5️⃣ Metric Dashboards & Monitoring  
+<a id="dashboards"></a>
+### 5️⃣ Metric Dashboards & Monitoring  
 → Make fairness visible and actionable  
 
 ---
@@ -392,7 +395,8 @@ Include:
 
 ---
 
-## 6️⃣ Intersectionality Integration Layer  
+<a id="intersectionality"></a>
+### 6️⃣ Intersectionality Integration Layer  
 → Ensure fairness reflects real-world complexity  
 
 ---
@@ -425,7 +429,8 @@ Fairness must consider **overlapping identities**, not single attributes.
 
 ---
 
-## 7️⃣ Implementation Workflow  
+<a id="implementation"></a>
+### 7️⃣ Implementation Workflow  
 
 ---
 
@@ -453,7 +458,10 @@ Fairness must consider **overlapping identities**, not single attributes.
 
 ---
 
-## 8️⃣ Core Principles  
+<a id="principles"></a>
+### 8️⃣ Core Principles  
+
+---
 
 - Fairness must be **owned, not assumed**  
 - Decisions must be **documented and traceable**  
