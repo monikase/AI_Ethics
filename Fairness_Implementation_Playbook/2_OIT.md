@@ -258,8 +258,7 @@ Document every critical fairness decision.
 
 ### 3.2 Fairness Requirements Documentation
 
-Fairness requirements documentation creates explicit, measurable fairness objectives in a specific context.  
-Key components include:  
+Fairness requirements documentation creates explicit, measurable fairness objectives in a specific context.   
 
 1. **Fairness Definitions**: Specific mathematical definitions selected for this context (e.g., equal opportunity)  
 2. **Protected Attributes**: Explicit identification of relevant demographic dimensions + intersectional groups  
@@ -269,10 +268,9 @@ Key components include:
 6. **Trade-off Priorities**: How conflicts between fairness and other objectives should be resolved
 7. **Regulatory Requirements**: Specific compliance obligations relevant to this application
 
-### 3.3 Model Cards & Transparency
+### 3.3 Model Cards & Documentation Templates
 
-Model cards and fairness templates create standardized formats for documenting fairness properties.  
-Key components include:  
+Model cards and fairness templates create standardized formats for documenting fairness properties.    
 
 1. **Fairness Considerations Section**: Dedicated space for fairness documentation within standard templates
 2. **Performance Disaggregation**: Metrics broken down by demographic groups
@@ -282,7 +280,12 @@ Key components include:
 6. **Testing Details**: Documentation of fairness evaluation procedures
 7. **Ethical Considerations**: Discussion of broader impacts and value trade-offs
 
+Gebru et al. (2021) propose datasheets for datasets to facilitate better communication between dataset creators and consumers, and to encourage transparency and accountability.   
+This documentation framework supports knowledge sharing and helps establish clearer boundaries around appropriate use.
+
 ### 3.4 Stakeholder Communication Layers
+
+Stakeholder-specific communication protocols create tailored information flows for different audiences.   
 
 - **Executives** → high-level risks and trends  
 - **Product teams** → system-level insights  
