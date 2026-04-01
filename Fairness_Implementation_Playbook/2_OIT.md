@@ -242,18 +242,19 @@ Document every critical fairness decision.
 
 #### Template
 
-- **Context**  
-- **Decision**  
-- **Alternatives considered**  
-- **Rationale**  
-- **Stakeholders involved**  
-- **Trade-offs**  
-- **Metrics & thresholds**  
-- **Limitations**  
+1. **Context**: Background information about the system, data, and application domain    
+2. **Decision**: Clear statement of the fairness decision made  
+3. **Alternatives considered**: Other options considered and why they were rejected  
+4. **Rationale**: Explicit reasoning behind the selected approach  
+5. **Stakeholders involved**: Who was involved in and affected by the decision  
+6. **Trade-offs**: What was gained and sacrificed with this choice  
+7. **Metrics & thresholds**: How success will be measured  
+8. **Limitations**: Known shortcomings of the selected approach  
+9. **References**: Supporting research, regulations, or precedents  
 
 🔗 **Playbook Connection**  
-- Audit → provides evidence  
-- Intervention → defines chosen approach  
+- Fairness Audit → provides structured evidence and problem framing
+- Fairness Intervention → defines and justifies mitigation approach  
 
 ---
 
