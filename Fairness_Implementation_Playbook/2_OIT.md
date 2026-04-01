@@ -256,11 +256,9 @@ Document every critical fairness decision.
 - Fairness Audit → provides structured evidence and problem framing
 - Fairness Intervention → defines and justifies mitigation approach  
 
----
-
 ### 3.2 Fairness Requirements Documentation
 
-Fairness requirements documentation creates explicit, measurable fairness objectives in a specofic context.  
+Fairness requirements documentation creates explicit, measurable fairness objectives in a specific context.  
 Key components include:  
 
 1. **Fairness Definitions**: Specific mathematical definitions selected for this context (e.g., equal opportunity)  
@@ -270,8 +268,6 @@ Key components include:
 5. **Testing Criteria**: How fairness properties will be validated
 6. **Trade-off Priorities**: How conflicts between fairness and other objectives should be resolved
 7. **Regulatory Requirements**: Specific compliance obligations relevant to this application
-
----
 
 ### 3.3 Model Cards & Transparency
 
@@ -286,8 +282,6 @@ Key components include:
 6. **Testing Details**: Documentation of fairness evaluation procedures
 7. **Ethical Considerations**: Discussion of broader impacts and value trade-offs
 
----
-
 ### 3.4 Stakeholder Communication Layers
 
 - **Executives** → high-level risks and trends  
@@ -299,8 +293,8 @@ Key components include:
 
 ### Resources
 
-- Model Cards: https://arxiv.org/abs/1810.03993  
-- Datasheets for Datasets: https://arxiv.org/abs/1803.09010  
+- [Model Cards](https://arxiv.org/abs/1810.03993)  
+- [Datasheets for Datasets](https://arxiv.org/abs/1803.09010)  
 
 ---
 
