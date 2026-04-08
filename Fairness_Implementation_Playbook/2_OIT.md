@@ -285,12 +285,61 @@ This documentation framework supports knowledge sharing and helps establish clea
 
 ### 3.4 Stakeholder Communication Layers
 
-Stakeholder-specific communication protocols create tailored information flows for different audiences.   
+1. **Stakeholder Mapping:** Identifying relevant audiences and their information needs
+2. **Layered Communication:** Creating different abstractions for different stakeholders
+3. **Translation Guidelines:** Converting technical fairness concepts to audience-appropriate language
+4. **Visualization Standards:** Representing fairness information visually for different audiences
+5. **Feedback Channels:** Establishing mechanisms for stakeholders to provide input
+6. **Escalation Paths:** Defining how fairness concerns move through the organization  
+
+Stakeholder-specific communication protocols create tailored information flows for different audiences.  
 
 - **Executives** → high-level risks and trends  
 - **Product teams** → system-level insights  
 - **Technical teams** → detailed metrics  
-- **External stakeholders** → impact-focused communication  
+- **External stakeholders** → impact-focused communication
+
+### 3.5 Transparency Framework for Fairness Limitations
+
+1. **Known Limitations Register:** Explicit documentation of identified fairness constraints
+2. **Performance Boundaries:** Clear communication of conditions where fairness guarantees apply
+3. **Uncertainty Acknowledgment:** Transparent discussion of confidence in fairness claims
+4. **Progressive Disclosure:** Layered communication providing appropriate detail for different contexts
+5. **Limitation Monitoring:** Tracking known issues to drive future improvements
+6. **Incident Reporting:** Systematic documentation of fairness failures that occur
+
+### 3.6  Intersectional principles in documentation frameworks
+
+- Create explicit sections for intersectional analysis in documentation templates
+- Require disaggregated reporting across intersectional subgroups, not just individual attributes
+- Document how different fairness definitions interact at intersectional boundaries
+- Include perspectives from multiply-marginalized groups in stakeholder documentation
+- Acknowledge when documentation lacks intersectional consideration
+
+### 3.7 Communicating Documentation Initiatives with Stakeholders
+
+- **Frame documentation as concrete benefits**, not abstract principles
+- **For executives:** emphasize reduced regulatory and reputational risk
+- **For product teams:** highlight prevention of expectation misalignment through clear communication
+- **For engineering teams:** focus on reduced rework by making design intent explicit
+
+### 3.8 Evaluate Documentation
+
+1. **Documentation Coverage:**    
+   Percentage of fairness decisions with complete documentation  
+   At least 95% documentation coverage for critical fairness decisions  
+2. **Knowledge Transfer Effectiveness:**  
+   Ability of team members to understand fairness decisions made by others based on documentation  
+   New team members able to explain rationales for 80%+ of past fairness decisions  
+3. **Stakeholder Comprehension:**  
+   Accuracy of stakeholder understanding of fairness properties  
+   85%+ stakeholder comprehension accuracy for key fairness properties  
+4. **Communication Satisfaction:**  
+   Stakeholder feedback on clarity and usefulness of fairness communication  
+   Minimum 70% stakeholder satisfaction with fairness communication
+5. **Incident Response Time:**  
+   How quickly teams can respond to fairness issues based on available documentation
+   Faster incident response time compared to baseline  
 
 ---
 
