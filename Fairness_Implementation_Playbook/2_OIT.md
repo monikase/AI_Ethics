@@ -252,13 +252,13 @@ Document every critical fairness decision.
 8. **Limitations**: Known shortcomings of the selected approach  
 9. **References**: Supporting research, regulations, or precedents  
 
-> _Example FDR sections:_
->
-> Decision: Adopt equal opportunity as primary fairness metric
-> Alternatives Considered: Demographic parity, equalized odds
-> Rationale: Equal opportunity better aligns with meritocratic admission principles while ensuring qualified applicants have equal chances regardless of background
-> Stakeholders: AI Ethics Officer (accountable), Admissions Director (consulted), Diversity Office (consulted)
-> Known Limitations: May not address historical inequities in qualification development
+> _Example FDR sections:_  
+>  
+> Decision: Adopt equal opportunity as primary fairness metric  
+> Alternatives Considered: Demographic parity, equalized odds  
+> Rationale: Equal opportunity better aligns with meritocratic admission principles while ensuring qualified applicants have equal chances regardless of background  
+> Stakeholders: AI Ethics Officer (accountable), Admissions Director (consulted), Diversity Office (consulted)  
+> Known Limitations: May not address historical inequities in qualification development  
 
 
 🔗 **Playbook Connection**  
