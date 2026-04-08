@@ -283,6 +283,16 @@ Model cards and fairness templates create standardized formats for documenting f
 Gebru et al. (2021) propose datasheets for datasets to facilitate better communication between dataset creators and consumers, and to encourage transparency and accountability.   
 This documentation framework supports knowledge sharing and helps establish clearer boundaries around appropriate use.
 
+> _Example Model Card Section:_  
+>  
+> Fairness Properties:  
+> - Primary Metric: Equal opportunity (difference < 0.03)  
+> - Secondary Metrics: Demographic parity (difference < 0.07)  
+> - Protected Attributes Considered: Gender, race, geography, socioeconomic status  
+> - Intersectional Analysis: Performance disaggregated across 12 demographic intersections  
+> - Known Limitations: Limited validation data for rural first-generation students  
+
+
 ### 3.4 Stakeholder Communication Layers
 
 1. **Stakeholder Mapping:** Identifying relevant audiences and their information needs
