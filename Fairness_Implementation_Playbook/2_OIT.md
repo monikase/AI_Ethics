@@ -302,7 +302,7 @@ This documentation framework supports knowledge sharing and helps establish clea
 > - Known Limitations: Limited validation data for rural first-generation students  
 
 
-### 3.4 Stakeholder Communication Layers
+### 3.4 Stakeholder-Specific Protocol
 
 1. **Stakeholder Mapping:** Identifying relevant audiences and their information needs
 2. **Layered Communication:** Creating different abstractions for different stakeholders
@@ -313,10 +313,10 @@ This documentation framework supports knowledge sharing and helps establish clea
 
 Stakeholder-specific communication protocols create tailored information flows for different audiences.  
 
-- **Executives** → high-level risks and trends  
-- **Product teams** → system-level insights  
-- **Technical teams** → detailed metrics  
-- **External stakeholders** → impact-focused communication
+> - **Executives** → high-level risks and trends  
+> - **Product teams** → system-level insights  
+> - **Technical teams** → detailed metrics  
+> - **External stakeholders** → impact-focused communication  
 
 ### 3.5 Transparency Framework for Fairness Limitations
 
