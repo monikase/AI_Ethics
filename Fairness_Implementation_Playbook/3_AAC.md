@@ -53,8 +53,8 @@ Embedding fairness at the architecture level enables:
 
 - **Fairness Audit** → identifies architecture-specific risks  
 - **Fairness Intervention** → defines mitigation strategies  
-- **Fair AI Scrum Toolkit** → operationalizes fairness in teams :contentReference[oaicite:2]{index=2}  
-- **Organizational Integration Toolkit** → governs fairness decisions :contentReference[oaicite:3]{index=3}  
+- **Fair AI Scrum Toolkit** → operationalizes fairness in teams
+- **Organizational Integration Toolkit** → governs fairness decisions 
 
 This cookbook ensures fairness is implemented **correctly at the system level**.
 
