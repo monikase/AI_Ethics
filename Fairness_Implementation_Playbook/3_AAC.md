@@ -22,8 +22,6 @@ This results in:
 The Advanced Architecture Cookbook addresses this gap by transforming fairness into an  
 **architecture-aware, system-level engineering practice**.
 
----
-
 ## Business Value of Architecture-Specific Fairness  
 
 Embedding fairness at the architecture level enables:
@@ -43,8 +41,6 @@ Embedding fairness at the architecture level enables:
 - **Better Product Quality**  
   Fairness improvements often increase generalization and robustness  
 
----
-
 ## What This Cookbook Will Do  
 
 - Provide **architecture-specific fairness strategies**  
@@ -52,8 +48,6 @@ Embedding fairness at the architecture level enables:
 - Help teams **select appropriate interventions per system type**  
 - Define **evaluation and validation standards per architecture**  
 - Enable **consistent fairness across heterogeneous AI systems**  
-
----
 
 ## Connection to Other Playbook Components  
 
@@ -63,8 +57,6 @@ Embedding fairness at the architecture level enables:
 - **Organizational Integration Toolkit** → governs fairness decisions :contentReference[oaicite:3]{index=3}  
 
 This cookbook ensures fairness is implemented **correctly at the system level**.
-
----
 
 ## Cookbook Overview  
 
