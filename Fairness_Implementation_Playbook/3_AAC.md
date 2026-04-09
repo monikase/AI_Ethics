@@ -84,12 +84,10 @@ This cookbook provides architecture-specific guidance across:
 
 Determine which system you are working with:
 
-- **LLM** → generates text  
-- **Recommendation System** → ranks or suggests items  
+- **Large Language Model (LLM)** → generates text  
+- **Recommendation System (RecSys)** → ranks or suggests items  
 - **Vision Model** → processes images/video  
 - **Multi-Modal System** → combines multiple data types  
-
----
 
 ### 1.2 Fairness Diagnosis  
 
@@ -100,8 +98,6 @@ Identify where bias originates:
 - System dynamics (feedback loops)  
 - Interaction (prompts, users, modalities)  
 
----
-
 ### 1.3 Intervention Selection  
 
 Choose strategies aligned with architecture:
@@ -110,8 +106,6 @@ Choose strategies aligned with architecture:
 - RecSys → exposure + feedback control  
 - Vision → data + environment + representation  
 - Multi-modal → fusion + modality balance  
-
----
 
 ### 1.4 Validation  
 
