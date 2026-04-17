@@ -27,9 +27,7 @@ Embedding fairness at the architecture level enables:
 - **Fair AI Scrum Toolkit** → operationalizes fairness in teams
 - **Organizational Integration Toolkit** → governs fairness decisions 
 
-This cookbook ensures fairness is implemented **correctly at the system level**.
-
---
+This cookbook ensures fairness is implemented **correctly at the system level**.  
 
 ## Cookbook Map  
 
