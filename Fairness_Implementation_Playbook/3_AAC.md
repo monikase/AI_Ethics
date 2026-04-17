@@ -82,18 +82,23 @@ Evaluate fairness using:
 
 ### 1.5. Minimum Viable Use (Time‑Constrained Teams)
 
-1) Identify architecture → 2) Scan common issues → 3) Pick one recipe → 4) Validate with one metric → 5) Log assumptions.
+1. Identify architecture
+2. Scan common issues
+3. Pick **one recipe** 
+4. Validate with **one metric**
+5. Log assumptions and risks
 
 ### 1.6 Who Uses What
 
-- **ML Engineers** → Strategies + Evaluation
-- **Product** → Challenges + Trade‑offs
+- **ML Engineers** → Implementation + Evaluation
+- **Product** → Trade‑offs + Risk
 - **QA/Risk** → Validation + Monitoring
-  
 
 
-> **Key Principle:** Target how the system works, not just outputs.
- 
+> **Key Principle:** Target **how the system works**, not just outputs.
+
+### 1.7 How to Use Recipe Cards  
+Recipe cards are designed as **decision guides for engineering teams**. Each card answers _when_ a technique should be used, _where_ it fits in the system pipeline, _how_ to apply it safely, and _what to monitor_ afterward. Teams should select recipe cards based on their system’s architecture and observed failure modes, adapt parameters within the suggested ranges, and only combine multiple cards after validating each intervention independently.
 
 ---
 
@@ -109,57 +114,77 @@ Evaluate fairness using:
 - Context‑dependent bias
 - Tone/framing disparities
 
-
-### 2.2 Core Fairness Challenge  
-
-- learn from **biased internet data**  
-- generate **open-ended outputs**  
-- exhibit **emergent behaviors**  
-
-→ Bias is **dynamic, contextual, and hard to measure**
-
-### 2.3 Common Fairness Issues  
+### 2.2 Common Fairness Issues  
 
 |  | Category | Symptom | Impact |
 |---|--------|--------|--------|
-| 1 | Stereotyping | Biased associations | Harmful narratives |
-| 2 | Stylistic Bias | Different tone per group | Reinforces norms |
-| 3 | Prompt Sensitivity | Fairness varies by phrasing | Inconsistent fairness |
-| 4 | Sycophancy | Agrees with biased input | Bias amplification |
-| 5 | Hallucination Bias | False biased outputs | Harm/Misinformation |
+| 1 | Stylistic Stereotyping | Biased associations (Supportive tone for women, directive tone for men) | Harmful narratives, Reinforces social norms |
+| 2 | Association Bias | Different tone per group (Certain skills linked to demographics) | Skewed evaluations |
+| 3 | Prompt Sensitivity | Fairness varies by phrasing (Small phrasing changes alter fairness) | Inconsistent outcomes |
+| 4 | Sycophancy | Model agrees with biased input | Bias amplification |
+| 5 | Hallucination Bias | False biased outputs (Fabricated demographic-skewed facts) | Harm/Misinformation |
 
-### 2.4 Implementation: Recipe Cards
+### 2.3 Frequent Mistakes
 
-#### Recipe A: Counterfactual Prompting + Self‑Critique
+1. Relying on classification fairness metrics for generative outputs
+2. Auditing only one prompt template
+3. Treating RLHF as sufficient without prompt controls
+4. Ignoring decode‑time bias emergence
+5. Assuming neutrality from "professional" tone
 
-- **Use when** tone/framing differs across groups
-- **Steps:** (1) Neutral task directive (2) Counterfactual swap check (3) Self‑critique rewrite
-- **Watch out:** Over‑constraints reducing utility
-- **Monitor:** Counterfactual consistency
+### 2.4 Why LLMs Are Special
 
-#### Recipe B: Fairness‑Aware Fine‑Tuning (RLHF‑F)
+- Generative freedom creates infinite surface area for bias
+- Prompt‑conditioned behavior makes fairness contextual
+- Emergent properties appear only at scale
+- Decoding choices shape fairness as much as training
 
-- **Use when** bias persists across prompts
-- **Steps:** Balanced data → counterfactual augmentation → fairness‑weighted rewards
-- **Watch out:** Mode collapse
-- **Monitor:** Stereotype rate vs perplexity
+### 2.5 Recipe Summary
 
-#### Recipe C: Decode‑Time Self‑Rerank
+|  | Stage | Primitive | Purpose | Typical Parameter Range |
+|---|--------|--------|--------|--------|
+| 1 | Corpus | Dynamic thematic balancing | Equal topic‑demographic density | 0.08 – 0.12 |
+| 2 | Pre‑train | Opposite‑corpus blending | Inject counter‑stereotypes | 10–20% |
+| 3 | Fine‑tune | RLHF‑F | Equal topic‑demographic density | Threshold ≥ 0.8 |
+| 4 | Decode | Self‑rerank diversity | Equal topic‑demographic density | Weight 0.3–0.6 |
+| 5 | Post | Bias filter | Catch residual harms | n/a |   
 
-- **Use when** residual stylistic bias remains
-- **Steps:** Sample k outputs → fairness scorer → rerank
-- **Monitor:** Latency, diversity
-
-### 2.5 Example (Resume Summaries)
-
-- **Before:** Male → “strong leader”; Female → “collaborative communicator”
-- **After:** Vocabulary parity via counterfactual prompting + rerank
-
-### 2.6 Validation Targets
+#### Validation Targets
 
 - Counterfactual consistency ≥ 90%
 - Toxicity ≤ 0.5%
 - Perplexity Δ ≤ 5%
+
+### 2.6 Selected Recipe Cards
+
+#### Recipe Card LLM-1: Counterfactual Prompting + Self‑Critique
+
+- **Use when** tone or framing differs for similar profiles
+- **Apply at** prompt and generation stages
+- **How:** Generate → Swap protected attributes → Self‑review → Regenerate if inconsistent
+- **Watch out:** Over‑constraining prompts reduces usefulness
+- **Validate:** Counterfactual consistency ≥ 90%
+
+#### Recipe Card LLM‑2: Fairness‑Aware Fine‑Tuning (RLHF‑F)
+
+- **Use when** bias persists across diverse prompts
+- **Apply at** fine‑tuning
+- **How:** Balanced data → Counterfactual augmentation → Fairness‑weighted rewards
+- **Watch out:** Mode collapse from excessive reward strength
+- **Monitor:** Stereotype rate ↓, Perplexity Δ ≤ 5%
+
+#### Recipe Card LLM‑3: Decode‑Time Self‑Rerank
+
+- **Use when** residual bias remains after training
+- **Apply at** decoding
+- **How:** Sample k outputs → Score → Select fairest acceptable output
+- **Watch out:** Latency and reduced diversity
+- **Validate:** Bias ↓ with fluency preserved
+
+### 2.7 Example (Resume Summaries)
+
+- **Before:** Male → “strong leader”; Female → “collaborative communicator”
+- **After:** Vocabulary parity via counterfactual prompting + rerank
 
 ---
 
@@ -191,40 +216,68 @@ Recommendation systems:
 
 |  | Category | Symptom | Impact |
 |---|--------|--------|--------|
-| 1 | Exposure Bias | Same items dominate | Unequal opportunity |
-| 2 | Feedback Loop | Popular items reinforced | Systemic bias |
-| 3 | Filter Bubbles | Narrow content | Limited opportunities |
-| 4 | Provider Bias | Unequal visibility | Economic harm |
+| 1 | Exposure Bias | Same items dominate rankings | Unequal opportunity |
+| 2 | Feedback Loops | Popularity reinforces itself | Structural segregation |
+| 3 | Filter Bubbles | Narrow content paths | Limited opportunities |
+| 4 | Provider Bias | Unequal visibility (Some providers rarely shown) | Economic harm |
 
----
+### 3.5 Frequent Mistakes
 
-### 3.5 Implementation: Recipe Cards 
+- Auditing CTR instead of exposure distribution
+- Ignoring long‑term feedback loops
+- Treating users as the only stakeholder
+- Applying static constraints to dynamic systems
 
+### 3.6 Why Recommendation Systems Are Special
 
-#### Recipe A: Exposure‑Aware Ranking
+- **They actively shape user behavior**
+- **Fairness unfolds over time**, not per decision
+- **Multiple stakeholders** have competing fairness claims
 
-- **Use when** CTR parity hides segregation
-- **Steps:** Position‑aware constraints; amortized fairness
-- **Monitor:** Exposure share vs representation
+### 3.7 Recipe Summary
 
-#### Recipe B: Exploration Guardrails
+|  | Stage | Primitive | Purpose | Typical Parameter Range |
+|---|--------|--------|--------|--------|
+| 1 | Rank | Exposure‑aware ranking | Balance visibility | Gap ≤ ±15% |
+| 2 | Learn | Popularity discounting | Prevent feedback loops | Decay 0.8–0.95 |
+| 3 | Explore | Controlled exploration | Break bubbles | ε = 0.05–0.15 |
+| 4 | Optimize | Multi‑stakeholder loss | Balance interests | Weight tuned |
 
-- **Use when** bubbles form over time
-- **Steps:** Controlled exploration; popularity discounting
-- **Monitor:** Longitudinal diversity
-
-#### Recipe C: Multi‑Stakeholder Objective
-
-- **Use when** provider groups suffer
-- **Steps:** Weighted objectives; governance review
-- **Monitor:** User vs provider fairness
-
-### 3.6 Validation Targets
+#### Validation Targets
   
 - Exposure gaps within ±15% of representation
-- Long‑term diversity +30% vs baseline
+- Longitudinal exposure parity
+- Long‑term diversity gain ≥ 30%
 - Relevance retention ≥ 90%
- 
+
+
+### 3.5 Selected Recipe Cards
+
+#### Recipe Card RS‑1: Exposure‑Aware Ranking
+
+- **Use when** equal CTR hides disadvantaged visibility
+- **Apply at** ranking layer
+- **How:** Measure exposure → apply position‑aware constraints → track over time
+- **Watch out:** Over‑correction harming relevance
+- **Validate:** Exposure gap ≤ ±15
+
+#### Recipe Card RS‑2: Exploration Guardrails
+
+- **Use when** filter bubbles tighten over time
+- **Apply at** exploration strategy
+- **How:** Controlled exploration + popularity discounting
+- **Watch out:** Excess exploration reduces satisfaction
+- **Validate:** Diversity gain ≥ 30%
+
+
+#### Recipe Card RS‑3: Multi‑Stakeholder Optimization
+
+- **Use when** provider groups face systematic disadvantage
+- **Apply at** objective definition
+- **How:** Explicit stakeholder weights → governance review
+- **Watch out:** Hidden value judgments
+- **Validate:** Provider exposure parity
+
 ---
 
 <a id="vision"></a>
@@ -244,38 +297,71 @@ Vision systems:
 - learn **visual representations**  
 - encode **demographic features implicitly**  
 
-→ Bias is **data-driven and context-dependent** Bias enters before ML (lighting, sensors) and hides inside embeddings.
+→ Bias is **data-driven and context-dependent**
 
 
 ### 4.3 Common Fairness Issues  
 
 |  | Category | Symptom | Impact |
 |---|--------|--------|--------|
-| 1 | Skin Tone Gap | Lower accuracy | Discrimination risk |
-| 2 | Context Bias | Background used as proxy | Stereotyping |
-| 3 | Feature Leakage | Demographics encoded | Hidden bias |
-| 4 | Environment Sensitivity | Lighting affects results | Unequal performance |
+| 1 | Skin-tone Accuracy Gap | Lower accuracy (Darker skin misdetected) | Safety & compliance risk/Discrimination risk |
+| 2 | Context Bias (Background Leakage) | Background used as proxy | Systematic stereotyping |
+| 3 | Attribute Leakage | Demographics (Gender/ethnicity) encoded | Hidden bias, Privacy Violation |
+| 4 | Environment Sensitivity | Lighting affects results (Camera favors certain tones) | Unequal performance, Exclusion |
 
-### 4.4 Implementation: Recipe Cards  
+### 4.4 Frequent Mistakes
 
-#### Recipe A: Environment Equalization
+- Reporting only overall accuracy
+- Oversaturated synthetic augmentation
+- Single global decision threshold
+- Ignoring lighting and lens variability
 
-- **Use when** lab ≠ field
-- **Steps:** Style transfer; domain randomization
-- **Monitor:** Robustness across conditions
+### 4.5 Why Vision Models Are Special
 
-#### Recipe B: Representation Probing + Removal
+- **Bias enters before ML** through capture pipelines
+- **Visual saliency can mislead audits**
+- **Demographics hide deep in embeddings**
 
-- **Use when** leakage suspected
-- **Steps:** Probe → reinit leaking layer → retrain
-- **Monitor:** Leak AUC
+### 4.6 Recipe Summary
 
+|  | Stage | Primitive | Purpose | Typical Parameter Range |
+|---|--------|--------|--------|--------|
+| 1 | Augment | Style‑transfer equalizer | Balance lighting/textures | 0.2–0.4 |
+| 2 | Audit | Prototype leak probe | Quantify leakage | Leak < 0.02 |
+| 3 | Remediate | Layer reinitialization | Remove leaking block | n/a |
 
-### 4.5 Validation Targets
+#### Validation Targets
   
 - Accuracy gap < 5%
 - Leak AUC ≤ 0.52
 - Robustness variance ≤ 10%
+
+
+### 4.7 Selected Recipe Cards
+ 
+#### Recipe Card V‑1: Environment Equalization
+
+- **Use when** lab accuracy fails in real‑world conditions
+- **Apply at** data augmentation
+- **How:** Style transfer + domain randomization
+- **Watch out:** Visual artifacts from over‑augmentation
+- **Validate:** Robustness variance ≤ 10%
+
+#### Recipe Card V‑2: Representation Leakage Probe
+
+- **Use when** demographic encoding is suspected
+- **Apply at** audit stage
+- **How:** Probe embeddings → identify leaking layers
+- **Watch out:** Detection ≠ mitigation
+- **Validate:** Leak AUC ≤ 0.52
+
+#### Recipe Card V‑3: Layer Reinitialization
+
+- **Use when** specific layers encode protected attributes
+- **Apply at** remediation
+- **How:** Reinitialize leaking layers → retrain downstream
+- **Watch out:** Performance regression if overused
+- **Validate:** mIoU gap ≤ 2%
 
 ---
 
@@ -305,29 +391,61 @@ Multi-modal systems:
 
 |  | Category | Symptom | Impact |
 |---|--------|--------|--------|
-| 1 | Bias Transfer | One bias infects others | Compound harm |
-| 2 | Modality Dominance | One input dominates | Skewed outcomes |
-| 3 | Missing Modality | Unequal fallback; Model fails when one stream unavailable (e.g., low-light video) | Unequal performance |
-| 4 | Inconsistency | Conflicting outputs | User confusion |  
+| 1 | Bias Transfer | One bias infects others (e.g. Vision bias misleads text) | Compounded harm |
+| 2 | Missing Modality Fallback | Failure when input missing; Model fails when one stream unavailable (e.g., low-light video) | Unequal performance |
+| 3 | Inconsistent Predictions | Conflicting signals | User confusion |  
+| 4 | Dominant Modality | One input dominates | Narrow representations |
 
-### 5.5 Implementation: Recipe Cards
+### 5.5 Frequent Mistakes
 
-#### Recipe A: Adaptive Fair Fusion
+- Neglecting confidence‑based routing
+- Skipping recalibration after modality dropout
+- Debiasing modalities independently
 
-- **Use when** modality dominance varies
-- **Steps:** Confidence‑weighted fusion
-- **Monitor:** Cross‑modal agreement
+### 5.6 Why Multi‑Modal Systems Are Special
 
-#### Recipe B: Failure‑Route Routing
+- Shared latent space amplifies hidden bias
+- Each modality fails differently
+- Unequal data availability creates unequal treatment
 
-- **Use when** inputs degrade
-- **Steps:** Skip unreliable modality
-- **Monitor:** Bias migration
+### 5.7 Recipe Summary
 
-### 5.6 Validation Targets  
+|  | Stage | Primitive | Purpose | Typical Parameter Range |
+|---|--------|--------|--------|--------|
+| 1 | Fusion | Cross‑modal consistency loss | Align modalities | 1.0–2.0 |
+| 2 | Runtime | Failure‑route router | Skip unreliable modality | Conf ≥ 0.65 |
+
+#### Validation Targets  
 
 - Agreement ≥ 0.92
 - Bias migration ≤ 1%
+
+### 5.8 Selected Recipe Cards
+
+#### Recipe Card MM‑1: Cross‑Modal Consistency Loss
+
+- **Use when** modality disagreement correlates with demographics
+- **Apply at** fusion during training
+- **How:** Penalize cross‑modal divergence
+- **Watch out:** Over‑alignment suppresses useful variation
+- **Validate:** Agreement ≥ 0.92
+
+
+#### Recipe Card MM‑2: Failure‑Route Router
+
+- **Use when** one modality degrades under conditions
+- **Apply at** runtime inference
+- **How:** Confidence‑based routing + dynamic fusion weights
+- **Watch out:** Requires calibration
+- **Validate:** Bias migration ≤ 1%
+
+#### Recipe Card MM‑3: Modality Dropout Training
+
+- **Use when** input availability varies by user group
+- **Apply at** training
+- **How:** Random modality dropout → robust fusion
+- **Watch out:** Excess dropout reduces accuracy
+- **Validate:** Parity across modality subsets
 
 ---
 
@@ -337,10 +455,10 @@ Multi-modal systems:
 
 ---
 
-- Group-Aware Reweighting   
-- Counterfactual Data Generation  
-- Slice-Wise Evaluation  
-- Bias-Aware Training  
+- **Group-Aware Reweighting** - equalizes sample influence
+- **Counterfactual Synthesis** - swap protected attributes
+- **Slice-Wise Evaluation Harness** - systematic subgroup audits
+- **Bias‑sensitive Early Stopping** - halt when fairness regresses
 - Fairness Monitoring Pipelines  
 
 ---
@@ -356,8 +474,8 @@ Bias is strongest at **intersections of identities**, not single attributes.
 ### Implementation  
 
 - Evaluate across **intersections**, not single attributes  
-- Prioritize **high-risk groups**  
-- Use **intersection‑aware metrics**
+- Prioritize **high-risk slices**  
+- Design **intersection‑aware metrics**
 
 ---
 
@@ -369,14 +487,14 @@ Bias is strongest at **intersections of identities**, not single attributes.
 #### Step 1: Identify Architecture  
 → determine system type  
 
-#### Step 2: Diagnose Bias  
+#### Step 2: Diagnose Bias Source
 → representation / data / dynamics  
 
 #### Step 3: Apply Recipes  
 → architecture-specific interventions  
 
 #### Step 4: Validate  
-→ metrics + real-world testing  
+→ metrics + real-world scenarios
 
 #### Step 5: Monitor   
 → continuous fairness tracking  
@@ -400,18 +518,6 @@ Bias is strongest at **intersections of identities**, not single attributes.
 
 ---
 
-## Final Note  
 
-This cookbook transforms fairness from:
-
-- generic techniques  
-- static evaluation  
-- output-level fixes  
-
-into:
-
-- **architecture-aware engineering practice**  
-- **system-level fairness design**  
-- **continuous optimization across AI systems**  
 
 ---
