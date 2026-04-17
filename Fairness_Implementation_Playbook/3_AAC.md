@@ -60,8 +60,6 @@ Embedding fairness at the architecture level enables:
 <a id="usage"></a>
 ## 1️⃣ How to Use This Cookbook  
 
----
-
 ### 1.1 Identify the Architecture  
 
 Determine which system you are working with:
