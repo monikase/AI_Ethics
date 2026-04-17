@@ -169,16 +169,23 @@ Evaluate fairness using:
 
 ---
 
-### 3.1 Core Fairness Challenge  
+### 3.1 When to Use
+
+- Ranking/personalization with user feedback
+
+### 3.2 Core Fairness Challenge  
 
 Recommendation systems:
 - **shape user behavior over time**  
 - create **feedback loops**  
 - control **visibility and exposure**  
 
-→ Bias is **amplified over time**
+→ **Exposure allocation** + **feedback loops** amplify historical bias over time
 
----
+### 3.3 Where Bias Enters
+
+/1) Retrieval → 2) Ranking (exposure) → 3) Interaction → 4) Retraining
+
 
 ### 3.2 Common Fairness Issues  
 
