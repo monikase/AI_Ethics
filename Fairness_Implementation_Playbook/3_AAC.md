@@ -103,58 +103,63 @@ Evaluate fairness using:
 
 ---
 
-### 2.1 Core Fairness Challenge  
+### 2.1 When to Use
 
-LLMs:
+- Text generation/analysis
+- Context‑dependent bias
+- Tone/framing disparities
+
+
+### 2.2 Core Fairness Challenge  
+
 - learn from **biased internet data**  
 - generate **open-ended outputs**  
 - exhibit **emergent behaviors**  
 
 → Bias is **dynamic, contextual, and hard to measure**
 
----
+### 2.3 Common Fairness Issues  
 
-### 2.2 Common Fairness Issues  
+|  | Category | Symptom | Impact |
+|---|--------|--------|--------|
+| 1 | Stereotyping | Biased associations | Harmful narratives |
+| 2 | Stylistic Bias | Different tone per group | Reinforces norms |
+| 3 | Prompt Sensitivity | Fairness varies by phrasing | Inconsistent fairness |
+| 4 | Sycophancy | Agrees with biased input | Bias amplification |
+| 5 | Hallucination Bias | False biased outputs | Harm/Misinformation |
 
-| Category | Symptom | Impact |
-|--------|--------|--------|
-| Stereotyping | Biased associations | Harmful narratives |
-| Stylistic Bias | Different tone per group | Reinforces norms |
-| Prompt Sensitivity | Output depends on phrasing | Inconsistent fairness |
-| Sycophancy | Agrees with biased input | Bias amplification |
-| Hallucination Bias | False biased outputs | Misinformation |
+### 2.4 Implementation: Recipe Cards
 
----
+#### Recipe A: Counterfactual Prompting + Self‑Critique
 
-### 2.3 Implementation Strategy  
+- **Use when** tone/framing differs across groups
+- **Steps:** (1) Neutral task directive (2) Counterfactual swap check (3) Self‑critique rewrite
+- **Watch out:** Over‑constraints reducing utility
+- **Monitor:** Counterfactual consistency
 
-#### Prompt-Level  
+#### Recipe B: Fairness‑Aware Fine‑Tuning (RLHF‑F)
 
-- fairness instructions  
-- self-critique prompts  
-- chain-of-thought reasoning  
-- counterfactual prompting  
+- **Use when** bias persists across prompts
+- **Steps:** Balanced data → counterfactual augmentation → fairness‑weighted rewards
+- **Watch out:** Mode collapse
+- **Monitor:** Stereotype rate vs perplexity
 
-#### Fine-Tuning  
+#### Recipe C: Decode‑Time Self‑Rerank
 
-- balanced datasets  
-- counterfactual augmentation  
-- fairness-aware RLHF  
+- **Use when** residual stylistic bias remains
+- **Steps:** Sample k outputs → fairness scorer → rerank
+- **Monitor:** Latency, diversity
 
-#### Guardrails  
+### 2.5 Example (Resume Summaries)
 
-- input filtering  
-- output filtering  
-- monitoring systems  
+- **Before:** Male → “strong leader”; Female → “collaborative communicator”
+- **After:** Vocabulary parity via counterfactual prompting + rerank
 
----
+### 2.6 Validation Targets
 
-### 2.4 Evaluation  
-
-- counterfactual consistency  
-- stereotype detection  
-- red-teaming  
-- human evaluation  
+- Counterfactual consistency ≥ 90%
+- Toxicity ≤ 0.5%
+- Perplexity Δ ≤ 5%
 
 ---
 
