@@ -468,8 +468,7 @@ Multi-modal systems:
 ---
 
 <a id="intersectionality"></a>
-## 7. Intersectionality Integration Layer  
-→ Address real-world complexity  
+## 7. Intersectionality Integration Layer    
 
 ---
 
