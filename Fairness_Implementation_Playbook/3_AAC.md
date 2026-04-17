@@ -128,23 +128,17 @@ Each card specifies:
 ## 2️⃣ Large Language Models (LLM) Suite  
 
   
-### 2.1 When to Use
-
-- Text generation/analysis
-- Context‑dependent bias
-- Tone/framing disparities
-
-### 2.2 Common Fairness Issues  
+### 2.1 Common Fairness Issues  
 
 |  | Category | Symptom | Impact |
 |---|--------|--------|--------|
-| 1 | Stylistic Stereotyping | Biased associations (Supportive tone for women, directive tone for men) | Harmful narratives, Reinforces social norms |
-| 2 | Association Bias | Different tone per group (Certain skills linked to demographics) | Skewed evaluations |
-| 3 | Prompt Sensitivity | Fairness varies by phrasing (Small phrasing changes alter fairness) | Inconsistent outcomes |
+| 1 | Stylistic Stereotyping | Tone differs by group (e.g. Supportive tone for women, directive tone for men) | Reinforces social norms |
+| 2 | Association Bias | Certain skills linked to demographics | Skewed evaluations |
+| 3 | Prompt Sensitivity | Fairness varies by phrasing | Inconsistent outcomes |
 | 4 | Sycophancy | Model agrees with biased input | Bias amplification |
-| 5 | Hallucination Bias | False biased outputs (Fabricated demographic-skewed facts) | Harm/Misinformation |
+| 5 | Hallucination Bias | Fabricated biased facts | Misinformation |
 
-### 2.3 Frequent Mistakes
+### 2.2 Frequent Mistakes
 
 1. Relying on classification fairness metrics for generative outputs
 2. Auditing only one prompt template
@@ -152,30 +146,14 @@ Each card specifies:
 4. Ignoring decode‑time bias emergence
 5. Assuming neutrality from "professional" tone
 
-### 2.4 Why LLMs Are Special
+### 2.3 Why LLMs Are Special
 
 - Generative freedom creates infinite surface area for bias
 - Prompt‑conditioned behavior makes fairness contextual
 - Emergent properties appear only at scale
 - Decoding choices shape fairness as much as training
 
-### 2.5 Recipe Summary
-
-|  | Stage | Primitive | Purpose | Typical Parameter Range |
-|---|--------|--------|--------|--------|
-| 1 | Corpus | Dynamic thematic balancing | Equal topic‑demographic density | 0.08 – 0.12 |
-| 2 | Pre‑train | Opposite‑corpus blending | Inject counter‑stereotypes | 10–20% |
-| 3 | Fine‑tune | RLHF‑F | Equal topic‑demographic density | Threshold ≥ 0.8 |
-| 4 | Decode | Self‑rerank diversity | Equal topic‑demographic density | Weight 0.3–0.6 |
-| 5 | Post | Bias filter | Catch residual harms | n/a |   
-
-#### Validation Targets
-
-- Counterfactual consistency ≥ 90%
-- Toxicity ≤ 0.5%
-- Perplexity Δ ≤ 5%
-
-### 2.6 Selected Recipe Cards
+### 2.4 Selected Recipe Cards
 
 #### Recipe Card LLM-1: Counterfactual Prompting + Self‑Critique
 
@@ -201,38 +179,34 @@ Each card specifies:
 - **Watch out:** Latency and reduced diversity
 - **Validate:** Bias ↓ with fluency preserved
 
-### 2.7 Example (Resume Summaries)
 
-- **Before:** Male → “strong leader”; Female → “collaborative communicator”
-- **After:** Vocabulary parity via counterfactual prompting + rerank
+### 2.5 Recipe Summary
+
+|  | Stage | Primitive | Purpose | Typical Parameter Range |
+|---|--------|--------|--------|--------|
+| 1 | Corpus | Dynamic thematic balancing | Equal topic‑demographic density | 0.08 – 0.12 |
+| 2 | Pre‑train | Opposite‑corpus blending | Inject counter‑stereotypes | 10–20% |
+| 3 | Fine‑tune | RLHF‑F | Equal topic‑demographic density | Threshold ≥ 0.8 |
+| 4 | Decode | Self‑rerank diversity | Equal topic‑demographic density | Weight 0.3–0.6 |
+| 5 | Post | Bias filter | Catch residual harms | n/a |   
+
+#### Validation Targets
+
+- Counterfactual consistency ≥ 90%
+- Toxicity ≤ 0.5%
+- Perplexity Δ ≤ 5%
 
 ---
 
 <a id="recsys"></a>
 ## 3️⃣ Recommendation Systems Suite  
-→ Fairness in dynamic systems with feedback loops  
 
----
+  
+### 3.1 Core Challenge  
 
-### 3.1 When to Use
+Recommendation systems **shape behavior over time**. Exposure and feedback loops amplify historical bias even when accuracy appears fair.
 
-- Ranking/personalization with user feedback
-
-### 3.2 Core Fairness Challenge  
-
-Recommendation systems:
-- **shape user behavior over time**  
-- create **feedback loops**  
-- control **visibility and exposure**  
-
-→ **Exposure allocation** + **feedback loops** amplify historical bias over time
-
-### 3.3 Where Bias Enters
-
-1) Retrieval → 2) **Ranking (exposure)** → 3) Interaction → 4) Retraining
-
-
-### 3.4 Common Fairness Issues  
+### 3.2 Common Fairness Issues  
 
 |  | Category | Symptom | Impact |
 |---|--------|--------|--------|
@@ -241,37 +215,20 @@ Recommendation systems:
 | 3 | Filter Bubbles | Narrow content paths | Limited opportunities |
 | 4 | Provider Bias | Unequal visibility (Some providers rarely shown) | Economic harm |
 
-### 3.5 Frequent Mistakes
+### 3.3 Frequent Mistakes
 
 - Auditing CTR instead of exposure distribution
 - Ignoring long‑term feedback loops
 - Treating users as the only stakeholder
 - Applying static constraints to dynamic systems
 
-### 3.6 Why Recommendation Systems Are Special
+### 3.4 Why Recommendation Systems Are Special
 
 - **They actively shape user behavior**
 - **Fairness unfolds over time**, not per decision
 - **Multiple stakeholders** have competing fairness claims
 
-### 3.7 Recipe Summary
-
-|  | Stage | Primitive | Purpose | Typical Parameter Range |
-|---|--------|--------|--------|--------|
-| 1 | Rank | Exposure‑aware ranking | Balance visibility | Gap ≤ ±15% |
-| 2 | Learn | Popularity discounting | Prevent feedback loops | Decay 0.8–0.95 |
-| 3 | Explore | Controlled exploration | Break bubbles | ε = 0.05–0.15 |
-| 4 | Optimize | Multi‑stakeholder loss | Balance interests | Weight tuned |
-
-#### Validation Targets
-  
-- Exposure gaps within ±15% of representation
-- Longitudinal exposure parity
-- Long‑term diversity gain ≥ 30%
-- Relevance retention ≥ 90%
-
-
-### 3.8 Selected Recipe Cards
+### 3.5 Selected Recipe Cards
 
 #### Recipe Card RS‑1: Exposure‑Aware Ranking
 
@@ -298,13 +255,28 @@ Recommendation systems:
 - **Watch out:** Hidden value judgments
 - **Validate:** Provider exposure parity
 
+### 3.6 Recipe Summary
+
+|  | Stage | Primitive | Purpose | Typical Parameter Range |
+|---|--------|--------|--------|--------|
+| 1 | Rank | Exposure‑aware ranking | Balance visibility | Gap ≤ ±15% |
+| 2 | Learn | Popularity discounting | Prevent feedback loops | Decay 0.8–0.95 |
+| 3 | Explore | Controlled exploration | Break bubbles | ε = 0.05–0.15 |
+| 4 | Optimize | Multi‑stakeholder loss | Balance interests | Weight tuned |
+
+#### Validation Targets
+  
+- Exposure gaps within ±15% of representation
+- Longitudinal exposure parity
+- Long‑term diversity gain ≥ 30%
+- Relevance retention ≥ 90%
+
 ---
 
 <a id="vision"></a>
 ## 4️⃣ Vision Models Suite  
-→ Fairness in perception systems  
 
----
+  
 
 ### 4.1 When to Use
 
