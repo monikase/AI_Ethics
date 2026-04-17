@@ -22,11 +22,11 @@ by focusing on **how different architectures create distinct fairness failures.*
 
 Embedding fairness at the architecture level enables:
 
-- **Robustness:** Stable performance across groups and real‑world conditions
-- **Prevention over patching:** Fix bias at representation, dynamics, and fusion layers
-- **Reuse at scale:** Proven patterns instead of bespoke fixes
-- **Risk reduction:** Fewer hidden failures in advanced architectures
-- **Better Product Quality:** Fairness often improves generalization
+- **Robust systems** across environments and user groups
+- **Root‑cause mitigation**, not post‑hoc fixes
+- **Reusable engineering patterns** instead of ad‑hoc solutions
+- **Reduced risk** in complex AI deployments
+- **Improved generalization and product quality**
 
 ## What This Cookbook Will Do  
 
@@ -43,9 +43,7 @@ Embedding fairness at the architecture level enables:
 - **Fair AI Scrum Toolkit** → operationalizes fairness in teams
 - **Organizational Integration Toolkit** → governs fairness decisions 
 
-This cookbook ensures fairness is implemented **correctly at the system level**.  
-
-## Cookbook Map  
+## Cookbook Overview  
 
 #### 1️⃣ [How to Use This Cookbook](#usage)  
 #### 2️⃣ [Large Language Models (LLM) Suite](#llm)  
@@ -61,20 +59,19 @@ This cookbook ensures fairness is implemented **correctly at the system level**.
 
 <a id="usage"></a>
 ## 1️⃣ How to Use This Cookbook  
-→ Apply the right fairness strategy for the right architecture  
 
 ---
 
-### 1.1 Identify Architecture  
+### 1.1 Identify the Architecture  
 
 Determine which system you are working with:
 
-- **LLM** → generates open‑ended text  
-- **Recommendation System (RecSys)** → ranks or suggests items over time
-- **Vision Model** → images/video perception 
-- **Multi-Modal System** → combines multiple data types (text + vision + audio (or more)) 
+- **LLM** → open‑ended text generation or analysis
+- **Recommendation System (RecSys)** → ranking and exposure over time
+- **Vision Model** → image or video perception
+- **Multi-Modal System** → combines multiple data types (text, vision, audio) 
 
-### 1.2 Diagnose Where Bias Originates 
+### 1.2 Diagnose the Bias Source
 
 - **Data** (imbalance, environment)  
 - **Representation** (latent features)  
@@ -82,6 +79,14 @@ Determine which system you are working with:
 - **Interaction** (prompts, users, modalities)  
 
 ### 1.3 Select Interventions (Architecture‑Aligned)
+
+
+|  | Architecture | Primary Intervention Levers |
+|---|--------|--------|
+| 1 | LLM | Prompting, fine‑tuning, decoding, guardrails |
+| 2 | RecSys | Exposure control, exploration, feedback management |
+| 3 | Vision | Capture conditions, representation auditing |
+| 4 | Multi‑Modal | Fusion control, routing, coordination |
 
 - **LLM** → prompting, fine‑tuning, decoding, guardrails 
 - **RecSys** → exposure control, feedback management 
