@@ -100,6 +100,10 @@ Evaluate fairness using:
 ### 1.7 How to Use Recipe Cards  
 Recipe cards are designed as **decision guides for engineering teams**. Each card answers _when_ a technique should be used, _where_ it fits in the system pipeline, _how_ to apply it safely, and _what to monitor_ afterward. Teams should select recipe cards based on their system’s architecture and observed failure modes, adapt parameters within the suggested ranges, and only combine multiple cards after validating each intervention independently.
 
+> These recipe cards illustrate common architectural fairness
+> patterns and are not exhaustive; teams should adapt or extend
+> them as new failure modes emerge.
+
 ---
 
 <a id="llm"></a>
