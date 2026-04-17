@@ -126,10 +126,8 @@ Each card specifies:
 
 <a id="llm"></a>
 ## 2️⃣ Large Language Models (LLM) Suite  
-→ Fairness in generative systems  
 
----
-
+  
 ### 2.1 When to Use
 
 - Text generation/analysis
