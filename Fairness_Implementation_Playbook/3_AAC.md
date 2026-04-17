@@ -107,7 +107,7 @@ Each card specifies:
 - **What to validate afterward**  
 
 > Recipe cards illustrate common architectural fairness patterns.  
-> They are not exhaustive and should be adapted as new failure modes emerge.  
+> They are _not exhaustive_ and should be adapted as new failure modes emerge.  
 
 
 ### 1.5. Minimum Viable Use (Time‑Constrained Teams)
