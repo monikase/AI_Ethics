@@ -31,15 +31,15 @@ This cookbook ensures fairness is implemented **correctly at the system level**.
 
 ## Cookbook Map  
 
-### 1️⃣ [How to Use This Cookbook](#usage)  
-### 2️⃣ [Large Language Models (LLM) Suite](#llm)  
-### 3️⃣ [Recommendation Systems Suite](#recsys)  
-### 4️⃣ [Vision Models Suite](#vision)  
-### 5️⃣ [Multi-Modal Systems Suite](#multimodal)  
-### 6️⃣ [Cross-Architecture Primitives](#cross)  
-### 7️⃣ [Intersectionality Layer](#intersectionality)  
-### 8️⃣ [Implementation Workflow](#workflow)  
-### 9️⃣ [Core Principles](#principles)  
+#### 1️⃣ [How to Use This Cookbook](#usage)  
+#### 2️⃣ [Large Language Models (LLM) Suite](#llm)  
+#### 3️⃣ [Recommendation Systems Suite](#recsys)  
+#### 4️⃣ [Vision Models Suite](#vision)  
+#### 5️⃣ [Multi-Modal Systems Suite](#multimodal)  
+#### 6️⃣ [Cross-Architecture Primitives](#cross)  
+#### 7. [Intersectionality Layer](#intersectionality)  
+#### 8. [Implementation Workflow](#workflow)  
+#### 9. [Core Principles](#principles)  
 
 ---
 
