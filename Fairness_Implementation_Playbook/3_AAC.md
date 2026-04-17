@@ -4,6 +4,7 @@ Fairness fails in practice when **interventions ignore architecture.** This cook
 
 --
 
+
 ## Business Value
 
 Embedding fairness at the architecture level enables:
