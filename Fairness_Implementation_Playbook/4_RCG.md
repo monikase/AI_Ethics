@@ -150,104 +150,62 @@ To apply the Regulatory Translation Framework in practice:
 
 ---
 
-## 5️⃣ Risk Classification Methodology  
-→ Determine compliance intensity  
+## 2️⃣  Risk Classification Framework
+   
+Determine the regulatory compliance burden for an AI system and enforce proportional governance controls based on risk.
+All AI systems must be classified before design or deployment. Classification determines:
+
+- Required documentation
+- Validation rigor
+- Oversight level
+- Audit obligations
+
+Risk classification is **based on inherent risk**, not predicted mitigation effectiveness. 
+  
+### 2.1 Scoring Formula
+
+**Total Risk Score (TRS) = (P × S) + E – M**
+  
+- **P — Probability of harm** (1–5)
+- **S — Severity of harm** (1–5) based on Annex III category or domain impact
+- **E — Exposure factor** (1–3) based on number of affected individuals × duration
+- **M — Mitigation readiness** (0–4) for controls already implemented
+
+### 2.2 Risk Tiers & Governance Gates
+
+| TRS Range | Risk Tier | Governance Gate | Implication |
+|-------|------|------------|------------|
+| ≥ 22 | Critical (Tier 1) | Executive / External | External conformity assessment, independent bias audit, DPIA |
+| 15–21 | High (Tier 2) | Compliance Board | Internal conformity + external peer review |
+| 8–14 | Moderate (Tier 3) | Product Director | Self‑assessment, model card, monitoring plan |
+| ≤ 7 | Low (Tier 4) | Team Lead | Lightweight checklist |
+
+### 2.3 Classification Workflow  
+
+- Every new system, feature, or material change **triggers a TRS calculation**
+- TRS result assigns the system to a **governance gate**
+- Deployment is **blocked** until mandatory artifacts are completed
+
+**Rule:**
+No system may proceed to build without a recorded classification.
 
 ---
 
-### 5.1 Risk-Based Principle  
+## 3️⃣ EU AI Act Mapping Matrix
+  
+Translate regulatory obligations into SDLC‑aligned control activities with explicit validation metrics and ownership.  
+  
+### 3.1 Mapping Structure
+Each regulatory clause is mapped to:
 
-Compliance requirements scale with:
+- Development phase
+- Required system capability
+- Control activity
+- Validation method
+- Ownership (RACI)
 
-- potential harm  
-- impact on individuals  
-- system autonomy  
 
----
 
-### 5.2 Risk Dimensions  
-
-Evaluate systems across:
-
-- **Impact severity**  
-- **Decision influence**  
-- **Autonomy level**  
-- **Population scale**  
-- **Demographic sensitivity**  
-
----
-
-### 5.3 Risk Tiers  
-
-| Tier | Description | Implication |
-|------|------------|------------|
-| Unacceptable | Prohibited use | System not allowed |
-| High Risk | Significant impact | Full compliance required |
-| Medium Risk | Moderate impact | Partial controls |
-| Low Risk | Minimal impact | Best practices |
-
----
-
-### 5.4 Inherent vs Residual Risk  
-
-- **Inherent risk** → defines classification  
-- **Residual risk** → defines mitigation effectiveness  
-
-⚠️ Classification must always be based on inherent risk  
-
----
-
-### 5.5 Output  
-
-Risk classification determines:
-
-- required controls  
-- documentation depth  
-- validation rigor  
-- monitoring intensity  
-
----
-
-## 6️⃣ Compliance-by-Design Workflow  
-→ Embed compliance into system lifecycle  
-
----
-
-### Phase 1: Design  
-
-- Identify applicable regulations  
-- Define fairness objectives  
-- Document risks and assumptions  
-
----
-
-### Phase 2: Development  
-
-- Implement fairness controls  
-- Generate documentation automatically  
-- Validate requirements continuously  
-
----
-
-### Phase 3: Deployment  
-
-- Enable transparency mechanisms  
-- Activate monitoring systems  
-- Establish oversight processes  
-
----
-
-### Phase 4: Operation  
-
-- Monitor fairness metrics  
-- detect drift or anomalies  
-- trigger reassessment when needed  
-
----
-
-### Key Principle  
-
-> Compliance must be integrated into development, not added afterward  
 
 ---
 
