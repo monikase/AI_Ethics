@@ -277,7 +277,6 @@ Recommendation systems **shape behavior over time**. Exposure and feedback loops
 ## 4️⃣ Vision Models Suite  
 
   
-
 ### 4.1 When to Use
 
 - Images/video sensitive to environment and representation
@@ -314,22 +313,7 @@ Vision systems:
 - **Visual saliency can mislead audits**
 - **Demographics hide deep in embeddings**
 
-### 4.6 Recipe Summary
-
-|  | Stage | Primitive | Purpose | Typical Parameter Range |
-|---|--------|--------|--------|--------|
-| 1 | Augment | Style‑transfer equalizer | Balance lighting/textures | 0.2–0.4 |
-| 2 | Audit | Prototype leak probe | Quantify leakage | Leak < 0.02 |
-| 3 | Remediate | Layer reinitialization | Remove leaking block | n/a |
-
-#### Validation Targets
-  
-- Accuracy gap < 5%
-- Leak AUC ≤ 0.52
-- Robustness variance ≤ 10%
-
-
-### 4.7 Selected Recipe Cards
+### 4.6 Selected Recipe Cards
  
 #### Recipe Card V‑1: Environment Equalization
 
@@ -355,19 +339,27 @@ Vision systems:
 - **Watch out:** Performance regression if overused
 - **Validate:** mIoU gap ≤ 2%
 
+### 4.7 Recipe Summary
+
+|  | Stage | Primitive | Purpose | Typical Parameter Range |
+|---|--------|--------|--------|--------|
+| 1 | Augment | Style‑transfer equalizer | Balance lighting/textures | 0.2–0.4 |
+| 2 | Audit | Prototype leak probe | Quantify leakage | Leak < 0.02 |
+| 3 | Remediate | Layer reinitialization | Remove leaking block | n/a |
+
+#### Validation Targets
+  
+- Accuracy gap < 5%
+- Leak AUC ≤ 0.52
+- Robustness variance ≤ 10%
+
 ---
 
 <a id="multimodal"></a>
 ## 5️⃣ Multi-Modal Systems Suite  
-→ Fairness in systems combining modalities  
 
----
-
-### 5.1 When to Use
-
-- Text/vision/audio combined
-
-### 5.2 Core Fairness Challenge  
+  
+### 5.1 Core Fairness Challenge  
 
 Multi-modal systems:
 - combine multiple biased sources  
@@ -375,11 +367,11 @@ Multi-modal systems:
 
 → Bias is **emergent at fusion**; modalities fail differently.
 
-### 5.3 Coordination Rule
+### 5.2 Coordination Rule
 
 **Never debias modalities in isolation.** Order: Fix weakest modality → validate → adjust fusion → end‑to‑end check.
 
-### 5.4 Common Fairness Issues  
+### 5.3 Common Fairness Issues  
 
 |  | Category | Symptom | Impact |
 |---|--------|--------|--------|
@@ -388,31 +380,19 @@ Multi-modal systems:
 | 3 | Inconsistent Predictions | Conflicting signals | User confusion |  
 | 4 | Dominant Modality | One input dominates | Narrow representations |
 
-### 5.5 Frequent Mistakes
+### 5.4 Frequent Mistakes
 
 - Neglecting confidence‑based routing
 - Skipping recalibration after modality dropout
 - Debiasing modalities independently
 
-### 5.6 Why Multi‑Modal Systems Are Special
+### 5.5 Why Multi‑Modal Systems Are Special
 
 - Shared latent space amplifies hidden bias
 - Each modality fails differently
 - Unequal data availability creates unequal treatment
 
-### 5.7 Recipe Summary
-
-|  | Stage | Primitive | Purpose | Typical Parameter Range |
-|---|--------|--------|--------|--------|
-| 1 | Fusion | Cross‑modal consistency loss | Align modalities | 1.0–2.0 |
-| 2 | Runtime | Failure‑route router | Skip unreliable modality | Conf ≥ 0.65 |
-
-#### Validation Targets  
-
-- Agreement ≥ 0.92
-- Bias migration ≤ 1%
-
-### 5.8 Selected Recipe Cards
+### 5.6 Selected Recipe Cards
 
 #### Recipe Card MM‑1: Cross‑Modal Consistency Loss
 
@@ -421,7 +401,6 @@ Multi-modal systems:
 - **How:** Penalize cross‑modal divergence
 - **Watch out:** Over‑alignment suppresses useful variation
 - **Validate:** Agreement ≥ 0.92
-
 
 #### Recipe Card MM‑2: Failure‑Route Router
 
@@ -439,13 +418,22 @@ Multi-modal systems:
 - **Watch out:** Excess dropout reduces accuracy
 - **Validate:** Parity across modality subsets
 
+### 5.7 Recipe Summary
+
+|  | Stage | Primitive | Purpose | Typical Parameter Range |
+|---|--------|--------|--------|--------|
+| 1 | Fusion | Cross‑modal consistency loss | Align modalities | 1.0–2.0 |
+| 2 | Runtime | Failure‑route router | Skip unreliable modality | Conf ≥ 0.65 |
+
+#### Validation Targets  
+
+- Agreement ≥ 0.92
+- Bias migration ≤ 1%
+
 ---
 
 <a id="cross"></a>
 ## 6️⃣ Cross-Architecture Reusable Primitives  
-→ Shared fairness techniques  
-
----
 
 - **Group-Aware Reweighting** - equalizes sample influence
 - **Counterfactual Synthesis** - swap protected attributes
