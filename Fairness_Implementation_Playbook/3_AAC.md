@@ -470,8 +470,6 @@ Multi-modal systems:
 <a id="intersectionality"></a>
 ## 7. Intersectionality Integration Layer    
 
----
-
 Bias is strongest at **intersections of identities**, not single attributes.
 
 ### Implementation  
@@ -484,8 +482,6 @@ Bias is strongest at **intersections of identities**, not single attributes.
 
 <a id="workflow"></a>
 ## 8. Implementation Workflow  
-
----
 
 #### Step 1: Identify Architecture  
 → determine system type  
@@ -509,8 +505,6 @@ Bias is strongest at **intersections of identities**, not single attributes.
 
 <a id="principles"></a>
 ## 9. Core Principles  
-
----
 
 - Fairness must be architecture-specific 
 - Fix root causes  
