@@ -2,7 +2,7 @@
 
 Fairness fails in practice when **interventions ignore architecture.** This cookbook turns fairness into an **architecture‑aware engineering discipline** with actionable recipes for **LLMs, Recommendation Systems, Vision Models, and Multi‑Modal systems.** It complements team‑level (Scrum) and org‑level (governance) toolkits by focusing on **how systems work**, not just what they output.
 
----
+--
 
 
 ## Business Value
