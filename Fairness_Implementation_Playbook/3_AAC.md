@@ -108,7 +108,7 @@ Each card specifies:
 > They are _not exhaustive_ and should be adapted as new failure modes emerge.  
 
 
-### 1.5. Minimum Viable Use (Time‑Constrained Teams)
+### 1.6. Minimum Viable Use (Time‑Constrained Teams)
 
 1. Identify architecture
 2. Scan common issues
@@ -116,7 +116,7 @@ Each card specifies:
 4. Validate with **one metric**
 5. Log assumptions and risks
 
-### 1.6 Who Uses What
+### 1.7 Who Uses What
 
 - **ML Engineers** → Implementation + Evaluation
 - **Product** → Trade‑offs + Risk
