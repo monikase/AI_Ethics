@@ -1,6 +1,22 @@
 # Advanced Architecture Cookbook  
+Architecture‑Specific Fairness Implementation Guide
 
-Fairness fails in practice when **interventions ignore architecture.** This cookbook turns fairness into an **architecture‑aware engineering discipline** with actionable recipes for **LLMs, Recommendation Systems, Vision Models, and Multi‑Modal systems.** It complements team‑level (Scrum) and org‑level (governance) toolkits by focusing on **how systems work**, not just what they output.
+## Purpose
+Fairness failures in modern AI systems rarely stem from lack of awareness. **They occur when fairness strategies ignore system architecture.**  
+  
+This Advanced Architecture Cookbook transforms fairness into an **architecture‑aware, system‑level engineering practice.** It provides actionable implementation guidance for:  
+
+- Large Language Models (LLMs)
+- Recommendation Systems
+- Vision Models
+- Multi‑Modal Systems
+
+The cookbook complements:  
+
+- team‑level execution (Fair AI Scrum Toolkit)
+- organizational oversight (Organizational Integration Toolkit)  
+
+by focusing on **how different architectures create distinct fairness failures.**  
 
 ## Business Value
 
