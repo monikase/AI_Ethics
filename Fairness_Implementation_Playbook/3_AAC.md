@@ -251,7 +251,7 @@ Recommendation systems:
 - Relevance retention ≥ 90%
 
 
-### 3.5 Selected Recipe Cards
+### 3.8 Selected Recipe Cards
 
 #### Recipe Card RS‑1: Exposure‑Aware Ranking
 
