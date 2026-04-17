@@ -79,7 +79,7 @@ This guide answers:
 
 **“How do we prove it is compliant?”**
 
-## 1️⃣ How to Use This Guide  
+## How to Use This Guide  
 
 Organizations should apply this guide as a **sequence**, not a checklist:
 
@@ -97,7 +97,8 @@ Organizations should apply this guide as a **sequence**, not a checklist:
 
 ### From Legal Obligations to Engineering Tasks
 
-Regulatory frameworks define **mandatory outcomes** such as fairness, transparency, or human oversight. But they rarely specify how these outcomes must be implemented in real systems. As a result, compliance failures often occur not because organizations ignore regulations, but because they fail to translate legal obligations into concrete development work.
+Regulatory frameworks define **mandatory outcomes** such as fairness, transparency, or human oversight. But they rarely specify how these outcomes must be implemented in real systems. As a result, compliance failures often occur not because organizations ignore regulations, but because they fail to translate legal obligations into concrete development work.  
+  
 The Regulatory Translation Framework provides a **repeatable method** for converting regulatory requirements into **engineering tasks**, **validation criteria**, and **evidence artifacts** that can be implemented, tested, and audited.
 
 
