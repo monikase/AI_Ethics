@@ -88,18 +88,27 @@ Determine which system you are working with:
 | 3 | Vision | Capture conditions, representation auditing |
 | 4 | Multi‑Modal | Fusion control, routing, coordination |
 
-- **LLM** → prompting, fine‑tuning, decoding, guardrails 
-- **RecSys** → exposure control, feedback management 
-- **Vision** → environment, representation probing 
-- **Multi-modal** → fusion balance, routing
+### 1.4 Validate and Monitor
 
-### 1.4 Validate
+- Use **architecture‑specific metrics**
+- Evaluate **intersectional slices**
+- Test **real‑world operating conditions**
+- Monitor continuously as systems evolve
 
-Evaluate fairness using:
+### 1.5 Recipe Cards (User Documentation)
 
-- **Architecture-specific metrics**  
-- **Intersectional analysis**  
-- **Real-world scenario testing**
+Recipe cards are **decision guides for engineering teams**.  
+  
+Each card specifies:  
+
+- **When** to use an intervention
+- **Where** it fits in the pipeline
+- **How** to apply it safely
+- **What to validate afterward**  
+
+> Recipe cards illustrate common architectural fairness patterns.  
+> They are not exhaustive and should be adapted as new failure modes emerge.  
+
 
 ### 1.5. Minimum Viable Use (Time‑Constrained Teams)
 
@@ -114,16 +123,6 @@ Evaluate fairness using:
 - **ML Engineers** → Implementation + Evaluation
 - **Product** → Trade‑offs + Risk
 - **QA/Risk** → Validation + Monitoring
-
-
-> **Key Principle:** Target **how the system works**, not just outputs.
-
-### 1.7 How to Use Recipe Cards  
-Recipe cards are designed as **decision guides for engineering teams**. Each card answers _when_ a technique should be used, _where_ it fits in the system pipeline, _how_ to apply it safely, and _what to monitor_ afterward. Teams should select recipe cards based on their system’s architecture and observed failure modes, adapt parameters within the suggested ranges, and only combine multiple cards after validating each intervention independently.
-
-> These recipe cards illustrate common architectural fairness
-> patterns and are not exhaustive; teams should adapt or extend
-> them as new failure modes emerge.
 
 ---
 
