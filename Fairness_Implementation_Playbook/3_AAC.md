@@ -285,7 +285,7 @@ Recommendation systems:
 ---
 
 <a id="vision"></a>
-## 4️⃣ Vision Models Suite  
+### 4️⃣ Vision Models Suite  
 → Fairness in perception systems  
 
 ---
@@ -454,7 +454,7 @@ Multi-modal systems:
 ---
 
 <a id="cross"></a>
-## 6️⃣ Cross-Architecture Reusable Primitives  
+### 6️⃣ Cross-Architecture Reusable Primitives  
 → Shared fairness techniques  
 
 ---
@@ -468,7 +468,7 @@ Multi-modal systems:
 ---
 
 <a id="intersectionality"></a>
-## 7️⃣ Intersectionality Integration Layer  
+### 7️⃣ Intersectionality Integration Layer  
 → Address real-world complexity  
 
 ---
@@ -484,7 +484,7 @@ Bias is strongest at **intersections of identities**, not single attributes.
 ---
 
 <a id="workflow"></a>
-## 8️⃣ Implementation Workflow  
+### 8️⃣ Implementation Workflow  
 
 ---
 
@@ -509,7 +509,7 @@ Bias is strongest at **intersections of identities**, not single attributes.
 ---
 
 <a id="principles"></a>
-## 9️⃣ Core Principles  
+### 9️⃣ Core Principles  
 
 ---
 
