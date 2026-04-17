@@ -184,37 +184,47 @@ Recommendation systems:
 
 ### 3.3 Where Bias Enters
 
-/1) Retrieval → 2) Ranking (exposure) → 3) Interaction → 4) Retraining
+1) Retrieval → 2) **Ranking (exposure)** → 3) Interaction → 4) Retraining
 
 
-### 3.2 Common Fairness Issues  
+### 3.4 Common Fairness Issues  
 
-| Category | Symptom | Impact |
-|--------|--------|--------|
-| Exposure Bias | Same items dominate | Unequal opportunity |
-| Feedback Loop | Popular items reinforced | Systemic bias |
-| Filter Bubbles | Narrow content | Limited opportunities |
-| Provider Bias | Unequal visibility | Economic harm |
-
----
-
-### 3.3 Implementation Strategy  
-
-- exposure-aware ranking  
-- diversity injection  
-- exploration vs exploitation balancing  
-- popularity discounting  
-- multi-stakeholder optimization  
+|  | Category | Symptom | Impact |
+|---|--------|--------|--------|
+| 1 | Exposure Bias | Same items dominate | Unequal opportunity |
+| 2 | Feedback Loop | Popular items reinforced | Systemic bias |
+| 3 | Filter Bubbles | Narrow content | Limited opportunities |
+| 4 | Provider Bias | Unequal visibility | Economic harm |
 
 ---
 
-### 3.4 Evaluation  
+### 3.5 Implementation: Recipe Cards 
 
-- exposure distribution  
-- diversity metrics  
-- long-term feedback tracking  
-- user vs provider fairness  
 
+#### Recipe A: Exposure‑Aware Ranking
+
+- **Use when** CTR parity hides segregation
+- **Steps:** Position‑aware constraints; amortized fairness
+- **Monitor:** Exposure share vs representation
+
+#### Recipe B: Exploration Guardrails
+
+- **Use when** bubbles form over time
+- **Steps:** Controlled exploration; popularity discounting
+- **Monitor:** Longitudinal diversity
+
+#### Recipe C: Multi‑Stakeholder Objective
+
+- **Use when** provider groups suffer
+- **Steps:** Weighted objectives; governance review
+- **Monitor:** User vs provider fairness
+
+### 3.6 Validation Targets
+  
+- Exposure gaps within ±15% of representation
+- Long‑term diversity +30% vs baseline
+- Relevance retention ≥ 90%
+ 
 ---
 
 <a id="vision"></a>
@@ -223,44 +233,49 @@ Recommendation systems:
 
 ---
 
-### 4.1 Core Fairness Challenge  
+### 4.1 When to Use
+
+- Images/video sensitive to environment and representation
+
+### 4.2 Core Fairness Challenge  
 
 Vision systems:
 - depend on **environment (lighting, camera)**  
 - learn **visual representations**  
 - encode **demographic features implicitly**  
 
-→ Bias is **data-driven and context-dependent**
+→ Bias is **data-driven and context-dependent** Bias enters before ML (lighting, sensors) and hides inside embeddings.
 
----
 
-### 4.2 Common Fairness Issues  
+### 4.3 Common Fairness Issues  
 
-| Category | Symptom | Impact |
-|--------|--------|--------|
-| Skin Tone Gap | Lower accuracy | Discrimination risk |
-| Context Bias | Background used as proxy | Stereotyping |
-| Feature Leakage | Demographics encoded | Hidden bias |
-| Environment Sensitivity | Lighting affects results | Unequal performance |
+|  | Category | Symptom | Impact |
+|---|--------|--------|--------|
+| 1 | Skin Tone Gap | Lower accuracy | Discrimination risk |
+| 2 | Context Bias | Background used as proxy | Stereotyping |
+| 3 | Feature Leakage | Demographics encoded | Hidden bias |
+| 4 | Environment Sensitivity | Lighting affects results | Unequal performance |
 
----
+### 4.4 Implementation: Recipe Cards  
 
-### 4.3 Implementation Strategy  
+#### Recipe A: Environment Equalization
 
-- data balancing  
-- environmental augmentation  
-- adversarial debiasing  
-- representation probing  
-- stratified evaluation  
+- **Use when** lab ≠ field
+- **Steps:** Style transfer; domain randomization
+- **Monitor:** Robustness across conditions
 
----
+#### Recipe B: Representation Probing + Removal
 
-### 4.4 Evaluation  
+- **Use when** leakage suspected
+- **Steps:** Probe → reinit leaking layer → retrain
+- **Monitor:** Leak AUC
 
-- subgroup accuracy  
-- environmental robustness  
-- representation leakage  
-- attribution consistency  
+
+### 4.5 Validation Targets
+  
+- Accuracy gap < 5%
+- Leak AUC ≤ 0.52
+- Robustness variance ≤ 10%
 
 ---
 
@@ -270,41 +285,49 @@ Vision systems:
 
 ---
 
-### 5.1 Core Fairness Challenge  
+### 5.1 When to Use
+
+- Text/vision/audio combined
+
+### 5.2 Core Fairness Challenge  
 
 Multi-modal systems:
 - combine multiple biased sources  
 - create **new bias through interaction**  
 
-→ Bias is **emergent across modalities**
+→ Bias is **emergent at fusion**; modalities fail differently.
 
----
+### 5.3 Coordination Rule
 
-### 5.2 Common Fairness Issues  
+**Never debias modalities in isolation.** Order: Fix weakest modality → validate → adjust fusion → end‑to‑end check.
 
-| Category | Symptom | Impact |
-|--------|--------|--------|
-| Bias Amplification | Modalities reinforce bias | Compounded harm |
-| Modality Dominance | One input dominates | Skewed outcomes |
-| Missing Modality | Unequal fallback | Unequal performance |
-| Inconsistency | Conflicting outputs | User confusion |
+### 5.4 Common Fairness Issues  
 
----
+|  | Category | Symptom | Impact |
+|---|--------|--------|--------|
+| 1 | Bias Transfer | One bias infects others | Compound harm |
+| 2 | Modality Dominance | One input dominates | Skewed outcomes |
+| 3 | Missing Modality | Unequal fallback; Model fails when one stream unavailable (e.g., low-light video) | Unequal performance |
+| 4 | Inconsistency | Conflicting outputs | User confusion |  
 
-### 5.3 Implementation Strategy  
+### 5.5 Implementation: Recipe Cards
 
-- adaptive fusion  
-- cross-modal consistency constraints  
-- modality dropout  
-- confidence-based routing  
+#### Recipe A: Adaptive Fair Fusion
 
----
+- **Use when** modality dominance varies
+- **Steps:** Confidence‑weighted fusion
+- **Monitor:** Cross‑modal agreement
 
-### 5.4 Evaluation  
+#### Recipe B: Failure‑Route Routing
 
-- cross-modal consistency  
-- modality robustness  
-- fairness across input combinations  
+- **Use when** inputs degrade
+- **Steps:** Skip unreliable modality
+- **Monitor:** Bias migration
+
+### 5.6 Validation Targets  
+
+- Agreement ≥ 0.92
+- Bias migration ≤ 1%
 
 ---
 
@@ -314,11 +337,11 @@ Multi-modal systems:
 
 ---
 
-- Group-aware reweighting  
-- Counterfactual data generation  
-- Slice-wise evaluation  
-- Bias-aware training  
-- fairness monitoring pipelines  
+- Group-Aware Reweighting   
+- Counterfactual Data Generation  
+- Slice-Wise Evaluation  
+- Bias-Aware Training  
+- Fairness Monitoring Pipelines  
 
 ---
 
@@ -328,17 +351,13 @@ Multi-modal systems:
 
 ---
 
-### Core Principle  
-
 Bias is strongest at **intersections of identities**, not single attributes.
-
----
 
 ### Implementation  
 
-- evaluate across intersections  
-- prioritize high-risk groups  
-- design intersection-aware metrics  
+- Evaluate across **intersections**, not single attributes  
+- Prioritize **high-risk groups**  
+- Use **intersection‑aware metrics**
 
 ---
 
@@ -347,22 +366,22 @@ Bias is strongest at **intersections of identities**, not single attributes.
 
 ---
 
-### Step 1: Identify Architecture  
+#### Step 1: Identify Architecture  
 → determine system type  
 
-### Step 2: Diagnose Bias  
+#### Step 2: Diagnose Bias  
 → representation / data / dynamics  
 
-### Step 3: Apply Recipes  
+#### Step 3: Apply Recipes  
 → architecture-specific interventions  
 
-### Step 4: Validate  
+#### Step 4: Validate  
 → metrics + real-world testing  
 
-### Step 5: Monitor  
+#### Step 5: Monitor   
 → continuous fairness tracking  
 
-### Step 6: Iterate  
+#### Step 6: Iterate  
 → adapt to new bias patterns  
 
 ---
@@ -372,12 +391,12 @@ Bias is strongest at **intersections of identities**, not single attributes.
 
 ---
 
-- Fairness must be **architecture-specific**  
-- Fix **root causes, not symptoms**  
-- Combine **multiple interventions**  
-- Monitor **continuously**  
-- Evaluate **intersectionally**  
-- Balance **fairness and performance**  
+- Fairness must be architecture-specific 
+- Fix root causes  
+- Layer interventions 
+- Monitor continuously 
+- Evaluate intersectionally 
+- Balance fairness and performance  
 
 ---
 
