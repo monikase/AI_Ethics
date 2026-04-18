@@ -211,7 +211,7 @@ Each EU AI Act requirement is mapped to concrete actions within the SDLC. For ev
 - **Ownership (RACI)**    
   Clear accountability for implementation and oversight, ensuring responsibilities are defined and auditable.  
 
-### 3.2 Example Mapping Matrix (Excerpt)
+### 3.2 Example Mapping Matrix
 
 This matrix operationalizes **EU AI Act obligations** for **high‑risk recruitment AI systems** by mapping each regulatory article to **concrete SDLC activities**, **controls**, **metrics**, and **accountable roles**.  
 
