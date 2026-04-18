@@ -298,10 +298,7 @@ Tamper seals: daily Merkle-root pinned to public blockchain (optional, cheap L2)
 
 Evidence Graph API lets auditors reconstruct full lineage for any decision in under one minute.  
 
-
----
-
-### Key Principle  
+--- 
 
 > If a decision cannot be reconstructed → it cannot be defended  
 
