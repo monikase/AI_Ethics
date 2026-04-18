@@ -39,15 +39,15 @@ The guide applies to:
 
 ## Regulatory Compliance Guide Overview  
 
-1️⃣ [**Regulatory Translation Framework**](#regulatory-translation)  
-2️⃣ [**Risk Classification Framework**](#risk-classification)  
+#### 1️⃣ [Regulatory Translation Framework](#regulatory-translation)  
+#### 2️⃣ [Risk Classification Framework](#risk-classification)  
 #### 3️⃣ [Compliance-by-Design Workflow](#compliance-workflow)  
 #### 4️⃣ [Documentation & Evidence Framework](#documentation)  
-### 5️⃣ [Audit Trail System Architecture](#audit)  
-### 6️⃣ [Stage-Gate Compliance Model](#stage-gate)  
-### 7️⃣ [Quick-Start Implementation Workflow](#implementation)  
-### 8️⃣ [Integration with Playbook Components](#integration)  
-### 9️⃣ [Core Principles](#principles)  
+#### 5️⃣ [Audit Trail System Architecture](#audit)  
+#### 6️⃣ [Stage-Gate Compliance Model](#stage-gate)  
+#### 7️⃣ [Quick-Start Implementation Workflow](#implementation)  
+#### 8️⃣ [Integration with Playbook Components](#integration)  
+#### 9️⃣ [Core Principles](#principles)  
 
 ---
 
