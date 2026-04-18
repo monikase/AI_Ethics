@@ -329,53 +329,41 @@ This principle underpins the system’s design and ensures compliance with trace
 
 ---
 
-## 9️⃣ Stage-Gate Compliance Model  
-→ Enforce compliance checkpoints  
+## 6️⃣ Stage-Gate Implementation Checklist 
+
+| Gate         | Exit Criteria                                      | Evidence            |
+|--------------|---------------------------------------------------|---------------------|
+| G0 Ideation  | TRS completed                                     | Risk ticket         |
+| G1 Design    | Controls mapped; templates instantiated           | Design ref          |
+| G2 Build     | Fairness tests pass; model card draft             | CI artifact         |
+| G3 Validation| Independent QA; DPIA approved                     | Conformity report   |
+| G4 Launch    | Monitoring active; escalation set                 | Launch record       |
+| G5 Operate   | Drift review completed                            | Ops report          |
+| G6 Retire    | Data deletion; archive complete                   | Tombstone log       |
+
+Continuous monitoring hooks:  
+
+- Drift alerts
+- Incident triggers
+- Re‑classification signals
 
 ---
 
-| Stage | Requirement | Output |
-|------|------------|--------|
-| Ideation | Risk identified | Risk assessment |
-| Design | Controls defined | Design docs |
-| Build | Requirements implemented | Test results |
-| Validation | Compliance verified | Validation report |
-| Deployment | Monitoring active | Dashboard |
-| Operation | Continuous monitoring | Reports |
+## 7️⃣ Quick‑Start Guide  
+
+
+1. Clone compliance templates
+2. Complete TRS assessment
+3. Populate required documentation
+4. Implement mapped controls
+5. Validate gates
+6. Deploy and monitor
+
+Average overhead after first project: **~4 hours per feature**, typically offset by avoided remediation.
 
 ---
 
-### Continuous Layer  
-
-- drift detection  
-- fairness monitoring  
-- periodic reassessment  
-
----
-
-## 🔟 Quick-Start Implementation  
-
----
-
-### Minimum Viable Compliance  
-
-1. Identify system risk tier  
-2. Map key regulatory requirements  
-3. Create basic documentation templates  
-4. Implement fairness evaluation  
-5. Enable monitoring  
-
----
-
-### Scaling  
-
-- automate documentation  
-- integrate with CI/CD  
-- expand audit capabilities  
-
----
-
-## 1️⃣1️⃣ Integration with Playbook  
+## 8. Integration with Playbook  
 
 ---
 
@@ -398,7 +386,7 @@ Audit → Risk → Implementation → Evidence → Compliance
 
 ---
 
-## 1️⃣2️⃣ Core Principles  
+## 9. Core Principles  
 
 ---
 
@@ -411,23 +399,3 @@ Audit → Risk → Implementation → Evidence → Compliance
 - Intersectional fairness must be **explicitly evaluated**  
 
 ---
-
-## Final Note  
-
-This methodology transforms compliance from:
-
-- reactive legal work  
-- fragmented documentation  
-- late-stage validation  
-
-into:
-
-- **integrated engineering practice**  
-- **continuous evidence generation**  
-- **scalable compliance systems**  
-
----
-
-👉 Applicable to any AI system  
-👉 Adaptable to any regulatory framework  
-👉 Designed for real-world implementation  
