@@ -279,7 +279,7 @@ Satisfies:
 ## 5️⃣ Audit-Trail System Architecture  
 
 The audit‑trail system is designed to **enable full, verifiable reconstruction of any regulatory‑relevant decision** made by the AI system.  
-It ensures that decisions can be explained, audited, and defended throughout their retention period, in line with EU AI Act requirements on logging, traceability, monitoring, and incident investigation.
+It ensures that decisions can be explained, audited, and defended throughout their retention period, in line with EU AI Act requirements on logging (Art. 12), traceability (Art. 23), post‑market monitoring (Art. 61), and incident investigation (Art. 54).
 
 ### 5.1 Architecture Overview
 
@@ -292,7 +292,7 @@ User action ─► Decision Engine ─► Event Broker (Kafka) ─►  Evidence 
  3. Evidence Graph Service (neo4j)
 ```
 
-Each significant event is emitted to an event broker and persisted across multiple evidence stores to support integrity, monitoring, and traceability without relying on a single system.
+Each significant event is emitted to an event broker, ensuring ordered, durable capture of all decision‑relevant events before persistence across multiple evidence stores to support integrity, monitoring, and traceability without relying on a single system.
 
 ### 5.2 Evidence Storage Layers
 
@@ -312,7 +312,7 @@ Each significant event is emitted to an event broker and persisted across multip
 | `risk_assessment` | JSON incl. TRS score, risk tier, timestamp | SHA-256 hash | 10 years | Compliance, DPO |
 | `model_metric` | Fairness and performance metrics by slice (e.g. slice = gender:female, TPR=0.82) | SHA-256 hash | 5 years | Data Science, Compliance |
 | `override_event` | decision ID, user ID, override reason_code | SHA-256 hash | 5 years | Compliance |
-| `dataset_snapshot` | Dataset URI and version hash (e.g. S3 URI, hash of parquet manifest) | SHA-256 hash | Life-of-product + 2 years | Data Science |
+| `dataset_snapshot` | Dataset URI and version hash (e.g. S3 URI, hash of parquet manifest) | SHA-256 hash | Product lifetime + 2 years | Data Science |
 
 Retention periods are aligned with regulatory limitation periods and incident handling obligations. Access controls enforce role separation between development, compliance, and data protection functions.
 
