@@ -280,10 +280,12 @@ Satisfies:
 
 Enable full reconstruction of any regulatory‑relevant decision.
 
-```User action ─► Decision Engine ─► Event Broker (Kafka) ─►  
+```
+User action ─► Decision Engine ─► Event Broker (Kafka) ─►  
  1. Immutable Log (Apache Iceberg table, WORM policy, hash-chain)  
  2. Monitoring API (InfluxDB)  
- 3. Evidence Graph Service (neo4j)```
+ 3. Evidence Graph Service (neo4j)
+```
 
 ---
 
