@@ -287,6 +287,18 @@ User action ─► Decision Engine ─► Event Broker (Kafka) ─►
  3. Evidence Graph Service (neo4j)
 ```
 
+| Evidence Node | Example Payload | Hash | Retention | Access |
+|-------|-------|-------|-------|-------|
+| `risk_assessment` | JSON incl. TRS calc, timestamp | SHA-256 | 10 y | Compliance, DPO |
+| `model_metric` | slice = gender:female, TPR=0.82 | " | 5 y | DS, Compliance |
+| `override_event` | decision ID, user ID, reason_code | " | 5 y | Compliance |
+| `dataset_snapshot` | S3 URI, hash of parquet manifest | " | Life-of-product + 2 y | DS |
+
+Tamper seals: daily Merkle-root pinned to public blockchain (optional, cheap L2).  
+
+Evidence Graph API lets auditors reconstruct full lineage for any decision in under one minute.  
+
+
 ---
 
 ### Key Principle  
