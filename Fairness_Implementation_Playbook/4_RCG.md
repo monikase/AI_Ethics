@@ -204,25 +204,25 @@ Where applicable, **GDPR Articles 22 and 35** are cross‑referenced to ensure a
 
 | SDLC Phase | AI-Act Article & Clause | Requirement | Control Activity | Validation Metric | RACI |
 |-----------|-----------|-----------|-----------|-----------|-----------|
-| Planning | Art 9(1) Risk Management | Identify and assess foreseeable risks across the AI lifecycle | TRS risk score auto‑calculated in Jira for every new feature/change | TRS present and approved before design starts | Product / Compliance |
-| Planning | Art 9(2) Risk Controls | Define and apply proportional risk mitigation measures | Risk controls linked to TRS tier and enforced via governance gates | Controls mapped to all Tier 1–2 risks | Product / Compliance |
-| Planning | GDPR Art 35 DPIA | Assess high‑risk processing impacts on individuals | DPIA template required for Tier 1–2 systems | DPIA approved before development | Legal / DPO |
-| Data Ingestion | Art 10(2)(a) Data Quality | Ensure training data is relevant, accurate, and complete | Data quality checks (nulls, outliers, distribution checks) | Quality report attached to dataset version | Data Engineering / Compliance |
-| Data Ingestion | Art 10(2)(d) Data Relevance | Use representative datasets aligned with intended use | Dataset inclusion & representativeness checklist | Checklist completed and signed off | Data Science / Legal |
-| Data Ingestion | Art 10(2)(f) Data Imbalances | Detect and mitigate bias and imbalance in data | Bias-scan job on Airflow DAG; report autosaved to S3 / Conformity bucket | Bias report generated per dataset version | Data Science / Compliance |
-| Data Governance | Art 10(5) Data Governance | Maintain documented data governance procedures | Dataset registry with provenance, versioning, retention rules | Dataset lineage reconstructable | Data Governance / Audit |
-| Model Training | Art 11(1) Record Retention | Retain system and development records | Immutable S3/WORM Conformity bucket | Retention rules verified quarterly | Compliance / IT |
-| Model Training | Art 11(2) Technical Documentation | Maintain detailed technical documentation | MLflow run logged; Model Card auto‑generated on merge | Documentation completeness ≥ 95% | ML Engineering / Compliance |
-| Logging | Art 12(1) Logging | Enable automatic logging for traceability | Prediction, decision, and override logs with unique IDs | Logs available for audit | Platform / Audit |
-| User Interaction | Art 13(1)(b) Transparency | Inform users they are interacting with an AI system | Recruiter and candidate disclosures shown in UI | Disclosure shown rate = 100% | Product / Legal |
-| Pre‑Deployment | Art 14(4)(a–c) Oversight Design | Ensure effective human supervision | Human‑in‑the‑loop enforced for hiring decisions | HITL flag enabled for all decisions | Product / DPO |
-| Pre‑Deployment | Art 14(4)(d) Override Capability | Allow humans to override AI output | React admin panel "Override & reason" component | Override actions logged | Product / Legal |
-| Model Evaluation | Art 15(1) Accuracy & Robustness | Achieve acceptable accuracy and robustness | Stress testing, OOD evaluation, fairness benchmarks | Test suite pass rate ≥ threshold | ML Engineering / Security |
-| Model Evaluation | Art 15(2) Security | Protect model against manipulation and attacks | Adversarial testing and security checklist | Security review signed off | Security / ML |
-| Post‑Deployment | Art 61(1) Monitoring System | Monitor performance and risk continuously | Prometheus + Grafana dashboard; daily fairness drift job | Drift alerts resolved within SLA | Ops / Compliance |
-| Traceability | Art 23(1) Traceability | Reconstruct decisions end‑to‑end | Decision → model → dataset → code commit linkage | Full trace reproducible on audit | Engineering / Audit |
-| Incident Handling | Art 54(1) Incident Duty | Report serious incidents to authorities | Incident workflow + regulator notification runbook | Notification ≤ 15 days | Compliance / Legal |
-| Decision Safeguards | GDPR Art 22 | Prevent solely automated hiring decisions | Mandatory human review before decision finalization | No fully automated decisions in logs | Product / DPO |
+| **Planning** | **Art 9(1) Risk Management** | Identify and assess foreseeable risks across the AI lifecycle | TRS risk score auto‑calculated in Jira for every new feature/change | TRS present and approved before design starts | Product / Compliance |
+| **Planning** | **Art 9(2) Risk Controls** | Define and apply proportional risk mitigation measures | Risk controls linked to TRS tier and enforced via governance gates | Controls mapped to all Tier 1–2 risks | Product / Compliance |
+| **Planning** | **GDPR Art 35 DPIA** | Assess high‑risk processing impacts on individuals | DPIA template required for Tier 1–2 systems | DPIA approved before development | Legal / DPO |
+| **Data Ingestion** | **Art 10(2)(a) Data Quality** | Ensure training data is relevant, accurate, and complete | Data quality checks (nulls, outliers, distribution checks) | Quality report attached to dataset version | Data Engineering / Compliance |
+| **Data Ingestion** | **Art 10(2)(d) Data Relevance** | Use representative datasets aligned with intended use | Dataset inclusion & representativeness checklist | Checklist completed and signed off | Data Science / Legal |
+| **Data Ingestion** | **Art 10(2)(f) Data Imbalances** | Detect and mitigate bias and imbalance in data | Bias-scan job on Airflow DAG; report autosaved to S3 / Conformity bucket | Bias report generated per dataset version | Data Science / Compliance |
+| **Data Governance** | **Art 10(5) Data Governance** | Maintain documented data governance procedures | Dataset registry with provenance, versioning, retention rules | Dataset lineage reconstructable | Data Governance / Audit |
+| **Model Training** | **Art 11(1) Record Retention** | Retain system and development records | Immutable S3/WORM Conformity bucket | Retention rules verified quarterly | Compliance / IT |
+| **Model Training** | **Art 11(2) Technical Documentation** | Maintain detailed technical documentation | MLflow run logged; Model Card auto‑generated on merge | Documentation completeness ≥ 95% | ML Engineering / Compliance |
+| **Logging** | **Art 12(1) Logging** | Enable automatic logging for traceability | Prediction, decision, and override logs with unique IDs | Logs available for audit | Platform / Audit |
+| **User Interaction** | **Art 13(1)(b) Transparency** | Inform users they are interacting with an AI system | Recruiter and candidate disclosures shown in UI | Disclosure shown rate = 100% | Product / Legal |
+| **Pre‑Deployment** | **Art 14(4)(a–c) Oversight Design** | Ensure effective human supervision | Human‑in‑the‑loop enforced for hiring decisions | HITL flag enabled for all decisions | Product / DPO |
+| **Pre‑Deployment** | **Art 14(4)(d) Override Capability** | Allow humans to override AI output | React admin panel "Override & reason" component | Override actions logged | Product / Legal |
+| **Model Evaluation** | **Art 15(1) Accuracy & Robustness** | Achieve acceptable accuracy and robustness | Stress testing, OOD evaluation, fairness benchmarks | Test suite pass rate ≥ threshold | ML Engineering / Security |
+| **Model Evaluation** | **Art 15(2) Security** | Protect model against manipulation and attacks | Adversarial testing and security checklist | Security review signed off | Security / ML |
+| **Post‑Deployment** | **Art 61(1) Monitoring System** | Monitor performance and risk continuously | Prometheus + Grafana dashboard; daily fairness drift job | Drift alerts resolved within SLA | Ops / Compliance |
+| **Traceability** | **Art 23(1) Traceability** | Reconstruct decisions end‑to‑end | Decision → model → dataset → code commit linkage | Full trace reproducible on audit | Engineering / Audit |
+| **Incident Handling** | **Art 54(1) Incident Duty** | Report serious incidents to authorities | Incident workflow + regulator notification runbook | Notification ≤ 15 days | Compliance / Legal |
+| **Decision Safeguards** | **GDPR Art 22** | Prevent solely automated hiring decisions | Mandatory human review before decision finalization | No fully automated decisions in logs | Product / DPO |
 
 
 ---
