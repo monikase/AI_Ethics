@@ -278,33 +278,54 @@ Satisfies:
 
 ## 5️⃣ Audit-Trail System Architecture  
 
-Enable full reconstruction of any regulatory‑relevant decision.
+The audit‑trail system is designed to **enable full, verifiable reconstruction of any regulatory‑relevant decision** made by the AI system.  
+It ensures that decisions can be explained, audited, and defended throughout their retention period, in line with EU AI Act requirements on logging, traceability, monitoring, and incident investigation.
 
-This architecture **makes it possible to fully explain and prove _how_ and _why_ any AI decision was made** - even years later.
+### 5.1 Architecture Overview
 
-### 5.1 The Data Flow
+All decision‑related events follow a standardized evidence pipeline:  
 
 ```
-User action ─► Decision Engine ─► Event Broker (Kafka) ─►  Evidence Stores
+User action ─► Decision Engine ─► Event Broker (Kafka) ─►  Evidence Stores:
  1. Immutable Log (Apache Iceberg table, WORM policy, hash-chain)  
  2. Monitoring API (InfluxDB)  
  3. Evidence Graph Service (neo4j)
 ```
 
+Each significant event is emitted to an event broker and persisted across multiple evidence stores to support integrity, monitoring, and traceability without relying on a single system.
+
+### 5.2 Evidence Storage Layers
+
+1. **Immutable Decision Log**  
+   An append‑only, write‑once (WORM) log implemented using Apache Iceberg tables with hash‑chaining.  
+   This layer serves as the legal source of truth, ensuring that records cannot be altered retroactively.  
+2. **Monitoring Store**  
+   Time‑series metrics (e.g. fairness indicators, performance drift, override frequency) are stored in a monitoring database for continuous oversight and post‑market monitoring analysis.  
+3. **Evidence Graph Service**  
+   A graph database links decisions to their underlying model versions, dataset snapshots, risk assessments, and human interventions.  
+   This enables rapid, end‑to‑end reconstruction of decision lineage for audits and investigations.  
+
+### 5.3 Evidence Types and Controls
+
 | Evidence Node | Example Payload | Hash | Retention | Access |
 |-------|-------|-------|-------|-------|
-| `risk_assessment` | JSON incl. TRS calc, timestamp | SHA-256 | 10 y | Compliance, DPO |
-| `model_metric` | slice = gender:female, TPR=0.82 | " | 5 y | DS, Compliance |
-| `override_event` | decision ID, user ID, reason_code | " | 5 y | Compliance |
-| `dataset_snapshot` | S3 URI, hash of parquet manifest | " | Life-of-product + 2 y | DS |
+| `risk_assessment` | JSON incl. TRS score, risk tier, timestamp | SHA-256 hash | 10 years | Compliance, DPO |
+| `model_metric` | Fairness and performance metrics by slice (e.g. slice = gender:female, TPR=0.82) | SHA-256 hash | 5 years | Data Science, Compliance |
+| `override_event` | decision ID, user ID, override reason_code | SHA-256 hash | 5 years | Compliance |
+| `dataset_snapshot` | Dataset URI and version hash (e.g. S3 URI, hash of parquet manifest) | SHA-256 hash | Life-of-product + 2 years | Data Science |
 
-Tamper seals: daily Merkle-root pinned to public blockchain (optional, cheap L2).  
+Retention periods are aligned with regulatory limitation periods and incident handling obligations. Access controls enforce role separation between development, compliance, and data protection functions.
 
-Evidence Graph API lets auditors reconstruct full lineage for any decision in under one minute.  
+### 5.4 Integrity and Tamper Evidence
+Daily Merkle roots of immutable logs may optionally be anchored to a public blockchain as a tamper‑evidence mechanism. This provides external proof that records existed at a given point in time and have not been modified.
 
---- 
+### 5.5 Audit and Reconstruction Capability
 
-> If a decision cannot be reconstructed → it cannot be defended  
+An Evidence Graph API enables auditors and compliance teams to reconstruct the full lineage of any decision including risk classification, data inputs, model version, metrics at inference time, and human actions in under one minute.  
+  
+**If a decision cannot be reconstructed, it cannot be defended.**  
+
+This principle underpins the system’s design and ensures compliance with traceability, transparency, and accountability obligations under the EU AI Act and GDPR.
 
 ---
 
