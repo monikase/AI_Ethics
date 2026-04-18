@@ -224,6 +224,7 @@ Where applicable, **GDPR Articles 22 and 35** are cross‑referenced to ensure a
 | **Incident Handling** | **Art 54(1) Incident Duty** | Report serious incidents to authorities | Incident workflow + regulator notification runbook | Notification ≤ 15 days | Compliance / Legal |
 | **Decision Safeguards** | **GDPR Art 22** | Prevent solely automated hiring decisions | Mandatory human review before decision finalization | No fully automated decisions in logs | Product / DPO |
 
+> **Data Protection Officer (DPO)**: Independent role responsible for overseeing GDPR compliance, including DPIAs and safeguards for automated decision‑making.
 
 ---
 
