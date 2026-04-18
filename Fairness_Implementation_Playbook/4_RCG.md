@@ -241,19 +241,19 @@ All templates are **versioned, auto‑linked, and required for defined risk tier
     - Commit SHA
     - Dataset version
 2. **Legal Profile**
-   - Risk tier, TRS, Annex III category
-   - DPIA ID link
-   - GDPR lawful basis
+    - Risk tier, TRS, Annex III category
+    - DPIA ID link
+    - GDPR lawful basis
 3.  **Intended Use / Out-of-Scope Scenarios**
 4.  **Performance & Fairness Benchmarks**
-   - Overall metrics
-   - Slice metrics
-   - Thresholds + justification, with link to risk-benefit analysis
+    - Overall metrics
+    - Slice metrics
+    - Thresholds + justification, with link to risk-benefit analysis
 5. **Human Oversight Plan**
-   - Roles
-   - Escalation ladder
+    - Roles
+    - Escalation ladder
 
-6. **Change Log** (Auto-appended on every merge)
+7. **Change Log** (Auto-appended on every merge)
 
    `date | commit | change | reason | reviewer`
 
