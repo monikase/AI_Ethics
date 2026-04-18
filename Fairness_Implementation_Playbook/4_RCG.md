@@ -33,7 +33,7 @@ Key outcomes for the organization:
 - **Scalability across systems and jurisdictions**  
   A reusable, architecture‑agnostic framework enables consistent compliance across multiple AI systems and EU markets without redesigning controls for each use case.   
 
-In effect, the guide enables the organization to move faster with confidence, ensuring regulatory compliance is no longer a bottleneck but a competitive enabler.   
+In effect, the guide enables the organization to **move faster with confidence**, ensuring regulatory compliance is no longer a bottleneck but a competitive enabler.   
 
 ## Scope and Applicability
 
