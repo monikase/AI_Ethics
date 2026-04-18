@@ -260,13 +260,17 @@ All templates are **versioned, auto‑linked, and required for defined risk tier
 
 ### 4.2 DPIA Annex Shortcut
 
-A one-page add-on capturing how the high-risk AI system interacts with personal data. Fulfills both AI-Act Art 10 and GDPR Art 35 requirements in one place. Saves lawyers from duplicate work.
+One‑page attachment describing:
+- Personal data usage
+- Automated decision flows
+- Safeguards and oversight
 
+Satisfies:
 
+- AI Act Art. 10
+- GDPR Art. 35
 
 ---
-
-### Key Insight  
 
 > Documentation must be a **byproduct of development**, not a separate activity  
 
