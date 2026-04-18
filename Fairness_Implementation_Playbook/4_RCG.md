@@ -380,15 +380,15 @@ Average overhead after first project: **~4 hours per feature**, typically offset
 
 ## 8. Integration with Playbook  
 
-### 🔗 Fair AI Scrum Toolkit  
+#### 🔗 Fair AI Scrum Toolkit  
 - compliance tasks → backlog  
 - validation → Definition of Done  
 
-### 🔗 Organizational Integration Toolkit  
+#### 🔗 Organizational Integration Toolkit  
 - governance → ownership of compliance  
 - escalation → regulatory risks  
 
-### 🔗 Advanced Architecture Cookbook  
+#### 🔗 Advanced Architecture Cookbook  
 - system-specific implementation strategies  
 
 ---
