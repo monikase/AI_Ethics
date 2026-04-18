@@ -365,8 +365,6 @@ Average overhead after first project: **~4 hours per feature**, typically offset
 
 ## 8. Integration with Playbook  
 
----
-
 ### 🔗 Fair AI Scrum Toolkit  
 - compliance tasks → backlog  
 - validation → Definition of Done  
@@ -380,22 +378,14 @@ Average overhead after first project: **~4 hours per feature**, typically offset
 
 ---
 
-### Unified Flow  
-
-Audit → Risk → Implementation → Evidence → Compliance  
-
----
-
 ## 9. Core Principles  
 
----
-
-- Compliance must be **systematic and repeatable**  
-- Risk determines **level of control**  
-- Evidence must be **traceable and verifiable**  
-- Documentation must be **requirement-driven**  
-- Compliance must be **continuous, not static**  
-- Systems must support **human oversight and accountability**  
-- Intersectional fairness must be **explicitly evaluated**  
+- Risk determines control
+- Evidence must exist to claim compliance
+- Validation blocks deployment
+- Documentation is auto‑generated
+- Compliance is continuous
+- Human oversight is mandatory
+- Intersectional impacts must be evaluated  
 
 ---
