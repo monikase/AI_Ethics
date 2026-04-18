@@ -276,36 +276,14 @@ Satisfies:
 
 ---
 
-## 8️⃣ Audit Trail Architecture  
-→ Enable full accountability  
+## 5️⃣ Audit-Trail System Architecture  
 
----
+Enable full reconstruction of any regulatory‑relevant decision.
 
-### 8.1 Required Capabilities  
-
-- decision traceability  
-- version tracking  
-- event logging  
-- reproducibility  
-
----
-
-### 8.2 Core Components  
-
-- Model version registry  
-- Data versioning  
-- Decision logs  
-- Monitoring logs  
-
----
-
-### 8.3 Audit Objective  
-
-Enable reconstruction of:
-
-- how a decision was made  
-- what data was used  
-- what model version was active  
+`User action ─► Decision Engine ─► Event Broker (Kafka) ─►  
+ 1. Immutable Log (Apache Iceberg table, WORM policy, hash-chain)  
+ 2. Monitoring API (InfluxDB)  
+ 3. Evidence Graph Service (neo4j)`
 
 ---
 
