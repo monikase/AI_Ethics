@@ -228,54 +228,41 @@ Where applicable, **GDPR Articles 22 and 35** are cross‑referenced to ensure a
 
 ---
 
-## 4️⃣ Documentation & Evidence Framework  
+## 4️⃣ Documentation Templates  
+
+Standardize compliance evidence while minimizing developer overhead.  
+
+All templates are **versioned, auto‑linked, and required for defined risk tiers.**
+
+### 4.1 Model Card Template  
+
+1. Header (Auto‑filled)
+    - Model ID / hash
+    - Commit SHA
+    - Dataset version
+2. Legal Profile
+   - Risk tier, TRS, Annex III category
+   - DPIA ID link
+   - GDPR lawful basis
+3.  Intended Use / Out-of-Scope Scenarios
+4.  Performance & Fairness Benchmarks
+   - Overall metrics
+   - Slice metrics
+   - Thresholds + justification, with link to risk-benefit analysis
+5. Human Oversight Plan
+   - Roles
+   - Escalation ladder
+
+6. Change Log (Auto-appended on every merge)
+
+   date | commit | change | reason | reviewer
 
 
----
+### 4.2 DPIA Annex Shortcut
 
-### 7.1 Requirement-Driven Documentation  
+A one-page add-on capturing how the high-risk AI system interacts with personal data. Fulfills both AI-Act Art 10 and GDPR Art 35 requirements in one place. Saves lawyers from duplicate work.
 
-Each artifact must map to a specific requirement  
 
----
-
-### 7.2 Core Documentation Types  
-
-#### Risk Assessment  
-- system classification  
-- identified risks  
-
-#### Design Documentation  
-- fairness definitions  
-- trade-offs  
-- mitigation strategies  
-
-#### Technical Documentation  
-- system architecture  
-- model behavior  
-- evaluation results  
-
-#### Monitoring Evidence  
-- performance over time  
-- fairness metrics  
-
----
-
-### 7.3 Traceability Model  
-
-| Requirement | Artifact | Status |
-|------------|---------|--------|
-| Fairness | Bias report | Complete |
-| Transparency | Explanation interface | Complete |
-| Oversight | Human review logs | Active |
-
----
-
-### 7.4 Automation Principle  
-
-- CI/CD pipelines → generate evidence  
-- testing → produces compliance metrics  
-- monitoring → updates documentation  
 
 ---
 
