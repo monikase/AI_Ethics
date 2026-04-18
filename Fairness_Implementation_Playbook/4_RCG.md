@@ -3,7 +3,6 @@ A Universal Methodology for Operationalizing AI Fairness Regulation
 
 ## Purpose
 
-
 Regulatory compliance is where technical fairness work becomes a **demonstrable legal obligation**. While regulations such as the **EU AI Act** and **GDPR Article 22** define mandatory requirements for fairness, transparency, accountability, and human oversight, they rarely explain how these obligations should be implemented in real AI systems.  
   
 This Regulatory Compliance Guide provides a **systematic, engineering‑aligned methodology** for operationalizing AI fairness regulation. Its purpose is to translate abstract legal requirements into **concrete development practices**, including:  
@@ -13,7 +12,7 @@ This Regulatory Compliance Guide provides a **systematic, engineering‑aligned 
 - Documentation and evidence systems that satisfy regulatory scrutiny
 - Audit‑trail designs that enable accountability and traceability
 
-The guide complements the other components of the Fairness Implementation Playbook—Fair AI Scrum, Organizational Integration, and the Advanced Architecture Cookbook—by answering the final, critical question: **How do we prove that our AI systems are compliant?**  
+The guide complements the other components of the Fairness Implementation Playbook — Fair AI Scrum, Organizational Integration, and the Advanced Architecture Cookbook by answering the final, critical question: **How do we prove that our AI systems are compliant?**  
   
 By focusing on repeatable processes, proportional controls, and continuous evidence generation, this guide ensures that fairness implementations are not only technically sound, but also **legally defensible across jurisdictions and system types**.
 
@@ -37,11 +36,6 @@ The guide applies to:
 - Decision‑support systems with human oversight
 - Predictive, ranking, and recommendation systems
 - Generative AI systems used in consequential contexts  
-
-
-**Key principle:**  
-This guide defines how to operationalize compliance, not what your system is allowed to do.  
-
 
 ## Regulatory Compliance Guide Overview  
 
@@ -70,19 +64,6 @@ This guide operationalizes regulatory compliance across all previous toolkits:
 - **Advanced Architecture Cookbook**  
   → enables architecture-specific implementation of compliance and fairness controls  
 
-**Key Role of This Guide**
-
-While previous components answer:
-
-- *What is unfair?* → Audit  
-- *How to fix it?* → Intervention  
-- *How to build it?* → Scrum & Architecture  
-- *Who owns it?* → Governance  
-
-This guide answers:
-
-**“How do we prove it is compliant?”**
-
 ## How to Use This Guide  
 
 Organizations should apply this guide as a **sequence**, not a checklist:
@@ -98,13 +79,11 @@ Organizations should apply this guide as a **sequence**, not a checklist:
 
 ## 1️⃣ Regulatory Translation Framework  
 
-
 ### From Legal Obligations to Engineering Tasks
 
 Regulatory frameworks define **mandatory outcomes** such as fairness, transparency, or human oversight. But they rarely specify how these outcomes must be implemented in real systems. As a result, compliance failures often occur not because organizations ignore regulations, but because they fail to translate legal obligations into concrete development work.  
   
 The Regulatory Translation Framework provides a **repeatable method** for converting regulatory requirements into **engineering tasks**, **validation criteria**, and **evidence artifacts** that can be implemented, tested, and audited.
-
 
 ### 1.1 Translation Logic  
 
@@ -156,7 +135,8 @@ To apply the Regulatory Translation Framework in practice:
 
 ## 2️⃣  Risk Classification Framework
    
-Determine the regulatory compliance burden for an AI system and enforce proportional governance controls based on risk.
+Determine the regulatory compliance burden for an AI system and enforce proportional governance controls based on risk.  
+  
 All AI systems must be classified before design or deployment. Classification determines:
 
 - Required documentation
@@ -197,18 +177,35 @@ No system may proceed to build without a recorded classification.
 
 ## 3️⃣ EU AI Act Mapping Matrix
   
-Translate regulatory obligations into SDLC‑aligned control activities with explicit validation metrics and ownership.  
+The purpose of this matrix is to ensure that **EU AI Act requirements are systematically embedded into the software development lifecycle (SDLC)**.  
+  
+Regulatory obligations are translated into **practical control activities** that can be implemented, verified, and owned within everyday development and operational processes. This approach ensures compliance is built in, measurable, and traceable rather than addressed retrospectively.   
   
 ### 3.1 Mapping Structure
-Each regulatory clause is mapped to:
 
-- Development phase
-- Required system capability
-- Control activity
-- Validation method
-- Ownership (RACI)
+Each EU AI Act requirement is mapped to concrete actions within the SDLC. For every clause, the matrix defines:  
 
+- **Development phase**  
+  The SDLC stage where the requirement must be addressed (e.g. data ingestion, training, deployment).  
+- **Required system capability**  
+  The technical or organizational capability the system must provide to meet the regulatory obligation.  
+- **Control activity**  
+  The specific process, tool, or mechanism implemented to enforce the requirement.  
+- **Validation method**  
+  Objective evidence used to confirm the control is operating as intended (metrics, logs, reports, reviews).  
+- **Ownership (RACI)**    
+  Clear accountability for implementation and oversight, ensuring responsibilities are defined and auditable.  
 
+### 3.2 Example Mapping Matrix (Excerpt)
+
+The table below illustrates how selected AI Act articles are operationalized across the SDLC:
+
+| SDLC Phase | AI-Act Article & Clause | Requirement | Control Activity | Validation Metric | RACI |
+|-----------|-----------|-----------|-----------|-----------|-----------|
+| Data Ingestion | Art 10 (2)(f) Data Imbalances | Data imbalance control | Bias-scan job on Airflow DAG; report autosaved to S3 / Conformity bucket | Bias report generated | DS / Compliance |
+| Model Training | Art 11(2) Technical Docs | Technical documentation | MLflow run captured; Model Card autogenerated on merge | Doc completeness | ML / Compliance |
+| Pre‑Deployment | Art 14 (4)(d) Override | Human can over-rule decision | React admin panel "Override & reason" component | Override logged | Product / Legal |
+| Post‑Deployment | Art 61 (1) Monitoring | Continuous post-market monitoring | Prometheus + Grafana dashboard; daily fairness drift job |
 
 
 ---
