@@ -280,8 +280,12 @@ Satisfies:
 
 Enable full reconstruction of any regulatory‑relevant decision.
 
+This architecture **makes it possible to fully explain and prove _how_ and _why_ any AI decision was made** - even years later.
+
+### 5.1 The Data Flow
+
 ```
-User action ─► Decision Engine ─► Event Broker (Kafka) ─►  
+User action ─► Decision Engine ─► Event Broker (Kafka) ─►  Evidence Stores
  1. Immutable Log (Apache Iceberg table, WORM policy, hash-chain)  
  2. Monitoring API (InfluxDB)  
  3. Evidence Graph Service (neo4j)
