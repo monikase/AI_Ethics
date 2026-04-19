@@ -56,10 +56,10 @@ The guide applies to:
 
 #### 1️⃣ [Regulatory Translation Framework](#regulatory-translation)  
 #### 2️⃣ [Risk Classification Framework](#risk-classification)  
-#### 3️⃣ [EU AI Act Mapping Matrix](#compliance-workflow)  
-#### 4️⃣ [Documentation & Evidence Framework](#documentation)  
+#### 3️⃣ [EU AI Act Mapping Matrix](#matrix)  
+#### 4️⃣ [Documentation Templates](#documentation)  
 #### 5️⃣ [Audit Trail System Architecture](#audit)  
-#### 6️⃣ [Stage-Gate Compliance Model](#stage-gate)  
+#### 6️⃣ [Stage-Gate Implementation Checklist ](#stage-gate)  
 #### 7️⃣ [Quick-Start Implementation Workflow](#implementation)  
 #### 8️⃣ [Integration with Playbook Components](#integration)  
 #### 9️⃣ [Core Principles](#principles)  
@@ -92,6 +92,7 @@ Organizations should apply this guide as a **sequence**, not a checklist:
 
 ---
 
+<a id="regulatory-translation"></a>
 ## 1️⃣ Regulatory Translation Framework  
 
 ### From Legal Obligations to Engineering Tasks
@@ -148,6 +149,7 @@ To apply the Regulatory Translation Framework in practice:
 
 ---
 
+<a id="risk-classification"></a>
 ## 2️⃣  Risk Classification Framework
    
 Determine the regulatory compliance burden for an AI system and enforce proportional governance controls based on risk.  
@@ -190,6 +192,7 @@ No system may proceed to build without a recorded classification.
 
 ---
 
+<a id="matrix"></a>
 ## 3️⃣ EU AI Act Mapping Matrix
   
 The purpose of this matrix is to ensure that **EU AI Act requirements are systematically embedded into the software development lifecycle (SDLC)**.  
@@ -243,6 +246,7 @@ Where applicable, **GDPR Articles 22 and 35** are cross‑referenced to ensure a
 
 ---
 
+<a id="documentation"></a>
 ## 4️⃣ Documentation Templates  
 
 Standardize compliance evidence while minimizing developer overhead.  
@@ -291,6 +295,7 @@ Satisfies:
 
 ---
 
+<a id="audit"></a>
 ## 5️⃣ Audit-Trail System Architecture  
 
 The audit‑trail system is designed to **enable full, verifiable reconstruction of any regulatory‑relevant decision** made by the AI system.  
@@ -344,6 +349,7 @@ This principle underpins the system’s design and ensures compliance with trace
 
 ---
 
+<a id="stage-gate"></a>
 ## 6️⃣ Stage-Gate Implementation Checklist 
 
 | Gate         | Exit Criteria                                      | Evidence            |
@@ -364,6 +370,7 @@ Continuous monitoring hooks:
 
 ---
 
+<a id="implementation"></a>
 ## 7️⃣ Quick‑Start Guide  
 
 
@@ -378,6 +385,7 @@ Average overhead after first project: **~4 hours per feature**, typically offset
 
 ---
 
+<a id="integration"></a>
 ## 8. Integration with Playbook  
 
 #### 🔗 Fair AI Scrum Toolkit  
@@ -393,6 +401,7 @@ Average overhead after first project: **~4 hours per feature**, typically offset
 
 ---
 
+<a id="principles"></a>
 ## 9. Core Principles  
 
 - Risk determines control
