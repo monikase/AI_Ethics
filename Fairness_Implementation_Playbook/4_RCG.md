@@ -54,13 +54,13 @@ The guide applies to:
 
 ## Regulatory Compliance Guide Overview  
 
-#### 1️⃣ [Regulatory Translation Framework](#regulatory-translation)  
-#### 2️⃣ [Risk Classification Framework](#risk-classification)  
-#### 3️⃣ [EU AI Act Mapping Matrix](#matrix)  
-#### 4️⃣ [Documentation Templates](#documentation)  
-#### 5️⃣ [Audit Trail System Architecture](#audit)  
-#### 6️⃣ [Stage-Gate Implementation Checklist ](#stage-gate)  
-#### 7️⃣ [Quick-Start Implementation Workflow](#implementation)  
+#### 1. [Regulatory Translation Framework](#regulatory-translation)  
+#### 2. [Risk Classification Framework](#risk-classification)  
+#### 3. [EU AI Act Mapping Matrix](#matrix)  
+#### 4. [Documentation Templates](#documentation)  
+#### 5. [Audit Trail System Architecture](#audit)  
+#### 6. [Stage-Gate Implementation Checklist ](#stage-gate)  
+#### 7. [Quick-Start Implementation Workflow](#implementation)  
 #### 8. [Integration with Playbook Components](#integration)  
 #### 9. [Core Principles](#principles)  
 
