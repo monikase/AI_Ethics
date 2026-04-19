@@ -64,8 +64,6 @@ The guide applies to:
 #### 8. [Integration with Playbook Components](#integration)  
 #### 9. [Core Principles](#principles)  
 
----
-
 ## Connection to Other Playbook Components  
 
 This guide operationalizes regulatory compliance across all previous toolkits:
