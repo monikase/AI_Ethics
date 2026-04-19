@@ -61,8 +61,8 @@ The guide applies to:
 #### 5️⃣ [Audit Trail System Architecture](#audit)  
 #### 6️⃣ [Stage-Gate Implementation Checklist ](#stage-gate)  
 #### 7️⃣ [Quick-Start Implementation Workflow](#implementation)  
-#### 8️⃣ [Integration with Playbook Components](#integration)  
-#### 9️⃣ [Core Principles](#principles)  
+#### 8. [Integration with Playbook Components](#integration)  
+#### 9. [Core Principles](#principles)  
 
 ---
 
