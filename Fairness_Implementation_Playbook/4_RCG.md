@@ -60,9 +60,8 @@ The guide applies to:
 #### 4. [Documentation Templates](#documentation)  
 #### 5. [Audit Trail System Architecture](#audit)  
 #### 6. [Stage-Gate Implementation Checklist ](#stage-gate)  
-#### 7. [Quick-Start Implementation Workflow](#implementation)  
-#### 8. [Integration with Playbook Components](#integration)  
-#### 9. [Core Principles](#principles)  
+#### 7. [Quick-Start Implementation Workflow](#implementation)   
+#### 8. [Core Principles](#principles)  
 
 ## Connection to Other Playbook Components  
 
@@ -383,24 +382,8 @@ Average overhead after first project: **~4 hours per feature**, typically offset
 
 ---
 
-<a id="integration"></a>
-## 8. Integration with Playbook  
-
-#### 🔗 Fair AI Scrum Toolkit  
-- compliance tasks → backlog  
-- validation → Definition of Done  
-
-#### 🔗 Organizational Integration Toolkit  
-- governance → ownership of compliance  
-- escalation → regulatory risks  
-
-#### 🔗 Advanced Architecture Cookbook  
-- system-specific implementation strategies  
-
----
-
 <a id="principles"></a>
-## 9. Core Principles  
+## 8. Core Principles  
 
 - Risk determines control
 - Evidence must exist to claim compliance
