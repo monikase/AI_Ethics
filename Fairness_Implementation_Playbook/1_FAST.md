@@ -157,7 +157,7 @@ Acceptance criteria define **how fairness is validated**, not just intended.
 
 #### Example Criteria
 
-- Metric thresholds met across relevant groups
+- Metric difference ≤ defined threshold 
 - Intersectional evaluation completed where feasible
 - Results documented in model card
 
@@ -167,34 +167,22 @@ Acceptance criteria define **how fairness is validated**, not just intended.
 > - True positive rate difference ≤ 0.03 across groups  
 > - Intersectional subgroup evaluation completed  
 > - Results documented in model card  
- 
-**→ 4_RCG.md Alignment**  
-  
-FAIR criteria define validation thresholds used as compliance evidence at Gates G2 (Build) and G3 (Validation).
-
 
 ---
 
 ### 1.3 Backlog & Documentation Extensions
 
-Enhance backlog with fairness visibility:
+Make fairness visible in daily work:
 
-- Tag stories:
-  - `FAIRNESS`
-  - `HIGH-RISK`
-  - `INTERSECTIONAL`
+- Tag stories: `FAIRNESS`, `HIGH-RISK`, `INTERSECTIONAL`
 - Add fairness subtasks:
   - bias audit  
   - subgroup testing  
-  - mitigation implementation  
+  - mitigation  
 - Include fairness notes:
   - assumptions  
   - risks  
   - affected populations  
- 
-🔗 **Playbook Connection**  
-- Fairness Audit findings become backlog items  
-- Fairness Intervention strategies become implementation tasks  
 
 ---
 
