@@ -80,6 +80,15 @@ AAC does not decide fairness — it **implements it correctly per architecture**
 
 ---
 
+## When to Use This Cookbook
+
+AAC is triggered when:
+
+- FAST identifies fairness issues  
+- FDR requires mitigation  
+- RCG validation thresholds are not met 
+
+---
 
 ## Business Value
 
