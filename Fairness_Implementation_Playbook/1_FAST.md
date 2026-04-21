@@ -182,12 +182,11 @@ Enhance backlog with fairness visibility:
 ---
 
 <a id="dod"></a>
-## 2️⃣ Definition of Done Framework  
-→ Ensure fairness is validated before deployment.
+## 2️⃣ Definition of Done (DoD) Framework  
 
----
+A feature is complete **only when fairness validation is complete**.
 
-A feature is complete only if **all fairness conditions are met**.  
+**Completion of the DoD is a mandatory** precondition for progression through governance gates. Features failing fairness validation must not advance to deployment.  
 
 #### Data
 
