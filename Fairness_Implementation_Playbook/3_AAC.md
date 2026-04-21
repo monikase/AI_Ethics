@@ -492,6 +492,118 @@ Bias is strongest at **intersections of identities**, not single attributes.
 
 ---
 
+<a id="refs"></a>
+## 10. References
 
+### General Fairness in Machine Learning
+
+- Barocas, S., Hardt, M., & Narayanan, A. (2019).  
+  *Fairness and Machine Learning: Limitations and Opportunities.*  
+  https://fairmlbook.org  
+
+- Mehrabi, N., Morstatter, F., Saxena, N., Lerman, K., & Galstyan, A. (2021).  
+  *A Survey on Bias and Fairness in Machine Learning.*  
+  ACM Computing Surveys.  
+
+- Verma, S., & Rubin, J. (2018).  
+  *Fairness Definitions Explained.*  
+  IEEE/ACM Workshop on Software Fairness.  
+
+---
+
+### Large Language Models (LLMs)
+
+- Bender, E. M., Gebru, T., McMillan-Major, A., & Shmitchell, S. (2021).  
+  *On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?*  
+  FAccT Conference.  
+
+- Sheng, E., Chang, K. W., Natarajan, P., & Peng, N. (2019).  
+  *The Woman Worked as a Babysitter: On Biases in Language Generation.*  
+  EMNLP.  
+
+- Schick, T., Udupa, S., & Schütze, H. (2021).  
+  *Self-Diagnosis and Self-Debiasing for Language Models.*  
+  arXiv.  
+
+---
+
+### Recommendation Systems
+
+- Ekstrand, M. D., Burke, R., & Diaz, F. (2022).  
+  *Fairness in Recommendation Systems.*  
+  Foundations and Trends in Information Retrieval.  
+
+- Abdollahpouri, H., Burke, R., & Mobasher, B. (2020).  
+  *Managing Popularity Bias in Recommender Systems with Personalized Re-ranking.*  
+  AAAI Conference.  
+
+- Burke, R. (2017).  
+  *Multisided Fairness for Recommendation.*  
+  FATREC Workshop.  
+
+---
+
+### Vision Models
+
+- Buolamwini, J., & Gebru, T. (2018).  
+  *Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification.*  
+  FAT Conference.  
+
+- Wilson, B., Hoffman, J., & Morgenstern, J. (2019).  
+  *Predictive Inequity in Object Detection.*  
+  arXiv.  
+
+- Zhao, J., Wang, T., Yatskar, M., Ordonez, V., & Chang, K. W. (2017).  
+  *Men Also Like Shopping: Reducing Gender Bias Amplification in Image Recognition.*  
+  ICCV.  
+
+---
+
+### Multi-Modal Systems
+
+- Baltrušaitis, T., Ahuja, C., & Morency, L. P. (2019).  
+  *Multimodal Machine Learning: A Survey and Taxonomy.*  
+  IEEE TPAMI.  
+
+- Liang, P. P., Wu, Y., Morency, L. P., & Salakhutdinov, R. (2022).  
+  *Towards Robust and Fair Multimodal Learning.*  
+  ICML.  
+
+---
+
+### Evaluation, Monitoring, and ML Systems
+
+- Sculley, D. et al. (2015).  
+  *Hidden Technical Debt in Machine Learning Systems.*  
+  NeurIPS.  
+
+- Breck, E. et al. (2017).  
+  *The ML Test Score: A Rubric for ML Production Readiness.*  
+  IEEE Big Data.  
+
+- Mitchell, M. et al. (2019).  
+  *Model Cards for Model Reporting.*  
+  arXiv.  
+
+---
+
+### Practical & Industry Approaches
+
+- Google AI.  
+  *Responsible AI Practices.*  
+  https://ai.google/responsibilities/responsible-ai-practices/  
+
+- Microsoft.  
+  *Responsible AI Standard v2.*  
+
+---
+
+### Additional Concepts Referenced
+
+- Counterfactual Fairness (Kusner et al., 2017)  
+- Exposure Fairness in Ranking Systems  
+- Intersectional Fairness (Crenshaw, 1989 – conceptual foundation)  
+
+---
 
 ---
