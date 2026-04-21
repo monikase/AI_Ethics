@@ -6,7 +6,7 @@ A Universal Methodology for Operationalizing AI Fairness Regulation
 This Regulatory Compliance Guide provides a systematic methodology for operationalizing AI fairness regulation in real-world systems.   
 It translates abstract legal obligations such as those in the **EU AI Act** and **GDPR** into concrete engineering practices, governance controls, and evidence artifacts that can be implemented, validated, and audited.  
   
-By embedding risk classification, lifecycle controls, and continuous evidence generation into standard development workflows, the guide enables organizations to demonstrate compliance reliably and defensibly across AI system types and jurisdictions.  
+By embedding risk classification, lifecycle controls, and continuous evidence generation into standard development workflows, the guide **enables organizations to demonstrate compliance reliably and defensibly** across AI system types and jurisdictions.  
 
 ## Business Value
 
