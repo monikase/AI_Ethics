@@ -349,21 +349,45 @@ This principle underpins the system’s design and ensures compliance with trace
 <a id="stage-gate"></a>
 ## 6️⃣ Stage-Gate Implementation Checklist 
 
-| Gate         | Exit Criteria                                      | Evidence            |
-|--------------|---------------------------------------------------|---------------------|
-| G0 Ideation  | TRS completed                                     | Risk ticket         |
-| G1 Design    | Controls mapped; templates instantiated           | Design ref          |
-| G2 Build     | Fairness tests pass; model card draft             | CI artifact         |
-| G3 Validation| Independent QA; DPIA approved                     | Conformity report   |
-| G4 Launch    | Monitoring active; escalation set                 | Launch record       |
-| G5 Operate   | Drift review completed                            | Ops report          |
-| G6 Retire    | Data deletion; archive complete                   | Tombstone log       |
+**How to read this checklist**  
+
+This stage‑gate checklist defines the minimum conditions that must be met for an AI system to move from one phase of its lifecycle to the next.  
+  
+Each _gate_ is a formal decision point. The system may proceed only if the listed exit criteria are satisfied and the corresponding evidence exists. This ensures that fairness, risk, and regulatory obligations are addressed progressively before issues become costly or irreversible.  
+
+| Gate         |Purpose | Exit Criteria                                      | Evidence            |
+|--------------|--------|----------------------------------------------------|---------------------|
+| G0 Ideation  | Identify risk early | TRS completed                                     | Risk ticket         |
+| G1 Design    | Build safeguards into design | Controls mapped; templates instantiated           | Design ref          |
+| G2 Build     | Verify quality & fairness | Fairness tests pass; model card draft             | CI artifact         |
+| G3 Validation| Independent assurance | Independent QA; DPIA approved                     | Conformity report   |
+| G4 Launch    | Enable safe operation | Monitoring active; escalation set                 | Launch record       |
+| G5 Operate   | Detect drift & issues | Drift review completed                            | Ops report          |
+| G6 Retire    | Close lifecycle responsibly | Data deletion; archive complete                   | Tombstone log       |
 
 Continuous monitoring hooks:  
 
 - Drift alerts
 - Incident triggers
 - Re‑classification signals
+
+#### G0 – Ideation (Can we responsibly explore this idea?)   
+At this stage, the goal is to confirm that the idea has been assessed for potential risk and impact before any design or development begins. Completing the TRS (Target Risk Score) ensures that high‑risk use cases are identified early, and that additional oversight (e.g. involving a Data Protection Officer) is triggered when needed.  
+
+#### G1 – Design (Have safeguards been built into the design?)   
+This gate ensures that risk controls and fairness requirements are explicitly translated into design decisions. Documentation templates are created here so evidence is generated consistently later, rather than retroactively.   
+
+#### G3 – Validation (Is the system safe, lawful, and reviewable?)  
+This gate provides independent assurance. External or separate reviewers confirm that the system meets regulatory, ethical, and quality expectations, including privacy impact assessments and defined human oversight mechanisms.  
+
+#### G4 – Launch (Are we ready to operate this safely in the real world?)
+Before release, the organization confirms that monitoring, escalation, and legal communications are active. This ensures issues can be detected and addressed quickly once real users are affected.  
+
+#### G5 – Operate (Is the system still behaving as expected?)  
+Over time, data and context change. This gate ensures that fairness and performance drift are periodically reviewed and that operational risks remain under control.  
+
+#### G6 – Retire (Are we exiting responsibly?)  
+When the system is decommissioned, this gate ensures data is deleted, evidence archived, and the lifecycle formally closed, preventing lingering compliance or data‑protection risks.  
 
 ---
 
