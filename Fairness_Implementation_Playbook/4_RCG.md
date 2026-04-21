@@ -54,6 +54,7 @@ The guide applies to:
 #### 6. [Stage-Gate Implementation Checklist ](#stage-gate)  
 #### 7. [Quick-Start Implementation Workflow](#implementation)   
 #### 8. [Core Principles](#principles)  
+#### 9. [References](#refs)  
 
 ## Connection to Other Playbook Components  
 
