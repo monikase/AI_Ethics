@@ -415,7 +415,7 @@ The Organizational Integration Toolkit is designed to reduce risk, improve effic
 
 ---
 
-### 8.1 Key Performance Indicators
+### 6.1 Key Performance Indicators
 
 | KPI | Current State | Target @ 12 months | Value Impact |
 |----|---------------|-------------------|--------------|
@@ -428,13 +428,13 @@ The Organizational Integration Toolkit is designed to reduce risk, improve effic
 
 ---
 
-### 8.2 How the Toolkit Drives These Improvements
+### 6.2 How the Toolkit Drives These Improvements
 
 - **Faster incident resolution**  
-  Clear escalation paths and SLAs (Section 6) reduce time lost to ambiguity and ad‑hoc coordination.
+  Clear escalation paths and SLAs (Section 4) reduce time lost to ambiguity and ad‑hoc coordination.
 
 - **Reduced audit risk**  
-  Fairness Decision Records and traceable evidence (Section 5) eliminate documentation gaps during reviews.
+  Fairness Decision Records and traceable evidence (Section 3) eliminate documentation gaps during reviews.
 
 - **Improved product performance and trust**  
   Consistent fairness definitions and metrics reduce unexpected user‑group disparities across systems.
@@ -444,28 +444,28 @@ The Organizational Integration Toolkit is designed to reduce risk, improve effic
 
 ---
 
-### 8.3 Break‑Even Expectations
+### 6.3 Break‑Even Expectations
 
 While the toolkit relies primarily on internal effort rather than new tooling, its value accumulates through:
-- avoided regulatory penalties,
-- reduced incident remediation cost,
-- and improved development throughput.
+- Avoided regulatory penalties
+- Reduced incident remediation cost
+- Improved development throughout
 
 **Break‑even is typically expected within ~18 months**, driven by a combination of:
-- fine avoidance,
-- efficiency gains,
-- and reduced escalation overhead.
+- Fine avoidance
+- Efficiency gains
+- Reduced escalation overhead.
 
 ---
 
-### 8.4 Measurement and Review
+### 6.4 Measurement and Review
 
 These KPIs are reviewed:
-- quarterly by the Fairness Steering Committee,
-- monthly by the Fairness Guild,
-- and continuously via dashboards and alerts.
+- Quarterly by the Fairness Steering Committee
+- Monthly by the Fairness Guild
+- Continuously via dashboards and alerts
 
-Targets are adjusted based on system risk level and organizational maturity.
+**Targets are adjusted based on system risk level and organizational maturity.**
 
 ---
 
