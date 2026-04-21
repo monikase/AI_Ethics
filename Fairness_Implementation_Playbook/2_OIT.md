@@ -9,6 +9,63 @@ Its purpose is to establish **clear governance structures, decision authority, a
 While team‑level practices (see **Fair AI Scrum Toolkit – 1_FAST.md**) enable fairness locally, organizations require coordinated governance to resolve trade‑offs, align metrics, and manage risk across the AI portfolio.  
 This toolkit provides that coordination layer, enabling fairness to function as an **institutional capability** rather than a collection of isolated practices.
 
+---
+
+## System Role in the Playbook
+
+OIT is the **governance and decision-making layer** of the Fairness Implementation Playbook.
+
+It defines:
+
+- **What fairness means** (definitions, metrics, thresholds)  
+- **Who decides and approves fairness trade-offs**  
+- **How decisions are documented and enforced**  
+
+---
+
+## Inputs & Outputs
+
+### Inputs
+
+- **From RCG (Regulatory Compliance Guide)**  
+  - Risk classification (TRS, risk tier)  
+  - Regulatory obligations (EU AI Act, GDPR)  
+  - Required validation and audit criteria  
+
+- **From FAST (Fair AI Scrum Toolkit)**  
+  - Implementation results  
+  - fairness metrics  
+  - escalated issues and trade-offs  
+
+---
+
+### Outputs
+
+- **To FAST**  
+  - Fairness Decision Records (FDRs)  
+  - approved fairness definitions  
+  - metrics and thresholds  
+
+- **To AAC (Advanced Architecture Cookbook)**  
+  - fairness objectives to guide mitigation selection  
+  - acceptable trade-offs  
+
+- **To RCG**  
+  - traceable decision records  
+  - governance documentation for compliance  
+
+---
+
+## Core Principle
+
+> **All fairness implementation across the organization must be governed by Fairness Decision Records (FDRs).**
+
+No team may:
+- define fairness independently  
+- change thresholds without governance approval  
+
+---
+
 ## Business Value of Organizational Fairness Integration
 
 Embedding fairness at the organizational level delivers tangible operational and strategic benefits:
