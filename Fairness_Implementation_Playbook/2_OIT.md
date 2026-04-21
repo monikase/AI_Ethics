@@ -157,11 +157,11 @@ Each FDR captures:
 
 > _Example FDR sections:_  
 >  
-> Decision: Adopt equal opportunity as primary fairness metric  
-> Alternatives Considered: Demographic parity, equalized odds  
-> Rationale: Equal opportunity better aligns with meritocratic admission principles while ensuring qualified applicants have equal chances regardless of background  
-> Stakeholders: AI Ethics Officer (accountable), Admissions Director (consulted), Diversity Office (consulted)  
-> Known Limitations: May not address historical inequities in qualification development  
+> **Decision:** Adopt equal opportunity as primary fairness metric  
+> **Alternatives Considered:** Demographic parity, equalized odds  
+> **Rationale:** Equal opportunity better aligns with meritocratic admission principles while ensuring qualified applicants have equal chances regardless of background  
+> **Stakeholders:** AI Ethics Officer (accountable), Admissions Director (consulted), Diversity Office (consulted)  
+> **Known Limitations:** May not address historical inequities in qualification development  
 
 FDRs serve as the **authoritative source of truth** for fairness decisions and must be referenced by downstream artifacts, including risk registers, mitigation tasks, and audit documentation.  
 
