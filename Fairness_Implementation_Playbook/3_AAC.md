@@ -100,21 +100,6 @@ Embedding fairness at the architecture level enables:
 - **Reduced risk** in complex AI deployments
 - **Improved generalization and product quality**
 
-## What This Cookbook Will Do  
-
-- Provide **architecture-specific fairness strategies**  
-- Translate fairness theory into **implementation recipes**  
-- Help teams **select appropriate interventions per system type**  
-- Define **evaluation and validation standards per architecture**  
-- Enable **consistent fairness across heterogeneous AI systems**  
-
-## Connection to Other Playbook Components  
-
-- **Fairness Audit** → identifies architecture-specific risks  
-- **Fairness Intervention** → defines mitigation strategies  
-- **Fair AI Scrum Toolkit** → operationalizes fairness in teams
-- **Organizational Integration Toolkit** → governs fairness decisions 
-
 ## Cookbook Overview  
 
 #### 1. [How to Use This Cookbook](#usage)  
