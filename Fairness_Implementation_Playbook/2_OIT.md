@@ -134,7 +134,7 @@ To implement intersectional principles in organizational roles:
 ---
 
 <a id="documentation"></a>
-### 3️⃣ Documentation & Transperancy Framework   
+## 3️⃣ Documentation & Transperancy Framework   
 
 **Objective:** Ensure fairness decisions are traceable, reviewable, and visible to both technical teams and organizational leadership.  
 
@@ -198,6 +198,7 @@ Scorecards:
 
 The goal is not detailed investigation, but **consistent organizational oversight** and early detection of systemic fairness issues.
 
+---
 
 ### 3.4 Transparency Principles
 
@@ -210,6 +211,7 @@ The documentation and transparency framework is guided by the following principl
 
 Together, these practices ensure that fairness is not only implemented, but also **explainable, governable, and defensible**.
 
+---
 
 ### 3.5 Communicating Documentation Initiatives with Stakeholders
 
@@ -217,6 +219,8 @@ Together, these practices ensure that fairness is not only implemented, but also
 - **For executives:** emphasize reduced regulatory and reputational risk
 - **For product teams:** highlight prevention of expectation misalignment through clear communication
 - **For engineering teams:** focus on reduced rework by making design intent explicit
+
+---
 
 ### 3.8 Evaluate Documentation
 
@@ -246,10 +250,7 @@ Together, these practices ensure that fairness is not only implemented, but also
 ---
 
 <a id="decision"></a>
-### 4️⃣ Decision Processes & Escalation  
-→ Ensure fairness decisions are consistent and timely  
-
----
+## 4️⃣ Decision Processes & Escalation  
 
 ### 4.1 Decision Tiers
 
