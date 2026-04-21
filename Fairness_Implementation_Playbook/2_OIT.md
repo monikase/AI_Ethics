@@ -372,6 +372,40 @@ The implementation is considered successful if:
 
 ---
 
+### 5.4 Communicating Documentation Initiatives with Stakeholders
+
+- **Frame documentation as concrete benefits**, not abstract principles
+- **For executives:** emphasize reduced regulatory and reputational risk
+- **For product teams:** highlight prevention of expectation misalignment through clear communication
+- **For engineering teams:** focus on reduced rework by making design intent explicit
+
+---
+
+### 5.5 Evaluating Documentation Quality
+
+
+1. **Documentation Coverage**  
+   Percentage of fairness decisions with complete documentation  
+   *Target:* ≥ 95% coverage for critical fairness decisions
+
+2. **Knowledge Transfer Effectiveness**  
+   Ability of team members to understand fairness decisions made by others based on documentation  
+   *Target:* New team members can explain the rationale for ≥ 80% of past fairness decisions
+
+3. **Stakeholder Comprehension**  
+   Accuracy of stakeholder understanding of documented fairness properties  
+   *Target:* ≥ 85% comprehension accuracy among relevant stakeholders
+
+4. **Communication Satisfaction**  
+   Stakeholder feedback on clarity and usefulness of fairness documentation  
+   *Target:* ≥ 70% stakeholder satisfaction
+
+5. **Incident Response Enablement**  
+   Speed of fairness issue resolution supported by available documentation  
+   *Target:* Incident response time improves relative to baseline
+
+---
+
 <a id="dashboards"></a>
 ## 6️⃣ Expected Benefits and ROI
 
@@ -619,9 +653,7 @@ For organizations new to continuous fairness monitoring, the minimum starting po
 ---
 
 <a id="principles"></a>
-### 10. Core Principles  
-
----
+## 10. Core Principles  
 
 - Fairness must be **owned, not assumed**  
 - Decisions must be **documented and traceable**  
