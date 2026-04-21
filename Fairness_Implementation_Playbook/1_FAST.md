@@ -254,8 +254,7 @@ Prioritization incorporates:
    Legal or compliance risks from bias issues.    
 
 ### 3.4 Sprint Planning Meeting Adaptations
-
-Fairness-enhanced sprint planning meetings include structured fairness discussion points, capacity reserves, and role-specific responsibilities.  
+ 
 Key adaptations include:  
 
 1. **Fairness Risk Assessment**  
@@ -271,7 +270,6 @@ Key adaptations include:
 
 ### 3.5 Daily Execution and Monitoring
 
-Fairness-enhanced daily practices incorporate structured fairness tracking, checkpoints, and metrics throughout the sprint.   
 Key components include:  
 
 1. **Fairness Standup Prompts**  
@@ -284,7 +282,6 @@ Key components include:
    Scheduled review points for fairness validation  
 
 
-
 **Resources & Tools**
 
 - [Google Responsible AI Practices](https://ai.google/responsibilities/responsible-ai-practices/)
@@ -295,9 +292,21 @@ Key components include:
 ## 4️⃣ Ceremonies & Checkpoints  
 
 ### 4.1 Sprint Planning
-- Assess fairness risks per story 
-- Assign fairness tasks  
-- Define validation checkpoints    
+
+Standard sprint planning covers estimation and capacity.  
+**Enhanced planning adds fairness:**
+
+- **Fairness Story Review**  
+  Review each story for potential bias risks  
+
+- **Fairness Task Identification**  
+  Define required audits, tests, and mitigation steps  
+
+- **Fairness Capacity Allocation**  
+  Reserve explicit capacity for fairness work  
+
+- **Fairness Checkpoint Definition**  
+  Define when fairness validation will occur during sprint  
 
 ### 4.2 Daily Execution
 
@@ -305,12 +314,14 @@ Key components include:
 - Visible fairness progress tracking
 - Escalation of blockers
 
-Add to stand-up:
+Add fairness prompts:
 
-- “Any fairness risks or blockers?”  
-- “Are fairness tasks progressing?”  
+- Are there any fairness blockers?  
+- Are fairness tasks progressing as planned? 
 
-### 4.3 Sprint Review
+### 4.3 Sprint Review / Demo
+
+Include:  
 
 - **Fairness Metric Presentations**  
    Visualizing key fairness metrics across demographic groups  
@@ -318,10 +329,10 @@ Add to stand-up:
    Showing system performance for different protected attributes and intersections  
 - **Bias Mitigation Demonstrations**  
    Explaining implemented fairness interventions and their results  
-- **Remaining Fairness Debt**  
+- **Remaining Fairness Risks or Debt**  
    Transparently discussing unresolved fairness issues    
 
-### 4.4 Retrospective Techniques
+### 4.4 Sprint Retrospective Techniques
 
 1. **Fairness-Specific Prompts:** Questions focused explicitly on fairness work such as:  
 - "What helped us detect bias issues early?"
@@ -366,21 +377,29 @@ Add to stand-up:
 ## 5️⃣ Role-Based Responsibilities  
 
 #### Product Owner
-- Embed fairness in requirements  
-- Prioritize fairness work  
+- Define fairness requirements in user stories  
+- Prioritize fairness work in backlog  
+- Balance fairness with business goals  
 
 #### Scrum Master
-- Ensure fairness ceremonies happen  
-- Escalate unresolved fairness issues   
+- Ensure fairness is included in ceremonies  
+- Track fairness blockers  
+- Escalate unresolved bias issues to leadership   
 
 #### Developers / Data Scientists
-- Implement and test fairness controls  
-- Document methods and results  
-- Interpret metrics for non‑technical stakeholders 
+- Implement bias testing within development  
+- Research and apply mitigation techniques  
+- Follow fairness-enhanced Definition of Done  
+- Document testing methodologies and results  
+- Report discovered bias issues promptly  
+- Participate in fairness skill development  
+- Conduct bias audits for model iterations  
+- Interpret fairness metrics for non-technical stakeholders  
 
 #### Shared Responsibility
 
-Fairness is a **team responsibility**, not a specialist task.   
+- Fairness is owned by the entire team  
+- No single role is solely responsible 
 
 ---
 
