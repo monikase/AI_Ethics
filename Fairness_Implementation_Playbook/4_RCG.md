@@ -372,6 +372,8 @@ Continuous monitoring hooks:
 - Incident triggers
 - Re‑classification signals
 
+### 6.2 Stage‑Gate Implementation Checklist‑by‑Gate Explanation
+
 #### G0 – Ideation (Can we responsibly explore this idea?)   
 At this stage, the goal is to confirm that the idea has been assessed for potential risk and impact before any design or development begins. Completing the TRS (Target Risk Score) ensures that high‑risk use cases are identified early, and that additional oversight (e.g. involving a Data Protection Officer) is triggered when needed.  
 
