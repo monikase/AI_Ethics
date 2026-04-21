@@ -88,6 +88,7 @@ Improve each sprint using retrospectives
 #### [7. Evaluation Metrics](#evaluation)
 #### [8. Implementation Workflow](#workflow)
 #### [9. Core Principles](#principles)
+#### [10. References](#refs)
 
 ---
 
@@ -481,7 +482,8 @@ This toolkit operationalizes fairness at the team level, ensuring that daily dev
 
 ---
 
-## References
+<a id="refs"></a>
+## 10. References
 
 ### Fairness in Machine Learning
 
