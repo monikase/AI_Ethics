@@ -216,11 +216,6 @@ A feature is complete **only when fairness validation is complete**.
 **Resources & Tools**
 - [Model Cards for Model Reporting (Mitchell et al., 2019)](https://arxiv.org/abs/1810.03993)   
 - [Datasheets for Datasets (Gebru et al., 2018)](https://arxiv.org/abs/1803.09010) 
-  
-
-🔗 **Playbook Connection**  
-- Fairness Audit → ensures identified biases are tested before completion  
-- Fairness Intervention → ensures mitigation strategies are validated before deployment 
 
 ---
 
