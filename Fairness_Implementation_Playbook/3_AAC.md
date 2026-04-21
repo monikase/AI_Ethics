@@ -1,7 +1,5 @@
 # Advanced Architecture Cookbook  
 _(Part 3 of the Fairness Implementation Playbook)_
-  
-Architecture‑Specific Fairness Implementation Guide
 
 ## Purpose
 Fairness failures in modern AI systems rarely stem from lack of awareness. **They occur when fairness strategies ignore system architecture.**  
