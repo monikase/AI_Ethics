@@ -37,21 +37,6 @@ The Organizational Integration Toolkit builds directly on earlier component and 
   Uses governance decisions, documentation, and audit trails produced here as regulatory evidence.
 
 Together, these components form a **complete execution → governance → compliance chain**.
- 
-
-## Toolkit Overview
-
-#### [1. Governance Framework](#governance)  
-#### [2. Responsibility Matrix (RACI)](#responsibility) 
-#### [3. Documentation & Transperancy Framework](#documentation)  
-#### [4. Decision Processes & Escalation](#decision)  
-#### [5. Metric Dashboards & Monitoring](#dashboards)  
-#### [6. Intersectionality Integration Layer](#intersectionality)  
-#### [7. Implementation Workflow](#implementation)  
-#### [8. Core Principles](#principles)  
-
----
-
 
 ## Strategic Rationale
 
@@ -66,19 +51,27 @@ The Organizational Integration Toolkit addresses common organizational gaps that
 | Accountability | Unclear decision ownership | Explicit RACI mappings and decision tiers |
 | Brand and ethical leadership | Fragmented ethical communication | Standardized documentation and transparent fairness narratives |
 
+## Toolkit Overview
+
+#### [1. Governance Framework](#governance)  
+#### [2. Responsibility Matrix (RACI)](#responsibility) 
+#### [3. Documentation & Transperancy Framework](#documentation)  
+#### [4. Decision Processes & Escalation](#decision)  
+#### [5. Metric Dashboards & Monitoring](#dashboards)  
+#### [6. Intersectionality Integration Layer](#intersectionality)  
+#### [7. Implementation Workflow](#implementation)  
+#### [8. Core Principles](#principles)  
+
 ---
 
 <a id="governance"></a>
-### 1️⃣ Governance Framework  
+## 1️⃣ Governance Framework  
 
 **Objective:** Establish clear ownership and alignment of fairness decisions across the organization.
 
 ### 1.1 Fairness Leadership Roles
 
-Traditional organizations lack explicit fairness ownership.  
-When fairness is “everyone’s responsibility,” it becomes **no one’s accountability**.  
-
-To address this, organizations must define leadership roles with **clear authority, placement, and responsibilities**.
+Organizations must define leadership roles with **clear authority, placement, and responsibilities**.
 
 **Core Roles**  
 
