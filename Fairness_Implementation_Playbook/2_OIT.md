@@ -208,9 +208,7 @@ The documentation and transparency framework is guided by the following principl
 - Fairness decisions must be **explicit**, not implicit
 - Rationales must be **recorded at decision time**, not reconstructed later
 - Accountability requires **traceability**, not volume
-- Leadership visibility is **continuous**, not reactive
-
-Together, these practices ensure that fairness is not only implemented, but also **explainable, governable, and defensible**.
+- Leadership visibility is **continuous**, not reactive  
 
 ---
 
