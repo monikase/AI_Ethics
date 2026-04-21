@@ -115,27 +115,6 @@ so that **[benefit]**,
   
 while ensuring **[fairness goal]** across **[protected + intersectional groups]**.
 
-
-### SAFE Breakdown
-
-- **S - Specific Protected Attributes**    
-  Identify relevant groups (e.g., gender, age, ethnicity)  
-  → 🔗 *Derived from Fairness Audit findings (who is affected by bias)*   
-
-- **A - Actionable Fairness Definition**  
-  Define fairness concept (e.g., equal opportunity)  
-  → 🔗 *Informed by Fairness Intervention strategy (what fairness goal to apply)*  
-
-- **F - Feature Integration Point**  
-  Where fairness applies in the feature  
-  → 🔗 *Connects intervention techniques to specific product functionality*  
-
-- **E - Expected Outcome Measures**  
-  How fairness will be validated  
-  → 🔗 *Aligns with both:*  
-  *Audit → baseline metrics*  
-  *Intervention → expected improvement targets*    
-
 #### _Illustrative Example_
 
 > As a **recruiter**,  
@@ -144,11 +123,18 @@ while ensuring **[fairness goal]** across **[protected + intersectional groups]*
 > while **ensuring equivalent ranking accuracy across gender, age, and their intersections**.   
 
 
-The SAFE framework transforms:
-- audit insights → into requirements  
-- intervention strategies → into measurable outcomes  
+### SAFE Breakdown
 
-This ensures fairness is **designed into features from the start**, rather than evaluated only after development.  
+| Element | Meaning |
+|--------|-------------|
+| S - Specific Protected Attributes | Who could be affected by bias _(Identify relevant groups (e.g., gender, age, ethnicity))_ |
+| A - Actionable Fairness Definition | Define fairness concept _(e.g., equal opportunity)_  |
+| F - Feature Integration Point | Where fairness applies in the feature _(Connects intervention techniques to specific product functionality)_ |
+| E - Expected Outcome Measures | How fairness will be validated  |
+
+🔗 **Playbook Connection**  
+- Fairness Audit findings → requirements    
+- Fairness Intervention → measurable outcomes  
 
 ---
 
