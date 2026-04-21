@@ -1,7 +1,5 @@
 # Fairness Implementation Playbook  
-### End-to-End Operational Framework for AI Fairness Implementation
-
----
+_End-to-End Operational Framework for AI Fairness Implementation_
 
 ## 1. Introduction
 
@@ -18,8 +16,6 @@ This playbook solves that problem by defining:
 
 It transforms fairness from a set of disconnected practices into a **coordinated operating model**.
 
----
-
 ## 2. Playbook Overview
 
 The Implementation Playbook integrates four core components:
@@ -32,8 +28,6 @@ The Implementation Playbook integrates four core components:
 | **Compliance Layer** | Regulatory Compliance Guide (RCG) | Ensures regulatory alignment, traceability, and auditability |
 
 These components operate as a **single system**, not independent tools.
-
----
 
 ## 3. End-to-End Fairness Lifecycle
 
@@ -50,8 +44,6 @@ A["Risk Classification & Regulatory Framing (RCG)"]
 
 F -->|Feedback Loop| B
 ```
-
----
 
 ## 4. Information Flow Between Components
 
