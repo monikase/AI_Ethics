@@ -155,7 +155,7 @@ Each FDR captures:
 8. **Known limitations** – constraints or unresolved risks
 9. **References**: supporting research, regulations, or precedents  
 
-> _Example FDR sections:_  
+> _Illustrative Example FDR sections:_  
 >  
 > **Decision:** Adopt equal opportunity as primary fairness metric  
 > **Alternatives Considered:** Demographic parity, equalized odds  
