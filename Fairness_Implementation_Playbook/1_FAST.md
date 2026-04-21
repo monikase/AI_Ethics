@@ -14,6 +14,8 @@ The **Fair AI Scrum Toolkit (FAST)** solves this by embedding fairness directly 
   
 **FAST makes fairness part of everyday development, not a separate activity.**  
 
+---
+
 ## System Role in the Playbook
 
 FAST is the **execution layer** of the Fairness Implementation Playbook.
@@ -23,8 +25,6 @@ It operationalizes:
 - **Governance decisions (OIT)** → via Fairness Decision Records (FDRs)  
 - **Technical strategies (AAC)** → via implementation tasks  
 - **Regulatory requirements (RCG)** → via validation and evidence generation  
-
----
 
 ## Inputs & Outputs
 
