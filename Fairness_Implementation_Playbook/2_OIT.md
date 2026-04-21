@@ -624,31 +624,29 @@ For organizations new to continuous fairness monitoring, the minimum starting po
 ---
 
 <a id="implementation"></a>
-### 9. Implementation Workflow  
+## 9. Implementation Workflow  
 
----
 
-### Step 1: Assess Current State
-- roles, governance, documentation gaps  
-→ 🔗 aligns with Audit  
+1. **Assess Current State**  
+   Identify gaps in governance, documentation, decision processes, and metric visibility.
 
-### Step 2: Define Governance
-- roles, RACI, councils  
+2. **Establish Governance and Roles**  
+   Define accountability, escalation paths, and decision authority.
 
-### Step 3: Implement Documentation
-- FDRs, model cards  
+3. **Implement Documentation Frameworks**  
+   Deploy Fairness Decision Records and templates, and establish communication practices for different stakeholder groups (Section 3).
 
-### Step 4: Introduce Decision Processes
-- tiers, gates, escalation  
+4. **Deploy Metrics and Monitoring**  
+   Introduce dashboards, alerts, and thresholds for fairness performance tracking.
 
-### Step 5: Deploy Metrics & Monitoring
-- dashboards, alerts  
+5. **Operationalize Escalation and Incident Response**  
+   Activate SLAs, response roles, and post‑mortem practices.
 
-### Step 6: Scale Across Teams
-- standardize practices  
+6. **Evaluate and Refine**  
+   Review documentation quality, metric effectiveness, and governance efficiency using defined indicators.
 
-### Step 7: Continuous Improvement
-- refine via metrics and retrospectives  
+7. **Scale and Sustain**  
+   Embed practices into regular workflows, adjust thresholds and processes, and continuously improve based on learning.
 
 ---
 
