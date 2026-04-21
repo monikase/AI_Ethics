@@ -152,6 +152,7 @@ Acceptance criteria define **how fairness is validated**, not merely asserted.
 > - Results documented in model card  
  
 **→ 4_RCG.md Alignment**  
+  
 FAIR criteria define validation thresholds used as compliance evidence at Gates G2 (Build) and G3 (Validation).
 
 
