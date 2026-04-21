@@ -40,6 +40,28 @@ This toolkit integrates with the broader Fairness Implementation Playbook:
 - **Regulatory Compliance Guide (4_RCG.md)**  
   Scrum artifacts and fairness evidence produced using this toolkit directly support governance gates, documentation requirements, and audit trails defined in the RCG.  
 
+## How to Use This Toolkit
+
+For organizations new to fairness:
+
+#### Step 1: Start small
+Pick **one feature** with potential fairness risk
+
+#### Step 2: Apply FAST basics
+- Rewrite user story with fairness (SAFE)
+- Add fairness acceptance criteria (FAIR)
+
+#### Step 3: Add fairness tasks
+- Audit  
+- Test  
+- Mitigation  
+
+#### Step 4: Enforce Definition of Done
+Feature is NOT complete without fairness validation
+
+#### Step 5: Iterate
+Improve each sprint using retrospectives
+
 ## Toolkit Overview
 
 #### [1. Scrum Artifact Modifications](#artifacts)
@@ -66,29 +88,6 @@ This toolkit integrates with the broader Fairness Implementation Playbook:
 #### [7. Evaluation Metrics](#evaluation)
 #### [8. Implementation Workflow](#workflow)
 #### [9. Core Principles](#principles)
-
-
-## How to Use This Toolkit
-
-For organizations new to fairness:
-
-#### Step 1: Start small
-Pick **one feature** with potential fairness risk
-
-#### Step 2: Apply FAST basics
-- Rewrite user story with fairness (SAFE)
-- Add fairness acceptance criteria (FAIR)
-
-#### Step 3: Add fairness tasks
-- Audit  
-- Test  
-- Mitigation  
-
-#### Step 4: Enforce Definition of Done
-Feature is NOT complete without fairness validation
-
-#### Step 5: Iterate
-Improve each sprint using retrospectives
 
 ---
 
