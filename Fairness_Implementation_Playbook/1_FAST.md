@@ -60,34 +60,34 @@ The Fair AI Scrum Toolkit provides a structured, workflow-integrated approach to
 
 It consists of the following components:
 
-### 1️⃣ [Scrum Artifact Enhancements](#artifacts)
+### 1. [Scrum Artifact Enhancements](#artifacts)
 - 1.1 Fairness-Enhanced User Stories (SAFE Framework)
 - 1.2 Fairness Acceptance Criteria (FAIR Framework)
 - 1.3 Backlog & Documentation Extensions
 
-### 2️⃣ [Definition of Done Framework](#dod)
+### 2. [Definition of Done Framework](#dod)
 
-### 3️⃣ [Sprint Planning & Execution Framework](#planning)
+### 3. [Sprint Planning & Execution Framework](#planning)
 - 3.1 Fairness Capacity Allocation
 - 3.2 Fairness Task Taxonomy
 - 3.3 Fairness Backlog Prioritization
 
-### 4️⃣ [Ceremonies & Checkpoints](#ceremonies)
+### 4. [Ceremonies & Checkpoints](#ceremonies)
 - 4.1 Sprint Planning Adaptations
 - 4.2 Daily Execution Practices
 - 4.3 Sprint Review Enhancements
 - 4.4 Retrospective Techniques
 - 4.5 Mid-Sprint Fairness Checkpoints
 
-### 5️⃣ [Role-Based Responsibilities](#roles)
+### 5. [Role-Based Responsibilities](#roles)
 
-### 6️⃣ [Intersectionality Integration Layer](#intersectionality)
+### 6. [Intersectionality Integration Layer](#intersectionality)
 
-### 7️⃣ [Evaluation Metrics](#evaluation)
+### 7. [Evaluation Metrics](#evaluation)
 
-### 8️⃣ [Implementation Workflow](#workflow)
+### 8. [Implementation Workflow](#workflow)
 
-### 9️⃣ [Core Principles](#principles)
+### 9. [Core Principles](#principles)
 
 ---
 
@@ -617,21 +617,5 @@ This toolkit operationalizes:
 - Audit → understanding bias  
 - Intervention → fixing bias  
 - Scrum → sustaining fairness in practice 
-
----
-
-## Final Note
-
-This toolkit transforms fairness from:
-
-- a compliance requirement  
-- a late-stage audit  
-- an abstract principle  
-
-into:
-
-- a **daily engineering practice**  
-- a **team-wide responsibility**  
-- a **measurable product quality dimension**  
 
 ---
