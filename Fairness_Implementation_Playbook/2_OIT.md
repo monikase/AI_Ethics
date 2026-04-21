@@ -239,8 +239,6 @@ The documentation and transparency framework is guided by the following principl
    How quickly teams can respond to fairness issues based on available documentation
    Faster incident response time compared to baseline  
 
----
-
 ### Resources
 
 - [Model Cards](https://arxiv.org/abs/1810.03993)  
