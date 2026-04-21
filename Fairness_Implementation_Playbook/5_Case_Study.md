@@ -39,7 +39,7 @@ This resulted in:
 
 ## 3. Applying the Fairness Implementation Playbook
 
-The organization adopted a structured approach aligned with the lifecycle defined in the playbook :contentReference[oaicite:0]{index=0}:
+The organization adopted a structured approach aligned with the lifecycle defined in the playbook:  
 
 **Risk → Decision → Implementation → Mitigation → Validation → Monitoring**
 
