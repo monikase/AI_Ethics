@@ -119,8 +119,8 @@ while ensuring **[fairness goal]** across **[protected + intersectional groups]*
 
 ---
 
-#### _Illustrative Example_
-
+> #### _Illustrative Example_
+>  
 > As a **recruiter**,  
 > I want **candidates ranked by relevance**,  
 > so that I can **shortlist efficiently**,  
