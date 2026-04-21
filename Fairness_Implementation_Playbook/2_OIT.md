@@ -57,11 +57,13 @@ Together, these components form a **complete execution → governance → compli
 #### [1. Governance Framework](#governance)  
 #### [2. Responsibility Matrix (RACI)](#responsibility) 
 #### [3. Documentation & Transperancy Framework](#documentation)  
-#### [4. Decision Processes & Escalation](#decision)  
-#### [5. Metric Dashboards & Monitoring](#dashboards)  
-#### [6. Intersectionality Integration Layer](#intersectionality)  
-#### [7. Implementation Workflow](#implementation)  
-#### [8. Core Principles](#principles)  
+#### [4. Escalation and Incident‑Response Playbook (SLA)](#escal)  
+#### [5. Implementation Roadmap and Budget (12 weeks)](#road)  
+#### [6. Expected Benefits and ROI](#roi)  
+#### [7. Risks and Mitigation](#risk)  
+#### [8. Continuous Governance, Learning, and Improvement](#gov)  
+#### [9. Implementation Workflow](#impl) 
+#### [10. Core Principles](#prin) 
 
 ---
 
@@ -212,7 +214,7 @@ The documentation and transparency framework is guided by the following principl
 
 ---
 
-<a id="decision"></a>
+<a id="escaln"></a>
 ## 4️⃣ Escalation and Incident‑Response Playbook (SLA) 
 
 **Objective:** Ensure fairness incidents are detected, contained, and resolved quickly, consistently, and accountably.  
@@ -268,6 +270,7 @@ To ensure operational readiness:
 
 ---
 
+<a id="road"></a>
 ## 5️⃣ Implementation Roadmap and Budget (12 weeks)
 
 **Objective:** Deploy organization‑wide fairness governance in a structured, low‑disruption manner.
@@ -406,7 +409,7 @@ The implementation is considered successful if:
 
 ---
 
-<a id="dashboards"></a>
+<a id="roi"></a>
 ## 6️⃣ Expected Benefits and ROI
 
 **Objective:** Demonstrate the organizational value of fairness governance in measurable, leadership‑relevant terms.
@@ -469,7 +472,7 @@ These KPIs are reviewed:
 
 ---
 
-<a id="intersectionality"></a>
+<a id="risk"></a>
 ## 7️⃣ Risks and Mitigation
 
 **Objective:** Identify key risks in implementing organization‑wide fairness governance and define pragmatic mitigation strategies.
@@ -504,6 +507,7 @@ This approach ensures fairness governance remains **adaptive, proportionate, and
  
 ---
 
+<a id="gov"></a>
 ## 8️⃣ Continuous Governance, Learning, and Improvement
 
 **Objective:** Ensure fairness governance remains effective, adaptive, and proportionate over time.
@@ -623,7 +627,7 @@ For organizations new to continuous fairness monitoring, the minimum starting po
 
 ---
 
-<a id="implementation"></a>
+<a id="impl"></a>
 ## 9. Implementation Workflow  
 
 
@@ -650,7 +654,7 @@ For organizations new to continuous fairness monitoring, the minimum starting po
 
 ---
 
-<a id="principles"></a>
+<a id="prin"></a>
 ## 10. Core Principles  
 
 - Fairness must be **owned, not assumed**  
