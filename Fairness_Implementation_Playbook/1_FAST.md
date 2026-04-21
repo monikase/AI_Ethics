@@ -129,7 +129,7 @@ This ensures fairness is **designed into features from the start**, rather than 
 
 Acceptance criteria define **how fairness is validated**, not merely asserted.  
 
-#### FAIR Breakdown
+### FAIR Breakdown
 
 - **F - Fairness Metrics Thresholds**  
 - **A - Auditing Requirements**  
