@@ -264,9 +264,7 @@ This playbook defines a time‑bound operational response for fairness‑related
 | **Remediation** | ≤ 7 days | Cross‑functional response squad |
 | **Post‑mortem & broadcast** | ≤ 14 days | Fairness Guild |
 
-
-
-## 6.2 Severity Levels
+### 4.2 Severity Levels
 
 - **P1 (Critical)** – Severe harm or systemic bias requiring immediate intervention  
 - **P2 (Major)** – Significant metric deviation with potential downstream impact  
@@ -274,9 +272,7 @@ This playbook defines a time‑bound operational response for fairness‑related
 
 Severity determines escalation priority and governance involvement.
 
----
-
-### 6.3 Response Activities by Phase
+### 4.3 Response Activities by Phase
 
 - **Detection**  
   Automated alerts or stakeholder reports identify fairness anomalies.
@@ -297,13 +293,12 @@ All incident activity must reference the originating Fairness Decision Record to
 
 ---
 
-### 6.4 Readiness and Testing
+### 4.4 Readiness and Testing
 
 To ensure operational readiness:
 - **Quarterly fairness fire‑drills** rehearse disable, rollback, and escalation procedures
 - Incident response roles rotate to prevent single‑point dependency
 - SLA adherence is reviewed by the Fairness Steering Committee
-
 
 ---
 
