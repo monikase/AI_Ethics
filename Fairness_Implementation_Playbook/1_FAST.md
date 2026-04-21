@@ -109,7 +109,7 @@ while ensuring **[fairness goal]** across **[protected + intersectional groups]*
   *Audit → baseline metrics*  
   *Intervention → expected improvement targets*    
 
-#### Example
+#### _Example_
 
 > As a **recruiter**,  
 > I want **candidates ranked by relevance**,  
