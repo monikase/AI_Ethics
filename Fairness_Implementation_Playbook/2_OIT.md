@@ -504,7 +504,7 @@ This approach ensures fairness governance remains **adaptive, proportionate, and
  
 ---
 
-## 8. Change Management and Adoption
+## 8️⃣ Change Management and Adoption
 
 **Objective:** Ensure that fairness governance is not only designed, but sustained in everyday organizational practice.
 
@@ -583,7 +583,7 @@ Fairness becomes durable only when it is reinforced through leadership, workflow
 ---
 
 <a id="implementation"></a>
-### 7️⃣ Implementation Workflow  
+### 9. Implementation Workflow  
 
 ---
 
@@ -612,7 +612,7 @@ Fairness becomes durable only when it is reinforced through leadership, workflow
 ---
 
 <a id="principles"></a>
-### 8️⃣ Core Principles  
+### 10. Core Principles  
 
 ---
 
