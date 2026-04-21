@@ -23,6 +23,19 @@ Embedding fairness at the organizational level delivers tangible operational and
 - **Scalable Fairness Capability**  
   Fairness practices scale across teams, domains, and risk profiles without re‑design.  
 
+## Strategic Rationale
+
+The Organizational Integration Toolkit addresses common organizational gaps that arise when fairness is implemented without coordinated governance.
+
+| Strategic Goal | Current Organizational Gap | How the Organizational Integration Toolkit Closes the Gap |
+|---------------|-----------------------------|-------------------------------------------------------------|
+| Regulatory compliance (EU AI Act, GDPR) | Ad-hoc policy interpretation and reactive audits | Codified fairness governance, documented risk appetite, and traceable Fairness Decision Records integrated with RCG governance gates |
+| Customer and stakeholder trust | Inconsistent fairness standards across teams | Unified definitions, shared thresholds, and organization-wide metric dashboards |
+| Operational efficiency | Repeated debates on metrics and thresholds | Centralized decision authority, shared patterns, and a single escalation path |
+| Cross-team alignment | Teams optimize locally but conflict system-wide | Clear governance tiers aligned with FAST-based execution |
+| Accountability | Unclear decision ownership | Explicit RACI mappings and decision tiers |
+| Brand and ethical leadership | Fragmented ethical communication | Standardized documentation and transparent fairness narratives |
+
 ## Connection to Other Playbook Components
 
 The Organizational Integration Toolkit builds directly on earlier component and feeds subsequent ones:
@@ -37,19 +50,6 @@ The Organizational Integration Toolkit builds directly on earlier component and 
   Uses governance decisions, documentation, and audit trails produced here as regulatory evidence.
 
 Together, these components form a **complete execution → governance → compliance chain**.
-
-## Strategic Rationale
-
-The Organizational Integration Toolkit addresses common organizational gaps that arise when fairness is implemented without coordinated governance.
-
-| Strategic Goal | Current Organizational Gap | How the Organizational Integration Toolkit Closes the Gap |
-|---------------|-----------------------------|-------------------------------------------------------------|
-| Regulatory compliance (EU AI Act, GDPR) | Ad-hoc policy interpretation and reactive audits | Codified fairness governance, documented risk appetite, and traceable Fairness Decision Records integrated with RCG governance gates |
-| Customer and stakeholder trust | Inconsistent fairness standards across teams | Unified definitions, shared thresholds, and organization-wide metric dashboards |
-| Operational efficiency | Repeated debates on metrics and thresholds | Centralized decision authority, shared patterns, and a single escalation path |
-| Cross-team alignment | Teams optimize locally but conflict system-wide | Clear governance tiers aligned with FAST-based execution |
-| Accountability | Unclear decision ownership | Explicit RACI mappings and decision tiers |
-| Brand and ethical leadership | Fragmented ethical communication | Standardized documentation and transparent fairness narratives |
 
 ## Toolkit Overview
 
@@ -89,92 +89,20 @@ Organizations must define leadership roles with **clear authority, placement, an
 
 | Tier | Forum | Cadence | Responsibilities | Decision Authority | Escalation Scope |
 |------|------|--------|------------------|--------------------|------------------|
-| **Strategic** | Fairness Steering Committee | Quarterly | Define fairness vision, risk appetite, policy, metrics | Final authority on fairness definitions and trade-offs | High-risk / cross-product |
-| **Tactical** | Fairness Guild | Monthly | Align teams, resolve conflicts, maintain standards | Approves metrics, thresholds, and cross-team decisions | Cross-team conflicts |
-| **Operational** | Team Fairness Circles | Sprint-level | Execute fairness work, monitor systems | Implements decisions within defined guardrails | Feature-level issues |
+| **Strategic** | Fairness Steering Committee (Exec, Legal) | Quarterly | Define fairness vision, risk appetite, policy, metrics | Final authority on fairness definitions and trade-offs | High-risk / cross-product |
+| **Tactical** | Fairness Guild (cross-functional leads) | Monthly | Align teams, resolve conflicts, maintain standards | Approves metrics, thresholds, and cross-team decisions | Cross-team conflicts |
+| **Operational** | Product-Team Fairness Circles | Sprint-level | Execute fairness work, monitor systems | Implements decisions within defined guardrails | Feature-level issues |
 
 
-### 1.3 Cross-Functional Fairness Responsibilities  
-
-Fairness cannot be owned by leadership roles alone.
-Bias enters systems through multiple pathways: data, product decisions, UX design, and communication.
-
-To prevent blind spots, fairness responsibilities must be embedded across all functions.
-
-#### Responsibility Matrix
-
-| Function | Fairness Responsibilities |
-|----------|--------------------------|
-| **Data Science** | Implement fairness metrics; conduct bias audits; design mitigation approaches |
-| **Product Management** | Define fairness requirements; prioritize fairness work; ensure inclusive user testing |
-| **Engineering** | Build fairness test suites; implement fair feature engineering; enable monitoring |
-| **Legal & Compliance** | Interpret regulations; assess fairness risks; validate compliance |
-| **Marketing & Communication** | Ensure accurate fairness claims; avoid misleading messaging |
-| **User Research** | Include diverse participants; identify bias patterns; validate real-world impact |
-| **Executive Leadership** | Set fairness vision; allocate resources; enforce accountability |
-
-#### Why this matters  
-
-- Prevents fairness from becoming **“just a data science problem”**  
-- Ensures fairness is addressed across the **entire ML lifecycle**  
-- Enables **intersectional thinking** across teams  
-
-### 1.4 Decision & Escalation Logic  
-→ Ensure consistent and timely fairness decisions  
-
-Even with clear roles and responsibilities, fairness work can stall without defined decision paths.  
-
-This framework establishes **how decisions move across governance levels**.  
-
-#### Decision Tiers
-
-- **Strategic Decisions**  
-  _(e.g., fairness definitions, policy changes)_  
-  → Owned by *Fairness Steering Committee*  
-
-- **Tactical Decisions**  
-  _(e.g., metric selection, thresholds, trade-offs)_  
-  → Owned by *Fairness Guild*  
-
-- **Operational Decisions**  
-  _(e.g., implementation details, experiments)_  
-  → Owned by *Team Fairness Circles*  
-
-#### Escalation Triggers
-
-Escalate when:
-
-- Fairness trade-offs impact multiple teams  
-- Metrics exceed defined risk thresholds  
-- Regulatory or reputational risks emerge  
-- Teams cannot resolve conflicts independently  
-
-#### Key Principle
-
-Decisions should be made at the **lowest appropriate level**,  
-but escalated when **impact or risk increases**  
-
-
-🔗 **Playbook Connection**  
-- Fairness Audit → defines escalation thresholds  
-- Fairness Intervention → informs decision options and trade-offs  
-
-#### Key Responsibilities
-
-- Define organization-wide fairness definitions and metrics  
-- Approve thresholds and acceptable trade-offs  
-- Ensure consistency across teams  
-- Oversee fairness risks and escalations  
+🔗 **Connection to FAST (1_FAST.md):**  
+Team Fairness Circles operate through SAFE stories, FAIR acceptance criteria, and fairness-enhanced Definition of Done.
 
 ---
 
 <a id="responsibility"></a>
-### 2️⃣ Responsibility Matrix (RACI)  
-→ Clarify who owns fairness decisions  
+## 2️⃣ Responsibility Matrix (RACI)  
 
----
-
-Traditional decision processes create unclear ownership of fairness, leading to stalled debates, delayed decisions, and weak accountability.  
+**Objective:** Eliminate ambiguity in fairness ownership.
 
 The **RACI** framework creates clarity for fairness decisions by defining four roles:  
 
@@ -193,20 +121,7 @@ The **RACI** framework creates clarity for fairness decisions by defining four r
 | Monitoring & reporting | I | C | R | C | A | R |
 | Incident response | C | A | R | R | C | C |
 
-The matrix shapes decisions across every ML stage:  
-
-- During data collection, it clarifies who approves dataset bias assessments. 
-- During model development, it defines who sets fairness thresholds. 
-- During deployment, it establishes who can halt releases based on fairness concerns.
-
-Fairness must be:  
-- **owned (Accountable)**    
-- **executed (Responsible)**  
-- **informed by multiple perspectives (Consulted)**  
-
 #### Intersectionality Consideration
-
-Traditional structures assign fairness by single dimensions (e.g., gender or race), overlooking intersectional issues where biases combine and create unique challenges.  
 
 To implement intersectional principles in organizational roles:  
 
@@ -219,26 +134,26 @@ To implement intersectional principles in organizational roles:
 ---
 
 <a id="documentation"></a>
-### 3️⃣ Documentation & Communication Framework  
-→ Create accountability and knowledge continuity  
+### 3️⃣ Documentation & Transperancy Framework   
 
----
+**Objective:** Ensure fairness decisions are traceable, reviewable, and visible to both technical teams and organizational leadership.  
 
-### 3.1 Fairness Decision Records (FDR)
+### 3.1 Fairness Decision Records (FDRs)
 
-Document every critical fairness decision.
+All material fairness decisions must be documented using **Fairness Decision Records (FDR‑###)**.  
+  
+FDRs follow an **ADR‑style format** and are **co‑located with source code** to ensure version control, traceability, and direct linkage between decisions and implementation.  
 
-#### Template
-
-1. **Context**: Background information about the system, data, and application domain    
-2. **Decision**: Clear statement of the fairness decision made  
-3. **Alternatives considered**: Other options considered and why they were rejected  
-4. **Rationale**: Explicit reasoning behind the selected approach  
-5. **Stakeholders involved**: Who was involved in and affected by the decision  
-6. **Trade-offs**: What was gained and sacrificed with this choice  
-7. **Metrics & thresholds**: How success will be measured  
-8. **Limitations**: Known shortcomings of the selected approach  
-9. **References**: Supporting research, regulations, or precedents  
+Each FDR captures:  
+1. **Context**: system, data, and usage scenario   
+2. **Decision**: fairness definition, metric, or threshold selected
+3. **Alternatives considered**: options evaluated and rejected
+4. **Rationale**: reasoning behind the decision  
+5. **Trade-offs**: impacts on accuracy, usability, or other objectives    
+6. **Metrics & thresholds**: how fairness will be evaluated
+7. **Affected stakeholders consulted** – functions or groups involved in the decision (e.g. legal, product, user research)
+8. **Known limitations** – constraints or unresolved risks
+9. **References**: supporting research, regulations, or precedents  
 
 > _Example FDR sections:_  
 >  
@@ -248,82 +163,53 @@ Document every critical fairness decision.
 > Stakeholders: AI Ethics Officer (accountable), Admissions Director (consulted), Diversity Office (consulted)  
 > Known Limitations: May not address historical inequities in qualification development  
 
+FDRs serve as the **authoritative source of truth** for fairness decisions and must be referenced by downstream artifacts, including risk registers, mitigation tasks, and audit documentation.  
 
-🔗 **Playbook Connection**  
-- Fairness Audit → provides structured evidence and problem framing
-- Fairness Intervention → defines and justifies mitigation approach  
-
-### 3.2 Fairness Requirements Documentation
-
-Fairness requirements documentation creates explicit, measurable fairness objectives in a specific context.   
-
-1. **Fairness Definitions**: Specific mathematical definitions selected for this context (e.g., equal opportunity)  
-2. **Protected Attributes**: Explicit identification of relevant demographic dimensions + intersectional groups  
-3. **Fairness Metrics**: Concrete measurements for evaluating fairness 
-4. **Threshold Values**: Specific targets for each metric  
-5. **Testing Criteria**: How fairness properties will be validated
-6. **Trade-off Priorities**: How conflicts between fairness and other objectives should be resolved
-7. **Regulatory Requirements**: Specific compliance obligations relevant to this application
-
-### 3.3 Model Cards & Documentation Templates
-
-Model cards and fairness templates create standardized formats for documenting fairness properties.    
-
-1. **Fairness Considerations Section**: Dedicated space for fairness documentation within standard templates
-2. **Performance Disaggregation**: Metrics broken down by demographic groups
-3. **Intended Uses**: Clear statements of appropriate applications
-4. **Misuse Risks**: Explicit documentation of potential harmful applications
-5. **Limitation Statements**: Transparent acknowledgment of known fairness limitations
-6. **Testing Details**: Documentation of fairness evaluation procedures
-7. **Ethical Considerations**: Discussion of broader impacts and value trade-offs
-
-Gebru et al. (2021) propose datasheets for datasets to facilitate better communication between dataset creators and consumers, and to encourage transparency and accountability.   
-This documentation framework supports knowledge sharing and helps establish clearer boundaries around appropriate use.
-
-> _Example Model Card Section:_  
->  
-> Fairness Properties:  
-> - Primary Metric: Equal opportunity (difference < 0.03)  
-> - Secondary Metrics: Demographic parity (difference < 0.07)  
-> - Protected Attributes Considered: Gender, race, geography, socioeconomic status  
-> - Intersectional Analysis: Performance disaggregated across 12 demographic intersections  
-> - Known Limitations: Limited validation data for rural first-generation students  
+🔗 **Connection to FAST (1_FAST.md):**  
+Evidence produced via FAST (tests, model cards, FAIR criteria) is attached directly to FDRs.
 
 
-### 3.4 Stakeholder-Specific Protocol
+### 3.2 Automation and Traceability Hooks
 
-1. **Stakeholder Mapping:** Identifying relevant audiences and their information needs
-2. **Layered Communication:** Creating different abstractions for different stakeholders
-3. **Translation Guidelines:** Converting technical fairness concepts to audience-appropriate language
-4. **Visualization Standards:** Representing fairness information visually for different audiences
-5. **Feedback Channels:** Establishing mechanisms for stakeholders to provide input
-6. **Escalation Paths:** Defining how fairness concerns move through the organization  
+Automation mechanisms ensure end‑to‑end traceability of fairness decisions.
 
-Stakeholder-specific communication protocols create tailored information flows for different audiences.  
+- Every fairness‑related risk ticket must reference the **FDR that originated it**
+- Mitigation backlog items link back to the corresponding FDR
+- Governance escalations reference the relevant FDR(s)
 
-> - **Executives** → high-level risks and trends  
-> - **Product teams** → system-level insights  
-> - **Technical teams** → detailed metrics  
-> - **External stakeholders** → impact-focused communication  
+This creates a closed accountability loop:
 
-### 3.5 Transparency Framework for Fairness Limitations
+**Decision → Implementation → Risk → Escalation → Review**
 
-1. **Known Limitations Register:** Explicit documentation of identified fairness constraints
-2. **Performance Boundaries:** Clear communication of conditions where fairness guarantees apply
-3. **Uncertainty Acknowledgment:** Transparent discussion of confidence in fairness claims
-4. **Progressive Disclosure:** Layered communication providing appropriate detail for different contexts
-5. **Limitation Monitoring:** Tracking known issues to drive future improvements
-6. **Incident Reporting:** Systematic documentation of fairness failures that occur
+No fairness risk may exist without a traceable originating decision.
 
-### 3.6  Intersectional principles in documentation frameworks
 
-- Create explicit sections for intersectional analysis in documentation templates
-- Require disaggregated reporting across intersectional subgroups, not just individual attributes
-- Document how different fairness definitions interact at intersectional boundaries
-- Include perspectives from multiply-marginalized groups in stakeholder documentation
-- Acknowledge when documentation lacks intersectional consideration
+### 3.3 Executive Fairness Scorecards
 
-### 3.7 Communicating Documentation Initiatives with Stakeholders
+Executive‑level visibility is provided through **fairness scorecards**, implemented as automated dashboards (e.g. BI tools).
+
+Scorecards:
+- Aggregate approved fairness metrics across systems
+- Highlight deviations from approved thresholds
+- Surface trends and recurring risks
+- Are distributed on a **regular cadence** (e.g. weekly) to senior leadership
+
+The goal is not detailed investigation, but **consistent organizational oversight** and early detection of systemic fairness issues.
+
+
+### 3.4 Transparency Principles
+
+The documentation and transparency framework is guided by the following principles:
+
+- Fairness decisions must be **explicit**, not implicit
+- Rationales must be **recorded at decision time**, not reconstructed later
+- Accountability requires **traceability**, not volume
+- Leadership visibility is **continuous**, not reactive
+
+Together, these practices ensure that fairness is not only implemented, but also **explainable, governable, and defensible**.
+
+
+### 3.5 Communicating Documentation Initiatives with Stakeholders
 
 - **Frame documentation as concrete benefits**, not abstract principles
 - **For executives:** emphasize reduced regulatory and reputational risk
@@ -536,3 +422,76 @@ Fairness must consider **overlapping identities**, not single attributes.
 This Organizational Integration Toolkit builds directly on the Fair AI Scrum Toolkit, extending fairness from team-level execution to organization-wide governance.
 
 ---
+
+
+### 1.3 Cross-Functional Fairness Responsibilities  
+
+Fairness cannot be owned by leadership roles alone.
+Bias enters systems through multiple pathways: data, product decisions, UX design, and communication.
+
+To prevent blind spots, fairness responsibilities must be embedded across all functions.
+
+#### Responsibility Matrix
+
+| Function | Fairness Responsibilities |
+|----------|--------------------------|
+| **Data Science** | Implement fairness metrics; conduct bias audits; design mitigation approaches |
+| **Product Management** | Define fairness requirements; prioritize fairness work; ensure inclusive user testing |
+| **Engineering** | Build fairness test suites; implement fair feature engineering; enable monitoring |
+| **Legal & Compliance** | Interpret regulations; assess fairness risks; validate compliance |
+| **Marketing & Communication** | Ensure accurate fairness claims; avoid misleading messaging |
+| **User Research** | Include diverse participants; identify bias patterns; validate real-world impact |
+| **Executive Leadership** | Set fairness vision; allocate resources; enforce accountability |
+
+#### Why this matters  
+
+- Prevents fairness from becoming **“just a data science problem”**  
+- Ensures fairness is addressed across the **entire ML lifecycle**  
+- Enables **intersectional thinking** across teams  
+
+### 1.4 Decision & Escalation Logic  
+→ Ensure consistent and timely fairness decisions  
+
+Even with clear roles and responsibilities, fairness work can stall without defined decision paths.  
+
+This framework establishes **how decisions move across governance levels**.  
+
+#### Decision Tiers
+
+- **Strategic Decisions**  
+  _(e.g., fairness definitions, policy changes)_  
+  → Owned by *Fairness Steering Committee*  
+
+- **Tactical Decisions**  
+  _(e.g., metric selection, thresholds, trade-offs)_  
+  → Owned by *Fairness Guild*  
+
+- **Operational Decisions**  
+  _(e.g., implementation details, experiments)_  
+  → Owned by *Team Fairness Circles*  
+
+#### Escalation Triggers
+
+Escalate when:
+
+- Fairness trade-offs impact multiple teams  
+- Metrics exceed defined risk thresholds  
+- Regulatory or reputational risks emerge  
+- Teams cannot resolve conflicts independently  
+
+#### Key Principle
+
+Decisions should be made at the **lowest appropriate level**,  
+but escalated when **impact or risk increases**  
+
+
+🔗 **Playbook Connection**  
+- Fairness Audit → defines escalation thresholds  
+- Fairness Intervention → informs decision options and trade-offs  
+
+#### Key Responsibilities
+
+- Define organization-wide fairness definitions and metrics  
+- Approve thresholds and acceptable trade-offs  
+- Ensure consistency across teams  
+- Oversee fairness risks and escalations  
