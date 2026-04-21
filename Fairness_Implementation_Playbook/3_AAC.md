@@ -1,4 +1,6 @@
 # Advanced Architecture Cookbook  
+_(Part 3 of the Fairness Implementation Playbook)_
+  
 Architecture‑Specific Fairness Implementation Guide
 
 ## Purpose
