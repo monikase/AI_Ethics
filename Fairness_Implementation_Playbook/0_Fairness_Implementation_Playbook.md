@@ -96,9 +96,7 @@ The **Fair AI Scrum Toolkit (FAST)** operationalizes fairness through:
 - fairness-specific backlog tasks  
 - fairness-enhanced Definition of Done  
 
-When fairness issues require technical mitigation, teams apply methods from the:
-
-👉 **Advanced Architecture Cookbook (AAC)**  
+When fairness issues require technical mitigation, teams apply methods from **Advanced Architecture Cookbook (AAC)**  
 
 This ensures that fairness is implemented not only procedurally, but also technically.
 
