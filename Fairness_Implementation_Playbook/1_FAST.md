@@ -366,50 +366,33 @@ Add to stand-up:
 
 #### Scrum Master
 - Ensure fairness ceremonies happen  
-- Track fairness blockers  
-
+- Escalate unresolved fairness issues   
 
 #### Developers / Data Scientists
-- Implement fairness techniques  
-- Conduct testing  
-- Document results  
+- Implement and test fairness controls  
+- Document methods and results  
+- Interpret metrics for non‑technical stakeholders 
 
 #### Shared Responsibility
 
-Fairness is a **team responsibility**, not a specialist task.  
-
-
-🔗 **Playbook Connection**  
-- Fairness Audit → often led by data scientists / analysts  
-- Fairness Intervention → implemented collaboratively across roles    
+Fairness is a **team responsibility**, not a specialist task.   
 
 ---
 
 <a id="intersectionality"></a>
 ## 6️⃣ Intersectionality Integration Layer  
-→ Address real-world complexity of overlapping identities.
 
----
 
-#### Core Principle
-
-Fairness must be evaluated across **intersections of attributes**, not independently.
-
+### Core Principle
+Fairness must account for **interacting attributes**, not only single dimensions.
 
 #### Implementation
 
-- User stories include intersectional groups  
-- Acceptance criteria require intersectional validation  
-- Testing includes subgroup combinations  
+- Intersectional groups included in stories and acceptance criteria
+- Testing prioritizes high‑risk intersections
+- Limitations and statistical constraints are explicitly documented
 
-#### Example
-
-> Instead of:
-> - “fair across gender and age”
-
-> Use:
-> - “fair across all intersections of gender and age”
-
+Where intersectional analysis is infeasible, the rationale must be recorded as compliance evidence.
 
 #### Practical Constraints
 
@@ -417,45 +400,30 @@ Due to data limitations:
 
 - Prioritize high-risk intersections  
 - Use hierarchical modeling  
-- Report uncertainty   
-
-🔗 **Playbook Connection**  
-- Fairness Audit → must detect intersectional disparities  
-- Fairness Intervention → must target intersectional bias, not only single attributes  
-
-**Further Reading**
-- [Crenshaw, K. (1989)](https://chicagounbound.uchicago.edu/uclf/vol1989/iss1/8/) Demarginalizing the Intersection of Race and Sex  
-- [Buolamwini & Gebru (2018)](https://proceedings.mlr.press/v81/buolamwini18a.html) – Gender Shades Study  
+- Report uncertainty    
   
 ---
 
 <a id="evaluation"></a>
 ## 7️⃣ Evaluation Metrics  
-→ Measure fairness implementation success.
-
----
 
 #### Process Metrics
 
-- % of stories with fairness requirements  
-- fairness task completion rate  
-- fairness discussions frequency  
+- Percentage of stories with fairness criteria
+- Fairness task completion rate
+- Fairness artifacts accepted at governance gates without rework  
 
 #### Outcome Metrics
 
-- disparity reduction  
-- bias incidents in production  
-- time to resolve fairness issues  
+- Disparity reduction
+- Bias incidents in production
+- Time to resolve fairness issues
 
 #### Target Benchmarks (High-Risk Systems)
 
 - 100% fairness coverage in user stories  
 - ≥95% fairness task completion  
 - 0 high-severity bias post-deployment  
-
-🔗 **Playbook Connection**  
-- Fairness Audit → defines baseline fairness metrics  
-- Fairness Intervention → expected to improve these metrics
 
 **Resources & Tools**
 - [Holistic AI](https://www.holisticai.com/) – Fairness evaluation and governance platform  
@@ -466,65 +434,27 @@ Due to data limitations:
 <a id="workflow"></a>
 ## 8️⃣ Implementation Workflow  
 
----
-
-#### Step 1: Assess Current State
-- Identify gaps in artifacts, roles, ceremonies  
-
-#### Step 2: Introduce Core Changes
-- Enhance user stories  
-- Update Definition of Done  
-- Add fairness tasks  
-
-#### Step 3: Pilot
-- Apply to high-risk feature  
-- Run 1–2 sprints  
-
-#### Step 4: Scale
-- Expand across teams  
-- Introduce intersectional analysis  
-
-#### Step 5: Continuous Improvement
-- Use retrospectives  
-- track metrics  
-- refine practices  
-
-🔗 **Playbook Connection**  
-- Step 1 (Assess) → aligns with Fairness Audit  
-- Step 2–4 → align with Fairness Intervention execution  
+1. Assess current practices
+2. Introduce fairness‑enhanced artifacts and DoD
+3. Pilot on high‑risk features
+4. Scale across teams
+5. Continuously refine through retrospectives
 
 ---
 
 <a id="principles"></a>
 ## 9️⃣ Core Principles  
 
-Fair AI development should:
+- Fairness is embedded, not appended
+- Risk determines rigor
+- Fairness must be measurable and documented
+- Intersectional impacts are evaluated proportionally
+- Validation blocks deployment
+- Compliance evidence is a by‑product of development
+- Continuous improvement is mandatory 
 
-- Embed fairness into workflows, not add it later  
-- Make fairness visible and measurable  
-- Address root causes, not just symptoms  
-- Include intersectional analysis  
-- Balance fairness with business objectives  
-- Maintain transparency and documentation  
-- Continuously improve through iteration  
+--
 
-🔗 **Playbook Connection**  
-This toolkit operationalizes:
-- Audit → understanding bias  
-- Intervention → fixing bias  
-- Scrum → sustaining fairness in practice 
+This toolkit operationalizes fairness at the team level, ensuring that daily development practices generate the evidence, decisions, and accountability required for trustworthy and compliant AI systems.
 
----
-
-
-
-
-
-## What This Toolkit Will Do 
-
-- Practical fairness checkpoints integrated into Scrum ceremonies
-- Enhanced artifacts (e.g., fairness-aware user stories, Definition of Done)
-- Structured ways to assess and mitigate bias throughout development
-- Clear accountability for fairness across roles (Product Owner, Data Scientist, Engineer)
-
-Ultimately, this toolkit transforms fairness from an abstract principle into a **repeatable, actionable practice embedded in daily work**. 
+--
