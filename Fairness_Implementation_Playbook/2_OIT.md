@@ -496,7 +496,7 @@ Implementing structured fairness governance introduces organizational change. Th
 ### 7.2 Risk Review and Continuous Improvement
 
 - Risks are reviewed quarterly by the Fairness Steering Committee.
-- Mitigation effectiveness is assessed using operational KPIs (Section 8).
+- Mitigation effectiveness is assessed using operational KPIs (Section 6).
 - New risks identified through incidents or audits are added to this register.
 - The risk framework evolves alongside organizational maturity and regulatory expectations.
 
