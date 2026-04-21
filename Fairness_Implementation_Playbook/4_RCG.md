@@ -419,3 +419,109 @@ Average overhead after first project: **~4 hours per feature**, typically offset
 - Intersectional impacts must be evaluated  
 
 ---
+
+## 9. References
+
+### Core Regulatory Frameworks
+
+- European Union (2024).  
+  *Regulation (EU) 2024/... laying down harmonised rules on artificial intelligence (EU AI Act).*  
+
+- European Union (2016).  
+  *General Data Protection Regulation (GDPR).*  
+
+---
+
+### AI Risk Management & Governance
+
+- NIST (2023).  
+  *AI Risk Management Framework (AI RMF 1.0).*  
+  https://www.nist.gov/itl/ai-risk-management-framework  
+
+- OECD (2021).  
+  *OECD Framework for the Classification of AI Systems.*  
+  https://oecd.ai  
+
+- ISO/IEC 23894 (2023).  
+  *Artificial Intelligence — Risk Management.*  
+
+- ISO/IEC 42001 (2023).  
+  *Artificial Intelligence Management Systems (AIMS).*  
+
+---
+
+### Algorithmic Accountability & Auditing
+
+- Raji, I. D., Smart, A., White, R. N., Mitchell, M., Gebru, T., Hutchinson, B., Smith-Loud, J., Theron, D., & Barnes, P. (2020).  
+  *Closing the AI Accountability Gap: Defining an End-to-End Framework for Internal Algorithmic Auditing.*  
+  FAccT Conference.  
+
+- Selbst, A. D., Boyd, D., Friedler, S. A., Venkatasubramanian, S., & Vertesi, J. (2019).  
+  *Fairness and Abstraction in Sociotechnical Systems.*  
+  FAT* Conference.  
+
+---
+
+### Documentation & Transparency
+
+- Mitchell, M. et al. (2019).  
+  *Model Cards for Model Reporting.*  
+  https://arxiv.org/abs/1810.03993  
+
+- Gebru, T. et al. (2018).  
+  *Datasheets for Datasets.*  
+  https://arxiv.org/abs/1803.09010  
+
+- Fowler, M. (2013).  
+  *Architecture Decision Records (ADR).*  
+  https://martinfowler.com/articles/architecture-decision-records.html  
+
+---
+
+### ML Systems & Monitoring
+
+- Sculley, D. et al. (2015).  
+  *Hidden Technical Debt in Machine Learning Systems.*  
+  NeurIPS.  
+
+- Breck, E. et al. (2017).  
+  *The ML Test Score: A Rubric for ML Production Readiness.*  
+  IEEE Big Data.  
+
+---
+
+### Human Oversight & Responsible AI
+
+- Floridi, L. et al. (2018).  
+  *AI4People—An Ethical Framework for a Good AI Society.*  
+  Minds and Machines.  
+
+- Microsoft (2022).  
+  *Responsible AI Standard v2.*  
+
+- Google (2023).  
+  *Responsible AI Practices.*  
+  https://ai.google/responsibilities/responsible-ai-practices/  
+
+---
+
+### Risk, Safety, and Compliance Engineering
+
+- Amodei, D. et al. (2016).  
+  *Concrete Problems in AI Safety.*  
+  arXiv.  
+
+- Varshney, K. R. (2019).  
+  *Trustworthy Machine Learning.*  
+  Carnegie Mellon University Lecture Notes.  
+
+---
+
+### Additional Concepts Referenced
+
+- Risk-based regulation (EU AI Act approach)  
+- Human-in-the-loop oversight (GDPR Art. 22)  
+- Traceability and logging requirements (EU AI Act Art. 12, 23)  
+- Post-market monitoring (EU AI Act Art. 61)  
+
+---
