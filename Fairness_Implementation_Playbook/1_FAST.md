@@ -14,6 +14,61 @@ The **Fair AI Scrum Toolkit (FAST)** solves this by embedding fairness directly 
   
 **FAST makes fairness part of everyday development, not a separate activity.**  
 
+## System Role in the Playbook
+
+FAST is the **execution layer** of the Fairness Implementation Playbook.
+
+It operationalizes:
+
+- **Governance decisions (OIT)** → via Fairness Decision Records (FDRs)  
+- **Technical strategies (AAC)** → via implementation tasks  
+- **Regulatory requirements (RCG)** → via validation and evidence generation  
+
+---
+
+## Inputs & Outputs
+
+### Inputs
+
+- **From OIT (Organizational Integration Toolkit)**  
+  - Fairness Decision Records (FDRs)  
+  - Approved fairness definitions  
+  - Metrics and thresholds  
+  - Trade-offs and constraints  
+
+- **From RCG (Regulatory Compliance Guide)**  
+  - Risk classification (TRS, risk tier)  
+  - Required validation rigor  
+  - Documentation and audit requirements  
+
+---
+
+### Outputs
+
+- **To AAC (Advanced Architecture Cookbook)**  
+  - Identified bias issues requiring technical mitigation  
+  - Context for selecting architecture-specific recipes  
+
+- **To OIT**  
+  - Fairness metrics and implementation results  
+  - Escalations and trade-off feedback  
+
+- **To RCG**  
+  - Model cards  
+  - Fairness test reports  
+  - Audit evidence and logs  
+
+---
+
+## Core Principle
+
+> **No fairness work may be executed without a linked Fairness Decision Record (FDR).**
+
+FAST does not define fairness — it **implements governance-approved decisions**.
+
+---
+
+
 ## Business Value of Integrating Fairness into Scrum 
 
 Embedding fairness within agile development is both a risk‑reduction and value‑creation strategy:  
