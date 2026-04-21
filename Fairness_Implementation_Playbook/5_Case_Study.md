@@ -47,7 +47,7 @@ The organization adopted a structured approach aligned with the lifecycle define
 
 ## 4. Step 1: Risk Classification (RCG)
 
-Each system was evaluated using the **Total Risk Score (TRS)** framework :contentReference[oaicite:1]{index=1}.
+Each system was evaluated using the **Total Risk Score (TRS)** framework  
 
 | System | Risk Factors | TRS | Tier |
 |-------|-------------|-----|------|
@@ -65,7 +65,7 @@ Each system was evaluated using the **Total Risk Score (TRS)** framework :conten
 
 ## 5. Step 2: Fairness Decision-Making (OIT)
 
-Using the **Organizational Integration Toolkit**, teams aligned through **Fairness Decision Records (FDRs)** :contentReference[oaicite:2]{index=2}.
+Using the **Organizational Integration Toolkit**, teams aligned through **Fairness Decision Records (FDRs)**  
 
 ### Example FDR (Resume Screening)
 
@@ -87,7 +87,7 @@ Now:
 
 ## 6. Step 3: Team-Level Implementation (FAST)
 
-Using the **Fair AI Scrum Toolkit**, fairness was embedded into daily development :contentReference[oaicite:3]{index=3}.
+Using the **Fair AI Scrum Toolkit**, fairness was embedded into daily development.  
 
 ### Example SAFE User Story
 
@@ -125,7 +125,7 @@ A feature could not be completed unless:
 
 ## 7. Step 4: Technical Mitigation (AAC)
 
-Each system applied **architecture-specific strategies** from the Advanced Architecture Cookbook :contentReference[oaicite:4]{index=4}.
+Each system applied **architecture-specific strategies** from the Advanced Architecture Cookbook.  
 
 ---
 
@@ -175,7 +175,7 @@ Filter bubbles and unequal exposure
 
 ## 8. Step 5: Validation & Compliance (RCG + FAST)
 
-Validation outputs were transformed into compliance artifacts using the RCG :contentReference[oaicite:5]{index=5}:
+Validation outputs were transformed into compliance artifacts using the RCG:  
 
 - Model cards  
 - Fairness reports  
@@ -279,15 +279,9 @@ This case study demonstrates that fairness can be:
 
 when integrated across:
 
-👉 FAST (execution)  
-👉 OIT (governance)  
-👉 AAC (technical implementation)  
-👉 RCG (compliance)  
-
-The Fairness Implementation Playbook transforms fairness from:
-
-- fragmented efforts  
-into  
-- a **cohesive, scalable system**
+- FAST (execution)  
+- OIT (governance)  
+- AAC (technical implementation)  
+- RCG (compliance)  
 
 ---
