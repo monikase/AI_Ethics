@@ -1,5 +1,5 @@
 # Regulatory Compliance Guide  
-A Universal Methodology for Operationalizing AI Fairness Regulation 
+_(Part 4 of the Fairness Implementation Playbook)_
 
 ## Purpose
 
