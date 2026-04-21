@@ -247,41 +247,63 @@ The documentation and transparency framework is guided by the following principl
 ---
 
 <a id="decision"></a>
-## 4️⃣ Decision Processes & Escalation  
+## 4️⃣ Escalation and Incident‑Response Playbook (SLA) 
 
-### 4.1 Decision Tiers
+**Objective:** Ensure fairness incidents are detected, contained, and resolved quickly, consistently, and accountably.  
+  
+This playbook defines a time‑bound operational response for fairness‑related incidents, such as significant metric deviations, detected bias in production, or user‑reported harm. It complements decision governance by providing clear execution protocols once thresholds are breached.  
 
-| Tier | Type | Example | Authority |
-|------|------|--------|----------|
-| Strategic | High impact | Fairness definition | Executive |
-| Tactical | Medium | Thresholds, metrics | Guild |
-| Operational | Low | Implementation details | Teams |
 
----
+### 4.1 Fairness Incident Response Phases
 
-### 4.2 Governance Gates
+| Phase | Target Time | Primary Action Owner |
+|------|-------------|----------------------|
+| **Detection** | ≤ 15 minutes | Monitoring system or designated hotline reviewer |
+| **Triage (P1 / P2 / P3)** | ≤ 2 hours | Incident Commander (rotating Fairness Guild role) |
+| **Containment** | ≤ 24 hours | Product‑team Fairness Circle |
+| **Remediation** | ≤ 7 days | Cross‑functional response squad |
+| **Post‑mortem & broadcast** | ≤ 14 days | Fairness Guild |
 
-- **Data Gate** → dataset fairness validated  
-- **Design Gate** → fairness considered in architecture  
-- **Pre-Deployment Gate** → metrics meet thresholds  
-- **Monitoring Gate** → triggers re-evaluation  
 
----
 
-### 4.3 Escalation Framework
+## 6.2 Severity Levels
 
-| Severity | Example | Response |
-|---------|--------|---------|
-| Critical | Severe bias | Immediate escalation |
-| Major | Significant disparity | 5-day resolution |
-| Minor | Small deviation | Sprint-level fix |
+- **P1 (Critical)** – Severe harm or systemic bias requiring immediate intervention  
+- **P2 (Major)** – Significant metric deviation with potential downstream impact  
+- **P3 (Minor)** – Localized or limited deviation with no immediate harm  
+
+Severity determines escalation priority and governance involvement.
 
 ---
 
-🔗 **Playbook Connection**  
-- Audit → identifies issues  
-- Intervention → provides solutions  
-- Governance → decides action  
+### 6.3 Response Activities by Phase
+
+- **Detection**  
+  Automated alerts or stakeholder reports identify fairness anomalies.
+
+- **Triage**  
+  Incident severity is classified and immediate actions are authorized.
+
+- **Containment**  
+  Mitigation actions may include disabling features, rolling back models, or enforcing manual review.
+
+- **Remediation**  
+  Root cause analysis, mitigation development, and validation are completed.
+
+- **Post‑mortem and broadcast**  
+  Lessons learned are documented in a Fairness Decision Record (FDR) and shared across teams to prevent recurrence.
+
+All incident activity must reference the originating Fairness Decision Record to maintain traceability.
+
+---
+
+### 6.4 Readiness and Testing
+
+To ensure operational readiness:
+- **Quarterly fairness fire‑drills** rehearse disable, rollback, and escalation procedures
+- Incident response roles rotate to prevent single‑point dependency
+- SLA adherence is reviewed by the Fairness Steering Committee
+
 
 ---
 
