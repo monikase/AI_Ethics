@@ -504,7 +504,7 @@ This approach ensures fairness governance remains **adaptive, proportionate, and
  
 ---
 
-## 10️⃣ Change Management and Adoption
+## 8. Change Management and Adoption
 
 **Objective:** Ensure that fairness governance is not only designed, but sustained in everyday organizational practice.
 
