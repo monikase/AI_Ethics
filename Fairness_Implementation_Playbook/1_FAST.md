@@ -78,10 +78,10 @@ Traditional user stories capture functionality but ignore differential impacts.
 The SAFE framework extends user stories to make fairness explicit and actionable.  
 
 #### Template
-As a [user],  
-I want [functionality],  
-so that [benefit],  
-while ensuring [fairness goal] across [protected + intersectional groups].
+As a **[user]**,  
+I want **[functionality]**,  
+so that **[benefit]**,  
+while ensuring **[fairness goal]** across **[protected + intersectional groups]**.
 
 
 #### SAFE Breakdown
