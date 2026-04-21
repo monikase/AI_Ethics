@@ -674,7 +674,7 @@ This Organizational Integration Toolkit builds directly on the Fair AI Scrum Too
 ---
 
 <a id="refs"></a>
-## 11. References (Organizational Integration Toolkit)
+## 11. References
 
 ### AI Governance & Accountability
 
