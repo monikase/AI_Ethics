@@ -302,6 +302,110 @@ To ensure operational readiness:
 
 ---
 
+## 5️⃣ Implementation Roadmap and Budget (12 weeks)
+
+**Objective:** Deploy organization‑wide fairness governance in a structured, low‑disruption manner.
+
+This roadmap outlines a pragmatic 12‑week rollout plan that incrementally introduces governance, documentation, escalation, and monitoring mechanisms without blocking ongoing product development.
+
+---
+
+### 5.1 12‑Week Rollout Roadmap
+
+#### Phase 1 — Foundation & Alignment (Weeks 1–3)
+**Focus:** Establish governance structure and shared understanding
+
+**Key Activities**
+- Appoint Executive Fairness Sponsor and Fairness Guild
+- Confirm governance tiers and decision authority
+- Align on organization‑wide fairness definitions and risk appetite
+- Socialize OIT with product and technical leaders
+
+**Deliverables**
+- Governance framework approved
+- RACI matrix finalized
+- Initial fairness principles ratified
+
+---
+
+#### Phase 2 — Documentation & Decision Infrastructure (Weeks 4–6)
+**Focus:** Make fairness decisions explicit and traceable
+
+**Key Activities**
+- Introduce Fairness Decision Records (FDRs)
+- Integrate FDR templates into code repositories
+- Train teams on documenting fairness trade‑offs
+- Define escalation criteria and severity levels
+
+**Deliverables**
+- FDR template live and in use
+- Initial documented fairness decisions
+- Escalation and incident response playbook approved
+
+---
+
+#### Phase 3 — Monitoring & Operationalization (Weeks 7–9)
+**Focus:** Enable visibility and operational control
+
+**Key Activities**
+- Define organization‑wide fairness metrics and thresholds
+- Deploy dashboards and alerts
+- Establish incident response roles and SLAs
+- Run tabletop or simulated fairness incident
+
+**Deliverables**
+- Fairness dashboards live
+- Incident response workflow tested
+- Governance gates operational
+
+---
+
+#### Phase 4 — Scaling & Stabilization (Weeks 10–12)
+**Focus:** Institutionalize and scale across teams
+
+**Key Activities**
+- Roll out governance model to all teams using FAST
+- Conduct first governance review cycle
+- Collect feedback and refine processes
+- Plan next iteration based on lessons learned
+
+**Deliverables**
+- Organization‑wide adoption completed
+- Refined governance and documentation
+- Continuous improvement backlog created
+
+---
+
+### 5.2 Resource and Budget Considerations
+
+This implementation emphasizes **process and coordination**, not heavy tooling.
+
+**Primary resource categories**
+- **Leadership time:** Steering Committee and Guild participation  
+- **Cross‑functional effort:** Product, Data Science, Engineering, Legal  
+- **Enablement:** Training sessions and process onboarding  
+- **Tooling:** Minor configuration of existing dashboards and repositories  
+
+**Cost Characteristics**
+- Majority of cost is **internal effort**, not external spend
+- Leverages existing agile workflows and tooling
+- Avoids significant disruption to delivery timelines
+
+Most organizations can implement this roadmap using **existing teams and infrastructure**, with cost largely absorbed into normal operating activities.
+
+---
+
+### 5.3 Success Criteria
+
+The implementation is considered successful if:
+- All teams produce traceable Fairness Decision Records
+- Decision authority and escalation paths are consistently followed
+- Fairness incidents are handled within defined SLAs
+- Leadership receives regular fairness visibility
+- Teams report reduced ambiguity and faster resolution of fairness trade‑offs
+
+---
+
 <a id="dashboards"></a>
 ### 5️⃣ Metric Dashboards & Monitoring  
 → Make fairness visible and actionable  
