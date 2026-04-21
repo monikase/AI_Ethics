@@ -144,14 +144,16 @@ while ensuring **[fairness goal]** across **[protected + intersectional groups]*
 
 ### 1.2 Fairness Acceptance Criteria (FAIR Framework)
 
-Acceptance criteria define **how fairness is validated**, not merely asserted.  
+Acceptance criteria define **how fairness is validated**, not just intended. 
 
 ### FAIR Breakdown
 
-- **F - Fairness Metrics Thresholds**  
-- **A - Auditing Requirements**  
-- **I - Intersectional Analysis**  
-- **R - Reporting and Documentation**  
+| Element | Purpose |
+|--------|--------|
+| F | Fairness Metrics Thresholds |
+| A | Auditing Requirements |
+| I | Intersectional Analysis |
+| R | Reporting and Documentation |
 
 #### Example Criteria
 
@@ -159,7 +161,8 @@ Acceptance criteria define **how fairness is validated**, not merely asserted.
 - Intersectional evaluation completed where feasible
 - Results documented in model card
 
-#### _Illustrative Example_
+> #### _Illustrative Example_
+>   
 > - Demographic parity difference ≤ 0.05  
 > - True positive rate difference ≤ 0.03 across groups  
 > - Intersectional subgroup evaluation completed  
