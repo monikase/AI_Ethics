@@ -480,3 +480,110 @@ Due to data limitations:
 This toolkit operationalizes fairness at the team level, ensuring that daily development practices generate the evidence, decisions, and accountability required for trustworthy and compliant AI systems.
 
 ---
+
+## References
+
+### Fairness in Machine Learning
+
+- Barocas, S., Hardt, M., & Narayanan, A. (2019).  
+  *Fairness and Machine Learning: Limitations and Opportunities.*  
+  https://fairmlbook.org  
+
+- Mehrabi, N., Morstatter, F., Saxena, N., Lerman, K., & Galstyan, A. (2021).  
+  *A Survey on Bias and Fairness in Machine Learning.*  
+  ACM Computing Surveys.  
+
+- Verma, S., & Rubin, J. (2018).  
+  *Fairness Definitions Explained.*  
+  IEEE/ACM International Workshop on Software Fairness.  
+
+---
+
+### Responsible AI & Documentation
+
+- Mitchell, M. et al. (2019).  
+  *Model Cards for Model Reporting.*  
+  https://arxiv.org/abs/1810.03993  
+
+- Gebru, T. et al. (2018).  
+  *Datasheets for Datasets.*  
+  https://arxiv.org/abs/1803.09010  
+
+- Google.  
+  *Responsible AI Practices.*  
+  https://ai.google/responsibilities/responsible-ai-practices/  
+
+---
+
+### Agile & Software Engineering
+
+- Schwaber, K., & Sutherland, J. (2020).  
+  *The Scrum Guide.*  
+  https://scrumguides.org  
+
+- Beck, K. et al. (2001).  
+  *Manifesto for Agile Software Development.*  
+  https://agilemanifesto.org  
+
+---
+
+### Governance & Organizational AI
+
+- Floridi, L. et al. (2018).  
+  *AI4People—An Ethical Framework for a Good AI Society.*  
+  Minds and Machines.  
+
+- Raji, I. D. et al. (2020).  
+  *Closing the AI Accountability Gap: Defining an End-to-End Framework for Internal Algorithmic Auditing.*  
+  FAT* Conference.  
+
+---
+
+### Regulatory & Compliance
+
+- European Union (2024).  
+  *EU Artificial Intelligence Act.*  
+
+- European Union (2016).  
+  *General Data Protection Regulation (GDPR).*  
+
+- OECD (2021).  
+  *OECD Framework for the Classification of AI Systems.*  
+  https://oecd.ai  
+
+---
+
+### Fairness in Specific Architectures
+
+- Bender, E. M. et al. (2021).  
+  *On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?*  
+  FAccT Conference.  
+
+- Ekstrand, M. D., Burke, R., & Diaz, F. (2022).  
+  *Fairness in Recommendation Systems.*  
+  Foundations and Trends in Information Retrieval.  
+
+---
+
+### Monitoring, Auditing, and Lifecycle Fairness
+
+- Sculley, D. et al. (2015).  
+  *Hidden Technical Debt in Machine Learning Systems.*  
+  NeurIPS.  
+
+- Breck, E. et al. (2017).  
+  *The ML Test Score: A Rubric for ML Production Readiness and Technical Debt Reduction.*  
+  IEEE Big Data.  
+
+---
+
+### Additional Tools & Industry Practices
+
+- Holistic AI.  
+  *Fairness Evaluation and Governance Platform.*  
+  https://www.holisticai.com  
+
+- OECD AI Metrics Framework  
+  https://oecd.ai/en/catalogue/metrics  
+
+---
