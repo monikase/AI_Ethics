@@ -325,28 +325,20 @@ Teams must verify that fairness implementation is effective through the followin
 - measurable reduction in disparities  
 - stable performance across groups  
 
----
-
 ### 8.2 Consistency
 
 - no hidden failures in subgroups  
 - intersectional analysis performed where feasible  
-
----
 
 ### 8.3 Reproducibility
 
 - results reproducible across runs  
 - methodologies documented  
 
----
-
 ### 8.4 Traceability
 
 - all results linked to FDRs  
 - full audit trail available  
-
----
 
 ### 8.5 Compliance Readiness
 
