@@ -3,18 +3,10 @@ A Universal Methodology for Operationalizing AI Fairness Regulation
 
 ## Purpose
 
-Regulatory compliance is where technical fairness work becomes a **demonstrable legal obligation**. While regulations such as the **EU AI Act** and **GDPR Article 22** define mandatory requirements for fairness, transparency, accountability, and human oversight, they rarely explain how these obligations should be implemented in real AI systems.  
+This Regulatory Compliance Guide provides a systematic methodology for operationalizing AI fairness regulation in real-world systems.   
+It translates abstract legal obligations—such as those in the EU AI Act and GDPR—into concrete engineering practices, governance controls, and evidence artifacts that can be implemented, validated, and audited.  
   
-This Regulatory Compliance Guide provides a **systematic, engineering‑aligned methodology** for operationalizing AI fairness regulation. Its purpose is to translate abstract legal requirements into **concrete development practices**, including:  
-
-- Risk classification mechanisms that determine compliance intensity
-- Architecture‑agnostic workflows that embed compliance into the AI lifecycle
-- Documentation and evidence systems that satisfy regulatory scrutiny
-- Audit‑trail designs that enable accountability and traceability
-
-The guide complements the other components of the Fairness Implementation Playbook — Fair AI Scrum, Organizational Integration, and the Advanced Architecture Cookbook by answering the final, critical question: **How do we prove that our AI systems are compliant?**  
-  
-By focusing on repeatable processes, proportional controls, and continuous evidence generation, this guide ensures that fairness implementations are not only technically sound, but also **legally defensible across jurisdictions and system types**.
+By embedding risk classification, lifecycle controls, and continuous evidence generation into standard development workflows, the guide enables organizations to demonstrate compliance reliably and defensibly across AI system types and jurisdictions.  
 
 ## Business Value
 
