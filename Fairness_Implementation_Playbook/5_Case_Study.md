@@ -240,16 +240,16 @@ Continuous monitoring enabled:
 
 ## 11. Key Insights
 
-### 1. Fairness must be operational, not conceptual
+#### 1. Fairness must be operational, not conceptual
 Embedding fairness into Scrum (FAST) was critical.
 
-### 2. Governance prevents fragmentation
+#### 2. Governance prevents fragmentation
 FDRs ensured consistent decisions across teams.
 
-### 3. Architecture matters
+#### 3. Architecture matters
 Generic fairness methods failed without AAC.
 
-### 4. Compliance must be built-in
+#### 4. Compliance must be built-in
 RCG ensured fairness was auditable, not assumed.
 
 ---
