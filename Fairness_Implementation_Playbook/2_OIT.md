@@ -64,6 +64,7 @@ Together, these components form a **complete execution → governance → compli
 #### [8. Continuous Governance, Learning, and Improvement](#gov)  
 #### [9. Implementation Workflow](#impl) 
 #### [10. Core Principles](#prin) 
+#### [11. References](#refs) 
 
 ---
 
@@ -669,5 +670,107 @@ For organizations new to continuous fairness monitoring, the minimum starting po
 ---
 
 This Organizational Integration Toolkit builds directly on the Fair AI Scrum Toolkit, extending fairness from team-level execution to organization-wide governance.
+
+---
+
+<a id="refs"></a>
+## 11. References (Organizational Integration Toolkit)
+
+### AI Governance & Accountability
+
+- Raji, I. D., Smart, A., White, R. N., Mitchell, M., Gebru, T., Hutchinson, B., Smith-Loud, J., Theron, D., & Barnes, P. (2020).  
+  *Closing the AI Accountability Gap: Defining an End-to-End Framework for Internal Algorithmic Auditing.*  
+  Proceedings of the ACM Conference on Fairness, Accountability, and Transparency (FAccT).
+
+- Madaio, M. A., Stark, L., Wortman Vaughan, J., & Wallach, H. (2020).  
+  *Co-Designing Checklists to Understand Organizational Challenges and Opportunities around Fairness in AI.*  
+  CHI Conference on Human Factors in Computing Systems.
+
+---
+
+### Organizational Governance & Decision-Making
+
+- Floridi, L., Cowls, J., Beltrametti, M., et al. (2018).  
+  *AI4People—An Ethical Framework for a Good AI Society.*  
+  Minds and Machines.
+
+- OECD (2021).  
+  *OECD AI Principles and Governance Framework.*  
+  https://oecd.ai  
+
+- NIST (2023).  
+  *AI Risk Management Framework (AI RMF 1.0).*  
+  https://www.nist.gov/itl/ai-risk-management-framework  
+
+---
+
+### Documentation, Traceability & Decision Records
+
+- Fowler, M. (2013).  
+  *Architecture Decision Records (ADR).*  
+  https://martinfowler.com/articles/architecture-decision-records.html  
+
+- ISO/IEC 42001 (2023).  
+  *Artificial Intelligence Management System (AIMS).*  
+
+- ISO/IEC 23894 (2023).  
+  *Artificial Intelligence — Risk Management.*  
+
+---
+
+### Responsible AI in Organizations
+
+- Microsoft (2022).  
+  *Responsible AI Standard v2.*  
+  https://www.microsoft.com/ai/responsible-ai  
+
+- Google (2023).  
+  *Responsible AI Practices.*  
+  https://ai.google/responsibilities/responsible-ai-practices/  
+
+---
+
+### Fairness Operations & Socio-Technical Systems
+
+- Selbst, A. D., Boyd, D., Friedler, S. A., Venkatasubramanian, S., & Vertesi, J. (2019).  
+  *Fairness and Abstraction in Sociotechnical Systems.*  
+  FAT* Conference.
+
+- Passi, S., & Barocas, S. (2019).  
+  *Problem Formulation and Fairness.*  
+  FAT* Conference.
+
+---
+
+### Monitoring, Metrics, and Continuous Governance
+
+- Sculley, D. et al. (2015).  
+  *Hidden Technical Debt in Machine Learning Systems.*  
+  NeurIPS.
+
+- Breck, E. et al. (2017).  
+  *The ML Test Score: A Rubric for ML Production Readiness.*  
+  IEEE Big Data.
+
+---
+
+### Regulation & Compliance Context
+
+- European Union (2024).  
+  *EU Artificial Intelligence Act.*  
+
+- European Union (2016).  
+  *General Data Protection Regulation (GDPR).*  
+
+---
+
+### Industry Practices & Tooling
+
+- Holistic AI  
+  *Fairness Governance and Monitoring Platform.*  
+  https://www.holisticai.com  
+
+- OECD AI Metrics Framework  
+  https://oecd.ai/en/catalogue/metrics  
 
 ---
