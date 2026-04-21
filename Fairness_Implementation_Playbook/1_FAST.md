@@ -127,27 +127,30 @@ This ensures fairness is **designed into features from the start**, rather than 
 
 ### 1.2 Fairness Acceptance Criteria (FAIR Framework)
 
-Acceptance criteria define **how fairness is validated**.
-
----
+Acceptance criteria define **how fairness is validated**, not merely asserted.  
 
 #### FAIR Breakdown
 
 - **F - Fairness Metrics Thresholds**  
 - **A - Auditing Requirements**  
 - **I - Intersectional Analysis**  
-- **R - Reporting Guidelines**  
+- **R - Reporting and Documentation**  
 
-#### Example
+#### Example Criteria
 
+- Metric thresholds met across relevant groups
+- Intersectional evaluation completed where feasible
+- Results documented in model card
+
+#### _Illustrative Example_
 > - Demographic parity difference ≤ 0.05  
 > - True positive rate difference ≤ 0.03 across groups  
 > - Intersectional subgroup evaluation completed  
 > - Results documented in model card  
+ 
+**→ 4_RCG.md Alignment**  
+FAIR criteria define validation thresholds used as compliance evidence at Gates G2 (Build) and G3 (Validation).
 
-🔗 **Playbook Connection**   
-- Fairness Audit → provides baseline metrics to validate against  
-- Fairness Intervention → defines expected fairness improvements  
 
 ---
 
