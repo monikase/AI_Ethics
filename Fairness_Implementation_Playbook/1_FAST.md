@@ -67,6 +67,11 @@ The Fair AI Scrum Toolkit consists of the following components:
 
 ---
 
+> **Note:** The examples provided throughout this toolkit are illustrative and simplified for clarity.  
+> They are designed to demonstrate how fairness concepts can be operationalized within Scrum workflows, rather than representing fully implemented production systems.
+
+---
+
 <a id="artifacts"></a>
 ## 1️⃣ Scrum Artifact Modifications 
 
@@ -77,14 +82,14 @@ The Fair AI Scrum Toolkit consists of the following components:
 Traditional user stories capture functionality but ignore differential impacts.    
 The SAFE framework extends user stories to make fairness explicit and actionable.  
 
-#### Template
+### Template
 As a **[user]**,  
 I want **[functionality]**,  
 so that **[benefit]**,  
 while ensuring **[fairness goal]** across **[protected + intersectional groups]**.
 
 
-#### SAFE Breakdown
+### SAFE Breakdown
 
 - **S - Specific Protected Attributes**    
   Identify relevant groups (e.g., gender, age, ethnicity)  
@@ -111,17 +116,12 @@ while ensuring **[fairness goal]** across **[protected + intersectional groups]*
 > so that I can **shortlist efficiently**,  
 > while **ensuring equivalent ranking accuracy across gender, age, and their intersections**.   
 
-**Key Insight**    
+
 The SAFE framework transforms:
 - audit insights → into requirements  
 - intervention strategies → into measurable outcomes  
 
 This ensures fairness is **designed into features from the start**, rather than evaluated only after development.  
-
-
-🔗 **Playbook Connection**    
-- **Fairness Audit** → identifies which groups are impacted and where bias occurs  
-- **Fairness Intervention** → defines what fairness means and how it should be achieved  
 
 ---
 
@@ -592,10 +592,6 @@ This toolkit operationalizes:
 ---
 
 
----
-
-> **Note:** The examples provided throughout this toolkit are illustrative and simplified for clarity.  
-> They are designed to demonstrate how fairness concepts can be operationalized within Scrum workflows, rather than representing fully implemented production systems.
 
 
 
