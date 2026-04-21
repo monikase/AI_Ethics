@@ -221,54 +221,23 @@ A feature is complete **only when fairness validation is complete**.
 
 <a id="planning"></a>
 ## 3️⃣ Sprint Planning & Execution Framework  
-→ Allocate and deliver fairness work systematically.  
 
-
-Having an explicit fairness task taxonomy helps teams recognize the full scope of fairness work required.
-
-🔗 **Playbook Connection**  
-- Fairness Audit → informs which features are high-risk  
-- Fairness Intervention → determines scope and effort of fairness tasks  
-
----
+**Objective:** Allocate and deliver fairness work systematically.
 
 ### 3.1 Fairness Capacity Allocation
 
-Reserve **15–30% of sprint capacity** for fairness tasks.
-
-- Treat as **non-negotiable**
-- Similar to technical debt or testing capacity
-
-🔗 **Playbook Connection**  
-- Fairness Intervention → helps estimate effort required for mitigation  
+Reserve **15–30% of sprint capacity** for fairness work.  
+Capacity allocation should scale with **system risk tier** as defined in governance frameworks.  
 
 ### 3.2 Fairness Task Taxonomy
 
-Define clear task types:
-
-#### Analysis
-- Bias audits  
-- Subgroup evaluation  
-- Intersectional analysis  
-
-#### Implementation
-- Mitigation techniques  
-- Feature adjustments
-- Fairness constraint application  
-
-#### Validation
-- Acceptance criteria testing
-- Fairness regression testing    
-- Documentation    
-
-🔗 **Playbook Connection**  
-- Fairness Audit → feeds analysis tasks  
-- Fairness Intervention → feeds implementation tasks  
+- **Analysis:** audits, subgroup and intersectional evaluation
+- **Implementation:** mitigation techniques, feature adjustments
+- **Validation:** testing, documentation, evidence generation   
 
 ### 3.3 Fairness Backlog Prioritization
 
-Fairness-aware backlog prioritization extends standard frameworks by adding fairness dimensions to prioritization decisions.   
-This includes:
+Prioritization incorporates:
 
 1. **Fairness Impact**  
    How significantly a feature could affect different demographic groups. 
@@ -278,10 +247,6 @@ This includes:
    The potential consequences of biased outcomes.  
 4. **Regulatory Exposure**    
    Legal or compliance risks from bias issues.    
-
-🔗 **Playbook Connection**  
-- Fairness Audit → highlights high-risk areas  
-- Fairness Intervention → prioritizes high-impact mitigation  
 
 ### 3.4 Sprint Planning Meeting Adaptations
 
@@ -323,57 +288,35 @@ Key components include:
 
 <a id="ceremonies"></a>
 ## 4️⃣ Ceremonies & Checkpoints  
-→ Maintain fairness focus throughout development.
 
-🔗 **Playbook Connection**  
-- Fairness Audit → informs fairness discussions and metrics tracking  
-- Fairness Intervention → reviewed and refined during ceremonies  
+### 4.1 Sprint Planning
+- Assess fairness risks per story 
+- Assign fairness tasks  
+- Define validation checkpoints    
 
----
+### 4.2 Daily Execution
 
-### 4.1 Sprint Planning Adaptations
-
-- Assess fairness risks for each story  
-- Identify affected groups  
-- Allocate fairness tasks  
-
-### 4.2 Daily Execution Practices
+- Explicit fairness prompts
+- Visible fairness progress tracking
+- Escalation of blockers
 
 Add to stand-up:
 
 - “Any fairness risks or blockers?”  
 - “Are fairness tasks progressing?”  
 
-### 4.3 Sprint Review Enhancements
+### 4.3 Sprint Review
 
-Fairness-enhanced sprint reviews explicitly showcase fairness achievements alongside functional ones.  
-They include:  
-
-1. **Fairness Metric Presentations**  
+- **Fairness Metric Presentations**  
    Visualizing key fairness metrics across demographic groups  
-2. **Disaggregated Performance Reports**  
+- **Disaggregated Performance Reports**  
    Showing system performance for different protected attributes and intersections  
-3. **Bias Mitigation Demonstrations**  
+- **Bias Mitigation Demonstrations**  
    Explaining implemented fairness interventions and their results  
-4. **Remaining Fairness Debt**  
-   Transparently discussing unresolved fairness issues  
-
-These reviews impact multiple development stages:  
-
-1. Validate fairness achievements for completed work.
-2. Educate stakeholders about fairness trade-offs.
-3. Gather feedback that shapes fairness priorities for future sprints.
-4. Create accountability for fairness outcomes rather than just fairness intentions.  
-
-
-🔗 **Playbook Connection**  
-- Fairness Audit → provides baseline comparison  
-- Fairness Intervention → demonstrates impact of mitigation  
+- **Remaining Fairness Debt**  
+   Transparently discussing unresolved fairness issues    
 
 ### 4.4 Retrospective Techniques
-
-Fairness retrospective techniques use specialized prompts, exercises, and frameworks to extract fairness learnings.  
-Key approaches include:  
 
 1. **Fairness-Specific Prompts:** Questions focused explicitly on fairness work such as:  
 - "What helped us detect bias issues early?"
@@ -392,10 +335,6 @@ Key approaches include:
 
 ### 4.5 Mid-Sprint Fairness Checkpoints
 
-Traditional Scrum focuses on start/end-of-sprint ceremonies, with minimal daily tracking, leaving long gaps where fairness issues may go unnoticed.  
-  
-Mid-sprint fairness checkpoints add targeted moments to detect bias and validate fairness, including:  
-
 1. **Pre-Implementation Design Reviews**  
    Evaluating fairness implications before coding begins  
 2. **Data Pipeline Validation**  
@@ -405,19 +344,7 @@ Mid-sprint fairness checkpoints add targeted moments to detect bias and validate
 4. **Integration Fairness Tests**  
    Testing for bias after component integration   
 
-Purpose:
-- **detect bias early**  
-- **reduce rework**  
-
-🔗 **Playbook Connection**  
-- Fairness Audit → ongoing validation of emerging bias  
-- Fairness Intervention → early testing of mitigation effectiveness  
-
 ### 4.6 Fairness Demonstration Techniques
-
-Traditional sprint reviews often fail to clearly convey fairness concepts, as technical metrics can be too abstract for stakeholders, making it harder to gain support.  
-
-Fairness demonstrations address this by using concrete examples, visuals, and scenarios to make fairness more understandable, including:  
 
 1. **Fairness Dashboards**  
    Interactive visualizations showing performance across demographic groups  
@@ -432,9 +359,6 @@ Fairness demonstrations address this by using concrete examples, visuals, and sc
 
 <a id="roles"></a>
 ## 5️⃣ Role-Based Responsibilities  
-→ Distribute accountability across the team.
-
----
 
 #### Product Owner
 - Embed fairness in requirements  
