@@ -354,6 +354,7 @@ This principle underpins the system’s design and ensures compliance with trace
 This stage‑gate checklist defines the minimum conditions that must be met for an AI system to move from one phase of its lifecycle to the next.  
   
 Each _gate_ is a formal decision point. The system may proceed only if the listed exit criteria are satisfied and the corresponding evidence exists. This ensures that fairness, risk, and regulatory obligations are addressed progressively before issues become costly or irreversible.  
+  
 
 | Gate         |Purpose | Exit Criteria                                      | Evidence            |
 |--------------|--------|----------------------------------------------------|---------------------|
