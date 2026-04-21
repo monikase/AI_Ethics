@@ -168,6 +168,7 @@ FDRs serve as the **authoritative source of truth** for fairness decisions and m
 🔗 **Connection to FAST (1_FAST.md):**  
 Evidence produced via FAST (tests, model cards, FAIR criteria) is attached directly to FDRs.
 
+---
 
 ### 3.2 Automation and Traceability Hooks
 
@@ -183,6 +184,7 @@ This creates a closed accountability loop:
 
 No fairness risk may exist without a traceable originating decision.
 
+---
 
 ### 3.3 Executive Fairness Scorecards
 
