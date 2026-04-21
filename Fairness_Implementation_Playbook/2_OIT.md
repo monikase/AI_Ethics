@@ -512,7 +512,7 @@ Well-designed governance frameworks fail if they are not adopted, understood, an
 
 ---
 
-### 10.1 Adoption Challenges
+### 8.1 Adoption Challenges
 
 Common adoption risks include:
 - Fairness being perceived as compliance overhead
@@ -525,7 +525,7 @@ These challenges are organizational rather than technical and require deliberate
 
 ---
 
-### 10.2 Adoption Strategies
+### 8.2 Adoption Strategies
 
 #### Executive Sponsorship
 - Assign visible executive ownership for fairness outcomes
@@ -549,7 +549,7 @@ These challenges are organizational rather than technical and require deliberate
 
 ---
 
-### 10.3 Building a Speak‑Up Culture
+### 8.3 Building a Speak‑Up Culture
 
 Effective fairness governance depends on psychological safety.
 
@@ -563,7 +563,7 @@ This aligns with the principle that fairness is a shared responsibility supporte
 
 ---
 
-### 10.4 Continuous Reinforcement
+### 8.4 Continuous Reinforcement
 
 To sustain adoption:
 - Review fairness governance effectiveness quarterly
