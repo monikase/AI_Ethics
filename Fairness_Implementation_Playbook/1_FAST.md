@@ -65,24 +65,9 @@ Improve each sprint using retrospectives
 ## Toolkit Overview
 
 #### [1. Scrum Artifact Modifications](#artifacts)
-- 1.1 Fairness-Enhanced User Stories (SAFE Framework)
-- 1.2 Fairness Acceptance Criteria (FAIR Framework)
-- 1.3 Backlog & Documentation Extensions
-
 #### [2. Definition of Done (DoD) Framework](#dod)
-
 #### 3. [Sprint Planning & Execution Framework](#planning)
-- 3.1 Fairness Capacity Allocation
-- 3.2 Fairness Task Taxonomy
-- 3.3 Fairness Backlog Prioritization
-
 #### [4. Ceremonies & Checkpoints](#ceremonies)
-- 4.1 Sprint Planning Adaptations
-- 4.2 Daily Execution Practices
-- 4.3 Sprint Review Enhancements
-- 4.4 Retrospective Techniques
-- 4.5 Mid-Sprint Fairness Checkpoints
-
 #### [5. Role-Based Responsibilities](#roles)
 #### [6. Intersectionality Integration Layer](#intersectionality)
 #### [7. Evaluation Metrics](#evaluation)
