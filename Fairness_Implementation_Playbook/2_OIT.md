@@ -1,4 +1,5 @@
 # Organizational Integration Toolkit
+_(Part 2 of the Fairness Implementation Playbook)_
 
 ## Purpose
 
