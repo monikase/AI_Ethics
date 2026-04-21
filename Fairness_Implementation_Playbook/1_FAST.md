@@ -72,22 +72,22 @@ This toolkit integrates with the broader Fairness Implementation Playbook:
 
 For organizations new to fairness:
 
-### Step 1 — Start small
+#### Step 1: Start small
 Pick **one feature** with potential fairness risk
 
-### Step 2 — Apply FAST basics
+#### Step 2: Apply FAST basics
 - Rewrite user story with fairness (SAFE)
 - Add fairness acceptance criteria (FAIR)
 
-### Step 3 — Add fairness tasks
+#### Step 3: Add fairness tasks
 - Audit  
 - Test  
 - Mitigation  
 
-### Step 4 — Enforce Definition of Done
+#### Step 4: Enforce Definition of Done
 Feature is NOT complete without fairness validation
 
-### Step 5 — Iterate
+#### Step 5: Iterate
 Improve each sprint using retrospectives
 
 ---
