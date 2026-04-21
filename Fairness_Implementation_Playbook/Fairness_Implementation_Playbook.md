@@ -41,12 +41,13 @@ These components operate as a **single system**, not independent tools.
 
 ```mermaid
 flowchart TD
-A[Risk Classification & Regulatory Framing (RCG)]
-    --> B[Fairness Decision & Governance (OIT - FDR)]
-    --> C[Team Implementation (FAST)]
-    --> D[Architecture-Specific Mitigation (AAC)]
-    --> E[Validation & Evidence Generation (FAST + RCG)]
-    --> F[Monitoring & Incident Response (OIT + RCG)]
+A["Risk Classification & Regulatory Framing (RCG)"]
+    --> B["Fairness Decision & Governance (OIT - FDR)"]
+    --> C["Team Implementation (FAST)"]
+    --> D["Architecture-Specific Mitigation (AAC)"]
+    --> E["Validation & Evidence Generation (FAST + RCG)"]
+    --> F["Monitoring & Incident Response (OIT + RCG)"]
+
 F -->|Feedback Loop| B
 ```
 
