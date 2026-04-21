@@ -66,7 +66,7 @@ Improve each sprint using retrospectives
 
 #### [1. Scrum Artifact Modifications](#artifacts)
 #### [2. Definition of Done (DoD) Framework](#dod)
-#### 3. [Sprint Planning & Execution Framework](#planning)
+#### [3. Sprint Planning & Execution Framework](#planning)
 #### [4. Ceremonies & Checkpoints](#ceremonies)
 #### [5. Role-Based Responsibilities](#roles)
 #### [6. Intersectionality Integration Layer](#intersectionality)
