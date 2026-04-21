@@ -68,10 +68,9 @@ FAST does not define fairness — it **implements governance-approved decisions*
 
 ---
 
+## Business Value 
 
-## Business Value of Integrating Fairness into Scrum 
-
-Embedding fairness within agile development is both a risk‑reduction and value‑creation strategy:  
+Embedding fairness in Scrum enables:
   
 - **Risk Reduction**  
   Early detection of bias prevents costly remediation, regulatory exposure, and reputational harm.  
@@ -84,38 +83,14 @@ Embedding fairness within agile development is both a risk‑reduction and value
 - **Scalability**  
   A standardized approach ensures fairness practices scale consistently across teams, products, and system types.  
 
-## Connection to Other Playbook Components: 
-
-This toolkit integrates with the broader Fairness Implementation Playbook:  
-
-- **Organizational Integration Toolkit (2_OIT.md)**   
-  FAST provides the team‑level execution practices required for organization‑wide fairness governance.
-- **Advanced Architecture Cookbook (3_AAC.md)**  
-  Architecture‑specific fairness techniques may be reviewed and applied within FAST ceremonies and checkpoints.  
-- **Regulatory Compliance Guide (4_RCG.md)**  
-  Scrum artifacts and fairness evidence produced using this toolkit directly support governance gates, documentation requirements, and audit trails defined in the RCG.  
-
 ## How to Use This Toolkit
 
-For organizations new to fairness:
-
-#### Step 1: Start small
-Pick **one feature** with potential fairness risk
-
-#### Step 2: Apply FAST basics
-- Rewrite user story with fairness (SAFE)
-- Add fairness acceptance criteria (FAIR)
-
-#### Step 3: Add fairness tasks
-- Audit  
-- Test  
-- Mitigation  
-
-#### Step 4: Enforce Definition of Done
-Feature is NOT complete without fairness validation
-
-#### Step 5: Iterate
-Improve each sprint using retrospectives
+1. Select a feature with fairness impact  
+2. Identify the relevant **FDR**  
+3. Translate fairness decisions into **SAFE user stories**  
+4. Define validation using **FAIR acceptance criteria**  
+5. Implement and test using sprint workflows  
+6. Validate against **RCG requirements before completion**  
 
 ## Toolkit Overview
 
@@ -173,7 +148,7 @@ while ensuring **[fairness goal]** across **[protected + intersectional groups]*
 | Element | Meaning |
 |--------|-------------|
 | S - Specific Protected Attributes | Who could be affected by bias _(Identify relevant groups (e.g., gender, age, ethnicity))_ |
-| A - Actionable Fairness Definition | Define fairness concept _(e.g., equal opportunity)_  |
+| A - Actionable Fairness Definition | Define fairness concept _(e.g., equal opportunity)_ (from FDR) |
 | F - Feature Integration Point | Where fairness applies in the feature _(Connects intervention techniques to specific product functionality)_ |
 | E - Expected Outcome Measures | How fairness will be validated  |
 
@@ -191,8 +166,8 @@ Acceptance criteria define **how fairness is validated**, not just intended.
 
 | Element | Purpose |
 |--------|--------|
-| F | Fairness Metrics Thresholds |
-| A | Auditing Requirements |
+| F | Fairness Metrics Thresholds (from FDR) |
+| A | Auditing Requirements (RCG-aligned) |
 | I | Intersectional Analysis |
 | R | Reporting and Documentation |
 
@@ -234,6 +209,10 @@ A feature is complete **only when fairness validation is complete**.
 
 **Completion of the DoD is a mandatory** precondition for progression through governance gates. Features failing fairness validation must not advance to deployment.  
 
+> A feature is NOT complete unless it satisfies:
+> - FDR-defined fairness requirements  
+> - RCG validation and documentation requirements  
+
 ### Minimum Requierements
 
 #### Data
@@ -244,10 +223,10 @@ A feature is complete **only when fairness validation is complete**.
 
 #### Model
 
-- Fairness metrics meet thresholds  
+- Fairness metrics meet FDR thresholds  
 - Performance evaluated across subgroups and intersections  
 - Counterfactual or sensitivity analysis conducted (where applicable)  
-- Bias mitigation applied if needed  
+- **AAC-based mitigation applied if required**   
 - Model card includes:
   - fairness metrics  
   - limitations  
@@ -258,6 +237,16 @@ A feature is complete **only when fairness validation is complete**.
 - Tested with diverse users  
 - No usability gaps across groups  
 - Explanations understandable across demographics
+
+### Compliance (RCG Integration)
+
+- Required artifacts generated:
+  - model card  
+  - fairness report  
+  - logs  
+- All evidence linked to:
+  - FDR  
+  - audit trail system  
 
 **Resources & Tools**
 - [Model Cards for Model Reporting (Mitchell et al., 2019)](https://arxiv.org/abs/1810.03993)   
