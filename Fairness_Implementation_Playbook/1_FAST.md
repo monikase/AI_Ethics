@@ -382,8 +382,6 @@ Fairness is a **team responsibility**, not a specialist task.
 <a id="intersectionality"></a>
 ## 6️⃣ Intersectionality Integration Layer  
 
-
-### Core Principle
 Fairness must account for **interacting attributes**, not only single dimensions.
 
 #### Implementation
