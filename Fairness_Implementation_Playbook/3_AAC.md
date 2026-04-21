@@ -18,6 +18,69 @@ The cookbook complements:
 
 by focusing on **how different architectures create distinct fairness failures.**  
 
+---
+
+## System Role in the Playbook
+
+AAC is the **technical implementation layer** of the Fairness Implementation Playbook.
+
+It enables:
+
+- **FAST (execution layer)** → by providing mitigation methods  
+- **OIT (governance layer)** → by implementing FDR-defined fairness goals  
+- **RCG (compliance layer)** → by ensuring validation meets regulatory requirements  
+
+---
+
+## Inputs & Outputs
+
+### Inputs
+
+- **From OIT (Organizational Integration Toolkit)**  
+  - Fairness Decision Records (FDRs)  
+  - fairness definitions (e.g., Equal Opportunity)  
+  - metrics and thresholds  
+  - approved trade-offs  
+
+- **From FAST (Fair AI Scrum Toolkit)**  
+  - identified bias issues  
+  - SAFE stories requiring mitigation  
+  - FAIR validation criteria  
+
+- **From RCG (Regulatory Compliance Guide)**  
+  - validation requirements  
+  - compliance constraints  
+  - required documentation standards  
+
+---
+
+### Outputs
+
+- **To FAST**  
+  - implemented mitigation strategies  
+  - updated model behavior  
+  - validation results  
+
+- **To RCG**  
+  - technical validation evidence  
+  - explanation of mitigation methods  
+  - reproducible results  
+
+- **To OIT**  
+  - feedback on feasibility and trade-offs  
+  - recommendations for FDR updates  
+
+---
+
+## Core Principle
+
+> **All technical interventions must align with Fairness Decision Records (FDRs) and satisfy RCG validation requirements.**
+
+AAC does not decide fairness — it **implements it correctly per architecture**.
+
+---
+
+
 ## Business Value
 
 Embedding fairness at the architecture level enables:
