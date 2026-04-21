@@ -1,14 +1,18 @@
 # Fair AI Scrum Toolkit 
+_(Part 1 of the Fairness Implementation Playbook)_
 
 ## Purpose
 
-The Fair AI Scrum Toolkit defines a practical methodology for embedding fairness into agile development workflows.  
-Its purpose is to translate fairness goals and risk considerations into **concrete, repeatable Scrum practices** that guide teams throughout the AI lifecycle.  
-  
-By extending Scrum artifacts, ceremonies, and role responsibilities, this toolkit ensures fairness is addressed **early, continuously, and verifiably**, rather than treated as a retrospective or external concern. The toolkit is domain‑agnostic and applicable to any AI system where fairness risks may arise.  
-  
-FAST serves as the team‑level execution layer of the Fairness Implementation Playbook, generating the development‑time evidence, decisions, and controls required by organizational governance and regulatory compliance frameworks.  
+Most teams build AI systems using Agile/Scrum but fairness is usually handled too late (or not at all).  
 
+The **Fair AI Scrum Toolkit (FAST)** solves this by embedding fairness directly into **how teams already work:**
+
+- into user stories
+- into sprint planning
+- into testing and validation
+- into “Definition of Done”
+  
+**FAST makes fairness part of everyday development, not a separate activity.**  
 
 ## Business Value of Integrating Fairness into Scrum 
 
@@ -38,8 +42,6 @@ This toolkit integrates with the broader Fairness Implementation Playbook:
 
 ## Toolkit Overview
 
-The Fair AI Scrum Toolkit consists of the following components:  
-
 #### [1. Scrum Artifact Modifications](#artifacts)
 - 1.1 Fairness-Enhanced User Stories (SAFE Framework)
 - 1.2 Fairness Acceptance Criteria (FAIR Framework)
@@ -64,6 +66,29 @@ The Fair AI Scrum Toolkit consists of the following components:
 #### [7. Evaluation Metrics](#evaluation)
 #### [8. Implementation Workflow](#workflow)
 #### [9. Core Principles](#principles)
+
+
+## How to Use This Toolkit
+
+For organizations new to fairness:
+
+### Step 1 — Start small
+Pick **one feature** with potential fairness risk
+
+### Step 2 — Apply FAST basics
+- Rewrite user story with fairness (SAFE)
+- Add fairness acceptance criteria (FAIR)
+
+### Step 3 — Add fairness tasks
+- Audit  
+- Test  
+- Mitigation  
+
+### Step 4 — Enforce Definition of Done
+Feature is NOT complete without fairness validation
+
+### Step 5 — Iterate
+Improve each sprint using retrospectives
 
 ---
 
@@ -451,8 +476,8 @@ Due to data limitations:
 - Compliance evidence is a by‑product of development
 - Continuous improvement is mandatory 
 
---
+---
 
 This toolkit operationalizes fairness at the team level, ensuring that daily development practices generate the evidence, decisions, and accountability required for trustworthy and compliant AI systems.
 
---
+---
