@@ -440,15 +440,27 @@ This playbook enables organizations to:
 
 ## 14. Relationship to Other Playbooks
 
+This playbook is part of a broader fairness framework consisting of complementary playbooks that address different stages of the AI lifecycle:
+
+- **Fairness Audit Playbook**  
+  → identifies and measures bias in AI systems  
+  → provides diagnostic insights into fairness risks and affected groups  
+  → serves as the **entry point** for fairness work  
+
 - **Fairness Intervention Playbook**  
   → defines technical mitigation strategies  
+  → guides selection of data, model, and post-processing interventions  
+  → translates identified bias into actionable solutions  
 
 - **Fairness Implementation Playbook (this document)**  
-  → defines operational deployment across the lifecycle  
+  → defines how fairness is operationalized across teams, governance, and systems  
+  → integrates development practices, decision-making structures, and compliance processes  
 
-Together, they form a complete system:
+Together, these playbooks form a complete fairness lifecycle:
 
-👉 **Decision → Implementation → Intervention → Validation → Compliance**
+👉 **Audit → Decision → Implementation → Intervention → Validation → Compliance → Monitoring**
+
+This structure ensures that fairness is not treated as a one-time activity, but as a continuous, system-wide capability.
 
 ---
 
