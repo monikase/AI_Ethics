@@ -48,6 +48,7 @@ A[Risk Classification & Regulatory Framing (RCG)]
     --> E[Validation & Evidence Generation (FAST + RCG)]
     --> F[Monitoring & Incident Response (OIT + RCG)]
 F -->|Feedback Loop| B
+```
 
 ---
 
