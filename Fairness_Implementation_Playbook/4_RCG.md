@@ -372,22 +372,27 @@ Continuous monitoring hooks:
 - Incident triggers
 - Re‑classification signals
 
-### 6.2 Stage‑Gate Implementation Checklist‑by‑Gate Explanation
+### 6.2 Purpose and Rationale of Each Gate
 
 #### G0 – Ideation (Can we responsibly explore this idea?)   
 At this stage, the goal is to confirm that the idea has been assessed for potential risk and impact before any design or development begins. Completing the TRS (Target Risk Score) ensures that high‑risk use cases are identified early, and that additional oversight (e.g. involving a Data Protection Officer) is triggered when needed.  
 
 #### G1 – Design (Have safeguards been built into the design?)   
-This gate ensures that risk controls and fairness requirements are explicitly translated into design decisions. Documentation templates are created here so evidence is generated consistently later, rather than retroactively.   
+This gate ensures that risk controls and fairness requirements are explicitly translated into design decisions. Documentation templates are created here so that **required evidence is generated naturally during development**, rather than retroactively.   
+
+#### G2 – Build (Does the system meet minimum quality and fairness standards?)
+This gate checks whether the system meets baseline technical and fairness expectations before formal validation.  
+Fairness tests provide evidence that bias risks have been assessed, while the model card draft documents the system’s purpose, data, limitations, and known risks.  
+Passing this gate confirms the system is mature enough to undergo independent review.  
 
 #### G3 – Validation (Is the system safe, lawful, and reviewable?)  
-This gate provides independent assurance. External or separate reviewers confirm that the system meets regulatory, ethical, and quality expectations, including privacy impact assessments and defined human oversight mechanisms.  
+This gate provides independent assurance. Independent assurance is provided by reviewers who were not directly involved in system development.  
 
 #### G4 – Launch (Are we ready to operate this safely in the real world?)
 Before release, the organization confirms that monitoring, escalation, and legal communications are active. This ensures issues can be detected and addressed quickly once real users are affected.  
 
 #### G5 – Operate (Is the system still behaving as expected?)  
-Over time, data and context change. This gate ensures that fairness and performance drift are periodically reviewed and that operational risks remain under control.  
+Over time, data and context change. This gate ensures that fairness and performance drift are periodically reviewed and that corrective actions can be triggered when thresholds are exceeded.  
 
 #### G6 – Retire (Are we exiting responsibly?)  
 When the system is decommissioned, this gate ensures data is deleted, evidence archived, and the lifecycle formally closed, preventing lingering compliance or data‑protection risks.  
