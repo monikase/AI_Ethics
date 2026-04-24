@@ -3,37 +3,53 @@
 
 ---
 
-## 1. Overview
+## 1. System Context
 
-This case study demonstrates the application of the **Fairness Implementation Playbook** to a multi-team AI recruitment platform at EquiHire.
+This case study demonstrates the application of the **Fairness Implementation Playbook** to a multi-team AI recruitment platform at EquiHire.  
+  
+EquiHire operates a multi-stage AI recruitment platform consisting of three integrated systems:  
 
-The platform consists of three core systems:
+#### **Resume Screening System (Sunshine Regiment)**  
+- **Type:** LLM-assisted ranking pipeline
+- **Input:** Candidate CVs, structured profiles
+- **Output:** Ranked shortlist + generated candidate summaries
+- **Decision Impact:** Determines which candidates proceed to interview
 
-- **Resume Screening System (Sunshine Regiment)**  
-- **AI Interviewing System (Chaos Legion)**  
-- **Candidate-Job Matching System (Dragon Army)**  
+#### **AI Interviewing System (Chaos Legion)**  
+- **Type:** Multi-modal evaluation system
+- **Input:** Video, audio, transcript
+- **Output:** Candidate scores across competencies
+- **Decision Impact:** Influences hiring decisions directly
+
+#### **Candidate-Job Matching System (Dragon Army)** 
+- **Type:** Recommendation system
+- **Input:** Candidate profiles + job postings
+- **Output:** Ranked job recommendations
+- **Decision Impact:** Shapes candidate visibility and opportunity access
 
 The objective is to ensure **consistent, scalable, and auditable fairness** across all systems while maintaining performance and usability.
 
 ---
 
-## 2. Initial Problem
+## 2. Trigger Event
 
 Despite having:
 - a Fairness Audit Playbook  
 - a Fairness Intervention Playbook  
 
-teams struggled with:
+Fairness implementation was not initiated proactively.  
 
-- unclear responsibilities  
-- inconsistent fairness definitions  
-- lack of integration into daily workflows  
-- conflicting fairness decisions across teams  
+It was triggered by three independent signals:  
 
-This resulted in:
-- delays in development  
-- inconsistent user experience  
-- increased regulatory risk  
+- **Legal escalation:** EU AI Act classification flagged recruitment systems as high-risk
+- **User complaints:** Recruiters reported inconsistent candidate quality across demographics
+- **Metric anomaly:** Internal audit revealed a 12% lower selection rate for candidates aged 50+
+
+These signals exposed:
+
+- Inconsistent fairness definitions across teams
+- Lack of traceability between decisions and implementation
+- Absence of fairness validation in sprint workflows
 
 ---
 
@@ -45,43 +61,96 @@ The organization adopted a structured approach aligned with the lifecycle define
 
 ---
 
-## 4. Step 1: Risk Classification (RCG)
+## 4. Step 1: Risk Classification (RCG) 
 
-Each system was evaluated using the **Total Risk Score (TRS)** framework  
+### 4.1 Execution Process
 
-| System | Risk Factors | TRS | Tier |
-|-------|-------------|-----|------|
-| Resume Screening | Direct hiring impact | 20 | High (Tier 2) |
-| Interviewing AI | Multi-modal + subjective evaluation | 22 | Critical (Tier 1) |
-| Matching System | Indirect but large-scale impact | 17 | High (Tier 2) |
+The **Fairness Program Manager** initiated TRS calculation during planning phase.  
+  
+Each system owner completed a structured assessment in Jira using the RCG scoring model:  
+  
+TRS = (Probability × Severity) + Exposure – Mitigation Readiness
 
-### Outcome
+### 4.2 Results
 
-- Mandatory fairness validation required  
-- Governance escalation enabled  
-- Documentation and audit requirements activated  
+| System | P | S | E | M | TRS | Tier |
+|--------|---|---|---|---|-----|------|
+| Resume Screening | 4 | 4 | 2 | 2 | 20 | High (Tier 2) |
+| Interviewing AI | 5 | 4 | 3 | 1 | 22 | Critical (Tier 1) |
+| Matching System | 4 | 3 | 3 | 2 | 17 | High (Tier 2) |
+
+### 4.3 Operational Impact
+
+TRS classification trigerred:
+
+- Mandatory governance gate approval before development
+- Required artifacts:
+    - Fairness Decision Records (FDRs)
+    - Model Cards
+    - Bias Reports
+- Deployment blocked until:
+    - fairness thresholds defined
+    - validation plan approved
+
+All TRS records were stored in Jira and linked to system IDs.
 
 ---
 
-## 5. Step 2: Fairness Decision-Making (OIT)
 
-Using the **Organizational Integration Toolkit**, teams aligned through **Fairness Decision Records (FDRs)**  
+## 5. Step 2: Fairness Decision-Making (OIT)  
 
-### Example FDR (Resume Screening)
+#### 5.1 Governance Trigger
 
-- **Decision:** Use *Equal Opportunity* as primary metric  
-- **Threshold:** TPR difference ≤ 0.03  
-- **Trade-off:** Slight recall reduction accepted  
-- **Stakeholders:** Product, Legal, Fairness Guild  
+Following TRS classification, all three systems were placed under **Tier 1–2 governance gates**, requiring:  
 
-### Problem Solved
+- formal fairness definition
+- documented trade-offs
+- approved validation metrics
 
-Previously:
-- Teams used different fairness definitions  
+The **Fairness Program Manager** initiated a cross-system governance process to establish consistent but **system-appropriate fairness decisions**.  
 
-Now:
-- Unified definitions across platform  
-- Central governance authority established  
+#### 5.2 Governance Structure & Participants
+
+A Fairness Guild session was convened with:
+
+- Product Owners (all three systems)
+- Data Science Leads
+- Legal Counsel
+- Fairness Program Manager (facilitator)
+- Technical Fairness Lead
+
+#### 5.3 Decision: System-Specific Fairness via Multiple FDRs
+
+The Fairness Guild established a key principle:  
+
+Fairness must be defined per system and decision type, not globally.  
+
+As a result, three separate Fairness Decision Records (FDRs) were created.  
+
+#### 5.4 FDR-012 — Resume Screening System
+
+```
+System: Resume Screening (LLM Ranking)
+  
+Decision: Equal Opportunity
+  
+Metric: True Positive Rate (TPR) difference  
+Threshold: ≤ 0.03 across gender and age  
+  
+Trade-off: Accept ≤ 2% recall reduction
+  
+Rationale: System filters candidates → fairness must ensure equal chance of selection for qualified individuals  
+  
+Rejected Alternatives:  
+- Demographic parity → misaligned with hiring utility  
+- Equalized odds → unstable under class imbalance  
+  
+Stakeholders:  
+- Product Owner (Responsible)  
+- Fairness Guild (Accountable)  
+- Legal (Consulted)
+```
+
 
 ---
 
@@ -175,21 +244,188 @@ Filter bubbles and unequal exposure
 
 ## 8. Step 5: Validation & Compliance (RCG + FAST)
 
-Validation outputs were transformed into compliance artifacts using the RCG:  
+Validation outputs were transformed into compliance artifacts and enforced through automated regulatory integration.
 
-- Model cards  
-- Fairness reports  
-- Audit logs  
-- Monitoring dashboards  
+---
 
-### Example Evidence
+### 8.1 Regulatory Mapping Integration
 
-| Artifact | Purpose |
-|--------|--------|
-| Model Card | Document fairness metrics |
-| Bias Report | Validate subgroup performance |
-| Audit Logs | Track decisions |
-| Monitoring Dashboard | Detect drift |
+Using the Regulatory Mapping Framework, each development phase was aligned with EU AI Act requirements and translated into concrete engineering tasks.  
+  
+Examples from the implementation:  
+
+- **Planning Phase**
+  - *Art 9(1) Risk Management* → TRS scores were automatically calculated and required before any design work began  
+  - *Art 9(2) Risk Controls* → mitigation controls were mapped to TRS tiers and enforced via governance gates  
+  - *GDPR Art 35 (DPIA)* → DPIA documentation was required and approved for all Tier 1–2 systems before development  
+
+- **Data Ingestion**
+  - *Art 10(2)(a) Data Quality* → automated data quality checks (nulls, outliers, distribution) were applied  
+  - *Art 10(2)(d) Data Relevance* → dataset representativeness validated via inclusion checklists  
+  - *Art 10(2)(f) Data Imbalances* → bias detection pipelines generated subgroup fairness reports for each dataset version  
+
+- **Data Governance**
+  - *Art 10(5)* → dataset lineage, provenance, and versioning were maintained in a governed registry  
+
+- **Model Training**
+  - *Art 11(1) Record Retention* → all artifacts stored in immutable conformity storage  
+  - *Art 11(2) Technical Documentation* → model cards and technical documentation auto-generated from MLflow runs  
+
+- **Logging**
+  - *Art 12(1)* → prediction, decision, and override logs recorded with unique identifiers and stored for audit  
+
+- **User Interaction**
+  - *Art 13(1)(b)* → system disclosed AI usage to recruiters and candidates via UI  
+
+- **Pre-Deployment**
+  - *Art 14(4)(a–c)* → human-in-the-loop enforced for hiring decisions  
+  - *Art 14(4)(d)* → override functionality implemented via admin interface  
+
+- **Model Evaluation**
+  - *Art 15(1)* → robustness and fairness benchmarks validated before release  
+  - *Art 15(2)* → adversarial testing and security checks performed  
+
+- **Post-Deployment**
+  - *Art 61(1)* → continuous monitoring via dashboards and fairness drift detection  
+
+- **Traceability**
+  - *Art 23(1)* → full linkage between decision, model, dataset, and code maintained  
+
+- **Incident Handling**
+  - *Art 54(1)* → incident workflows and regulator notification procedures implemented  
+
+- **Decision Safeguards**
+  - *GDPR Art 22* → human review required before final hiring decisions  
+
+---
+
+### Impact
+
+- Regulatory requirements were systematically embedded into each SDLC phase  
+- Compliance became part of engineering workflows, not external checks  
+- Responsibilities (RACI) were clearly assigned across Product, Engineering, Legal, and Compliance  
+- All requirements were measurable, testable, and auditable  
+
+---
+
+### 8.2 Documentation & Evidence Automation
+
+Compliance artifacts were generated automatically during development:
+
+- **Model Cards** → fairness metrics, TRS tier, and limitations  
+- **Bias Reports** → subgroup evaluation results  
+- **DPIA Annex** → data protection and risk assessment  
+- **Fairness Decision Records (FDRs)** → documented fairness trade-offs  
+
+All artifacts were stored in a centralized compliance repository with integrity and retention controls.
+
+---
+
+### 8.3 Audit-Trail & Evidence Graph
+
+To ensure full traceability and regulatory compliance, EquiHire implemented a unified **Audit-Trail and Evidence Graph system** across all AI components.
+
+This system captured and linked every critical event across the AI lifecycle, enabling complete reconstruction of decisions.
+
+---
+
+### Audit-Trail Architecture
+
+All systems (Resume Screening, Interviewing, Matching) emitted structured events into a centralized logging pipeline:
+
+- prediction events (model outputs)  
+- dataset versions and feature snapshots  
+- fairness evaluation results  
+- model versions and training metadata  
+- human override actions  
+- user interactions (explanations, disclosures)  
+
+Each event was assigned a **unique trace ID**, allowing cross-system linkage.
+
+Logs were stored in:
+- immutable storage (WORM-compliant)  
+- versioned datasets and model registries  
+- time-indexed monitoring systems  
+
+---
+
+### Evidence Graph Design
+
+All audit events were connected in an **Evidence Graph**, linking:  
+
+`Decision → Model → Dataset → Code → Fairness Metrics → Human Action`  
+
+Each node in the graph contained:  
+
+- timestamp
+- system source (Sunshine / Chaos / Dragon)
+- version identifiers (model, dataset, code commit)
+- associated fairness metrics
+- related Fairness Decision Record (FDR)
+
+
+### Cross-System Traceability
+
+The Evidence Graph enabled tracing across all platform components:  
+
+- Resume Screening outputs feeding Matching recommendations
+- Interviewing scores influencing final hiring decisions
+- Shared fairness definitions (FDRs) applied across systems
+
+### Example Decision Trace  
+
+```
+Decision ID: HIRE-8472
+
+├─ Matching System (Dragon Army)
+│   ├─ Model v2.1 (RecSys)
+│   ├─ Exposure Fairness: gap = 0.12
+│   └─ Input: Ranked candidates from Resume Screening
+
+├─ Resume Screening (Sunshine Regiment)
+│   ├─ Model v3.4 (LLM)
+│   ├─ Fairness Report: TPR gap = 0.02
+│   └─ Dataset: applicant_dataset_02.csv (hash 4a9f)
+
+├─ Interviewing System (Chaos Legion)
+│   ├─ Multi-modal model v1.8
+│   ├─ Cross-modal agreement = 0.94
+│   └─ Bias migration = 0.7%
+
+└─ Human Override
+    ├─ Recruiter decision: Approved
+    └─ Reason: "Strong domain expertise"
+```
+
+### Compliance Alignment
+
+The Audit-Trail and Evidence Graph directly supported regulatory requirements:
+
+- Art 12 (Logging) → complete logging of all decisions and actions
+- Art 23 (Traceability) → full reconstruction of decision pipelines
+- Art 61 (Monitoring) → integration with drift detection and alert systems
+- GDPR Art 22 → verification of human involvement in decisions
+
+---
+
+### 8.4 Continuous Compliance Review
+
+The organization introduced periodic compliance validation cycles:
+
+- re-evaluation of risk classification  
+- verification of documentation completeness  
+- audit-trail integrity checks  
+- monitoring of fairness drift  
+
+Each cycle validated that decisions remained traceable, measurable, and compliant over time.
+
+---
+
+### Impact
+
+- Compliance became automated and continuous  
+- Regulatory requirements were embedded into development workflows  
+- Full traceability from decision to outcome was achieved  
 
 ---
 
