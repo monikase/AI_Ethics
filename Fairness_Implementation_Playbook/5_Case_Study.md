@@ -249,7 +249,7 @@ Each team evaluated its feature backlog against its assigned FDR:
 
 ---
 
-### 4.2.3 Capacity Allocation
+### 6.2.3 Capacity Allocation
 
 Based on risk tiers:
 
@@ -259,9 +259,9 @@ Based on risk tiers:
 
 ---
 
-### 4.2.4 Backlog Creation (Per System)
+### 6.2.4 Backlog Creation (Per System)
 
-#### Resume Screening (FDR-012)
+#### I. Resume Screening (FDR-012)
 
 ```
 - FAIR-SCR-101: Compute TPR by gender  
@@ -271,7 +271,7 @@ Based on risk tiers:
 - FAIR-SCR-105: Validate fairness thresholds
 ```
 
-#### Interviewing System (FDR-013)
+#### II. Interviewing System (FDR-013)
 
 ```
 - FAIR-INT-201: Compute scoring error by group  
@@ -281,7 +281,7 @@ Based on risk tiers:
 - FAIR-INT-205: Validate error parity threshold  
 ```
 
-#### Matching System (FDR-014)
+#### III. Matching System (FDR-014)
 
 ```
 - FAIR-MAT-301: Measure exposure distribution across groups  
@@ -299,9 +299,9 @@ FAIRNESS | HIGH-RISK | FDR-linked
 
 ---
 
-### 4.3 SAFE User Stories (Per System)
+### 6.3 SAFE User Stories (Per System)
 
-#### Resume Screening
+#### I. Resume Screening
 
 ```
 As a recruiter,  
@@ -313,7 +313,7 @@ so that I can shortlist efficiently,
 while ensuring equal opportunity across gender, age, and their intersections.  
 ```
 
-#### Interviewing System
+#### II. Interviewing System
 
 ```
 As a hiring manager,  
@@ -325,7 +325,7 @@ so that I can make fair hiring decisions,
 while ensuring consistent scoring accuracy across demographic groups.  
 ```
 
-#### Matching System
+#### III. Matching System
 
 ```
 As a job seeker,  
@@ -337,21 +337,21 @@ so that I can find suitable opportunities,
 while ensuring fair exposure across demographic groups over time.  
 ```
 
-### 4.4 FAIR Acceptance Criteria (Per System)
+### 6.4 FAIR Acceptance Criteria (Per System)
 
-#### Screening (FDR-012)
+#### I. Screening (FDR-012)
 
 - TPR difference ≤ 0.03  
 - Intersectional evaluation completed  
 - Bias report linked to FDR-012  
 
-#### Interviewing (FDR-013)
+#### II. Interviewing (FDR-013)
 
 - Error rate difference ≤ 0.05  
 - Cross-modal consistency validated  
 - Intersectional scoring analysis completed  
 
-#### Matching (FDR-014)
+#### III. Matching (FDR-014)
 
 - Exposure difference ≤ ±15%  
 - Longitudinal exposure evaluated  
@@ -359,7 +359,7 @@ while ensuring fair exposure across demographic groups over time.
 
 ---
 
-### 4.5 Mid-Sprint Fairness Checkpoints
+### 6.5 Mid-Sprint Fairness Checkpoints
 
 #### Screening Results
 - TPR gap (age 50+) = **0.08 → FAIL**
@@ -372,7 +372,7 @@ while ensuring fair exposure across demographic groups over time.
 
 ---
 
-### 4.6 Blockers & Escalation
+### 6.6 Blockers & Escalation
 
 All three systems failed fairness thresholds mid-sprint.
 
@@ -389,7 +389,7 @@ All three systems failed fairness thresholds mid-sprint.
 
 ---
 
-### 4.7 Mitigation Execution
+### 6.7 Mitigation Execution
 
 #### Screening
 - Sample reweighting  
@@ -405,7 +405,7 @@ All three systems failed fairness thresholds mid-sprint.
 
 ---
 
-### 4.8 Final Validation (End of Sprint)
+### 6.8 Final Validation (End of Sprint)
 
 | System        | Metric        | Before | After | Status |
 |--------------|--------------|--------|-------|--------|
@@ -415,7 +415,7 @@ All three systems failed fairness thresholds mid-sprint.
 
 ---
 
-### 4.9 Definition of Done Enforcement
+### 6.9 Definition of Done Enforcement
 
 A unified rule applied across teams:
 
@@ -431,7 +431,7 @@ No system was allowed to deploy prematurely.
 
 ---
 
-### 4.10 Daily Execution Dynamics (Observed)
+### 6.10 Daily Execution Dynamics (Observed)
 
 During the sprint:
 
@@ -445,7 +445,7 @@ During the sprint:
 
 ---
 
-### 4.11 Cross-Team Coordination Insight
+### 6.11 Cross-Team Coordination Insight
 
 Despite different systems:
 
@@ -459,7 +459,7 @@ This enabled:
 
 ---
 
-### 4.12 Key Outcome
+### 6.12 Key Outcome
 
 FAST enabled fairness to become:
 
@@ -469,293 +469,431 @@ FAST enabled fairness to become:
 
 Across all systems simultaneously.
 
+---
 
+## 7. Step 4: Technical Mitigation (AAC)  
 
-### Example SAFE User Story
+Following mid-sprint validation failures (Section 4), each team applied **architecture-specific mitigation strategies** from the Advanced Architecture Cookbook (AAC).
 
-> As a recruiter,  
-> I want candidates ranked by relevance,  
-> so that I can shortlist efficiently,  
-> while ensuring equal opportunity across gender and age groups.
+All interventions were:
+
+- triggered by FAIR validation failures  
+- guided by system-specific FDRs  
+- implemented at the appropriate pipeline stage  
 
 ---
 
-### FAIR Acceptance Criteria
+## 7.1 Resume Screening System (LLM Pipeline)
 
-- TPR difference ≤ 0.03  
-- Intersectional analysis completed  
-- Results documented in model card  
+**FDR Reference:** FDR-012 (Equal Opportunity)
 
 ---
 
-### Definition of Done (DoD)
+### 7.1.1 Failure Diagnosis
 
-A feature could not be completed unless:
+Bias was detected in generated candidate summaries:
 
-- fairness metrics met thresholds  
-- subgroup analysis completed  
-- bias mitigation applied if needed  
-- documentation generated  
+- Male candidates → “leader”, “driven”  
+- Female candidates → “supportive”, “collaborative”  
 
-### Impact
+**Root Cause (AAC Diagnosis):**
 
-- Fairness became part of sprint execution  
-- Clear responsibilities across roles  
-- Reduced ambiguity in implementation  
+- Prompt-conditioned generation bias  
+- Latent association bias in training data  
+- Decode-time amplification of stereotypes  
 
 ---
 
-## 7. Step 4: Technical Mitigation (AAC)
+### 7.1.2 Intervention (AAC Recipes Applied)
 
-Each system applied **architecture-specific strategies** from the Advanced Architecture Cookbook.  
-
----
-
-### 7.1 Resume Screening (LLM)
-
-**Problem:**  
-Biased language in generated summaries  
-
-**Solution:**
 - Counterfactual prompting  
-- Fairness-aware fine-tuning  
-
-**Validation:**
-- Counterfactual consistency ≥ 90%  
+- Self-critique + reranking  
 
 ---
 
-### 7.2 Interviewing System (Multi-Modal)
+### 7.1.3 Pipeline Integration
 
-**Problem:**  
-Bias across speech, vision, and text  
-
-**Solution:**
-- Cross-modal consistency loss  
-- Modality routing (ignore unreliable inputs)  
-
-**Validation:**
-- Agreement ≥ 0.92  
-- Bias migration ≤ 1%  
+```
+Input CV  
+→ Prompt construction  
+→ Generate summary  
+→ Counterfactual swap (gender attributes)  
+→ Compare outputs  
+→ Fairness scoring  
+→ Re-rank or regenerate if inconsistent  
+→ Final output  
+```
 
 ---
 
-### 7.3 Matching System (Recommendation Engine)
+### 7.1.4 Validation
 
-**Problem:**  
-Filter bubbles and unequal exposure  
+- Counterfactual consistency: **91%** (target ≥ 90%)  
+- Tone variance reduced across gender groups  
+- TPR fairness (FDR-012) satisfied after mitigation  
 
-**Solution:**
+---
+
+## 7.2 Interviewing System (Multi-Modal Scoring)
+
+**FDR Reference:** FDR-013 (Error Rate Parity)
+
+---
+
+### 7.2.1 Failure Diagnosis
+
+Bias observed in scoring consistency:
+
+- Higher error rates for specific demographic groups  
+- Inconsistent weighting across modalities (audio vs video vs text)  
+
+**Root Cause (AAC Diagnosis):**
+
+- Modality imbalance (audio more influential than text)  
+- Representation bias in embeddings  
+- Noise sensitivity in speech signals  
+
+---
+
+### 7.2.2 Intervention (AAC Recipes Applied)
+
+- Cross-modal calibration  
+- Modality weighting adjustment  
+- Bias-aware loss rebalancing  
+
+---
+
+### 7.2.3 Pipeline Integration
+
+```
+Input (video, audio, transcript)  
+→ Feature extraction per modality  
+→ Modality weighting layer (adjusted)  
+→ Scoring model  
+→ Error calibration layer  
+→ Final score output  
+```
+
+---
+
+### 7.2.4 Validation
+
+- Error gap reduced: **0.07 → 0.04** (threshold ≤ 0.05)  
+- Cross-modal consistency improved  
+- Intersectional error variance reduced  
+
+---
+
+## 7.3 Matching System (Recommendation Engine)
+
+**FDR Reference:** FDR-014 (Exposure Parity)
+
+---
+
+### 7.3.1 Failure Diagnosis
+
+Bias detected in recommendation exposure:
+
+- Certain groups underrepresented in top-ranked results  
+- Reinforcement of historical popularity  
+
+**Root Cause (AAC Diagnosis):**
+
+- Feedback loop amplification  
+- Position bias in ranking  
+- Lack of exploration  
+
+---
+
+### 7.3.2 Intervention (AAC Recipes Applied)
+
 - Exposure-aware ranking  
-- Controlled exploration  
+- Controlled exploration (ε = 0.1)  
 
-**Validation:**
-- Exposure gap ≤ ±15%  
-- Diversity gain ≥ 30%  
+---
+
+### 7.3.3 Pipeline Integration
+
+```
+Candidate pool  
+→ Initial relevance ranking  
+→ Exposure adjustment layer  
+→ Exploration injection (ε-greedy)  
+→ Final ranked recommendations  
+```
+
+---
+
+### 7.3.4 Validation
+
+- Exposure gap reduced: **28% → 12%** (threshold ≤ ±15%)  
+- Diversity increased: **+34%**  
+- Longitudinal exposure distribution stabilized  
+
+---
+
+## 7.4 Cross-System Insight
+
+Although each system required different interventions:
+
+- LLM → generation-level bias control  
+- Multi-modal → representation and calibration correction  
+- Recommendation → ranking and exposure adjustment  
+
+All mitigations followed the same AAC logic:
+
+1. Identify architecture  
+2. Diagnose bias source  
+3. Apply targeted intervention  
+4. Validate against FDR-defined metrics  
+
+---
 
 ---
 
 ## 8. Step 5: Validation & Compliance (RCG + FAST)
 
-Validation outputs were transformed into compliance artifacts and enforced through automated regulatory integration.
+Following technical mitigation across all three systems (Section 5), validation outputs were transformed into compliance artifacts and enforced through automated regulatory integration.
+
+All validation and compliance activities were explicitly derived from:
+
+- **FDR-012** (Resume Screening — Equal Opportunity)  
+- **FDR-013** (Interviewing — Error Rate Parity)  
+- **FDR-014** (Matching — Exposure Parity)  
+
+This ensured alignment between governance (OIT), implementation (FAST), technical mitigation (AAC), and regulatory compliance (RCG).
 
 ---
 
 ### 8.1 Regulatory Mapping Integration
 
-Using the Regulatory Mapping Framework, each development phase was aligned with EU AI Act requirements and translated into concrete engineering tasks.  
-  
-Examples from the implementation:  
+Using the Regulatory Mapping Framework, each SDLC phase was aligned with EU AI Act requirements and translated into concrete engineering tasks.
 
-- **Planning Phase**
-  - *Art 9(1) Risk Management* → TRS scores were automatically calculated and required before any design work began  
-  - *Art 9(2) Risk Controls* → mitigation controls were mapped to TRS tiers and enforced via governance gates  
-  - *GDPR Art 35 (DPIA)* → DPIA documentation was required and approved for all Tier 1–2 systems before development  
+All mappings were tied to system-specific FDRs, ensuring that regulatory compliance reflected **context-specific fairness definitions**.
 
-- **Data Ingestion**
-  - *Art 10(2)(a) Data Quality* → automated data quality checks (nulls, outliers, distribution) were applied  
-  - *Art 10(2)(d) Data Relevance* → dataset representativeness validated via inclusion checklists  
-  - *Art 10(2)(f) Data Imbalances* → bias detection pipelines generated subgroup fairness reports for each dataset version  
+#### Planning Phase
+- **Art 9(1)** → TRS calculated for all three systems before development  
+- **Art 9(2)** → mitigation controls mapped to risk tiers (Tier 1–2)  
+- **GDPR Art 35** → DPIA completed for Screening, Interviewing, and Matching  
 
-- **Data Governance**
-  - *Art 10(5)* → dataset lineage, provenance, and versioning were maintained in a governed registry  
+#### Data Ingestion
+- Dataset representativeness validated across all systems  
+- Bias detection pipelines generated subgroup reports:
+  - Screening → label imbalance  
+  - Interviewing → modality bias  
+  - Matching → exposure distribution  
 
-- **Model Training**
-  - *Art 11(1) Record Retention* → all artifacts stored in immutable conformity storage  
-  - *Art 11(2) Technical Documentation* → model cards and technical documentation auto-generated from MLflow runs  
+#### Model Training
+- Model cards generated per system:
+  - Screening → TPR metrics  
+  - Interviewing → error parity metrics  
+  - Matching → exposure metrics  
+- Training artifacts stored in immutable compliance storage  
 
-- **Logging**
-  - *Art 12(1)* → prediction, decision, and override logs recorded with unique identifiers and stored for audit  
+#### Logging & Traceability
+- All systems emitted:
+  - prediction logs  
+  - fairness metrics  
+  - override actions  
+- Unique IDs enabled traceability across systems  
 
-- **User Interaction**
-  - *Art 13(1)(b)* → system disclosed AI usage to recruiters and candidates via UI  
+#### Pre-Deployment Controls
+- Human-in-the-loop enforced for hiring decisions  
+- Override mechanisms implemented across systems  
+- Deployment blocked until fairness thresholds satisfied  
 
-- **Pre-Deployment**
-  - *Art 14(4)(a–c)* → human-in-the-loop enforced for hiring decisions  
-  - *Art 14(4)(d)* → override functionality implemented via admin interface  
-
-- **Model Evaluation**
-  - *Art 15(1)* → robustness and fairness benchmarks validated before release  
-  - *Art 15(2)* → adversarial testing and security checks performed  
-
-- **Post-Deployment**
-  - *Art 61(1)* → continuous monitoring via dashboards and fairness drift detection  
-
-- **Traceability**
-  - *Art 23(1)* → full linkage between decision, model, dataset, and code maintained  
-
-- **Incident Handling**
-  - *Art 54(1)* → incident workflows and regulator notification procedures implemented  
-
-- **Decision Safeguards**
-  - *GDPR Art 22* → human review required before final hiring decisions  
+#### Post-Deployment Monitoring
+- Continuous fairness monitoring deployed:
+  - Screening → TPR drift  
+  - Interviewing → error variance  
+  - Matching → exposure dynamics  
 
 ---
 
-### Impact
+### 8.2 Validation-to-Compliance Transformation
 
-- Regulatory requirements were systematically embedded into each SDLC phase  
-- Compliance became part of engineering workflows, not external checks  
-- Responsibilities (RACI) were clearly assigned across Product, Engineering, Legal, and Compliance  
-- All requirements were measurable, testable, and auditable  
+Fairness validation outputs generated during FAST execution were automatically converted into compliance artifacts:
 
----
+- Screening → TPR evaluation → bias report + model card (FDR-012)  
+- Interviewing → error parity evaluation → calibration report (FDR-013)  
+- Matching → exposure evaluation → ranking fairness report (FDR-014)  
 
-### 8.2 Documentation & Evidence Automation
-
-Compliance artifacts were generated automatically during development:
-
-- **Model Cards** → fairness metrics, TRS tier, and limitations  
-- **Bias Reports** → subgroup evaluation results  
-- **DPIA Annex** → data protection and risk assessment  
-- **Fairness Decision Records (FDRs)** → documented fairness trade-offs  
-
-All artifacts were stored in a centralized compliance repository with integrity and retention controls.
+This ensured compliance evidence was generated **continuously during development**, not after deployment.
 
 ---
 
-### 8.3 Audit-Trail & Evidence Graph
+### 8.3 Governance Gate Enforcement
 
-To ensure full traceability and regulatory compliance, EquiHire implemented a unified **Audit-Trail and Evidence Graph system** across all AI components.
+Deployment across all systems was blocked unless:
 
-This system captured and linked every critical event across the AI lifecycle, enabling complete reconstruction of decisions.
+- FDR-defined fairness thresholds were satisfied  
+- required artifacts (model cards, bias reports, DPIA) were complete  
+- traceability links across systems were verified  
 
----
-
-### Audit-Trail Architecture
-
-All systems (Resume Screening, Interviewing, Matching) emitted structured events into a centralized logging pipeline:
-
-- prediction events (model outputs)  
-- dataset versions and feature snapshots  
-- fairness evaluation results  
-- model versions and training metadata  
-- human override actions  
-- user interactions (explanations, disclosures)  
-
-Each event was assigned a **unique trace ID**, allowing cross-system linkage.
-
-Logs were stored in:
-- immutable storage (WORM-compliant)  
-- versioned datasets and model registries  
-- time-indexed monitoring systems  
+This created a **unified compliance gate across all three systems**.
 
 ---
 
-### Evidence Graph Design
+### 8.4 Documentation & Evidence Automation
 
-All audit events were connected in an **Evidence Graph**, linking:  
+Compliance artifacts were generated per system:
 
-`Decision → Model → Dataset → Code → Fairness Metrics → Human Action`  
+| System        | Key Artifacts                                      |
+|--------------|---------------------------------------------------|
+| Screening    | Model Card (TPR), Bias Report, Dataset Audit      |
+| Interviewing | Model Card (Error Parity), Calibration Report     |
+| Matching     | Model Card (Exposure), Ranking Fairness Report    |
 
-Each node in the graph contained:  
+All artifacts were:
 
-- timestamp
-- system source (Sunshine / Chaos / Dragon)
-- version identifiers (model, dataset, code commit)
-- associated fairness metrics
-- related Fairness Decision Record (FDR)
+- version-controlled  
+- linked to FDRs  
+- stored in centralized compliance repository  
 
+---
 
-### Cross-System Traceability
+### 8.5 Audit-Trail & Evidence Graph
 
-The Evidence Graph enabled tracing across all platform components:  
+A unified **Audit-Trail and Evidence Graph system** was implemented across all systems.
 
-- Resume Screening outputs feeding Matching recommendations
-- Interviewing scores influencing final hiring decisions
-- Shared fairness definitions (FDRs) applied across systems
+---
 
-### Example Decision Trace  
+#### Audit-Trail Architecture
+
+Each system emitted structured events:
+
+- **Screening** → ranking outputs, TPR metrics  
+- **Interviewing** → scoring outputs, modality metrics  
+- **Matching** → recommendation exposure logs  
+
+All events included:
+
+- model version  
+- dataset version  
+- fairness metrics  
+- linked FDR  
+
+Each event was assigned a **trace ID** enabling cross-system linkage.
+
+---
+
+#### Evidence Graph Design
+
+All events were connected into a unified graph:
+
+```
+Decision → Screening → Interviewing → Matching → Human Action
+         ↓           ↓             ↓
+       Model        Model         Model
+         ↓           ↓             ↓
+       Dataset      Dataset       Dataset
+         ↓           ↓             ↓
+     Fairness     Fairness     Fairness
+      Metrics      Metrics      Metrics
+```
+
+---
+
+#### Cross-System Traceability
+
+The Evidence Graph captured dependencies:
+
+- Screening outputs → feed Matching recommendations  
+- Interviewing scores → influence hiring decisions  
+- Shared FDRs → ensure consistent fairness objectives  
+
+---
+
+#### Example Decision Trace
 
 ```
 Decision ID: HIRE-8472
 
-├─ Matching System (Dragon Army)
-│   ├─ Model v2.1 (RecSys)
-│   ├─ Exposure Fairness: gap = 0.12
-│   └─ Input: Ranked candidates from Resume Screening
+├─ Screening System (Sunshine)
+│   ├─ Model v1.3
+│   ├─ TPR gap = 0.02 (FDR-012)
+│   └─ Dataset version: DS-02
 
-├─ Resume Screening (Sunshine Regiment)
-│   ├─ Model v3.4 (LLM)
-│   ├─ Fairness Report: TPR gap = 0.02
-│   └─ Dataset: applicant_dataset_02.csv (hash 4a9f)
+├─ Interviewing System (Chaos)
+│   ├─ Model v2.1
+│   ├─ Error gap = 0.04 (FDR-013)
+│   └─ Cross-modal agreement = 0.94
 
-├─ Interviewing System (Chaos Legion)
-│   ├─ Multi-modal model v1.8
-│   ├─ Cross-modal agreement = 0.94
-│   └─ Bias migration = 0.7%
+├─ Matching System (Dragon)
+│   ├─ Model v3.0
+│   ├─ Exposure gap = 0.12 (FDR-014)
+│   └─ Diversity gain = +34%
 
-└─ Human Override
-    ├─ Recruiter decision: Approved
+└─ Human Decision
+    ├─ Recruiter: Approved
     └─ Reason: "Strong domain expertise"
 ```
 
-### Compliance Alignment
+---
 
-The Audit-Trail and Evidence Graph directly supported regulatory requirements:
+#### Operational Use
 
-- Art 12 (Logging) → complete logging of all decisions and actions
-- Art 23 (Traceability) → full reconstruction of decision pipelines
-- Art 61 (Monitoring) → integration with drift detection and alert systems
-- GDPR Art 22 → verification of human involvement in decisions
+The Evidence Graph supported:
+
+- audit reconstruction  
+- incident root cause analysis  
+- cross-system fairness evaluation  
+- verification of human oversight  
 
 ---
 
-### 8.4 Continuous Compliance Review
+### 8.6 Continuous Compliance Review
 
-The organization introduced periodic compliance validation cycles:
+Periodic validation cycles ensured sustained compliance:
 
-- re-evaluation of risk classification  
+- re-evaluation of TRS risk classification  
 - verification of documentation completeness  
-- audit-trail integrity checks  
-- monitoring of fairness drift  
-
-Each cycle validated that decisions remained traceable, measurable, and compliant over time.
+- audit-trail integrity validation  
+- monitoring of fairness drift across all systems  
 
 ---
 
-### Impact
+### 8.7 Operational Impact
 
-- Compliance became automated and continuous  
-- Regulatory requirements were embedded into development workflows  
-- Full traceability from decision to outcome was achieved  
+- Compliance embedded across all systems simultaneously  
+- Fairness validation aligned with system-specific definitions  
+- Full cross-system traceability achieved  
+- Regulatory readiness maintained continuously  
 
 ---
 
-## 9. Step 6: Monitoring & Incident Response
+## 9. Step 6 — Monitoring & Incident Response
 
-Continuous monitoring enabled:
+Continuous monitoring was deployed across all systems:
 
-- fairness drift detection  
-- real-time alerts  
-- incident response workflows  
+- Screening → TPR drift monitoring  
+- Interviewing → error parity monitoring  
+- Matching → exposure monitoring  
 
-### Example Incident
+---
 
-- Drop in TPR for older candidates  
-- Triggered alert (RCG monitoring)  
-- Escalated to Fairness Guild (OIT)  
-- Mitigation deployed within SLA  
+### Example Incident (Screening System)
+
+- TPR for age 50+ increased from 0.02 → 0.06  
+- Threshold violation detected automatically  
+
+---
+
+### Response Timeline
+
+- Detection (< 15 min)  
+- Triage (P2 classification, < 2 hours)  
+- Containment (model rollback, < 24 hours)  
+- Remediation (retraining, < 5 days)  
+
+---
+
+### Outcome
+
+- Metric restored within threshold  
+- Root cause (data drift) identified  
+- FDR updated with additional monitoring constraints  
+- Preventive alert added  
 
 ---
 
@@ -764,26 +902,28 @@ Continuous monitoring enabled:
 ### Before Implementation
 
 - inconsistent fairness definitions  
-- unclear responsibilities  
+- fragmented system behavior  
 - reactive bias mitigation  
 
 ### After Implementation
 
-- unified fairness governance  
-- embedded fairness in Scrum workflows  
-- architecture-aware mitigation  
-- audit-ready compliance  
+- system-specific fairness definitions (FDRs)  
+- unified implementation workflow (FAST)  
+- architecture-aware mitigation (AAC)  
+- audit-ready compliance (RCG)  
 
 ---
 
 ### Key Metrics Improvement
 
-| Metric | Before | After |
-|------|--------|------|
-| TPR gap | 0.08 | 0.02 |
-| Bias incident resolution time | 18 days | 5 days |
-| Audit readiness | Low | High |
-| Cross-team consistency | Low | High |
+| Metric                          | Before | After |
+|---------------------------------|--------|-------|
+| TPR gap (Screening)             | 0.08   | 0.02  |
+| Error gap (Interviewing)        | 0.07   | 0.04  |
+| Exposure gap (Matching)         | 28%    | 12%   |
+| Bias incident resolution time   | 18 days| 5 days|
+| Audit readiness                 | Low    | High  |
+| Cross-system consistency        | Low    | High  |
 
 ---
 
@@ -803,22 +943,7 @@ RCG ensured fairness was auditable, not assumed.
 
 ---
 
-## 12. Implementation Considerations
-
-### Required Resources
-
-- Product + Engineering teams  
-- Fairness governance roles  
-- Compliance support  
-
-### Integration Effort
-
-- Moderate initial setup  
-- Low ongoing overhead  
-
----
-
-## 13. Conclusion
+## 12. Conclusion
 
 This case study demonstrates that fairness can be:
 
