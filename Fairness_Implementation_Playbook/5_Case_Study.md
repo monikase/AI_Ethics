@@ -99,7 +99,7 @@ All TRS records were stored in Jira and linked to system IDs.
 
 ## 5. Step 2: Fairness Decision-Making (OIT)  
 
-#### 5.1 Governance Trigger
+### 5.1 Governance Trigger
 
 Following TRS classification, all three systems were placed under **Tier 1–2 governance gates**, requiring:  
 
@@ -127,7 +127,7 @@ Fairness must be defined per system and decision type, not globally.
 
 As a result, three separate Fairness Decision Records (FDRs) were created.  
 
-#### 5.4 FDR-012 — Resume Screening System
+#### I. FDR-012 — Resume Screening System
 
 ```
 System: Resume Screening (LLM Ranking)
@@ -151,12 +151,325 @@ Stakeholders:
 - Legal (Consulted)
 ```
 
+#### II. FDR-013 — Interviewing System
+
+```
+System: AI Interviewing (Multi-Modal Scoring)
+  
+Decision: Error Rate Parity
+  
+Metric: Absolute scoring error difference across groups  
+Threshold: ≤ 0.05  
+  
+Trade-off: Allow minor variance in score calibration
+  
+Rationale: All candidates are evaluated → fairness must ensure equal scoring accuracy rather than selection parity    
+  
+Rejected Alternatives:  
+- Equal Opportunity → not applicable (no filtering stage)  
+- Demographic parity → irrelevant to scoring systems  
+  
+Stakeholders:  
+- Product Owner (Responsible)  
+- Fairness Guild (Accountable)  
+- Legal + UX Research (Consulted)  
+```
+
+#### III. FDR-014 — Matching System
+
+```
+System: Candidate-Job Matching (Recommendation System)
+  
+Decision: Exposure Parity  
+  
+Metric: Exposure distribution difference  
+Threshold: ≤ ±15% across demographic groups  
+  
+Trade-off: Accept minor CTR reduction  
+  
+Rationale: System influences visibility → fairness must ensure equal opportunity of exposure over time     
+  
+Rejected Alternatives:  
+- Equal Opportunity → not applicable (no binary selection)  
+- Accuracy-only optimization → amplifies feedback loops  
+  
+Stakeholders:  
+- Product Owner (Responsible)  
+- Fairness Guild (Accountable)  
+- Data Science Lead (Consulted)   
+```
+
+### 5.4 Traceability Setup (Cross-System)
+
+All FDRs were:
+
+- stored in a **version-controlled repository**
+- assigned unique IDs (FDR-012, FDR-013, FDR-014)
+- linked to:
+    - Jira epics and FAIR tasks
+    - model experiments (MLflow)
+    - validation reports
+    - audit logs
 
 ---
 
 ## 6. Step 3: Team-Level Implementation (FAST)
 
-Using the **Fair AI Scrum Toolkit**, fairness was embedded into daily development.  
+### 6.1 Sprint Context
+
+Following governance decisions (FDR-012, FDR-013, FDR-014), fairness implementation was executed during initial Sprint 1, involving three parallel teams:
+
+- Resume Screening Team
+- Interviewing System Team
+- Matching System Team
+
+Each team operated independently but followed the same FAST framework, **using their respective FDRs** as the single source of truth.
+
+
+### 6.2 Sprint Planning (Cross-Team)
+#### 6.2.1 Joint Fairness Planning Session
+
+A cross-team planning session was conducted with:
+
+- Product Owners (3 systems)
+- Data Science Leads
+- ML Engineers
+- QA Engineers
+- Fairness Program Manager
+
+#### 6.2.2 Fairness Risk Identification
+
+Each team evaluated its feature backlog against its assigned FDR:
+
+| System        | Feature                 | Key Fairness Risk                          |
+|--------------|------------------------|--------------------------------------------|
+| Screening    | Candidate Ranking v2   | Selection bias from historical labels      |
+| Interviewing | Interview Scoring v3   | Inconsistent scoring across demographics   |
+| Matching     | Job Recommendation v5  | Unequal exposure and feedback loops        |
+
+---
+
+### 4.2.3 Capacity Allocation
+
+Based on risk tiers:
+
+- **Screening (Tier 2):** 20% fairness capacity  
+- **Interviewing (Tier 1):** 30% fairness capacity  
+- **Matching (Tier 2):** 20% fairness capacity  
+
+---
+
+### 4.2.4 Backlog Creation (Per System)
+
+#### Resume Screening (FDR-012)
+
+```
+- FAIR-SCR-101: Compute TPR by gender  
+- FAIR-SCR-102: Compute TPR by age  
+- FAIR-SCR-103: Intersectional analysis (gender × age)  
+- FAIR-SCR-104: Apply sample reweighting  
+- FAIR-SCR-105: Validate fairness thresholds
+```
+
+#### Interviewing System (FDR-013)
+
+```
+- FAIR-INT-201: Compute scoring error by group  
+- FAIR-INT-202: Evaluate cross-modal bias (audio vs video vs text)  
+- FAIR-INT-203: Intersectional error analysis  
+- FAIR-INT-204: Adjust scoring calibration  
+- FAIR-INT-205: Validate error parity threshold  
+```
+
+#### Matching System (FDR-014)
+
+```
+- FAIR-MAT-301: Measure exposure distribution across groups  
+- FAIR-MAT-302: Analyze feedback loop amplification  
+- FAIR-MAT-303: Intersectional exposure analysis  
+- FAIR-MAT-304: Implement exposure-aware ranking  
+- FAIR-MAT-305: Validate exposure parity threshold  
+````
+
+**All backlog items were tagged:**
+
+```
+FAIRNESS | HIGH-RISK | FDR-linked
+```
+
+---
+
+### 4.3 SAFE User Stories (Per System)
+
+#### Resume Screening
+
+```
+As a recruiter,  
+
+I want candidates ranked by relevance,  
+
+so that I can shortlist efficiently,  
+
+while ensuring equal opportunity across gender, age, and their intersections.  
+```
+
+#### Interviewing System
+
+```
+As a hiring manager,  
+
+I want interview scores to reflect candidate ability,  
+
+so that I can make fair hiring decisions,  
+
+while ensuring consistent scoring accuracy across demographic groups.  
+```
+
+#### Matching System
+
+```
+As a job seeker,  
+
+I want to receive relevant job recommendations,  
+
+so that I can find suitable opportunities,  
+
+while ensuring fair exposure across demographic groups over time.  
+```
+
+### 4.4 FAIR Acceptance Criteria (Per System)
+
+#### Screening (FDR-012)
+
+- TPR difference ≤ 0.03  
+- Intersectional evaluation completed  
+- Bias report linked to FDR-012  
+
+#### Interviewing (FDR-013)
+
+- Error rate difference ≤ 0.05  
+- Cross-modal consistency validated  
+- Intersectional scoring analysis completed  
+
+#### Matching (FDR-014)
+
+- Exposure difference ≤ ±15%  
+- Longitudinal exposure evaluated  
+- Diversity gain ≥ 30%  
+
+---
+
+### 4.5 Mid-Sprint Fairness Checkpoints
+
+#### Screening Results
+- TPR gap (age 50+) = **0.08 → FAIL**
+
+#### Interviewing Results
+- Error variance across groups = **0.07 → FAIL**
+
+#### Matching Results
+- Exposure gap = **28% → FAIL**
+
+---
+
+### 4.6 Blockers & Escalation
+
+All three systems failed fairness thresholds mid-sprint.
+
+**Actions:**
+
+- Flagged as **DoD violations**  
+- Escalated to:
+  - Product Owners  
+  - Fairness Guild  
+
+**Decision:**
+
+> Continue mitigation within sprint, block release for all three systems  
+
+---
+
+### 4.7 Mitigation Execution
+
+#### Screening
+- Sample reweighting  
+- Counterfactual data augmentation  
+
+#### Interviewing
+- Recalibration of scoring function  
+- Modality weighting adjustments  
+
+#### Matching
+- Exposure-aware ranking  
+- Controlled exploration (ε = 0.1)  
+
+---
+
+### 4.8 Final Validation (End of Sprint)
+
+| System        | Metric        | Before | After | Status |
+|--------------|--------------|--------|-------|--------|
+| Screening    | TPR gap      | 0.08   | 0.02  | PASS   |
+| Interviewing | Error gap    | 0.07   | 0.04  | PASS   |
+| Matching     | Exposure gap | 28%    | 12%   | PASS   |
+
+---
+
+### 4.9 Definition of Done Enforcement
+
+A unified rule applied across teams:
+
+> **A feature is NOT complete unless fairness criteria are satisfied.**
+
+All three systems:
+
+- Failed initial validation  
+- Required mitigation  
+- Passed only after re-evaluation  
+
+No system was allowed to deploy prematurely.
+
+---
+
+### 4.10 Daily Execution Dynamics (Observed)
+
+During the sprint:
+
+- Fairness blockers were raised in daily standups  
+- Progress tracked via fairness dashboards  
+- Mid-sprint checkpoints prevented late-stage surprises  
+
+**Example blocker:**
+
+> “Exposure metrics unstable due to feedback loop — requires ranking redesign”
+
+---
+
+### 4.11 Cross-Team Coordination Insight
+
+Despite different systems:
+
+- All teams followed identical **process structure (FAST)**  
+- But implemented **different fairness definitions and techniques**  
+
+This enabled:
+
+- Consistency in execution  
+- Flexibility in implementation  
+
+---
+
+### 4.12 Key Outcome
+
+FAST enabled fairness to become:
+
+- Visible in backlog  
+- Measurable in acceptance criteria  
+- Enforceable through Definition of Done  
+
+Across all systems simultaneously.
+
+
 
 ### Example SAFE User Story
 
